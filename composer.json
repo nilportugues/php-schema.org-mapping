@@ -1,0 +1,30 @@
+{
+    "name": "nilportugues/schemaorg-mapping",
+    "description": "Schema.org mapping for JSON-LD generation",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "schemaorg/schemaorg",
+                "version": "2.2",
+                "dist": {
+                    "url": "https://github.com/schemaorg/schemaorg/archive/2.2.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "authors": [
+        {
+            "name": "Nil Portugués Calderó",
+            "email": "nilopc@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "schemaorg/schemaorg" : "2.*",
+        "zendframework/zend-code": "2.*"
+    }
+}
