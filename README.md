@@ -2,6 +2,15 @@
 
 A fluid interface to create mappings using Schema.org for Microdata and JSON-LD.
 
+
+## Installation
+
+Use [Composer](https://getcomposer.org) to install the package:
+
+```
+$ composer require nilportugues/schema-org
+```
+
 ## Usage
 
 ```php
@@ -13,6 +22,8 @@ echo $mapping->url(); // returns "http://schema.org/articleSection"
 echo $mapping->name(); // returns "articleSection"
 echo $mapping->parent(); // returns "http://schema.org/Article"
 ```
+
+
 
 ## Why?
 
