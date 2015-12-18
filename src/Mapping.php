@@ -35,13 +35,13 @@ class Mapping
      */
     public function __construct($schemaClass, $propertyName, $propertyUrl)
     {
-        $this->schemaName = $schemaClass;
-        $this->propertyName = $propertyName;
-        $this->propertyUrl = $propertyUrl;
+        $this->schemaName = (string) $schemaClass;
+        $this->propertyName = (string) $propertyName;
+        $this->propertyUrl = (string) $propertyUrl;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function parent()
     {
@@ -49,7 +49,7 @@ class Mapping
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function name()
     {
@@ -57,7 +57,7 @@ class Mapping
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function url()
     {
