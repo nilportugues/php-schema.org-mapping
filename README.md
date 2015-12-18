@@ -1,6 +1,6 @@
 # Schema.org Mapping
 
-A fluid interface to create mappings using Schema.org for JSON-LD Serializer.
+A fluid interface to create mappings using Schema.org for Microdata and JSON-LD.
 
 ## Usage
 
@@ -30,7 +30,6 @@ Contributions to the package are always welcome!
 * You can grab the source code at the package's [Git repository](https://github.com/nilportugues/schema.org-mapping).
 
 
-<br>
 ## Support
 
 Get in touch with me using one of the following means:
