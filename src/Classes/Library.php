@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -60,471 +61,468 @@ use NilPortugues\SchemaOrg\Properties\Telephone;
 use NilPortugues\SchemaOrg\Properties\VatID;
 
 /**
- * Classes Library
- * @package NilPortugues\SchemaOrg\Classes
- *
- * A library.
+ * Classes Library.
  */
 class Library
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/Library";
+    private static $schemaUrl = 'http://schema.org/Library';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function additionalProperty()
     {
         return AdditionalProperty::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function address()
     {
         return Address::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function aggregateRating()
     {
         return AggregateRating::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function alumni()
     {
         return Alumni::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function areaServed()
     {
         return AreaServed::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function award()
     {
         return Award::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function awards()
     {
         return Awards::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function branchCode()
     {
         return BranchCode::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function brand()
     {
         return Brand::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function contactPoint()
     {
         return ContactPoint::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function contactPoints()
     {
         return ContactPoints::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function containedIn()
     {
         return ContainedIn::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function containedInPlace()
     {
         return ContainedInPlace::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function containsPlace()
     {
         return ContainsPlace::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function department()
     {
         return Department::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function dissolutionDate()
     {
         return DissolutionDate::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function duns()
     {
         return Duns::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function email()
     {
         return Email::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function employee()
     {
         return Employee::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function employees()
     {
         return Employees::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function event()
     {
         return Event::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function events()
     {
         return Events::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function faxNumber()
     {
         return FaxNumber::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function founder()
     {
         return Founder::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function founders()
     {
         return Founders::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function foundingDate()
     {
         return FoundingDate::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function geo()
     {
         return Geo::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function globalLocationNumber()
     {
         return GlobalLocationNumber::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function hasMap()
     {
         return HasMap::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function hasOfferCatalog()
     {
         return HasOfferCatalog::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function hasPOS()
     {
         return HasPOS::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function isicV4()
     {
         return IsicV4::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function legalName()
     {
         return LegalName::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function location()
     {
         return Location::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function logo()
     {
         return Logo::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function makesOffer()
     {
         return MakesOffer::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function map()
     {
         return Map::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function maps()
     {
         return Maps::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function member()
     {
         return Member::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function memberOf()
     {
         return MemberOf::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function members()
     {
         return Members::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function naics()
     {
         return Naics::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function numberOfEmployees()
     {
         return NumberOfEmployees::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function openingHoursSpecification()
     {
         return OpeningHoursSpecification::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function owns()
     {
         return Owns::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function parentOrganization()
     {
         return ParentOrganization::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function photo()
     {
         return Photo::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function photos()
     {
         return Photos::create(Place::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function review()
     {
         return Review::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function reviews()
     {
         return Reviews::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function seeks()
     {
         return Seeks::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function serviceArea()
     {
         return ServiceArea::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function subOrganization()
     {
         return SubOrganization::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function taxID()
     {
         return TaxID::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function telephone()
     {
         return Telephone::create(Organization::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function vatID()
     {
         return VatID::create(Organization::schemaUrl());

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AdditionalName
 {
-    const SCHEMA_URL = "http://schema.org/additionalName";
-    const PROPERTY_NAME = "additionalName";
+    const SCHEMA_URL = 'http://schema.org/additionalName';
+    const PROPERTY_NAME = 'additionalName';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class AdditionalName
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Person'
+        'http://schema.org/Person',
     ];
 
-   /**
-    * An additional name for a Person, can be used for a middle name.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * An additional name for a Person, can be used for a middle name.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class AdditionalName
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

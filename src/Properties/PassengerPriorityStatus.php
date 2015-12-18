@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PassengerPriorityStatus
 {
-    const SCHEMA_URL = "http://schema.org/passengerPriorityStatus";
-    const PROPERTY_NAME = "passengerPriorityStatus";
+    const SCHEMA_URL = 'http://schema.org/passengerPriorityStatus';
+    const PROPERTY_NAME = 'passengerPriorityStatus';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PassengerPriorityStatus
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/FlightReservation'
+        'http://schema.org/FlightReservation',
     ];
 
-   /**
-    * The priority status assigned to a passenger for security or boarding (e.g. FastTrack or Priority).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The priority status assigned to a passenger for security or boarding (e.g. FastTrack or Priority).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PassengerPriorityStatus
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -17,127 +18,124 @@ use NilPortugues\SchemaOrg\Properties\StartTime;
 use NilPortugues\SchemaOrg\Properties\Target;
 
 /**
- * Classes SendAction
- * @package NilPortugues\SchemaOrg\Classes
- *
- * The act of physically/electronically dispatching an object for transfer from an origin to a destination.Related actions:ReceiveAction: The reciprocal of SendAction.GiveAction: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).
+ * Classes SendAction.
  */
 class SendAction
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/SendAction";
+    private static $schemaUrl = 'http://schema.org/SendAction';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function actionStatus()
     {
         return ActionStatus::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function agent()
     {
         return Agent::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function deliveryMethod()
     {
         return DeliveryMethod::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function endTime()
     {
         return EndTime::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function error()
     {
         return Error::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function instrument()
     {
         return Instrument::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function location()
     {
         return Location::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function object()
     {
         return Object::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function participant()
     {
         return Participant::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function recipient()
     {
         return Recipient::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function result()
     {
         return Result::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function startTime()
     {
         return StartTime::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function target()
     {
         return Target::create(Action::schemaUrl());

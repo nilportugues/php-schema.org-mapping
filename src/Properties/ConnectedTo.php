@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ConnectedTo
 {
-    const SCHEMA_URL = "http://schema.org/connectedTo";
-    const PROPERTY_NAME = "connectedTo";
+    const SCHEMA_URL = 'http://schema.org/connectedTo';
+    const PROPERTY_NAME = 'connectedTo';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ConnectedTo
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/AnatomicalStructure'
+        'http://schema.org/AnatomicalStructure',
     ];
 
-   /**
-    * Other anatomical structures to which this structure is connected.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Other anatomical structures to which this structure is connected.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ConnectedTo
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

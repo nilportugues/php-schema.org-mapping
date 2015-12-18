@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ResultReview
 {
-    const SCHEMA_URL = "http://schema.org/resultReview";
-    const PROPERTY_NAME = "resultReview";
+    const SCHEMA_URL = 'http://schema.org/resultReview';
+    const PROPERTY_NAME = 'resultReview';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ResultReview
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ReviewAction'
+        'http://schema.org/ReviewAction',
     ];
 
-   /**
-    * A sub property of result. The review that resulted in the performing of the action.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of result. The review that resulted in the performing of the action.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ResultReview
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

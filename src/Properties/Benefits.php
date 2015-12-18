@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Benefits
 {
-    const SCHEMA_URL = "http://schema.org/benefits";
-    const PROPERTY_NAME = "benefits";
+    const SCHEMA_URL = 'http://schema.org/benefits';
+    const PROPERTY_NAME = 'benefits';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Benefits
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/JobPosting'
+        'http://schema.org/JobPosting',
     ];
 
-   /**
-    * Description of benefits associated with the job.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Description of benefits associated with the job.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Benefits
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

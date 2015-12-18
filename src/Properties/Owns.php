@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Owns
 {
-    const SCHEMA_URL = "http://schema.org/owns";
-    const PROPERTY_NAME = "owns";
+    const SCHEMA_URL = 'http://schema.org/owns';
+    const PROPERTY_NAME = 'owns';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class Owns
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Organization',
-		'http://schema.org/Person'
+        'http://schema.org/Organization',
+        'http://schema.org/Person',
     ];
 
-   /**
-    * Products owned by the organization or person.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Products owned by the organization or person.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class Owns
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

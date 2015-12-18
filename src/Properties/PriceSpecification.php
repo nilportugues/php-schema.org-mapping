@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PriceSpecification
 {
-    const SCHEMA_URL = "http://schema.org/priceSpecification";
-    const PROPERTY_NAME = "priceSpecification";
+    const SCHEMA_URL = 'http://schema.org/priceSpecification';
+    const PROPERTY_NAME = 'priceSpecification';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,18 +17,18 @@ class PriceSpecification
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Offer',
-		'http://schema.org/Demand',
-		'http://schema.org/TradeAction'
+        'http://schema.org/Offer',
+        'http://schema.org/Demand',
+        'http://schema.org/TradeAction',
     ];
 
-   /**
-    * One or more detailed price specifications, indicating the unit price and delivery or payment charges.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * One or more detailed price specifications, indicating the unit price and delivery or payment charges.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -36,13 +36,13 @@ class PriceSpecification
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

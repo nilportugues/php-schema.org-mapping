@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ProcessingTime
 {
-    const SCHEMA_URL = "http://schema.org/processingTime";
-    const PROPERTY_NAME = "processingTime";
+    const SCHEMA_URL = 'http://schema.org/processingTime';
+    const PROPERTY_NAME = 'processingTime';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ProcessingTime
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ServiceChannel'
+        'http://schema.org/ServiceChannel',
     ];
 
-   /**
-    * Estimated processing time for the service using this channel.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Estimated processing time for the service using this channel.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ProcessingTime
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

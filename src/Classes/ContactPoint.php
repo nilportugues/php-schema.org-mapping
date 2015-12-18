@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -14,103 +15,100 @@ use NilPortugues\SchemaOrg\Properties\ServiceArea;
 use NilPortugues\SchemaOrg\Properties\Telephone;
 
 /**
- * Classes ContactPoint
- * @package NilPortugues\SchemaOrg\Classes
- *
- * A contact point&#x2014;for example, a Customer Complaints department.
+ * Classes ContactPoint.
  */
 class ContactPoint
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/ContactPoint";
+    private static $schemaUrl = 'http://schema.org/ContactPoint';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function areaServed()
     {
         return AreaServed::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function availableLanguage()
     {
         return AvailableLanguage::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function contactOption()
     {
         return ContactOption::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function contactType()
     {
         return ContactType::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function email()
     {
         return Email::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function faxNumber()
     {
         return FaxNumber::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function hoursAvailable()
     {
         return HoursAvailable::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function productSupported()
     {
         return ProductSupported::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function serviceArea()
     {
         return ServiceArea::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function telephone()
     {
         return Telephone::create(self::schemaUrl());

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class CurrenciesAccepted
 {
-    const SCHEMA_URL = "http://schema.org/currenciesAccepted";
-    const PROPERTY_NAME = "currenciesAccepted";
+    const SCHEMA_URL = 'http://schema.org/currenciesAccepted';
+    const PROPERTY_NAME = 'currenciesAccepted';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class CurrenciesAccepted
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/LocalBusiness'
+        'http://schema.org/LocalBusiness',
     ];
 
-   /**
-    * The currency accepted (in ISO 4217 currency format).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The currency accepted (in ISO 4217 currency format).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class CurrenciesAccepted
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

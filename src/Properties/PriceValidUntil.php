@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PriceValidUntil
 {
-    const SCHEMA_URL = "http://schema.org/priceValidUntil";
-    const PROPERTY_NAME = "priceValidUntil";
+    const SCHEMA_URL = 'http://schema.org/priceValidUntil';
+    const PROPERTY_NAME = 'priceValidUntil';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PriceValidUntil
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Offer'
+        'http://schema.org/Offer',
     ];
 
-   /**
-    * The date after which the price is no longer available.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The date after which the price is no longer available.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PriceValidUntil
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

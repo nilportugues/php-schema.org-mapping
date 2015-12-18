@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Citation
 {
-    const SCHEMA_URL = "http://schema.org/citation";
-    const PROPERTY_NAME = "citation";
+    const SCHEMA_URL = 'http://schema.org/citation';
+    const PROPERTY_NAME = 'citation';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Citation
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CreativeWork'
+        'http://schema.org/CreativeWork',
     ];
 
-   /**
-    * A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Citation
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

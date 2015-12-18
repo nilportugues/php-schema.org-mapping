@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -14,103 +15,100 @@ use NilPortugues\SchemaOrg\Properties\Study;
 use NilPortugues\SchemaOrg\Properties\TargetPopulation;
 
 /**
- * Classes DoseSchedule
- * @package NilPortugues\SchemaOrg\Classes
- *
- * A specific dosing schedule for a drug or supplement.
+ * Classes DoseSchedule.
  */
 class DoseSchedule
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/DoseSchedule";
+    private static $schemaUrl = 'http://schema.org/DoseSchedule';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function code()
     {
         return Code::create(MedicalEntity::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function doseUnit()
     {
         return DoseUnit::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function doseValue()
     {
         return DoseValue::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function frequency()
     {
         return Frequency::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function guideline()
     {
         return Guideline::create(MedicalEntity::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function medicineSystem()
     {
         return MedicineSystem::create(MedicalEntity::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function recognizingAuthority()
     {
         return RecognizingAuthority::create(MedicalEntity::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function relevantSpecialty()
     {
         return RelevantSpecialty::create(MedicalEntity::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function study()
     {
         return Study::create(MedicalEntity::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function targetPopulation()
     {
         return TargetPopulation::create(self::schemaUrl());

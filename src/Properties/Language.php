@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Language
 {
-    const SCHEMA_URL = "http://schema.org/language";
-    const PROPERTY_NAME = "language";
+    const SCHEMA_URL = 'http://schema.org/language';
+    const PROPERTY_NAME = 'language';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class Language
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CommunicateAction',
-		'http://schema.org/WriteAction'
+        'http://schema.org/CommunicateAction',
+        'http://schema.org/WriteAction',
     ];
 
-   /**
-    * A sub property of instrument. The language used on this action.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of instrument. The language used on this action.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class Language
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

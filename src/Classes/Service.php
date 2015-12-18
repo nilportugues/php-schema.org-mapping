@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -29,223 +30,220 @@ use NilPortugues\SchemaOrg\Properties\ServiceType;
 use NilPortugues\SchemaOrg\Properties\Url;
 
 /**
- * Classes Service
- * @package NilPortugues\SchemaOrg\Classes
- *
- * A service provided by an organization, e.g. delivery service, print services, etc.
+ * Classes Service.
  */
 class Service
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/Service";
+    private static $schemaUrl = 'http://schema.org/Service';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function additionalType()
     {
         return AdditionalType::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function aggregateRating()
     {
         return AggregateRating::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function alternateName()
     {
         return AlternateName::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function areaServed()
     {
         return AreaServed::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function availableChannel()
     {
         return AvailableChannel::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function award()
     {
         return Award::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function category()
     {
         return Category::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function description()
     {
         return Description::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function hasOfferCatalog()
     {
         return HasOfferCatalog::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function hoursAvailable()
     {
         return HoursAvailable::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function image()
     {
         return Image::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function mainEntityOfPage()
     {
         return MainEntityOfPage::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function name()
     {
         return Name::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function offers()
     {
         return Offers::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function potentialAction()
     {
         return PotentialAction::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function produces()
     {
         return Produces::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function provider()
     {
         return Provider::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function providerMobility()
     {
         return ProviderMobility::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function review()
     {
         return Review::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function sameAs()
     {
         return SameAs::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function serviceArea()
     {
         return ServiceArea::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function serviceAudience()
     {
         return ServiceAudience::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function serviceOutput()
     {
         return ServiceOutput::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function serviceType()
     {
         return ServiceType::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function url()
     {
         return Url::create(Thing::schemaUrl());

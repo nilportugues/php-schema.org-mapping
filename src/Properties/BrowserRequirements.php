@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class BrowserRequirements
 {
-    const SCHEMA_URL = "http://schema.org/browserRequirements";
-    const PROPERTY_NAME = "browserRequirements";
+    const SCHEMA_URL = 'http://schema.org/browserRequirements';
+    const PROPERTY_NAME = 'browserRequirements';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class BrowserRequirements
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/WebApplication'
+        'http://schema.org/WebApplication',
     ];
 
-   /**
-    * Specifies browser requirements in human-readable text. For example,"requires HTML5 support".
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Specifies browser requirements in human-readable text. For example,"requires HTML5 support".
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class BrowserRequirements
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

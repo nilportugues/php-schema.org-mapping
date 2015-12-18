@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Collection
 {
-    const SCHEMA_URL = "http://schema.org/collection";
-    const PROPERTY_NAME = "collection";
+    const SCHEMA_URL = 'http://schema.org/collection';
+    const PROPERTY_NAME = 'collection';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Collection
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/UpdateAction'
+        'http://schema.org/UpdateAction',
     ];
 
-   /**
-    * A sub property of object. The collection target of the action.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of object. The collection target of the action.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Collection
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

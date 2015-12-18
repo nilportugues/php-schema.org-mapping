@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Area
 {
-    const SCHEMA_URL = "http://schema.org/area";
-    const PROPERTY_NAME = "area";
+    const SCHEMA_URL = 'http://schema.org/area';
+    const PROPERTY_NAME = 'area';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Area
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/BroadcastService'
+        'http://schema.org/BroadcastService',
     ];
 
-   /**
-    * The area within which users can expect to reach the broadcast service.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The area within which users can expect to reach the broadcast service.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Area
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

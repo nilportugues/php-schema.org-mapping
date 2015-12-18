@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PaymentDueDate
 {
-    const SCHEMA_URL = "http://schema.org/paymentDueDate";
-    const PROPERTY_NAME = "paymentDueDate";
+    const SCHEMA_URL = 'http://schema.org/paymentDueDate';
+    const PROPERTY_NAME = 'paymentDueDate';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class PaymentDueDate
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Order',
-		'http://schema.org/Invoice'
+        'http://schema.org/Order',
+        'http://schema.org/Invoice',
     ];
 
-   /**
-    * The date that payment is due.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The date that payment is due.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class PaymentDueDate
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

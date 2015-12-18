@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ProficiencyLevel
 {
-    const SCHEMA_URL = "http://schema.org/proficiencyLevel";
-    const PROPERTY_NAME = "proficiencyLevel";
+    const SCHEMA_URL = 'http://schema.org/proficiencyLevel';
+    const PROPERTY_NAME = 'proficiencyLevel';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ProficiencyLevel
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/TechArticle'
+        'http://schema.org/TechArticle',
     ];
 
-   /**
-    * Proficiency needed for this content; expected values: 'Beginner', 'Expert'.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Proficiency needed for this content; expected values: 'Beginner', 'Expert'.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ProficiencyLevel
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ServiceAudience
 {
-    const SCHEMA_URL = "http://schema.org/serviceAudience";
-    const PROPERTY_NAME = "serviceAudience";
+    const SCHEMA_URL = 'http://schema.org/serviceAudience';
+    const PROPERTY_NAME = 'serviceAudience';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ServiceAudience
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Service'
+        'http://schema.org/Service',
     ];
 
-   /**
-    * The audience eligible for this service.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The audience eligible for this service.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ServiceAudience
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

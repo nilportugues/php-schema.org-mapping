@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class IsSimilarTo
 {
-    const SCHEMA_URL = "http://schema.org/isSimilarTo";
-    const PROPERTY_NAME = "isSimilarTo";
+    const SCHEMA_URL = 'http://schema.org/isSimilarTo';
+    const PROPERTY_NAME = 'isSimilarTo';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class IsSimilarTo
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Product'
+        'http://schema.org/Product',
     ];
 
-   /**
-    * A pointer to another, functionally similar product (or multiple products).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A pointer to another, functionally similar product (or multiple products).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class IsSimilarTo
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

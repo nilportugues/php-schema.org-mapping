@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Events
 {
-    const SCHEMA_URL = "http://schema.org/events";
-    const PROPERTY_NAME = "events";
+    const SCHEMA_URL = 'http://schema.org/events';
+    const PROPERTY_NAME = 'events';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class Events
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Organization',
-		'http://schema.org/Place'
+        'http://schema.org/Organization',
+        'http://schema.org/Place',
     ];
 
-   /**
-    * Upcoming or past events associated with this place or organization.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Upcoming or past events associated with this place or organization.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class Events
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ChildMaxAge
 {
-    const SCHEMA_URL = "http://schema.org/childMaxAge";
-    const PROPERTY_NAME = "childMaxAge";
+    const SCHEMA_URL = 'http://schema.org/childMaxAge';
+    const PROPERTY_NAME = 'childMaxAge';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ChildMaxAge
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ParentAudience'
+        'http://schema.org/ParentAudience',
     ];
 
-   /**
-    * Maximal age of the child.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Maximal age of the child.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ChildMaxAge
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

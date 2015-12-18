@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PriceCurrency
 {
-    const SCHEMA_URL = "http://schema.org/priceCurrency";
-    const PROPERTY_NAME = "priceCurrency";
+    const SCHEMA_URL = 'http://schema.org/priceCurrency';
+    const PROPERTY_NAME = 'priceCurrency';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,19 +17,19 @@ class PriceCurrency
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Reservation',
-		'http://schema.org/Ticket',
-		'http://schema.org/Offer',
-		'http://schema.org/PriceSpecification'
+        'http://schema.org/Reservation',
+        'http://schema.org/Ticket',
+        'http://schema.org/Offer',
+        'http://schema.org/PriceSpecification',
     ];
 
-   /**
-    * The currency (in 3-letter ISO 4217 format) of the price or a price component, when attached to PriceSpecification and its subtypes.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The currency (in 3-letter ISO 4217 format) of the price or a price component, when attached to PriceSpecification and its subtypes.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -37,13 +37,13 @@ class PriceCurrency
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

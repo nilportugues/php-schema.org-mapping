@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Sponsor
 {
-    const SCHEMA_URL = "http://schema.org/sponsor";
-    const PROPERTY_NAME = "sponsor";
+    const SCHEMA_URL = 'http://schema.org/sponsor';
+    const PROPERTY_NAME = 'sponsor';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Sponsor
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalStudy'
+        'http://schema.org/MedicalStudy',
     ];
 
-   /**
-    * Sponsor of the study.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Sponsor of the study.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Sponsor
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

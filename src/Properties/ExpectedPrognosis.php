@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ExpectedPrognosis
 {
-    const SCHEMA_URL = "http://schema.org/expectedPrognosis";
-    const PROPERTY_NAME = "expectedPrognosis";
+    const SCHEMA_URL = 'http://schema.org/expectedPrognosis';
+    const PROPERTY_NAME = 'expectedPrognosis';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ExpectedPrognosis
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalCondition'
+        'http://schema.org/MedicalCondition',
     ];
 
-   /**
-    * The likely outcome in either the short term or long term of the medical condition.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The likely outcome in either the short term or long term of the medical condition.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ExpectedPrognosis
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

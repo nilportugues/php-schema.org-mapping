@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Item
 {
-    const SCHEMA_URL = "http://schema.org/item";
-    const PROPERTY_NAME = "item";
+    const SCHEMA_URL = 'http://schema.org/item';
+    const PROPERTY_NAME = 'item';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class Item
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ListItem',
-		'http://schema.org/DataFeedItem'
+        'http://schema.org/ListItem',
+        'http://schema.org/DataFeedItem',
     ];
 
-   /**
-    * An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')’.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')’.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class Item
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

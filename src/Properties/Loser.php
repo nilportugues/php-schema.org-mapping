@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Loser
 {
-    const SCHEMA_URL = "http://schema.org/loser";
-    const PROPERTY_NAME = "loser";
+    const SCHEMA_URL = 'http://schema.org/loser';
+    const PROPERTY_NAME = 'loser';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Loser
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/WinAction'
+        'http://schema.org/WinAction',
     ];
 
-   /**
-    * A sub property of participant. The loser of the action.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of participant. The loser of the action.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Loser
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

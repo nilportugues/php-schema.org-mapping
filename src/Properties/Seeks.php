@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Seeks
 {
-    const SCHEMA_URL = "http://schema.org/seeks";
-    const PROPERTY_NAME = "seeks";
+    const SCHEMA_URL = 'http://schema.org/seeks';
+    const PROPERTY_NAME = 'seeks';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class Seeks
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Organization',
-		'http://schema.org/Person'
+        'http://schema.org/Organization',
+        'http://schema.org/Person',
     ];
 
-   /**
-    * A pointer to products or services sought by the organization or person (demand).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A pointer to products or services sought by the organization or person (demand).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class Seeks
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class OfferCount
 {
-    const SCHEMA_URL = "http://schema.org/offerCount";
-    const PROPERTY_NAME = "offerCount";
+    const SCHEMA_URL = 'http://schema.org/offerCount';
+    const PROPERTY_NAME = 'offerCount';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class OfferCount
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/AggregateOffer'
+        'http://schema.org/AggregateOffer',
     ];
 
-   /**
-    * The number of offers for the product.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The number of offers for the product.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class OfferCount
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

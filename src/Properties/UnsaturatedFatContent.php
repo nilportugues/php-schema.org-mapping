@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class UnsaturatedFatContent
 {
-    const SCHEMA_URL = "http://schema.org/unsaturatedFatContent";
-    const PROPERTY_NAME = "unsaturatedFatContent";
+    const SCHEMA_URL = 'http://schema.org/unsaturatedFatContent';
+    const PROPERTY_NAME = 'unsaturatedFatContent';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class UnsaturatedFatContent
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/NutritionInformation'
+        'http://schema.org/NutritionInformation',
     ];
 
-   /**
-    * The number of grams of unsaturated fat.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The number of grams of unsaturated fat.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class UnsaturatedFatContent
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class LastReviewed
 {
-    const SCHEMA_URL = "http://schema.org/lastReviewed";
-    const PROPERTY_NAME = "lastReviewed";
+    const SCHEMA_URL = 'http://schema.org/lastReviewed';
+    const PROPERTY_NAME = 'lastReviewed';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class LastReviewed
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/WebPage'
+        'http://schema.org/WebPage',
     ];
 
-   /**
-    * Date on which the content on this web page was last reviewed for accuracy and/or completeness.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Date on which the content on this web page was last reviewed for accuracy and/or completeness.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class LastReviewed
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ServingSize
 {
-    const SCHEMA_URL = "http://schema.org/servingSize";
-    const PROPERTY_NAME = "servingSize";
+    const SCHEMA_URL = 'http://schema.org/servingSize';
+    const PROPERTY_NAME = 'servingSize';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ServingSize
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/NutritionInformation'
+        'http://schema.org/NutritionInformation',
     ];
 
-   /**
-    * The serving size, in terms of the number of volume or mass.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The serving size, in terms of the number of volume or mass.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ServingSize
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

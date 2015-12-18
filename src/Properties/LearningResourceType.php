@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class LearningResourceType
 {
-    const SCHEMA_URL = "http://schema.org/learningResourceType";
-    const PROPERTY_NAME = "learningResourceType";
+    const SCHEMA_URL = 'http://schema.org/learningResourceType';
+    const PROPERTY_NAME = 'learningResourceType';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class LearningResourceType
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CreativeWork'
+        'http://schema.org/CreativeWork',
     ];
 
-   /**
-    * The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class LearningResourceType
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

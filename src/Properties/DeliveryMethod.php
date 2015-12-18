@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class DeliveryMethod
 {
-    const SCHEMA_URL = "http://schema.org/deliveryMethod";
-    const PROPERTY_NAME = "deliveryMethod";
+    const SCHEMA_URL = 'http://schema.org/deliveryMethod';
+    const PROPERTY_NAME = 'deliveryMethod';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,19 +17,19 @@ class DeliveryMethod
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/OrderAction',
-		'http://schema.org/ReceiveAction',
-		'http://schema.org/SendAction',
-		'http://schema.org/TrackAction'
+        'http://schema.org/OrderAction',
+        'http://schema.org/ReceiveAction',
+        'http://schema.org/SendAction',
+        'http://schema.org/TrackAction',
     ];
 
-   /**
-    * A sub property of instrument. The method of delivery.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of instrument. The method of delivery.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -37,13 +37,13 @@ class DeliveryMethod
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

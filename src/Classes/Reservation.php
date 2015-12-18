@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -26,199 +27,196 @@ use NilPortugues\SchemaOrg\Properties\UnderName;
 use NilPortugues\SchemaOrg\Properties\Url;
 
 /**
- * Classes Reservation
- * @package NilPortugues\SchemaOrg\Classes
- *
- * Describes a reservation for travel, dining or an event. Some reservations require tickets.Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, restaurant reservations, flights, or rental cars, use http://schema.org/Offer.
+ * Classes Reservation.
  */
 class Reservation
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/Reservation";
+    private static $schemaUrl = 'http://schema.org/Reservation';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function additionalType()
     {
         return AdditionalType::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function alternateName()
     {
         return AlternateName::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function bookingAgent()
     {
         return BookingAgent::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function bookingTime()
     {
         return BookingTime::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function broker()
     {
         return Broker::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function description()
     {
         return Description::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function image()
     {
         return Image::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function mainEntityOfPage()
     {
         return MainEntityOfPage::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function modifiedTime()
     {
         return ModifiedTime::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function name()
     {
         return Name::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function potentialAction()
     {
         return PotentialAction::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function priceCurrency()
     {
         return PriceCurrency::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function programMembershipUsed()
     {
         return ProgramMembershipUsed::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function provider()
     {
         return Provider::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function reservationFor()
     {
         return ReservationFor::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function reservationId()
     {
         return ReservationId::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function reservationStatus()
     {
         return ReservationStatus::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function reservedTicket()
     {
         return ReservedTicket::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function sameAs()
     {
         return SameAs::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function totalPrice()
     {
         return TotalPrice::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function underName()
     {
         return UnderName::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function url()
     {
         return Url::create(Thing::schemaUrl());

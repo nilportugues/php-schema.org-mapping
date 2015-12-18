@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Thumbnail
 {
-    const SCHEMA_URL = "http://schema.org/thumbnail";
-    const PROPERTY_NAME = "thumbnail";
+    const SCHEMA_URL = 'http://schema.org/thumbnail';
+    const PROPERTY_NAME = 'thumbnail';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class Thumbnail
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ImageObject',
-		'http://schema.org/VideoObject'
+        'http://schema.org/ImageObject',
+        'http://schema.org/VideoObject',
     ];
 
-   /**
-    * Thumbnail image for an image or video.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Thumbnail image for an image or video.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class Thumbnail
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

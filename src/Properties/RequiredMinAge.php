@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class RequiredMinAge
 {
-    const SCHEMA_URL = "http://schema.org/requiredMinAge";
-    const PROPERTY_NAME = "requiredMinAge";
+    const SCHEMA_URL = 'http://schema.org/requiredMinAge';
+    const PROPERTY_NAME = 'requiredMinAge';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class RequiredMinAge
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/PeopleAudience'
+        'http://schema.org/PeopleAudience',
     ];
 
-   /**
-    * Audiences defined by a person's minimum age.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Audiences defined by a person's minimum age.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class RequiredMinAge
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

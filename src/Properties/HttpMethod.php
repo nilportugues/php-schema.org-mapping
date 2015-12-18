@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class HttpMethod
 {
-    const SCHEMA_URL = "http://schema.org/httpMethod";
-    const PROPERTY_NAME = "httpMethod";
+    const SCHEMA_URL = 'http://schema.org/httpMethod';
+    const PROPERTY_NAME = 'httpMethod';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class HttpMethod
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/EntryPoint'
+        'http://schema.org/EntryPoint',
     ];
 
-   /**
-    * An HTTP method that specifies the appropriate HTTP method for a request to an HTTP EntryPoint. Values are capitalized strings as used in HTTP.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * An HTTP method that specifies the appropriate HTTP method for a request to an HTTP EntryPoint. Values are capitalized strings as used in HTTP.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class HttpMethod
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

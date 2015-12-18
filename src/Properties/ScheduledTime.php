@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ScheduledTime
 {
-    const SCHEMA_URL = "http://schema.org/scheduledTime";
-    const PROPERTY_NAME = "scheduledTime";
+    const SCHEMA_URL = 'http://schema.org/scheduledTime';
+    const PROPERTY_NAME = 'scheduledTime';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ScheduledTime
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/PlanAction'
+        'http://schema.org/PlanAction',
     ];
 
-   /**
-    * The time the object is scheduled to.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The time the object is scheduled to.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ScheduledTime
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

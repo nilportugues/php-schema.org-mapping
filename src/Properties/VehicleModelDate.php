@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class VehicleModelDate
 {
-    const SCHEMA_URL = "http://schema.org/vehicleModelDate";
-    const PROPERTY_NAME = "vehicleModelDate";
+    const SCHEMA_URL = 'http://schema.org/vehicleModelDate';
+    const PROPERTY_NAME = 'vehicleModelDate';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class VehicleModelDate
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Vehicle'
+        'http://schema.org/Vehicle',
     ];
 
-   /**
-    * The release date of a vehicle model (often used to differentiate versions of the same make and model).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The release date of a vehicle model (often used to differentiate versions of the same make and model).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class VehicleModelDate
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

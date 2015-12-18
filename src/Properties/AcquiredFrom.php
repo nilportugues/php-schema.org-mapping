@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AcquiredFrom
 {
-    const SCHEMA_URL = "http://schema.org/acquiredFrom";
-    const PROPERTY_NAME = "acquiredFrom";
+    const SCHEMA_URL = 'http://schema.org/acquiredFrom';
+    const PROPERTY_NAME = 'acquiredFrom';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class AcquiredFrom
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/OwnershipInfo'
+        'http://schema.org/OwnershipInfo',
     ];
 
-   /**
-    * The organization or person from which the product was acquired.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The organization or person from which the product was acquired.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class AcquiredFrom
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

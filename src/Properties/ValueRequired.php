@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ValueRequired
 {
-    const SCHEMA_URL = "http://schema.org/valueRequired";
-    const PROPERTY_NAME = "valueRequired";
+    const SCHEMA_URL = 'http://schema.org/valueRequired';
+    const PROPERTY_NAME = 'valueRequired';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ValueRequired
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/PropertyValueSpecification'
+        'http://schema.org/PropertyValueSpecification',
     ];
 
-   /**
-    * Whether the property must be filled in to complete the action.  Default is false.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Whether the property must be filled in to complete the action.  Default is false.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ValueRequired
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

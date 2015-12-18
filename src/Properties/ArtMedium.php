@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ArtMedium
 {
-    const SCHEMA_URL = "http://schema.org/artMedium";
-    const PROPERTY_NAME = "artMedium";
+    const SCHEMA_URL = 'http://schema.org/artMedium';
+    const PROPERTY_NAME = 'artMedium';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ArtMedium
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/VisualArtwork'
+        'http://schema.org/VisualArtwork',
     ];
 
-   /**
-    * The material used. (e.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.)
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The material used. (e.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ArtMedium
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

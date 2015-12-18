@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class LiveBlogUpdate
 {
-    const SCHEMA_URL = "http://schema.org/liveBlogUpdate";
-    const PROPERTY_NAME = "liveBlogUpdate";
+    const SCHEMA_URL = 'http://schema.org/liveBlogUpdate';
+    const PROPERTY_NAME = 'liveBlogUpdate';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class LiveBlogUpdate
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/LiveBlogPosting'
+        'http://schema.org/LiveBlogPosting',
     ];
 
-   /**
-    * An update to the LiveBlog.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * An update to the LiveBlog.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class LiveBlogUpdate
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

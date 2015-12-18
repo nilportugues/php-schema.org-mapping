@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PublishingPrinciples
 {
-    const SCHEMA_URL = "http://schema.org/publishingPrinciples";
-    const PROPERTY_NAME = "publishingPrinciples";
+    const SCHEMA_URL = 'http://schema.org/publishingPrinciples';
+    const PROPERTY_NAME = 'publishingPrinciples';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PublishingPrinciples
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CreativeWork'
+        'http://schema.org/CreativeWork',
     ];
 
-   /**
-    * Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PublishingPrinciples
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

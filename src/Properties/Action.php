@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Action
 {
-    const SCHEMA_URL = "http://schema.org/action";
-    const PROPERTY_NAME = "action";
+    const SCHEMA_URL = 'http://schema.org/action';
+    const PROPERTY_NAME = 'action';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Action
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Muscle'
+        'http://schema.org/Muscle',
     ];
 
-   /**
-    * The movement the muscle generates.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The movement the muscle generates.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Action
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -20,151 +21,148 @@ use NilPortugues\SchemaOrg\Properties\TargetProduct;
 use NilPortugues\SchemaOrg\Properties\Url;
 
 /**
- * Classes SoftwareSourceCode
- * @package NilPortugues\SchemaOrg\Classes
- *
- * Computer programming source code. Example: Full (compile ready) solutions, code snippet samples, scripts, templates.
+ * Classes SoftwareSourceCode.
  */
 class SoftwareSourceCode
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/SoftwareSourceCode";
+    private static $schemaUrl = 'http://schema.org/SoftwareSourceCode';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function additionalType()
     {
         return AdditionalType::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function alternateName()
     {
         return AlternateName::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function codeRepository()
     {
         return CodeRepository::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function codeSampleType()
     {
         return CodeSampleType::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function description()
     {
         return Description::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function image()
     {
         return Image::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function mainEntityOfPage()
     {
         return MainEntityOfPage::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function name()
     {
         return Name::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function potentialAction()
     {
         return PotentialAction::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function programmingLanguage()
     {
         return ProgrammingLanguage::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function runtime()
     {
         return Runtime::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function runtimePlatform()
     {
         return RuntimePlatform::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function sameAs()
     {
         return SameAs::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function sampleType()
     {
         return SampleType::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function targetProduct()
     {
         return TargetProduct::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function url()
     {
         return Url::create(Thing::schemaUrl());

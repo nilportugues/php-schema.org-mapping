@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Quest
 {
-    const SCHEMA_URL = "http://schema.org/quest";
-    const PROPERTY_NAME = "quest";
+    const SCHEMA_URL = 'http://schema.org/quest';
+    const PROPERTY_NAME = 'quest';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class Quest
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Game',
-		'http://schema.org/VideoGameSeries'
+        'http://schema.org/Game',
+        'http://schema.org/VideoGameSeries',
     ];
 
-   /**
-    * The task that a player-controlled character, or group of characters may complete in order to gain a reward.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The task that a player-controlled character, or group of characters may complete in order to gain a reward.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class Quest
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

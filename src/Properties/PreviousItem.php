@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PreviousItem
 {
-    const SCHEMA_URL = "http://schema.org/previousItem";
-    const PROPERTY_NAME = "previousItem";
+    const SCHEMA_URL = 'http://schema.org/previousItem';
+    const PROPERTY_NAME = 'previousItem';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PreviousItem
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ListItem'
+        'http://schema.org/ListItem',
     ];
 
-   /**
-    * A link to the ListItem that preceeds the current one.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A link to the ListItem that preceeds the current one.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PreviousItem
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Address
 {
-    const SCHEMA_URL = "http://schema.org/address";
-    const PROPERTY_NAME = "address";
+    const SCHEMA_URL = 'http://schema.org/address';
+    const PROPERTY_NAME = 'address';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,20 +17,20 @@ class Address
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Organization',
-		'http://schema.org/Place',
-		'http://schema.org/Person',
-		'http://schema.org/GeoCoordinates',
-		'http://schema.org/GeoShape'
+        'http://schema.org/Organization',
+        'http://schema.org/Place',
+        'http://schema.org/Person',
+        'http://schema.org/GeoCoordinates',
+        'http://schema.org/GeoShape',
     ];
 
-   /**
-    * Physical address of the item.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Physical address of the item.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -38,13 +38,13 @@ class Address
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

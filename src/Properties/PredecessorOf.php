@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PredecessorOf
 {
-    const SCHEMA_URL = "http://schema.org/predecessorOf";
-    const PROPERTY_NAME = "predecessorOf";
+    const SCHEMA_URL = 'http://schema.org/predecessorOf';
+    const PROPERTY_NAME = 'predecessorOf';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PredecessorOf
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ProductModel'
+        'http://schema.org/ProductModel',
     ];
 
-   /**
-    * A pointer from a previous, often discontinued variant of the product to its newer variant.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A pointer from a previous, often discontinued variant of the product to its newer variant.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PredecessorOf
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

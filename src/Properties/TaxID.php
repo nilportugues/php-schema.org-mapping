@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class TaxID
 {
-    const SCHEMA_URL = "http://schema.org/taxID";
-    const PROPERTY_NAME = "taxID";
+    const SCHEMA_URL = 'http://schema.org/taxID';
+    const PROPERTY_NAME = 'taxID';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class TaxID
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Organization',
-		'http://schema.org/Person'
+        'http://schema.org/Organization',
+        'http://schema.org/Person',
     ];
 
-   /**
-    * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class TaxID
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

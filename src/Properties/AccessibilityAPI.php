@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AccessibilityAPI
 {
-    const SCHEMA_URL = "http://schema.org/accessibilityAPI";
-    const PROPERTY_NAME = "accessibilityAPI";
+    const SCHEMA_URL = 'http://schema.org/accessibilityAPI';
+    const PROPERTY_NAME = 'accessibilityAPI';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class AccessibilityAPI
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CreativeWork'
+        'http://schema.org/CreativeWork',
     ];
 
-   /**
-    * Indicates that the resource is compatible with the referenced accessibility API (WebSchemas wiki lists possible values).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Indicates that the resource is compatible with the referenced accessibility API (WebSchemas wiki lists possible values).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class AccessibilityAPI
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

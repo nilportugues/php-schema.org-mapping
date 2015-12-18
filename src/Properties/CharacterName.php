@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class CharacterName
 {
-    const SCHEMA_URL = "http://schema.org/characterName";
-    const PROPERTY_NAME = "characterName";
+    const SCHEMA_URL = 'http://schema.org/characterName';
+    const PROPERTY_NAME = 'characterName';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class CharacterName
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/PerformanceRole'
+        'http://schema.org/PerformanceRole',
     ];
 
-   /**
-    * The name of a character played in some acting or performing role, i.e. in a PerformanceRole.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The name of a character played in some acting or performing role, i.e. in a PerformanceRole.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class CharacterName
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

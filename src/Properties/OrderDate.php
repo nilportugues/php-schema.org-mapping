@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class OrderDate
 {
-    const SCHEMA_URL = "http://schema.org/orderDate";
-    const PROPERTY_NAME = "orderDate";
+    const SCHEMA_URL = 'http://schema.org/orderDate';
+    const PROPERTY_NAME = 'orderDate';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class OrderDate
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Order'
+        'http://schema.org/Order',
     ];
 
-   /**
-    * Date order was placed.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Date order was placed.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class OrderDate
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Award
 {
-    const SCHEMA_URL = "http://schema.org/award";
-    const PROPERTY_NAME = "award";
+    const SCHEMA_URL = 'http://schema.org/award';
+    const PROPERTY_NAME = 'award';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,20 +17,20 @@ class Award
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CreativeWork',
-		'http://schema.org/Organization',
-		'http://schema.org/Person',
-		'http://schema.org/Product',
-		'http://schema.org/Service'
+        'http://schema.org/CreativeWork',
+        'http://schema.org/Organization',
+        'http://schema.org/Person',
+        'http://schema.org/Product',
+        'http://schema.org/Service',
     ];
 
-   /**
-    * An award won by or for this item.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * An award won by or for this item.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -38,13 +38,13 @@ class Award
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

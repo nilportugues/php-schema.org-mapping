@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class RegionDrained
 {
-    const SCHEMA_URL = "http://schema.org/regionDrained";
-    const PROPERTY_NAME = "regionDrained";
+    const SCHEMA_URL = 'http://schema.org/regionDrained';
+    const PROPERTY_NAME = 'regionDrained';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class RegionDrained
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/LymphaticVessel',
-		'http://schema.org/Vein'
+        'http://schema.org/LymphaticVessel',
+        'http://schema.org/Vein',
     ];
 
-   /**
-    * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class RegionDrained
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

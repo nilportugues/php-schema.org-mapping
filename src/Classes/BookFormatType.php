@@ -1,30 +1,24 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-
 /**
- * Classes BookFormatType
- * @package NilPortugues\SchemaOrg\Classes
- *
- * The publication format of the book.
+ * Classes BookFormatType.
  */
 class BookFormatType
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/BookFormatType";
+    private static $schemaUrl = 'http://schema.org/BookFormatType';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
-
-
 }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class InventoryLevel
 {
-    const SCHEMA_URL = "http://schema.org/inventoryLevel";
-    const PROPERTY_NAME = "inventoryLevel";
+    const SCHEMA_URL = 'http://schema.org/inventoryLevel';
+    const PROPERTY_NAME = 'inventoryLevel';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,18 +17,18 @@ class InventoryLevel
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Offer',
-		'http://schema.org/Demand',
-		'http://schema.org/SomeProducts'
+        'http://schema.org/Offer',
+        'http://schema.org/Demand',
+        'http://schema.org/SomeProducts',
     ];
 
-   /**
-    * The current approximate inventory level for the item or items.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The current approximate inventory level for the item or items.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -36,13 +36,13 @@ class InventoryLevel
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

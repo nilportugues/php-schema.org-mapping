@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Contraindication
 {
-    const SCHEMA_URL = "http://schema.org/contraindication";
-    const PROPERTY_NAME = "contraindication";
+    const SCHEMA_URL = 'http://schema.org/contraindication';
+    const PROPERTY_NAME = 'contraindication';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class Contraindication
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalTherapy',
-		'http://schema.org/MedicalDevice'
+        'http://schema.org/MedicalTherapy',
+        'http://schema.org/MedicalDevice',
     ];
 
-   /**
-    * A contraindication for this therapy.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A contraindication for this therapy.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class Contraindication
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

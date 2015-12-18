@@ -2,7 +2,7 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 12/17/15
- * Time: 11:46 PM
+ * Time: 11:46 PM.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -10,10 +10,8 @@
 
 namespace NilPortugues\SchemaOrg;
 
-
 /**
- * Class Mapping
- * @package NilPortugues\SchemaOrg
+ * Class Mapping.
  */
 class Mapping
 {
@@ -65,4 +63,4 @@ class Mapping
     {
         return $this->propertyUrl;
     }
-} 
+}

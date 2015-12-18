@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Closes
 {
-    const SCHEMA_URL = "http://schema.org/closes";
-    const PROPERTY_NAME = "closes";
+    const SCHEMA_URL = 'http://schema.org/closes';
+    const PROPERTY_NAME = 'closes';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Closes
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/OpeningHoursSpecification'
+        'http://schema.org/OpeningHoursSpecification',
     ];
 
-   /**
-    * The closing hour of the place or service on the given day(s) of the week.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The closing hour of the place or service on the given day(s) of the week.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Closes
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

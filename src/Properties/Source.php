@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Source
 {
-    const SCHEMA_URL = "http://schema.org/source";
-    const PROPERTY_NAME = "source";
+    const SCHEMA_URL = 'http://schema.org/source';
+    const PROPERTY_NAME = 'source';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Source
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Artery'
+        'http://schema.org/Artery',
     ];
 
-   /**
-    * The anatomical or organ system that the artery originates from.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The anatomical or organ system that the artery originates from.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Source
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

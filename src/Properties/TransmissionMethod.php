@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class TransmissionMethod
 {
-    const SCHEMA_URL = "http://schema.org/transmissionMethod";
-    const PROPERTY_NAME = "transmissionMethod";
+    const SCHEMA_URL = 'http://schema.org/transmissionMethod';
+    const PROPERTY_NAME = 'transmissionMethod';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class TransmissionMethod
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/InfectiousDisease'
+        'http://schema.org/InfectiousDisease',
     ];
 
-   /**
-    * How the disease spreads, either as a route or vector, for example 'direct contact', 'Aedes aegypti', etc.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * How the disease spreads, either as a route or vector, for example 'direct contact', 'Aedes aegypti', etc.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class TransmissionMethod
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

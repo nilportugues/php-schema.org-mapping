@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class InstallUrl
 {
-    const SCHEMA_URL = "http://schema.org/installUrl";
-    const PROPERTY_NAME = "installUrl";
+    const SCHEMA_URL = 'http://schema.org/installUrl';
+    const PROPERTY_NAME = 'installUrl';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class InstallUrl
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/SoftwareApplication'
+        'http://schema.org/SoftwareApplication',
     ];
 
-   /**
-    * URL at which the app may be installed, if different from the URL of the item.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * URL at which the app may be installed, if different from the URL of the item.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class InstallUrl
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

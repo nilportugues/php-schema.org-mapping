@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AddOn
 {
-    const SCHEMA_URL = "http://schema.org/addOn";
-    const PROPERTY_NAME = "addOn";
+    const SCHEMA_URL = 'http://schema.org/addOn';
+    const PROPERTY_NAME = 'addOn';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class AddOn
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Offer'
+        'http://schema.org/Offer',
     ];
 
-   /**
-    * An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class AddOn
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

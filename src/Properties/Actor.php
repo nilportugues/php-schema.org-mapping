@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Actor
 {
-    const SCHEMA_URL = "http://schema.org/actor";
-    const PROPERTY_NAME = "actor";
+    const SCHEMA_URL = 'http://schema.org/actor';
+    const PROPERTY_NAME = 'actor';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,25 +17,25 @@ class Actor
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Movie',
-		'http://schema.org/VideoObject',
-		'http://schema.org/VideoGame',
-		'http://schema.org/Episode',
-		'http://schema.org/CreativeWorkSeason',
-		'http://schema.org/RadioSeries',
-		'http://schema.org/MovieSeries',
-		'http://schema.org/VideoGameSeries',
-		'http://schema.org/TVSeries',
-		'http://schema.org/Clip'
+        'http://schema.org/Movie',
+        'http://schema.org/VideoObject',
+        'http://schema.org/VideoGame',
+        'http://schema.org/Episode',
+        'http://schema.org/CreativeWorkSeason',
+        'http://schema.org/RadioSeries',
+        'http://schema.org/MovieSeries',
+        'http://schema.org/VideoGameSeries',
+        'http://schema.org/TVSeries',
+        'http://schema.org/Clip',
     ];
 
-   /**
-    * An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -43,13 +43,13 @@ class Actor
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

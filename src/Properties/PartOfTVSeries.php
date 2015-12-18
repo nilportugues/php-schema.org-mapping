@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PartOfTVSeries
 {
-    const SCHEMA_URL = "http://schema.org/partOfTVSeries";
-    const PROPERTY_NAME = "partOfTVSeries";
+    const SCHEMA_URL = 'http://schema.org/partOfTVSeries';
+    const PROPERTY_NAME = 'partOfTVSeries';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,18 +17,18 @@ class PartOfTVSeries
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/TVEpisode',
-		'http://schema.org/TVSeason',
-		'http://schema.org/TVClip'
+        'http://schema.org/TVEpisode',
+        'http://schema.org/TVSeason',
+        'http://schema.org/TVClip',
     ];
 
-   /**
-    * The TV series to which this episode or season belongs.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The TV series to which this episode or season belongs.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -36,13 +36,13 @@ class PartOfTVSeries
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

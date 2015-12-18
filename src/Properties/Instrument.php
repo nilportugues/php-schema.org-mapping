@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Instrument
 {
-    const SCHEMA_URL = "http://schema.org/instrument";
-    const PROPERTY_NAME = "instrument";
+    const SCHEMA_URL = 'http://schema.org/instrument';
+    const PROPERTY_NAME = 'instrument';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Instrument
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Action'
+        'http://schema.org/Action',
     ];
 
-   /**
-    * The object that helped the agent perform the action. e.g. John wrote a book with *a pen*.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The object that helped the agent perform the action. e.g. John wrote a book with *a pen*.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Instrument
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Endorsee
 {
-    const SCHEMA_URL = "http://schema.org/endorsee";
-    const PROPERTY_NAME = "endorsee";
+    const SCHEMA_URL = 'http://schema.org/endorsee';
+    const PROPERTY_NAME = 'endorsee';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Endorsee
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/EndorseAction'
+        'http://schema.org/EndorseAction',
     ];
 
-   /**
-    * A sub property of participant. The person/organization being supported.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of participant. The person/organization being supported.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Endorsee
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

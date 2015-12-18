@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AssociatedArticle
 {
-    const SCHEMA_URL = "http://schema.org/associatedArticle";
-    const PROPERTY_NAME = "associatedArticle";
+    const SCHEMA_URL = 'http://schema.org/associatedArticle';
+    const PROPERTY_NAME = 'associatedArticle';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class AssociatedArticle
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MediaObject'
+        'http://schema.org/MediaObject',
     ];
 
-   /**
-    * A NewsArticle associated with the Media Object.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A NewsArticle associated with the Media Object.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class AssociatedArticle
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

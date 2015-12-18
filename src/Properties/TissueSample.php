@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class TissueSample
 {
-    const SCHEMA_URL = "http://schema.org/tissueSample";
-    const PROPERTY_NAME = "tissueSample";
+    const SCHEMA_URL = 'http://schema.org/tissueSample';
+    const PROPERTY_NAME = 'tissueSample';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class TissueSample
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/PathologyTest'
+        'http://schema.org/PathologyTest',
     ];
 
-   /**
-    * The type of tissue sample required for the test.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The type of tissue sample required for the test.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class TissueSample
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

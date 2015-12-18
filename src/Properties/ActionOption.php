@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ActionOption
 {
-    const SCHEMA_URL = "http://schema.org/actionOption";
-    const PROPERTY_NAME = "actionOption";
+    const SCHEMA_URL = 'http://schema.org/actionOption';
+    const PROPERTY_NAME = 'actionOption';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ActionOption
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ChooseAction'
+        'http://schema.org/ChooseAction',
     ];
 
-   /**
-    * A sub property of object. The options subject to this action.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of object. The options subject to this action.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ActionOption
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

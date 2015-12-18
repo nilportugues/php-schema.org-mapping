@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Aircraft
 {
-    const SCHEMA_URL = "http://schema.org/aircraft";
-    const PROPERTY_NAME = "aircraft";
+    const SCHEMA_URL = 'http://schema.org/aircraft';
+    const PROPERTY_NAME = 'aircraft';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Aircraft
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Flight'
+        'http://schema.org/Flight',
     ];
 
-   /**
-    * The kind of aircraft (e.g., "Boeing 747").
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The kind of aircraft (e.g., "Boeing 747").
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Aircraft
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

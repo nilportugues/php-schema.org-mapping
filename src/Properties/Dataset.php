@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Dataset
 {
-    const SCHEMA_URL = "http://schema.org/dataset";
-    const PROPERTY_NAME = "dataset";
+    const SCHEMA_URL = 'http://schema.org/dataset';
+    const PROPERTY_NAME = 'dataset';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Dataset
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/DataCatalog'
+        'http://schema.org/DataCatalog',
     ];
 
-   /**
-    * A dataset contained in a catalog.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A dataset contained in a catalog.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Dataset
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

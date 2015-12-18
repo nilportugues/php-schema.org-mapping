@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class GreaterOrEqual
 {
-    const SCHEMA_URL = "http://schema.org/greaterOrEqual";
-    const PROPERTY_NAME = "greaterOrEqual";
+    const SCHEMA_URL = 'http://schema.org/greaterOrEqual';
+    const PROPERTY_NAME = 'greaterOrEqual';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class GreaterOrEqual
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/QualitativeValue'
+        'http://schema.org/QualitativeValue',
     ];
 
-   /**
-    * This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class GreaterOrEqual
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

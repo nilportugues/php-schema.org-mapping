@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class CommentText
 {
-    const SCHEMA_URL = "http://schema.org/commentText";
-    const PROPERTY_NAME = "commentText";
+    const SCHEMA_URL = 'http://schema.org/commentText';
+    const PROPERTY_NAME = 'commentText';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class CommentText
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/UserComments'
+        'http://schema.org/UserComments',
     ];
 
-   /**
-    * The text of the UserComment.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The text of the UserComment.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class CommentText
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

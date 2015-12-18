@@ -1,8 +1,16 @@
 {
-    "name": "nilportugues/schemaorg-mapping",
+    "name": "nilportugues/schema.org-mapping",
     "description": "Schema.org mapping for JSON-LD generation",
     "type": "library",
+    "homepage": "http://nilportugues.com",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Nil Portugués Calderó",
+            "email": "contact@nilportugues.com",
+            "role": "Project Lead Developer"
+        }
+    ],
     "repositories": [
         {
             "type": "package",
@@ -16,15 +24,26 @@
             }
         }
     ],
-    "authors": [
-        {
-            "name": "Nil Portugués Calderó",
-            "email": "nilopc@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
     "require": {
         "schemaorg/schemaorg" : "2.*",
         "zendframework/zend-code": "2.*"
-    }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "fabpot/php-cs-fixer": "^1.10"
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-4": {
+            "NilPortugues\\SchemaOrg\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NilPortugues\\Tests\\SchemaOrg\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
 }

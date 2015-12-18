@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class FaxNumber
 {
-    const SCHEMA_URL = "http://schema.org/faxNumber";
-    const PROPERTY_NAME = "faxNumber";
+    const SCHEMA_URL = 'http://schema.org/faxNumber';
+    const PROPERTY_NAME = 'faxNumber';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,19 +17,19 @@ class FaxNumber
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Organization',
-		'http://schema.org/Place',
-		'http://schema.org/ContactPoint',
-		'http://schema.org/Person'
+        'http://schema.org/Organization',
+        'http://schema.org/Place',
+        'http://schema.org/ContactPoint',
+        'http://schema.org/Person',
     ];
 
-   /**
-    * The fax number.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The fax number.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -37,13 +37,13 @@ class FaxNumber
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

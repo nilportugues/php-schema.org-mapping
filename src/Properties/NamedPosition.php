@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class NamedPosition
 {
-    const SCHEMA_URL = "http://schema.org/namedPosition";
-    const PROPERTY_NAME = "namedPosition";
+    const SCHEMA_URL = 'http://schema.org/namedPosition';
+    const PROPERTY_NAME = 'namedPosition';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class NamedPosition
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Role'
+        'http://schema.org/Role',
     ];
 
-   /**
-    * A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class NamedPosition
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

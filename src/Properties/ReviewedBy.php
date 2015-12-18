@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ReviewedBy
 {
-    const SCHEMA_URL = "http://schema.org/reviewedBy";
-    const PROPERTY_NAME = "reviewedBy";
+    const SCHEMA_URL = 'http://schema.org/reviewedBy';
+    const PROPERTY_NAME = 'reviewedBy';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ReviewedBy
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/WebPage'
+        'http://schema.org/WebPage',
     ];
 
-   /**
-    * People or organizations that have reviewed the content on this web page for accuracy and/or completeness.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * People or organizations that have reviewed the content on this web page for accuracy and/or completeness.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ReviewedBy
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

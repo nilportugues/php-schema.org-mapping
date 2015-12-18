@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -14,103 +15,100 @@ use NilPortugues\SchemaOrg\Properties\SupersededBy;
 use NilPortugues\SchemaOrg\Properties\Url;
 
 /**
- * Classes MedicalProcedureType
- * @package NilPortugues\SchemaOrg\Classes
- *
- * An enumeration that describes different types of medical procedures.
+ * Classes MedicalProcedureType.
  */
 class MedicalProcedureType
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/MedicalProcedureType";
+    private static $schemaUrl = 'http://schema.org/MedicalProcedureType';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function additionalType()
     {
         return AdditionalType::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function alternateName()
     {
         return AlternateName::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function description()
     {
         return Description::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function image()
     {
         return Image::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function mainEntityOfPage()
     {
         return MainEntityOfPage::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function name()
     {
         return Name::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function potentialAction()
     {
         return PotentialAction::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function sameAs()
     {
         return SameAs::create(Thing::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function supersededBy()
     {
         return SupersededBy::create(Enumeration::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function url()
     {
         return Url::create(Thing::schemaUrl());

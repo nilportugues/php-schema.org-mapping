@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class SameAs
 {
-    const SCHEMA_URL = "http://schema.org/sameAs";
-    const PROPERTY_NAME = "sameAs";
+    const SCHEMA_URL = 'http://schema.org/sameAs';
+    const PROPERTY_NAME = 'sameAs';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class SameAs
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Thing'
+        'http://schema.org/Thing',
     ];
 
-   /**
-    * URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class SameAs
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

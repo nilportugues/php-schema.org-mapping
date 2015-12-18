@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class SpecialCommitments
 {
-    const SCHEMA_URL = "http://schema.org/specialCommitments";
-    const PROPERTY_NAME = "specialCommitments";
+    const SCHEMA_URL = 'http://schema.org/specialCommitments';
+    const PROPERTY_NAME = 'specialCommitments';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class SpecialCommitments
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/JobPosting'
+        'http://schema.org/JobPosting',
     ];
 
-   /**
-    * Any special commitments associated with this job posting. Valid entries include VeteranCommit, MilitarySpouseCommit, etc.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Any special commitments associated with this job posting. Valid entries include VeteranCommit, MilitarySpouseCommit, etc.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class SpecialCommitments
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

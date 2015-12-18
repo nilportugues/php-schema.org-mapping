@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ProgrammingModel
 {
-    const SCHEMA_URL = "http://schema.org/programmingModel";
-    const PROPERTY_NAME = "programmingModel";
+    const SCHEMA_URL = 'http://schema.org/programmingModel';
+    const PROPERTY_NAME = 'programmingModel';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ProgrammingModel
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/APIReference'
+        'http://schema.org/APIReference',
     ];
 
-   /**
-    * Indicates whether API is managed or unmanaged.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Indicates whether API is managed or unmanaged.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ProgrammingModel
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class UsesDevice
 {
-    const SCHEMA_URL = "http://schema.org/usesDevice";
-    const PROPERTY_NAME = "usesDevice";
+    const SCHEMA_URL = 'http://schema.org/usesDevice';
+    const PROPERTY_NAME = 'usesDevice';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class UsesDevice
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalTest'
+        'http://schema.org/MedicalTest',
     ];
 
-   /**
-    * Device used to perform the test.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Device used to perform the test.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class UsesDevice
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

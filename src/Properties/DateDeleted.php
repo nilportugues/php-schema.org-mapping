@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class DateDeleted
 {
-    const SCHEMA_URL = "http://schema.org/dateDeleted";
-    const PROPERTY_NAME = "dateDeleted";
+    const SCHEMA_URL = 'http://schema.org/dateDeleted';
+    const PROPERTY_NAME = 'dateDeleted';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class DateDeleted
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/DataFeedItem'
+        'http://schema.org/DataFeedItem',
     ];
 
-   /**
-    * The datetime the item was removed from the DataFeed.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The datetime the item was removed from the DataFeed.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class DateDeleted
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

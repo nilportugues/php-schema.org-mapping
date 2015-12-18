@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class BookingAgent
 {
-    const SCHEMA_URL = "http://schema.org/bookingAgent";
-    const PROPERTY_NAME = "bookingAgent";
+    const SCHEMA_URL = 'http://schema.org/bookingAgent';
+    const PROPERTY_NAME = 'bookingAgent';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class BookingAgent
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Reservation'
+        'http://schema.org/Reservation',
     ];
 
-   /**
-    * 'bookingAgent' is an out-dated term indicating a 'broker' that serves as a booking agent.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * 'bookingAgent' is an out-dated term indicating a 'broker' that serves as a booking agent.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class BookingAgent
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AdvanceBookingRequirement
 {
-    const SCHEMA_URL = "http://schema.org/advanceBookingRequirement";
-    const PROPERTY_NAME = "advanceBookingRequirement";
+    const SCHEMA_URL = 'http://schema.org/advanceBookingRequirement';
+    const PROPERTY_NAME = 'advanceBookingRequirement';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class AdvanceBookingRequirement
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Offer',
-		'http://schema.org/Demand'
+        'http://schema.org/Offer',
+        'http://schema.org/Demand',
     ];
 
-   /**
-    * The amount of time that is required between accepting the offer and the actual usage of the resource or service.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The amount of time that is required between accepting the offer and the actual usage of the resource or service.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class AdvanceBookingRequirement
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class FatContent
 {
-    const SCHEMA_URL = "http://schema.org/fatContent";
-    const PROPERTY_NAME = "fatContent";
+    const SCHEMA_URL = 'http://schema.org/fatContent';
+    const PROPERTY_NAME = 'fatContent';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class FatContent
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/NutritionInformation'
+        'http://schema.org/NutritionInformation',
     ];
 
-   /**
-    * The number of grams of fat.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The number of grams of fat.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class FatContent
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Replacer
 {
-    const SCHEMA_URL = "http://schema.org/replacer";
-    const PROPERTY_NAME = "replacer";
+    const SCHEMA_URL = 'http://schema.org/replacer';
+    const PROPERTY_NAME = 'replacer';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Replacer
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ReplaceAction'
+        'http://schema.org/ReplaceAction',
     ];
 
-   /**
-    * A sub property of object. The object that replaces.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of object. The object that replaces.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Replacer
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

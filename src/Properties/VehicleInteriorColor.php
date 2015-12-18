@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class VehicleInteriorColor
 {
-    const SCHEMA_URL = "http://schema.org/vehicleInteriorColor";
-    const PROPERTY_NAME = "vehicleInteriorColor";
+    const SCHEMA_URL = 'http://schema.org/vehicleInteriorColor';
+    const PROPERTY_NAME = 'vehicleInteriorColor';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class VehicleInteriorColor
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Vehicle'
+        'http://schema.org/Vehicle',
     ];
 
-   /**
-    * The color or color combination of the interior of the vehicle.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The color or color combination of the interior of the vehicle.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class VehicleInteriorColor
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class SupplyTo
 {
-    const SCHEMA_URL = "http://schema.org/supplyTo";
-    const PROPERTY_NAME = "supplyTo";
+    const SCHEMA_URL = 'http://schema.org/supplyTo';
+    const PROPERTY_NAME = 'supplyTo';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class SupplyTo
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Artery'
+        'http://schema.org/Artery',
     ];
 
-   /**
-    * The area to which the artery supplies blood.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The area to which the artery supplies blood.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class SupplyTo
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

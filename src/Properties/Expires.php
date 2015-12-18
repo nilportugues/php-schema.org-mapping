@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Expires
 {
-    const SCHEMA_URL = "http://schema.org/expires";
-    const PROPERTY_NAME = "expires";
+    const SCHEMA_URL = 'http://schema.org/expires';
+    const PROPERTY_NAME = 'expires';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Expires
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MediaObject'
+        'http://schema.org/MediaObject',
     ];
 
-   /**
-    * Date the content expires and is no longer useful or available. Useful for videos.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Date the content expires and is no longer useful or available. Useful for videos.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Expires
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

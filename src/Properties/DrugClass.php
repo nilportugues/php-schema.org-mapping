@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class DrugClass
 {
-    const SCHEMA_URL = "http://schema.org/drugClass";
-    const PROPERTY_NAME = "drugClass";
+    const SCHEMA_URL = 'http://schema.org/drugClass';
+    const PROPERTY_NAME = 'drugClass';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class DrugClass
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Drug'
+        'http://schema.org/Drug',
     ];
 
-   /**
-    * The class of drug this belongs to (e.g., statins).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The class of drug this belongs to (e.g., statins).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class DrugClass
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

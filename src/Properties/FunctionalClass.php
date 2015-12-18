@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class FunctionalClass
 {
-    const SCHEMA_URL = "http://schema.org/functionalClass";
-    const PROPERTY_NAME = "functionalClass";
+    const SCHEMA_URL = 'http://schema.org/functionalClass';
+    const PROPERTY_NAME = 'functionalClass';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class FunctionalClass
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Joint'
+        'http://schema.org/Joint',
     ];
 
-   /**
-    * The degree of mobility the joint allows.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The degree of mobility the joint allows.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class FunctionalClass
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

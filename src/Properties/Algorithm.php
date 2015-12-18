@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Algorithm
 {
-    const SCHEMA_URL = "http://schema.org/algorithm";
-    const PROPERTY_NAME = "algorithm";
+    const SCHEMA_URL = 'http://schema.org/algorithm';
+    const PROPERTY_NAME = 'algorithm';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Algorithm
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalRiskScore'
+        'http://schema.org/MedicalRiskScore',
     ];
 
-   /**
-    * The algorithm or rules to follow to compute the score.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The algorithm or rules to follow to compute the score.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Algorithm
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

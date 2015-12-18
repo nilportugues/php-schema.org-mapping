@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class RatingValue
 {
-    const SCHEMA_URL = "http://schema.org/ratingValue";
-    const PROPERTY_NAME = "ratingValue";
+    const SCHEMA_URL = 'http://schema.org/ratingValue';
+    const PROPERTY_NAME = 'ratingValue';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class RatingValue
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Rating'
+        'http://schema.org/Rating',
     ];
 
-   /**
-    * The rating for the content.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The rating for the content.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class RatingValue
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

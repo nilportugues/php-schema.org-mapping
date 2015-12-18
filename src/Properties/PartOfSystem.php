@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PartOfSystem
 {
-    const SCHEMA_URL = "http://schema.org/partOfSystem";
-    const PROPERTY_NAME = "partOfSystem";
+    const SCHEMA_URL = 'http://schema.org/partOfSystem';
+    const PROPERTY_NAME = 'partOfSystem';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PartOfSystem
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/AnatomicalStructure'
+        'http://schema.org/AnatomicalStructure',
     ];
 
-   /**
-    * The anatomical or organ system that this structure is part of.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The anatomical or organ system that this structure is part of.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PartOfSystem
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

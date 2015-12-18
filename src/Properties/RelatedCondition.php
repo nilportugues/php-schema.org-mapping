@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class RelatedCondition
 {
-    const SCHEMA_URL = "http://schema.org/relatedCondition";
-    const PROPERTY_NAME = "relatedCondition";
+    const SCHEMA_URL = 'http://schema.org/relatedCondition';
+    const PROPERTY_NAME = 'relatedCondition';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,18 +17,18 @@ class RelatedCondition
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/AnatomicalStructure',
-		'http://schema.org/AnatomicalSystem',
-		'http://schema.org/SuperficialAnatomy'
+        'http://schema.org/AnatomicalStructure',
+        'http://schema.org/AnatomicalSystem',
+        'http://schema.org/SuperficialAnatomy',
     ];
 
-   /**
-    * A medical condition associated with this anatomy.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A medical condition associated with this anatomy.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -36,13 +36,13 @@ class RelatedCondition
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

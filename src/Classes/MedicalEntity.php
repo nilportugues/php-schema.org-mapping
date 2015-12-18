@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -10,71 +11,68 @@ use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
 use NilPortugues\SchemaOrg\Properties\Study;
 
 /**
- * Classes MedicalEntity
- * @package NilPortugues\SchemaOrg\Classes
- *
- * The most generic type of entity related to health and the practice of medicine.
+ * Classes MedicalEntity.
  */
 class MedicalEntity
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/MedicalEntity";
+    private static $schemaUrl = 'http://schema.org/MedicalEntity';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function code()
     {
         return Code::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function guideline()
     {
         return Guideline::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function medicineSystem()
     {
         return MedicineSystem::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function recognizingAuthority()
     {
         return RecognizingAuthority::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function relevantSpecialty()
     {
         return RelevantSpecialty::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function study()
     {
         return Study::create(self::schemaUrl());

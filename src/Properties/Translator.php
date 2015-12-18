@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Translator
 {
-    const SCHEMA_URL = "http://schema.org/translator";
-    const PROPERTY_NAME = "translator";
+    const SCHEMA_URL = 'http://schema.org/translator';
+    const PROPERTY_NAME = 'translator';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Translator
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CreativeWork'
+        'http://schema.org/CreativeWork',
     ];
 
-   /**
-    * Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Translator
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

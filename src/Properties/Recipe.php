@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Recipe
 {
-    const SCHEMA_URL = "http://schema.org/recipe";
-    const PROPERTY_NAME = "recipe";
+    const SCHEMA_URL = 'http://schema.org/recipe';
+    const PROPERTY_NAME = 'recipe';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Recipe
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CookAction'
+        'http://schema.org/CookAction',
     ];
 
-   /**
-    * A sub property of instrument. The recipe/instructions used to perform the action.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sub property of instrument. The recipe/instructions used to perform the action.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Recipe
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

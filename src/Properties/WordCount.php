@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class WordCount
 {
-    const SCHEMA_URL = "http://schema.org/wordCount";
-    const PROPERTY_NAME = "wordCount";
+    const SCHEMA_URL = 'http://schema.org/wordCount';
+    const PROPERTY_NAME = 'wordCount';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class WordCount
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Article'
+        'http://schema.org/Article',
     ];
 
-   /**
-    * The number of words in the text of the Article.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The number of words in the text of the Article.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class WordCount
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

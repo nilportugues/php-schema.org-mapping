@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Affiliation
 {
-    const SCHEMA_URL = "http://schema.org/affiliation";
-    const PROPERTY_NAME = "affiliation";
+    const SCHEMA_URL = 'http://schema.org/affiliation';
+    const PROPERTY_NAME = 'affiliation';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Affiliation
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Person'
+        'http://schema.org/Person',
     ];
 
-   /**
-    * An organization that this person is affiliated with. For example, a school/university, a club, or a team.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * An organization that this person is affiliated with. For example, a school/university, a club, or a team.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Affiliation
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

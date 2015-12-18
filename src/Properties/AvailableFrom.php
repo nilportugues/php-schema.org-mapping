@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AvailableFrom
 {
-    const SCHEMA_URL = "http://schema.org/availableFrom";
-    const PROPERTY_NAME = "availableFrom";
+    const SCHEMA_URL = 'http://schema.org/availableFrom';
+    const PROPERTY_NAME = 'availableFrom';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class AvailableFrom
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/DeliveryEvent'
+        'http://schema.org/DeliveryEvent',
     ];
 
-   /**
-    * When the item is available for pickup from the store, locker, etc.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * When the item is available for pickup from the store, locker, etc.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class AvailableFrom
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

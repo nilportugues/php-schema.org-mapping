@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class DrugUnit
 {
-    const SCHEMA_URL = "http://schema.org/drugUnit";
-    const PROPERTY_NAME = "drugUnit";
+    const SCHEMA_URL = 'http://schema.org/drugUnit';
+    const PROPERTY_NAME = 'drugUnit';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class DrugUnit
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/DrugCost'
+        'http://schema.org/DrugCost',
     ];
 
-   /**
-    * The unit in which the drug is measured, e.g. '5 mg tablet'.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The unit in which the drug is measured, e.g. '5 mg tablet'.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class DrugUnit
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

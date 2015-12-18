@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class IncludesObject
 {
-    const SCHEMA_URL = "http://schema.org/includesObject";
-    const PROPERTY_NAME = "includesObject";
+    const SCHEMA_URL = 'http://schema.org/includesObject';
+    const PROPERTY_NAME = 'includesObject';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class IncludesObject
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Offer',
-		'http://schema.org/Demand'
+        'http://schema.org/Offer',
+        'http://schema.org/Demand',
     ];
 
-   /**
-    * This links to a node or nodes indicating the exact quantity of the products included in the offer.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * This links to a node or nodes indicating the exact quantity of the products included in the offer.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class IncludesObject
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

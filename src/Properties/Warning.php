@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Warning
 {
-    const SCHEMA_URL = "http://schema.org/warning";
-    const PROPERTY_NAME = "warning";
+    const SCHEMA_URL = 'http://schema.org/warning';
+    const PROPERTY_NAME = 'warning';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Warning
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Drug'
+        'http://schema.org/Drug',
     ];
 
-   /**
-    * Any FDA or other warnings about the drug (text or URL).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Any FDA or other warnings about the drug (text or URL).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Warning
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -2,7 +2,7 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 12/18/15
- * Time: 10:26 AM
+ * Time: 10:26 AM.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -10,16 +10,14 @@
 
 namespace NilPortugues\SchemaOrg;
 
-
 /**
- * Class InvalidSchemaPropertyException
- * @package NilPortugues\SchemaOrg
+ * Class InvalidSchemaPropertyException.
  */
 class InvalidSchemaPropertyException extends \InvalidArgumentException
 {
     /**
-     * @param string    $propertyName
-     * @param string    $schemaClass
+     * @param string $propertyName
+     * @param string $schemaClass
      */
     public function __construct($propertyName, $schemaClass)
     {
@@ -27,4 +25,4 @@ class InvalidSchemaPropertyException extends \InvalidArgumentException
 
         parent::__construct($message);
     }
-} 
+}

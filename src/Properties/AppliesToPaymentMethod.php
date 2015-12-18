@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AppliesToPaymentMethod
 {
-    const SCHEMA_URL = "http://schema.org/appliesToPaymentMethod";
-    const PROPERTY_NAME = "appliesToPaymentMethod";
+    const SCHEMA_URL = 'http://schema.org/appliesToPaymentMethod';
+    const PROPERTY_NAME = 'appliesToPaymentMethod';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class AppliesToPaymentMethod
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/PaymentChargeSpecification'
+        'http://schema.org/PaymentChargeSpecification',
     ];
 
-   /**
-    * The payment method(s) to which the payment charge specification applies.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The payment method(s) to which the payment charge specification applies.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class AppliesToPaymentMethod
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

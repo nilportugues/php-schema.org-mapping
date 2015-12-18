@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Discount
 {
-    const SCHEMA_URL = "http://schema.org/discount";
-    const PROPERTY_NAME = "discount";
+    const SCHEMA_URL = 'http://schema.org/discount';
+    const PROPERTY_NAME = 'discount';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Discount
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Order'
+        'http://schema.org/Order',
     ];
 
-   /**
-    * Any discount applied (to an Order).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Any discount applied (to an Order).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Discount
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

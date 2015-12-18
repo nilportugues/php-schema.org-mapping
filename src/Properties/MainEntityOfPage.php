@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class MainEntityOfPage
 {
-    const SCHEMA_URL = "http://schema.org/mainEntityOfPage";
-    const PROPERTY_NAME = "mainEntityOfPage";
+    const SCHEMA_URL = 'http://schema.org/mainEntityOfPage';
+    const PROPERTY_NAME = 'mainEntityOfPage';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,19 +17,19 @@ class MainEntityOfPage
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Thing'
+        'http://schema.org/Thing',
     ];
 
-   /**
-    * Indicates a page (or other CreativeWork) for which this thing is the main entity being described.
-      
-      See background notes for details.
-      
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Indicates a page (or other CreativeWork) for which this thing is the main entity being described.
+     
+     See background notes for details.
+     
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -37,13 +37,13 @@ class MainEntityOfPage
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class OrderNumber
 {
-    const SCHEMA_URL = "http://schema.org/orderNumber";
-    const PROPERTY_NAME = "orderNumber";
+    const SCHEMA_URL = 'http://schema.org/orderNumber';
+    const PROPERTY_NAME = 'orderNumber';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class OrderNumber
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Order'
+        'http://schema.org/Order',
     ];
 
-   /**
-    * The identifier of the transaction.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The identifier of the transaction.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class OrderNumber
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

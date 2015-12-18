@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class CountriesNotSupported
 {
-    const SCHEMA_URL = "http://schema.org/countriesNotSupported";
-    const PROPERTY_NAME = "countriesNotSupported";
+    const SCHEMA_URL = 'http://schema.org/countriesNotSupported';
+    const PROPERTY_NAME = 'countriesNotSupported';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class CountriesNotSupported
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/SoftwareApplication'
+        'http://schema.org/SoftwareApplication',
     ];
 
-   /**
-    * Countries for which the application is not supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Countries for which the application is not supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class CountriesNotSupported
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

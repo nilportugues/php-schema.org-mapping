@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Runtime
 {
-    const SCHEMA_URL = "http://schema.org/runtime";
-    const PROPERTY_NAME = "runtime";
+    const SCHEMA_URL = 'http://schema.org/runtime';
+    const PROPERTY_NAME = 'runtime';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Runtime
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/SoftwareSourceCode'
+        'http://schema.org/SoftwareSourceCode',
     ];
 
-   /**
-    * Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Runtime
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

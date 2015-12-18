@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ProprietaryName
 {
-    const SCHEMA_URL = "http://schema.org/proprietaryName";
-    const PROPERTY_NAME = "proprietaryName";
+    const SCHEMA_URL = 'http://schema.org/proprietaryName';
+    const PROPERTY_NAME = 'proprietaryName';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ProprietaryName
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Diet'
+        'http://schema.org/Diet',
     ];
 
-   /**
-    * Proprietary name given to the diet plan, typically by its originator or creator.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Proprietary name given to the diet plan, typically by its originator or creator.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ProprietaryName
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

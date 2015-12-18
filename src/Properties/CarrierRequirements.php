@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class CarrierRequirements
 {
-    const SCHEMA_URL = "http://schema.org/carrierRequirements";
-    const PROPERTY_NAME = "carrierRequirements";
+    const SCHEMA_URL = 'http://schema.org/carrierRequirements';
+    const PROPERTY_NAME = 'carrierRequirements';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class CarrierRequirements
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MobileApplication'
+        'http://schema.org/MobileApplication',
     ];
 
-   /**
-    * Specifies specific carrier(s) requirements for the application (e.g. an application may only work on a specific carrier network).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Specifies specific carrier(s) requirements for the application (e.g. an application may only work on a specific carrier network).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class CarrierRequirements
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

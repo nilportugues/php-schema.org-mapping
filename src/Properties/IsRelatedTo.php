@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class IsRelatedTo
 {
-    const SCHEMA_URL = "http://schema.org/isRelatedTo";
-    const PROPERTY_NAME = "isRelatedTo";
+    const SCHEMA_URL = 'http://schema.org/isRelatedTo';
+    const PROPERTY_NAME = 'isRelatedTo';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class IsRelatedTo
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Product'
+        'http://schema.org/Product',
     ];
 
-   /**
-    * A pointer to another, somehow related product (or multiple products).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A pointer to another, somehow related product (or multiple products).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class IsRelatedTo
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -1,30 +1,24 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-
 /**
- * Classes URL
- * @package NilPortugues\SchemaOrg\Classes
- *
- * Data type: URL.
+ * Classes URL.
  */
 class URL
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/URL";
+    private static $schemaUrl = 'http://schema.org/URL';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
-
-
 }

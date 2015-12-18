@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PrescriptionStatus
 {
-    const SCHEMA_URL = "http://schema.org/prescriptionStatus";
-    const PROPERTY_NAME = "prescriptionStatus";
+    const SCHEMA_URL = 'http://schema.org/prescriptionStatus';
+    const PROPERTY_NAME = 'prescriptionStatus';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PrescriptionStatus
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Drug'
+        'http://schema.org/Drug',
     ];
 
-   /**
-    * Indicates whether this drug is available by prescription or over-the-counter.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Indicates whether this drug is available by prescription or over-the-counter.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PrescriptionStatus
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

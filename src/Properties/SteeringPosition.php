@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class SteeringPosition
 {
-    const SCHEMA_URL = "http://schema.org/steeringPosition";
-    const PROPERTY_NAME = "steeringPosition";
+    const SCHEMA_URL = 'http://schema.org/steeringPosition';
+    const PROPERTY_NAME = 'steeringPosition';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class SteeringPosition
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Vehicle'
+        'http://schema.org/Vehicle',
     ];
 
-   /**
-    * The position of the steering wheel or similar device (mostly for cars).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The position of the steering wheel or similar device (mostly for cars).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class SteeringPosition
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

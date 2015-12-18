@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class StepValue
 {
-    const SCHEMA_URL = "http://schema.org/stepValue";
-    const PROPERTY_NAME = "stepValue";
+    const SCHEMA_URL = 'http://schema.org/stepValue';
+    const PROPERTY_NAME = 'stepValue';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class StepValue
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/PropertyValueSpecification'
+        'http://schema.org/PropertyValueSpecification',
     ];
 
-   /**
-    * The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class StepValue
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

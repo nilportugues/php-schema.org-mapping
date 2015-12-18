@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Workload
 {
-    const SCHEMA_URL = "http://schema.org/workload";
-    const PROPERTY_NAME = "workload";
+    const SCHEMA_URL = 'http://schema.org/workload';
+    const PROPERTY_NAME = 'workload';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Workload
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ExercisePlan'
+        'http://schema.org/ExercisePlan',
     ];
 
-   /**
-    * Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Workload
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ReleaseDate
 {
-    const SCHEMA_URL = "http://schema.org/releaseDate";
-    const PROPERTY_NAME = "releaseDate";
+    const SCHEMA_URL = 'http://schema.org/releaseDate';
+    const PROPERTY_NAME = 'releaseDate';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ReleaseDate
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Product'
+        'http://schema.org/Product',
     ];
 
-   /**
-    * The release date of a product or product model. This can be used to distinguish the exact variant of a product.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The release date of a product or product model. This can be used to distinguish the exact variant of a product.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ReleaseDate
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

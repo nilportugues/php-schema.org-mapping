@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ValidIn
 {
-    const SCHEMA_URL = "http://schema.org/validIn";
-    const PROPERTY_NAME = "validIn";
+    const SCHEMA_URL = 'http://schema.org/validIn';
+    const PROPERTY_NAME = 'validIn';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ValidIn
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Permit'
+        'http://schema.org/Permit',
     ];
 
-   /**
-    * The geographic area where the permit is valid.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The geographic area where the permit is valid.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ValidIn
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

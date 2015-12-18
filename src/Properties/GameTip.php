@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class GameTip
 {
-    const SCHEMA_URL = "http://schema.org/gameTip";
-    const PROPERTY_NAME = "gameTip";
+    const SCHEMA_URL = 'http://schema.org/gameTip';
+    const PROPERTY_NAME = 'gameTip';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class GameTip
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/VideoGame'
+        'http://schema.org/VideoGame',
     ];
 
-   /**
-    * Links to tips, tactics, etc.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Links to tips, tactics, etc.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class GameTip
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

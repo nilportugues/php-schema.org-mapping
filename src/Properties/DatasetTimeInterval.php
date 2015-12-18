@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class DatasetTimeInterval
 {
-    const SCHEMA_URL = "http://schema.org/datasetTimeInterval";
-    const PROPERTY_NAME = "datasetTimeInterval";
+    const SCHEMA_URL = 'http://schema.org/datasetTimeInterval';
+    const PROPERTY_NAME = 'datasetTimeInterval';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class DatasetTimeInterval
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Dataset'
+        'http://schema.org/Dataset',
     ];
 
-   /**
-    * The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class DatasetTimeInterval
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

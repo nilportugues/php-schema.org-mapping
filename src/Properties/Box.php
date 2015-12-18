@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Box
 {
-    const SCHEMA_URL = "http://schema.org/box";
-    const PROPERTY_NAME = "box";
+    const SCHEMA_URL = 'http://schema.org/box';
+    const PROPERTY_NAME = 'box';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Box
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/GeoShape'
+        'http://schema.org/GeoShape',
     ];
 
-   /**
-    * A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Box
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ClipNumber
 {
-    const SCHEMA_URL = "http://schema.org/clipNumber";
-    const PROPERTY_NAME = "clipNumber";
+    const SCHEMA_URL = 'http://schema.org/clipNumber';
+    const PROPERTY_NAME = 'clipNumber';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ClipNumber
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Clip'
+        'http://schema.org/Clip',
     ];
 
-   /**
-    * Position of the clip within an ordered group of clips.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Position of the clip within an ordered group of clips.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ClipNumber
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

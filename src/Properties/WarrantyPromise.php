@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class WarrantyPromise
 {
-    const SCHEMA_URL = "http://schema.org/warrantyPromise";
-    const PROPERTY_NAME = "warrantyPromise";
+    const SCHEMA_URL = 'http://schema.org/warrantyPromise';
+    const PROPERTY_NAME = 'warrantyPromise';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class WarrantyPromise
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/BuyAction',
-		'http://schema.org/SellAction'
+        'http://schema.org/BuyAction',
+        'http://schema.org/SellAction',
     ];
 
-   /**
-    * The warranty promise(s) included in the offer.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The warranty promise(s) included in the offer.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class WarrantyPromise
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

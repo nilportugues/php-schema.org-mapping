@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class InteractionType
 {
-    const SCHEMA_URL = "http://schema.org/interactionType";
-    const PROPERTY_NAME = "interactionType";
+    const SCHEMA_URL = 'http://schema.org/interactionType';
+    const PROPERTY_NAME = 'interactionType';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class InteractionType
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/InteractionCounter'
+        'http://schema.org/InteractionCounter',
     ];
 
-   /**
-    * The Action representing the type of interaction. For up votes, +1s, etc. use LikeAction. For down votes use DislikeAction. Otherwise, use the most specific Action.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The Action representing the type of interaction. For up votes, +1s, etc. use LikeAction. For down votes use DislikeAction. Otherwise, use the most specific Action.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class InteractionType
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

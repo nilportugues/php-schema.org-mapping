@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Performers
 {
-    const SCHEMA_URL = "http://schema.org/performers";
-    const PROPERTY_NAME = "performers";
+    const SCHEMA_URL = 'http://schema.org/performers';
+    const PROPERTY_NAME = 'performers';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Performers
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Event'
+        'http://schema.org/Event',
     ];
 
-   /**
-    * The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Performers
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class NumberOfSeasons
 {
-    const SCHEMA_URL = "http://schema.org/numberOfSeasons";
-    const PROPERTY_NAME = "numberOfSeasons";
+    const SCHEMA_URL = 'http://schema.org/numberOfSeasons';
+    const PROPERTY_NAME = 'numberOfSeasons';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,18 +17,18 @@ class NumberOfSeasons
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/TVSeries',
-		'http://schema.org/RadioSeries',
-		'http://schema.org/VideoGameSeries'
+        'http://schema.org/TVSeries',
+        'http://schema.org/RadioSeries',
+        'http://schema.org/VideoGameSeries',
     ];
 
-   /**
-    * The number of seasons in this series.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The number of seasons in this series.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -36,13 +36,13 @@ class NumberOfSeasons
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

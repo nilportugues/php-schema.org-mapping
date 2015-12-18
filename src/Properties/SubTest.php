@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class SubTest
 {
-    const SCHEMA_URL = "http://schema.org/subTest";
-    const PROPERTY_NAME = "subTest";
+    const SCHEMA_URL = 'http://schema.org/subTest';
+    const PROPERTY_NAME = 'subTest';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class SubTest
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalTestPanel'
+        'http://schema.org/MedicalTestPanel',
     ];
 
-   /**
-    * A component test of the panel.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A component test of the panel.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class SubTest
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class NumTracks
 {
-    const SCHEMA_URL = "http://schema.org/numTracks";
-    const PROPERTY_NAME = "numTracks";
+    const SCHEMA_URL = 'http://schema.org/numTracks';
+    const PROPERTY_NAME = 'numTracks';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class NumTracks
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MusicPlaylist'
+        'http://schema.org/MusicPlaylist',
     ];
 
-   /**
-    * The number of tracks in this album or playlist.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The number of tracks in this album or playlist.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class NumTracks
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

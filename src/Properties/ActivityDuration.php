@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ActivityDuration
 {
-    const SCHEMA_URL = "http://schema.org/activityDuration";
-    const PROPERTY_NAME = "activityDuration";
+    const SCHEMA_URL = 'http://schema.org/activityDuration';
+    const PROPERTY_NAME = 'activityDuration';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ActivityDuration
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ExercisePlan'
+        'http://schema.org/ExercisePlan',
     ];
 
-   /**
-    * Length of time to engage in the activity.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Length of time to engage in the activity.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ActivityDuration
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

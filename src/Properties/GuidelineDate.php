@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class GuidelineDate
 {
-    const SCHEMA_URL = "http://schema.org/guidelineDate";
-    const PROPERTY_NAME = "guidelineDate";
+    const SCHEMA_URL = 'http://schema.org/guidelineDate';
+    const PROPERTY_NAME = 'guidelineDate';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class GuidelineDate
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalGuideline'
+        'http://schema.org/MedicalGuideline',
     ];
 
-   /**
-    * Date on which this guideline's recommendation was made.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Date on which this guideline's recommendation was made.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class GuidelineDate
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

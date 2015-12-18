@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class TargetUrl
 {
-    const SCHEMA_URL = "http://schema.org/targetUrl";
-    const PROPERTY_NAME = "targetUrl";
+    const SCHEMA_URL = 'http://schema.org/targetUrl';
+    const PROPERTY_NAME = 'targetUrl';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class TargetUrl
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/AlignmentObject'
+        'http://schema.org/AlignmentObject',
     ];
 
-   /**
-    * The URL of a node in an established educational framework.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The URL of a node in an established educational framework.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class TargetUrl
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

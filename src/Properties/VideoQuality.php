@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class VideoQuality
 {
-    const SCHEMA_URL = "http://schema.org/videoQuality";
-    const PROPERTY_NAME = "videoQuality";
+    const SCHEMA_URL = 'http://schema.org/videoQuality';
+    const PROPERTY_NAME = 'videoQuality';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class VideoQuality
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/VideoObject'
+        'http://schema.org/VideoObject',
     ];
 
-   /**
-    * The quality of the video.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The quality of the video.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class VideoQuality
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -78,615 +79,612 @@ use NilPortugues\SchemaOrg\Properties\Video;
 use NilPortugues\SchemaOrg\Properties\WorkExample;
 
 /**
- * Classes ImageObject
- * @package NilPortugues\SchemaOrg\Classes
- *
- * An image file.
+ * Classes ImageObject.
  */
 class ImageObject
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/ImageObject";
+    private static $schemaUrl = 'http://schema.org/ImageObject';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function about()
     {
         return About::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function accessibilityAPI()
     {
         return AccessibilityAPI::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function accessibilityControl()
     {
         return AccessibilityControl::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function accessibilityFeature()
     {
         return AccessibilityFeature::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function accessibilityHazard()
     {
         return AccessibilityHazard::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function accountablePerson()
     {
         return AccountablePerson::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function aggregateRating()
     {
         return AggregateRating::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function alternativeHeadline()
     {
         return AlternativeHeadline::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function associatedMedia()
     {
         return AssociatedMedia::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function audience()
     {
         return Audience::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function audio()
     {
         return Audio::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function author()
     {
         return Author::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function award()
     {
         return Award::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function awards()
     {
         return Awards::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function caption()
     {
         return Caption::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function character()
     {
         return Character::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function citation()
     {
         return Citation::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function comment()
     {
         return Comment::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function commentCount()
     {
         return CommentCount::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function contentLocation()
     {
         return ContentLocation::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function contentRating()
     {
         return ContentRating::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function contributor()
     {
         return Contributor::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function copyrightHolder()
     {
         return CopyrightHolder::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function copyrightYear()
     {
         return CopyrightYear::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function creator()
     {
         return Creator::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function dateCreated()
     {
         return DateCreated::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function dateModified()
     {
         return DateModified::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function datePublished()
     {
         return DatePublished::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function discussionUrl()
     {
         return DiscussionUrl::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function editor()
     {
         return Editor::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function educationalAlignment()
     {
         return EducationalAlignment::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function educationalUse()
     {
         return EducationalUse::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function encoding()
     {
         return Encoding::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function encodings()
     {
         return Encodings::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function exampleOfWork()
     {
         return ExampleOfWork::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function exifData()
     {
         return ExifData::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function fileFormat()
     {
         return FileFormat::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function genre()
     {
         return Genre::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function hasPart()
     {
         return HasPart::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function headline()
     {
         return Headline::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function inLanguage()
     {
         return InLanguage::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function interactionStatistic()
     {
         return InteractionStatistic::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function interactivityType()
     {
         return InteractivityType::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function isBasedOnUrl()
     {
         return IsBasedOnUrl::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function isFamilyFriendly()
     {
         return IsFamilyFriendly::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function isPartOf()
     {
         return IsPartOf::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function keywords()
     {
         return Keywords::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function learningResourceType()
     {
         return LearningResourceType::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function license()
     {
         return License::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function locationCreated()
     {
         return LocationCreated::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function mainEntity()
     {
         return MainEntity::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function mentions()
     {
         return Mentions::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function offers()
     {
         return Offers::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function position()
     {
         return Position::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function producer()
     {
         return Producer::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function provider()
     {
         return Provider::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function publication()
     {
         return Publication::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function publisher()
     {
         return Publisher::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function publishingPrinciples()
     {
         return PublishingPrinciples::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function recordedAt()
     {
         return RecordedAt::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function representativeOfPage()
     {
         return RepresentativeOfPage::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function review()
     {
         return Review::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function reviews()
     {
         return Reviews::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function schemaVersion()
     {
         return SchemaVersion::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function sourceOrganization()
     {
         return SourceOrganization::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function text()
     {
         return Text::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function thumbnail()
     {
         return Thumbnail::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function thumbnailUrl()
     {
         return ThumbnailUrl::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function timeRequired()
     {
         return TimeRequired::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function translator()
     {
         return Translator::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function typicalAgeRange()
     {
         return TypicalAgeRange::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function version()
     {
         return Version::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function video()
     {
         return Video::create(CreativeWork::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function workExample()
     {
         return WorkExample::create(CreativeWork::schemaUrl());

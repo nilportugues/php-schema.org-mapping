@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Lesser
 {
-    const SCHEMA_URL = "http://schema.org/lesser";
-    const PROPERTY_NAME = "lesser";
+    const SCHEMA_URL = 'http://schema.org/lesser';
+    const PROPERTY_NAME = 'lesser';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Lesser
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/QualitativeValue'
+        'http://schema.org/QualitativeValue',
     ];
 
-   /**
-    * This ordering relation for qualitative values indicates that the subject is lesser than the object.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * This ordering relation for qualitative values indicates that the subject is lesser than the object.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Lesser
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

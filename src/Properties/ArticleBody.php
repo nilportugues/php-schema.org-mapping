@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ArticleBody
 {
-    const SCHEMA_URL = "http://schema.org/articleBody";
-    const PROPERTY_NAME = "articleBody";
+    const SCHEMA_URL = 'http://schema.org/articleBody';
+    const PROPERTY_NAME = 'articleBody';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ArticleBody
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Article'
+        'http://schema.org/Article',
     ];
 
-   /**
-    * The actual body of the article.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The actual body of the article.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ArticleBody
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

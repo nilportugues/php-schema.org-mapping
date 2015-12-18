@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PassengerSequenceNumber
 {
-    const SCHEMA_URL = "http://schema.org/passengerSequenceNumber";
-    const PROPERTY_NAME = "passengerSequenceNumber";
+    const SCHEMA_URL = 'http://schema.org/passengerSequenceNumber';
+    const PROPERTY_NAME = 'passengerSequenceNumber';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PassengerSequenceNumber
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/FlightReservation'
+        'http://schema.org/FlightReservation',
     ];
 
-   /**
-    * The passenger's sequence number as assigned by the airline.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The passenger's sequence number as assigned by the airline.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PassengerSequenceNumber
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

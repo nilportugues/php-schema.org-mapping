@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class IssuedBy
 {
-    const SCHEMA_URL = "http://schema.org/issuedBy";
-    const PROPERTY_NAME = "issuedBy";
+    const SCHEMA_URL = 'http://schema.org/issuedBy';
+    const PROPERTY_NAME = 'issuedBy';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class IssuedBy
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Ticket',
-		'http://schema.org/Permit'
+        'http://schema.org/Ticket',
+        'http://schema.org/Permit',
     ];
 
-   /**
-    * The organization issuing the ticket or permit.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The organization issuing the ticket or permit.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class IssuedBy
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

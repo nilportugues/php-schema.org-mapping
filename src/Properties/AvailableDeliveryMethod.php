@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class AvailableDeliveryMethod
 {
-    const SCHEMA_URL = "http://schema.org/availableDeliveryMethod";
-    const PROPERTY_NAME = "availableDeliveryMethod";
+    const SCHEMA_URL = 'http://schema.org/availableDeliveryMethod';
+    const PROPERTY_NAME = 'availableDeliveryMethod';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,17 +17,17 @@ class AvailableDeliveryMethod
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Offer',
-		'http://schema.org/Demand'
+        'http://schema.org/Offer',
+        'http://schema.org/Demand',
     ];
 
-   /**
-    * The delivery method(s) available for this offer.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The delivery method(s) available for this offer.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -35,13 +35,13 @@ class AvailableDeliveryMethod
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

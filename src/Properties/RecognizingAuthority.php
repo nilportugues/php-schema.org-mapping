@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class RecognizingAuthority
 {
-    const SCHEMA_URL = "http://schema.org/recognizingAuthority";
-    const PROPERTY_NAME = "recognizingAuthority";
+    const SCHEMA_URL = 'http://schema.org/recognizingAuthority';
+    const PROPERTY_NAME = 'recognizingAuthority';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class RecognizingAuthority
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalEntity'
+        'http://schema.org/MedicalEntity',
     ];
 
-   /**
-    * If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class RecognizingAuthority
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

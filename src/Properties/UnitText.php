@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class UnitText
 {
-    const SCHEMA_URL = "http://schema.org/unitText";
-    const PROPERTY_NAME = "unitText";
+    const SCHEMA_URL = 'http://schema.org/unitText';
+    const PROPERTY_NAME = 'unitText';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,20 +17,20 @@ class UnitText
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/PropertyValue',
-		'http://schema.org/QuantitativeValue',
-		'http://schema.org/TypeAndQuantityNode',
-		'http://schema.org/UnitPriceSpecification'
+        'http://schema.org/PropertyValue',
+        'http://schema.org/QuantitativeValue',
+        'http://schema.org/TypeAndQuantityNode',
+        'http://schema.org/UnitPriceSpecification',
     ];
 
-   /**
-    * A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for
-unitCode.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for.
+     unitCode.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -38,13 +38,13 @@ unitCode.
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

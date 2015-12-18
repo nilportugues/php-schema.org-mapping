@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class NormalRange
 {
-    const SCHEMA_URL = "http://schema.org/normalRange";
-    const PROPERTY_NAME = "normalRange";
+    const SCHEMA_URL = 'http://schema.org/normalRange';
+    const PROPERTY_NAME = 'normalRange';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class NormalRange
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalTest'
+        'http://schema.org/MedicalTest',
     ];
 
-   /**
-    * Range of acceptable values for a typical patient, when applicable.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Range of acceptable values for a typical patient, when applicable.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class NormalRange
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

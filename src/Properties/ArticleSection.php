@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ArticleSection
 {
-    const SCHEMA_URL = "http://schema.org/articleSection";
-    const PROPERTY_NAME = "articleSection";
+    const SCHEMA_URL = 'http://schema.org/articleSection';
+    const PROPERTY_NAME = 'articleSection';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ArticleSection
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Article'
+        'http://schema.org/Article',
     ];
 
-   /**
-    * Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ArticleSection
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

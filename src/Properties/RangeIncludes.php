@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class RangeIncludes
 {
-    const SCHEMA_URL = "http://schema.org/rangeIncludes";
-    const PROPERTY_NAME = "rangeIncludes";
+    const SCHEMA_URL = 'http://schema.org/rangeIncludes';
+    const PROPERTY_NAME = 'rangeIncludes';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class RangeIncludes
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Property'
+        'http://schema.org/Property',
     ];
 
-   /**
-    * Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class RangeIncludes
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

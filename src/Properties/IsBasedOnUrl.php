@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class IsBasedOnUrl
 {
-    const SCHEMA_URL = "http://schema.org/isBasedOnUrl";
-    const PROPERTY_NAME = "isBasedOnUrl";
+    const SCHEMA_URL = 'http://schema.org/isBasedOnUrl';
+    const PROPERTY_NAME = 'isBasedOnUrl';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class IsBasedOnUrl
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/CreativeWork'
+        'http://schema.org/CreativeWork',
     ];
 
-   /**
-    * A resource that was used in the creation of this resource. This term can be repeated for multiple sources. For example, http://example.com/great-multiplication-intro.html.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A resource that was used in the creation of this resource. This term can be repeated for multiple sources. For example, http://example.com/great-multiplication-intro.html.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class IsBasedOnUrl
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class ItemListOrder
 {
-    const SCHEMA_URL = "http://schema.org/itemListOrder";
-    const PROPERTY_NAME = "itemListOrder";
+    const SCHEMA_URL = 'http://schema.org/itemListOrder';
+    const PROPERTY_NAME = 'itemListOrder';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class ItemListOrder
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/ItemList'
+        'http://schema.org/ItemList',
     ];
 
-   /**
-    * Type of ordering (e.g. Ascending, Descending, Unordered).
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Type of ordering (e.g. Ascending, Descending, Unordered).
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class ItemListOrder
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

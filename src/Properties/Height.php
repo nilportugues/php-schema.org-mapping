@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Height
 {
-    const SCHEMA_URL = "http://schema.org/height";
-    const PROPERTY_NAME = "height";
+    const SCHEMA_URL = 'http://schema.org/height';
+    const PROPERTY_NAME = 'height';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,18 +17,18 @@ class Height
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MediaObject',
-		'http://schema.org/Product',
-		'http://schema.org/Person'
+        'http://schema.org/MediaObject',
+        'http://schema.org/Product',
+        'http://schema.org/Person',
     ];
 
-   /**
-    * The height of the item.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The height of the item.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -36,13 +36,13 @@ class Height
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Issn
 {
-    const SCHEMA_URL = "http://schema.org/issn";
-    const PROPERTY_NAME = "issn";
+    const SCHEMA_URL = 'http://schema.org/issn';
+    const PROPERTY_NAME = 'issn';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Issn
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Periodical'
+        'http://schema.org/Periodical',
     ];
 
-   /**
-    * The International Standard Serial Number (ISSN) that identifies this periodical. You can repeat this property to (for example) identify different formats of this periodical.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * The International Standard Serial Number (ISSN) that identifies this periodical. You can repeat this property to (for example) identify different formats of this periodical.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Issn
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

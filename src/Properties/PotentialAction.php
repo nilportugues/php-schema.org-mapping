@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class PotentialAction
 {
-    const SCHEMA_URL = "http://schema.org/potentialAction";
-    const PROPERTY_NAME = "potentialAction";
+    const SCHEMA_URL = 'http://schema.org/potentialAction';
+    const PROPERTY_NAME = 'potentialAction';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class PotentialAction
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/Thing'
+        'http://schema.org/Thing',
     ];
 
-   /**
-    * Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class PotentialAction
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

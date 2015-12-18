@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class SignOrSymptom
 {
-    const SCHEMA_URL = "http://schema.org/signOrSymptom";
-    const PROPERTY_NAME = "signOrSymptom";
+    const SCHEMA_URL = 'http://schema.org/signOrSymptom';
+    const PROPERTY_NAME = 'signOrSymptom';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class SignOrSymptom
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/MedicalCondition'
+        'http://schema.org/MedicalCondition',
     ];
 
-   /**
-    * A sign or symptom of this condition. Signs are objective or physically observable manifestations of the medical condition while symptoms are the subjective experience of the medical condition.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * A sign or symptom of this condition. Signs are objective or physically observable manifestations of the medical condition while symptoms are the subjective experience of the medical condition.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class SignOrSymptom
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }

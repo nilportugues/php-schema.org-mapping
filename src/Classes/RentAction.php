@@ -1,4 +1,5 @@
 <?php
+
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
@@ -17,127 +18,124 @@ use NilPortugues\SchemaOrg\Properties\StartTime;
 use NilPortugues\SchemaOrg\Properties\Target;
 
 /**
- * Classes RentAction
- * @package NilPortugues\SchemaOrg\Classes
- *
- * The act of giving money in return for temporary use, but not ownership, of an object such as a vehicle or property. For example, an agent rents a property from a landlord in exchange for a periodic payment.
+ * Classes RentAction.
  */
 class RentAction
 {
     /**
      * @var string
      */
-    private static $schemaUrl = "http://schema.org/RentAction";
+    private static $schemaUrl = 'http://schema.org/RentAction';
 
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
+    /**
+     * Returns the URL of the current definition at http://schema.org.
+     *
+     * @return string
+     */
     public static function schemaUrl()
     {
         return self::$schemaUrl;
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function actionStatus()
     {
         return ActionStatus::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function agent()
     {
         return Agent::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function endTime()
     {
         return EndTime::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function error()
     {
         return Error::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function instrument()
     {
         return Instrument::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function landlord()
     {
         return Landlord::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function location()
     {
         return Location::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function object()
     {
         return Object::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function participant()
     {
         return Participant::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function realEstateAgent()
     {
         return RealEstateAgent::create(self::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function result()
     {
         return Result::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function startTime()
     {
         return StartTime::create(Action::schemaUrl());
     }
 
-   /**
-    * @return Mapping
-    */
+    /**
+     * @return Mapping
+     */
     public static function target()
     {
         return Target::create(Action::schemaUrl());

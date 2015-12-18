@@ -8,8 +8,8 @@ use NilPortugues\SchemaOrg\Mapping;
 
 class Diagnosis
 {
-    const SCHEMA_URL = "http://schema.org/diagnosis";
-    const PROPERTY_NAME = "diagnosis";
+    const SCHEMA_URL = 'http://schema.org/diagnosis';
+    const PROPERTY_NAME = 'diagnosis';
 
     /**
      * A list of schemas allowed to use this property.
@@ -17,16 +17,16 @@ class Diagnosis
      * @var array
      */
     private static $allowedSchemas = [
-		'http://schema.org/DDxElement'
+        'http://schema.org/DDxElement',
     ];
 
-   /**
-    * One or more alternative conditions considered in the differential diagnosis process.
-    *
-    * @param string $class
-    *
-    * @return Mapping
-    */
+    /**
+     * One or more alternative conditions considered in the differential diagnosis process.
+     *
+     * @param string $class
+     *
+     * @return Mapping
+     */
     public static function create($class)
     {
         self::guardAllowedSchemaClasses($class);
@@ -34,13 +34,13 @@ class Diagnosis
         return MappedProperty::create($class, self::PROPERTY_NAME, self::SCHEMA_URL);
     }
 
-   /**
-    * @param string $class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses($class) {
-
+    /**
+     * @param string $class
+     *
+     * @throws InvalidSchemaPropertyException
+     */
+    private static function guardAllowedSchemaClasses($class)
+    {
         if (false === empty(self::$allowedSchemas) && false === in_array($class, self::$allowedSchemas, true)) {
             throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, $class);
         }
