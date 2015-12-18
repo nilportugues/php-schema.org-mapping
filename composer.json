@@ -1,5 +1,5 @@
 {
-    "name": "nilportugues/schema.org-mapping",
+    "name": "nilportugues/schema-org",
     "description": "Schema.org mapping for JSON-LD generation",
     "type": "library",
     "homepage": "http://nilportugues.com",
