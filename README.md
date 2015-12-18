@@ -5,6 +5,7 @@ A fluid interface to create mappings using Schema.org for JSON-LD Serializer.
 ## Usage
 
 ```php
+use NilPortugues\SchemaOrg\SchemaOrg;
 
 $mapping = SchemaOrg::schemas()->blogPosting()->articleSection();
 
