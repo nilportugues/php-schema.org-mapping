@@ -6,6 +6,7 @@ class SchemaRdfaParser
      * @var array
      */
     private $classes = [];
+
     /**
      * @var array
      */
@@ -18,7 +19,15 @@ class SchemaRdfaParser
      * @param $subClassOf
      */
     public function addClass($classUrl, $label, $classComment, $subClassOf) {
-        $this->classes[trim($label)] = [
+
+        $url = explode('/', $classUrl);
+        $nameFromUrl = array_pop($url);
+
+        if ($label !== $nameFromUrl) {
+            $label = $nameFromUrl;
+        }
+
+        $this->classes[trim($label)] = (object) [
             'name' => trim($label),
             'doc' => $classComment,
             'url' => $classUrl,
@@ -26,24 +35,33 @@ class SchemaRdfaParser
             'subClassOf' => array_filter($subClassOf)
         ];
     }
+    /**
+     * @param $classUrl
+     * @param $label
+     * @param $classComment
+     */
+    public function addDataType($classUrl, $label, $classComment) {
+        $this->addClass($classUrl, $label, $classComment, [], []);
+    }
 
     /**
      * @param $propertyUrl
      * @param $label
      * @param $propertyComment
      * @param $mainClass
-     * @param $inheritsFrom
+     * @param $expectedType
      */
-    public function addProperty($propertyUrl, $label, $propertyComment, $mainClass, $inheritsFrom)
+    public function addProperty($propertyUrl, $label, $propertyComment, $mainClass, $expectedType)
     {
         $this->properties[trim($label)] = [
             'name' => trim($label),
             'doc' => $propertyComment,
             'url' => $propertyUrl,
-            'belongsTo' => array_filter($mainClass),
-            'inheritsFrom' => array_filter($inheritsFrom),
+            'usedOnClass' => array_filter($mainClass),
+            'expectedType' => array_filter($expectedType),
         ];
     }
+
 
     /**
      * @return array
@@ -60,42 +78,50 @@ class SchemaRdfaParser
     {
         $result = $this->classes;
 
-        //Add properties to classes
-        foreach($this->properties as $property) {
-            if(!empty($property['belongsTo'])) {
-                foreach($property['belongsTo'] as $className) {
-                    if(!empty($className)) {
-                        if (!empty($property['inheritsFrom'])) {
-                            foreach($property['inheritsFrom'] as $inheritedClass) {
-                                $result[$className]['properties'][$inheritedClass][] = ['name' => $property['name'], 'parent' => $className];
-                            }
+        //Link the subClasses
+        foreach($result as &$resultingClass) {
+            if(!empty($resultingClass->subClassOf)) {
+                foreach($resultingClass->subClassOf as &$class) {
+
+                    $class = $result[$class];
+                }
+            }
+        }
+
+        //Add the properties
+        foreach ($this->properties as $propertyName => $propertyStructure) {
+            foreach($propertyStructure['usedOnClass'] as $class) {
+                $result[$class]->properties[$propertyName] = ['name' => $propertyName, 'parent' => $class];
+            }
+        }
+
+
+        //Flatten the properties for easy use.
+        foreach($result as $resultingClass) {
+            if (!empty($resultingClass->subClassOf) && is_array($resultingClass->subClassOf)) {
+                foreach($resultingClass->subClassOf as $stdClassObject) {
+
+                    if(is_object($stdClassObject)) {
+                        $next = $stdClassObject->subClassOf;
+                        while(is_array($next) && !empty($next) && $object = array_pop($next)) {
+                            $resultingClass->properties = array_merge($resultingClass->properties,  $object->properties);
                         }
                     }
                 }
             }
         }
-        //Add subclass properties to classes.
-        foreach($result as &$classData) {
-            if (!empty($classData['subClassOf'])) {
-
-                foreach($classData['subClassOf'] as $inheritedClass) {
-
-                    $classData['properties'] = array_merge($classData['properties'], $result[$inheritedClass]['properties']);
-                }
-
-            }
-
-        }
 
         return $result;
     }
+
+
 }
 
 
 $file = 'vendor/schemaorg/schemaorg/data/schema.rdfa';
-
+$contents = preg_replace('/<!--(.|\s)*?-->/', '', file_get_contents($file));
 $doc = new DOMDocument();
-$doc->loadHTMLFile($file);
+$doc->loadHTML($contents);
 
 $xpath = new DOMXpath($doc);
 
@@ -133,19 +159,77 @@ foreach($elements as $element) {
         if (!empty($node->attributes->getNamedItem('property'))
             && $node->attributes->getNamedItem('property')->nodeValue === 'rdfs:subClassOf'
         ) {
-            $subClassOf[] = $node->nodeValue;
+            if(false === strpos($node->nodeValue, ':')) {
+                $subClassOf[] = $node->nodeValue;
+            }
+
         }
     }
 
-    if (!empty($label)) {
-        $parser->addClass($resourceUrl, $label, $classComment, $subClassOf);
+    if (empty($label)) {
+        $u = explode("/", $resourceUrl);
+        $label = array_pop($u);
     }
+
+    $parser->addClass($resourceUrl, $label, $classComment, $subClassOf);
 
     $resourceUrl = '';
     $label = '';
     $classComment = '';
     $subClassOf = [];
 }
+
+
+
+
+
+
+$elements = $xpath->query("/html/body/div[@typeof='rdfs:Class http://schema.org/DataType']");
+
+/** @var DOMElement $element **/
+foreach($elements as $element) {
+
+    $resourceUrl = $element->getAttribute('resource');
+    $label = '';
+    $classComment = '';
+
+    /** @var DOMNode $node **/
+    foreach($element->getElementsByTagName('span') as $node) {
+        if (!empty($node->attributes->getNamedItem('property'))
+            && $node->attributes->getNamedItem('property')->nodeValue === 'rdfs:label'
+        ) {
+            $label = $node->nodeValue;
+        }
+
+        if (!empty($node->attributes->getNamedItem('property'))
+            && $node->attributes->getNamedItem('property')->nodeValue === 'rdfs:comment'
+        ) {
+
+            $classComment = strip_tags($node->nodeValue);
+        }
+    }
+
+    if (!empty($label)) {
+        $parser->addDataType($resourceUrl, $label, $classComment);
+    }
+
+    $resourceUrl = '';
+    $label = '';
+    $classComment = '';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $elements = $xpath->query("/html/body/div[@typeof='rdf:Property']");
@@ -155,7 +239,7 @@ foreach($elements as $element) {
     $label = '';
     $classComment = '';
     $mainClass = [];
-    $inheritsFrom = [];
+    $expectedType = [];
 
     /** @var DOMNode $node **/
     foreach($element->getElementsByTagName('span') as $node) {
@@ -179,25 +263,27 @@ foreach($elements as $element) {
         if (!empty($node->attributes->getNamedItem('property'))
             && $node->attributes->getNamedItem('property')->nodeValue === 'http://schema.org/domainIncludes'
         ) {
-            $mainClass[] = $node->nodeValue;
+            $e = explode("/", $node->attributes->getNamedItem('href')->nodeValue);
+            $class = array_pop($e);
+            $mainClass[] = $class;
         }
 
         if (!empty($node->attributes->getNamedItem('property'))
             && $node->attributes->getNamedItem('property')->nodeValue === 'http://schema.org/rangeIncludes'
         ) {
-            $inheritsFrom[] = $node->nodeValue;
+            $expectedType[] = $node->nodeValue;
         }
     }
 
     if (!empty($label)) {
-        $parser->addProperty($resourceUrl, $label, $classComment, $mainClass, $inheritsFrom);
+        $parser->addProperty($resourceUrl, $label, $classComment, $mainClass, $expectedType);
     }
 
     $resourceUrl = '';
     $label = '';
     $classComment = '';
     $mainClass = [];
-    $inheritsFrom = [];
+    $expectedType = [];
 }
 
 
@@ -212,7 +298,7 @@ foreach($parser->getProperties() as $property) {
     $className[0] = strtoupper($className[0]);
 
     $allowed = [];
-    foreach($property['belongsTo'] as $belongs) {
+    foreach($property['usedOnClass'] as $belongs) {
         $allowed[] = "\t\t'".'http://schema.org/'.$belongs."'";
     }
     $allowed = implode(",\n", $allowed);
@@ -292,15 +378,18 @@ $classes = $parser->getClassesWithPropertyNames();
 
 foreach($classes as $class) {
 
-    $className = $class['name'];
+    $className = $class->name;
+
     $methods = [];
     $usableProperties = [];
     $useProperties = [];
-    foreach($class['properties'] as $propertyClassName => $propertyClass) {
-        foreach($propertyClass as $property) {
+
+    if(!empty($class->properties)) {
+        foreach($class->properties as $propertyClassName => $property) {
+
+
             $propertyName = $property['name'];
             $parentClassName = $property['parent'];
-
             $propertyNameMethodName = $propertyName;
             $propertyNameMethodName[0] = strtoupper($propertyNameMethodName[0]);
 
@@ -312,7 +401,6 @@ foreach($classes as $class) {
                 $schemaClass = 'self';
                 if ($parentClassName !== $className) {
                     $schemaClass = $parentClassName;
-                    $useProperties[] = "use NilPortugues\\SchemaOrg\\Classes\\".$parentClassName.";";
                 }
 
                 $methods[$propertyName] = <<<PHP
@@ -328,12 +416,17 @@ PHP;
         }
     }
 
+
+
     $useProperties[] = 'use NilPortugues\SchemaOrg\Mapping;';
 
     sort($useProperties, SORT_REGULAR);
     $useProperties = implode("\n", array_unique($useProperties));
     ksort($methods, SORT_REGULAR);
     $methods = implode("\n\n", $methods);
+
+
+    $data = (array) $class;
 
     $phpCode = <<<PHP
 <?php
@@ -342,17 +435,17 @@ namespace NilPortugues\SchemaOrg\Classes;
 {$useProperties}
 
 /**
- * Classes {$class['name']}
+ * Classes {$data['name']}
  * @package NilPortugues\\SchemaOrg\\Classes
  *
- * {$class['doc']}
+ * {$data['doc']}
  */
-class {$class['name']}
+class {$data['name']}
 {
     /**
      * @var string
      */
-    private static \$schemaUrl = "{$class['url']}";
+    private static \$schemaUrl = "{$data['url']}";
 
    /**
     * Returns the URL of the current definition at http://schema.org
