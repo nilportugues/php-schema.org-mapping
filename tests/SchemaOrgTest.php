@@ -16,19 +16,12 @@ use RuntimeException;
 
 class SchemaOrgTest extends \PHPUnit_Framework_TestCase
 {
-    public function testMagicGetWillReturnExistingMethod()
-    {
-
-    }
-
     public function testMagicGetWillReturnSameInstance()
     {
-        $url1 = SchemaOrg::schemas()->URL();
-        $url2 = SchemaOrg::schemas()->URL();
-
-        SchemaOrg::schemas()->blogPosting()->articleSection()
-
-        $this->assertSame($url1, $url2);
+        $article1 = SchemaOrg::schemas()->blogPosting()->articleSection();
+        $article2 = SchemaOrg::schemas()->blogPosting()->articleSection();
+       
+        $this->assertSame($article1, $article2);
     }
 
     public function testMagicGetWillThrowExceptionWhenMethodDoesNotExist()

@@ -2,6 +2,7 @@
 
 A fluid interface to create mappings using Schema.org for Microdata and JSON-LD.
 
+Currently supporting Schema.org v2.2.
 
 ## Installation
 
@@ -31,7 +32,6 @@ Schema.org vocabularies cover entities, relationships between entities and actio
 
 Over 10 million sites use Schema.org to markup their web pages and email messages, including Google, Microsoft, Pinterest, Yandex and others.
 
-<br>
 
 ## Contribute
 
@@ -48,7 +48,6 @@ Get in touch with me using one of the following means:
  - Emailing me at <contact@nilportugues.com>
  - Opening an [Issue](https://github.com/nilportugues/schema.org-mapping/issues/new)
 
-<br>
 ## Authors
 
 * [Nil Portugués Calderó](http://nilportugues.com)
