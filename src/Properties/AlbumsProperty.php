@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A collection of music albums.
  */
-class AlbumsProperty extends Property
+class AlbumsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/albums';
     const PROPERTY_NAME = 'albums';

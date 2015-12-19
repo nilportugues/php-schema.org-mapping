@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * If applicable, a medical specialty in which this entity is relevant.
  */
-class RelevantSpecialtyProperty extends Property
+class RelevantSpecialtyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/relevantSpecialty';
     const PROPERTY_NAME = 'relevantSpecialty';

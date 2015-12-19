@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BusinessAudience;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BusinessAudienceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BusinessAudienceTest.
  */
 class BusinessAudienceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BusinessAudience::schemaUrl(), "http://schema.org/BusinessAudience");
+        $this->assertEquals(BusinessAudience::schemaUrl(), 'http://schema.org/BusinessAudience');
     }
 
     public function testNumberOfEmployeesWillReturnMappingObject()

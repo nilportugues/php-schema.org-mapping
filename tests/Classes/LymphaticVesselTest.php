@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LymphaticVessel;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LymphaticVesselTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LymphaticVesselTest.
  */
 class LymphaticVesselTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LymphaticVessel::schemaUrl(), "http://schema.org/LymphaticVessel");
+        $this->assertEquals(LymphaticVessel::schemaUrl(), 'http://schema.org/LymphaticVessel');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

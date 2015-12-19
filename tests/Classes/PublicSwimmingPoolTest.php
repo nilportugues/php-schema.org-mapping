@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PublicSwimmingPool;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PublicSwimmingPoolTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PublicSwimmingPoolTest.
  */
 class PublicSwimmingPoolTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PublicSwimmingPool::schemaUrl(), "http://schema.org/PublicSwimmingPool");
+        $this->assertEquals(PublicSwimmingPool::schemaUrl(), 'http://schema.org/PublicSwimmingPool');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

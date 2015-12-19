@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DislikeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DislikeActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DislikeActionTest.
  */
 class DislikeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DislikeAction::schemaUrl(), "http://schema.org/DislikeAction");
+        $this->assertEquals(DislikeAction::schemaUrl(), 'http://schema.org/DislikeAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

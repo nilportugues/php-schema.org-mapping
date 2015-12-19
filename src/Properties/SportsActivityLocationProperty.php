@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of location. The sports activity location where this action occurred.
  */
-class SportsActivityLocationProperty extends Property
+class SportsActivityLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sportsActivityLocation';
     const PROPERTY_NAME = 'sportsActivityLocation';

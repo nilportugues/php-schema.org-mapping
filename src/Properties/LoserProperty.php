@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The loser of the action.
  */
-class LoserProperty extends Property
+class LoserProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/loser';
     const PROPERTY_NAME = 'loser';

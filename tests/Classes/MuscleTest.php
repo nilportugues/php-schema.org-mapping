@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Muscle;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MuscleTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MuscleTest.
  */
 class MuscleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Muscle::schemaUrl(), "http://schema.org/Muscle");
+        $this->assertEquals(Muscle::schemaUrl(), 'http://schema.org/Muscle');
     }
 
     public function testActionWillReturnMappingObject()

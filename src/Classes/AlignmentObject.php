@@ -25,26 +25,17 @@ use NilPortugues\SchemaOrg\Properties\TargetDescriptionProperty;
 use NilPortugues\SchemaOrg\Properties\TargetNameProperty;
 use NilPortugues\SchemaOrg\Properties\TargetUrlProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes AlignmentObject.
  */
-class AlignmentObject
+class AlignmentObject extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/AlignmentObject';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/AlignmentObject';
 
     /**
      * @return Mapping

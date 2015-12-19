@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\EatAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EatActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes EatActionTest.
  */
 class EatActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EatAction::schemaUrl(), "http://schema.org/EatAction");
+        $this->assertEquals(EatAction::schemaUrl(), 'http://schema.org/EatAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

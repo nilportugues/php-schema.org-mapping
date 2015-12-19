@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A contraindication for this therapy.
  */
-class ContraindicationProperty extends Property
+class ContraindicationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contraindication';
     const PROPERTY_NAME = 'contraindication';

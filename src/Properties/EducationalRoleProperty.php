@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An educationalRole of an EducationalAudience.
  */
-class EducationalRoleProperty extends Property
+class EducationalRoleProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/educationalRole';
     const PROPERTY_NAME = 'educationalRole';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A downloadable form of this dataset, at a specific location, in a specific format.
  */
-class DistributionProperty extends Property
+class DistributionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/distribution';
     const PROPERTY_NAME = 'distribution';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PublicationIssue;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PublicationIssueTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PublicationIssueTest.
  */
 class PublicationIssueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PublicationIssue::schemaUrl(), "http://schema.org/PublicationIssue");
+        $this->assertEquals(PublicationIssue::schemaUrl(), 'http://schema.org/PublicationIssue');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

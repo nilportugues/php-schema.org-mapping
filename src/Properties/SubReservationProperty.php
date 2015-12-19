@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The individual reservations included in the package. Typically a repeated property.
  */
-class SubReservationProperty extends Property
+class SubReservationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/subReservation';
     const PROPERTY_NAME = 'subReservation';

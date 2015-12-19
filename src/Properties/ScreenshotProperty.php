@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A link to a screenshot image of the app.
  */
-class ScreenshotProperty extends Property
+class ScreenshotProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/screenshot';
     const PROPERTY_NAME = 'screenshot';

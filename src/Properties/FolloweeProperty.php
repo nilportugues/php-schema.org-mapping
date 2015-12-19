@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of object. The person or organization being followed.
  */
-class FolloweeProperty extends Property
+class FolloweeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/followee';
     const PROPERTY_NAME = 'followee';

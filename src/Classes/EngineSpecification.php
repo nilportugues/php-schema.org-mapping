@@ -12,26 +12,17 @@ namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\FuelTypeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes EngineSpecification.
  */
-class EngineSpecification
+class EngineSpecification extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/EngineSpecification';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/EngineSpecification';
 
     /**
      * @return Mapping

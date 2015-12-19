@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Number of people the reservation should accommodate.
  */
-class PartySizeProperty extends Property
+class PartySizeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/partySize';
     const PROPERTY_NAME = 'partySize';

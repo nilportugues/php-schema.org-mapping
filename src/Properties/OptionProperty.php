@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of object. The options subject to this action.
  */
-class OptionProperty extends Property
+class OptionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/option';
     const PROPERTY_NAME = 'option';

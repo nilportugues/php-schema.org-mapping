@@ -13,26 +13,17 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\DurationOfWarrantyProperty;
 use NilPortugues\SchemaOrg\Properties\WarrantyScopeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes WarrantyPromise.
  */
-class WarrantyPromise
+class WarrantyPromise extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/WarrantyPromise';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/WarrantyPromise';
 
     /**
      * @return Mapping

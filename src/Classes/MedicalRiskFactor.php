@@ -21,26 +21,17 @@ use NilPortugues\SchemaOrg\Properties\NameProperty;
 use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
 use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalRiskFactor.
  */
-class MedicalRiskFactor
+class MedicalRiskFactor extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalRiskFactor';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalRiskFactor';
 
     /**
      * @return Mapping

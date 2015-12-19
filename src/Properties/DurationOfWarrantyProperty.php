@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The duration of the warranty promise. Common unitCode values are ANN for year, MON for months, or DAY for days.
  */
-class DurationOfWarrantyProperty extends Property
+class DurationOfWarrantyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/durationOfWarranty';
     const PROPERTY_NAME = 'durationOfWarranty';

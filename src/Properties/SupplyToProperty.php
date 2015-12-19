@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The area to which the artery supplies blood.
  */
-class SupplyToProperty extends Property
+class SupplyToProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/supplyTo';
     const PROPERTY_NAME = 'supplyTo';

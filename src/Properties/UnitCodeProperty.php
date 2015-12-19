@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.
  */
-class UnitCodeProperty extends Property
+class UnitCodeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/unitCode';
     const PROPERTY_NAME = 'unitCode';

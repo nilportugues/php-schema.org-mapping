@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.
  */
-class TributaryProperty extends Property
+class TributaryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/tributary';
     const PROPERTY_NAME = 'tributary';

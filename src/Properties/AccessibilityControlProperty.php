@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Identifies input methods that are sufficient to fully control the described resource (WebSchemas wiki lists possible values).
  */
-class AccessibilityControlProperty extends Property
+class AccessibilityControlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/accessibilityControl';
     const PROPERTY_NAME = 'accessibilityControl';

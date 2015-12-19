@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The supported encoding type(s) for an EntryPoint request.
  */
-class EncodingTypeProperty extends Property
+class EncodingTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/encodingType';
     const PROPERTY_NAME = 'encodingType';

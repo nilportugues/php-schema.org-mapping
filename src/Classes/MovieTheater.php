@@ -49,26 +49,17 @@ use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\ScreenCountProperty;
 use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MovieTheater.
  */
-class MovieTheater
+class MovieTheater extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MovieTheater';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MovieTheater';
 
     /**
      * @return Mapping

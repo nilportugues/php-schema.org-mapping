@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Where a rental car can be dropped off.
  */
-class DropoffLocationProperty extends Property
+class DropoffLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dropoffLocation';
     const PROPERTY_NAME = 'dropoffLocation';

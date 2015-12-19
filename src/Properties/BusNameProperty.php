@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The name of the bus (e.g. Bolt Express).
  */
-class BusNameProperty extends Property
+class BusNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/busName';
     const PROPERTY_NAME = 'busName';

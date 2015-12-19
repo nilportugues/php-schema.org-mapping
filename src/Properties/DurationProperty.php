@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format.
  */
-class DurationProperty extends Property
+class DurationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/duration';
     const PROPERTY_NAME = 'duration';

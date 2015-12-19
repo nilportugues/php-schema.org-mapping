@@ -23,26 +23,17 @@ use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
 use NilPortugues\SchemaOrg\Properties\ResultProperty;
 use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 use NilPortugues\SchemaOrg\Properties\TargetProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes WinAction.
  */
-class WinAction
+class WinAction extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/WinAction';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/WinAction';
 
     /**
      * @return Mapping

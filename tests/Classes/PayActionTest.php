@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PayAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PayActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PayActionTest.
  */
 class PayActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PayAction::schemaUrl(), "http://schema.org/PayAction");
+        $this->assertEquals(PayAction::schemaUrl(), 'http://schema.org/PayAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

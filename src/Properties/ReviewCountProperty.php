@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The count of total number of reviews.
  */
-class ReviewCountProperty extends Property
+class ReviewCountProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/reviewCount';
     const PROPERTY_NAME = 'reviewCount';

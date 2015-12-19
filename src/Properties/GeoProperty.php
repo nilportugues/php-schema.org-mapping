@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The geo coordinates of the place.
  */
-class GeoProperty extends Property
+class GeoProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/geo';
     const PROPERTY_NAME = 'geo';

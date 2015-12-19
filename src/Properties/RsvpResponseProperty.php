@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The response (yes, no, maybe) to the RSVP.
  */
-class RsvpResponseProperty extends Property
+class RsvpResponseProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/rsvpResponse';
     const PROPERTY_NAME = 'rsvpResponse';

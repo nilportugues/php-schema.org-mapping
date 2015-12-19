@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of adults staying in the unit.
  */
-class NumAdultsProperty extends Property
+class NumAdultsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numAdults';
     const PROPERTY_NAME = 'numAdults';

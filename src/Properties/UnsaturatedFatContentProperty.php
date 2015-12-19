@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of grams of unsaturated fat.
  */
-class UnsaturatedFatContentProperty extends Property
+class UnsaturatedFatContentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/unsaturatedFatContent';
     const PROPERTY_NAME = 'unsaturatedFatContent';

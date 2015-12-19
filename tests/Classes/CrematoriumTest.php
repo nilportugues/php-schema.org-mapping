@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Crematorium;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CrematoriumTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CrematoriumTest.
  */
 class CrematoriumTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Crematorium::schemaUrl(), "http://schema.org/Crematorium");
+        $this->assertEquals(Crematorium::schemaUrl(), 'http://schema.org/Crematorium');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

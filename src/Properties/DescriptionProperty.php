@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A short description of the item.
  */
-class DescriptionProperty extends Property
+class DescriptionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/description';
     const PROPERTY_NAME = 'description';

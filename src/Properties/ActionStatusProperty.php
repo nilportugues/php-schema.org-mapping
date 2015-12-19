@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates the current disposition of the Action.
  */
-class ActionStatusProperty extends Property
+class ActionStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/actionStatus';
     const PROPERTY_NAME = 'actionStatus';

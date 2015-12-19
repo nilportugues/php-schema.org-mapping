@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\HairSalon;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HairSalonTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes HairSalonTest.
  */
 class HairSalonTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HairSalon::schemaUrl(), "http://schema.org/HairSalon");
+        $this->assertEquals(HairSalon::schemaUrl(), 'http://schema.org/HairSalon');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

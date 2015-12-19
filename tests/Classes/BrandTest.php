@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Brand;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BrandTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BrandTest.
  */
 class BrandTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Brand::schemaUrl(), "http://schema.org/Brand");
+        $this->assertEquals(Brand::schemaUrl(), 'http://schema.org/Brand');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

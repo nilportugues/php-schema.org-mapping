@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Diet;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DietTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DietTest.
  */
 class DietTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Diet::schemaUrl(), "http://schema.org/Diet");
+        $this->assertEquals(Diet::schemaUrl(), 'http://schema.org/Diet');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

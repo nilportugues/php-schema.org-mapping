@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LocalBusiness;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LocalBusinessTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LocalBusinessTest.
  */
 class LocalBusinessTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LocalBusiness::schemaUrl(), "http://schema.org/LocalBusiness");
+        $this->assertEquals(LocalBusiness::schemaUrl(), 'http://schema.org/LocalBusiness');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

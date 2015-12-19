@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The cuisine of the recipe (for example, French or Ethiopian).
  */
-class RecipeCuisineProperty extends Property
+class RecipeCuisineProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recipeCuisine';
     const PROPERTY_NAME = 'recipeCuisine';

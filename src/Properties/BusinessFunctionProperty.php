@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.
  */
-class BusinessFunctionProperty extends Property
+class BusinessFunctionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/businessFunction';
     const PROPERTY_NAME = 'businessFunction';

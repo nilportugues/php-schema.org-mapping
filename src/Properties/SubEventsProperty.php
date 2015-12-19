@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Events that are a part of this event. For example, a conference event includes many presentations, each subEvents of the conference.
  */
-class SubEventsProperty extends Property
+class SubEventsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/subEvents';
     const PROPERTY_NAME = 'subEvents';

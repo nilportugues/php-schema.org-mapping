@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DataFeed;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DataFeedTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DataFeedTest.
  */
 class DataFeedTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DataFeed::schemaUrl(), "http://schema.org/DataFeed");
+        $this->assertEquals(DataFeed::schemaUrl(), 'http://schema.org/DataFeed');
     }
 
     public function testAboutWillReturnMappingObject()

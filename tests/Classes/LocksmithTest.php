@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Locksmith;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LocksmithTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LocksmithTest.
  */
 class LocksmithTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Locksmith::schemaUrl(), "http://schema.org/Locksmith");
+        $this->assertEquals(Locksmith::schemaUrl(), 'http://schema.org/Locksmith');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

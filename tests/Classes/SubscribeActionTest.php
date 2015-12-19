@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SubscribeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SubscribeActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SubscribeActionTest.
  */
 class SubscribeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SubscribeAction::schemaUrl(), "http://schema.org/SubscribeAction");
+        $this->assertEquals(SubscribeAction::schemaUrl(), 'http://schema.org/SubscribeAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

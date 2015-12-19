@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PetStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PetStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PetStoreTest.
  */
 class PetStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PetStore::schemaUrl(), "http://schema.org/PetStore");
+        $this->assertEquals(PetStore::schemaUrl(), 'http://schema.org/PetStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

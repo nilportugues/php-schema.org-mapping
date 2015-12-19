@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The end of the validity of offer, price specification, or opening hours data.
  */
-class ValidThroughProperty extends Property
+class ValidThroughProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/validThrough';
     const PROPERTY_NAME = 'validThrough';

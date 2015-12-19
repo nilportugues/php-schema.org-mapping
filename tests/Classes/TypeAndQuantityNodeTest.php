@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TypeAndQuantityNode;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TypeAndQuantityNodeTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TypeAndQuantityNodeTest.
  */
 class TypeAndQuantityNodeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TypeAndQuantityNode::schemaUrl(), "http://schema.org/TypeAndQuantityNode");
+        $this->assertEquals(TypeAndQuantityNode::schemaUrl(), 'http://schema.org/TypeAndQuantityNode');
     }
 
     public function testAmountOfThisGoodWillReturnMappingObject()

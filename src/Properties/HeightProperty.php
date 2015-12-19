@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The height of the item.
  */
-class HeightProperty extends Property
+class HeightProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/height';
     const PROPERTY_NAME = 'height';

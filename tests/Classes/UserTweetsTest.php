@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\UserTweets;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserTweetsTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes UserTweetsTest.
  */
 class UserTweetsTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserTweets::schemaUrl(), "http://schema.org/UserTweets");
+        $this->assertEquals(UserTweets::schemaUrl(), 'http://schema.org/UserTweets');
     }
 
     public function testAggregateRatingWillReturnMappingObject()

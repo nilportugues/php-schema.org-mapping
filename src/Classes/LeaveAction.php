@@ -23,26 +23,17 @@ use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
 use NilPortugues\SchemaOrg\Properties\ResultProperty;
 use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 use NilPortugues\SchemaOrg\Properties\TargetProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes LeaveAction.
  */
-class LeaveAction
+class LeaveAction extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/LeaveAction';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/LeaveAction';
 
     /**
      * @return Mapping

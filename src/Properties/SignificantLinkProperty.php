@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * One of the more significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.
  */
-class SignificantLinkProperty extends Property
+class SignificantLinkProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/significantLink';
     const PROPERTY_NAME = 'significantLink';

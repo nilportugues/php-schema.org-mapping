@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'.
  */
-class LearningResourceTypeProperty extends Property
+class LearningResourceTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/learningResourceType';
     const PROPERTY_NAME = 'learningResourceType';

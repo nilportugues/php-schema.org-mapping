@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Article;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ArticleTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ArticleTest.
  */
 class ArticleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Article::schemaUrl(), "http://schema.org/Article");
+        $this->assertEquals(Article::schemaUrl(), 'http://schema.org/Article');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

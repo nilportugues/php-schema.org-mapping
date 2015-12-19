@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A URL pointing to a player for a specific video. In general, this is the information in the src element of an embed tag and should not be the same as the content of the loc tag.
  */
-class EmbedUrlProperty extends Property
+class EmbedUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/embedUrl';
     const PROPERTY_NAME = 'embedUrl';

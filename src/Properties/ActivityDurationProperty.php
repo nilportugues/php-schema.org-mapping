@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Length of time to engage in the activity.
  */
-class ActivityDurationProperty extends Property
+class ActivityDurationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/activityDuration';
     const PROPERTY_NAME = 'activityDuration';

@@ -10,23 +10,15 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
+use NilPortugues\SchemaOrg\SchemaClass;
+
 /**
  * Classes Specialty.
  */
-class Specialty
+class Specialty extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Specialty';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Specialty';
 }

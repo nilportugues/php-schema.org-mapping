@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The vasculature the lymphatic structure runs, or efferents, to.
  */
-class RunsToProperty extends Property
+class RunsToProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/runsTo';
     const PROPERTY_NAME = 'runsTo';

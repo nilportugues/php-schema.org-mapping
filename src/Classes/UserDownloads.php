@@ -34,26 +34,17 @@ use NilPortugues\SchemaOrg\Properties\SuperEventProperty;
 use NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty;
 use NilPortugues\SchemaOrg\Properties\WorkFeaturedProperty;
 use NilPortugues\SchemaOrg\Properties\WorkPerformedProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes UserDownloads.
  */
-class UserDownloads
+class UserDownloads extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/UserDownloads';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/UserDownloads';
 
     /**
      * @return Mapping

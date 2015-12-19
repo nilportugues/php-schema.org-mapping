@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TaxiReservation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TaxiReservationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TaxiReservationTest.
  */
 class TaxiReservationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TaxiReservation::schemaUrl(), "http://schema.org/TaxiReservation");
+        $this->assertEquals(TaxiReservation::schemaUrl(), 'http://schema.org/TaxiReservation');
     }
 
     public function testPartySizeWillReturnMappingObject()

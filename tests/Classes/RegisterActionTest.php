@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RegisterAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RegisterActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RegisterActionTest.
  */
 class RegisterActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RegisterAction::schemaUrl(), "http://schema.org/RegisterAction");
+        $this->assertEquals(RegisterAction::schemaUrl(), 'http://schema.org/RegisterAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

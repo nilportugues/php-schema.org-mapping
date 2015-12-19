@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The geographic area where the permit is valid.
  */
-class ValidInProperty extends Property
+class ValidInProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/validIn';
     const PROPERTY_NAME = 'validIn';

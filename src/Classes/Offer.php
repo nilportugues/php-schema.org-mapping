@@ -61,26 +61,17 @@ use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
 use NilPortugues\SchemaOrg\Properties\ValidThroughProperty;
 use NilPortugues\SchemaOrg\Properties\WarrantyProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Offer.
  */
-class Offer
+class Offer extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Offer';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Offer';
 
     /**
      * @return Mapping

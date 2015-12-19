@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The total price for the reservation or ticket, including applicable taxes, shipping, etc.
  */
-class TotalPriceProperty extends Property
+class TotalPriceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/totalPrice';
     const PROPERTY_NAME = 'totalPrice';

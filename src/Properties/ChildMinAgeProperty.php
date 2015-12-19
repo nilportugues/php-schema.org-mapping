@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Minimal age of the child.
  */
-class ChildMinAgeProperty extends Property
+class ChildMinAgeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/childMinAge';
     const PROPERTY_NAME = 'childMinAge';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A flag to signal that the publication is accessible for free.
  */
-class IsAccessibleForFreeProperty extends Property
+class IsAccessibleForFreeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isAccessibleForFree';
     const PROPERTY_NAME = 'isAccessibleForFree';

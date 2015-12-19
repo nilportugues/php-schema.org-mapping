@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\HealthClub;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HealthClubTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes HealthClubTest.
  */
 class HealthClubTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HealthClub::schemaUrl(), "http://schema.org/HealthClub");
+        $this->assertEquals(HealthClub::schemaUrl(), 'http://schema.org/HealthClub');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

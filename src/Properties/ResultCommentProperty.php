@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of result. The Comment created or sent as a result of this action.
  */
-class ResultCommentProperty extends Property
+class ResultCommentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/resultComment';
     const PROPERTY_NAME = 'resultComment';

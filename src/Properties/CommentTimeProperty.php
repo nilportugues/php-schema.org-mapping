@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The time at which the UserComment was made.
  */
-class CommentTimeProperty extends Property
+class CommentTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/commentTime';
     const PROPERTY_NAME = 'commentTime';

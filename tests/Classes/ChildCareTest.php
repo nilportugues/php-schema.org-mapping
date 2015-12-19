@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ChildCare;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ChildCareTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ChildCareTest.
  */
 class ChildCareTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ChildCare::schemaUrl(), "http://schema.org/ChildCare");
+        $this->assertEquals(ChildCare::schemaUrl(), 'http://schema.org/ChildCare');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

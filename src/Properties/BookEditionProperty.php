@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The edition of the book.
  */
-class BookEditionProperty extends Property
+class BookEditionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/bookEdition';
     const PROPERTY_NAME = 'bookEdition';

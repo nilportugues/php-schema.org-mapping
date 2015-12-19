@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Bridge;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BridgeTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BridgeTest.
  */
 class BridgeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Bridge::schemaUrl(), "http://schema.org/Bridge");
+        $this->assertEquals(Bridge::schemaUrl(), 'http://schema.org/Bridge');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

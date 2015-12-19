@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An embedded audio object.
  */
-class AudioProperty extends Property
+class AudioProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/audio';
     const PROPERTY_NAME = 'audio';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The artist that performed this album or recording.
  */
-class ByArtistProperty extends Property
+class ByArtistProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/byArtist';
     const PROPERTY_NAME = 'byArtist';

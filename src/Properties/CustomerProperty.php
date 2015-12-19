@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Party placing the order or paying the invoice.
  */
-class CustomerProperty extends Property
+class CustomerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/customer';
     const PROPERTY_NAME = 'customer';

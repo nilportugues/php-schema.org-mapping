@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The drug or supplement's legal status, including any controlled substance schedules that apply.
  */
-class LegalStatusProperty extends Property
+class LegalStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/legalStatus';
     const PROPERTY_NAME = 'legalStatus';

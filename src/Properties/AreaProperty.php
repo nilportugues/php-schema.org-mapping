@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The area within which users can expect to reach the broadcast service.
  */
-class AreaProperty extends Property
+class AreaProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/area';
     const PROPERTY_NAME = 'area';

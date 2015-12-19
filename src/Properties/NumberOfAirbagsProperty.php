@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number or type of airbags in the vehicle.
  */
-class NumberOfAirbagsProperty extends Property
+class NumberOfAirbagsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfAirbags';
     const PROPERTY_NAME = 'numberOfAirbags';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The category of the recipe&#x2014;for example, appetizer, entree, etc.
  */
-class RecipeCategoryProperty extends Property
+class RecipeCategoryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recipeCategory';
     const PROPERTY_NAME = 'recipeCategory';

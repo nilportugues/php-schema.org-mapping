@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The publisher of the creative work.
  */
-class PublisherProperty extends Property
+class PublisherProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/publisher';
     const PROPERTY_NAME = 'publisher';

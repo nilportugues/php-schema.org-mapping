@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The available volume for cargo or luggage. For automobiles, this is usually the trunk volume.
  */
-class CargoVolumeProperty extends Property
+class CargoVolumeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/cargoVolume';
     const PROPERTY_NAME = 'cargoVolume';

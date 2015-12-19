@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An alignment to an established educational framework.
  */
-class EducationalAlignmentProperty extends Property
+class EducationalAlignmentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/educationalAlignment';
     const PROPERTY_NAME = 'educationalAlignment';

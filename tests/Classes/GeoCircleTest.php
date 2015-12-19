@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GeoCircle;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GeoCircleTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GeoCircleTest.
  */
 class GeoCircleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GeoCircle::schemaUrl(), "http://schema.org/GeoCircle");
+        $this->assertEquals(GeoCircle::schemaUrl(), 'http://schema.org/GeoCircle');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

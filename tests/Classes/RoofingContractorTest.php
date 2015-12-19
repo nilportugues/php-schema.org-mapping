@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RoofingContractor;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RoofingContractorTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RoofingContractorTest.
  */
 class RoofingContractorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RoofingContractor::schemaUrl(), "http://schema.org/RoofingContractor");
+        $this->assertEquals(RoofingContractor::schemaUrl(), 'http://schema.org/RoofingContractor');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

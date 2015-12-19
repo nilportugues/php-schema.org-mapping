@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\StadiumOrArena;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes StadiumOrArenaTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes StadiumOrArenaTest.
  */
 class StadiumOrArenaTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(StadiumOrArena::schemaUrl(), "http://schema.org/StadiumOrArena");
+        $this->assertEquals(StadiumOrArena::schemaUrl(), 'http://schema.org/StadiumOrArena');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

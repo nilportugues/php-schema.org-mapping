@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Bakery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BakeryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BakeryTest.
  */
 class BakeryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Bakery::schemaUrl(), "http://schema.org/Bakery");
+        $this->assertEquals(Bakery::schemaUrl(), 'http://schema.org/Bakery');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

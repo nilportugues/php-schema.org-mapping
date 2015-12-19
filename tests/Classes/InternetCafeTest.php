@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\InternetCafe;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InternetCafeTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes InternetCafeTest.
  */
 class InternetCafeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InternetCafe::schemaUrl(), "http://schema.org/InternetCafe");
+        $this->assertEquals(InternetCafe::schemaUrl(), 'http://schema.org/InternetCafe');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

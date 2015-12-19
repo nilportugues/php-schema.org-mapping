@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * 'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.
  */
-class CarrierProperty extends Property
+class CarrierProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/carrier';
     const PROPERTY_NAME = 'carrier';

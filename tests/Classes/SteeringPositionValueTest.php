@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SteeringPositionValue;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SteeringPositionValueTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SteeringPositionValueTest.
  */
 class SteeringPositionValueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SteeringPositionValue::schemaUrl(), "http://schema.org/SteeringPositionValue");
+        $this->assertEquals(SteeringPositionValue::schemaUrl(), 'http://schema.org/SteeringPositionValue');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

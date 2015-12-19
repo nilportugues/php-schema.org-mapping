@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Waterfall;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WaterfallTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WaterfallTest.
  */
 class WaterfallTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Waterfall::schemaUrl(), "http://schema.org/Waterfall");
+        $this->assertEquals(Waterfall::schemaUrl(), 'http://schema.org/Waterfall');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

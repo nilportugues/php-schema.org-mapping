@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Example/instance/realization/derivation of the concept of this creative work. eg. The paperback edition, first edition, or eBook.
  */
-class WorkExampleProperty extends Property
+class WorkExampleProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/workExample';
     const PROPERTY_NAME = 'workExample';

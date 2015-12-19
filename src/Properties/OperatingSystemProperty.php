@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Operating systems supported (Windows 7, OSX 10.6, Android 1.6).
  */
-class OperatingSystemProperty extends Property
+class OperatingSystemProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/operatingSystem';
     const PROPERTY_NAME = 'operatingSystem';

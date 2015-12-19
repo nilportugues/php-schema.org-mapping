@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ArtGallery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ArtGalleryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ArtGalleryTest.
  */
 class ArtGalleryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ArtGallery::schemaUrl(), "http://schema.org/ArtGallery");
+        $this->assertEquals(ArtGallery::schemaUrl(), 'http://schema.org/ArtGallery');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

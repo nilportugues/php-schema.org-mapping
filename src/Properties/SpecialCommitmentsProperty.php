@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any special commitments associated with this job posting. Valid entries include VeteranCommit, MilitarySpouseCommit, etc.
  */
-class SpecialCommitmentsProperty extends Property
+class SpecialCommitmentsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/specialCommitments';
     const PROPERTY_NAME = 'specialCommitments';

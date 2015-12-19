@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A person or organization attending the event.
  */
-class AttendeeProperty extends Property
+class AttendeeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/attendee';
     const PROPERTY_NAME = 'attendee';

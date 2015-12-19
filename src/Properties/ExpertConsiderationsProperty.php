@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Medical expert advice related to the plan.
  */
-class ExpertConsiderationsProperty extends Property
+class ExpertConsiderationsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/expertConsiderations';
     const PROPERTY_NAME = 'expertConsiderations';

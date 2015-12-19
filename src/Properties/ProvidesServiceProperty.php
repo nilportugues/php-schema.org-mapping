@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The service provided by this channel.
  */
-class ProvidesServiceProperty extends Property
+class ProvidesServiceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/providesService';
     const PROPERTY_NAME = 'providesService';

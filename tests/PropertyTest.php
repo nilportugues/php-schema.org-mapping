@@ -2,7 +2,7 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 12/19/15
- * Time: 12:37 PM
+ * Time: 12:37 PM.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -27,4 +27,3 @@ class PropertyTest extends \PHPUnit_Framework_TestCase
         DummyProperty::create('I Will Fail Miserably');
     }
 }
- 

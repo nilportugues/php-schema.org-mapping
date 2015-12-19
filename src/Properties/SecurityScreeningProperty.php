@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type of security screening the passenger is subject to.
  */
-class SecurityScreeningProperty extends Property
+class SecurityScreeningProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/securityScreening';
     const PROPERTY_NAME = 'securityScreening';

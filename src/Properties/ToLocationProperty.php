@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of location. The final location of the object or the agent after the action.
  */
-class ToLocationProperty extends Property
+class ToLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/toLocation';
     const PROPERTY_NAME = 'toLocation';

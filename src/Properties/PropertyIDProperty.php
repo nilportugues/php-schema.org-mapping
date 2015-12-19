@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A commonly used identifier for the characteristic represented by the property, e.g. a manufacturer or a standard code for a property. propertyID can be.
  */
-class PropertyIDProperty extends Property
+class PropertyIDProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/propertyID';
     const PROPERTY_NAME = 'propertyID';

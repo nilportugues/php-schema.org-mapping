@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * One of the domain specialities to which this web page's content applies.
  */
-class SpecialtyProperty extends Property
+class SpecialtyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/specialty';
     const PROPERTY_NAME = 'specialty';

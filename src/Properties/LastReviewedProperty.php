@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Date on which the content on this web page was last reviewed for accuracy and/or completeness.
  */
-class LastReviewedProperty extends Property
+class LastReviewedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/lastReviewed';
     const PROPERTY_NAME = 'lastReviewed';

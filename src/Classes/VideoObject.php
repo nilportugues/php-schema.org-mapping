@@ -91,26 +91,17 @@ use NilPortugues\SchemaOrg\Properties\VideoFrameSizeProperty;
 use NilPortugues\SchemaOrg\Properties\VideoProperty;
 use NilPortugues\SchemaOrg\Properties\VideoQualityProperty;
 use NilPortugues\SchemaOrg\Properties\WorkExampleProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes VideoObject.
  */
-class VideoObject
+class VideoObject extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/VideoObject';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/VideoObject';
 
     /**
      * @return Mapping

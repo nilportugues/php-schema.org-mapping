@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ProfessionalService;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ProfessionalServiceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ProfessionalServiceTest.
  */
 class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ProfessionalService::schemaUrl(), "http://schema.org/ProfessionalService");
+        $this->assertEquals(ProfessionalService::schemaUrl(), 'http://schema.org/ProfessionalService');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

@@ -22,26 +22,17 @@ use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
 use NilPortugues\SchemaOrg\Properties\ResultProperty;
 use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 use NilPortugues\SchemaOrg\Properties\TargetProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes ListenAction.
  */
-class ListenAction
+class ListenAction extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/ListenAction';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/ListenAction';
 
     /**
      * @return Mapping

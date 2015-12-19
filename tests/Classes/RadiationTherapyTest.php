@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RadiationTherapy;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RadiationTherapyTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RadiationTherapyTest.
  */
 class RadiationTherapyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RadiationTherapy::schemaUrl(), "http://schema.org/RadiationTherapy");
+        $this->assertEquals(RadiationTherapy::schemaUrl(), 'http://schema.org/RadiationTherapy');
     }
 
     public function testCodeWillReturnMappingObject()

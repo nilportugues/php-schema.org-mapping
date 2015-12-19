@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\APIReference;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes APIReferenceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes APIReferenceTest.
  */
 class APIReferenceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(APIReference::schemaUrl(), "http://schema.org/APIReference");
+        $this->assertEquals(APIReference::schemaUrl(), 'http://schema.org/APIReference');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A contact point for a person or organization.
  */
-class ContactPointProperty extends Property
+class ContactPointProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contactPoint';
     const PROPERTY_NAME = 'contactPoint';

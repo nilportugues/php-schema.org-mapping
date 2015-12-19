@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any precaution, guidance, contraindication, etc. related to this drug's use during pregnancy.
  */
-class PregnancyWarningProperty extends Property
+class PregnancyWarningProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/pregnancyWarning';
     const PROPERTY_NAME = 'pregnancyWarning';

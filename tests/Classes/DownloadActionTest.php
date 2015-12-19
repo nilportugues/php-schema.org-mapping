@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DownloadAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DownloadActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DownloadActionTest.
  */
 class DownloadActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DownloadAction::schemaUrl(), "http://schema.org/DownloadAction");
+        $this->assertEquals(DownloadAction::schemaUrl(), 'http://schema.org/DownloadAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

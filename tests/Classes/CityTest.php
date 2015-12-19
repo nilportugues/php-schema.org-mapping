@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\City;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CityTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CityTest.
  */
 class CityTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(City::schemaUrl(), "http://schema.org/City");
+        $this->assertEquals(City::schemaUrl(), 'http://schema.org/City');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

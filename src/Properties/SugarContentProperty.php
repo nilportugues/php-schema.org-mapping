@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of grams of sugar.
  */
-class SugarContentProperty extends Property
+class SugarContentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sugarContent';
     const PROPERTY_NAME = 'sugarContent';

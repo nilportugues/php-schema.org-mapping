@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LegalService;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LegalServiceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LegalServiceTest.
  */
 class LegalServiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LegalService::schemaUrl(), "http://schema.org/LegalService");
+        $this->assertEquals(LegalService::schemaUrl(), 'http://schema.org/LegalService');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

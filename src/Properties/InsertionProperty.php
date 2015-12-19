@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The place of attachment of a muscle, or what the muscle moves.
  */
-class InsertionProperty extends Property
+class InsertionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/insertion';
     const PROPERTY_NAME = 'insertion';

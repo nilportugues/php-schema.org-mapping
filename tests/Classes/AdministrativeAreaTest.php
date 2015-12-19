@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AdministrativeArea;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AdministrativeAreaTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AdministrativeAreaTest.
  */
 class AdministrativeAreaTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AdministrativeArea::schemaUrl(), "http://schema.org/AdministrativeArea");
+        $this->assertEquals(AdministrativeArea::schemaUrl(), 'http://schema.org/AdministrativeArea');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

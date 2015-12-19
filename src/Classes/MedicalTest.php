@@ -25,26 +25,17 @@ use NilPortugues\SchemaOrg\Properties\SignDetectedProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\UsedToDiagnoseProperty;
 use NilPortugues\SchemaOrg\Properties\UsesDeviceProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalTest.
  */
-class MedicalTest
+class MedicalTest extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalTest';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalTest';
 
     /**
      * @return Mapping

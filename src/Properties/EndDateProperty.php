@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The end date and time of the item (in ISO 8601 date format).
  */
-class EndDateProperty extends Property
+class EndDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/endDate';
     const PROPERTY_NAME = 'endDate';

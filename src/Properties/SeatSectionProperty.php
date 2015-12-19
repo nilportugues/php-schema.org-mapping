@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The section location of the reserved seat (e.g. Orchestra).
  */
-class SeatSectionProperty extends Property
+class SeatSectionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/seatSection';
     const PROPERTY_NAME = 'seatSection';

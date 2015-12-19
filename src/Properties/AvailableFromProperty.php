@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * When the item is available for pickup from the store, locker, etc.
  */
-class AvailableFromProperty extends Property
+class AvailableFromProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableFrom';
     const PROPERTY_NAME = 'availableFrom';

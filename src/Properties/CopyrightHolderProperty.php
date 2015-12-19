@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The party holding the legal copyright to the CreativeWork.
  */
-class CopyrightHolderProperty extends Property
+class CopyrightHolderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/copyrightHolder';
     const PROPERTY_NAME = 'copyrightHolder';

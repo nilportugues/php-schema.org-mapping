@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A music recording (track)&#x2014;usually a single song.
  */
-class TracksProperty extends Property
+class TracksProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/tracks';
     const PROPERTY_NAME = 'tracks';

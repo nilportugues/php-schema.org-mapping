@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to the organization or person making the offer.
  */
-class OfferedByProperty extends Property
+class OfferedByProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/offeredBy';
     const PROPERTY_NAME = 'offeredBy';

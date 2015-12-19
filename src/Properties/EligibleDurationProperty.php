@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The duration for which the given offer is valid.
  */
-class EligibleDurationProperty extends Property
+class EligibleDurationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/eligibleDuration';
     const PROPERTY_NAME = 'eligibleDuration';

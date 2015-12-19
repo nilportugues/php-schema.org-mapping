@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * 'merchant' is an out-dated term for 'seller'.
  */
-class MerchantProperty extends Property
+class MerchantProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/merchant';
     const PROPERTY_NAME = 'merchant';

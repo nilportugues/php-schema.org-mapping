@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of instrument. The method of delivery.
  */
-class DeliveryMethodProperty extends Property
+class DeliveryMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/deliveryMethod';
     const PROPERTY_NAME = 'deliveryMethod';

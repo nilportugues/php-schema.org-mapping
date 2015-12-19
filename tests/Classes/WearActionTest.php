@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WearAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WearActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WearActionTest.
  */
 class WearActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WearAction::schemaUrl(), "http://schema.org/WearAction");
+        $this->assertEquals(WearAction::schemaUrl(), 'http://schema.org/WearAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).
  */
-class PermissionsProperty extends Property
+class PermissionsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/permissions';
     const PROPERTY_NAME = 'permissions';

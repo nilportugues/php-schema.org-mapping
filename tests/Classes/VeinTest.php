@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Vein;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VeinTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VeinTest.
  */
 class VeinTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Vein::schemaUrl(), "http://schema.org/Vein");
+        $this->assertEquals(Vein::schemaUrl(), 'http://schema.org/Vein');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

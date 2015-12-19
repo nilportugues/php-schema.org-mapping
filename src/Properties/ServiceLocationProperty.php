@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The location (e.g. civic structure, local business, etc.) where a person can go to access the service.
  */
-class ServiceLocationProperty extends Property
+class ServiceLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serviceLocation';
     const PROPERTY_NAME = 'serviceLocation';

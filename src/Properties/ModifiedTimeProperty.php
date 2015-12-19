@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date and time the reservation was modified.
  */
-class ModifiedTimeProperty extends Property
+class ModifiedTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/modifiedTime';
     const PROPERTY_NAME = 'modifiedTime';

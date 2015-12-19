@@ -59,26 +59,17 @@ use NilPortugues\SchemaOrg\Properties\TaxIDProperty;
 use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
 use NilPortugues\SchemaOrg\Properties\TracksProperty;
 use NilPortugues\SchemaOrg\Properties\VatIDProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MusicGroup.
  */
-class MusicGroup
+class MusicGroup extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MusicGroup';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MusicGroup';
 
     /**
      * @return Mapping

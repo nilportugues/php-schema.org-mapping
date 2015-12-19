@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The person/organization being supported.
  */
-class EndorseeProperty extends Property
+class EndorseeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/endorsee';
     const PROPERTY_NAME = 'endorsee';

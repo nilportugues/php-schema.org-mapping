@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The actual infectious agent, such as a specific bacterium.
  */
-class InfectiousAgentProperty extends Property
+class InfectiousAgentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/infectiousAgent';
     const PROPERTY_NAME = 'infectiousAgent';

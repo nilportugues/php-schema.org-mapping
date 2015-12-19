@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A description of the workup, testing, and other preparations required before implanting this device.
  */
-class PreOpProperty extends Property
+class PreOpProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/preOp';
     const PROPERTY_NAME = 'preOp';

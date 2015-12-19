@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates whether a FoodEstablishment accepts reservations. Values can be Boolean, a URL at which reservations can be made or (for backwards compatibility) the strings Yes or No.
  */
-class AcceptsReservationsProperty extends Property
+class AcceptsReservationsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/acceptsReservations';
     const PROPERTY_NAME = 'acceptsReservations';

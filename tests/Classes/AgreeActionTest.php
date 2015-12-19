@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AgreeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AgreeActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AgreeActionTest.
  */
 class AgreeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AgreeAction::schemaUrl(), "http://schema.org/AgreeAction");
+        $this->assertEquals(AgreeAction::schemaUrl(), 'http://schema.org/AgreeAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

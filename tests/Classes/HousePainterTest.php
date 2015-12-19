@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\HousePainter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HousePainterTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes HousePainterTest.
  */
 class HousePainterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HousePainter::schemaUrl(), "http://schema.org/HousePainter");
+        $this->assertEquals(HousePainter::schemaUrl(), 'http://schema.org/HousePainter');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

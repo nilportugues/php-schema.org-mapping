@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The organization issuing the ticket or permit.
  */
-class IssuedByProperty extends Property
+class IssuedByProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/issuedBy';
     const PROPERTY_NAME = 'issuedBy';

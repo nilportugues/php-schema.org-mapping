@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date the invoice is scheduled to be paid.
  */
-class ScheduledPaymentDateProperty extends Property
+class ScheduledPaymentDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/scheduledPaymentDate';
     const PROPERTY_NAME = 'scheduledPaymentDate';

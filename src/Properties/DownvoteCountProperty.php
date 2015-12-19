@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of downvotes this question, answer or comment has received from the community.
  */
-class DownvoteCountProperty extends Property
+class DownvoteCountProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/downvoteCount';
     const PROPERTY_NAME = 'downvoteCount';

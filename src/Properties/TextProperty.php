@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The textual content of this CreativeWork.
  */
-class TextProperty extends Property
+class TextProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/text';
     const PROPERTY_NAME = 'text';

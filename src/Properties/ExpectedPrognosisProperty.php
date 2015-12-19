@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The likely outcome in either the short term or long term of the medical condition.
  */
-class ExpectedPrognosisProperty extends Property
+class ExpectedPrognosisProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/expectedPrognosis';
     const PROPERTY_NAME = 'expectedPrognosis';

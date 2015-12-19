@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Description of the meals that will be provided or available for purchase.
  */
-class MealServiceProperty extends Property
+class MealServiceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/mealService';
     const PROPERTY_NAME = 'mealService';

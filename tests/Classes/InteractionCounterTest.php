@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\InteractionCounter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InteractionCounterTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes InteractionCounterTest.
  */
 class InteractionCounterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InteractionCounter::schemaUrl(), "http://schema.org/InteractionCounter");
+        $this->assertEquals(InteractionCounter::schemaUrl(), 'http://schema.org/InteractionCounter');
     }
 
     public function testInteractionServiceWillReturnMappingObject()

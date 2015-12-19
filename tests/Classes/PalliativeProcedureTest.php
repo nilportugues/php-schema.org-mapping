@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PalliativeProcedure;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PalliativeProcedureTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PalliativeProcedureTest.
  */
 class PalliativeProcedureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PalliativeProcedure::schemaUrl(), "http://schema.org/PalliativeProcedure");
+        $this->assertEquals(PalliativeProcedure::schemaUrl(), 'http://schema.org/PalliativeProcedure');
     }
 
     public function testCodeWillReturnMappingObject()

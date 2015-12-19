@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The units of an active ingredient's strength, e.g. mg.
  */
-class StrengthUnitProperty extends Property
+class StrengthUnitProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/strengthUnit';
     const PROPERTY_NAME = 'strengthUnit';

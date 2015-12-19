@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of the item ordered. If the property is not set, assume the quantity is one.
  */
-class OrderQuantityProperty extends Property
+class OrderQuantityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/orderQuantity';
     const PROPERTY_NAME = 'orderQuantity';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The actual body of the review.
  */
-class ReviewBodyProperty extends Property
+class ReviewBodyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/reviewBody';
     const PROPERTY_NAME = 'reviewBody';

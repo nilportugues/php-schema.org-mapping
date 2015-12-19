@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The URL at which a reply may be posted to the specified UserComment.
  */
-class ReplyToUrlProperty extends Property
+class ReplyToUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/replyToUrl';
     const PROPERTY_NAME = 'replyToUrl';

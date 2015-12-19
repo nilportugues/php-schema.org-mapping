@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A category of alignment between the learning resource and the framework node. Recommended values include: 'assesses', 'teaches', 'requires', 'textComplexity', 'readingLevel', 'educationalSubject', and 'educationLevel'.
  */
-class AlignmentTypeProperty extends Property
+class AlignmentTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/alignmentType';
     const PROPERTY_NAME = 'alignmentType';

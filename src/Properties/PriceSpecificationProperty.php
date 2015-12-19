@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * One or more detailed price specifications, indicating the unit price and delivery or payment charges.
  */
-class PriceSpecificationProperty extends Property
+class PriceSpecificationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/priceSpecification';
     const PROPERTY_NAME = 'priceSpecification';

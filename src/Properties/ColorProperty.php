@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The color of the product.
  */
-class ColorProperty extends Property
+class ColorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/color';
     const PROPERTY_NAME = 'color';

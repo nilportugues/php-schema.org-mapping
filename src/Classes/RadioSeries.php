@@ -95,26 +95,17 @@ use NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty;
 use NilPortugues\SchemaOrg\Properties\VersionProperty;
 use NilPortugues\SchemaOrg\Properties\VideoProperty;
 use NilPortugues\SchemaOrg\Properties\WorkExampleProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes RadioSeries.
  */
-class RadioSeries
+class RadioSeries extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/RadioSeries';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/RadioSeries';
 
     /**
      * @return Mapping

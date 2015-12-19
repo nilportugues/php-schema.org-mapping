@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A description of the procedure involved in setting up, using, and/or installing the device.
  */
-class ProcedureProperty extends Property
+class ProcedureProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/procedure';
     const PROPERTY_NAME = 'procedure';

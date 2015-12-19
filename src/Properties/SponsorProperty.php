@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Sponsor of the study.
  */
-class SponsorProperty extends Property
+class SponsorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sponsor';
     const PROPERTY_NAME = 'sponsor';

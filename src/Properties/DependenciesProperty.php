@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Prerequisites needed to fulfill steps in article.
  */
-class DependenciesProperty extends Property
+class DependenciesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dependencies';
     const PROPERTY_NAME = 'dependencies';

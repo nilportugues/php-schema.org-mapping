@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A set of links that can help a user understand and navigate a website hierarchy.
  */
-class BreadcrumbProperty extends Property
+class BreadcrumbProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/breadcrumb';
     const PROPERTY_NAME = 'breadcrumb';

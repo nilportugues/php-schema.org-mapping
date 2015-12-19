@@ -24,26 +24,17 @@ use NilPortugues\SchemaOrg\Properties\SeatRowProperty;
 use NilPortugues\SchemaOrg\Properties\SeatSectionProperty;
 use NilPortugues\SchemaOrg\Properties\SeatingTypeProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Seat.
  */
-class Seat
+class Seat extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Seat';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Seat';
 
     /**
      * @return Mapping

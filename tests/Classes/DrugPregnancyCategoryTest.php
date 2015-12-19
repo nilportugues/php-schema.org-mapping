@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DrugPregnancyCategory;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrugPregnancyCategoryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DrugPregnancyCategoryTest.
  */
 class DrugPregnancyCategoryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrugPregnancyCategory::schemaUrl(), "http://schema.org/DrugPregnancyCategory");
+        $this->assertEquals(DrugPregnancyCategory::schemaUrl(), 'http://schema.org/DrugPregnancyCategory');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

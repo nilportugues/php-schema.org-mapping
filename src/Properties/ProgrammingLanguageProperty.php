@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The computer programming language.
  */
-class ProgrammingLanguageProperty extends Property
+class ProgrammingLanguageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/programmingLanguage';
     const PROPERTY_NAME = 'programmingLanguage';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard.
  */
-class InLanguageProperty extends Property
+class InLanguageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/inLanguage';
     const PROPERTY_NAME = 'inLanguage';

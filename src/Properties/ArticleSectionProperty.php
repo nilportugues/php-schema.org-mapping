@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.
  */
-class ArticleSectionProperty extends Property
+class ArticleSectionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/articleSection';
     const PROPERTY_NAME = 'articleSection';

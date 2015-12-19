@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An available dosage strength for the drug.
  */
-class AvailableStrengthProperty extends Property
+class AvailableStrengthProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableStrength';
     const PROPERTY_NAME = 'availableStrength';

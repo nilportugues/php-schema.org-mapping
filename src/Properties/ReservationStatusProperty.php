@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The current status of the reservation.
  */
-class ReservationStatusProperty extends Property
+class ReservationStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/reservationStatus';
     const PROPERTY_NAME = 'reservationStatus';

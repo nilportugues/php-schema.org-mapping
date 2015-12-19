@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of instrument. The exercise plan used on this action.
  */
-class ExercisePlanProperty extends Property
+class ExercisePlanProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/exercisePlan';
     const PROPERTY_NAME = 'exercisePlan';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ReviewAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReviewActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ReviewActionTest.
  */
 class ReviewActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReviewAction::schemaUrl(), "http://schema.org/ReviewAction");
+        $this->assertEquals(ReviewAction::schemaUrl(), 'http://schema.org/ReviewAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

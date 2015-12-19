@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The basic containment relation between a place and one that contains it.
  */
-class ContainedInPlaceProperty extends Property
+class ContainedInPlaceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/containedInPlace';
     const PROPERTY_NAME = 'containedInPlace';

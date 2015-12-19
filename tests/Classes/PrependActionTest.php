@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PrependAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PrependActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PrependActionTest.
  */
 class PrependActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PrependAction::schemaUrl(), "http://schema.org/PrependAction");
+        $this->assertEquals(PrependAction::schemaUrl(), 'http://schema.org/PrependAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of instrument. The recipe/instructions used to perform the action.
  */
-class RecipeProperty extends Property
+class RecipeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recipe';
     const PROPERTY_NAME = 'recipe';

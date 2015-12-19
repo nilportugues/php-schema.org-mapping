@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Information about the engine or engines of the vehicle.
  */
-class VehicleEngineProperty extends Property
+class VehicleEngineProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vehicleEngine';
     const PROPERTY_NAME = 'vehicleEngine';

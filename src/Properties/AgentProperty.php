@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The direct performer or driver of the action (animate or inanimate). e.g. *John* wrote a book.
  */
-class AgentProperty extends Property
+class AgentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/agent';
     const PROPERTY_NAME = 'agent';

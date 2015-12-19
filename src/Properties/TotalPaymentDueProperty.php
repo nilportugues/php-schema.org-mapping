@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The total amount due.
  */
-class TotalPaymentDueProperty extends Property
+class TotalPaymentDueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/totalPaymentDue';
     const PROPERTY_NAME = 'totalPaymentDue';

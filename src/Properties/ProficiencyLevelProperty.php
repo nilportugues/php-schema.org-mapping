@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Proficiency needed for this content; expected values: 'Beginner', 'Expert'.
  */
-class ProficiencyLevelProperty extends Property
+class ProficiencyLevelProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/proficiencyLevel';
     const PROPERTY_NAME = 'proficiencyLevel';

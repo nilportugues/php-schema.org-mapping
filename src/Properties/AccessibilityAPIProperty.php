@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates that the resource is compatible with the referenced accessibility API (WebSchemas wiki lists possible values).
  */
-class AccessibilityAPIProperty extends Property
+class AccessibilityAPIProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/accessibilityAPI';
     const PROPERTY_NAME = 'accessibilityAPI';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A director of e.g. tv, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.
  */
-class DirectorProperty extends Property
+class DirectorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/director';
     const PROPERTY_NAME = 'director';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date and time of giving up ownership on the product.
  */
-class OwnedThroughProperty extends Property
+class OwnedThroughProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/ownedThrough';
     const PROPERTY_NAME = 'ownedThrough';

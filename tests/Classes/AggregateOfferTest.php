@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AggregateOffer;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AggregateOfferTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AggregateOfferTest.
  */
 class AggregateOfferTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AggregateOffer::schemaUrl(), "http://schema.org/AggregateOffer");
+        $this->assertEquals(AggregateOffer::schemaUrl(), 'http://schema.org/AggregateOffer');
     }
 
     public function testHighPriceWillReturnMappingObject()

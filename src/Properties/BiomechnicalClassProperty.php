@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The biomechanical properties of the bone.
  */
-class BiomechnicalClassProperty extends Property
+class BiomechnicalClassProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/biomechnicalClass';
     const PROPERTY_NAME = 'biomechnicalClass';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A parent of this person.
  */
-class ParentProperty extends Property
+class ParentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/parent';
     const PROPERTY_NAME = 'parent';

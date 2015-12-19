@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AutoPartsStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AutoPartsStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AutoPartsStoreTest.
  */
 class AutoPartsStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AutoPartsStore::schemaUrl(), "http://schema.org/AutoPartsStore");
+        $this->assertEquals(AutoPartsStore::schemaUrl(), 'http://schema.org/AutoPartsStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

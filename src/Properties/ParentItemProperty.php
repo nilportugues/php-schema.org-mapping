@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The parent of a question, answer or item in general.
  */
-class ParentItemProperty extends Property
+class ParentItemProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/parentItem';
     const PROPERTY_NAME = 'parentItem';

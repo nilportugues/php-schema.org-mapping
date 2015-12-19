@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The branches that comprise the arterial structure.
  */
-class ArterialBranchProperty extends Property
+class ArterialBranchProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/arterialBranch';
     const PROPERTY_NAME = 'arterialBranch';

@@ -2,7 +2,7 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 12/19/15
- * Time: 12:36 PM
+ * Time: 12:36 PM.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -10,17 +10,15 @@
 
 namespace NilPortugues\Tests\SchemaOrg;
 
-use NilPortugues\SchemaOrg\Property;
-
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
- * Class DummyProperty
- * @package NilPortugues\Tests\SchemaOrg
+ * Class DummyProperty.
  */
-class DummyProperty extends Property
+class DummyProperty extends SchemaProperty
 {
-    const PROPERTY_NAME = "dummy";
-    const SCHEMA_URL = "http://nilportugues/Dummy";
+    const PROPERTY_NAME = 'dummy';
+    const SCHEMA_URL = 'http://nilportugues/Dummy';
 
     /**
      * A list of schemas allowed to use this property.
@@ -28,4 +26,4 @@ class DummyProperty extends Property
      * @var array
      */
     protected static $allowedSchemas = ['ItWorks'];
-} 
+}

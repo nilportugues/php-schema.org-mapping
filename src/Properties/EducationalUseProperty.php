@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The purpose of a work in the context of education; for example, 'assignment', 'group work'.
  */
-class EducationalUseProperty extends Property
+class EducationalUseProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/educationalUse';
     const PROPERTY_NAME = 'educationalUse';

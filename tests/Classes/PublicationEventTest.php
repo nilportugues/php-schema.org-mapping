@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PublicationEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PublicationEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PublicationEventTest.
  */
 class PublicationEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PublicationEvent::schemaUrl(), "http://schema.org/PublicationEvent");
+        $this->assertEquals(PublicationEvent::schemaUrl(), 'http://schema.org/PublicationEvent');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

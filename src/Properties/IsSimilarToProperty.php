@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to another, functionally similar product (or multiple products).
  */
-class IsSimilarToProperty extends Property
+class IsSimilarToProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isSimilarTo';
     const PROPERTY_NAME = 'isSimilarTo';

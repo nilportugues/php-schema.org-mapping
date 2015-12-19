@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specific qualifications required for this role.
  */
-class QualificationsProperty extends Property
+class QualificationsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/qualifications';
     const PROPERTY_NAME = 'qualifications';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The name given to how bone physically connects to each other.
  */
-class StructuralClassProperty extends Property
+class StructuralClassProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/structuralClass';
     const PROPERTY_NAME = 'structuralClass';

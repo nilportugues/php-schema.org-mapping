@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.
  */
-class MpnProperty extends Property
+class MpnProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/mpn';
     const PROPERTY_NAME = 'mpn';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Seat;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SeatTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SeatTest.
  */
 class SeatTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Seat::schemaUrl(), "http://schema.org/Seat");
+        $this->assertEquals(Seat::schemaUrl(), 'http://schema.org/Seat');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

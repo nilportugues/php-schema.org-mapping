@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Notary;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes NotaryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes NotaryTest.
  */
 class NotaryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Notary::schemaUrl(), "http://schema.org/Notary");
+        $this->assertEquals(Notary::schemaUrl(), 'http://schema.org/Notary');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

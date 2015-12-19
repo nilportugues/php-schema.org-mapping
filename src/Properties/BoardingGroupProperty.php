@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The airline-specific indicator of boarding order / preference.
  */
-class BoardingGroupProperty extends Property
+class BoardingGroupProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/boardingGroup';
     const PROPERTY_NAME = 'boardingGroup';

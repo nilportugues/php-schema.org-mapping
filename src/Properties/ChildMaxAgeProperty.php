@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Maximal age of the child.
  */
-class ChildMaxAgeProperty extends Property
+class ChildMaxAgeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/childMaxAge';
     const PROPERTY_NAME = 'childMaxAge';

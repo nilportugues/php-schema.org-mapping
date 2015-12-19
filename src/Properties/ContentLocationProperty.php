@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The location depicted or described in the content. For example, the location in a photograph or painting.
  */
-class ContentLocationProperty extends Property
+class ContentLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contentLocation';
     const PROPERTY_NAME = 'contentLocation';

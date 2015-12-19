@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The seat associated with the ticket.
  */
-class TicketedSeatProperty extends Property
+class TicketedSeatProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/ticketedSeat';
     const PROPERTY_NAME = 'ticketedSeat';

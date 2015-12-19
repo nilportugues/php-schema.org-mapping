@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A full description of the lodging unit.
  */
-class LodgingUnitDescriptionProperty extends Property
+class LodgingUnitDescriptionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/lodgingUnitDescription';
     const PROPERTY_NAME = 'lodgingUnitDescription';

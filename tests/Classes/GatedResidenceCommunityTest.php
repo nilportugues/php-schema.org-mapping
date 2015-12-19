@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GatedResidenceCommunity;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GatedResidenceCommunityTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GatedResidenceCommunityTest.
  */
 class GatedResidenceCommunityTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GatedResidenceCommunity::schemaUrl(), "http://schema.org/GatedResidenceCommunity");
+        $this->assertEquals(GatedResidenceCommunity::schemaUrl(), 'http://schema.org/GatedResidenceCommunity');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

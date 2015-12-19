@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.
  */
-class KeywordsProperty extends Property
+class KeywordsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/keywords';
     const PROPERTY_NAME = 'keywords';

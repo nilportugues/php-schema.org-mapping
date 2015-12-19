@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\EngineSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EngineSpecificationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes EngineSpecificationTest.
  */
 class EngineSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EngineSpecification::schemaUrl(), "http://schema.org/EngineSpecification");
+        $this->assertEquals(EngineSpecification::schemaUrl(), 'http://schema.org/EngineSpecification');
     }
 
     public function testFuelTypeWillReturnMappingObject()

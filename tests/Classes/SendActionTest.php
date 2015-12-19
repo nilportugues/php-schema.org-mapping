@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SendAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SendActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SendActionTest.
  */
 class SendActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SendAction::schemaUrl(), "http://schema.org/SendAction");
+        $this->assertEquals(SendAction::schemaUrl(), 'http://schema.org/SendAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

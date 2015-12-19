@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\InteractAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InteractActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes InteractActionTest.
  */
 class InteractActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InteractAction::schemaUrl(), "http://schema.org/InteractAction");
+        $this->assertEquals(InteractAction::schemaUrl(), 'http://schema.org/InteractAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

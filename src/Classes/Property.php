@@ -24,26 +24,17 @@ use NilPortugues\SchemaOrg\Properties\RangeIncludesProperty;
 use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\SupersededByProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Property.
  */
-class Property
+class Property extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Property';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Property';
 
     /**
      * @return Mapping

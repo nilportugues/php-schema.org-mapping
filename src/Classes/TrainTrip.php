@@ -29,26 +29,17 @@ use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\TrainNameProperty;
 use NilPortugues\SchemaOrg\Properties\TrainNumberProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes TrainTrip.
  */
-class TrainTrip
+class TrainTrip extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/TrainTrip';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/TrainTrip';
 
     /**
      * @return Mapping

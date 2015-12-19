@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ReserveAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReserveActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ReserveActionTest.
  */
 class ReserveActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReserveAction::schemaUrl(), "http://schema.org/ReserveAction");
+        $this->assertEquals(ReserveAction::schemaUrl(), 'http://schema.org/ReserveAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

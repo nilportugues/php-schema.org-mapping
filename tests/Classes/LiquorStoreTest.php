@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LiquorStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LiquorStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LiquorStoreTest.
  */
 class LiquorStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LiquorStore::schemaUrl(), "http://schema.org/LiquorStore");
+        $this->assertEquals(LiquorStore::schemaUrl(), 'http://schema.org/LiquorStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

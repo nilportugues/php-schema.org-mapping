@@ -23,26 +23,17 @@ use NilPortugues\SchemaOrg\Properties\PredecessorOfProperty;
 use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\SuccessorOfProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes ProductModel.
  */
-class ProductModel
+class ProductModel extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/ProductModel';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/ProductModel';
 
     /**
      * @return Mapping

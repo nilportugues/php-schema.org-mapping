@@ -31,26 +31,17 @@ use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\TargetPlatformProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\WordCountProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes APIReference.
  */
-class APIReference
+class APIReference extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/APIReference';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/APIReference';
 
     /**
      * @return Mapping

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property.
  */
-class FamilyNameProperty extends Property
+class FamilyNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/familyName';
     const PROPERTY_NAME = 'familyName';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ShareAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ShareActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ShareActionTest.
  */
 class ShareActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ShareAction::schemaUrl(), "http://schema.org/ShareAction");
+        $this->assertEquals(ShareAction::schemaUrl(), 'http://schema.org/ShareAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

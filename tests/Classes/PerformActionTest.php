@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PerformAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PerformActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PerformActionTest.
  */
 class PerformActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PerformAction::schemaUrl(), "http://schema.org/PerformAction");
+        $this->assertEquals(PerformAction::schemaUrl(), 'http://schema.org/PerformAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The length of time it takes to prepare the recipe, in ISO 8601 duration format.
  */
-class PrepTimeProperty extends Property
+class PrepTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/prepTime';
     const PROPERTY_NAME = 'prepTime';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MotorcycleDealer;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MotorcycleDealerTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MotorcycleDealerTest.
  */
 class MotorcycleDealerTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MotorcycleDealer::schemaUrl(), "http://schema.org/MotorcycleDealer");
+        $this->assertEquals(MotorcycleDealer::schemaUrl(), 'http://schema.org/MotorcycleDealer');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

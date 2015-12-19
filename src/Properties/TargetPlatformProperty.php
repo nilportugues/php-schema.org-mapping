@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Type of app development: phone, Metro style, desktop, XBox, etc.
  */
-class TargetPlatformProperty extends Property
+class TargetPlatformProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/targetPlatform';
     const PROPERTY_NAME = 'targetPlatform';

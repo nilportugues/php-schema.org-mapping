@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The algorithm or rules to follow to compute the score.
  */
-class AlgorithmProperty extends Property
+class AlgorithmProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/algorithm';
     const PROPERTY_NAME = 'algorithm';

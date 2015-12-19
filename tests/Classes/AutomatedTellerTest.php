@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AutomatedTeller;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AutomatedTellerTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AutomatedTellerTest.
  */
 class AutomatedTellerTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AutomatedTeller::schemaUrl(), "http://schema.org/AutomatedTeller");
+        $this->assertEquals(AutomatedTeller::schemaUrl(), 'http://schema.org/AutomatedTeller');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

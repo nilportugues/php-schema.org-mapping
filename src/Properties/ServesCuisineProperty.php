@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The cuisine of the restaurant.
  */
-class ServesCuisineProperty extends Property
+class ServesCuisineProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/servesCuisine';
     const PROPERTY_NAME = 'servesCuisine';

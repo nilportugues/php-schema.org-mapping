@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Products owned by the organization or person.
  */
-class OwnsProperty extends Property
+class OwnsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/owns';
     const PROPERTY_NAME = 'owns';

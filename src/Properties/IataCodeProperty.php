@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * IATA identifier for an airline or airport.
  */
-class IataCodeProperty extends Property
+class IataCodeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/iataCode';
     const PROPERTY_NAME = 'iataCode';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Fictional person connected with a creative work.
  */
-class CharacterProperty extends Property
+class CharacterProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/character';
     const PROPERTY_NAME = 'character';

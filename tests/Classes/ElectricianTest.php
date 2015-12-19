@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Electrician;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ElectricianTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ElectricianTest.
  */
 class ElectricianTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Electrician::schemaUrl(), "http://schema.org/Electrician");
+        $this->assertEquals(Electrician::schemaUrl(), 'http://schema.org/Electrician');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

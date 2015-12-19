@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Dun & Bradstreet DUNS number for identifying an organization or business person.
  */
-class DunsProperty extends Property
+class DunsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/duns';
     const PROPERTY_NAME = 'duns';

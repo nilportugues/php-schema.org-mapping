@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Barcode;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BarcodeTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BarcodeTest.
  */
 class BarcodeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Barcode::schemaUrl(), "http://schema.org/Barcode");
+        $this->assertEquals(Barcode::schemaUrl(), 'http://schema.org/Barcode');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

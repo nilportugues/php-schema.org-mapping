@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * File size in (mega/kilo) bytes.
  */
-class ContentSizeProperty extends Property
+class ContentSizeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contentSize';
     const PROPERTY_NAME = 'contentSize';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The warranty promise(s) included in the offer.
  */
-class WarrantyProperty extends Property
+class WarrantyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/warranty';
     const PROPERTY_NAME = 'warranty';

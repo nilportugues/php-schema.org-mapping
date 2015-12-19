@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The location in which the study is taking/took place.
  */
-class StudyLocationProperty extends Property
+class StudyLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/studyLocation';
     const PROPERTY_NAME = 'studyLocation';

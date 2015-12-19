@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * How the procedure is performed.
  */
-class HowPerformedProperty extends Property
+class HowPerformedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/howPerformed';
     const PROPERTY_NAME = 'howPerformed';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * For itemListElement values, you can use simple strings (e.g. "Peter", "Paul", "Mary"), existing entities, or use ListItem.
  */
-class ItemListElementProperty extends Property
+class ItemListElementProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/itemListElement';
     const PROPERTY_NAME = 'itemListElement';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The unique identifier for the train.
  */
-class TrainNumberProperty extends Property
+class TrainNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/trainNumber';
     const PROPERTY_NAME = 'trainNumber';

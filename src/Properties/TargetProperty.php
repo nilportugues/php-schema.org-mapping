@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates a target EntryPoint for an Action.
  */
-class TargetProperty extends Property
+class TargetProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/target';
     const PROPERTY_NAME = 'target';

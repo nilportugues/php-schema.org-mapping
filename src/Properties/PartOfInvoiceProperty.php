@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The order is being paid as part of the referenced Invoice.
  */
-class PartOfInvoiceProperty extends Property
+class PartOfInvoiceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/partOfInvoice';
     const PROPERTY_NAME = 'partOfInvoice';

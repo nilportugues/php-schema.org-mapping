@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The expected progression of the condition if it is not treated and allowed to progress naturally.
  */
-class NaturalProgressionProperty extends Property
+class NaturalProgressionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/naturalProgression';
     const PROPERTY_NAME = 'naturalProgression';

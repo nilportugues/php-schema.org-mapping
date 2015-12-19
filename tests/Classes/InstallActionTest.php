@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\InstallAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InstallActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes InstallActionTest.
  */
 class InstallActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InstallAction::schemaUrl(), "http://schema.org/InstallAction");
+        $this->assertEquals(InstallAction::schemaUrl(), 'http://schema.org/InstallAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

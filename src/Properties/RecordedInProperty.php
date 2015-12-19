@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The CreativeWork that captured all or part of this Event.
  */
-class RecordedInProperty extends Property
+class RecordedInProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recordedIn';
     const PROPERTY_NAME = 'recordedIn';

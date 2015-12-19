@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Features or modules provided by this application (and possibly required by other applications).
  */
-class FeatureListProperty extends Property
+class FeatureListProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/featureList';
     const PROPERTY_NAME = 'featureList';

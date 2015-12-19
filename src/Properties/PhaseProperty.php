@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The phase of the trial.
  */
-class PhaseProperty extends Property
+class PhaseProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/phase';
     const PROPERTY_NAME = 'phase';

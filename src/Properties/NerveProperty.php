@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The underlying innervation associated with the muscle.
  */
-class NerveProperty extends Property
+class NerveProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/nerve';
     const PROPERTY_NAME = 'nerve';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The WebSite or SoftwareApplication where the interactions took place.
  */
-class InteractionServiceProperty extends Property
+class InteractionServiceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/interactionService';
     const PROPERTY_NAME = 'interactionService';

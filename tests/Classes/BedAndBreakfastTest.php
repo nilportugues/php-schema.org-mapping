@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BedAndBreakfast;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BedAndBreakfastTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BedAndBreakfastTest.
  */
 class BedAndBreakfastTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BedAndBreakfast::schemaUrl(), "http://schema.org/BedAndBreakfast");
+        $this->assertEquals(BedAndBreakfast::schemaUrl(), 'http://schema.org/BedAndBreakfast');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

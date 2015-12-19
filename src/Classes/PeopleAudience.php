@@ -18,26 +18,17 @@ use NilPortugues\SchemaOrg\Properties\RequiredMinAgeProperty;
 use NilPortugues\SchemaOrg\Properties\SuggestedGenderProperty;
 use NilPortugues\SchemaOrg\Properties\SuggestedMaxAgeProperty;
 use NilPortugues\SchemaOrg\Properties\SuggestedMinAgeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes PeopleAudience.
  */
-class PeopleAudience
+class PeopleAudience extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/PeopleAudience';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/PeopleAudience';
 
     /**
      * @return Mapping

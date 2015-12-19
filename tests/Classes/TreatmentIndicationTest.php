@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TreatmentIndication;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TreatmentIndicationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TreatmentIndicationTest.
  */
 class TreatmentIndicationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TreatmentIndication::schemaUrl(), "http://schema.org/TreatmentIndication");
+        $this->assertEquals(TreatmentIndication::schemaUrl(), 'http://schema.org/TreatmentIndication');
     }
 
     public function testCodeWillReturnMappingObject()

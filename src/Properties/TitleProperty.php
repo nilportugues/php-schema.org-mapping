@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The title of the job.
  */
-class TitleProperty extends Property
+class TitleProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/title';
     const PROPERTY_NAME = 'title';

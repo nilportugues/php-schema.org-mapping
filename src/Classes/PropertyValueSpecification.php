@@ -31,26 +31,17 @@ use NilPortugues\SchemaOrg\Properties\ValueMinLengthProperty;
 use NilPortugues\SchemaOrg\Properties\ValueNameProperty;
 use NilPortugues\SchemaOrg\Properties\ValuePatternProperty;
 use NilPortugues\SchemaOrg\Properties\ValueRequiredProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes PropertyValueSpecification.
  */
-class PropertyValueSpecification
+class PropertyValueSpecification extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/PropertyValueSpecification';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/PropertyValueSpecification';
 
     /**
      * @return Mapping

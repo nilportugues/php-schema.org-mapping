@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The platform where the train arrives.
  */
-class ArrivalPlatformProperty extends Property
+class ArrivalPlatformProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/arrivalPlatform';
     const PROPERTY_NAME = 'arrivalPlatform';

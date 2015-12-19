@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\VisualArtwork;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VisualArtworkTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VisualArtworkTest.
  */
 class VisualArtworkTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VisualArtwork::schemaUrl(), "http://schema.org/VisualArtwork");
+        $this->assertEquals(VisualArtwork::schemaUrl(), 'http://schema.org/VisualArtwork');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

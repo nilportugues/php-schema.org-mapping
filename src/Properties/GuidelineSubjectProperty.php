@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The medical conditions, treatments, etc. that are the subject of the guideline.
  */
-class GuidelineSubjectProperty extends Property
+class GuidelineSubjectProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/guidelineSubject';
     const PROPERTY_NAME = 'guidelineSubject';

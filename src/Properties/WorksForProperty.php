@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Organizations that the person works for.
  */
-class WorksForProperty extends Property
+class WorksForProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/worksFor';
     const PROPERTY_NAME = 'worksFor';

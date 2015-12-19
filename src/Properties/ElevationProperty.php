@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The elevation of a location (WGS 84).
  */
-class ElevationProperty extends Property
+class ElevationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/elevation';
     const PROPERTY_NAME = 'elevation';

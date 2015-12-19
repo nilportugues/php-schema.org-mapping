@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CatholicChurch;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CatholicChurchTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CatholicChurchTest.
  */
 class CatholicChurchTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CatholicChurch::schemaUrl(), "http://schema.org/CatholicChurch");
+        $this->assertEquals(CatholicChurch::schemaUrl(), 'http://schema.org/CatholicChurch');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

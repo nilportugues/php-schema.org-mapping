@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\FlightReservation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FlightReservationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes FlightReservationTest.
  */
 class FlightReservationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(FlightReservation::schemaUrl(), "http://schema.org/FlightReservation");
+        $this->assertEquals(FlightReservation::schemaUrl(), 'http://schema.org/FlightReservation');
     }
 
     public function testBoardingGroupWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain.
  */
-class DriveWheelConfigurationProperty extends Property
+class DriveWheelConfigurationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/driveWheelConfiguration';
     const PROPERTY_NAME = 'driveWheelConfiguration';

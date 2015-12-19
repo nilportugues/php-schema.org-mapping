@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML's input@name.
  */
-class ValueNameProperty extends Property
+class ValueNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/valueName';
     const PROPERTY_NAME = 'valueName';

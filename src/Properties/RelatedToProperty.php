@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The most generic familial relation.
  */
-class RelatedToProperty extends Property
+class RelatedToProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/relatedTo';
     const PROPERTY_NAME = 'relatedTo';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DeleteAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DeleteActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DeleteActionTest.
  */
 class DeleteActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DeleteAction::schemaUrl(), "http://schema.org/DeleteAction");
+        $this->assertEquals(DeleteAction::schemaUrl(), 'http://schema.org/DeleteAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

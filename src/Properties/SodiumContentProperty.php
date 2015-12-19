@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of milligrams of sodium.
  */
-class SodiumContentProperty extends Property
+class SodiumContentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sodiumContent';
     const PROPERTY_NAME = 'sodiumContent';

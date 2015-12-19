@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Storage requirements (free space required).
  */
-class StorageRequirementsProperty extends Property
+class StorageRequirementsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/storageRequirements';
     const PROPERTY_NAME = 'storageRequirements';

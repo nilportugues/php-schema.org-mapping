@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DataDownload;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DataDownloadTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DataDownloadTest.
  */
 class DataDownloadTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DataDownload::schemaUrl(), "http://schema.org/DataDownload");
+        $this->assertEquals(DataDownload::schemaUrl(), 'http://schema.org/DataDownload');
     }
 
     public function testAboutWillReturnMappingObject()

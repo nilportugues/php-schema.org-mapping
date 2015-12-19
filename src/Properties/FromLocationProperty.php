@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of location. The original location of the object or the agent before the action.
  */
-class FromLocationProperty extends Property
+class FromLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/fromLocation';
     const PROPERTY_NAME = 'fromLocation';

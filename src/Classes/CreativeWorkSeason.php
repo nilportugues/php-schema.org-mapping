@@ -31,26 +31,17 @@ use NilPortugues\SchemaOrg\Properties\SeasonNumberProperty;
 use NilPortugues\SchemaOrg\Properties\StartDateProperty;
 use NilPortugues\SchemaOrg\Properties\TrailerProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes CreativeWorkSeason.
  */
-class CreativeWorkSeason
+class CreativeWorkSeason extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/CreativeWorkSeason';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/CreativeWorkSeason';
 
     /**
      * @return Mapping

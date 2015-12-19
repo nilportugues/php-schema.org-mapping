@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sign detected by the test.
  */
-class SignDetectedProperty extends Property
+class SignDetectedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/signDetected';
     const PROPERTY_NAME = 'signDetected';

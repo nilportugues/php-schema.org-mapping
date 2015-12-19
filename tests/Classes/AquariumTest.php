@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Aquarium;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AquariumTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AquariumTest.
  */
 class AquariumTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Aquarium::schemaUrl(), "http://schema.org/Aquarium");
+        $this->assertEquals(Aquarium::schemaUrl(), 'http://schema.org/Aquarium');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Player type required&#x2014;for example, Flash or Silverlight.
  */
-class PlayerTypeProperty extends Property
+class PlayerTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/playerType';
     const PROPERTY_NAME = 'playerType';

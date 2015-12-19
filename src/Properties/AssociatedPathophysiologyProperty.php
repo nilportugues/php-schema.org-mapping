@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * If applicable, a description of the pathophysiology associated with the anatomical system, including potential abnormal changes in the mechanical, physical, and biochemical functions of the system.
  */
-class AssociatedPathophysiologyProperty extends Property
+class AssociatedPathophysiologyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/associatedPathophysiology';
     const PROPERTY_NAME = 'associatedPathophysiology';

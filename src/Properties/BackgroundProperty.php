@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Descriptive information establishing a historical perspective on the supplement. May include the rationale for the name, the population where the supplement first came to prominence, etc.
  */
-class BackgroundProperty extends Property
+class BackgroundProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/background';
     const PROPERTY_NAME = 'background';

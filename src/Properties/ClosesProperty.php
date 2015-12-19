@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The closing hour of the place or service on the given day(s) of the week.
  */
-class ClosesProperty extends Property
+class ClosesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/closes';
     const PROPERTY_NAME = 'closes';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org. 
  */
-class AdditionalPropertyProperty extends Property
+class AdditionalPropertyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/additionalProperty';
     const PROPERTY_NAME = 'additionalProperty';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A dosing schedule for the drug for a given population, either observed, recommended, or maximum dose based on the type used.
  */
-class DoseScheduleProperty extends Property
+class DoseScheduleProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/doseSchedule';
     const PROPERTY_NAME = 'doseSchedule';

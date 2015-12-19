@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\EmergencyService;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EmergencyServiceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes EmergencyServiceTest.
  */
 class EmergencyServiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EmergencyService::schemaUrl(), "http://schema.org/EmergencyService");
+        $this->assertEquals(EmergencyService::schemaUrl(), 'http://schema.org/EmergencyService');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

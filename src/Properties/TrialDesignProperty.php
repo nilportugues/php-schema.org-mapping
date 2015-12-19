@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifics about the trial design (enumerated).
  */
-class TrialDesignProperty extends Property
+class TrialDesignProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/trialDesign';
     const PROPERTY_NAME = 'trialDesign';

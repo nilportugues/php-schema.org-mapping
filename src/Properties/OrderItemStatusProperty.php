@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The current status of the order item.
  */
-class OrderItemStatusProperty extends Property
+class OrderItemStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/orderItemStatus';
     const PROPERTY_NAME = 'orderItemStatus';

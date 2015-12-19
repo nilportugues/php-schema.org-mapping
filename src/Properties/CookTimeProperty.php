@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The time it takes to actually cook the dish, in ISO 8601 duration format.
  */
-class CookTimeProperty extends Property
+class CookTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/cookTime';
     const PROPERTY_NAME = 'cookTime';

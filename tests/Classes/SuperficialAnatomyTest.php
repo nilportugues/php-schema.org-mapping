@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SuperficialAnatomy;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SuperficialAnatomyTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SuperficialAnatomyTest.
  */
 class SuperficialAnatomyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SuperficialAnatomy::schemaUrl(), "http://schema.org/SuperficialAnatomy");
+        $this->assertEquals(SuperficialAnatomy::schemaUrl(), 'http://schema.org/SuperficialAnatomy');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

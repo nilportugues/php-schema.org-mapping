@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The payment method(s) to which the payment charge specification applies.
  */
-class AppliesToPaymentMethodProperty extends Property
+class AppliesToPaymentMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/appliesToPaymentMethod';
     const PROPERTY_NAME = 'appliesToPaymentMethod';

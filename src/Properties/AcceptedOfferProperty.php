@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The offer(s) -- e.g., product, quantity and price combinations -- included in the order.
  */
-class AcceptedOfferProperty extends Property
+class AcceptedOfferProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/acceptedOffer';
     const PROPERTY_NAME = 'acceptedOffer';

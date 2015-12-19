@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of owners of the vehicle, including the current one.
  */
-class NumberOfPreviousOwnersProperty extends Property
+class NumberOfPreviousOwnersProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfPreviousOwners';
     const PROPERTY_NAME = 'numberOfPreviousOwners';

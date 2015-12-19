@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An alias for the item.
  */
-class AlternateNameProperty extends Property
+class AlternateNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/alternateName';
     const PROPERTY_NAME = 'alternateName';

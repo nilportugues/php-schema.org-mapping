@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates whether API is managed or unmanaged.
  */
-class ProgrammingModelProperty extends Property
+class ProgrammingModelProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/programmingModel';
     const PROPERTY_NAME = 'programmingModel';

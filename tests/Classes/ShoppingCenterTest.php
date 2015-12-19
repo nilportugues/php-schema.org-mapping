@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ShoppingCenter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ShoppingCenterTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ShoppingCenterTest.
  */
 class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ShoppingCenter::schemaUrl(), "http://schema.org/ShoppingCenter");
+        $this->assertEquals(ShoppingCenter::schemaUrl(), 'http://schema.org/ShoppingCenter');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Either the actual menu or a URL of the menu.
  */
-class MenuProperty extends Property
+class MenuProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/menu';
     const PROPERTY_NAME = 'menu';

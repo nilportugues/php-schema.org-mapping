@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An associated logo.
  */
-class LogoProperty extends Property
+class LogoProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/logo';
     const PROPERTY_NAME = 'logo';

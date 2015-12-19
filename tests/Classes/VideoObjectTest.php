@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\VideoObject;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VideoObjectTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VideoObjectTest.
  */
 class VideoObjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VideoObject::schemaUrl(), "http://schema.org/VideoObject");
+        $this->assertEquals(VideoObject::schemaUrl(), 'http://schema.org/VideoObject');
     }
 
     public function testAboutWillReturnMappingObject()

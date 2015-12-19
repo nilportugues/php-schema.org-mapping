@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).
  */
-class AddOnProperty extends Property
+class AddOnProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/addOn';
     const PROPERTY_NAME = 'addOn';

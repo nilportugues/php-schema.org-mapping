@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MedicalIntangible;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalIntangibleTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MedicalIntangibleTest.
  */
 class MedicalIntangibleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalIntangible::schemaUrl(), "http://schema.org/MedicalIntangible");
+        $this->assertEquals(MedicalIntangible::schemaUrl(), 'http://schema.org/MedicalIntangible');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

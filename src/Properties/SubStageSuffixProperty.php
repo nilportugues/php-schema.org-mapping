@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The substage, e.g. 'a' for Stage IIIa.
  */
-class SubStageSuffixProperty extends Property
+class SubStageSuffixProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/subStageSuffix';
     const PROPERTY_NAME = 'subStageSuffix';

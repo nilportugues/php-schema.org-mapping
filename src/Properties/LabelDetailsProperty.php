@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Link to the drug's label details.
  */
-class LabelDetailsProperty extends Property
+class LabelDetailsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/labelDetails';
     const PROPERTY_NAME = 'labelDetails';

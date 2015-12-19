@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A condition the test is used to diagnose.
  */
-class UsedToDiagnoseProperty extends Property
+class UsedToDiagnoseProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/usedToDiagnose';
     const PROPERTY_NAME = 'usedToDiagnose';

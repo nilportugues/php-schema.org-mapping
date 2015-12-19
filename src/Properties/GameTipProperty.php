@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Links to tips, tactics, etc.
  */
-class GameTipProperty extends Property
+class GameTipProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/gameTip';
     const PROPERTY_NAME = 'gameTip';

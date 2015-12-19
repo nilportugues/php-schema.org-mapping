@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The branches that delineate from the nerve bundle.
  */
-class BranchProperty extends Property
+class BranchProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/branch';
     const PROPERTY_NAME = 'branch';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number to access the service by text message.
  */
-class ServiceSmsNumberProperty extends Property
+class ServiceSmsNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serviceSmsNumber';
     const PROPERTY_NAME = 'serviceSmsNumber';

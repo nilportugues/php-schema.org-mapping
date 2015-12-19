@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Audiences defined by a person's gender.
  */
-class RequiredGenderProperty extends Property
+class RequiredGenderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/requiredGender';
     const PROPERTY_NAME = 'requiredGender';

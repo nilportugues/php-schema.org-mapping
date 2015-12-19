@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Number of players on the server.
  */
-class PlayersOnlineProperty extends Property
+class PlayersOnlineProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/playersOnline';
     const PROPERTY_NAME = 'playersOnline';

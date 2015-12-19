@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WPAdBlock;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WPAdBlockTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WPAdBlockTest.
  */
 class WPAdBlockTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WPAdBlock::schemaUrl(), "http://schema.org/WPAdBlock");
+        $this->assertEquals(WPAdBlock::schemaUrl(), 'http://schema.org/WPAdBlock');
     }
 
     public function testAboutWillReturnMappingObject()

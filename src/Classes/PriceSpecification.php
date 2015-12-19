@@ -20,26 +20,17 @@ use NilPortugues\SchemaOrg\Properties\PriceProperty;
 use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
 use NilPortugues\SchemaOrg\Properties\ValidThroughProperty;
 use NilPortugues\SchemaOrg\Properties\ValueAddedTaxIncludedProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes PriceSpecification.
  */
-class PriceSpecification
+class PriceSpecification extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/PriceSpecification';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/PriceSpecification';
 
     /**
      * @return Mapping

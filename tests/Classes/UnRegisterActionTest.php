@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\UnRegisterAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UnRegisterActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes UnRegisterActionTest.
  */
 class UnRegisterActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UnRegisterAction::schemaUrl(), "http://schema.org/UnRegisterAction");
+        $this->assertEquals(UnRegisterAction::schemaUrl(), 'http://schema.org/UnRegisterAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

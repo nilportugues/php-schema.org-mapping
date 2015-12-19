@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any membership in a frequent flyer, hotel loyalty program, etc. being applied to the reservation.
  */
-class ProgramMembershipUsedProperty extends Property
+class ProgramMembershipUsedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/programMembershipUsed';
     const PROPERTY_NAME = 'programMembershipUsed';

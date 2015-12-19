@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A step or instruction involved in making the recipe.
  */
-class RecipeInstructionsProperty extends Property
+class RecipeInstructionsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recipeInstructions';
     const PROPERTY_NAME = 'recipeInstructions';

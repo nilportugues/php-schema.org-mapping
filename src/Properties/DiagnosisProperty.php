@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * One or more alternative conditions considered in the differential diagnosis process.
  */
-class DiagnosisProperty extends Property
+class DiagnosisProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/diagnosis';
     const PROPERTY_NAME = 'diagnosis';

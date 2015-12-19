@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AuthorizeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AuthorizeActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AuthorizeActionTest.
  */
 class AuthorizeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AuthorizeAction::schemaUrl(), "http://schema.org/AuthorizeAction");
+        $this->assertEquals(AuthorizeAction::schemaUrl(), 'http://schema.org/AuthorizeAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

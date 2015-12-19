@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The generic name of this drug or supplement.
  */
-class NonProprietaryNameProperty extends Property
+class NonProprietaryNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/nonProprietaryName';
     const PROPERTY_NAME = 'nonProprietaryName';

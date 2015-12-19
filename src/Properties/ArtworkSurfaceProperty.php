@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc.
  */
-class ArtworkSurfaceProperty extends Property
+class ArtworkSurfaceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/artworkSurface';
     const PROPERTY_NAME = 'artworkSurface';

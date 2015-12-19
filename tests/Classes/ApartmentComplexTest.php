@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ApartmentComplex;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ApartmentComplexTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ApartmentComplexTest.
  */
 class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ApartmentComplex::schemaUrl(), "http://schema.org/ApartmentComplex");
+        $this->assertEquals(ApartmentComplex::schemaUrl(), 'http://schema.org/ApartmentComplex');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

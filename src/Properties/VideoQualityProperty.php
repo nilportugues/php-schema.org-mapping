@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The quality of the video.
  */
-class VideoQualityProperty extends Property
+class VideoQualityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/videoQuality';
     const PROPERTY_NAME = 'videoQuality';

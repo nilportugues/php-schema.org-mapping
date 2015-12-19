@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of passengers that can be seated in the vehicle, both in terms of the physical space available, and in terms of limitations set by law.
  */
-class VehicleSeatingCapacityProperty extends Property
+class VehicleSeatingCapacityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vehicleSeatingCapacity';
     const PROPERTY_NAME = 'vehicleSeatingCapacity';

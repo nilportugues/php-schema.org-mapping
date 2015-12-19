@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of seasons in this series.
  */
-class NumberOfSeasonsProperty extends Property
+class NumberOfSeasonsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfSeasons';
     const PROPERTY_NAME = 'numberOfSeasons';

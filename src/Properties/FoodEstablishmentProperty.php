@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of location. The specific food establishment where the action occurred.
  */
-class FoodEstablishmentProperty extends Property
+class FoodEstablishmentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/foodEstablishment';
     const PROPERTY_NAME = 'foodEstablishment';

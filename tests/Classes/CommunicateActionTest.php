@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CommunicateAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CommunicateActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CommunicateActionTest.
  */
 class CommunicateActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CommunicateAction::schemaUrl(), "http://schema.org/CommunicateAction");
+        $this->assertEquals(CommunicateAction::schemaUrl(), 'http://schema.org/CommunicateAction');
     }
 
     public function testAboutWillReturnMappingObject()

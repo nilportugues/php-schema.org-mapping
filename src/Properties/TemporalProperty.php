@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).
  */
-class TemporalProperty extends Property
+class TemporalProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/temporal';
     const PROPERTY_NAME = 'temporal';

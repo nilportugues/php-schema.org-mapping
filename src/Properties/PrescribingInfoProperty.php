@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Link to prescribing information for the drug.
  */
-class PrescribingInfoProperty extends Property
+class PrescribingInfoProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/prescribingInfo';
     const PROPERTY_NAME = 'prescribingInfo';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PreventionIndication;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PreventionIndicationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PreventionIndicationTest.
  */
 class PreventionIndicationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PreventionIndication::schemaUrl(), "http://schema.org/PreventionIndication");
+        $this->assertEquals(PreventionIndication::schemaUrl(), 'http://schema.org/PreventionIndication');
     }
 
     public function testCodeWillReturnMappingObject()

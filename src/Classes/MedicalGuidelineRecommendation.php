@@ -18,26 +18,17 @@ use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
 use NilPortugues\SchemaOrg\Properties\RecommendationStrengthProperty;
 use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
 use NilPortugues\SchemaOrg\Properties\StudyProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalGuidelineRecommendation.
  */
-class MedicalGuidelineRecommendation
+class MedicalGuidelineRecommendation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalGuidelineRecommendation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalGuidelineRecommendation';
 
     /**
      * @return Mapping

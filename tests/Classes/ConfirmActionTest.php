@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ConfirmAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ConfirmActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ConfirmActionTest.
  */
 class ConfirmActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ConfirmAction::schemaUrl(), "http://schema.org/ConfirmAction");
+        $this->assertEquals(ConfirmAction::schemaUrl(), 'http://schema.org/ConfirmAction');
     }
 
     public function testAboutWillReturnMappingObject()

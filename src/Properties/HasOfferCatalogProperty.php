@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates an OfferCatalog listing for this Organization, Person, or Service.
  */
-class HasOfferCatalogProperty extends Property
+class HasOfferCatalogProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/hasOfferCatalog';
     const PROPERTY_NAME = 'hasOfferCatalog';

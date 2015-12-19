@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TieAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TieActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TieActionTest.
  */
 class TieActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TieAction::schemaUrl(), "http://schema.org/TieAction");
+        $this->assertEquals(TieAction::schemaUrl(), 'http://schema.org/TieAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

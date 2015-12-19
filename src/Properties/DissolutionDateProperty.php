@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date that this organization was dissolved.
  */
-class DissolutionDateProperty extends Property
+class DissolutionDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dissolutionDate';
     const PROPERTY_NAME = 'dissolutionDate';

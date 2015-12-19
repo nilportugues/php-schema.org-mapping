@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of tracks in this album or playlist.
  */
-class NumTracksProperty extends Property
+class NumTracksProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numTracks';
     const PROPERTY_NAME = 'numTracks';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A drug in this drug class.
  */
-class DrugProperty extends Property
+class DrugProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/drug';
     const PROPERTY_NAME = 'drug';

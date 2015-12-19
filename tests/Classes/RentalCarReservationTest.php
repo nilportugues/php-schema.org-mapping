@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RentalCarReservation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RentalCarReservationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RentalCarReservationTest.
  */
 class RentalCarReservationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RentalCarReservation::schemaUrl(), "http://schema.org/RentalCarReservation");
+        $this->assertEquals(RentalCarReservation::schemaUrl(), 'http://schema.org/RentalCarReservation');
     }
 
     public function testDropoffLocationWillReturnMappingObject()

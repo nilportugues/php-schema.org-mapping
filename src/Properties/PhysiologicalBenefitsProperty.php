@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specific physiologic benefits associated to the plan.
  */
-class PhysiologicalBenefitsProperty extends Property
+class PhysiologicalBenefitsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/physiologicalBenefits';
     const PROPERTY_NAME = 'physiologicalBenefits';

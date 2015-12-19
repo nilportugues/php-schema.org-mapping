@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AutoDealer;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AutoDealerTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AutoDealerTest.
  */
 class AutoDealerTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AutoDealer::schemaUrl(), "http://schema.org/AutoDealer");
+        $this->assertEquals(AutoDealer::schemaUrl(), 'http://schema.org/AutoDealer');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

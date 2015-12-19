@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The name of a character played in some acting or performing role, i.e. in a PerformanceRole.
  */
-class CharacterNameProperty extends Property
+class CharacterNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/characterName';
     const PROPERTY_NAME = 'characterName';

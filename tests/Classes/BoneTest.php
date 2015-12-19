@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Bone;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BoneTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BoneTest.
  */
 class BoneTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Bone::schemaUrl(), "http://schema.org/Bone");
+        $this->assertEquals(Bone::schemaUrl(), 'http://schema.org/Bone');
     }
 
     public function testCodeWillReturnMappingObject()

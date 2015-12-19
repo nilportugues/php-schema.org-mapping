@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The delivery of the parcel related to this order or order item.
  */
-class OrderDeliveryProperty extends Property
+class OrderDeliveryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/orderDelivery';
     const PROPERTY_NAME = 'orderDelivery';

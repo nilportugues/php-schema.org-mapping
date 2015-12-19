@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The estimated time the flight will take.
  */
-class EstimatedFlightDurationProperty extends Property
+class EstimatedFlightDurationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/estimatedFlightDuration';
     const PROPERTY_NAME = 'estimatedFlightDuration';

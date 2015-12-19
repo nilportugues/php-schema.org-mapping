@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to another, somehow related product (or multiple products).
  */
-class IsRelatedToProperty extends Property
+class IsRelatedToProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isRelatedTo';
     const PROPERTY_NAME = 'isRelatedTo';

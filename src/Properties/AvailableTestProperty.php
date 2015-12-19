@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A diagnostic test or procedure offered by this lab.
  */
-class AvailableTestProperty extends Property
+class AvailableTestProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableTest';
     const PROPERTY_NAME = 'availableTest';

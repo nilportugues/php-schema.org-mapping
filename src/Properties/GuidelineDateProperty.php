@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Date on which this guideline's recommendation was made.
  */
-class GuidelineDateProperty extends Property
+class GuidelineDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/guidelineDate';
     const PROPERTY_NAME = 'guidelineDate';

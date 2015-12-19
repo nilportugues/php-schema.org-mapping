@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates the mobility of a provided service (e.g. 'static', 'dynamic').
  */
-class ProviderMobilityProperty extends Property
+class ProviderMobilityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/providerMobility';
     const PROPERTY_NAME = 'providerMobility';

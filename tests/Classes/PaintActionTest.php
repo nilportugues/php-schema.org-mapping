@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PaintAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PaintActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PaintActionTest.
  */
 class PaintActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PaintAction::schemaUrl(), "http://schema.org/PaintAction");
+        $this->assertEquals(PaintAction::schemaUrl(), 'http://schema.org/PaintAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

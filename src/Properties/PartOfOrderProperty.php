@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The overall order the items in this delivery were included in.
  */
-class PartOfOrderProperty extends Property
+class PartOfOrderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/partOfOrder';
     const PROPERTY_NAME = 'partOfOrder';

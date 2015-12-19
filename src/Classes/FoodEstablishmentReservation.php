@@ -14,26 +14,17 @@ use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
 use NilPortugues\SchemaOrg\Properties\PartySizeProperty;
 use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes FoodEstablishmentReservation.
  */
-class FoodEstablishmentReservation
+class FoodEstablishmentReservation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/FoodEstablishmentReservation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/FoodEstablishmentReservation';
 
     /**
      * @return Mapping

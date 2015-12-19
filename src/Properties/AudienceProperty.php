@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An intended audience, i.e. a group for whom something was created.
  */
-class AudienceProperty extends Property
+class AudienceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/audience';
     const PROPERTY_NAME = 'audience';

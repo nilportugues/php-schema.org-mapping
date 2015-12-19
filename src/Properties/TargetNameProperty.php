@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The name of a node in an established educational framework.
  */
-class TargetNameProperty extends Property
+class TargetNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/targetName';
     const PROPERTY_NAME = 'targetName';

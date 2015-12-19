@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A therapy that duplicates or overlaps this one.
  */
-class DuplicateTherapyProperty extends Property
+class DuplicateTherapyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/duplicateTherapy';
     const PROPERTY_NAME = 'duplicateTherapy';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CheckoutPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CheckoutPageTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CheckoutPageTest.
  */
 class CheckoutPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CheckoutPage::schemaUrl(), "http://schema.org/CheckoutPage");
+        $this->assertEquals(CheckoutPage::schemaUrl(), 'http://schema.org/CheckoutPage');
     }
 
     public function testAboutWillReturnMappingObject()

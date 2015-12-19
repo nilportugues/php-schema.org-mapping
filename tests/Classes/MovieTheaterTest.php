@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MovieTheater;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MovieTheaterTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MovieTheaterTest.
  */
 class MovieTheaterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MovieTheater::schemaUrl(), "http://schema.org/MovieTheater");
+        $this->assertEquals(MovieTheater::schemaUrl(), 'http://schema.org/MovieTheater');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

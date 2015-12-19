@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * IACO identifier for an airport.
  */
-class IacoCodeProperty extends Property
+class IacoCodeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/icaoCode';
     const PROPERTY_NAME = 'iacoCode';

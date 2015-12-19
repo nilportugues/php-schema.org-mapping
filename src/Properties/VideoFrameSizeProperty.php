@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The frame size of the video.
  */
-class VideoFrameSizeProperty extends Property
+class VideoFrameSizeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/videoFrameSize';
     const PROPERTY_NAME = 'videoFrameSize';

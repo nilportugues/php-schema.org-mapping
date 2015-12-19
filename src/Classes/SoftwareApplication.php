@@ -44,26 +44,17 @@ use NilPortugues\SchemaOrg\Properties\SoftwareVersionProperty;
 use NilPortugues\SchemaOrg\Properties\StorageRequirementsProperty;
 use NilPortugues\SchemaOrg\Properties\SupportingDataProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes SoftwareApplication.
  */
-class SoftwareApplication
+class SoftwareApplication extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/SoftwareApplication';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/SoftwareApplication';
 
     /**
      * @return Mapping

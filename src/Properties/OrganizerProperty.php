@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An organizer of an Event.
  */
-class OrganizerProperty extends Property
+class OrganizerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/organizer';
     const PROPERTY_NAME = 'organizer';

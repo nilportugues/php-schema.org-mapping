@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The target group associated with a given audience (e.g. veterans, car owners, musicians, etc.).
  */
-class AudienceTypeProperty extends Property
+class AudienceTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/audienceType';
     const PROPERTY_NAME = 'audienceType';

@@ -34,26 +34,17 @@ use NilPortugues\SchemaOrg\Properties\PhotosProperty;
 use NilPortugues\SchemaOrg\Properties\ReviewProperty;
 use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
 use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes TrainStation.
  */
-class TrainStation
+class TrainStation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/TrainStation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/TrainStation';
 
     /**
      * @return Mapping

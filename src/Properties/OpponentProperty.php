@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The opponent on this action.
  */
-class OpponentProperty extends Property
+class OpponentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/opponent';
     const PROPERTY_NAME = 'opponent';

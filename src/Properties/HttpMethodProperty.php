@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An HTTP method that specifies the appropriate HTTP method for a request to an HTTP EntryPoint. Values are capitalized strings as used in HTTP.
  */
-class HttpMethodProperty extends Property
+class HttpMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/httpMethod';
     const PROPERTY_NAME = 'httpMethod';

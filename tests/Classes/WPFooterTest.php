@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WPFooter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WPFooterTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WPFooterTest.
  */
 class WPFooterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WPFooter::schemaUrl(), "http://schema.org/WPFooter");
+        $this->assertEquals(WPFooter::schemaUrl(), 'http://schema.org/WPFooter');
     }
 
     public function testAboutWillReturnMappingObject()

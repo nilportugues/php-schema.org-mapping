@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PhotographAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PhotographActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PhotographActionTest.
  */
 class PhotographActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PhotographAction::schemaUrl(), "http://schema.org/PhotographAction");
+        $this->assertEquals(PhotographAction::schemaUrl(), 'http://schema.org/PhotographAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

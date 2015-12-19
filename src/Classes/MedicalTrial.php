@@ -19,26 +19,17 @@ use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
 use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
 use NilPortugues\SchemaOrg\Properties\StudyProperty;
 use NilPortugues\SchemaOrg\Properties\TrialDesignProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalTrial.
  */
-class MedicalTrial
+class MedicalTrial extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalTrial';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalTrial';
 
     /**
      * @return Mapping

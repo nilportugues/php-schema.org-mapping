@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LoseAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LoseActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LoseActionTest.
  */
 class LoseActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LoseAction::schemaUrl(), "http://schema.org/LoseAction");
+        $this->assertEquals(LoseAction::schemaUrl(), 'http://schema.org/LoseAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

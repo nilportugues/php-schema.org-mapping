@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.
  */
-class LesserOrEqualProperty extends Property
+class LesserOrEqualProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/lesserOrEqual';
     const PROPERTY_NAME = 'lesserOrEqual';

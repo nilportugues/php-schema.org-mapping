@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The CreativeWork encoded by this media object.
  */
-class EncodesCreativeWorkProperty extends Property
+class EncodesCreativeWorkProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/encodesCreativeWork';
     const PROPERTY_NAME = 'encodesCreativeWork';

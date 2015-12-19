@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The episode to which this clip belongs.
  */
-class PartOfEpisodeProperty extends Property
+class PartOfEpisodeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/partOfEpisode';
     const PROPERTY_NAME = 'partOfEpisode';

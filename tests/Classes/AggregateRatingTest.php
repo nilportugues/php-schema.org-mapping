@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AggregateRating;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AggregateRatingTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AggregateRatingTest.
  */
 class AggregateRatingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AggregateRating::schemaUrl(), "http://schema.org/AggregateRating");
+        $this->assertEquals(AggregateRating::schemaUrl(), 'http://schema.org/AggregateRating');
     }
 
     public function testItemReviewedWillReturnMappingObject()

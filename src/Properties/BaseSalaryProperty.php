@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The base salary of the job or of an employee in an EmployeeRole.
  */
-class BaseSalaryProperty extends Property
+class BaseSalaryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/baseSalary';
     const PROPERTY_NAME = 'baseSalary';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The rating for the content.
  */
-class RatingValueProperty extends Property
+class RatingValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/ratingValue';
     const PROPERTY_NAME = 'ratingValue';

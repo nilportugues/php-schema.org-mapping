@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GroceryStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GroceryStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GroceryStoreTest.
  */
 class GroceryStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GroceryStore::schemaUrl(), "http://schema.org/GroceryStore");
+        $this->assertEquals(GroceryStore::schemaUrl(), 'http://schema.org/GroceryStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

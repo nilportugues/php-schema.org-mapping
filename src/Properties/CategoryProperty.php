@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
  */
-class CategoryProperty extends Property
+class CategoryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/category';
     const PROPERTY_NAME = 'category';

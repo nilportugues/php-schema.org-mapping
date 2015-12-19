@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Type of software application, e.g. "Game, Multimedia".
  */
-class ApplicationCategoryProperty extends Property
+class ApplicationCategoryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/applicationCategory';
     const PROPERTY_NAME = 'applicationCategory';

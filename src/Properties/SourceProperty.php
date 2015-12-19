@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The anatomical or organ system that the artery originates from.
  */
-class SourceProperty extends Property
+class SourceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/source';
     const PROPERTY_NAME = 'source';

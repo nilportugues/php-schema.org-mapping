@@ -23,26 +23,17 @@ use NilPortugues\SchemaOrg\Properties\NumberOfItemsProperty;
 use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
 use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes ItemList.
  */
-class ItemList
+class ItemList extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/ItemList';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/ItemList';
 
     /**
      * @return Mapping

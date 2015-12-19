@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The underlying anatomical structures, such as organs, that comprise the anatomical system.
  */
-class ComprisedOfProperty extends Property
+class ComprisedOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/comprisedOf';
     const PROPERTY_NAME = 'comprisedOf';

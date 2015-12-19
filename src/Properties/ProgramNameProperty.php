@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The program providing the membership.
  */
-class ProgramNameProperty extends Property
+class ProgramNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/programName';
     const PROPERTY_NAME = 'programName';

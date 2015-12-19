@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).
  */
-class ContactOptionProperty extends Property
+class ContactOptionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contactOption';
     const PROPERTY_NAME = 'contactOption';

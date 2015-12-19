@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The street address. For example, 1600 Amphitheatre Pkwy.
  */
-class StreetAddressProperty extends Property
+class StreetAddressProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/streetAddress';
     const PROPERTY_NAME = 'streetAddress';

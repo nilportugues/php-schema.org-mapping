@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Order;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OrderTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes OrderTest.
  */
 class OrderTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Order::schemaUrl(), "http://schema.org/Order");
+        $this->assertEquals(Order::schemaUrl(), 'http://schema.org/Order');
     }
 
     public function testAcceptedOfferWillReturnMappingObject()

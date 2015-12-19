@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of episodes in this season or series.
  */
-class NumberOfEpisodesProperty extends Property
+class NumberOfEpisodesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfEpisodes';
     const PROPERTY_NAME = 'numberOfEpisodes';

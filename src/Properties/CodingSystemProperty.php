@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The coding system, e.g. 'ICD-10'.
  */
-class CodingSystemProperty extends Property
+class CodingSystemProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/codingSystem';
     const PROPERTY_NAME = 'codingSystem';

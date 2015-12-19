@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\QAPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes QAPageTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes QAPageTest.
  */
 class QAPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(QAPage::schemaUrl(), "http://schema.org/QAPage");
+        $this->assertEquals(QAPage::schemaUrl(), 'http://schema.org/QAPage');
     }
 
     public function testAboutWillReturnMappingObject()

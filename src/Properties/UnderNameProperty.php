@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The person or organization the reservation or ticket is for.
  */
-class UnderNameProperty extends Property
+class UnderNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/underName';
     const PROPERTY_NAME = 'underName';

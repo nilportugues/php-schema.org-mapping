@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ListenAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ListenActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ListenActionTest.
  */
 class ListenActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ListenAction::schemaUrl(), "http://schema.org/ListenAction");
+        $this->assertEquals(ListenAction::schemaUrl(), 'http://schema.org/ListenAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

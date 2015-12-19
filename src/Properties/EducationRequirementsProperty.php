@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Educational background needed for the position.
  */
-class EducationRequirementsProperty extends Property
+class EducationRequirementsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/educationRequirements';
     const PROPERTY_NAME = 'educationRequirements';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A citation or reference to another creative work, such as another publication, web page, scholarly article, etc.
  */
-class CitationProperty extends Property
+class CitationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/citation';
     const PROPERTY_NAME = 'citation';

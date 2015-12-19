@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The highest price if the price is a range.
  */
-class MaxPriceProperty extends Property
+class MaxPriceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/maxPrice';
     const PROPERTY_NAME = 'maxPrice';

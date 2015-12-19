@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Nutrition information about the recipe.
  */
-class NutritionProperty extends Property
+class NutritionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/nutrition';
     const PROPERTY_NAME = 'nutrition';

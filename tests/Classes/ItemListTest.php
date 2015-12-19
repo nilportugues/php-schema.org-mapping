@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ItemList;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ItemListTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ItemListTest.
  */
 class ItemListTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ItemList::schemaUrl(), "http://schema.org/ItemList");
+        $this->assertEquals(ItemList::schemaUrl(), 'http://schema.org/ItemList');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

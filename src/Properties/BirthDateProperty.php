@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Date of birth.
  */
-class BirthDateProperty extends Property
+class BirthDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/birthDate';
     const PROPERTY_NAME = 'birthDate';

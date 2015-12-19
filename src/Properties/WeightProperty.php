@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The weight of the product or person.
  */
-class WeightProperty extends Property
+class WeightProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/weight';
     const PROPERTY_NAME = 'weight';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any precaution, guidance, contraindication, etc. related to consumption of specific foods while taking this drug.
  */
-class FoodWarningProperty extends Property
+class FoodWarningProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/foodWarning';
     const PROPERTY_NAME = 'foodWarning';

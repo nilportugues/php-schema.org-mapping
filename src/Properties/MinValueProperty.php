@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The lower value of some characteristic or property.
  */
-class MinValueProperty extends Property
+class MinValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/minValue';
     const PROPERTY_NAME = 'minValue';

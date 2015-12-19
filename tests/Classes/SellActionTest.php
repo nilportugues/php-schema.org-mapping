@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SellAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SellActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SellActionTest.
  */
 class SellActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SellAction::schemaUrl(), "http://schema.org/SellAction");
+        $this->assertEquals(SellAction::schemaUrl(), 'http://schema.org/SellAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

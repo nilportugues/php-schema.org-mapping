@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The kind of aircraft (e.g., "Boeing 747").
  */
-class AircraftProperty extends Property
+class AircraftProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/aircraft';
     const PROPERTY_NAME = 'aircraft';

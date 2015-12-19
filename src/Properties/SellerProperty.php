@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.
  */
-class SellerProperty extends Property
+class SellerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/seller';
     const PROPERTY_NAME = 'seller';

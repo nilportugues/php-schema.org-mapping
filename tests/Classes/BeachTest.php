@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Beach;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BeachTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BeachTest.
  */
 class BeachTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Beach::schemaUrl(), "http://schema.org/Beach");
+        $this->assertEquals(Beach::schemaUrl(), 'http://schema.org/Beach');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

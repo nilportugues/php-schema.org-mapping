@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DrinkAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrinkActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DrinkActionTest.
  */
 class DrinkActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrinkAction::schemaUrl(), "http://schema.org/DrinkAction");
+        $this->assertEquals(DrinkAction::schemaUrl(), 'http://schema.org/DrinkAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

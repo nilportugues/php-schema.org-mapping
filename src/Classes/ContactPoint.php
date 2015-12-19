@@ -21,26 +21,17 @@ use NilPortugues\SchemaOrg\Properties\HoursAvailableProperty;
 use NilPortugues\SchemaOrg\Properties\ProductSupportedProperty;
 use NilPortugues\SchemaOrg\Properties\ServiceAreaProperty;
 use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes ContactPoint.
  */
-class ContactPoint
+class ContactPoint extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/ContactPoint';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/ContactPoint';
 
     /**
      * @return Mapping

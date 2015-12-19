@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The delivery method(s) to which the delivery charge or payment charge specification applies.
  */
-class AppliesToDeliveryMethodProperty extends Property
+class AppliesToDeliveryMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/appliesToDeliveryMethod';
     const PROPERTY_NAME = 'appliesToDeliveryMethod';

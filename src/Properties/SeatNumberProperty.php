@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The location of the reserved seat (e.g., 27).
  */
-class SeatNumberProperty extends Property
+class SeatNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/seatNumber';
     const PROPERTY_NAME = 'seatNumber';

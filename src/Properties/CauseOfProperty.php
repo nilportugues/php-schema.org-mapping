@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The condition, complication, symptom, sign, etc. caused.
  */
-class CauseOfProperty extends Property
+class CauseOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/causeOf';
     const PROPERTY_NAME = 'causeOf';

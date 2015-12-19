@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An update to the LiveBlog.
  */
-class LiveBlogUpdateProperty extends Property
+class LiveBlogUpdateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/liveBlogUpdate';
     const PROPERTY_NAME = 'liveBlogUpdate';

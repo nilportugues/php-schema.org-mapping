@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TattooParlor;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TattooParlorTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TattooParlorTest.
  */
 class TattooParlorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TattooParlor::schemaUrl(), "http://schema.org/TattooParlor");
+        $this->assertEquals(TattooParlor::schemaUrl(), 'http://schema.org/TattooParlor');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

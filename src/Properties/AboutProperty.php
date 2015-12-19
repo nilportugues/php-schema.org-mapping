@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The subject matter of the content.
  */
-class AboutProperty extends Property
+class AboutProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/about';
     const PROPERTY_NAME = 'about';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A medical therapy related to this anatomy.
  */
-class RelatedTherapyProperty extends Property
+class RelatedTherapyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/relatedTherapy';
     const PROPERTY_NAME = 'relatedTherapy';

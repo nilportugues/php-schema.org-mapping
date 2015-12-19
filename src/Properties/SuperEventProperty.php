@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.
  */
-class SuperEventProperty extends Property
+class SuperEventProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/superEvent';
     const PROPERTY_NAME = 'superEvent';

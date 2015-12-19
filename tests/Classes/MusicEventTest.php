@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MusicEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MusicEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MusicEventTest.
  */
 class MusicEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MusicEvent::schemaUrl(), "http://schema.org/MusicEvent");
+        $this->assertEquals(MusicEvent::schemaUrl(), 'http://schema.org/MusicEvent');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

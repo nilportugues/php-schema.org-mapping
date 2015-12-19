@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ScheduleAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ScheduleActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ScheduleActionTest.
  */
 class ScheduleActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ScheduleAction::schemaUrl(), "http://schema.org/ScheduleAction");
+        $this->assertEquals(ScheduleAction::schemaUrl(), 'http://schema.org/ScheduleAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

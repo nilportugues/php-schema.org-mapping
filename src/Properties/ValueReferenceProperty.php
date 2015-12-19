@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.
  */
-class ValueReferenceProperty extends Property
+class ValueReferenceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/valueReference';
     const PROPERTY_NAME = 'valueReference';

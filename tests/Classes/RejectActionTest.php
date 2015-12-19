@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RejectAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RejectActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RejectActionTest.
  */
 class RejectActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RejectAction::schemaUrl(), "http://schema.org/RejectAction");
+        $this->assertEquals(RejectAction::schemaUrl(), 'http://schema.org/RejectAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

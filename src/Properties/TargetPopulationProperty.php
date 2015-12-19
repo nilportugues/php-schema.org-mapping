@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Characteristics of the population for which this is intended, or which typically uses it, e.g. 'adults'.
  */
-class TargetPopulationProperty extends Property
+class TargetPopulationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/targetPopulation';
     const PROPERTY_NAME = 'targetPopulation';

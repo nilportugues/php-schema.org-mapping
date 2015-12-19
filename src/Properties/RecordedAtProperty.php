@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Event where the CreativeWork was recorded. The CreativeWork may capture all or part of the event.
  */
-class RecordedAtProperty extends Property
+class RecordedAtProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recordedAt';
     const PROPERTY_NAME = 'recordedAt';

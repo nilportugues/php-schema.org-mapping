@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using a URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application. 
  */
-class SchemaVersionProperty extends Property
+class SchemaVersionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/schemaVersion';
     const PROPERTY_NAME = 'schemaVersion';

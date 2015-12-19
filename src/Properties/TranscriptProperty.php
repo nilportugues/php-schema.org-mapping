@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * If this MediaObject is an AudioObject or VideoObject, the transcript of that object.
  */
-class TranscriptProperty extends Property
+class TranscriptProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/transcript';
     const PROPERTY_NAME = 'transcript';

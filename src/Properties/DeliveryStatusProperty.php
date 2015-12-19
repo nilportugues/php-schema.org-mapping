@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * New entry added as the package passes through each leg of its journey (from shipment to final delivery).
  */
-class DeliveryStatusProperty extends Property
+class DeliveryStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/deliveryStatus';
     const PROPERTY_NAME = 'deliveryStatus';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Description of the absorption and elimination of drugs, including their concentration (pharmacokinetics, pK) and biological effects (pharmacodynamics, pD).
  */
-class ClinicalPharmacologyProperty extends Property
+class ClinicalPharmacologyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/clincalPharmacology';
     const PROPERTY_NAME = 'clinicalPharmacology';

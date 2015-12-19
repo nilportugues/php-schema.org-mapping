@@ -22,26 +22,17 @@ use NilPortugues\SchemaOrg\Properties\PriceProperty;
 use NilPortugues\SchemaOrg\Properties\PriceSpecificationProperty;
 use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes TradeAction.
  */
-class TradeAction
+class TradeAction extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/TradeAction';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/TradeAction';
 
     /**
      * @return Mapping

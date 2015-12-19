@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A contact location for a person's place of work.
  */
-class WorkLocationProperty extends Property
+class WorkLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/workLocation';
     const PROPERTY_NAME = 'workLocation';

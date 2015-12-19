@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Whether multiple values are allowed for the property.  Default is false.
  */
-class MultipleValuesProperty extends Property
+class MultipleValuesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/multipleValues';
     const PROPERTY_NAME = 'multipleValues';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Awards won by or for this item.
  */
-class AwardsProperty extends Property
+class AwardsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/awards';
     const PROPERTY_NAME = 'awards';

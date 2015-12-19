@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The result produced in the action. e.g. John wrote *a book*.
  */
-class ResultProperty extends Property
+class ResultProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/result';
     const PROPERTY_NAME = 'result';

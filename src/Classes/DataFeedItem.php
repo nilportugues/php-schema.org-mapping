@@ -15,26 +15,17 @@ use NilPortugues\SchemaOrg\Properties\DateCreatedProperty;
 use NilPortugues\SchemaOrg\Properties\DateDeletedProperty;
 use NilPortugues\SchemaOrg\Properties\DateModifiedProperty;
 use NilPortugues\SchemaOrg\Properties\ItemProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes DataFeedItem.
  */
-class DataFeedItem
+class DataFeedItem extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/DataFeedItem';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/DataFeedItem';
 
     /**
      * @return Mapping

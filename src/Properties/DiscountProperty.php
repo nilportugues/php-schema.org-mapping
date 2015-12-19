@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any discount applied (to an Order).
  */
-class DiscountProperty extends Property
+class DiscountProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/discount';
     const PROPERTY_NAME = 'discount';

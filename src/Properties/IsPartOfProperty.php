@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates a CreativeWork that this CreativeWork is (in some sense) part of.
  */
-class IsPartOfProperty extends Property
+class IsPartOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isPartOf';
     const PROPERTY_NAME = 'isPartOf';

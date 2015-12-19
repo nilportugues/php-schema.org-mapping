@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The station from which the train departs.
  */
-class DepartureStationProperty extends Property
+class DepartureStationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/departureStation';
     const PROPERTY_NAME = 'departureStation';

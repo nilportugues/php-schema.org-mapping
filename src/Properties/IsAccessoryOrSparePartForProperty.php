@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to another product (or multiple products) for which this product is an accessory or spare part.
  */
-class IsAccessoryOrSparePartForProperty extends Property
+class IsAccessoryOrSparePartForProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isAccessoryOrSparePartFor';
     const PROPERTY_NAME = 'isAccessoryOrSparePartFor';

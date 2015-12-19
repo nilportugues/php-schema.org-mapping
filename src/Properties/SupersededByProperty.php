@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Relates a term (i.e. a property, class or enumeration) to one that supersedes it.
  */
-class SupersededByProperty extends Property
+class SupersededByProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/supersededBy';
     const PROPERTY_NAME = 'supersededBy';

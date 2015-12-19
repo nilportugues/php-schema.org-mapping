@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SaleEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SaleEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SaleEventTest.
  */
 class SaleEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SaleEvent::schemaUrl(), "http://schema.org/SaleEvent");
+        $this->assertEquals(SaleEvent::schemaUrl(), 'http://schema.org/SaleEvent');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An answer (possibly one of several, possibly incorrect) to a Question, e.g. on a Question/Answer site.
  */
-class SuggestedAnswerProperty extends Property
+class SuggestedAnswerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/suggestedAnswer';
     const PROPERTY_NAME = 'suggestedAnswer';

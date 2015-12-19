@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RecyclingCenter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RecyclingCenterTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RecyclingCenterTest.
  */
 class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RecyclingCenter::schemaUrl(), "http://schema.org/RecyclingCenter");
+        $this->assertEquals(RecyclingCenter::schemaUrl(), 'http://schema.org/RecyclingCenter');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

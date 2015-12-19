@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The time admission will commence.
  */
-class DoorTimeProperty extends Property
+class DoorTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/doorTime';
     const PROPERTY_NAME = 'doorTime';

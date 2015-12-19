@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The opening hour of the place or service on the given day(s) of the week.
  */
-class OpensProperty extends Property
+class OpensProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/opens';
     const PROPERTY_NAME = 'opens';

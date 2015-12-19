@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A link to the page containing the comments of the CreativeWork.
  */
-class DiscussionUrlProperty extends Property
+class DiscussionUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/discussionUrl';
     const PROPERTY_NAME = 'discussionUrl';

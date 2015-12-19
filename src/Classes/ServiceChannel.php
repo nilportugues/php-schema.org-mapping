@@ -28,26 +28,17 @@ use NilPortugues\SchemaOrg\Properties\ServicePostalAddressProperty;
 use NilPortugues\SchemaOrg\Properties\ServiceSmsNumberProperty;
 use NilPortugues\SchemaOrg\Properties\ServiceUrlProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes ServiceChannel.
  */
-class ServiceChannel
+class ServiceChannel extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/ServiceChannel';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/ServiceChannel';
 
     /**
      * @return Mapping

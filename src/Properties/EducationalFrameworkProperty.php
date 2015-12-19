@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The framework to which the resource being described is aligned.
  */
-class EducationalFrameworkProperty extends Property
+class EducationalFrameworkProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/educationalFramework';
     const PROPERTY_NAME = 'educationalFramework';

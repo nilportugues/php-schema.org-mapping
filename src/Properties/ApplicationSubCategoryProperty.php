@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Subcategory of the application, e.g. "Arcade Game".
  */
-class ApplicationSubCategoryProperty extends Property
+class ApplicationSubCategoryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/applicationSubCategory';
     const PROPERTY_NAME = 'applicationSubCategory';

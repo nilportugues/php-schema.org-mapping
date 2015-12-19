@@ -15,26 +15,17 @@ use NilPortugues\SchemaOrg\Properties\DropoffLocationProperty;
 use NilPortugues\SchemaOrg\Properties\DropoffTimeProperty;
 use NilPortugues\SchemaOrg\Properties\PickupLocationProperty;
 use NilPortugues\SchemaOrg\Properties\PickupTimeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes RentalCarReservation.
  */
-class RentalCarReservation
+class RentalCarReservation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/RentalCarReservation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/RentalCarReservation';
 
     /**
      * @return Mapping

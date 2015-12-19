@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The manufacturer of the product.
  */
-class ManufacturerProperty extends Property
+class ManufacturerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/manufacturer';
     const PROPERTY_NAME = 'manufacturer';

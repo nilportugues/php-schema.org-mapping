@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The person's spouse.
  */
-class SpouseProperty extends Property
+class SpouseProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/spouse';
     const PROPERTY_NAME = 'spouse';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\IceCreamShop;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes IceCreamShopTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes IceCreamShopTest.
  */
 class IceCreamShopTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(IceCreamShop::schemaUrl(), "http://schema.org/IceCreamShop");
+        $this->assertEquals(IceCreamShop::schemaUrl(), 'http://schema.org/IceCreamShop');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

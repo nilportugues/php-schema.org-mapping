@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Was the offer accepted as a gift for someone other than the buyer.
  */
-class IsGiftProperty extends Property
+class IsGiftProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isGift';
     const PROPERTY_NAME = 'isGift';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * When a taxi will pickup a passenger or a rental car can be picked up.
  */
-class PickupTimeProperty extends Property
+class PickupTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/pickupTime';
     const PROPERTY_NAME = 'pickupTime';

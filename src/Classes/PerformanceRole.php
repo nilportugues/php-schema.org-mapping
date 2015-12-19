@@ -12,26 +12,17 @@ namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\CharacterNameProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes PerformanceRole.
  */
-class PerformanceRole
+class PerformanceRole extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/PerformanceRole';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/PerformanceRole';
 
     /**
      * @return Mapping

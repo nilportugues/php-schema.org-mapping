@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).
  */
-class FuelEfficiencyProperty extends Property
+class FuelEfficiencyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/fuelEfficiency';
     const PROPERTY_NAME = 'fuelEfficiency';

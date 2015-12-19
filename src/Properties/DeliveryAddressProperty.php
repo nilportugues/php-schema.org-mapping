@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Destination address.
  */
-class DeliveryAddressProperty extends Property
+class DeliveryAddressProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/deliveryAddress';
     const PROPERTY_NAME = 'deliveryAddress';

@@ -47,12 +47,12 @@ class SchemaPropertyWriter extends SchemaWriter
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * {$property['doc']}
  */
-class {$className}Property extends Property
+class {$className}Property extends SchemaProperty
 {
     const SCHEMA_URL = "{$property['url']}";
     const PROPERTY_NAME = "{$property['name']}";

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The unit of the dose, e.g. 'mg'.
  */
-class DoseUnitProperty extends Property
+class DoseUnitProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/doseUnit';
     const PROPERTY_NAME = 'doseUnit';

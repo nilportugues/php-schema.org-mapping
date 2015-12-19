@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of interactions for the CreativeWork using the WebSite or SoftwareApplication. The most specific child type of InteractionCounter should be used.
  */
-class InteractionStatisticProperty extends Property
+class InteractionStatisticProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/interactionStatistic';
     const PROPERTY_NAME = 'interactionStatistic';

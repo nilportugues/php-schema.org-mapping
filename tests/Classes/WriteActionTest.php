@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WriteAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WriteActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WriteActionTest.
  */
 class WriteActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WriteAction::schemaUrl(), "http://schema.org/WriteAction");
+        $this->assertEquals(WriteAction::schemaUrl(), 'http://schema.org/WriteAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

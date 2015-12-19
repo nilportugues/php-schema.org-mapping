@@ -26,26 +26,17 @@ use NilPortugues\SchemaOrg\Properties\StatusProperty;
 use NilPortugues\SchemaOrg\Properties\StudyLocationProperty;
 use NilPortugues\SchemaOrg\Properties\StudySubjectProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalStudy.
  */
-class MedicalStudy
+class MedicalStudy extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalStudy';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalStudy';
 
     /**
      * @return Mapping

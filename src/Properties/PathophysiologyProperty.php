@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.
  */
-class PathophysiologyProperty extends Property
+class PathophysiologyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/pathophysiology';
     const PROPERTY_NAME = 'pathophysiology';

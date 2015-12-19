@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.
  */
-class EventStatusProperty extends Property
+class EventStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/eventStatus';
     const PROPERTY_NAME = 'eventStatus';

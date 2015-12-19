@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\NailSalon;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes NailSalonTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes NailSalonTest.
  */
 class NailSalonTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(NailSalon::schemaUrl(), "http://schema.org/NailSalon");
+        $this->assertEquals(NailSalon::schemaUrl(), 'http://schema.org/NailSalon');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

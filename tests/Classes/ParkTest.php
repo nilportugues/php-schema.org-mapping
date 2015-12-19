@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Park;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ParkTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ParkTest.
  */
 class ParkTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Park::schemaUrl(), "http://schema.org/Park");
+        $this->assertEquals(Park::schemaUrl(), 'http://schema.org/Park');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

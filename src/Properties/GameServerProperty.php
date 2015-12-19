@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The server on which  it is possible to play the game.
  */
-class GameServerProperty extends Property
+class GameServerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/gameServer';
     const PROPERTY_NAME = 'gameServer';

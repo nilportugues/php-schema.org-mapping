@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The industry associated with the job position.
  */
-class IndustryProperty extends Property
+class IndustryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/industry';
     const PROPERTY_NAME = 'industry';

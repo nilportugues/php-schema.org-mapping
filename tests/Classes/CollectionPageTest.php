@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CollectionPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CollectionPageTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CollectionPageTest.
  */
 class CollectionPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CollectionPage::schemaUrl(), "http://schema.org/CollectionPage");
+        $this->assertEquals(CollectionPage::schemaUrl(), 'http://schema.org/CollectionPage');
     }
 
     public function testAboutWillReturnMappingObject()

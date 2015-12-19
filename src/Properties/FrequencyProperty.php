@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * How often the dose is taken, e.g. 'daily'.
  */
-class FrequencyProperty extends Property
+class FrequencyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/frequency';
     const PROPERTY_NAME = 'frequency';

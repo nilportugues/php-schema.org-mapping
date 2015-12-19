@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Zoo;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ZooTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ZooTest.
  */
 class ZooTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Zoo::schemaUrl(), "http://schema.org/Zoo");
+        $this->assertEquals(Zoo::schemaUrl(), 'http://schema.org/Zoo');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

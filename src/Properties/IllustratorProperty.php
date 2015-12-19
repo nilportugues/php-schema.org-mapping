@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The illustrator of the book.
  */
-class IllustratorProperty extends Property
+class IllustratorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/illustrator';
     const PROPERTY_NAME = 'illustrator';

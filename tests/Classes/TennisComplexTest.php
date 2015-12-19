@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TennisComplex;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TennisComplexTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TennisComplexTest.
  */
 class TennisComplexTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TennisComplex::schemaUrl(), "http://schema.org/TennisComplex");
+        $this->assertEquals(TennisComplex::schemaUrl(), 'http://schema.org/TennisComplex');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

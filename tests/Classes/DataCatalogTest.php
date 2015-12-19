@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DataCatalog;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DataCatalogTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DataCatalogTest.
  */
 class DataCatalogTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DataCatalog::schemaUrl(), "http://schema.org/DataCatalog");
+        $this->assertEquals(DataCatalog::schemaUrl(), 'http://schema.org/DataCatalog');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

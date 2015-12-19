@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The currency (in 3-letter ISO 4217 format) of the discount.
  */
-class DiscountCurrencyProperty extends Property
+class DiscountCurrencyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/discountCurrency';
     const PROPERTY_NAME = 'discountCurrency';

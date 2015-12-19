@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Language;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LanguageTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LanguageTest.
  */
 class LanguageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Language::schemaUrl(), "http://schema.org/Language");
+        $this->assertEquals(Language::schemaUrl(), 'http://schema.org/Language');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

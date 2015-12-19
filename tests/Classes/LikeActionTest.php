@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LikeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LikeActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LikeActionTest.
  */
 class LikeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LikeAction::schemaUrl(), "http://schema.org/LikeAction");
+        $this->assertEquals(LikeAction::schemaUrl(), 'http://schema.org/LikeAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

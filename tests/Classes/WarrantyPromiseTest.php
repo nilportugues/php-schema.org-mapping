@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WarrantyPromise;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WarrantyPromiseTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WarrantyPromiseTest.
  */
 class WarrantyPromiseTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WarrantyPromise::schemaUrl(), "http://schema.org/WarrantyPromise");
+        $this->assertEquals(WarrantyPromise::schemaUrl(), 'http://schema.org/WarrantyPromise');
     }
 
     public function testDurationOfWarrantyWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies browser requirements in human-readable text. For example,"requires HTML5 support".
  */
-class BrowserRequirementsProperty extends Property
+class BrowserRequirementsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/browserRequirements';
     const PROPERTY_NAME = 'browserRequirements';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Cemetery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CemeteryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CemeteryTest.
  */
 class CemeteryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Cemetery::schemaUrl(), "http://schema.org/Cemetery");
+        $this->assertEquals(Cemetery::schemaUrl(), 'http://schema.org/Cemetery');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

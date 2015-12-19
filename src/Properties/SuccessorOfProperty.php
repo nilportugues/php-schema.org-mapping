@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer from a newer variant of a product  to its previous, often discontinued predecessor.
  */
-class SuccessorOfProperty extends Property
+class SuccessorOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/successorOf';
     const PROPERTY_NAME = 'successorOf';

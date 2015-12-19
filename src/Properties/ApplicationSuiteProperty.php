@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The name of the application suite to which the application belongs (e.g. Excel belongs to Office).
  */
-class ApplicationSuiteProperty extends Property
+class ApplicationSuiteProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/applicationSuite';
     const PROPERTY_NAME = 'applicationSuite';

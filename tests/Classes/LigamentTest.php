@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Ligament;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LigamentTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LigamentTest.
  */
 class LigamentTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Ligament::schemaUrl(), "http://schema.org/Ligament");
+        $this->assertEquals(Ligament::schemaUrl(), 'http://schema.org/Ligament');
     }
 
     public function testCodeWillReturnMappingObject()

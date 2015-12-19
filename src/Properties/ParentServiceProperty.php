@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A broadcast service to which the broadcast service may belong to such as regional variations of a national channel.
  */
-class ParentServiceProperty extends Property
+class ParentServiceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/parentService';
     const PROPERTY_NAME = 'parentService';

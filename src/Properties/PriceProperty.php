@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.
  */
-class PriceProperty extends Property
+class PriceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/price';
     const PROPERTY_NAME = 'price';

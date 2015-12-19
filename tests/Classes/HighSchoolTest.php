@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\HighSchool;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HighSchoolTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes HighSchoolTest.
  */
 class HighSchoolTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HighSchool::schemaUrl(), "http://schema.org/HighSchool");
+        $this->assertEquals(HighSchool::schemaUrl(), 'http://schema.org/HighSchool');
     }
 
     public function testAddressWillReturnMappingObject()

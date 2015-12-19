@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\FireStation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FireStationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes FireStationTest.
  */
 class FireStationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(FireStation::schemaUrl(), "http://schema.org/FireStation");
+        $this->assertEquals(FireStation::schemaUrl(), 'http://schema.org/FireStation');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

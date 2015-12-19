@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Processor architecture required to run the application (e.g. IA64).
  */
-class ProcessorRequirementsProperty extends Property
+class ProcessorRequirementsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/processorRequirements';
     const PROPERTY_NAME = 'processorRequirements';

@@ -34,26 +34,17 @@ use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\StudyProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\WorkloadProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes ExercisePlan.
  */
-class ExercisePlan
+class ExercisePlan extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/ExercisePlan';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/ExercisePlan';
 
     /**
      * @return Mapping

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Source of the data used to formulate the guidance, e.g. RCT, consensus opinion, etc.
  */
-class EvidenceOriginProperty extends Property
+class EvidenceOriginProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/evidenceOrigin';
     const PROPERTY_NAME = 'evidenceOrigin';

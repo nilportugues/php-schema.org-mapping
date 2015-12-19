@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Casino;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CasinoTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CasinoTest.
  */
 class CasinoTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Casino::schemaUrl(), "http://schema.org/Casino");
+        $this->assertEquals(Casino::schemaUrl(), 'http://schema.org/Casino');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

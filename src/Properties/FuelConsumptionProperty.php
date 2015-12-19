@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).
  */
-class FuelConsumptionProperty extends Property
+class FuelConsumptionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/fuelConsumption';
     const PROPERTY_NAME = 'fuelConsumption';

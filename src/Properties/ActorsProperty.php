@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.
  */
-class ActorsProperty extends Property
+class ActorsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/actors';
     const PROPERTY_NAME = 'actors';

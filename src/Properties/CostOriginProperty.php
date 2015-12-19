@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.
  */
-class CostOriginProperty extends Property
+class CostOriginProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/costOrigin';
     const PROPERTY_NAME = 'costOrigin';

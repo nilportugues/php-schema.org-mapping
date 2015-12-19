@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A diagnostic test that can identify this sign.
  */
-class IdentifyingTestProperty extends Property
+class IdentifyingTestProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/identifyingTest';
     const PROPERTY_NAME = 'identifyingTest';

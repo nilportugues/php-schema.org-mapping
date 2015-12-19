@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\QuoteAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes QuoteActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes QuoteActionTest.
  */
 class QuoteActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(QuoteAction::schemaUrl(), "http://schema.org/QuoteAction");
+        $this->assertEquals(QuoteAction::schemaUrl(), 'http://schema.org/QuoteAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

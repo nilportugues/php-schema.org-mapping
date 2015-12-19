@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.
  */
-class AuthorProperty extends Property
+class AuthorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/author';
     const PROPERTY_NAME = 'author';

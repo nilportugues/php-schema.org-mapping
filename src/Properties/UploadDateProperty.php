@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Date when this media object was uploaded to this site.
  */
-class UploadDateProperty extends Property
+class UploadDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/uploadDate';
     const PROPERTY_NAME = 'uploadDate';

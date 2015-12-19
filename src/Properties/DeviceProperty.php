@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Device required to run the application. Used in cases where a specific make/model is required to run the application.
  */
-class DeviceProperty extends Property
+class DeviceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/device';
     const PROPERTY_NAME = 'device';

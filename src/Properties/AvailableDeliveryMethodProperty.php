@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The delivery method(s) available for this offer.
  */
-class AvailableDeliveryMethodProperty extends Property
+class AvailableDeliveryMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableDeliveryMethod';
     const PROPERTY_NAME = 'availableDeliveryMethod';

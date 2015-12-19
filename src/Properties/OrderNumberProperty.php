@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The identifier of the transaction.
  */
-class OrderNumberProperty extends Property
+class OrderNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/orderNumber';
     const PROPERTY_NAME = 'orderNumber';

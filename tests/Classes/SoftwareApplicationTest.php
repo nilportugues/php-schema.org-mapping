@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SoftwareApplication;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SoftwareApplicationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SoftwareApplicationTest.
  */
 class SoftwareApplicationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SoftwareApplication::schemaUrl(), "http://schema.org/SoftwareApplication");
+        $this->assertEquals(SoftwareApplication::schemaUrl(), 'http://schema.org/SoftwareApplication');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

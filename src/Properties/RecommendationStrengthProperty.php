@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Strength of the guideline's recommendation (e.g. 'class I').
  */
-class RecommendationStrengthProperty extends Property
+class RecommendationStrengthProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recommendationStrength';
     const PROPERTY_NAME = 'recommendationStrength';

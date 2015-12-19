@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies the CreativeWork associated with the UserComment.
  */
-class DiscussesProperty extends Property
+class DiscussesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/discusses';
     const PROPERTY_NAME = 'discusses';

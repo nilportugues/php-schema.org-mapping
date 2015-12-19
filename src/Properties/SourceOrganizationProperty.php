@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Organization on whose behalf the creator was working.
  */
-class SourceOrganizationProperty extends Property
+class SourceOrganizationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sourceOrganization';
     const PROPERTY_NAME = 'sourceOrganization';

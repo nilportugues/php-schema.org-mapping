@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BookmarkAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BookmarkActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BookmarkActionTest.
  */
 class BookmarkActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BookmarkAction::schemaUrl(), "http://schema.org/BookmarkAction");
+        $this->assertEquals(BookmarkAction::schemaUrl(), 'http://schema.org/BookmarkAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

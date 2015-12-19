@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An item within in a data feed. Data feeds may have many elements.
  */
-class DataFeedElementProperty extends Property
+class DataFeedElementProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dataFeedElement';
     const PROPERTY_NAME = 'dataFeedElement';

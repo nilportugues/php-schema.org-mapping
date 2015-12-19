@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A goal towards an action is taken. Can be concrete or abstract.
  */
-class PurposeProperty extends Property
+class PurposeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/purpose';
     const PROPERTY_NAME = 'purpose';

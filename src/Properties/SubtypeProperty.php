@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A more specific type of the condition, where applicable, for example 'Type 1 Diabetes', 'Type 2 Diabetes', or 'Gestational Diabetes' for Diabetes.
  */
-class SubtypeProperty extends Property
+class SubtypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/subtype';
     const PROPERTY_NAME = 'subtype';

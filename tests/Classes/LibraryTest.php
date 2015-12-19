@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Library;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LibraryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LibraryTest.
  */
 class LibraryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Library::schemaUrl(), "http://schema.org/Library");
+        $this->assertEquals(Library::schemaUrl(), 'http://schema.org/Library');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

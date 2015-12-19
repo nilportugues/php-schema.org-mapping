@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ReactAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReactActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ReactActionTest.
  */
 class ReactActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReactAction::schemaUrl(), "http://schema.org/ReactAction");
+        $this->assertEquals(ReactAction::schemaUrl(), 'http://schema.org/ReactAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

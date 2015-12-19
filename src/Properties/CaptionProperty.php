@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The caption for this object.
  */
-class CaptionProperty extends Property
+class CaptionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/caption';
     const PROPERTY_NAME = 'caption';

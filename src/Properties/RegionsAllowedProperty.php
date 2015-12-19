@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in ISO 3166 format.
  */
-class RegionsAllowedProperty extends Property
+class RegionsAllowedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/regionsAllowed';
     const PROPERTY_NAME = 'regionsAllowed';

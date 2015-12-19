@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\UnitPriceSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UnitPriceSpecificationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes UnitPriceSpecificationTest.
  */
 class UnitPriceSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UnitPriceSpecification::schemaUrl(), "http://schema.org/UnitPriceSpecification");
+        $this->assertEquals(UnitPriceSpecification::schemaUrl(), 'http://schema.org/UnitPriceSpecification');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

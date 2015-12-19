@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Dataset;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DatasetTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DatasetTest.
  */
 class DatasetTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Dataset::schemaUrl(), "http://schema.org/Dataset");
+        $this->assertEquals(Dataset::schemaUrl(), 'http://schema.org/Dataset');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

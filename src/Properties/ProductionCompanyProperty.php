@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The production company or studio responsible for the item e.g. series, video game, episode etc.
  */
-class ProductionCompanyProperty extends Property
+class ProductionCompanyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/productionCompany';
     const PROPERTY_NAME = 'productionCompany';

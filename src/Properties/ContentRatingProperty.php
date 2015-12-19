@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Official rating of a piece of content&#x2014;for example,'MPAA PG-13'.
  */
-class ContentRatingProperty extends Property
+class ContentRatingProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contentRating';
     const PROPERTY_NAME = 'contentRating';

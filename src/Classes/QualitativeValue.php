@@ -19,26 +19,17 @@ use NilPortugues\SchemaOrg\Properties\LesserOrEqualProperty;
 use NilPortugues\SchemaOrg\Properties\LesserProperty;
 use NilPortugues\SchemaOrg\Properties\NonEqualProperty;
 use NilPortugues\SchemaOrg\Properties\ValueReferenceProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes QualitativeValue.
  */
-class QualitativeValue
+class QualitativeValue extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/QualitativeValue';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/QualitativeValue';
 
     /**
      * @return Mapping

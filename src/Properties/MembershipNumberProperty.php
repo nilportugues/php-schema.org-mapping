@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A unique identifier for the membership.
  */
-class MembershipNumberProperty extends Property
+class MembershipNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/membershipNumber';
     const PROPERTY_NAME = 'membershipNumber';

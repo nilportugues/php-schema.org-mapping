@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WatchAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WatchActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WatchActionTest.
  */
 class WatchActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WatchAction::schemaUrl(), "http://schema.org/WatchAction");
+        $this->assertEquals(WatchAction::schemaUrl(), 'http://schema.org/WatchAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

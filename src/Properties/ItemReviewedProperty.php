@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The item that is being reviewed/rated.
  */
-class ItemReviewedProperty extends Property
+class ItemReviewedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/itemReviewed';
     const PROPERTY_NAME = 'itemReviewed';

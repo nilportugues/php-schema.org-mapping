@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PostalAddress;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PostalAddressTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PostalAddressTest.
  */
 class PostalAddressTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PostalAddress::schemaUrl(), "http://schema.org/PostalAddress");
+        $this->assertEquals(PostalAddress::schemaUrl(), 'http://schema.org/PostalAddress');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

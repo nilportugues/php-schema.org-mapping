@@ -67,26 +67,17 @@ use NilPortugues\SchemaOrg\Properties\SubOrganizationProperty;
 use NilPortugues\SchemaOrg\Properties\TaxIDProperty;
 use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
 use NilPortugues\SchemaOrg\Properties\VatIDProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes SportsActivityLocation.
  */
-class SportsActivityLocation
+class SportsActivityLocation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/SportsActivityLocation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/SportsActivityLocation';
 
     /**
      * @return Mapping

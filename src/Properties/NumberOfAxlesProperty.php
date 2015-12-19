@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of axles.
  */
-class NumberOfAxlesProperty extends Property
+class NumberOfAxlesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfAxles';
     const PROPERTY_NAME = 'numberOfAxles';

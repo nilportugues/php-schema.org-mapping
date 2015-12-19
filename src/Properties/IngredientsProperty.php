@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A single ingredient used in the recipe, e.g. sugar, flour or garlic.
  */
-class IngredientsProperty extends Property
+class IngredientsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/ingredients';
     const PROPERTY_NAME = 'ingredients';

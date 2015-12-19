@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\VeterinaryCare;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VeterinaryCareTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VeterinaryCareTest.
  */
 class VeterinaryCareTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VeterinaryCare::schemaUrl(), "http://schema.org/VeterinaryCare");
+        $this->assertEquals(VeterinaryCare::schemaUrl(), 'http://schema.org/VeterinaryCare');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

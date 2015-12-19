@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\EntertainmentBusiness;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EntertainmentBusinessTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes EntertainmentBusinessTest.
  */
 class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EntertainmentBusiness::schemaUrl(), "http://schema.org/EntertainmentBusiness");
+        $this->assertEquals(EntertainmentBusiness::schemaUrl(), 'http://schema.org/EntertainmentBusiness');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

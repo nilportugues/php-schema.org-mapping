@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A means of accessing the service (e.g. a phone bank, a web site, a location, etc.).
  */
-class AvailableChannelProperty extends Property
+class AvailableChannelProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableChannel';
     const PROPERTY_NAME = 'availableChannel';

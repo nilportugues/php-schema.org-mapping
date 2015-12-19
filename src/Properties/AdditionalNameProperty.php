@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An additional name for a Person, can be used for a middle name.
  */
-class AdditionalNameProperty extends Property
+class AdditionalNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/additionalName';
     const PROPERTY_NAME = 'additionalName';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A link to the ListItem that follows the current one.
  */
-class NextItemProperty extends Property
+class NextItemProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/nextItem';
     const PROPERTY_NAME = 'nextItem';

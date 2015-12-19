@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.
  */
-class AvailabilityProperty extends Property
+class AvailabilityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availability';
     const PROPERTY_NAME = 'availability';

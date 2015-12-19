@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
  */
-class RegionDrainedProperty extends Property
+class RegionDrainedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/regionDrained';
     const PROPERTY_NAME = 'regionDrained';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Organization offering the job position.
  */
-class HiringOrganizationProperty extends Property
+class HiringOrganizationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/hiringOrganization';
     const PROPERTY_NAME = 'hiringOrganization';

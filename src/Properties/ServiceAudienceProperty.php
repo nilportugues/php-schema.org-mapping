@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The audience eligible for this service.
  */
-class ServiceAudienceProperty extends Property
+class ServiceAudienceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serviceAudience';
     const PROPERTY_NAME = 'serviceAudience';

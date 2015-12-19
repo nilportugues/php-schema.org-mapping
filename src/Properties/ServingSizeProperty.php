@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The serving size, in terms of the number of volume or mass.
  */
-class ServingSizeProperty extends Property
+class ServingSizeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/servingSize';
     const PROPERTY_NAME = 'servingSize';

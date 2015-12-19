@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Description of skills and experience needed for the position.
  */
-class ExperienceRequirementsProperty extends Property
+class ExperienceRequirementsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/experienceRequirements';
     const PROPERTY_NAME = 'experienceRequirements';

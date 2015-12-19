@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The value of the dose, e.g. 500.
  */
-class DoseValueProperty extends Property
+class DoseValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/doseValue';
     const PROPERTY_NAME = 'doseValue';

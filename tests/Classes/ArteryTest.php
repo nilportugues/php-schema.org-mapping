@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Artery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ArteryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ArteryTest.
  */
 class ArteryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Artery::schemaUrl(), "http://schema.org/Artery");
+        $this->assertEquals(Artery::schemaUrl(), 'http://schema.org/Artery');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

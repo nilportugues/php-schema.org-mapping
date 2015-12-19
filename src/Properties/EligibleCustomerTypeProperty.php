@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type(s) of customers for which the given offer is valid.
  */
-class EligibleCustomerTypeProperty extends Property
+class EligibleCustomerTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/eligibleCustomerType';
     const PROPERTY_NAME = 'eligibleCustomerType';

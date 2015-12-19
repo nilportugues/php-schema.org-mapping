@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The condition, complication, etc. influenced by this factor.
  */
-class IncreasesRiskOfProperty extends Property
+class IncreasesRiskOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/increasesRiskOf';
     const PROPERTY_NAME = 'increasesRiskOf';

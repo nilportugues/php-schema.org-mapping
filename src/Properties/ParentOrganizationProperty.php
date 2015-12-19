@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The larger organization that this organization is a branch of, if any.
  */
-class ParentOrganizationProperty extends Property
+class ParentOrganizationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/parentOrganization';
     const PROPERTY_NAME = 'parentOrganization';

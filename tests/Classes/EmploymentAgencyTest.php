@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\EmploymentAgency;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EmploymentAgencyTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes EmploymentAgencyTest.
  */
 class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EmploymentAgency::schemaUrl(), "http://schema.org/EmploymentAgency");
+        $this->assertEquals(EmploymentAgency::schemaUrl(), 'http://schema.org/EmploymentAgency');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

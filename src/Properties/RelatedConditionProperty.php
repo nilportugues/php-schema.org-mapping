@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A medical condition associated with this anatomy.
  */
-class RelatedConditionProperty extends Property
+class RelatedConditionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/relatedCondition';
     const PROPERTY_NAME = 'relatedCondition';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\OwnershipInfo;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OwnershipInfoTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes OwnershipInfoTest.
  */
 class OwnershipInfoTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(OwnershipInfo::schemaUrl(), "http://schema.org/OwnershipInfo");
+        $this->assertEquals(OwnershipInfo::schemaUrl(), 'http://schema.org/OwnershipInfo');
     }
 
     public function testAcquiredFromWillReturnMappingObject()

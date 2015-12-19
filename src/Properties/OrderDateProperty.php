@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Date order was placed.
  */
-class OrderDateProperty extends Property
+class OrderDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/orderDate';
     const PROPERTY_NAME = 'orderDate';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Description of bonus and commission compensation aspects of the job.
  */
-class IncentivesProperty extends Property
+class IncentivesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/incentives';
     const PROPERTY_NAME = 'incentives';

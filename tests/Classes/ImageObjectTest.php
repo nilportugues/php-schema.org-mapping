@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ImageObject;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ImageObjectTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ImageObjectTest.
  */
 class ImageObjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ImageObject::schemaUrl(), "http://schema.org/ImageObject");
+        $this->assertEquals(ImageObject::schemaUrl(), 'http://schema.org/ImageObject');
     }
 
     public function testAboutWillReturnMappingObject()

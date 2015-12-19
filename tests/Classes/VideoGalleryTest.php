@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\VideoGallery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VideoGalleryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VideoGalleryTest.
  */
 class VideoGalleryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VideoGallery::schemaUrl(), "http://schema.org/VideoGallery");
+        $this->assertEquals(VideoGallery::schemaUrl(), 'http://schema.org/VideoGallery');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

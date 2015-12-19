@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The sports team that participated on this action.
  */
-class SportsTeamProperty extends Property
+class SportsTeamProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sportsTeam';
     const PROPERTY_NAME = 'sportsTeam';

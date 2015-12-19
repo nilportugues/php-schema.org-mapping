@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BroadcastService;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BroadcastServiceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BroadcastServiceTest.
  */
 class BroadcastServiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BroadcastService::schemaUrl(), "http://schema.org/BroadcastService");
+        $this->assertEquals(BroadcastService::schemaUrl(), 'http://schema.org/BroadcastService');
     }
 
     public function testAreaWillReturnMappingObject()

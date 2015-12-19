@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The version of the CreativeWork embodied by a specified resource.
  */
-class VersionProperty extends Property
+class VersionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/version';
     const PROPERTY_NAME = 'version';

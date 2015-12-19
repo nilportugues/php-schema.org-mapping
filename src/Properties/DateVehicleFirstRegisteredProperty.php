@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date of the first registration of the vehicle with the respective public authorities.
  */
-class DateVehicleFirstRegisteredProperty extends Property
+class DateVehicleFirstRegisteredProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dateVehicleFirstRegistered';
     const PROPERTY_NAME = 'dateVehicleFirstRegistered';

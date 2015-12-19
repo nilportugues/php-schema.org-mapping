@@ -32,26 +32,17 @@ use NilPortugues\SchemaOrg\Properties\SourceProperty;
 use NilPortugues\SchemaOrg\Properties\SubStructureProperty;
 use NilPortugues\SchemaOrg\Properties\SupplyToProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Artery.
  */
-class Artery
+class Artery extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Artery';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Artery';
 
     /**
      * @return Mapping

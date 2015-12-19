@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Nerve;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes NerveTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes NerveTest.
  */
 class NerveTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Nerve::schemaUrl(), "http://schema.org/Nerve");
+        $this->assertEquals(Nerve::schemaUrl(), 'http://schema.org/Nerve');
     }
 
     public function testBranchWillReturnMappingObject()

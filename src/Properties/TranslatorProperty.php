@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market.
  */
-class TranslatorProperty extends Property
+class TranslatorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/translator';
     const PROPERTY_NAME = 'translator';

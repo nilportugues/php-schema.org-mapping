@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The high level platform(s) where the Action can be performed for the given URL. To specify a specific application or operating system instance, use actionApplication.
  */
-class ActionPlatformProperty extends Property
+class ActionPlatformProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/actionPlatform';
     const PROPERTY_NAME = 'actionPlatform';

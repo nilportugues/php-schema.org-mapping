@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Cheat codes to the game.
  */
-class CheatCodeProperty extends Property
+class CheatCodeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/cheatCode';
     const PROPERTY_NAME = 'cheatCode';

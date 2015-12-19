@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The playlist to which this recording belongs.
  */
-class InPlaylistProperty extends Property
+class InPlaylistProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/inPlaylist';
     const PROPERTY_NAME = 'inPlaylist';

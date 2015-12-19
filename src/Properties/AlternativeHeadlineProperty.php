@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A secondary title of the CreativeWork.
  */
-class AlternativeHeadlineProperty extends Property
+class AlternativeHeadlineProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/alternativeHeadline';
     const PROPERTY_NAME = 'alternativeHeadline';

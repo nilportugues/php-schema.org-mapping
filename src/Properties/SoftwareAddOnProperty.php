@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Additional content for a software application.
  */
-class SoftwareAddOnProperty extends Property
+class SoftwareAddOnProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/softwareAddOn';
     const PROPERTY_NAME = 'softwareAddOn';

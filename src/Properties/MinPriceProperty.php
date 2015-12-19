@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The lowest price if the price is a range.
  */
-class MinPriceProperty extends Property
+class MinPriceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/minPrice';
     const PROPERTY_NAME = 'minPrice';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates the kind of Map, from the MapCategoryType Enumeration.
  */
-class MapTypeProperty extends Property
+class MapTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/mapType';
     const PROPERTY_NAME = 'mapType';

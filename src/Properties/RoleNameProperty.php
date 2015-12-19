@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'.
  */
-class RoleNameProperty extends Property
+class RoleNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/roleName';
     const PROPERTY_NAME = 'roleName';

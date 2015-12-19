@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Genre of the creative work or group.
  */
-class GenreProperty extends Property
+class GenreProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/genre';
     const PROPERTY_NAME = 'genre';

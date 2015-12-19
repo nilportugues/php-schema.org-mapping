@@ -23,26 +23,17 @@ use NilPortugues\SchemaOrg\Properties\SodiumContentProperty;
 use NilPortugues\SchemaOrg\Properties\SugarContentProperty;
 use NilPortugues\SchemaOrg\Properties\TransFatContentProperty;
 use NilPortugues\SchemaOrg\Properties\UnsaturatedFatContentProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes NutritionInformation.
  */
-class NutritionInformation
+class NutritionInformation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/NutritionInformation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/NutritionInformation';
 
     /**
      * @return Mapping

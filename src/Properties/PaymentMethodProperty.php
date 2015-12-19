@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The name of the credit card or other method of payment for the order.
  */
-class PaymentMethodProperty extends Property
+class PaymentMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/paymentMethod';
     const PROPERTY_NAME = 'paymentMethod';

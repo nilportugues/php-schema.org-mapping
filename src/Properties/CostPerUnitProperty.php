@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The cost per unit of the drug.
  */
-class CostPerUnitProperty extends Property
+class CostPerUnitProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/costPerUnit';
     const PROPERTY_NAME = 'costPerUnit';

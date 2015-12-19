@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Minimal age recommended for viewing content.
  */
-class SuggestedMinAgeProperty extends Property
+class SuggestedMinAgeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/suggestedMinAge';
     const PROPERTY_NAME = 'suggestedMinAge';

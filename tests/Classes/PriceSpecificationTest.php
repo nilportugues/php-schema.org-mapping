@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PriceSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PriceSpecificationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PriceSpecificationTest.
  */
 class PriceSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PriceSpecification::schemaUrl(), "http://schema.org/PriceSpecification");
+        $this->assertEquals(PriceSpecification::schemaUrl(), 'http://schema.org/PriceSpecification');
     }
 
     public function testEligibleQuantityWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Estimated processing time for the service using this channel.
  */
-class ProcessingTimeProperty extends Property
+class ProcessingTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/processingTime';
     const PROPERTY_NAME = 'processingTime';

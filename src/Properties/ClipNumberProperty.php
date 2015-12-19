@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Position of the clip within an ordered group of clips.
  */
-class ClipNumberProperty extends Property
+class ClipNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/clipNumber';
     const PROPERTY_NAME = 'clipNumber';

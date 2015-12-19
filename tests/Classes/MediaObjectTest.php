@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MediaObject;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MediaObjectTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MediaObjectTest.
  */
 class MediaObjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MediaObject::schemaUrl(), "http://schema.org/MediaObject");
+        $this->assertEquals(MediaObject::schemaUrl(), 'http://schema.org/MediaObject');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

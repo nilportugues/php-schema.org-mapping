@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of instrument. The diet used in this action.
  */
-class ExerciseRelatedDietProperty extends Property
+class ExerciseRelatedDietProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/exerciseRelatedDiet';
     const PROPERTY_NAME = 'exerciseRelatedDiet';

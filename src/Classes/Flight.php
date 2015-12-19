@@ -38,26 +38,17 @@ use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\SellerProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\WebCheckinTimeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Flight.
  */
-class Flight
+class Flight extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Flight';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Flight';
 
     /**
      * @return Mapping

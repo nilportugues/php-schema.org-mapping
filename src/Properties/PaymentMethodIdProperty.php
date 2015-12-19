@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An identifier for the method of payment used (e.g. the last 4 digits of the credit card).
  */
-class PaymentMethodIdProperty extends Property
+class PaymentMethodIdProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/paymentMethodId';
     const PROPERTY_NAME = 'paymentMethodId';

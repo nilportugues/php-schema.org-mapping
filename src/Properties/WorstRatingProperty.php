@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
  */
-class WorstRatingProperty extends Property
+class WorstRatingProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/worstRating';
     const PROPERTY_NAME = 'worstRating';

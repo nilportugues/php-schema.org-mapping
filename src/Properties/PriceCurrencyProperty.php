@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The currency (in 3-letter ISO 4217 format) of the price or a price component, when attached to PriceSpecification and its subtypes.
  */
-class PriceCurrencyProperty extends Property
+class PriceCurrencyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/priceCurrency';
     const PROPERTY_NAME = 'priceCurrency';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A link related to this web page, for example to other related web pages.
  */
-class RelatedLinkProperty extends Property
+class RelatedLinkProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/relatedLink';
     const PROPERTY_NAME = 'relatedLink';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MovieClip;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MovieClipTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MovieClipTest.
  */
 class MovieClipTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MovieClip::schemaUrl(), "http://schema.org/MovieClip");
+        $this->assertEquals(MovieClip::schemaUrl(), 'http://schema.org/MovieClip');
     }
 
     public function testAboutWillReturnMappingObject()

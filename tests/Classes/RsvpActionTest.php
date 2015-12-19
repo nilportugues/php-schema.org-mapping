@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RsvpAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RsvpActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RsvpActionTest.
  */
 class RsvpActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RsvpAction::schemaUrl(), "http://schema.org/RsvpAction");
+        $this->assertEquals(RsvpAction::schemaUrl(), 'http://schema.org/RsvpAction');
     }
 
     public function testAboutWillReturnMappingObject()

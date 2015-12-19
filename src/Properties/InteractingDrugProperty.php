@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Another drug that is known to interact with this drug in a way that impacts the effect of this drug or causes a risk to the patient. Note: disease interactions are typically captured as contraindications.
  */
-class InteractingDrugProperty extends Property
+class InteractingDrugProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/interactingDrug';
     const PROPERTY_NAME = 'interactingDrug';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Table;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TableTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TableTest.
  */
 class TableTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Table::schemaUrl(), "http://schema.org/Table");
+        $this->assertEquals(Table::schemaUrl(), 'http://schema.org/Table');
     }
 
     public function testAboutWillReturnMappingObject()

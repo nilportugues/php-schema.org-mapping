@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A link to the ListItem that preceeds the current one.
  */
-class PreviousItemProperty extends Property
+class PreviousItemProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/previousItem';
     const PROPERTY_NAME = 'previousItem';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SportsActivityLocation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SportsActivityLocationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SportsActivityLocationTest.
  */
 class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SportsActivityLocation::schemaUrl(), "http://schema.org/SportsActivityLocation");
+        $this->assertEquals(SportsActivityLocation::schemaUrl(), 'http://schema.org/SportsActivityLocation');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

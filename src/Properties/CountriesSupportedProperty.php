@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
  */
-class CountriesSupportedProperty extends Property
+class CountriesSupportedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/countriesSupported';
     const PROPERTY_NAME = 'countriesSupported';

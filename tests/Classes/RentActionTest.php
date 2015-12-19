@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RentAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RentActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RentActionTest.
  */
 class RentActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RentAction::schemaUrl(), "http://schema.org/RentAction");
+        $this->assertEquals(RentAction::schemaUrl(), 'http://schema.org/RentAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

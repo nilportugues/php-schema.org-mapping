@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A URL to a map of the place.
  */
-class MapProperty extends Property
+class MapProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/map';
     const PROPERTY_NAME = 'map';

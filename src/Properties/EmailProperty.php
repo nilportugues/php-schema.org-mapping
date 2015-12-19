@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Email address.
  */
-class EmailProperty extends Property
+class EmailProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/email';
     const PROPERTY_NAME = 'email';

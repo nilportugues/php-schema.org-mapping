@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The billing address for the order.
  */
-class BillingAddressProperty extends Property
+class BillingAddressProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/billingAddress';
     const PROPERTY_NAME = 'billingAddress';

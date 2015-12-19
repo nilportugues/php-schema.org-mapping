@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The beginning of the availability of the product or service included in the offer.
  */
-class AvailabilityStartsProperty extends Property
+class AvailabilityStartsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availabilityStarts';
     const PROPERTY_NAME = 'availabilityStarts';

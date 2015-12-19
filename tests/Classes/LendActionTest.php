@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LendAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LendActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LendActionTest.
  */
 class LendActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LendAction::schemaUrl(), "http://schema.org/LendAction");
+        $this->assertEquals(LendAction::schemaUrl(), 'http://schema.org/LendAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

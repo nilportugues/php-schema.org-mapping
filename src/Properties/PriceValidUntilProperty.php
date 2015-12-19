@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date after which the price is no longer available.
  */
-class PriceValidUntilProperty extends Property
+class PriceValidUntilProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/priceValidUntil';
     const PROPERTY_NAME = 'priceValidUntil';

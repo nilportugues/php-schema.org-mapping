@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date and time the reservation was booked.
  */
-class BookingTimeProperty extends Property
+class BookingTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/bookingTime';
     const PROPERTY_NAME = 'bookingTime';

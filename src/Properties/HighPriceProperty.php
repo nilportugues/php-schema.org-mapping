@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The highest price of all offers available.
  */
-class HighPriceProperty extends Property
+class HighPriceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/highPrice';
     const PROPERTY_NAME = 'highPrice';

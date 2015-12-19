@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Real or fictional location of the game (or part of game).
  */
-class GameLocationProperty extends Property
+class GameLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/gameLocation';
     const PROPERTY_NAME = 'gameLocation';

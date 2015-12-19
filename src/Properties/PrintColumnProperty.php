@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of the column in which the NewsArticle appears in the print edition.
  */
-class PrintColumnProperty extends Property
+class PrintColumnProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/printColumn';
     const PROPERTY_NAME = 'printColumn';

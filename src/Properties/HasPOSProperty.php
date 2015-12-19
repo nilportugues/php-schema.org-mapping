@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Points-of-Sales operated by the organization or person.
  */
-class HasPOSProperty extends Property
+class HasPOSProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/hasPOS';
     const PROPERTY_NAME = 'hasPOS';

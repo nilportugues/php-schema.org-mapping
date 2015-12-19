@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\UserCheckins;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserCheckinsTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes UserCheckinsTest.
  */
 class UserCheckinsTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserCheckins::schemaUrl(), "http://schema.org/UserCheckins");
+        $this->assertEquals(UserCheckins::schemaUrl(), 'http://schema.org/UserCheckins');
     }
 
     public function testAggregateRatingWillReturnMappingObject()

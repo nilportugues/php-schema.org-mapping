@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any precaution, guidance, contraindication, etc. related to this drug's use by breastfeeding mothers.
  */
-class BreastfeedingWarningProperty extends Property
+class BreastfeedingWarningProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/breastfeedingWarning';
     const PROPERTY_NAME = 'breastfeedingWarning';

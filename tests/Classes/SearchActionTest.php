@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SearchAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SearchActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SearchActionTest.
  */
 class SearchActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SearchAction::schemaUrl(), "http://schema.org/SearchAction");
+        $this->assertEquals(SearchAction::schemaUrl(), 'http://schema.org/SearchAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

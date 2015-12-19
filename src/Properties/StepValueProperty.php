@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification.
  */
-class StepValueProperty extends Property
+class StepValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/stepValue';
     const PROPERTY_NAME = 'stepValue';

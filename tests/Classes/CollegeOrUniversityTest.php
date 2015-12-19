@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CollegeOrUniversity;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CollegeOrUniversityTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CollegeOrUniversityTest.
  */
 class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CollegeOrUniversity::schemaUrl(), "http://schema.org/CollegeOrUniversity");
+        $this->assertEquals(CollegeOrUniversity::schemaUrl(), 'http://schema.org/CollegeOrUniversity');
     }
 
     public function testAddressWillReturnMappingObject()

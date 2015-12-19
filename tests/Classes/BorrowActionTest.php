@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BorrowAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BorrowActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BorrowActionTest.
  */
 class BorrowActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BorrowAction::schemaUrl(), "http://schema.org/BorrowAction");
+        $this->assertEquals(BorrowAction::schemaUrl(), 'http://schema.org/BorrowAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

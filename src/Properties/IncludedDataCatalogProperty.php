@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A data catalog contained in the dataset.
  */
-class IncludedDataCatalogProperty extends Property
+class IncludedDataCatalogProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/includedDataCatalog';
     const PROPERTY_NAME = 'includedDataCatalog';

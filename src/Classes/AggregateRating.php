@@ -14,26 +14,17 @@ use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\ItemReviewedProperty;
 use NilPortugues\SchemaOrg\Properties\RatingCountProperty;
 use NilPortugues\SchemaOrg\Properties\ReviewCountProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes AggregateRating.
  */
-class AggregateRating
+class AggregateRating extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/AggregateRating';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/AggregateRating';
 
     /**
      * @return Mapping

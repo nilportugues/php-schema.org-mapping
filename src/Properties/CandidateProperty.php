@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of object. The candidate subject of this action.
  */
-class CandidateProperty extends Property
+class CandidateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/candidate';
     const PROPERTY_NAME = 'candidate';

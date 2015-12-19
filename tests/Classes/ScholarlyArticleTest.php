@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ScholarlyArticle;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ScholarlyArticleTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ScholarlyArticleTest.
  */
 class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ScholarlyArticle::schemaUrl(), "http://schema.org/ScholarlyArticle");
+        $this->assertEquals(ScholarlyArticle::schemaUrl(), 'http://schema.org/ScholarlyArticle');
     }
 
     public function testAboutWillReturnMappingObject()

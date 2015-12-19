@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Pregnancy category of this drug.
  */
-class PregnancyCategoryProperty extends Property
+class PregnancyCategoryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/pregnancyCategory';
     const PROPERTY_NAME = 'pregnancyCategory';

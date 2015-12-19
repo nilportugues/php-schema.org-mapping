@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ControlAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ControlActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ControlActionTest.
  */
 class ControlActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ControlAction::schemaUrl(), "http://schema.org/ControlAction");
+        $this->assertEquals(ControlAction::schemaUrl(), 'http://schema.org/ControlAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

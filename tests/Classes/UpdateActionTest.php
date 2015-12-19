@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\UpdateAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UpdateActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes UpdateActionTest.
  */
 class UpdateActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UpdateAction::schemaUrl(), "http://schema.org/UpdateAction");
+        $this->assertEquals(UpdateAction::schemaUrl(), 'http://schema.org/UpdateAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

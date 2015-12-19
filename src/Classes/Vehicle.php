@@ -44,26 +44,17 @@ use NilPortugues\SchemaOrg\Properties\VehicleModelDateProperty;
 use NilPortugues\SchemaOrg\Properties\VehicleSeatingCapacityProperty;
 use NilPortugues\SchemaOrg\Properties\VehicleTransmissionProperty;
 use NilPortugues\SchemaOrg\Properties\VinProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Vehicle.
  */
-class Vehicle
+class Vehicle extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Vehicle';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Vehicle';
 
     /**
      * @return Mapping

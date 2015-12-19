@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The location in which the status applies.
  */
-class ApplicableLocationProperty extends Property
+class ApplicableLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/applicableLocation';
     const PROPERTY_NAME = 'applicableLocation';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PostOffice;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PostOfficeTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PostOfficeTest.
  */
 class PostOfficeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PostOffice::schemaUrl(), "http://schema.org/PostOffice");
+        $this->assertEquals(PostOffice::schemaUrl(), 'http://schema.org/PostOffice');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

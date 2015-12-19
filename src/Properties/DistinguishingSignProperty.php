@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * One of a set of signs and symptoms that can be used to distinguish this diagnosis from others in the differential diagnosis.
  */
-class DistinguishingSignProperty extends Property
+class DistinguishingSignProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/distinguishingSign';
     const PROPERTY_NAME = 'distinguishingSign';

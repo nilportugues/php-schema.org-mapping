@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\InformAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InformActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes InformActionTest.
  */
 class InformActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InformAction::schemaUrl(), "http://schema.org/InformAction");
+        $this->assertEquals(InformAction::schemaUrl(), 'http://schema.org/InformAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

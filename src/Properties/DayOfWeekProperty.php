@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The day of the week for which these opening hours are valid.
  */
-class DayOfWeekProperty extends Property
+class DayOfWeekProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dayOfWeek';
     const PROPERTY_NAME = 'dayOfWeek';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The currency (coded using ISO 4217, http://en.wikipedia.org/wiki/ISO_4217 ) used for the main salary information in this job posting or for this employee.
  */
-class SalaryCurrencyProperty extends Property
+class SalaryCurrencyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/salaryCurrency';
     const PROPERTY_NAME = 'salaryCurrency';

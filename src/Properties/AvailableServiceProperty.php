@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A medical service available from this provider.
  */
-class AvailableServiceProperty extends Property
+class AvailableServiceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableService';
     const PROPERTY_NAME = 'availableService';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AutoRepair;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AutoRepairTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AutoRepairTest.
  */
 class AutoRepairTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AutoRepair::schemaUrl(), "http://schema.org/AutoRepair");
+        $this->assertEquals(AutoRepair::schemaUrl(), 'http://schema.org/AutoRepair');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

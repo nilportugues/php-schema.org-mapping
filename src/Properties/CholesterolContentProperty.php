@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of milligrams of cholesterol.
  */
-class CholesterolContentProperty extends Property
+class CholesterolContentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/cholesterolContent';
     const PROPERTY_NAME = 'cholesterolContent';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of location. The course where this action was taken.
  */
-class CourseProperty extends Property
+class CourseProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/course';
     const PROPERTY_NAME = 'course';

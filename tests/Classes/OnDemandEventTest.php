@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\OnDemandEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OnDemandEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes OnDemandEventTest.
  */
 class OnDemandEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(OnDemandEvent::schemaUrl(), "http://schema.org/OnDemandEvent");
+        $this->assertEquals(OnDemandEvent::schemaUrl(), 'http://schema.org/OnDemandEvent');
     }
 
     public function testAggregateRatingWillReturnMappingObject()

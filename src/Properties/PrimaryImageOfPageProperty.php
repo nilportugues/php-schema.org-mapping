@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates the main image on the page.
  */
-class PrimaryImageOfPageProperty extends Property
+class PrimaryImageOfPageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/primaryImageOfPage';
     const PROPERTY_NAME = 'primaryImageOfPage';

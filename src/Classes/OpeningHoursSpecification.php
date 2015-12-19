@@ -16,26 +16,17 @@ use NilPortugues\SchemaOrg\Properties\DayOfWeekProperty;
 use NilPortugues\SchemaOrg\Properties\OpensProperty;
 use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
 use NilPortugues\SchemaOrg\Properties\ValidThroughProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes OpeningHoursSpecification.
  */
-class OpeningHoursSpecification
+class OpeningHoursSpecification extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/OpeningHoursSpecification';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/OpeningHoursSpecification';
 
     /**
      * @return Mapping

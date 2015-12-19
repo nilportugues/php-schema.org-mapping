@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * After this date, the item will no longer be available for pickup.
  */
-class AvailableThroughProperty extends Property
+class AvailableThroughProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableThrough';
     const PROPERTY_NAME = 'availableThrough';

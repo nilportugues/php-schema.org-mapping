@@ -62,26 +62,17 @@ use NilPortugues\SchemaOrg\Properties\VatIDProperty;
 use NilPortugues\SchemaOrg\Properties\WeightProperty;
 use NilPortugues\SchemaOrg\Properties\WorkLocationProperty;
 use NilPortugues\SchemaOrg\Properties\WorksForProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Person.
  */
-class Person
+class Person extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Person';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Person';
 
     /**
      * @return Mapping

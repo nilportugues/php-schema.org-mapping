@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ArriveAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ArriveActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ArriveActionTest.
  */
 class ArriveActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ArriveAction::schemaUrl(), "http://schema.org/ArriveAction");
+        $this->assertEquals(ArriveAction::schemaUrl(), 'http://schema.org/ArriveAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

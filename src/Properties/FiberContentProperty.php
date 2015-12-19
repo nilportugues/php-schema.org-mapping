@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of grams of fiber.
  */
-class FiberContentProperty extends Property
+class FiberContentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/fiberContent';
     const PROPERTY_NAME = 'fiberContent';

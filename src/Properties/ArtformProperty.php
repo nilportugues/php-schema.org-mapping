@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc.
  */
-class ArtformProperty extends Property
+class ArtformProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/artform';
     const PROPERTY_NAME = 'artform';

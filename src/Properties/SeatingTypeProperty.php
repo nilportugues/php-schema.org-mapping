@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type/class of the seat.
  */
-class SeatingTypeProperty extends Property
+class SeatingTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/seatingType';
     const PROPERTY_NAME = 'seatingType';

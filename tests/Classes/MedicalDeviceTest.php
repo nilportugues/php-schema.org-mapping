@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MedicalDevice;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalDeviceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MedicalDeviceTest.
  */
 class MedicalDeviceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalDevice::schemaUrl(), "http://schema.org/MedicalDevice");
+        $this->assertEquals(MedicalDevice::schemaUrl(), 'http://schema.org/MedicalDevice');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

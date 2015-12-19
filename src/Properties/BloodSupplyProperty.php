@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The blood vessel that carries blood from the heart to the muscle.
  */
-class BloodSupplyProperty extends Property
+class BloodSupplyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/bloodSupply';
     const PROPERTY_NAME = 'bloodSupply';

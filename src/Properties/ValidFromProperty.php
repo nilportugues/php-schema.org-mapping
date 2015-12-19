@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date when the item becomes valid.
  */
-class ValidFromProperty extends Property
+class ValidFromProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/validFrom';
     const PROPERTY_NAME = 'validFrom';

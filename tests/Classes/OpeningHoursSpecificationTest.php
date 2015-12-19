@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\OpeningHoursSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OpeningHoursSpecificationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes OpeningHoursSpecificationTest.
  */
 class OpeningHoursSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(OpeningHoursSpecification::schemaUrl(), "http://schema.org/OpeningHoursSpecification");
+        $this->assertEquals(OpeningHoursSpecification::schemaUrl(), 'http://schema.org/OpeningHoursSpecification');
     }
 
     public function testClosesWillReturnMappingObject()

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ReplaceAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReplaceActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ReplaceActionTest.
  */
 class ReplaceActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReplaceAction::schemaUrl(), "http://schema.org/ReplaceAction");
+        $this->assertEquals(ReplaceAction::schemaUrl(), 'http://schema.org/ReplaceAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

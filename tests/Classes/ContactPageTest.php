@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ContactPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ContactPageTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ContactPageTest.
  */
 class ContactPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ContactPage::schemaUrl(), "http://schema.org/ContactPage");
+        $this->assertEquals(ContactPage::schemaUrl(), 'http://schema.org/ContactPage');
     }
 
     public function testAboutWillReturnMappingObject()

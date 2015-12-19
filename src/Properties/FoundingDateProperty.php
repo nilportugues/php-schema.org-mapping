@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date that this organization was founded.
  */
-class FoundingDateProperty extends Property
+class FoundingDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/foundingDate';
     const PROPERTY_NAME = 'foundingDate';

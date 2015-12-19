@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).
  */
-class VideoFormatProperty extends Property
+class VideoFormatProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/videoFormat';
     const PROPERTY_NAME = 'videoFormat';

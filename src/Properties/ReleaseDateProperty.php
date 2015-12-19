@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The release date of a product or product model. This can be used to distinguish the exact variant of a product.
  */
-class ReleaseDateProperty extends Property
+class ReleaseDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/releaseDate';
     const PROPERTY_NAME = 'releaseDate';

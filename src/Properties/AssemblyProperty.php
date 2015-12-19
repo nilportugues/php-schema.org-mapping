@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Library file name e.g., mscorlib.dll, system.web.dll.
  */
-class AssemblyProperty extends Property
+class AssemblyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/assembly';
     const PROPERTY_NAME = 'assembly';

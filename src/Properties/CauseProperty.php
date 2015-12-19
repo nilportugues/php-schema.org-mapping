@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An underlying cause. More specifically, one of the causative agent(s) that are most directly responsible for the pathophysiologic process that eventually results in the occurrence.
  */
-class CauseProperty extends Property
+class CauseProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/cause';
     const PROPERTY_NAME = 'cause';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WebSite;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WebSiteTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WebSiteTest.
  */
 class WebSiteTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WebSite::schemaUrl(), "http://schema.org/WebSite");
+        $this->assertEquals(WebSite::schemaUrl(), 'http://schema.org/WebSite');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

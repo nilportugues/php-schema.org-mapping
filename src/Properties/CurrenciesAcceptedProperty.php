@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The currency accepted (in ISO 4217 currency format).
  */
-class CurrenciesAcceptedProperty extends Property
+class CurrenciesAcceptedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/currenciesAccepted';
     const PROPERTY_NAME = 'currenciesAccepted';

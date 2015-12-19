@@ -17,26 +17,17 @@ use NilPortugues\SchemaOrg\Properties\ElevationProperty;
 use NilPortugues\SchemaOrg\Properties\LatitudeProperty;
 use NilPortugues\SchemaOrg\Properties\LongitudeProperty;
 use NilPortugues\SchemaOrg\Properties\PostalCodeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes GeoCoordinates.
  */
-class GeoCoordinates
+class GeoCoordinates extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/GeoCoordinates';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/GeoCoordinates';
 
     /**
      * @return Mapping

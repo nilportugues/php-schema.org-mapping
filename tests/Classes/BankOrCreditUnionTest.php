@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BankOrCreditUnion;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BankOrCreditUnionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BankOrCreditUnionTest.
  */
 class BankOrCreditUnionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BankOrCreditUnion::schemaUrl(), "http://schema.org/BankOrCreditUnion");
+        $this->assertEquals(BankOrCreditUnion::schemaUrl(), 'http://schema.org/BankOrCreditUnion');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

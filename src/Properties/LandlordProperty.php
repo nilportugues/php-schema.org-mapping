@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The owner of the real estate property.
  */
-class LandlordProperty extends Property
+class LandlordProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/landlord';
     const PROPERTY_NAME = 'landlord';

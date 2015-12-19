@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Value-added Tax ID of the organization or person.
  */
-class VatIDProperty extends Property
+class VatIDProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vatID';
     const PROPERTY_NAME = 'vatID';

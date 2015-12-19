@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TipAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TipActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TipActionTest.
  */
 class TipActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TipAction::schemaUrl(), "http://schema.org/TipAction");
+        $this->assertEquals(TipAction::schemaUrl(), 'http://schema.org/TipAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

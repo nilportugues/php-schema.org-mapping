@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A preventative therapy used to prevent reoccurrence of the medical condition after an initial episode of the condition.
  */
-class SecondaryPreventionProperty extends Property
+class SecondaryPreventionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/secondaryPrevention';
     const PROPERTY_NAME = 'secondaryPrevention';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The category of cost, such as wholesale, retail, reimbursement cap, etc.
  */
-class CostCategoryProperty extends Property
+class CostCategoryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/costCategory';
     const PROPERTY_NAME = 'costCategory';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The unique identifier for the bus.
  */
-class BusNumberProperty extends Property
+class BusNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/busNumber';
     const PROPERTY_NAME = 'busNumber';

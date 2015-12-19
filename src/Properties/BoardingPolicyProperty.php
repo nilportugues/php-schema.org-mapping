@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type of boarding policy used by the airline (e.g. zone-based or group-based).
  */
-class BoardingPolicyProperty extends Property
+class BoardingPolicyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/boardingPolicy';
     const PROPERTY_NAME = 'boardingPolicy';

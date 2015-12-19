@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Museum;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MuseumTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MuseumTest.
  */
 class MuseumTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Museum::schemaUrl(), "http://schema.org/Museum");
+        $this->assertEquals(Museum::schemaUrl(), 'http://schema.org/Museum');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

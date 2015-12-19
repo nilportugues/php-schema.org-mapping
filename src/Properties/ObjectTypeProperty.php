@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The object upon the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read *a book*.
  */
-class ObjectTypeProperty extends Property
+class ObjectTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/object';
     const PROPERTY_NAME = 'objectType';

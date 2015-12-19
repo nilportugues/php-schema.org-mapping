@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The locality. For example, Mountain View.
  */
-class AddressLocalityProperty extends Property
+class AddressLocalityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/addressLocality';
     const PROPERTY_NAME = 'addressLocality';

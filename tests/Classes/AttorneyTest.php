@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Attorney;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AttorneyTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AttorneyTest.
  */
 class AttorneyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Attorney::schemaUrl(), "http://schema.org/Attorney");
+        $this->assertEquals(Attorney::schemaUrl(), 'http://schema.org/Attorney');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

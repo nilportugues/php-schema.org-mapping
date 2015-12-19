@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The typical expected age range, e.g. '7-9', '11-'.
  */
-class TypicalAgeRangeProperty extends Property
+class TypicalAgeRangeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/typicalAgeRange';
     const PROPERTY_NAME = 'typicalAgeRange';

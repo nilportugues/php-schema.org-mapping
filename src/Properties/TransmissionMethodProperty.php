@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * How the disease spreads, either as a route or vector, for example 'direct contact', 'Aedes aegypti', etc.
  */
-class TransmissionMethodProperty extends Property
+class TransmissionMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/transmissionMethod';
     const PROPERTY_NAME = 'transmissionMethod';

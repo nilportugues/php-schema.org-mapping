@@ -17,26 +17,17 @@ use NilPortugues\SchemaOrg\Properties\LodgingUnitDescriptionProperty;
 use NilPortugues\SchemaOrg\Properties\LodgingUnitTypeProperty;
 use NilPortugues\SchemaOrg\Properties\NumAdultsProperty;
 use NilPortugues\SchemaOrg\Properties\NumChildrenProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes LodgingReservation.
  */
-class LodgingReservation
+class LodgingReservation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/LodgingReservation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/LodgingReservation';
 
     /**
      * @return Mapping

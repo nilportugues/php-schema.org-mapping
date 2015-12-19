@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Recommended intake of this supplement for a given population as defined by a specific recommending authority.
  */
-class RecommendedIntakeProperty extends Property
+class RecommendedIntakeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recommendedIntake';
     const PROPERTY_NAME = 'recommendedIntake';

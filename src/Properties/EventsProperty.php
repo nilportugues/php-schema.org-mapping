@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Upcoming or past events associated with this place or organization.
  */
-class EventsProperty extends Property
+class EventsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/events';
     const PROPERTY_NAME = 'events';

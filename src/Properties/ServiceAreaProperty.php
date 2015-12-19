@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The geographic area where the service is provided.
  */
-class ServiceAreaProperty extends Property
+class ServiceAreaProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serviceArea';
     const PROPERTY_NAME = 'serviceArea';

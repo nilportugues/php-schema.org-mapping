@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Textual description of the unit type (including suite vs. room, size of bed, etc.).
  */
-class LodgingUnitTypeProperty extends Property
+class LodgingUnitTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/lodgingUnitType';
     const PROPERTY_NAME = 'lodgingUnitType';

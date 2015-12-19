@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MobilePhoneStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MobilePhoneStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MobilePhoneStoreTest.
  */
 class MobilePhoneStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MobilePhoneStore::schemaUrl(), "http://schema.org/MobilePhoneStore");
+        $this->assertEquals(MobilePhoneStore::schemaUrl(), 'http://schema.org/MobilePhoneStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

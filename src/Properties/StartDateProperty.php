@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The start date and time of the item (in ISO 8601 date format).
  */
-class StartDateProperty extends Property
+class StartDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/startDate';
     const PROPERTY_NAME = 'startDate';

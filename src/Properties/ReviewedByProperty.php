@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * People or organizations that have reviewed the content on this web page for accuracy and/or completeness.
  */
-class ReviewedByProperty extends Property
+class ReviewedByProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/reviewedBy';
     const PROPERTY_NAME = 'reviewedBy';

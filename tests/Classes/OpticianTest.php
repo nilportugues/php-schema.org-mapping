@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Optician;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OpticianTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes OpticianTest.
  */
 class OpticianTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Optician::schemaUrl(), "http://schema.org/Optician");
+        $this->assertEquals(Optician::schemaUrl(), 'http://schema.org/Optician');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

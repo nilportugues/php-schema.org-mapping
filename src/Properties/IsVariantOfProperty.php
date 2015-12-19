@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive.
  */
-class IsVariantOfProperty extends Property
+class IsVariantOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isVariantOf';
     const PROPERTY_NAME = 'isVariantOf';

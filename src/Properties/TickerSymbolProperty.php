@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The exchange traded instrument associated with a Corporation object. The tickerSymbol is expressed as an exchange and an instrument name separated by a space character. For the exchange component of the tickerSymbol attribute, we reccommend using the controlled vocaulary of Market Identifier Codes (MIC) specified in ISO15022.
  */
-class TickerSymbolProperty extends Property
+class TickerSymbolProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/tickerSymbol';
     const PROPERTY_NAME = 'tickerSymbol';

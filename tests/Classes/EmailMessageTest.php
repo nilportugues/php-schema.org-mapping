@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\EmailMessage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EmailMessageTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes EmailMessageTest.
  */
 class EmailMessageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EmailMessage::schemaUrl(), "http://schema.org/EmailMessage");
+        $this->assertEquals(EmailMessage::schemaUrl(), 'http://schema.org/EmailMessage');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

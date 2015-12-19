@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The vasculature that the vein drains into.
  */
-class DrainsToProperty extends Property
+class DrainsToProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/drainsTo';
     const PROPERTY_NAME = 'drainsTo';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SelfStorage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SelfStorageTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SelfStorageTest.
  */
 class SelfStorageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SelfStorage::schemaUrl(), "http://schema.org/SelfStorage");
+        $this->assertEquals(SelfStorage::schemaUrl(), 'http://schema.org/SelfStorage');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

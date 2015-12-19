@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Typical or recommended followup care after the procedure is performed.
  */
-class FollowupProperty extends Property
+class FollowupProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/followup';
     const PROPERTY_NAME = 'followup';

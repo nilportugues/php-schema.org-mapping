@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WPHeader;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WPHeaderTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WPHeaderTest.
  */
 class WPHeaderTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WPHeader::schemaUrl(), "http://schema.org/WPHeader");
+        $this->assertEquals(WPHeader::schemaUrl(), 'http://schema.org/WPHeader');
     }
 
     public function testAboutWillReturnMappingObject()

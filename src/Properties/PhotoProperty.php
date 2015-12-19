@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A photograph of this place.
  */
-class PhotoProperty extends Property
+class PhotoProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/photo';
     const PROPERTY_NAME = 'photo';

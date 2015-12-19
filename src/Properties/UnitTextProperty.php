@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for.
  */
-class UnitTextProperty extends Property
+class UnitTextProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/unitText';
     const PROPERTY_NAME = 'unitText';

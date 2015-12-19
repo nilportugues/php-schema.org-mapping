@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GardenStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GardenStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GardenStoreTest.
  */
 class GardenStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GardenStore::schemaUrl(), "http://schema.org/GardenStore");
+        $this->assertEquals(GardenStore::schemaUrl(), 'http://schema.org/GardenStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

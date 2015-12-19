@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The bitrate of the media object.
  */
-class BitrateProperty extends Property
+class BitrateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/bitrate';
     const PROPERTY_NAME = 'bitrate';

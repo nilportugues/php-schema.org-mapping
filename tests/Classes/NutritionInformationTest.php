@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\NutritionInformation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes NutritionInformationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes NutritionInformationTest.
  */
 class NutritionInformationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(NutritionInformation::schemaUrl(), "http://schema.org/NutritionInformation");
+        $this->assertEquals(NutritionInformation::schemaUrl(), 'http://schema.org/NutritionInformation');
     }
 
     public function testCaloriesWillReturnMappingObject()

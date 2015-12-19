@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AudioObject;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AudioObjectTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AudioObjectTest.
  */
 class AudioObjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AudioObject::schemaUrl(), "http://schema.org/AudioObject");
+        $this->assertEquals(AudioObject::schemaUrl(), 'http://schema.org/AudioObject');
     }
 
     public function testAboutWillReturnMappingObject()

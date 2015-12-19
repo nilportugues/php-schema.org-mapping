@@ -21,26 +21,17 @@ use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
 use NilPortugues\SchemaOrg\Properties\SensoryUnitProperty;
 use NilPortugues\SchemaOrg\Properties\SourcedFromProperty;
 use NilPortugues\SchemaOrg\Properties\StudyProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Nerve.
  */
-class Nerve
+class Nerve extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Nerve';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Nerve';
 
     /**
      * @return Mapping

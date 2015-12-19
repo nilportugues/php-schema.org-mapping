@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A medical test typically performed given this condition.
  */
-class TypicalTestProperty extends Property
+class TypicalTestProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/typicalTest';
     const PROPERTY_NAME = 'typicalTest';

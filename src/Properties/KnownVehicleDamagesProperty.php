@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A textual description of known damages, both repaired and unrepaired.
  */
-class KnownVehicleDamagesProperty extends Property
+class KnownVehicleDamagesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/knownVehicleDamages';
     const PROPERTY_NAME = 'knownVehicleDamages';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The condition, complication, or symptom whose risk is being estimated.
  */
-class EstimatesRiskOfProperty extends Property
+class EstimatesRiskOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/estimatesRiskOf';
     const PROPERTY_NAME = 'estimatesRiskOf';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A route by which this drug may be administered, e.g. 'oral'.
  */
-class AdministrationRouteProperty extends Property
+class AdministrationRouteProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/administrationRoute';
     const PROPERTY_NAME = 'administrationRoute';

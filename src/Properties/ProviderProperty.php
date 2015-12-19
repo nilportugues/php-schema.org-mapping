@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.
  */
-class ProviderProperty extends Property
+class ProviderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/provider';
     const PROPERTY_NAME = 'provider';

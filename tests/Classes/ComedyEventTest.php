@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ComedyEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ComedyEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ComedyEventTest.
  */
 class ComedyEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ComedyEvent::schemaUrl(), "http://schema.org/ComedyEvent");
+        $this->assertEquals(ComedyEvent::schemaUrl(), 'http://schema.org/ComedyEvent');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

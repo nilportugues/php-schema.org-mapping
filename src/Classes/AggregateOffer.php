@@ -15,26 +15,17 @@ use NilPortugues\SchemaOrg\Properties\HighPriceProperty;
 use NilPortugues\SchemaOrg\Properties\LowPriceProperty;
 use NilPortugues\SchemaOrg\Properties\OfferCountProperty;
 use NilPortugues\SchemaOrg\Properties\OffersProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes AggregateOffer.
  */
-class AggregateOffer
+class AggregateOffer extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/AggregateOffer';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/AggregateOffer';
 
     /**
      * @return Mapping

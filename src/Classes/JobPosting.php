@@ -40,26 +40,17 @@ use NilPortugues\SchemaOrg\Properties\SpecialCommitmentsProperty;
 use NilPortugues\SchemaOrg\Properties\TitleProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\WorkHoursProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes JobPosting.
  */
-class JobPosting
+class JobPosting extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/JobPosting';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/JobPosting';
 
     /**
      * @return Mapping

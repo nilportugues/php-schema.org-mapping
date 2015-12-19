@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DrawAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrawActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DrawActionTest.
  */
 class DrawActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrawAction::schemaUrl(), "http://schema.org/DrawAction");
+        $this->assertEquals(DrawAction::schemaUrl(), 'http://schema.org/DrawAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

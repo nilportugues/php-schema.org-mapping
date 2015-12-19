@@ -34,26 +34,17 @@ use NilPortugues\SchemaOrg\Properties\PhotosProperty;
 use NilPortugues\SchemaOrg\Properties\ReviewProperty;
 use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
 use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes GatedResidenceCommunity.
  */
-class GatedResidenceCommunity
+class GatedResidenceCommunity extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/GatedResidenceCommunity';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/GatedResidenceCommunity';
 
     /**
      * @return Mapping

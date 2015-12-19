@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SocialMediaPosting;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SocialMediaPostingTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SocialMediaPostingTest.
  */
 class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SocialMediaPosting::schemaUrl(), "http://schema.org/SocialMediaPosting");
+        $this->assertEquals(SocialMediaPosting::schemaUrl(), 'http://schema.org/SocialMediaPosting');
     }
 
     public function testAboutWillReturnMappingObject()

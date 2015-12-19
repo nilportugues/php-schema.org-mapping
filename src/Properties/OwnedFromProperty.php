@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date and time of obtaining the product.
  */
-class OwnedFromProperty extends Property
+class OwnedFromProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/ownedFrom';
     const PROPERTY_NAME = 'ownedFrom';

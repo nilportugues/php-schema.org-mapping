@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Whether the property must be filled in to complete the action.  Default is false.
  */
-class ValueRequiredProperty extends Property
+class ValueRequiredProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/valueRequired';
     const PROPERTY_NAME = 'valueRequired';

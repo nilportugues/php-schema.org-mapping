@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * e.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.
  */
-class MaterialProperty extends Property
+class MaterialProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/material';
     const PROPERTY_NAME = 'material';

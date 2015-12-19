@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.
  */
-class CodeSampleTypeProperty extends Property
+class CodeSampleTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/codeSampleType';
     const PROPERTY_NAME = 'codeSampleType';

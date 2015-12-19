@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Responsibilities associated with this role.
  */
-class ResponsibilitiesProperty extends Property
+class ResponsibilitiesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/responsibilities';
     const PROPERTY_NAME = 'responsibilities';

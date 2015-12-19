@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies the Person who edited the CreativeWork.
  */
-class EditorProperty extends Property
+class EditorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/editor';
     const PROPERTY_NAME = 'editor';

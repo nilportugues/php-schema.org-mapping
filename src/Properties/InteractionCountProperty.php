@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * This property is deprecated, alongside the UserInteraction types on which it depended.
  */
-class InteractionCountProperty extends Property
+class InteractionCountProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/interactionCount';
     const PROPERTY_NAME = 'interactionCount';

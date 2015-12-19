@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Canal;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CanalTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CanalTest.
  */
 class CanalTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Canal::schemaUrl(), "http://schema.org/Canal");
+        $this->assertEquals(Canal::schemaUrl(), 'http://schema.org/Canal');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

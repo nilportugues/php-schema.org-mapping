@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DriveWheelConfigurationValue;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DriveWheelConfigurationValueTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DriveWheelConfigurationValueTest.
  */
 class DriveWheelConfigurationValueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DriveWheelConfigurationValue::schemaUrl(), "http://schema.org/DriveWheelConfigurationValue");
+        $this->assertEquals(DriveWheelConfigurationValue::schemaUrl(), 'http://schema.org/DriveWheelConfigurationValue');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Audiences defined by a person's maximum age.
  */
-class RequiredMaxAgeProperty extends Property
+class RequiredMaxAgeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/requiredMaxAge';
     const PROPERTY_NAME = 'requiredMaxAge';

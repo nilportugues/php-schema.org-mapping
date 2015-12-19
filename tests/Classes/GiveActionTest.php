@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GiveAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GiveActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GiveActionTest.
  */
 class GiveActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GiveAction::schemaUrl(), "http://schema.org/GiveAction");
+        $this->assertEquals(GiveAction::schemaUrl(), 'http://schema.org/GiveAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

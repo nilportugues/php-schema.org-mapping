@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The stage represented as a number, e.g. 3.
  */
-class StageAsNumberProperty extends Property
+class StageAsNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/stageAsNumber';
     const PROPERTY_NAME = 'stageAsNumber';

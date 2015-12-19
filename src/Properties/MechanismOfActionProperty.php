@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The specific biochemical interaction through which this drug or supplement produces its pharmacological effect.
  */
-class MechanismOfActionProperty extends Property
+class MechanismOfActionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/mechanismOfAction';
     const PROPERTY_NAME = 'mechanismOfAction';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * For failed actions, more information on the cause of the failure.
  */
-class ErrorProperty extends Property
+class ErrorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/error';
     const PROPERTY_NAME = 'error';

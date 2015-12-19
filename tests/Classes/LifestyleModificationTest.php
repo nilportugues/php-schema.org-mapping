@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LifestyleModification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LifestyleModificationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LifestyleModificationTest.
  */
 class LifestyleModificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LifestyleModification::schemaUrl(), "http://schema.org/LifestyleModification");
+        $this->assertEquals(LifestyleModification::schemaUrl(), 'http://schema.org/LifestyleModification');
     }
 
     public function testCodeWillReturnMappingObject()

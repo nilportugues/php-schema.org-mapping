@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A resource that was used in the creation of this resource. This term can be repeated for multiple sources. For example, http://example.com/great-multiplication-intro.html.
  */
-class IsBasedOnUrlProperty extends Property
+class IsBasedOnUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isBasedOnUrl';
     const PROPERTY_NAME = 'isBasedOnUrl';

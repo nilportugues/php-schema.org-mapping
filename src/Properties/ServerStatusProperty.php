@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Status of a game server.
  */
-class ServerStatusProperty extends Property
+class ServerStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serverStatus';
     const PROPERTY_NAME = 'serverStatus';

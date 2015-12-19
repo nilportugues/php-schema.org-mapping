@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An image of the item. This can be a URL or a fully described ImageObject.
  */
-class ImageProperty extends Property
+class ImageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/image';
     const PROPERTY_NAME = 'image';

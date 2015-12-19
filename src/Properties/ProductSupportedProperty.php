@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").
  */
-class ProductSupportedProperty extends Property
+class ProductSupportedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/productSupported';
     const PROPERTY_NAME = 'productSupported';

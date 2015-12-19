@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date on which the CreativeWork was created or the item was added to a DataFeed.
  */
-class DateCreatedProperty extends Property
+class DateCreatedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dateCreated';
     const PROPERTY_NAME = 'dateCreated';

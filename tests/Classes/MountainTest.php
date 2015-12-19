@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Mountain;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MountainTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MountainTest.
  */
 class MountainTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Mountain::schemaUrl(), "http://schema.org/Mountain");
+        $this->assertEquals(Mountain::schemaUrl(), 'http://schema.org/Mountain');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

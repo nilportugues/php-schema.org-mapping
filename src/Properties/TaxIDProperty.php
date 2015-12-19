@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.
  */
-class TaxIDProperty extends Property
+class TaxIDProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/taxID';
     const PROPERTY_NAME = 'taxID';

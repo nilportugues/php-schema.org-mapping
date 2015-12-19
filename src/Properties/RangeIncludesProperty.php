@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.
  */
-class RangeIncludesProperty extends Property
+class RangeIncludesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/rangeIncludes';
     const PROPERTY_NAME = 'rangeIncludes';

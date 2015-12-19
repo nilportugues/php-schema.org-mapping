@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The time the object is scheduled to.
  */
-class ScheduledTimeProperty extends Property
+class ScheduledTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/scheduledTime';
     const PROPERTY_NAME = 'scheduledTime';

@@ -15,26 +15,17 @@ use NilPortugues\SchemaOrg\Properties\AcquiredFromProperty;
 use NilPortugues\SchemaOrg\Properties\OwnedFromProperty;
 use NilPortugues\SchemaOrg\Properties\OwnedThroughProperty;
 use NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes OwnershipInfo.
  */
-class OwnershipInfo
+class OwnershipInfo extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/OwnershipInfo';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/OwnershipInfo';
 
     /**
      * @return Mapping

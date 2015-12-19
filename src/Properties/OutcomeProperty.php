@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Expected or actual outcomes of the study.
  */
-class OutcomeProperty extends Property
+class OutcomeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/outcome';
     const PROPERTY_NAME = 'outcome';

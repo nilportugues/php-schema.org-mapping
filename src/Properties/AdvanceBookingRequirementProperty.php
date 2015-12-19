@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The amount of time that is required between accepting the offer and the actual usage of the resource or service.
  */
-class AdvanceBookingRequirementProperty extends Property
+class AdvanceBookingRequirementProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/advanceBookingRequirement';
     const PROPERTY_NAME = 'advanceBookingRequirement';

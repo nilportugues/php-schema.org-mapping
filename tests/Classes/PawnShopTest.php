@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PawnShop;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PawnShopTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PawnShopTest.
  */
 class PawnShopTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PawnShop::schemaUrl(), "http://schema.org/PawnShop");
+        $this->assertEquals(PawnShop::schemaUrl(), 'http://schema.org/PawnShop');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

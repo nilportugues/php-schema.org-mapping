@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The organization owning or operating the broadcast service.
  */
-class BroadcasterProperty extends Property
+class BroadcasterProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/broadcaster';
     const PROPERTY_NAME = 'broadcaster';

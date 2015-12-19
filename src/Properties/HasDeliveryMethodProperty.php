@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Method used for delivery or shipping.
  */
-class HasDeliveryMethodProperty extends Property
+class HasDeliveryMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/hasDeliveryMethod';
     const PROPERTY_NAME = 'hasDeliveryMethod';

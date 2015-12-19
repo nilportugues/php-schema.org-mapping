@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Winery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WineryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WineryTest.
  */
 class WineryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Winery::schemaUrl(), "http://schema.org/Winery");
+        $this->assertEquals(Winery::schemaUrl(), 'http://schema.org/Winery');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

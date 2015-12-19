@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A dosage form in which this drug/supplement is available, e.g. 'tablet', 'suspension', 'injection'.
  */
-class DosageFormProperty extends Property
+class DosageFormProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dosageForm';
     const PROPERTY_NAME = 'dosageForm';

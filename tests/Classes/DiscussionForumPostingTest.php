@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DiscussionForumPosting;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DiscussionForumPostingTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DiscussionForumPostingTest.
  */
 class DiscussionForumPostingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DiscussionForumPosting::schemaUrl(), "http://schema.org/DiscussionForumPosting");
+        $this->assertEquals(DiscussionForumPosting::schemaUrl(), 'http://schema.org/DiscussionForumPosting');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

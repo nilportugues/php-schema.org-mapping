@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of result. The review that resulted in the performing of the action.
  */
-class ResultReviewProperty extends Property
+class ResultReviewProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/resultReview';
     const PROPERTY_NAME = 'resultReview';

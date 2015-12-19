@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Device used to perform the test.
  */
-class UsesDeviceProperty extends Property
+class UsesDeviceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/usesDevice';
     const PROPERTY_NAME = 'usesDevice';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Courthouse;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CourthouseTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CourthouseTest.
  */
 class CourthouseTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Courthouse::schemaUrl(), "http://schema.org/Courthouse");
+        $this->assertEquals(Courthouse::schemaUrl(), 'http://schema.org/Courthouse');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

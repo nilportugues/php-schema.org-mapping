@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A unique identifier for the reservation.
  */
-class ReservationIdProperty extends Property
+class ReservationIdProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/reservationId';
     const PROPERTY_NAME = 'reservationId';

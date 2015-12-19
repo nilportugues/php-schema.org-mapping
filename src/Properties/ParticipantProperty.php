@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Other co-agents that participated in the action indirectly. e.g. John wrote a book with *Steve*.
  */
-class ParticipantProperty extends Property
+class ParticipantProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/participant';
     const PROPERTY_NAME = 'participant';

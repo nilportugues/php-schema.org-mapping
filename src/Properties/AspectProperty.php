@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.
  */
-class AspectProperty extends Property
+class AspectProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/aspect';
     const PROPERTY_NAME = 'aspect';

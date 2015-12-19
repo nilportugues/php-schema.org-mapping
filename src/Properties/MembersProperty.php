@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A member of this organization.
  */
-class MembersProperty extends Property
+class MembersProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/members';
     const PROPERTY_NAME = 'members';

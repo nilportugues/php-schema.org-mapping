@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SiteNavigationElement;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SiteNavigationElementTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SiteNavigationElementTest.
  */
 class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SiteNavigationElement::schemaUrl(), "http://schema.org/SiteNavigationElement");
+        $this->assertEquals(SiteNavigationElement::schemaUrl(), 'http://schema.org/SiteNavigationElement');
     }
 
     public function testAboutWillReturnMappingObject()

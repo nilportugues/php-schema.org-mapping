@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility (WebSchemas wiki lists possible values).
  */
-class AccessibilityFeatureProperty extends Property
+class AccessibilityFeatureProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/accessibilityFeature';
     const PROPERTY_NAME = 'accessibilityFeature';

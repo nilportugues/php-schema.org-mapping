@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CivicStructure;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CivicStructureTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CivicStructureTest.
  */
 class CivicStructureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CivicStructure::schemaUrl(), "http://schema.org/CivicStructure");
+        $this->assertEquals(CivicStructure::schemaUrl(), 'http://schema.org/CivicStructure');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

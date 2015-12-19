@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Skills required to fulfill this role.
  */
-class SkillsProperty extends Property
+class SkillsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/skills';
     const PROPERTY_NAME = 'skills';

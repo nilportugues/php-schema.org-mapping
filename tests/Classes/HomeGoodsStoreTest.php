@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\HomeGoodsStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HomeGoodsStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes HomeGoodsStoreTest.
  */
 class HomeGoodsStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HomeGoodsStore::schemaUrl(), "http://schema.org/HomeGoodsStore");
+        $this->assertEquals(HomeGoodsStore::schemaUrl(), 'http://schema.org/HomeGoodsStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

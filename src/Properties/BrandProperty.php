@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.
  */
-class BrandProperty extends Property
+class BrandProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/brand';
     const PROPERTY_NAME = 'brand';

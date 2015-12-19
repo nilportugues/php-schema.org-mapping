@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MiddleSchool;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MiddleSchoolTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MiddleSchoolTest.
  */
 class MiddleSchoolTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MiddleSchool::schemaUrl(), "http://schema.org/MiddleSchool");
+        $this->assertEquals(MiddleSchool::schemaUrl(), 'http://schema.org/MiddleSchool');
     }
 
     public function testAddressWillReturnMappingObject()

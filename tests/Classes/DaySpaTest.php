@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DaySpa;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DaySpaTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DaySpaTest.
  */
 class DaySpaTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DaySpa::schemaUrl(), "http://schema.org/DaySpa");
+        $this->assertEquals(DaySpa::schemaUrl(), 'http://schema.org/DaySpa');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

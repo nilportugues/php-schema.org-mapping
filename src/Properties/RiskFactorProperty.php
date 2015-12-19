@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A modifiable or non-modifiable factor that increases the risk of a patient contracting this condition, e.g. age,  coexisting condition.
  */
-class RiskFactorProperty extends Property
+class RiskFactorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/riskFactor';
     const PROPERTY_NAME = 'riskFactor';

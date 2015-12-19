@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Periodical;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PeriodicalTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PeriodicalTest.
  */
 class PeriodicalTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Periodical::schemaUrl(), "http://schema.org/Periodical");
+        $this->assertEquals(Periodical::schemaUrl(), 'http://schema.org/Periodical');
     }
 
     public function testAboutWillReturnMappingObject()

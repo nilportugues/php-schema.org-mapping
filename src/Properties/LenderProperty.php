@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The person that lends the object being borrowed.
  */
-class LenderProperty extends Property
+class LenderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/lender';
     const PROPERTY_NAME = 'lender';

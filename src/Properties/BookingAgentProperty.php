@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * 'bookingAgent' is an out-dated term indicating a 'broker' that serves as a booking agent.
  */
-class BookingAgentProperty extends Property
+class BookingAgentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/bookingAgent';
     const PROPERTY_NAME = 'bookingAgent';

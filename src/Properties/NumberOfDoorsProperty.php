@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of doors.
  */
-class NumberOfDoorsProperty extends Property
+class NumberOfDoorsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfDoors';
     const PROPERTY_NAME = 'numberOfDoors';

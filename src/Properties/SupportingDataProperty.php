@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Supporting data for a SoftwareApplication.
  */
-class SupportingDataProperty extends Property
+class SupportingDataProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/supportingData';
     const PROPERTY_NAME = 'supportingData';

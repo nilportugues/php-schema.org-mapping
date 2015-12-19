@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The region. For example, CA.
  */
-class AddressRegionProperty extends Property
+class AddressRegionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/addressRegion';
     const PROPERTY_NAME = 'addressRegion';

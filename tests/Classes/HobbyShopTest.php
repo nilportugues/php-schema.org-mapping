@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\HobbyShop;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HobbyShopTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes HobbyShopTest.
  */
 class HobbyShopTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HobbyShop::schemaUrl(), "http://schema.org/HobbyShop");
+        $this->assertEquals(HobbyShop::schemaUrl(), 'http://schema.org/HobbyShop');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

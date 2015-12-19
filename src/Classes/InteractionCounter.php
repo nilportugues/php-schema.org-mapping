@@ -14,26 +14,17 @@ use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\InteractionServiceProperty;
 use NilPortugues\SchemaOrg\Properties\InteractionTypeProperty;
 use NilPortugues\SchemaOrg\Properties\UserInteractionCountProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes InteractionCounter.
  */
-class InteractionCounter
+class InteractionCounter extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/InteractionCounter';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/InteractionCounter';
 
     /**
      * @return Mapping

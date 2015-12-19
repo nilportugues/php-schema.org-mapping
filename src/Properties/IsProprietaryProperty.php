@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * True if this item's name is a proprietary/brand name (vs. generic name).
  */
-class IsProprietaryProperty extends Property
+class IsProprietaryProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isProprietary';
     const PROPERTY_NAME = 'isProprietary';

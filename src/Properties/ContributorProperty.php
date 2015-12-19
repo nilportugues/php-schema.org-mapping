@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A secondary contributor to the CreativeWork.
  */
-class ContributorProperty extends Property
+class ContributorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contributor';
     const PROPERTY_NAME = 'contributor';

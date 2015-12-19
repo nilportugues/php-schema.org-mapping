@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Date of death.
  */
-class DeathDateProperty extends Property
+class DeathDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/deathDate';
     const PROPERTY_NAME = 'deathDate';

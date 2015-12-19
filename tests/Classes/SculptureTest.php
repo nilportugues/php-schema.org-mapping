@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Sculpture;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SculptureTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SculptureTest.
  */
 class SculptureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Sculpture::schemaUrl(), "http://schema.org/Sculpture");
+        $this->assertEquals(Sculpture::schemaUrl(), 'http://schema.org/Sculpture');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of pages in the book.
  */
-class NumberOfPagesProperty extends Property
+class NumberOfPagesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfPages';
     const PROPERTY_NAME = 'numberOfPages';

@@ -12,26 +12,17 @@ namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\EducationalRoleProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes EducationalAudience.
  */
-class EducationalAudience
+class EducationalAudience extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/EducationalAudience';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/EducationalAudience';
 
     /**
      * @return Mapping

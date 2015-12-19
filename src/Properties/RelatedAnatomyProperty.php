@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Anatomical systems or structures that relate to the superficial anatomy.
  */
-class RelatedAnatomyProperty extends Property
+class RelatedAnatomyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/relatedAnatomy';
     const PROPERTY_NAME = 'relatedAnatomy';

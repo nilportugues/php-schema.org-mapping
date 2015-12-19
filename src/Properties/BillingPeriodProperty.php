@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The time interval used to compute the invoice.
  */
-class BillingPeriodProperty extends Property
+class BillingPeriodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/billingPeriod';
     const PROPERTY_NAME = 'billingPeriod';

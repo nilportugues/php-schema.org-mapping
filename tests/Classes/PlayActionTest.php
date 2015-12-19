@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PlayAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PlayActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PlayActionTest.
  */
 class PlayActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PlayAction::schemaUrl(), "http://schema.org/PlayAction");
+        $this->assertEquals(PlayAction::schemaUrl(), 'http://schema.org/PlayAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

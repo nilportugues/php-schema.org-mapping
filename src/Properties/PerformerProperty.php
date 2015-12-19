@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A performer at the event&#x2014;for example, a presenter, musician, musical group or actor.
  */
-class PerformerProperty extends Property
+class PerformerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/performer';
     const PROPERTY_NAME = 'performer';

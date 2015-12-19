@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The album to which this recording belongs.
  */
-class InAlbumProperty extends Property
+class InAlbumProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/inAlbum';
     const PROPERTY_NAME = 'inAlbum';

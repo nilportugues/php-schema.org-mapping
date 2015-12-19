@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The degree of mobility the joint allows.
  */
-class FunctionalClassProperty extends Property
+class FunctionalClassProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/functionalClass';
     const PROPERTY_NAME = 'functionalClass';

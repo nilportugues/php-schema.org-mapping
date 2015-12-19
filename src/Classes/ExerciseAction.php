@@ -35,26 +35,17 @@ use NilPortugues\SchemaOrg\Properties\SportsTeamProperty;
 use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 use NilPortugues\SchemaOrg\Properties\TargetProperty;
 use NilPortugues\SchemaOrg\Properties\ToLocationProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes ExerciseAction.
  */
-class ExerciseAction
+class ExerciseAction extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/ExerciseAction';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/ExerciseAction';
 
     /**
      * @return Mapping

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any description of pages that is not separated into pageStart and pageEnd; for example, "1-6, 9, 55" or "10-12, 46-49".
  */
-class PaginationProperty extends Property
+class PaginationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/pagination';
     const PROPERTY_NAME = 'pagination';

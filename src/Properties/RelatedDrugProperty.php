@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any other drug related to this one, for example commonly-prescribed alternatives.
  */
-class RelatedDrugProperty extends Property
+class RelatedDrugProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/relatedDrug';
     const PROPERTY_NAME = 'relatedDrug';

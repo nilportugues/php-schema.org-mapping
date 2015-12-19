@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The total number of forward gears available for the transmission system of the vehicle.
  */
-class NumberOfForwardGearsProperty extends Property
+class NumberOfForwardGearsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfForwardGears';
     const PROPERTY_NAME = 'numberOfForwardGears';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The actual body of the article.
  */
-class ArticleBodyProperty extends Property
+class ArticleBodyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/articleBody';
     const PROPERTY_NAME = 'articleBody';

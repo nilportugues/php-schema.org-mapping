@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The value of an active ingredient's strength, e.g. 325.
  */
-class StrengthValueProperty extends Property
+class StrengthValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/strengthValue';
     const PROPERTY_NAME = 'strengthValue';

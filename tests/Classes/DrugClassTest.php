@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DrugClass;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrugClassTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DrugClassTest.
  */
 class DrugClassTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrugClass::schemaUrl(), "http://schema.org/DrugClass");
+        $this->assertEquals(DrugClass::schemaUrl(), 'http://schema.org/DrugClass');
     }
 
     public function testCodeWillReturnMappingObject()

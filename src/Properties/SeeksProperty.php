@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to products or services sought by the organization or person (demand).
  */
-class SeeksProperty extends Property
+class SeeksProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/seeks';
     const PROPERTY_NAME = 'seeks';

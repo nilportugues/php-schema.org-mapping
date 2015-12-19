@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The electronic systems used to play video games.
  */
-class GamePlatformProperty extends Property
+class GamePlatformProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/gamePlatform';
     const PROPERTY_NAME = 'gamePlatform';

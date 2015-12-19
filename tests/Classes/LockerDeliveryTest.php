@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LockerDelivery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LockerDeliveryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LockerDeliveryTest.
  */
 class LockerDeliveryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LockerDelivery::schemaUrl(), "http://schema.org/LockerDelivery");
+        $this->assertEquals(LockerDelivery::schemaUrl(), 'http://schema.org/LockerDelivery');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

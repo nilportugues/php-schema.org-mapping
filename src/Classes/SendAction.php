@@ -24,26 +24,17 @@ use NilPortugues\SchemaOrg\Properties\RecipientProperty;
 use NilPortugues\SchemaOrg\Properties\ResultProperty;
 use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 use NilPortugues\SchemaOrg\Properties\TargetProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes SendAction.
  */
-class SendAction
+class SendAction extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/SendAction';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/SendAction';
 
     /**
      * @return Mapping

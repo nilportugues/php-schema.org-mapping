@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The range of spatial applicability of a dataset, e.g. for a dataset of New York weather, the state of New York.
  */
-class SpatialProperty extends Property
+class SpatialProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/spatial';
     const PROPERTY_NAME = 'spatial';

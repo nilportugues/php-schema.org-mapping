@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CommentAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CommentActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CommentActionTest.
  */
 class CommentActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CommentAction::schemaUrl(), "http://schema.org/CommentAction");
+        $this->assertEquals(CommentAction::schemaUrl(), 'http://schema.org/CommentAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

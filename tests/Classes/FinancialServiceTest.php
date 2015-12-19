@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\FinancialService;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FinancialServiceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes FinancialServiceTest.
  */
 class FinancialServiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(FinancialService::schemaUrl(), "http://schema.org/FinancialService");
+        $this->assertEquals(FinancialService::schemaUrl(), 'http://schema.org/FinancialService');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

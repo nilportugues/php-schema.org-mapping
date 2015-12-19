@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A description of the postoperative procedures, care, and/or followups for this device.
  */
-class PostOpProperty extends Property
+class PostOpProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/postOp';
     const PROPERTY_NAME = 'postOp';

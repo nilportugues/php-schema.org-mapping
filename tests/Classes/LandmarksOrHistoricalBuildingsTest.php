@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LandmarksOrHistoricalBuildings;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LandmarksOrHistoricalBuildingsTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LandmarksOrHistoricalBuildingsTest.
  */
 class LandmarksOrHistoricalBuildingsTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LandmarksOrHistoricalBuildings::schemaUrl(), "http://schema.org/LandmarksOrHistoricalBuildings");
+        $this->assertEquals(LandmarksOrHistoricalBuildings::schemaUrl(), 'http://schema.org/LandmarksOrHistoricalBuildings');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

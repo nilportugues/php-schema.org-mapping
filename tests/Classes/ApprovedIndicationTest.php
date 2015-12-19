@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ApprovedIndication;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ApprovedIndicationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ApprovedIndicationTest.
  */
 class ApprovedIndicationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ApprovedIndication::schemaUrl(), "http://schema.org/ApprovedIndication");
+        $this->assertEquals(ApprovedIndication::schemaUrl(), 'http://schema.org/ApprovedIndication');
     }
 
     public function testCodeWillReturnMappingObject()

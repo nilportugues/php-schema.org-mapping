@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.
  */
-class IsicV4Property extends Property
+class IsicV4Property extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isicV4';
     const PROPERTY_NAME = 'isicV4';

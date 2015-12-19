@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * How often one should engage in the activity.
  */
-class ActivityFrequencyProperty extends Property
+class ActivityFrequencyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/activityFrequency';
     const PROPERTY_NAME = 'activityFrequency';

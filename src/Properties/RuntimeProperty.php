@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0).
  */
-class RuntimeProperty extends Property
+class RuntimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/runtime';
     const PROPERTY_NAME = 'runtime';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\NightClub;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes NightClubTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes NightClubTest.
  */
 class NightClubTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(NightClub::schemaUrl(), "http://schema.org/NightClub");
+        $this->assertEquals(NightClub::schemaUrl(), 'http://schema.org/NightClub');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

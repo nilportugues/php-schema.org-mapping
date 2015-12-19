@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DryCleaningOrLaundry;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DryCleaningOrLaundryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DryCleaningOrLaundryTest.
  */
 class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DryCleaningOrLaundry::schemaUrl(), "http://schema.org/DryCleaningOrLaundry");
+        $this->assertEquals(DryCleaningOrLaundry::schemaUrl(), 'http://schema.org/DryCleaningOrLaundry');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

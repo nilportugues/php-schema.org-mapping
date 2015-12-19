@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates a CreativeWork that is (in some sense) a part of this CreativeWork.
  */
-class HasPartProperty extends Property
+class HasPartProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/hasPart';
     const PROPERTY_NAME = 'hasPart';

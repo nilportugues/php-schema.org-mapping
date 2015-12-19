@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The time validity of the permit.
  */
-class ValidForProperty extends Property
+class ValidForProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/validFor';
     const PROPERTY_NAME = 'validFor';

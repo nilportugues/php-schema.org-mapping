@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Expectations for health conditions of target audience.
  */
-class HealthConditionProperty extends Property
+class HealthConditionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/healthCondition';
     const PROPERTY_NAME = 'healthCondition';

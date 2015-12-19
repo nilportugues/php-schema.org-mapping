@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LegislativeBuilding;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LegislativeBuildingTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LegislativeBuildingTest.
  */
 class LegislativeBuildingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LegislativeBuilding::schemaUrl(), "http://schema.org/LegislativeBuilding");
+        $this->assertEquals(LegislativeBuilding::schemaUrl(), 'http://schema.org/LegislativeBuilding');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

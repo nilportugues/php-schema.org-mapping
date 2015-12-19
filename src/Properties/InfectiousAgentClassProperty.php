@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The class of infectious agent (bacteria, prion, etc.) that causes the disease.
  */
-class InfectiousAgentClassProperty extends Property
+class InfectiousAgentClassProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/infectiousAgentClass';
     const PROPERTY_NAME = 'infectiousAgentClass';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DeliveryEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DeliveryEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DeliveryEventTest.
  */
 class DeliveryEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DeliveryEvent::schemaUrl(), "http://schema.org/DeliveryEvent");
+        $this->assertEquals(DeliveryEvent::schemaUrl(), 'http://schema.org/DeliveryEvent');
     }
 
     public function testAccessCodeWillReturnMappingObject()

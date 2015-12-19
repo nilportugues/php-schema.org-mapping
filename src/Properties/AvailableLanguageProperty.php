@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A language someone may use with the item.
  */
-class AvailableLanguageProperty extends Property
+class AvailableLanguageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableLanguage';
     const PROPERTY_NAME = 'availableLanguage';

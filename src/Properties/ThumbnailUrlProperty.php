@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A thumbnail image relevant to the Thing.
  */
-class ThumbnailUrlProperty extends Property
+class ThumbnailUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/thumbnailUrl';
     const PROPERTY_NAME = 'thumbnailUrl';

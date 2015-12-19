@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.
  */
-class EligibleQuantityProperty extends Property
+class EligibleQuantityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/eligibleQuantity';
     const PROPERTY_NAME = 'eligibleQuantity';

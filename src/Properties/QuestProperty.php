@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The task that a player-controlled character, or group of characters may complete in order to gain a reward.
  */
-class QuestProperty extends Property
+class QuestProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/quest';
     const PROPERTY_NAME = 'quest';

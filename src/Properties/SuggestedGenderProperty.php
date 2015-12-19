@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The gender of the person or audience.
  */
-class SuggestedGenderProperty extends Property
+class SuggestedGenderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/suggestedGender';
     const PROPERTY_NAME = 'suggestedGender';

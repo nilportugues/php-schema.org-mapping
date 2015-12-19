@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * How often one should break from the activity.
  */
-class RestPeriodsProperty extends Property
+class RestPeriodsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/restPeriods';
     const PROPERTY_NAME = 'restPeriods';

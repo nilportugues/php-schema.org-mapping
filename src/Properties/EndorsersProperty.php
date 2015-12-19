@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * People or organizations that endorse the plan.
  */
-class EndorsersProperty extends Property
+class EndorsersProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/endorsers';
     const PROPERTY_NAME = 'endorsers';

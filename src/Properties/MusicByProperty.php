@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The composer of the soundtrack.
  */
-class MusicByProperty extends Property
+class MusicByProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/musicBy';
     const PROPERTY_NAME = 'musicBy';

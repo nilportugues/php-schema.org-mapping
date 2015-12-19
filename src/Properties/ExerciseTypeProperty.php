@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Type(s) of exercise or activity, such as strength training, flexibility training, aerobics, cardiac rehabilitation, etc.
  */
-class ExerciseTypeProperty extends Property
+class ExerciseTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/exerciseType';
     const PROPERTY_NAME = 'exerciseType';

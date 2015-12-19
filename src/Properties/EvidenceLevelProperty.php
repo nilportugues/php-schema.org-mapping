@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Strength of evidence of the data used to formulate the guideline (enumerated).
  */
-class EvidenceLevelProperty extends Property
+class EvidenceLevelProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/evidenceLevel';
     const PROPERTY_NAME = 'evidenceLevel';

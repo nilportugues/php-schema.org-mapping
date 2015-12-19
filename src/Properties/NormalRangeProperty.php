@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Range of acceptable values for a typical patient, when applicable.
  */
-class NormalRangeProperty extends Property
+class NormalRangeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/normalRange';
     const PROPERTY_NAME = 'normalRange';

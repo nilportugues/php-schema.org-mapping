@@ -10,23 +10,15 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
+use NilPortugues\SchemaOrg\SchemaClass;
+
 /**
  * Classes DayOfWeek.
  */
-class DayOfWeek
+class DayOfWeek extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/DayOfWeek';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/DayOfWeek';
 }

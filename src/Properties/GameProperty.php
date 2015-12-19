@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Video game which is played on this server.
  */
-class GameProperty extends Property
+class GameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/game';
     const PROPERTY_NAME = 'game';

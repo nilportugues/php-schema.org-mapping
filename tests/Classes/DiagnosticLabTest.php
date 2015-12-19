@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DiagnosticLab;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DiagnosticLabTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DiagnosticLabTest.
  */
 class DiagnosticLabTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DiagnosticLab::schemaUrl(), "http://schema.org/DiagnosticLab");
+        $this->assertEquals(DiagnosticLab::schemaUrl(), 'http://schema.org/DiagnosticLab');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

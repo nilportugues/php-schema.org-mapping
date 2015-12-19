@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DeactivateAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DeactivateActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DeactivateActionTest.
  */
 class DeactivateActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DeactivateAction::schemaUrl(), "http://schema.org/DeactivateAction");
+        $this->assertEquals(DeactivateAction::schemaUrl(), 'http://schema.org/DeactivateAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

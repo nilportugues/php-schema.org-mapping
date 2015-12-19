@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.
  */
-class PublishingPrinciplesProperty extends Property
+class PublishingPrinciplesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/publishingPrinciples';
     const PROPERTY_NAME = 'publishingPrinciples';

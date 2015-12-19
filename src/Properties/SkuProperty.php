@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.
  */
-class SkuProperty extends Property
+class SkuProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sku';
     const PROPERTY_NAME = 'sku';

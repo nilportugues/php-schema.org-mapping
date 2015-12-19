@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The default value of the input.  For properties that expect a literal, the default is a literal value, for properties that expect an object, it's an ID reference to one of the current values.
  */
-class DefaultValueProperty extends Property
+class DefaultValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/defaultValue';
     const PROPERTY_NAME = 'defaultValue';

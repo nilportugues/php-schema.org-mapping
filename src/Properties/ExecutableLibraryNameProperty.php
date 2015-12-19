@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Library file name e.g., mscorlib.dll, system.web.dll.
  */
-class ExecutableLibraryNameProperty extends Property
+class ExecutableLibraryNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/executableLibraryName';
     const PROPERTY_NAME = 'executableLibraryName';

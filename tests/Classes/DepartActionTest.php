@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DepartAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DepartActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DepartActionTest.
  */
 class DepartActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DepartAction::schemaUrl(), "http://schema.org/DepartAction");
+        $this->assertEquals(DepartAction::schemaUrl(), 'http://schema.org/DepartAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

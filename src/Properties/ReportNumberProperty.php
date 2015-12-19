@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number or other unique designator assigned to a Report by the publishing organization.
  */
-class ReportNumberProperty extends Property
+class ReportNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/reportNumber';
     const PROPERTY_NAME = 'reportNumber';

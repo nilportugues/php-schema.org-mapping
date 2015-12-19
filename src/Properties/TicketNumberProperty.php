@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The unique identifier for the ticket.
  */
-class TicketNumberProperty extends Property
+class TicketNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/ticketNumber';
     const PROPERTY_NAME = 'ticketNumber';

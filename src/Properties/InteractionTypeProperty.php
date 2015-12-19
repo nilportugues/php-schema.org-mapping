@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Action representing the type of interaction. For up votes, +1s, etc. use LikeAction. For down votes use DislikeAction. Otherwise, use the most specific Action.
  */
-class InteractionTypeProperty extends Property
+class InteractionTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/interactionType';
     const PROPERTY_NAME = 'interactionType';

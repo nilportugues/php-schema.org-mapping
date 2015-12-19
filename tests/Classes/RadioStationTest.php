@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RadioStation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RadioStationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RadioStationTest.
  */
 class RadioStationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RadioStation::schemaUrl(), "http://schema.org/RadioStation");
+        $this->assertEquals(RadioStation::schemaUrl(), 'http://schema.org/RadioStation');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

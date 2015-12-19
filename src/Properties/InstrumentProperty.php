@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The object that helped the agent perform the action. e.g. John wrote a book with *a pen*.
  */
-class InstrumentProperty extends Property
+class InstrumentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/instrument';
     const PROPERTY_NAME = 'instrument';

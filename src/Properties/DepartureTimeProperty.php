@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The expected departure time.
  */
-class DepartureTimeProperty extends Property
+class DepartureTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/departureTime';
     const PROPERTY_NAME = 'departureTime';

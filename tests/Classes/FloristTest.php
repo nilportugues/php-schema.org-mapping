@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Florist;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FloristTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes FloristTest.
  */
 class FloristTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Florist::schemaUrl(), "http://schema.org/Florist");
+        $this->assertEquals(Florist::schemaUrl(), 'http://schema.org/Florist');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

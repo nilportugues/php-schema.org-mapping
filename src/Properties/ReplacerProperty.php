@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of object. The object that replaces.
  */
-class ReplacerProperty extends Property
+class ReplacerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/replacer';
     const PROPERTY_NAME = 'replacer';

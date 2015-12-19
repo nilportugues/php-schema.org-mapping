@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The thing -- flight, event, restaurant,etc. being reserved.
  */
-class ReservationForProperty extends Property
+class ReservationForProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/reservationFor';
     const PROPERTY_NAME = 'reservationFor';

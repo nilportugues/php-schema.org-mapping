@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The neurological pathway extension that inputs and sends information to the brain or spinal cord.
  */
-class SensoryUnitProperty extends Property
+class SensoryUnitProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sensoryUnit';
     const PROPERTY_NAME = 'sensoryUnit';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.
  */
-class PotentialActionProperty extends Property
+class PotentialActionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/potentialAction';
     const PROPERTY_NAME = 'potentialAction';

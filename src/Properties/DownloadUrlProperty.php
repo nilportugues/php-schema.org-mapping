@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * If the file can be downloaded, URL to download the binary.
  */
-class DownloadUrlProperty extends Property
+class DownloadUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/downloadUrl';
     const PROPERTY_NAME = 'downloadUrl';

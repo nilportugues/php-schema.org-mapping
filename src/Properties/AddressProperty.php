@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Physical address of the item.
  */
-class AddressProperty extends Property
+class AddressProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/address';
     const PROPERTY_NAME = 'address';

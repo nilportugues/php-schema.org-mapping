@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The postal code. For example, 94043.
  */
-class PostalCodeProperty extends Property
+class PostalCodeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/postalCode';
     const PROPERTY_NAME = 'postalCode';

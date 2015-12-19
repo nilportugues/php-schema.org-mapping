@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The address for accessing the service by mail.
  */
-class ServicePostalAddressProperty extends Property
+class ServicePostalAddressProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/servicePostalAddress';
     const PROPERTY_NAME = 'servicePostalAddress';

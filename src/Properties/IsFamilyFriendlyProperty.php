@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates whether this content is family friendly.
  */
-class IsFamilyFriendlyProperty extends Property
+class IsFamilyFriendlyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isFamilyFriendly';
     const PROPERTY_NAME = 'isFamilyFriendly';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Whether or not a property is mutable.  Default is false. Specifying this for a property that also has a value makes it act similar to a "hidden" input in an HTML form.
  */
-class ReadonlyValueProperty extends Property
+class ReadonlyValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/readonlyValue';
     const PROPERTY_NAME = 'readonlyValue';

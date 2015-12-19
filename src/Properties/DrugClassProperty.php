@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The class of drug this belongs to (e.g., statins).
  */
-class DrugClassProperty extends Property
+class DrugClassProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/drugClass';
     const PROPERTY_NAME = 'drugClass';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The North American Industry Classification System (NAICS) code for a particular organization or business person.
  */
-class NaicsProperty extends Property
+class NaicsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/naics';
     const PROPERTY_NAME = 'naics';

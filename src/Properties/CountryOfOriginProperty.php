@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The country of the principal offices of the production company or individual responsible for the movie or program.
  */
-class CountryOfOriginProperty extends Property
+class CountryOfOriginProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/countryOfOrigin';
     const PROPERTY_NAME = 'countryOfOrigin';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Date of first broadcast/publication.
  */
-class DatePublishedProperty extends Property
+class DatePublishedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/datePublished';
     const PROPERTY_NAME = 'datePublished';

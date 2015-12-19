@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The end of the availability of the product or service included in the offer.
  */
-class AvailabilityEndsProperty extends Property
+class AvailabilityEndsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availabilityEnds';
     const PROPERTY_NAME = 'availabilityEnds';

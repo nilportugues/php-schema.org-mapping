@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Identifier of the flight's arrival gate.
  */
-class ArrivalGateProperty extends Property
+class ArrivalGateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/arrivalGate';
     const PROPERTY_NAME = 'arrivalGate';

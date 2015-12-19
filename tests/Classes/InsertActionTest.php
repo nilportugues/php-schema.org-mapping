@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\InsertAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InsertActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes InsertActionTest.
  */
 class InsertActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InsertAction::schemaUrl(), "http://schema.org/InsertAction");
+        $this->assertEquals(InsertAction::schemaUrl(), 'http://schema.org/InsertAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

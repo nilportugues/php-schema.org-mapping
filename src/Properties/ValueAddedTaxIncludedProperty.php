@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.
  */
-class ValueAddedTaxIncludedProperty extends Property
+class ValueAddedTaxIncludedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/valueAddedTaxIncluded';
     const PROPERTY_NAME = 'valueAddedTaxIncluded';

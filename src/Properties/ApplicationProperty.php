@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An application that can complete the request.
  */
-class ApplicationProperty extends Property
+class ApplicationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/application';
     const PROPERTY_NAME = 'application';

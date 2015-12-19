@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\UserComments;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserCommentsTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes UserCommentsTest.
  */
 class UserCommentsTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserComments::schemaUrl(), "http://schema.org/UserComments");
+        $this->assertEquals(UserComments::schemaUrl(), 'http://schema.org/UserComments');
     }
 
     public function testAggregateRatingWillReturnMappingObject()

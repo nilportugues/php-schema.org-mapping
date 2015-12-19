@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.
  */
-class BestRatingProperty extends Property
+class BestRatingProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/bestRating';
     const PROPERTY_NAME = 'bestRating';

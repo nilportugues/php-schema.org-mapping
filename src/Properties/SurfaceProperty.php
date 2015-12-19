@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * e.g. Canvas, Paper, Wood, Board, etc.
  */
-class SurfaceProperty extends Property
+class SurfaceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/surface';
     const PROPERTY_NAME = 'surface';

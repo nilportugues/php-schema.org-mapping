@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The page on which the work ends; for example "138" or "xvi".
  */
-class PageEndProperty extends Property
+class PageEndProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/pageEnd';
     const PROPERTY_NAME = 'pageEnd';

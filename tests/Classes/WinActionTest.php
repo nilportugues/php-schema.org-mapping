@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WinAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WinActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WinActionTest.
  */
 class WinActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WinAction::schemaUrl(), "http://schema.org/WinAction");
+        $this->assertEquals(WinAction::schemaUrl(), 'http://schema.org/WinAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

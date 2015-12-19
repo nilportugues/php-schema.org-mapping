@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The larger organization that this local business is a branch of, if any.
  */
-class BranchOfProperty extends Property
+class BranchOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/branchOf';
     const PROPERTY_NAME = 'branchOf';

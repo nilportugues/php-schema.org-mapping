@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MedicalImagingTechnique;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalImagingTechniqueTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MedicalImagingTechniqueTest.
  */
 class MedicalImagingTechniqueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalImagingTechnique::schemaUrl(), "http://schema.org/MedicalImagingTechnique");
+        $this->assertEquals(MedicalImagingTechnique::schemaUrl(), 'http://schema.org/MedicalImagingTechnique');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

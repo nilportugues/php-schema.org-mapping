@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\UserInteraction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserInteractionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes UserInteractionTest.
  */
 class UserInteractionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserInteraction::schemaUrl(), "http://schema.org/UserInteraction");
+        $this->assertEquals(UserInteraction::schemaUrl(), 'http://schema.org/UserInteraction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

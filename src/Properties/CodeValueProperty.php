@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The actual code.
  */
-class CodeValueProperty extends Property
+class CodeValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/codeValue';
     const PROPERTY_NAME = 'codeValue';

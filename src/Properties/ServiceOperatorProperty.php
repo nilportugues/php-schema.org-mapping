@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The operating organization, if different from the provider.  This enables the representation of services that are provided by an organization, but operated by another organization like a subcontractor.
  */
-class ServiceOperatorProperty extends Property
+class ServiceOperatorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serviceOperator';
     const PROPERTY_NAME = 'serviceOperator';

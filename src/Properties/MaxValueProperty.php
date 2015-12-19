@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The upper value of some characteristic or property.
  */
-class MaxValueProperty extends Property
+class MaxValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/maxValue';
     const PROPERTY_NAME = 'maxValue';

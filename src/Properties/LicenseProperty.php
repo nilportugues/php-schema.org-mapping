@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A license document that applies to this content, typically indicated by URL.
  */
-class LicenseProperty extends Property
+class LicenseProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/license';
     const PROPERTY_NAME = 'license';

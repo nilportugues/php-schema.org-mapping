@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RVPark;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RVParkTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RVParkTest.
  */
 class RVParkTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RVPark::schemaUrl(), "http://schema.org/RVPark");
+        $this->assertEquals(RVPark::schemaUrl(), 'http://schema.org/RVPark');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

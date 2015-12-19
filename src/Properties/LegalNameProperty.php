@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The official name of the organization, e.g. the registered company name.
  */
-class LegalNameProperty extends Property
+class LegalNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/legalName';
     const PROPERTY_NAME = 'legalName';

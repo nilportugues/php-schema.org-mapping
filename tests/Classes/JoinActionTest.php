@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\JoinAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes JoinActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes JoinActionTest.
  */
 class JoinActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(JoinAction::schemaUrl(), "http://schema.org/JoinAction");
+        $this->assertEquals(JoinAction::schemaUrl(), 'http://schema.org/JoinAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

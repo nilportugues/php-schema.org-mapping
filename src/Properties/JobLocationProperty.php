@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A (typically single) geographic location associated with the job position.
  */
-class JobLocationProperty extends Property
+class JobLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/jobLocation';
     const PROPERTY_NAME = 'jobLocation';

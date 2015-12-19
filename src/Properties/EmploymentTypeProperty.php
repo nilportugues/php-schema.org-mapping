@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).
  */
-class EmploymentTypeProperty extends Property
+class EmploymentTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/employmentType';
     const PROPERTY_NAME = 'employmentType';

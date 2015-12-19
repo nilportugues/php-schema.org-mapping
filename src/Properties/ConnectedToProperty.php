@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Other anatomical structures to which this structure is connected.
  */
-class ConnectedToProperty extends Property
+class ConnectedToProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/connectedTo';
     const PROPERTY_NAME = 'connectedTo';

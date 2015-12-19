@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The airport where the flight terminates.
  */
-class ArrivalAirportProperty extends Property
+class ArrivalAirportProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/arrivalAirport';
     const PROPERTY_NAME = 'arrivalAirport';

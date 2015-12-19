@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\FoodEstablishmentReservation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FoodEstablishmentReservationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes FoodEstablishmentReservationTest.
  */
 class FoodEstablishmentReservationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(FoodEstablishmentReservation::schemaUrl(), "http://schema.org/FoodEstablishmentReservation");
+        $this->assertEquals(FoodEstablishmentReservation::schemaUrl(), 'http://schema.org/FoodEstablishmentReservation');
     }
 
     public function testEndTimeWillReturnMappingObject()

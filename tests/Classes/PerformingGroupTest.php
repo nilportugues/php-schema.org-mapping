@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PerformingGroup;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PerformingGroupTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PerformingGroupTest.
  */
 class PerformingGroupTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PerformingGroup::schemaUrl(), "http://schema.org/PerformingGroup");
+        $this->assertEquals(PerformingGroup::schemaUrl(), 'http://schema.org/PerformingGroup');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

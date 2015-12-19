@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A physical examination that can identify this sign.
  */
-class IdentifyingExamProperty extends Property
+class IdentifyingExamProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/identifyingExam';
     const PROPERTY_NAME = 'identifyingExam';

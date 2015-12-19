@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A hospital with which the physician or office is affiliated.
  */
-class HospitalAffiliationProperty extends Property
+class HospitalAffiliationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/hospitalAffiliation';
     const PROPERTY_NAME = 'hospitalAffiliation';

@@ -29,26 +29,17 @@ use NilPortugues\SchemaOrg\Properties\SignificantLinkProperty;
 use NilPortugues\SchemaOrg\Properties\SignificantLinksProperty;
 use NilPortugues\SchemaOrg\Properties\SpecialtyProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes WebPage.
  */
-class WebPage
+class WebPage extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/WebPage';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/WebPage';
 
     /**
      * @return Mapping

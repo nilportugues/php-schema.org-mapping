@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The season to which this episode belongs.
  */
-class PartOfSeasonProperty extends Property
+class PartOfSeasonProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/partOfSeason';
     const PROPERTY_NAME = 'partOfSeason';

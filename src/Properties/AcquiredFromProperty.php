@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The organization or person from which the product was acquired.
  */
-class AcquiredFromProperty extends Property
+class AcquiredFromProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/acquiredFrom';
     const PROPERTY_NAME = 'acquiredFrom';

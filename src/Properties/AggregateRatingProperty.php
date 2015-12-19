@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The overall rating, based on a collection of reviews or ratings, of the item.
  */
-class AggregateRatingProperty extends Property
+class AggregateRatingProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/aggregateRating';
     const PROPERTY_NAME = 'aggregateRating';

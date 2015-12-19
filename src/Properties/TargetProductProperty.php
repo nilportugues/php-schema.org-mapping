@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Target Operating System / Product to which the code applies.  If applies to several versions, just the product name can be used.
  */
-class TargetProductProperty extends Property
+class TargetProductProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/targetProduct';
     const PROPERTY_NAME = 'targetProduct';

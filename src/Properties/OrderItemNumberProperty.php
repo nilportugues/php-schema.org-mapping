@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The identifier of the order item.
  */
-class OrderItemNumberProperty extends Property
+class OrderItemNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/orderItemNumber';
     const PROPERTY_NAME = 'orderItemNumber';

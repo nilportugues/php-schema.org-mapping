@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BroadcastEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BroadcastEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BroadcastEventTest.
  */
 class BroadcastEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BroadcastEvent::schemaUrl(), "http://schema.org/BroadcastEvent");
+        $this->assertEquals(BroadcastEvent::schemaUrl(), 'http://schema.org/BroadcastEvent');
     }
 
     public function testAggregateRatingWillReturnMappingObject()

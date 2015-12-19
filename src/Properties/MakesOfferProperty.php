@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to products or services offered by the organization or person.
  */
-class MakesOfferProperty extends Property
+class MakesOfferProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/makesOffer';
     const PROPERTY_NAME = 'makesOffer';

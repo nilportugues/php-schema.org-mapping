@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The unique identifier for a flight including the airline IATA code. For example, if describing United flight 110, where the IATA code for United is 'UA', the flightNumber is 'UA110'.
  */
-class FlightNumberProperty extends Property
+class FlightNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/flightNumber';
     const PROPERTY_NAME = 'flightNumber';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any additional component of the exercise prescription that may need to be articulated to the patient. This may include the order of exercises, the number of repetitions of movement, quantitative distance, progressions over time, etc.
  */
-class AdditionalVariableProperty extends Property
+class AdditionalVariableProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/additionalVariable';
     const PROPERTY_NAME = 'additionalVariable';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Descriptive information establishing the overarching theory/philosophy of the plan. May include the rationale for the name, the population where the plan first came to prominence, etc.
  */
-class OverviewProperty extends Property
+class OverviewProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/overview';
     const PROPERTY_NAME = 'overview';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of object. The collection target of the action.
  */
-class CollectionProperty extends Property
+class CollectionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/collection';
     const PROPERTY_NAME = 'collection';

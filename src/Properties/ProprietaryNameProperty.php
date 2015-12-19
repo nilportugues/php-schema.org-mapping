@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Proprietary name given to the diet plan, typically by its originator or creator.
  */
-class ProprietaryNameProperty extends Property
+class ProprietaryNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/proprietaryName';
     const PROPERTY_NAME = 'proprietaryName';

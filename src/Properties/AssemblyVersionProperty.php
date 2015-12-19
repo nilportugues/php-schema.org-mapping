@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Associated product/technology version. e.g., .NET Framework 4.5.
  */
-class AssemblyVersionProperty extends Property
+class AssemblyVersionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/assemblyVersion';
     const PROPERTY_NAME = 'assemblyVersion';

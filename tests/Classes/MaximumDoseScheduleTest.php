@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MaximumDoseSchedule;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MaximumDoseScheduleTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MaximumDoseScheduleTest.
  */
 class MaximumDoseScheduleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MaximumDoseSchedule::schemaUrl(), "http://schema.org/MaximumDoseSchedule");
+        $this->assertEquals(MaximumDoseSchedule::schemaUrl(), 'http://schema.org/MaximumDoseSchedule');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

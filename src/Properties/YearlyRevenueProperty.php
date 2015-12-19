@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The size of the business in annual revenue.
  */
-class YearlyRevenueProperty extends Property
+class YearlyRevenueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/yearlyRevenue';
     const PROPERTY_NAME = 'yearlyRevenue';

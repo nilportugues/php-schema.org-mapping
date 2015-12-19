@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BefriendAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BefriendActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BefriendActionTest.
  */
 class BefriendActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BefriendAction::schemaUrl(), "http://schema.org/BefriendAction");
+        $this->assertEquals(BefriendAction::schemaUrl(), 'http://schema.org/BefriendAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

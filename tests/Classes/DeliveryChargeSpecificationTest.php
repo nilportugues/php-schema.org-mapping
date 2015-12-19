@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DeliveryChargeSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DeliveryChargeSpecificationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DeliveryChargeSpecificationTest.
  */
 class DeliveryChargeSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DeliveryChargeSpecification::schemaUrl(), "http://schema.org/DeliveryChargeSpecification");
+        $this->assertEquals(DeliveryChargeSpecification::schemaUrl(), 'http://schema.org/DeliveryChargeSpecification');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -43,26 +43,17 @@ use NilPortugues\SchemaOrg\Properties\RelatedDrugProperty;
 use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
 use NilPortugues\SchemaOrg\Properties\StudyProperty;
 use NilPortugues\SchemaOrg\Properties\WarningProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Drug.
  */
-class Drug
+class Drug extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Drug';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Drug';
 
     /**
      * @return Mapping

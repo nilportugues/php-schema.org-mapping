@@ -36,26 +36,17 @@ use NilPortugues\SchemaOrg\Properties\StageProperty;
 use NilPortugues\SchemaOrg\Properties\SubtypeProperty;
 use NilPortugues\SchemaOrg\Properties\TypicalTestProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalCondition.
  */
-class MedicalCondition
+class MedicalCondition extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalCondition';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalCondition';
 
     /**
      * @return Mapping

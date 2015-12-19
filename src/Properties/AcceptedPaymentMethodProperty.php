@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The payment method(s) accepted by seller for this offer.
  */
-class AcceptedPaymentMethodProperty extends Property
+class AcceptedPaymentMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/acceptedPaymentMethod';
     const PROPERTY_NAME = 'acceptedPaymentMethod';

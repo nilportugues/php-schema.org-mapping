@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Embassy;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EmbassyTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes EmbassyTest.
  */
 class EmbassyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Embassy::schemaUrl(), "http://schema.org/Embassy");
+        $this->assertEquals(Embassy::schemaUrl(), 'http://schema.org/Embassy');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

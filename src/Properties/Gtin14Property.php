@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The GTIN-14 code of the product, or the product to which the offer refers. See GS1 GTIN Summary for more details.
  */
-class Gtin14Property extends Property
+class Gtin14Property extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/gtin14';
     const PROPERTY_NAME = 'gtin14';

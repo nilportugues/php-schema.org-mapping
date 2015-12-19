@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of comments this CreativeWork (e.g. Article, Question or Answer) has received. This is most applicable to works published in Web sites with commenting system; additional comments may exist elsewhere.
  */
-class CommentCountProperty extends Property
+class CommentCountProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/commentCount';
     const PROPERTY_NAME = 'commentCount';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Identifies the volume of publication or multi-part work; for example, "iii" or "2".
  */
-class VolumeNumberProperty extends Property
+class VolumeNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/volumeNumber';
     const PROPERTY_NAME = 'volumeNumber';

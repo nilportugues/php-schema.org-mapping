@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An organization that the person is an alumni of.
  */
-class AlumniOfProperty extends Property
+class AlumniOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/alumniOf';
     const PROPERTY_NAME = 'alumniOf';

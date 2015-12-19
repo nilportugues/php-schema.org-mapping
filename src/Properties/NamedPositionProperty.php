@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'.
  */
-class NamedPositionProperty extends Property
+class NamedPositionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/namedPosition';
     const PROPERTY_NAME = 'namedPosition';

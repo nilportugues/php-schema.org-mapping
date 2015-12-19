@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The status of the study (enumerated).
  */
-class StatusProperty extends Property
+class StatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/status';
     const PROPERTY_NAME = 'status';

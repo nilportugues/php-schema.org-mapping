@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates whether this game is multi-player, co-op or single-player.  The game can be marked as multi-player, co-op and single-player at the same time.
  */
-class PlayModeProperty extends Property
+class PlayModeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/playMode';
     const PROPERTY_NAME = 'playMode';

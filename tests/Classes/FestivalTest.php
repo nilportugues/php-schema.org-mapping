@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Festival;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FestivalTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes FestivalTest.
  */
 class FestivalTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Festival::schemaUrl(), "http://schema.org/Festival");
+        $this->assertEquals(Festival::schemaUrl(), 'http://schema.org/Festival');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Size of the application / package (e.g. 18MB). In the absence of a unit (MB, KB etc.), KB will be assumed.
  */
-class FileSizeProperty extends Property
+class FileSizeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/fileSize';
     const PROPERTY_NAME = 'fileSize';

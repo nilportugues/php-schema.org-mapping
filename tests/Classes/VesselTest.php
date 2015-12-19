@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Vessel;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VesselTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VesselTest.
  */
 class VesselTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Vessel::schemaUrl(), "http://schema.org/Vessel");
+        $this->assertEquals(Vessel::schemaUrl(), 'http://schema.org/Vessel');
     }
 
     public function testCodeWillReturnMappingObject()

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CancelAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CancelActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CancelActionTest.
  */
 class CancelActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CancelAction::schemaUrl(), "http://schema.org/CancelAction");
+        $this->assertEquals(CancelAction::schemaUrl(), 'http://schema.org/CancelAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

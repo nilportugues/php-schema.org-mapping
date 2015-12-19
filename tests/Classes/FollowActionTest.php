@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\FollowAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FollowActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes FollowActionTest.
  */
 class FollowActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(FollowAction::schemaUrl(), "http://schema.org/FollowAction");
+        $this->assertEquals(FollowAction::schemaUrl(), 'http://schema.org/FollowAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

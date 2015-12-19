@@ -24,26 +24,17 @@ use NilPortugues\SchemaOrg\Properties\PreparationProperty;
 use NilPortugues\SchemaOrg\Properties\ProcedureTypeProperty;
 use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalProcedure.
  */
-class MedicalProcedure
+class MedicalProcedure extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalProcedure';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalProcedure';
 
     /**
      * @return Mapping

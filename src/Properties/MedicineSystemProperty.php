@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The system of medicine that includes this MedicalEntity, for example 'evidence-based', 'homeopathic', 'chiropractic', etc.
  */
-class MedicineSystemProperty extends Property
+class MedicineSystemProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/medicineSystem';
     const PROPERTY_NAME = 'medicineSystem';

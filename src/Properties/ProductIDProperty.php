@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The product identifier, such as ISBN. For example: &lt;meta itemprop='productID' content='isbn:123-456-789'/&gt;.
  */
-class ProductIDProperty extends Property
+class ProductIDProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/productID';
     const PROPERTY_NAME = 'productID';

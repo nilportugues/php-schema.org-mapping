@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The organization (airline, travelers' club, etc.) the membership is made with.
  */
-class HostingOrganizationProperty extends Property
+class HostingOrganizationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/hostingOrganization';
     const PROPERTY_NAME = 'hostingOrganization';

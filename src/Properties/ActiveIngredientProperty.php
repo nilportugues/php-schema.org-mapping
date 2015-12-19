@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An active ingredient, typically chemical compounds and/or biologic substances.
  */
-class ActiveIngredientProperty extends Property
+class ActiveIngredientProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/activeIngredient';
     const PROPERTY_NAME = 'activeIngredient';

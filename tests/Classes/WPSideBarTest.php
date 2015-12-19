@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WPSideBar;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WPSideBarTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WPSideBarTest.
  */
 class WPSideBarTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WPSideBar::schemaUrl(), "http://schema.org/WPSideBar");
+        $this->assertEquals(WPSideBar::schemaUrl(), 'http://schema.org/WPSideBar');
     }
 
     public function testAboutWillReturnMappingObject()

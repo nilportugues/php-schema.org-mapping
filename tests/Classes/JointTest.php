@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Joint;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes JointTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes JointTest.
  */
 class JointTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Joint::schemaUrl(), "http://schema.org/Joint");
+        $this->assertEquals(Joint::schemaUrl(), 'http://schema.org/Joint');
     }
 
     public function testBiomechnicalClassWillReturnMappingObject()

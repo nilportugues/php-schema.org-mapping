@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A season in a media series.
  */
-class SeasonProperty extends Property
+class SeasonProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/season';
     const PROPERTY_NAME = 'season';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * URL at which the app may be installed, if different from the URL of the item.
  */
-class InstallUrlProperty extends Property
+class InstallUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/installUrl';
     const PROPERTY_NAME = 'installUrl';

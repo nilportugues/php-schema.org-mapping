@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The characteristics of associated patients, such as age, gender, race etc.
  */
-class EpidemiologyProperty extends Property
+class EpidemiologyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/epidemiology';
     const PROPERTY_NAME = 'epidemiology';

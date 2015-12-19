@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The time when the live blog will stop covering the Event. Note that coverage may continue after the Event concludes.
  */
-class CoverageEndTimeProperty extends Property
+class CoverageEndTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/coverageEndTime';
     const PROPERTY_NAME = 'coverageEndTime';

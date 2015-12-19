@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Minimum memory requirements.
  */
-class MemoryRequirementsProperty extends Property
+class MemoryRequirementsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/memoryRequirements';
     const PROPERTY_NAME = 'memoryRequirements';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The job title of the person (for example, Financial Manager).
  */
-class JobTitleProperty extends Property
+class JobTitleProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/jobTitle';
     const PROPERTY_NAME = 'jobTitle';

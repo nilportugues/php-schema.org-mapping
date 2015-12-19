@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * exif data for this object.
  */
-class ExifDataProperty extends Property
+class ExifDataProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/exifData';
     const PROPERTY_NAME = 'exifData';

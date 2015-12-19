@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An embedded video object.
  */
-class VideoProperty extends Property
+class VideoProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/video';
     const PROPERTY_NAME = 'video';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Position of the season within an ordered group of seasons.
  */
-class SeasonNumberProperty extends Property
+class SeasonNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/seasonNumber';
     const PROPERTY_NAME = 'seasonNumber';

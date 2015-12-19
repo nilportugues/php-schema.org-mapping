@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The color or color combination of the interior of the vehicle.
  */
-class VehicleInteriorColorProperty extends Property
+class VehicleInteriorColorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vehicleInteriorColor';
     const PROPERTY_NAME = 'vehicleInteriorColor';

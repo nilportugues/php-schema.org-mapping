@@ -15,26 +15,17 @@ use NilPortugues\SchemaOrg\Properties\BoardingGroupProperty;
 use NilPortugues\SchemaOrg\Properties\PassengerPriorityStatusProperty;
 use NilPortugues\SchemaOrg\Properties\PassengerSequenceNumberProperty;
 use NilPortugues\SchemaOrg\Properties\SecurityScreeningProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes FlightReservation.
  */
-class FlightReservation
+class FlightReservation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/FlightReservation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/FlightReservation';
 
     /**
      * @return Mapping

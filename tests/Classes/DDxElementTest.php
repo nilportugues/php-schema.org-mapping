@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DDxElement;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DDxElementTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DDxElementTest.
  */
 class DDxElementTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DDxElement::schemaUrl(), "http://schema.org/DDxElement");
+        $this->assertEquals(DDxElement::schemaUrl(), 'http://schema.org/DDxElement');
     }
 
     public function testCodeWillReturnMappingObject()

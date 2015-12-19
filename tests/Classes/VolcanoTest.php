@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Volcano;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VolcanoTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VolcanoTest.
  */
 class VolcanoTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Volcano::schemaUrl(), "http://schema.org/Volcano");
+        $this->assertEquals(Volcano::schemaUrl(), 'http://schema.org/Volcano');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The format of the book.
  */
-class BookFormatProperty extends Property
+class BookFormatProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/bookFormat';
     const PROPERTY_NAME = 'bookFormat';

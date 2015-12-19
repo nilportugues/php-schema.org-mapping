@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PaymentChargeSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PaymentChargeSpecificationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PaymentChargeSpecificationTest.
  */
 class PaymentChargeSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PaymentChargeSpecification::schemaUrl(), "http://schema.org/PaymentChargeSpecification");
+        $this->assertEquals(PaymentChargeSpecification::schemaUrl(), 'http://schema.org/PaymentChargeSpecification');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

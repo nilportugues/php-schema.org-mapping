@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Actual bytes of the media object, for example the image file or video file.
  */
-class ContentUrlProperty extends Property
+class ContentUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contentUrl';
     const PROPERTY_NAME = 'contentUrl';

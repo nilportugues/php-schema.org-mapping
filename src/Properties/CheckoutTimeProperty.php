@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The latest someone may check out of a lodging establishment.
  */
-class CheckoutTimeProperty extends Property
+class CheckoutTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/checkoutTime';
     const PROPERTY_NAME = 'checkoutTime';

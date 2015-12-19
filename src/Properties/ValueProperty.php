@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The value of the quantitative value or property value node. For QuantitativeValue, the recommended type for values is 'Number'. For PropertyValue, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.
  */
-class ValueProperty extends Property
+class ValueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/value';
     const PROPERTY_NAME = 'value';

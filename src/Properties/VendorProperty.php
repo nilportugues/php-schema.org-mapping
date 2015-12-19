@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * 'vendor' is an earlier term for 'seller'.
  */
-class VendorProperty extends Property
+class VendorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vendor';
     const PROPERTY_NAME = 'vendor';

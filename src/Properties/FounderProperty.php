@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A person who founded this organization.
  */
-class FounderProperty extends Property
+class FounderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/founder';
     const PROPERTY_NAME = 'founder';

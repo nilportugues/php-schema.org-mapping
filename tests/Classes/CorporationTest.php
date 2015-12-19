@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Corporation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CorporationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CorporationTest.
  */
 class CorporationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Corporation::schemaUrl(), "http://schema.org/Corporation");
+        $this->assertEquals(Corporation::schemaUrl(), 'http://schema.org/Corporation');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

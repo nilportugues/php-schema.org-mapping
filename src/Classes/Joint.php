@@ -20,26 +20,17 @@ use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
 use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
 use NilPortugues\SchemaOrg\Properties\StructuralClassProperty;
 use NilPortugues\SchemaOrg\Properties\StudyProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Joint.
  */
-class Joint
+class Joint extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Joint';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Joint';
 
     /**
      * @return Mapping

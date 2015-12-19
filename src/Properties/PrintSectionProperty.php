@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * If this NewsArticle appears in print, this field indicates the print section in which the article appeared.
  */
-class PrintSectionProperty extends Property
+class PrintSectionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/printSection';
     const PROPERTY_NAME = 'printSection';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\InviteAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InviteActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes InviteActionTest.
  */
 class InviteActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InviteAction::schemaUrl(), "http://schema.org/InviteAction");
+        $this->assertEquals(InviteAction::schemaUrl(), 'http://schema.org/InviteAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

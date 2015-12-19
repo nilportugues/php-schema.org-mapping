@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ExercisePlan;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ExercisePlanTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ExercisePlanTest.
  */
 class ExercisePlanTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ExercisePlan::schemaUrl(), "http://schema.org/ExercisePlan");
+        $this->assertEquals(ExercisePlan::schemaUrl(), 'http://schema.org/ExercisePlan');
     }
 
     public function testActivityDurationWillReturnMappingObject()

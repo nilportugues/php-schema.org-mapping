@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The price range of the business, for example $$$.
  */
-class PriceRangeProperty extends Property
+class PriceRangeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/priceRange';
     const PROPERTY_NAME = 'priceRange';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Description of what changed in this version.
  */
-class ReleaseNotesProperty extends Property
+class ReleaseNotesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/releaseNotes';
     const PROPERTY_NAME = 'releaseNotes';

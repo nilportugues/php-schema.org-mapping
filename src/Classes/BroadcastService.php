@@ -15,26 +15,17 @@ use NilPortugues\SchemaOrg\Properties\AreaProperty;
 use NilPortugues\SchemaOrg\Properties\BroadcasterProperty;
 use NilPortugues\SchemaOrg\Properties\ParentServiceProperty;
 use NilPortugues\SchemaOrg\Properties\VideoFormatProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes BroadcastService.
  */
-class BroadcastService
+class BroadcastService extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/BroadcastService';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/BroadcastService';
 
     /**
      * @return Mapping

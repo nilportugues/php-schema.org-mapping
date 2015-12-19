@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The location of for example where the event is happening, an organization is located, or where an action takes place.
  */
-class LocationProperty extends Property
+class LocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/location';
     const PROPERTY_NAME = 'location';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of answers this question has received.
  */
-class AnswerCountProperty extends Property
+class AnswerCountProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/answerCount';
     const PROPERTY_NAME = 'answerCount';

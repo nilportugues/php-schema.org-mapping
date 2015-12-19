@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The most generic bi-directional social/work relation.
  */
-class KnowsProperty extends Property
+class KnowsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/knows';
     const PROPERTY_NAME = 'knows';

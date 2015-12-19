@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The position of an item in a series or sequence of items.
  */
-class PositionProperty extends Property
+class PositionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/position';
     const PROPERTY_NAME = 'position';

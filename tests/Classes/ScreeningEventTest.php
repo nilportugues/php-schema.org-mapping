@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ScreeningEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ScreeningEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ScreeningEventTest.
  */
 class ScreeningEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ScreeningEvent::schemaUrl(), "http://schema.org/ScreeningEvent");
+        $this->assertEquals(ScreeningEvent::schemaUrl(), 'http://schema.org/ScreeningEvent');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

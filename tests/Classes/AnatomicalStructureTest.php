@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AnatomicalStructure;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AnatomicalStructureTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AnatomicalStructureTest.
  */
 class AnatomicalStructureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AnatomicalStructure::schemaUrl(), "http://schema.org/AnatomicalStructure");
+        $this->assertEquals(AnatomicalStructure::schemaUrl(), 'http://schema.org/AnatomicalStructure');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

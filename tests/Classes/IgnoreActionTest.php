@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\IgnoreAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes IgnoreActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes IgnoreActionTest.
  */
 class IgnoreActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(IgnoreAction::schemaUrl(), "http://schema.org/IgnoreAction");
+        $this->assertEquals(IgnoreAction::schemaUrl(), 'http://schema.org/IgnoreAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

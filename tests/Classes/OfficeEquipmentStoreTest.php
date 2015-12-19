@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\OfficeEquipmentStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OfficeEquipmentStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes OfficeEquipmentStoreTest.
  */
 class OfficeEquipmentStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(OfficeEquipmentStore::schemaUrl(), "http://schema.org/OfficeEquipmentStore");
+        $this->assertEquals(OfficeEquipmentStore::schemaUrl(), 'http://schema.org/OfficeEquipmentStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

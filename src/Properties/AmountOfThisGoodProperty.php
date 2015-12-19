@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The quantity of the goods included in the offer.
  */
-class AmountOfThisGoodProperty extends Property
+class AmountOfThisGoodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/amountOfThisGood';
     const PROPERTY_NAME = 'amountOfThisGood';

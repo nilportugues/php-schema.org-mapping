@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The scope of the warranty promise.
  */
-class WarrantyScopeProperty extends Property
+class WarrantyScopeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/warrantyScope';
     const PROPERTY_NAME = 'warrantyScope';

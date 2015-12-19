@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any precaution, guidance, contraindication, etc. related to consumption of alcohol while taking this drug.
  */
-class AlcoholWarningProperty extends Property
+class AlcoholWarningProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/alcoholWarning';
     const PROPERTY_NAME = 'alcoholWarning';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TradeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TradeActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TradeActionTest.
  */
 class TradeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TradeAction::schemaUrl(), "http://schema.org/TradeAction");
+        $this->assertEquals(TradeAction::schemaUrl(), 'http://schema.org/TradeAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

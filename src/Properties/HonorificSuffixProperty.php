@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An honorific suffix preceding a Person's name such as M.D. /PhD/MSCSW.
  */
-class HonorificSuffixProperty extends Property
+class HonorificSuffixProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/honorificSuffix';
     const PROPERTY_NAME = 'honorificSuffix';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type of tissue sample required for the test.
  */
-class TissueSampleProperty extends Property
+class TissueSampleProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/tissueSample';
     const PROPERTY_NAME = 'tissueSample';

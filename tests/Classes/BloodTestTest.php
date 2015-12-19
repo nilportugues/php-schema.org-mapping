@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BloodTest;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BloodTestTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BloodTestTest.
  */
 class BloodTestTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BloodTest::schemaUrl(), "http://schema.org/BloodTest");
+        $this->assertEquals(BloodTest::schemaUrl(), 'http://schema.org/BloodTest');
     }
 
     public function testCodeWillReturnMappingObject()

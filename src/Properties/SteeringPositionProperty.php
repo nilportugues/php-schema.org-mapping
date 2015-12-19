@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The position of the steering wheel or similar device (mostly for cars).
  */
-class SteeringPositionProperty extends Property
+class SteeringPositionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/steeringPosition';
     const PROPERTY_NAME = 'steeringPosition';

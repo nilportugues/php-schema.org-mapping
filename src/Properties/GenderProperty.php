@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Gender of the person.
  */
-class GenderProperty extends Property
+class GenderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/gender';
     const PROPERTY_NAME = 'gender';

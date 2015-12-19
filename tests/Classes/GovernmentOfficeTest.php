@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GovernmentOffice;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GovernmentOfficeTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GovernmentOfficeTest.
  */
 class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GovernmentOffice::schemaUrl(), "http://schema.org/GovernmentOffice");
+        $this->assertEquals(GovernmentOffice::schemaUrl(), 'http://schema.org/GovernmentOffice');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

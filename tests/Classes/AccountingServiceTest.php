@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AccountingService;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AccountingServiceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AccountingServiceTest.
  */
 class AccountingServiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AccountingService::schemaUrl(), "http://schema.org/AccountingService");
+        $this->assertEquals(AccountingService::schemaUrl(), 'http://schema.org/AccountingService');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

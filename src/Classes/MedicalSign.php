@@ -19,26 +19,17 @@ use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
 use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
 use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
 use NilPortugues\SchemaOrg\Properties\StudyProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalSign.
  */
-class MedicalSign
+class MedicalSign extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalSign';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalSign';
 
     /**
      * @return Mapping

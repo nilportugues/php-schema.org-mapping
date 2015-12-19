@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Number of times one should repeat the activity.
  */
-class RepetitionsProperty extends Property
+class RepetitionsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/repetitions';
     const PROPERTY_NAME = 'repetitions';

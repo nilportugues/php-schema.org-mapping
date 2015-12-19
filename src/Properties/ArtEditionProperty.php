@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of copies when multiple copies of a piece of artwork are produced - e.g. for a limited edition of 20 prints, 'artEdition' refers to the total number of copies (in this example "20").
  */
-class ArtEditionProperty extends Property
+class ArtEditionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/artEdition';
     const PROPERTY_NAME = 'artEdition';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The page on which the work starts; for example "135" or "xiii".
  */
-class PageStartProperty extends Property
+class PageStartProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/pageStart';
     const PROPERTY_NAME = 'pageStart';

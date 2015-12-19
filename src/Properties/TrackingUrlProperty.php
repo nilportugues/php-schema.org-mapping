@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Tracking url for the parcel delivery.
  */
-class TrackingUrlProperty extends Property
+class TrackingUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/trackingUrl';
     const PROPERTY_NAME = 'trackingUrl';

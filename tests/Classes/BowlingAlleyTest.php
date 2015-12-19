@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BowlingAlley;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BowlingAlleyTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BowlingAlleyTest.
  */
 class BowlingAlleyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BowlingAlley::schemaUrl(), "http://schema.org/BowlingAlley");
+        $this->assertEquals(BowlingAlley::schemaUrl(), 'http://schema.org/BowlingAlley');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

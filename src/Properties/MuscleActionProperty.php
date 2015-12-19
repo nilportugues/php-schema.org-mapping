@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The movement the muscle generates.
  */
-class MuscleActionProperty extends Property
+class MuscleActionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/muscleAction';
     const PROPERTY_NAME = 'muscleAction';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AutoRental;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AutoRentalTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AutoRentalTest.
  */
 class AutoRentalTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AutoRental::schemaUrl(), "http://schema.org/AutoRental");
+        $this->assertEquals(AutoRental::schemaUrl(), 'http://schema.org/AutoRental');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A member of a music group&#x2014;for example, John, Paul, George, or Ringo.
  */
-class MusicGroupMemberProperty extends Property
+class MusicGroupMemberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/musicGroupMember';
     const PROPERTY_NAME = 'musicGroupMember';

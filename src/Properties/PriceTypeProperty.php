@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A short text or acronym indicating multiple price specifications for the same offer, e.g. SRP for the suggested retail price or INVOICE for the invoice price, mostly used in the car industry.
  */
-class PriceTypeProperty extends Property
+class PriceTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/priceType';
     const PROPERTY_NAME = 'priceType';

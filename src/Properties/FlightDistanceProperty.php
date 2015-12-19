@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The distance of the flight.
  */
-class FlightDistanceProperty extends Property
+class FlightDistanceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/flightDistance';
     const PROPERTY_NAME = 'flightDistance';

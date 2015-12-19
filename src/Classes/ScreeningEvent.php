@@ -23,26 +23,17 @@ use NilPortugues\SchemaOrg\Properties\SubtitleLanguageProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\VideoFormatProperty;
 use NilPortugues\SchemaOrg\Properties\WorkPresentedProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes ScreeningEvent.
  */
-class ScreeningEvent
+class ScreeningEvent extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/ScreeningEvent';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/ScreeningEvent';
 
     /**
      * @return Mapping

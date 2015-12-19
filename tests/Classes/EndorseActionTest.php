@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\EndorseAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EndorseActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes EndorseActionTest.
  */
 class EndorseActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EndorseAction::schemaUrl(), "http://schema.org/EndorseAction");
+        $this->assertEquals(EndorseAction::schemaUrl(), 'http://schema.org/EndorseAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

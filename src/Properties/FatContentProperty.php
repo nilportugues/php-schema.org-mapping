@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of grams of fat.
  */
-class FatContentProperty extends Property
+class FatContentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/fatContent';
     const PROPERTY_NAME = 'fatContent';

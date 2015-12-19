@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The width of the item.
  */
-class WidthProperty extends Property
+class WidthProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/width';
     const PROPERTY_NAME = 'width';

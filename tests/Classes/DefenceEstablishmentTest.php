@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\DefenceEstablishment;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DefenceEstablishmentTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes DefenceEstablishmentTest.
  */
 class DefenceEstablishmentTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DefenceEstablishment::schemaUrl(), "http://schema.org/DefenceEstablishment");
+        $this->assertEquals(DefenceEstablishment::schemaUrl(), 'http://schema.org/DefenceEstablishment');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

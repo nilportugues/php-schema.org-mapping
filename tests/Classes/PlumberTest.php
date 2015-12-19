@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Plumber;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PlumberTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PlumberTest.
  */
 class PlumberTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Plumber::schemaUrl(), "http://schema.org/Plumber");
+        $this->assertEquals(Plumber::schemaUrl(), 'http://schema.org/Plumber');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

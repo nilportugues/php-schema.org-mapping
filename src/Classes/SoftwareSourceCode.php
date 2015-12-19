@@ -27,26 +27,17 @@ use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\SampleTypeProperty;
 use NilPortugues\SchemaOrg\Properties\TargetProductProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes SoftwareSourceCode.
  */
-class SoftwareSourceCode
+class SoftwareSourceCode extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/SoftwareSourceCode';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/SoftwareSourceCode';
 
     /**
      * @return Mapping

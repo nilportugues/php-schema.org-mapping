@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Identifier of the flight's departure gate.
  */
-class DepartureGateProperty extends Property
+class DepartureGateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/departureGate';
     const PROPERTY_NAME = 'departureGate';

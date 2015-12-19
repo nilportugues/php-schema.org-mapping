@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Reservoir;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReservoirTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ReservoirTest.
  */
 class ReservoirTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Reservoir::schemaUrl(), "http://schema.org/Reservoir");
+        $this->assertEquals(Reservoir::schemaUrl(), 'http://schema.org/Reservoir');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

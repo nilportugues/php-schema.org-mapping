@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Component (sub-)structure(s) that comprise this anatomical structure.
  */
-class SubStructureProperty extends Property
+class SubStructureProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/subStructure';
     const PROPERTY_NAME = 'subStructure';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of grams of protein.
  */
-class ProteinContentProperty extends Property
+class ProteinContentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/proteinContent';
     const PROPERTY_NAME = 'proteinContent';

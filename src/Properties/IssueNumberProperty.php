@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Identifies the issue of publication; for example, "iii" or "2".
  */
-class IssueNumberProperty extends Property
+class IssueNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/issueNumber';
     const PROPERTY_NAME = 'issueNumber';

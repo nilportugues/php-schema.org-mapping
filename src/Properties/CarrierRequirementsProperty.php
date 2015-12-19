@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies specific carrier(s) requirements for the application (e.g. an application may only work on a specific carrier network).
  */
-class CarrierRequirementsProperty extends Property
+class CarrierRequirementsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/carrierRequirements';
     const PROPERTY_NAME = 'carrierRequirements';

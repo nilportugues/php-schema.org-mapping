@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Reference to an asset (e.g., Barcode, QR code image or PDF) usable for entrance.
  */
-class TicketTokenProperty extends Property
+class TicketTokenProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/ticketToken';
     const PROPERTY_NAME = 'ticketToken';

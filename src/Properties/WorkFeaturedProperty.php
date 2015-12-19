@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A work featured in some event, e.g. exhibited in an ExhibitionEvent.
  */
-class WorkFeaturedProperty extends Property
+class WorkFeaturedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/workFeatured';
     const PROPERTY_NAME = 'workFeatured';

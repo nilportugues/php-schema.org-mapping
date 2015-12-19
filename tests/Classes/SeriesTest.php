@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Series;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SeriesTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SeriesTest.
  */
 class SeriesTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Series::schemaUrl(), "http://schema.org/Series");
+        $this->assertEquals(Series::schemaUrl(), 'http://schema.org/Series');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

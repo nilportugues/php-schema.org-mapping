@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies the Person that is legally accountable for the CreativeWork.
  */
-class AccountablePersonProperty extends Property
+class AccountablePersonProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/accountablePerson';
     const PROPERTY_NAME = 'accountablePerson';

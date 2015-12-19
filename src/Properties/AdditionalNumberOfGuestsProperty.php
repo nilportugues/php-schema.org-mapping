@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * If responding yes, the number of guests who will attend in addition to the invitee.
  */
-class AdditionalNumberOfGuestsProperty extends Property
+class AdditionalNumberOfGuestsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/additionalNumberOfGuests';
     const PROPERTY_NAME = 'additionalNumberOfGuests';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Mosque;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MosqueTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MosqueTest.
  */
 class MosqueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Mosque::schemaUrl(), "http://schema.org/Mosque");
+        $this->assertEquals(Mosque::schemaUrl(), 'http://schema.org/Mosque');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

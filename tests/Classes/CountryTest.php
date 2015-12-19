@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Country;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CountryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CountryTest.
  */
 class CountryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Country::schemaUrl(), "http://schema.org/Country");
+        $this->assertEquals(Country::schemaUrl(), 'http://schema.org/Country');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

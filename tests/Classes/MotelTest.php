@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Motel;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MotelTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MotelTest.
  */
 class MotelTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Motel::schemaUrl(), "http://schema.org/Motel");
+        $this->assertEquals(Motel::schemaUrl(), 'http://schema.org/Motel');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -18,26 +18,17 @@ use NilPortugues\SchemaOrg\Properties\UnitCodeProperty;
 use NilPortugues\SchemaOrg\Properties\UnitTextProperty;
 use NilPortugues\SchemaOrg\Properties\ValueProperty;
 use NilPortugues\SchemaOrg\Properties\ValueReferenceProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes PropertyValue.
  */
-class PropertyValue
+class PropertyValue extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/PropertyValue';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/PropertyValue';
 
     /**
      * @return Mapping

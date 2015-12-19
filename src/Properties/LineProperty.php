@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.
  */
-class LineProperty extends Property
+class LineProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/line';
     const PROPERTY_NAME = 'line';

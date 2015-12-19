@@ -14,26 +14,17 @@ use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty;
 use NilPortugues\SchemaOrg\Properties\YearlyRevenueProperty;
 use NilPortugues\SchemaOrg\Properties\YearsInOperationProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes BusinessAudience.
  */
-class BusinessAudience
+class BusinessAudience extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/BusinessAudience';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/BusinessAudience';
 
     /**
      * @return Mapping

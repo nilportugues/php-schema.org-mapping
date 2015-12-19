@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A relationship between two organizations where the first includes the second, e.g., as a subsidiary. See also: the more specific 'department' property.
  */
-class SubOrganizationProperty extends Property
+class SubOrganizationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/subOrganization';
     const PROPERTY_NAME = 'subOrganization';

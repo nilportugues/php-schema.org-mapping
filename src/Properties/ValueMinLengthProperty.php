@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies the minimum allowed range for number of characters in a literal value.
  */
-class ValueMinLengthProperty extends Property
+class ValueMinLengthProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/valueMinLength';
     const PROPERTY_NAME = 'valueMinLength';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Description of benefits associated with the job.
  */
-class BenefitsProperty extends Property
+class BenefitsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/benefits';
     const PROPERTY_NAME = 'benefits';

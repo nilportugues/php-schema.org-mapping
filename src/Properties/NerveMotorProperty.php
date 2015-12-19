@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The neurological pathway extension that involves muscle control.
  */
-class NerveMotorProperty extends Property
+class NerveMotorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/nerveMotor';
     const PROPERTY_NAME = 'nerveMotor';

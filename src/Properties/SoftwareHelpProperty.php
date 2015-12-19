@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Software application help.
  */
-class SoftwareHelpProperty extends Property
+class SoftwareHelpProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/softwareHelp';
     const PROPERTY_NAME = 'softwareHelp';

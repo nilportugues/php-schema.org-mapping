@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CreativeWorkSeries;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CreativeWorkSeriesTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CreativeWorkSeriesTest.
  */
 class CreativeWorkSeriesTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CreativeWorkSeries::schemaUrl(), "http://schema.org/CreativeWorkSeries");
+        $this->assertEquals(CreativeWorkSeries::schemaUrl(), 'http://schema.org/CreativeWorkSeries');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

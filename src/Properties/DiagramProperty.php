@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.
  */
-class DiagramProperty extends Property
+class DiagramProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/diagram';
     const PROPERTY_NAME = 'diagram';

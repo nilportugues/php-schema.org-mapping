@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The most generic uni-directional social relation.
  */
-class FollowsProperty extends Property
+class FollowsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/follows';
     const PROPERTY_NAME = 'follows';

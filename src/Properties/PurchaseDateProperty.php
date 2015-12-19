@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date the item e.g. vehicle was purchased by the current owner.
  */
-class PurchaseDateProperty extends Property
+class PurchaseDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/purchaseDate';
     const PROPERTY_NAME = 'purchaseDate';

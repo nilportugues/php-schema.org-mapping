@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * True if the drug is available in a generic form (regardless of name).
  */
-class IsAvailableGenericallyProperty extends Property
+class IsAvailableGenericallyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isAvailableGenerically';
     const PROPERTY_NAME = 'isAvailableGenerically';

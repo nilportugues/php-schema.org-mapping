@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The total distance travelled by the particular vehicle since its initial production, as read from its odometer.
  */
-class MileageFromOdometerProperty extends Property
+class MileageFromOdometerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/mileageFromOdometer';
     const PROPERTY_NAME = 'mileageFromOdometer';

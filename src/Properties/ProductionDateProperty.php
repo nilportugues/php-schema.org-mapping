@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date of production of the item, e.g. vehicle.
  */
-class ProductionDateProperty extends Property
+class ProductionDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/productionDate';
     const PROPERTY_NAME = 'productionDate';

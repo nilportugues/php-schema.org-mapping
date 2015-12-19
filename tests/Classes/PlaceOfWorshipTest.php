@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PlaceOfWorship;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PlaceOfWorshipTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PlaceOfWorshipTest.
  */
 class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PlaceOfWorship::schemaUrl(), "http://schema.org/PlaceOfWorship");
+        $this->assertEquals(PlaceOfWorship::schemaUrl(), 'http://schema.org/PlaceOfWorship');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

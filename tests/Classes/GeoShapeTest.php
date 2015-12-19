@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GeoShape;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GeoShapeTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GeoShapeTest.
  */
 class GeoShapeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GeoShape::schemaUrl(), "http://schema.org/GeoShape");
+        $this->assertEquals(GeoShape::schemaUrl(), 'http://schema.org/GeoShape');
     }
 
     public function testAddressWillReturnMappingObject()

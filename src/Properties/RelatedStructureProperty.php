@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Related anatomical structure(s) that are not part of the system but relate or connect to it, such as vascular bundles associated with an organ system.
  */
-class RelatedStructureProperty extends Property
+class RelatedStructureProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/relatedStructure';
     const PROPERTY_NAME = 'relatedStructure';

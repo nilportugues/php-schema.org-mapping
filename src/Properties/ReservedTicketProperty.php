@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A ticket associated with the reservation.
  */
-class ReservedTicketProperty extends Property
+class ReservedTicketProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/reservedTicket';
     const PROPERTY_NAME = 'reservedTicket';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The winner of the action.
  */
-class WinnerProperty extends Property
+class WinnerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/winner';
     const PROPERTY_NAME = 'winner';

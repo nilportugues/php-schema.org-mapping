@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ContactPoint;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ContactPointTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ContactPointTest.
  */
 class ContactPointTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ContactPoint::schemaUrl(), "http://schema.org/ContactPoint");
+        $this->assertEquals(ContactPoint::schemaUrl(), 'http://schema.org/ContactPoint');
     }
 
     public function testAreaServedWillReturnMappingObject()

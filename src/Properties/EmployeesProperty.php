@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * People working for this organization.
  */
-class EmployeesProperty extends Property
+class EmployeesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/employees';
     const PROPERTY_NAME = 'employees';

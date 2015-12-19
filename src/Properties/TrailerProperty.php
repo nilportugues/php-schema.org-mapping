@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The trailer of a movie or tv/radio series, season, episode, etc.
  */
-class TrailerProperty extends Property
+class TrailerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/trailer';
     const PROPERTY_NAME = 'trailer';

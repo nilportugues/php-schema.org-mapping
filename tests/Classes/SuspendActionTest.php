@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SuspendAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SuspendActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SuspendActionTest.
  */
 class SuspendActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SuspendAction::schemaUrl(), "http://schema.org/SuspendAction");
+        $this->assertEquals(SuspendAction::schemaUrl(), 'http://schema.org/SuspendAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

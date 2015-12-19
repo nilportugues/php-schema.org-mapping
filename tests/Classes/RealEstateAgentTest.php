@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RealEstateAgent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RealEstateAgentTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RealEstateAgentTest.
  */
 class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RealEstateAgent::schemaUrl(), "http://schema.org/RealEstateAgent");
+        $this->assertEquals(RealEstateAgent::schemaUrl(), 'http://schema.org/RealEstateAgent');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

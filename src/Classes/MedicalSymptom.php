@@ -17,26 +17,17 @@ use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
 use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
 use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
 use NilPortugues\SchemaOrg\Properties\StudyProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes MedicalSymptom.
  */
-class MedicalSymptom
+class MedicalSymptom extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/MedicalSymptom';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/MedicalSymptom';
 
     /**
      * @return Mapping

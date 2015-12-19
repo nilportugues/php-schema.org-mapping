@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BarOrPub;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BarOrPubTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BarOrPubTest.
  */
 class BarOrPubTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BarOrPub::schemaUrl(), "http://schema.org/BarOrPub");
+        $this->assertEquals(BarOrPub::schemaUrl(), 'http://schema.org/BarOrPub');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

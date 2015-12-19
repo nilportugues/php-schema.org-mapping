@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The edition of the print product in which the NewsArticle appears.
  */
-class PrintEditionProperty extends Property
+class PrintEditionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/printEdition';
     const PROPERTY_NAME = 'printEdition';

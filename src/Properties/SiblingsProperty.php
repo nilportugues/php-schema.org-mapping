@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sibling of the person.
  */
-class SiblingsProperty extends Property
+class SiblingsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/siblings';
     const PROPERTY_NAME = 'siblings';

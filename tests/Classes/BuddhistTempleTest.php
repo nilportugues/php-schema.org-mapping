@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BuddhistTemple;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BuddhistTempleTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BuddhistTempleTest.
  */
 class BuddhistTempleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BuddhistTemple::schemaUrl(), "http://schema.org/BuddhistTemple");
+        $this->assertEquals(BuddhistTemple::schemaUrl(), 'http://schema.org/BuddhistTemple');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

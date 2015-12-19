@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
  */
-class DateModifiedProperty extends Property
+class DateModifiedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dateModified';
     const PROPERTY_NAME = 'dateModified';

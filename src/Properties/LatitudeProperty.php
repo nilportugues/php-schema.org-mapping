@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The latitude of a location. For example 37.42242 (WGS 84).
  */
-class LatitudeProperty extends Property
+class LatitudeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/latitude';
     const PROPERTY_NAME = 'latitude';

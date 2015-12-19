@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The name of the train (e.g. The Orient Express).
  */
-class TrainNameProperty extends Property
+class TrainNameProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/trainName';
     const PROPERTY_NAME = 'trainName';

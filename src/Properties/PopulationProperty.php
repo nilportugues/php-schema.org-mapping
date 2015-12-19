@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any characteristics of the population used in the study, e.g. 'males under 65'.
  */
-class PopulationProperty extends Property
+class PopulationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/population';
     const PROPERTY_NAME = 'population';

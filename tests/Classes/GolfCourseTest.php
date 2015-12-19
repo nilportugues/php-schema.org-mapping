@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GolfCourse;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GolfCourseTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GolfCourseTest.
  */
 class GolfCourseTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GolfCourse::schemaUrl(), "http://schema.org/GolfCourse");
+        $this->assertEquals(GolfCourse::schemaUrl(), 'http://schema.org/GolfCourse');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

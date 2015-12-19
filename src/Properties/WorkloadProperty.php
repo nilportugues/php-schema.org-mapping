@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.
  */
-class WorkloadProperty extends Property
+class WorkloadProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/workload';
     const PROPERTY_NAME = 'workload';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LeaveAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LeaveActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LeaveActionTest.
  */
 class LeaveActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LeaveAction::schemaUrl(), "http://schema.org/LeaveAction");
+        $this->assertEquals(LeaveAction::schemaUrl(), 'http://schema.org/LeaveAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

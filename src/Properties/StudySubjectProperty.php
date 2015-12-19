@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A subject of the study, i.e. one of the medical conditions, therapies, devices, drugs, etc. investigated by the study.
  */
-class StudySubjectProperty extends Property
+class StudySubjectProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/studySubject';
     const PROPERTY_NAME = 'studySubject';

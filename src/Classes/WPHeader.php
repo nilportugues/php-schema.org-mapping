@@ -81,26 +81,17 @@ use NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty;
 use NilPortugues\SchemaOrg\Properties\VersionProperty;
 use NilPortugues\SchemaOrg\Properties\VideoProperty;
 use NilPortugues\SchemaOrg\Properties\WorkExampleProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes WPHeader.
  */
-class WPHeader
+class WPHeader extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/WPHeader';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/WPHeader';
 
     /**
      * @return Mapping

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The earliest date the package may arrive.
  */
-class ExpectedArrivalFromProperty extends Property
+class ExpectedArrivalFromProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/expectedArrivalFrom';
     const PROPERTY_NAME = 'expectedArrivalFrom';

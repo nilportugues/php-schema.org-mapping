@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type or material of the interior of the vehicle (e.g. synthetic fabric, leather, wood, etc.). While most interior types are characterized by the material used, an interior type can also be based on vehicle usage or target audience.
  */
-class VehicleInteriorTypeProperty extends Property
+class VehicleInteriorTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vehicleInteriorType';
     const PROPERTY_NAME = 'vehicleInteriorType';

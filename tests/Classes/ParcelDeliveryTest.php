@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ParcelDelivery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ParcelDeliveryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ParcelDeliveryTest.
  */
 class ParcelDeliveryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ParcelDelivery::schemaUrl(), "http://schema.org/ParcelDelivery");
+        $this->assertEquals(ParcelDelivery::schemaUrl(), 'http://schema.org/ParcelDelivery');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

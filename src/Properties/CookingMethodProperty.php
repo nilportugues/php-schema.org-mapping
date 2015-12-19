@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The method of cooking, such as Frying, Steaming, ...
  */
-class CookingMethodProperty extends Property
+class CookingMethodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/cookingMethod';
     const PROPERTY_NAME = 'cookingMethod';

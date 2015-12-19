@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A component test of the panel.
  */
-class SubTestProperty extends Property
+class SubTestProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/subTest';
     const PROPERTY_NAME = 'subTest';

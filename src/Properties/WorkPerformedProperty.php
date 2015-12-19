@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A work performed in some event, for example a play performed in a TheaterEvent.
  */
-class WorkPerformedProperty extends Property
+class WorkPerformedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/workPerformed';
     const PROPERTY_NAME = 'workPerformed';

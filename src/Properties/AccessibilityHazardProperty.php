@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A characteristic of the described resource that is physiologically dangerous to some users. Related to WCAG 2.0 guideline 2.3 (WebSchemas wiki lists possible values).
  */
-class AccessibilityHazardProperty extends Property
+class AccessibilityHazardProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/accessibilityHazard';
     const PROPERTY_NAME = 'accessibilityHazard';

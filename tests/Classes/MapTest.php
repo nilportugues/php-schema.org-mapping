@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Map;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MapTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MapTest.
  */
 class MapTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Map::schemaUrl(), "http://schema.org/Map");
+        $this->assertEquals(Map::schemaUrl(), 'http://schema.org/Map');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

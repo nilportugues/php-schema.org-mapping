@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Item(s) being shipped.
  */
-class ItemShippedProperty extends Property
+class ItemShippedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/itemShipped';
     const PROPERTY_NAME = 'itemShipped';

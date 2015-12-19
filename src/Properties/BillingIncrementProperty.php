@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * This property specifies the minimal quantity and rounding increment that will be the basis for the billing. The unit of measurement is specified by the unitCode property.
  */
-class BillingIncrementProperty extends Property
+class BillingIncrementProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/billingIncrement';
     const PROPERTY_NAME = 'billingIncrement';

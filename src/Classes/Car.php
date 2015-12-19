@@ -44,26 +44,17 @@ use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
 use NilPortugues\SchemaOrg\Properties\SkuProperty;
 use NilPortugues\SchemaOrg\Properties\WeightProperty;
 use NilPortugues\SchemaOrg\Properties\WidthProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Car.
  */
-class Car
+class Car extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Car';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Car';
 
     /**
      * @return Mapping

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type of service being offered, e.g. veterans' benefits, emergency relief, etc.
  */
-class ServiceTypeProperty extends Property
+class ServiceTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serviceType';
     const PROPERTY_NAME = 'serviceType';

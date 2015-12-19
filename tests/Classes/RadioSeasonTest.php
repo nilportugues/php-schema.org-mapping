@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RadioSeason;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RadioSeasonTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RadioSeasonTest.
  */
 class RadioSeasonTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RadioSeason::schemaUrl(), "http://schema.org/RadioSeason");
+        $this->assertEquals(RadioSeason::schemaUrl(), 'http://schema.org/RadioSeason');
     }
 
     public function testAboutWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The location where the NewsArticle was produced.
  */
-class DatelineProperty extends Property
+class DatelineProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/dateline';
     const PROPERTY_NAME = 'dateline';

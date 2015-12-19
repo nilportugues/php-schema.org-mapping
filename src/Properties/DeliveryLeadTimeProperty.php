@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The typical delay between the receipt of the order and the goods leaving the warehouse.
  */
-class DeliveryLeadTimeProperty extends Property
+class DeliveryLeadTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/deliveryLeadTime';
     const PROPERTY_NAME = 'deliveryLeadTime';

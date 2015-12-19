@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Campground;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CampgroundTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CampgroundTest.
  */
 class CampgroundTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Campground::schemaUrl(), "http://schema.org/Campground");
+        $this->assertEquals(Campground::schemaUrl(), 'http://schema.org/Campground');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of children staying in the unit.
  */
-class NumChildrenProperty extends Property
+class NumChildrenProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numChildren';
     const PROPERTY_NAME = 'numChildren';

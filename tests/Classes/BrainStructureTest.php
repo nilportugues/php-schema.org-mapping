@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BrainStructure;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BrainStructureTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BrainStructureTest.
  */
 class BrainStructureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BrainStructure::schemaUrl(), "http://schema.org/BrainStructure");
+        $this->assertEquals(BrainStructure::schemaUrl(), 'http://schema.org/BrainStructure');
     }
 
     public function testCodeWillReturnMappingObject()

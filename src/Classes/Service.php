@@ -36,26 +36,17 @@ use NilPortugues\SchemaOrg\Properties\ServiceAudienceProperty;
 use NilPortugues\SchemaOrg\Properties\ServiceOutputProperty;
 use NilPortugues\SchemaOrg\Properties\ServiceTypeProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Service.
  */
-class Service
+class Service extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Service';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Service';
 
     /**
      * @return Mapping

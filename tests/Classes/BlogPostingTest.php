@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\BlogPosting;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BlogPostingTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BlogPostingTest.
  */
 class BlogPostingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BlogPosting::schemaUrl(), "http://schema.org/BlogPosting");
+        $this->assertEquals(BlogPosting::schemaUrl(), 'http://schema.org/BlogPosting');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

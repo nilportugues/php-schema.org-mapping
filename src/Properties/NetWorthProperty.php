@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The total financial value of the person as calculated by subtracting assets from liabilities.
  */
-class NetWorthProperty extends Property
+class NetWorthProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/netWorth';
     const PROPERTY_NAME = 'netWorth';

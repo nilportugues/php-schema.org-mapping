@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A preventative therapy used to prevent an initial occurrence of the medical condition, such as vaccination.
  */
-class PrimaryPreventionProperty extends Property
+class PrimaryPreventionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/primaryPrevention';
     const PROPERTY_NAME = 'primaryPrevention';

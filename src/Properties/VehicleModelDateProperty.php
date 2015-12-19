@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The release date of a vehicle model (often used to differentiate versions of the same make and model).
  */
-class VehicleModelDateProperty extends Property
+class VehicleModelDateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vehicleModelDate';
     const PROPERTY_NAME = 'vehicleModelDate';

@@ -28,26 +28,17 @@ use NilPortugues\SchemaOrg\Properties\TicketedSeatProperty;
 use NilPortugues\SchemaOrg\Properties\TotalPriceProperty;
 use NilPortugues\SchemaOrg\Properties\UnderNameProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes Ticket.
  */
-class Ticket
+class Ticket extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/Ticket';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/Ticket';
 
     /**
      * @return Mapping

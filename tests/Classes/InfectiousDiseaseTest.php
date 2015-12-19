@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\InfectiousDisease;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InfectiousDiseaseTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes InfectiousDiseaseTest.
  */
 class InfectiousDiseaseTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InfectiousDisease::schemaUrl(), "http://schema.org/InfectiousDisease");
+        $this->assertEquals(InfectiousDisease::schemaUrl(), 'http://schema.org/InfectiousDisease');
     }
 
     public function testCodeWillReturnMappingObject()

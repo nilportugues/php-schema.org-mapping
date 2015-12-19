@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The website to access the service.
  */
-class ServiceUrlProperty extends Property
+class ServiceUrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serviceUrl';
     const PROPERTY_NAME = 'serviceUrl';

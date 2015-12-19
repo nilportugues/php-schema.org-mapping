@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).
  */
-class RequirementsProperty extends Property
+class RequirementsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/requirements';
     const PROPERTY_NAME = 'requirements';

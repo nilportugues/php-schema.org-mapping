@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GeoCoordinates;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GeoCoordinatesTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GeoCoordinatesTest.
  */
 class GeoCoordinatesTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GeoCoordinates::schemaUrl(), "http://schema.org/GeoCoordinates");
+        $this->assertEquals(GeoCoordinates::schemaUrl(), 'http://schema.org/GeoCoordinates');
     }
 
     public function testAddressWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The phone number to use to access the service.
  */
-class ServicePhoneProperty extends Property
+class ServicePhoneProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/servicePhone';
     const PROPERTY_NAME = 'servicePhone';

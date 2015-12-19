@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of employees in an organization e.g. business.
  */
-class NumberOfEmployeesProperty extends Property
+class NumberOfEmployeesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfEmployees';
     const PROPERTY_NAME = 'numberOfEmployees';

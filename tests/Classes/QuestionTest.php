@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Question;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes QuestionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes QuestionTest.
  */
 class QuestionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Question::schemaUrl(), "http://schema.org/Question");
+        $this->assertEquals(Question::schemaUrl(), 'http://schema.org/Question');
     }
 
     public function testAcceptedAnswerWillReturnMappingObject()

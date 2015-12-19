@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Media type (aka MIME format, see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information.
  */
-class FileFormatProperty extends Property
+class FileFormatProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/fileFormat';
     const PROPERTY_NAME = 'fileFormat';

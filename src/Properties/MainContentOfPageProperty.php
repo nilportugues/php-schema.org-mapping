@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates if this web page element is the main subject of the page.
  */
-class MainContentOfPageProperty extends Property
+class MainContentOfPageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/mainContentOfPage';
     const PROPERTY_NAME = 'mainContentOfPage';

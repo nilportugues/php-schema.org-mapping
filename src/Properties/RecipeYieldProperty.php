@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The quantity produced by the recipe (for example, number of people served, number of servings, etc).
  */
-class RecipeYieldProperty extends Property
+class RecipeYieldProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recipeYield';
     const PROPERTY_NAME = 'recipeYield';

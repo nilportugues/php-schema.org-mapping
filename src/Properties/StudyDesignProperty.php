@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifics about the observational study design (enumerated).
  */
-class StudyDesignProperty extends Property
+class StudyDesignProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/studyDesign';
     const PROPERTY_NAME = 'studyDesign';

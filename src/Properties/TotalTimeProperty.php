@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The total time it takes to prepare and cook the recipe, in ISO 8601 duration format.
  */
-class TotalTimeProperty extends Property
+class TotalTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/totalTime';
     const PROPERTY_NAME = 'totalTime';

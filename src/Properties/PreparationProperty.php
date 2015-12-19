@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Typical preparation that a patient must undergo before having the procedure performed.
  */
-class PreparationProperty extends Property
+class PreparationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/preparation';
     const PROPERTY_NAME = 'preparation';

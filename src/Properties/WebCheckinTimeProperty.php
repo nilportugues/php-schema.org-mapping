@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The time when a passenger can check into the flight online.
  */
-class WebCheckinTimeProperty extends Property
+class WebCheckinTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/webCheckinTime';
     const PROPERTY_NAME = 'webCheckinTime';

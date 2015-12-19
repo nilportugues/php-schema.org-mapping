@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The product that this structured value is referring to.
  */
-class TypeOfGoodProperty extends Property
+class TypeOfGoodProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/typeOfGood';
     const PROPERTY_NAME = 'typeOfGood';

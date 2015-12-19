@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Brewery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BreweryTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes BreweryTest.
  */
 class BreweryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Brewery::schemaUrl(), "http://schema.org/Brewery");
+        $this->assertEquals(Brewery::schemaUrl(), 'http://schema.org/Brewery');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

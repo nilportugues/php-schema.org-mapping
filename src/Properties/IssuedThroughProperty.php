@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The service through with the permit was granted.
  */
-class IssuedThroughProperty extends Property
+class IssuedThroughProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/issuedThrough';
     const PROPERTY_NAME = 'issuedThrough';

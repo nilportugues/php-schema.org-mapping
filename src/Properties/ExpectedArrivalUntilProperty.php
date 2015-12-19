@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The latest date the package may arrive.
  */
-class ExpectedArrivalUntilProperty extends Property
+class ExpectedArrivalUntilProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/expectedArrivalUntil';
     const PROPERTY_NAME = 'expectedArrivalUntil';

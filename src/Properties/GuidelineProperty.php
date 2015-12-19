@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A medical guideline related to this entity.
  */
-class GuidelineProperty extends Property
+class GuidelineProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/guideline';
     const PROPERTY_NAME = 'guideline';

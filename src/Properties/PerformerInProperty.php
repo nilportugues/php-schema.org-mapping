@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Event that this person is a performer or participant in.
  */
-class PerformerInProperty extends Property
+class PerformerInProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/performerIn';
     const PROPERTY_NAME = 'performerIn';

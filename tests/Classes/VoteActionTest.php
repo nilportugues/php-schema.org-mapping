@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\VoteAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VoteActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VoteActionTest.
  */
 class VoteActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VoteAction::schemaUrl(), "http://schema.org/VoteAction");
+        $this->assertEquals(VoteAction::schemaUrl(), 'http://schema.org/VoteAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

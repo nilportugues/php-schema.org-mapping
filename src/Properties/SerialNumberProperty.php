@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.
  */
-class SerialNumberProperty extends Property
+class SerialNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/serialNumber';
     const PROPERTY_NAME = 'serialNumber';

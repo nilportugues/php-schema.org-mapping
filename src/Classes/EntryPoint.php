@@ -27,26 +27,17 @@ use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
 use NilPortugues\SchemaOrg\Properties\SameAsProperty;
 use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\UrlTemplateProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes EntryPoint.
  */
-class EntryPoint
+class EntryPoint extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/EntryPoint';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/EntryPoint';
 
     /**
      * @return Mapping

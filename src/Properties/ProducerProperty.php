@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).
  */
-class ProducerProperty extends Property
+class ProducerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/producer';
     const PROPERTY_NAME = 'producer';

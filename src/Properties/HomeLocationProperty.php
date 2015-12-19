@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A contact location for a person's residence.
  */
-class HomeLocationProperty extends Property
+class HomeLocationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/homeLocation';
     const PROPERTY_NAME = 'homeLocation';

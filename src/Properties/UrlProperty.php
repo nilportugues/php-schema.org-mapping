@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * URL of the item.
  */
-class UrlProperty extends Property
+class UrlProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/url';
     const PROPERTY_NAME = 'url';

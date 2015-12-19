@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\GeneralContractor;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GeneralContractorTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes GeneralContractorTest.
  */
 class GeneralContractorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GeneralContractor::schemaUrl(), "http://schema.org/GeneralContractor");
+        $this->assertEquals(GeneralContractor::schemaUrl(), 'http://schema.org/GeneralContractor');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

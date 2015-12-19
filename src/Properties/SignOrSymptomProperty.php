@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sign or symptom of this condition. Signs are objective or physically observable manifestations of the medical condition while symptoms are the subjective experience of the medical condition.
  */
-class SignOrSymptomProperty extends Property
+class SignOrSymptomProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/signOrSymptom';
     const PROPERTY_NAME = 'signOrSymptom';

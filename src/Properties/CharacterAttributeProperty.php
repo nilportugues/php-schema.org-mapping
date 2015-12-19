@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A piece of data that represents a particular aspect of a fictional character (skill, power, character points, advantage, disadvantage).
  */
-class CharacterAttributeProperty extends Property
+class CharacterAttributeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/characterAttribute';
     const PROPERTY_NAME = 'characterAttribute';

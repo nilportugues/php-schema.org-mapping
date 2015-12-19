@@ -19,26 +19,17 @@ use NilPortugues\SchemaOrg\Properties\ElevationProperty;
 use NilPortugues\SchemaOrg\Properties\LineProperty;
 use NilPortugues\SchemaOrg\Properties\PolygonProperty;
 use NilPortugues\SchemaOrg\Properties\PostalCodeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes GeoShape.
  */
-class GeoShape
+class GeoShape extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/GeoShape';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/GeoShape';
 
     /**
      * @return Mapping

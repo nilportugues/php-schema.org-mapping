@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The post office box number for PO box addresses.
  */
-class PostOfficeBoxNumberProperty extends Property
+class PostOfficeBoxNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/postOfficeBoxNumber';
     const PROPERTY_NAME = 'postOfficeBoxNumber';

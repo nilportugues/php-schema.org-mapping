@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.
  */
-class ExpectsAcceptanceOfProperty extends Property
+class ExpectsAcceptanceOfProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/expectsAcceptanceOf';
     const PROPERTY_NAME = 'expectsAcceptanceOf';

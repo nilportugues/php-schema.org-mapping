@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MedicalEvidenceLevel;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalEvidenceLevelTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MedicalEvidenceLevelTest.
  */
 class MedicalEvidenceLevelTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalEvidenceLevel::schemaUrl(), "http://schema.org/MedicalEvidenceLevel");
+        $this->assertEquals(MedicalEvidenceLevel::schemaUrl(), 'http://schema.org/MedicalEvidenceLevel');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

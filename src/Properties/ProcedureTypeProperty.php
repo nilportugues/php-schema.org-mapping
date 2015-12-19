@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type of procedure, for example Surgical, Noninvasive, or Percutaneous.
  */
-class ProcedureTypeProperty extends Property
+class ProcedureTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/procedureType';
     const PROPERTY_NAME = 'procedureType';

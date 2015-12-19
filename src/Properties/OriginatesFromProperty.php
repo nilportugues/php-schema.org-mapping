@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The vasculature the lymphatic structure originates, or afferents, from.
  */
-class OriginatesFromProperty extends Property
+class OriginatesFromProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/originatesFrom';
     const PROPERTY_NAME = 'originatesFrom';

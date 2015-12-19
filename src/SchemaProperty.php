@@ -13,7 +13,7 @@ namespace NilPortugues\SchemaOrg;
 /**
  * Class Property.
  */
-abstract class Property
+abstract class SchemaProperty
 {
     const PROPERTY_NAME = '';
     const SCHEMA_URL = '';

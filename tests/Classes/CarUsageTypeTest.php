@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CarUsageType;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CarUsageTypeTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CarUsageTypeTest.
  */
 class CarUsageTypeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CarUsageType::schemaUrl(), "http://schema.org/CarUsageType");
+        $this->assertEquals(CarUsageType::schemaUrl(), 'http://schema.org/CarUsageType');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

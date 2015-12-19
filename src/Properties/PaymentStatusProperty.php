@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The status of payment; whether the invoice has been paid or not.
  */
-class PaymentStatusProperty extends Property
+class PaymentStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/paymentStatus';
     const PROPERTY_NAME = 'paymentStatus';

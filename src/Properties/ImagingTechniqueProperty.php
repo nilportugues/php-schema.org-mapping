@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Imaging technique used.
  */
-class ImagingTechniqueProperty extends Property
+class ImagingTechniqueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/imagingTechnique';
     const PROPERTY_NAME = 'imagingTechnique';

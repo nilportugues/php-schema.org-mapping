@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The geographic area associated with the audience.
  */
-class GeographicAreaProperty extends Property
+class GeographicAreaProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/geographicArea';
     const PROPERTY_NAME = 'geographicArea';

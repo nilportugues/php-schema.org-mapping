@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Audiences defined by a person's minimum age.
  */
-class RequiredMinAgeProperty extends Property
+class RequiredMinAgeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/requiredMinAge';
     const PROPERTY_NAME = 'requiredMinAge';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates a page (or other CreativeWork) for which this thing is the main entity being described.
  */
-class MainEntityOfPageProperty extends Property
+class MainEntityOfPageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/mainEntityOfPage';
     const PROPERTY_NAME = 'mainEntityOfPage';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A posting that is part of this blog.
  */
-class BlogPostProperty extends Property
+class BlogPostProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/blogPost';
     const PROPERTY_NAME = 'blogPost';

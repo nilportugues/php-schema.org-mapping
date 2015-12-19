@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * If this NewsArticle appears in print, this field indicates the name of the page on which the article is found. Please note that this field is intended for the exact page name (e.g. A5, B18).
  */
-class PrintPageProperty extends Property
+class PrintPageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/printPage';
     const PROPERTY_NAME = 'printPage';

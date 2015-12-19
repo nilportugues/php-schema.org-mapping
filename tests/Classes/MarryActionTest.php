@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MarryAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MarryActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MarryActionTest.
  */
 class MarryActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MarryAction::schemaUrl(), "http://schema.org/MarryAction");
+        $this->assertEquals(MarryAction::schemaUrl(), 'http://schema.org/MarryAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

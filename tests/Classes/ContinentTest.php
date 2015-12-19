@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Continent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ContinentTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ContinentTest.
  */
 class ContinentTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Continent::schemaUrl(), "http://schema.org/Continent");
+        $this->assertEquals(Continent::schemaUrl(), 'http://schema.org/Continent');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

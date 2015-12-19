@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The anatomical or organ system that this structure is part of.
  */
-class PartOfSystemProperty extends Property
+class PartOfSystemProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/partOfSystem';
     const PROPERTY_NAME = 'partOfSystem';

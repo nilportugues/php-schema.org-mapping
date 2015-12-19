@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The muscle whose action counteracts the specified muscle.
  */
-class AntagonistProperty extends Property
+class AntagonistProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/antagonist';
     const PROPERTY_NAME = 'antagonist';

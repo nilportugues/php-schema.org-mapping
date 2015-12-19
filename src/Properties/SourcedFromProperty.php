@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The neurological pathway that originates the neurons.
  */
-class SourcedFromProperty extends Property
+class SourcedFromProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sourcedFrom';
     const PROPERTY_NAME = 'sourcedFrom';

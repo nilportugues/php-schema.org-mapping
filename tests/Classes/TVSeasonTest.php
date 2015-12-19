@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TVSeason;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TVSeasonTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TVSeasonTest.
  */
 class TVSeasonTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TVSeason::schemaUrl(), "http://schema.org/TVSeason");
+        $this->assertEquals(TVSeason::schemaUrl(), 'http://schema.org/TVSeason');
     }
 
     public function testAboutWillReturnMappingObject()

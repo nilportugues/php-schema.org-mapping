@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of object. A question.
  */
-class QuestionProperty extends Property
+class QuestionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/question';
     const PROPERTY_NAME = 'question';

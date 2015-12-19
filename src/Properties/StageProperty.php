@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The stage of the condition, if applicable.
  */
-class StageProperty extends Property
+class StageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/stage';
     const PROPERTY_NAME = 'stage';

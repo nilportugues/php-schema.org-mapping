@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Order(s) related to this Invoice. One or more Orders may be combined into a single Invoice.
  */
-class ReferencesOrderProperty extends Property
+class ReferencesOrderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/referencesOrder';
     const PROPERTY_NAME = 'referencesOrder';

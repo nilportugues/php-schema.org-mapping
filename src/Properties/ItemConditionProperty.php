@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.
  */
-class ItemConditionProperty extends Property
+class ItemConditionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/itemCondition';
     const PROPERTY_NAME = 'itemCondition';

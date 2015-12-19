@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The hours during which this service or contact is available.
  */
-class HoursAvailableProperty extends Property
+class HoursAvailableProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/hoursAvailable';
     const PROPERTY_NAME = 'hoursAvailable';

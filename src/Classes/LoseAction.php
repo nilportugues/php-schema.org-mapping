@@ -23,26 +23,17 @@ use NilPortugues\SchemaOrg\Properties\ResultProperty;
 use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 use NilPortugues\SchemaOrg\Properties\TargetProperty;
 use NilPortugues\SchemaOrg\Properties\WinnerProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes LoseAction.
  */
-class LoseAction
+class LoseAction extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/LoseAction';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/LoseAction';
 
     /**
      * @return Mapping

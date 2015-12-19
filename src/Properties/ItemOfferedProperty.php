@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The item being offered.
  */
-class ItemOfferedProperty extends Property
+class ItemOfferedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/itemOffered';
     const PROPERTY_NAME = 'itemOffered';

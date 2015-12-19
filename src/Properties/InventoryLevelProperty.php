@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The current approximate inventory level for the item or items.
  */
-class InventoryLevelProperty extends Property
+class InventoryLevelProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/inventoryLevel';
     const PROPERTY_NAME = 'inventoryLevel';

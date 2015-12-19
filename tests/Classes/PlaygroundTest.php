@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Playground;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PlaygroundTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PlaygroundTest.
  */
 class PlaygroundTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Playground::schemaUrl(), "http://schema.org/Playground");
+        $this->assertEquals(Playground::schemaUrl(), 'http://schema.org/Playground');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

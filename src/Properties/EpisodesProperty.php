@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An episode of a TV/radio series or season.
  */
-class EpisodesProperty extends Property
+class EpisodesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/episodes';
     const PROPERTY_NAME = 'episodes';

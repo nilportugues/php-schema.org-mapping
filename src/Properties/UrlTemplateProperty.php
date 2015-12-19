@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A url template (RFC6570) that will be used to construct the target of the execution of the action.
  */
-class UrlTemplateProperty extends Property
+class UrlTemplateProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/urlTemplate';
     const PROPERTY_NAME = 'urlTemplate';

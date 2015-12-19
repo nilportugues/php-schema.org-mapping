@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Preschool;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PreschoolTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PreschoolTest.
  */
 class PreschoolTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Preschool::schemaUrl(), "http://schema.org/Preschool");
+        $this->assertEquals(Preschool::schemaUrl(), 'http://schema.org/Preschool');
     }
 
     public function testAddressWillReturnMappingObject()

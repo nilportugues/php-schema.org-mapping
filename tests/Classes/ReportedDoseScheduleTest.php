@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ReportedDoseSchedule;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReportedDoseScheduleTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ReportedDoseScheduleTest.
  */
 class ReportedDoseScheduleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReportedDoseSchedule::schemaUrl(), "http://schema.org/ReportedDoseSchedule");
+        $this->assertEquals(ReportedDoseSchedule::schemaUrl(), 'http://schema.org/ReportedDoseSchedule');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

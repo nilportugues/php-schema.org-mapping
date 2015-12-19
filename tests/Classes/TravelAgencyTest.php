@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\TravelAgency;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TravelAgencyTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes TravelAgencyTest.
  */
 class TravelAgencyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TravelAgency::schemaUrl(), "http://schema.org/TravelAgency");
+        $this->assertEquals(TravelAgency::schemaUrl(), 'http://schema.org/TravelAgency');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

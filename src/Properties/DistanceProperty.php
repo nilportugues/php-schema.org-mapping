@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The distance travelled, e.g. exercising or travelling.
  */
-class DistanceProperty extends Property
+class DistanceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/distance';
     const PROPERTY_NAME = 'distance';

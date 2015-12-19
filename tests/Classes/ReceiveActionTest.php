@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ReceiveAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReceiveActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ReceiveActionTest.
  */
 class ReceiveActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReceiveAction::schemaUrl(), "http://schema.org/ReceiveAction");
+        $this->assertEquals(ReceiveAction::schemaUrl(), 'http://schema.org/ReceiveAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

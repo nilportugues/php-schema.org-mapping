@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Landform;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LandformTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LandformTest.
  */
 class LandformTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Landform::schemaUrl(), "http://schema.org/Landform");
+        $this->assertEquals(Landform::schemaUrl(), 'http://schema.org/Landform');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

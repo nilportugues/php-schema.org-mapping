@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PsychologicalTreatment;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PsychologicalTreatmentTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PsychologicalTreatmentTest.
  */
 class PsychologicalTreatmentTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PsychologicalTreatment::schemaUrl(), "http://schema.org/PsychologicalTreatment");
+        $this->assertEquals(PsychologicalTreatment::schemaUrl(), 'http://schema.org/PsychologicalTreatment');
     }
 
     public function testCodeWillReturnMappingObject()

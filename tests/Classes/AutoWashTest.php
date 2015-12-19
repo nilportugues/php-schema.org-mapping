@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AutoWash;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AutoWashTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AutoWashTest.
  */
 class AutoWashTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AutoWash::schemaUrl(), "http://schema.org/AutoWash");
+        $this->assertEquals(AutoWash::schemaUrl(), 'http://schema.org/AutoWash');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

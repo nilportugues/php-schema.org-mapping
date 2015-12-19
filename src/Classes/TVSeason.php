@@ -92,26 +92,17 @@ use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\Properties\VersionProperty;
 use NilPortugues\SchemaOrg\Properties\VideoProperty;
 use NilPortugues\SchemaOrg\Properties\WorkExampleProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes TVSeason.
  */
-class TVSeason
+class TVSeason extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/TVSeason';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/TVSeason';
 
     /**
      * @return Mapping

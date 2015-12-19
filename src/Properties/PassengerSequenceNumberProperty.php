@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The passenger's sequence number as assigned by the airline.
  */
-class PassengerSequenceNumberProperty extends Property
+class PassengerSequenceNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/passengerSequenceNumber';
     const PROPERTY_NAME = 'passengerSequenceNumber';

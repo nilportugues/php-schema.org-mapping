@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Drugs that affect the test's results.
  */
-class AffectedByProperty extends Property
+class AffectedByProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/affectedBy';
     const PROPERTY_NAME = 'affectedBy';

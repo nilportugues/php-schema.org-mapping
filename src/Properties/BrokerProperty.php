@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.
  */
-class BrokerProperty extends Property
+class BrokerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/broker';
     const PROPERTY_NAME = 'broker';

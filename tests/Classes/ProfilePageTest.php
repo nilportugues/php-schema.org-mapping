@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ProfilePage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ProfilePageTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ProfilePageTest.
  */
 class ProfilePageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ProfilePage::schemaUrl(), "http://schema.org/ProfilePage");
+        $this->assertEquals(ProfilePage::schemaUrl(), 'http://schema.org/ProfilePage');
     }
 
     public function testAboutWillReturnMappingObject()

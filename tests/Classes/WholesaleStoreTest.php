@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\WholesaleStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WholesaleStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes WholesaleStoreTest.
  */
 class WholesaleStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WholesaleStore::schemaUrl(), "http://schema.org/WholesaleStore");
+        $this->assertEquals(WholesaleStore::schemaUrl(), 'http://schema.org/WholesaleStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

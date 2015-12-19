@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\VisualArtsEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VisualArtsEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes VisualArtsEventTest.
  */
 class VisualArtsEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VisualArtsEvent::schemaUrl(), "http://schema.org/VisualArtsEvent");
+        $this->assertEquals(VisualArtsEvent::schemaUrl(), 'http://schema.org/VisualArtsEvent');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

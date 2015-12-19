@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specific physiologic risks associated to the plan.
  */
-class RisksProperty extends Property
+class RisksProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/risks';
     const PROPERTY_NAME = 'risks';

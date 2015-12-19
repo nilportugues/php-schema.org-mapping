@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A medical specialty of the provider.
  */
-class MedicalSpecialtyProperty extends Property
+class MedicalSpecialtyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/medicalSpecialty';
     const PROPERTY_NAME = 'medicalSpecialty';

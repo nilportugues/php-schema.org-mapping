@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Type of ordering (e.g. Ascending, Descending, Unordered).
  */
-class ItemListOrderProperty extends Property
+class ItemListOrderProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/itemListOrder';
     const PROPERTY_NAME = 'itemListOrder';

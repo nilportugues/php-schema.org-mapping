@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The participant/person/organization that bought the object.
  */
-class BuyerProperty extends Property
+class BuyerProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/buyer';
     const PROPERTY_NAME = 'buyer';

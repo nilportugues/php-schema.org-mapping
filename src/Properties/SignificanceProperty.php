@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The significance associated with the superficial anatomy; as an example, how characteristics of the superficial anatomy can suggest underlying medical conditions or courses of treatment.
  */
-class SignificanceProperty extends Property
+class SignificanceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/significance';
     const PROPERTY_NAME = 'significance';

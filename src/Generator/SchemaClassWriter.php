@@ -57,6 +57,7 @@ PHP;
             }
 
             $useProperties[] = 'use NilPortugues\SchemaOrg\Mapping;';
+            $useProperties[] = 'use NilPortugues\SchemaOrg\SchemaClass;';
 
             sort($useProperties, SORT_REGULAR);
             $useProperties = implode("\n", array_unique($useProperties));
@@ -86,22 +87,12 @@ namespace NilPortugues\SchemaOrg\Classes;
  *
  * {$schemaData['doc']}
  */
-class {$schemaData['name']}
+class {$schemaData['name']} extends SchemaClass
 {
     /**
      * @var string
      */
-    private static \$schemaUrl = "{$schemaData['url']}";
-
-   /**
-    * Returns the URL of the current definition at http://schema.org
-    *
-    * @return string
-    */
-    public static function schemaUrl()
-    {
-        return self::\$schemaUrl;
-    }
+    protected static \$schemaUrl = "{$schemaData['url']}";
 
 $methods
 }

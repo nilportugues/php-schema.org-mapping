@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\OutletStore;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OutletStoreTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes OutletStoreTest.
  */
 class OutletStoreTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(OutletStore::schemaUrl(), "http://schema.org/OutletStore");
+        $this->assertEquals(OutletStore::schemaUrl(), 'http://schema.org/OutletStore');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

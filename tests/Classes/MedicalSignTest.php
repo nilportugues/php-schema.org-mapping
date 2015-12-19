@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MedicalSign;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalSignTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MedicalSignTest.
  */
 class MedicalSignTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalSign::schemaUrl(), "http://schema.org/MedicalSign");
+        $this->assertEquals(MedicalSign::schemaUrl(), 'http://schema.org/MedicalSign');
     }
 
     public function testCodeWillReturnMappingObject()

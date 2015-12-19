@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The anatomy of the underlying organ system or structures associated with this entity.
  */
-class AssociatedAnatomyProperty extends Property
+class AssociatedAnatomyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/associatedAnatomy';
     const PROPERTY_NAME = 'associatedAnatomy';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.
  */
-class GlobalLocationNumberProperty extends Property
+class GlobalLocationNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/globalLocationNumber';
     const PROPERTY_NAME = 'globalLocationNumber';

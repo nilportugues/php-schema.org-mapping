@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An organization that this person is affiliated with. For example, a school/university, a club, or a team.
  */
-class AffiliationProperty extends Property
+class AffiliationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/affiliation';
     const PROPERTY_NAME = 'affiliation';

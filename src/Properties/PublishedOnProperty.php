@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A broadcast service associated with the publication event.
  */
-class PublishedOnProperty extends Property
+class PublishedOnProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/publishedOn';
     const PROPERTY_NAME = 'publishedOn';

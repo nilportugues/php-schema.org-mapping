@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicate how many people can play this game (minimum, maximum, or range).
  */
-class NumberOfPlayersProperty extends Property
+class NumberOfPlayersProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/numberOfPlayers';
     const PROPERTY_NAME = 'numberOfPlayers';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The unit in which the drug is measured, e.g. '5 mg tablet'.
  */
-class DrugUnitProperty extends Property
+class DrugUnitProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/drugUnit';
     const PROPERTY_NAME = 'drugUnit';

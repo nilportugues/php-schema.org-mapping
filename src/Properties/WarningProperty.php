@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Any FDA or other warnings about the drug (text or URL).
  */
-class WarningProperty extends Property
+class WarningProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/warning';
     const PROPERTY_NAME = 'warning';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The International Standard Serial Number (ISSN) that identifies this periodical. You can repeat this property to (for example) identify different formats of this periodical.
  */
-class IssnProperty extends Property
+class IssnProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/issn';
     const PROPERTY_NAME = 'issn';

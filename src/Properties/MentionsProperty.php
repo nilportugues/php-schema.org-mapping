@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.
  */
-class MentionsProperty extends Property
+class MentionsProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/mentions';
     const PROPERTY_NAME = 'mentions';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Nationality of the person.
  */
-class NationalityProperty extends Property
+class NationalityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/nationality';
     const PROPERTY_NAME = 'nationality';

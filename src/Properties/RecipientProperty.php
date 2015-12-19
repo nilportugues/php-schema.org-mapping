@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of participant. The participant who is at the receiving end of the action.
  */
-class RecipientProperty extends Property
+class RecipientProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/recipient';
     const PROPERTY_NAME = 'recipient';

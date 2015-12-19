@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\AnimalShelter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AnimalShelterTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes AnimalShelterTest.
  */
 class AnimalShelterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AnimalShelter::schemaUrl(), "http://schema.org/AnimalShelter");
+        $this->assertEquals(AnimalShelter::schemaUrl(), 'http://schema.org/AnimalShelter');
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()

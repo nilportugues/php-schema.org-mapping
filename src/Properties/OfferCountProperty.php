@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of offers for the product.
  */
-class OfferCountProperty extends Property
+class OfferCountProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/offerCount';
     const PROPERTY_NAME = 'offerCount';

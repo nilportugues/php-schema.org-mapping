@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The identifier for the account the payment will be applied to.
  */
-class AccountIdProperty extends Property
+class AccountIdProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/accountId';
     const PROPERTY_NAME = 'accountId';

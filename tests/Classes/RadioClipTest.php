@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\RadioClip;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RadioClipTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes RadioClipTest.
  */
 class RadioClipTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RadioClip::schemaUrl(), "http://schema.org/RadioClip");
+        $this->assertEquals(RadioClip::schemaUrl(), 'http://schema.org/RadioClip');
     }
 
     public function testAboutWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Recommended intake of this supplement for a given population as defined by a specific recommending authority.
  */
-class MaximumIntakeProperty extends Property
+class MaximumIntakeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/maximumIntake';
     const PROPERTY_NAME = 'maximumIntake';

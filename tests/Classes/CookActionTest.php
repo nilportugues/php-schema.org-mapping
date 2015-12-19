@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\CookAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CookActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes CookActionTest.
  */
 class CookActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CookAction::schemaUrl(), "http://schema.org/CookAction");
+        $this->assertEquals(CookAction::schemaUrl(), 'http://schema.org/CookAction');
     }
 
     public function testActionStatusWillReturnMappingObject()

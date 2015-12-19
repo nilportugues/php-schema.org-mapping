@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The location where the CreativeWork was created, which may not be the same as the location depicted in the CreativeWork.
  */
-class LocationCreatedProperty extends Property
+class LocationCreatedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/locationCreated';
     const PROPERTY_NAME = 'locationCreated';

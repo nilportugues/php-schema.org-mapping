@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LodgingReservation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LodgingReservationTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LodgingReservationTest.
  */
 class LodgingReservationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LodgingReservation::schemaUrl(), "http://schema.org/LodgingReservation");
+        $this->assertEquals(LodgingReservation::schemaUrl(), 'http://schema.org/LodgingReservation');
     }
 
     public function testCheckinTimeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The lowest price of all offers available.
  */
-class LowPriceProperty extends Property
+class LowPriceProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/lowPrice';
     const PROPERTY_NAME = 'lowPrice';

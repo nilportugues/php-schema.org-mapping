@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Comments, typically from users.
  */
-class CommentProperty extends Property
+class CommentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/comment';
     const PROPERTY_NAME = 'comment';

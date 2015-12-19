@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ConsumeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ConsumeActionTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ConsumeActionTest.
  */
 class ConsumeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ConsumeAction::schemaUrl(), "http://schema.org/ConsumeAction");
+        $this->assertEquals(ConsumeAction::schemaUrl(), 'http://schema.org/ConsumeAction');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

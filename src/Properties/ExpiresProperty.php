@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Date the content expires and is no longer useful or available. Useful for videos.
  */
-class ExpiresProperty extends Property
+class ExpiresProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/expires';
     const PROPERTY_NAME = 'expires';

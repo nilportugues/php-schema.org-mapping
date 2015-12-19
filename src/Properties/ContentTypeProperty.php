@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The supported content type(s) for an EntryPoint response.
  */
-class ContentTypeProperty extends Property
+class ContentTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/contentType';
     const PROPERTY_NAME = 'contentType';

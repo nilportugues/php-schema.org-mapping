@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The date that payment is due.
  */
-class PaymentDueProperty extends Property
+class PaymentDueProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/paymentDue';
     const PROPERTY_NAME = 'paymentDue';

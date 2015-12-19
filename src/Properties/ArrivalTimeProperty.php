@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The expected arrival time.
  */
-class ArrivalTimeProperty extends Property
+class ArrivalTimeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/arrivalTime';
     const PROPERTY_NAME = 'arrivalTime';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\ServiceChannel;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ServiceChannelTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes ServiceChannelTest.
  */
 class ServiceChannelTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ServiceChannel::schemaUrl(), "http://schema.org/ServiceChannel");
+        $this->assertEquals(ServiceChannel::schemaUrl(), 'http://schema.org/ServiceChannel');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

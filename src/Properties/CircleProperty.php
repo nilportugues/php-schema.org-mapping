@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.
  */
-class CircleProperty extends Property
+class CircleProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/circle';
     const PROPERTY_NAME = 'circle';

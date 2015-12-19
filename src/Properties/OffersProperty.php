@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.
  */
-class OffersProperty extends Property
+class OffersProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/offers';
     const PROPERTY_NAME = 'offers';

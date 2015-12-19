@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The type of component used for transmitting the power from a rotating power source to the wheels or other relevant component(s) ("gearbox" for cars).
  */
-class VehicleTransmissionProperty extends Property
+class VehicleTransmissionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vehicleTransmission';
     const PROPERTY_NAME = 'vehicleTransmission';

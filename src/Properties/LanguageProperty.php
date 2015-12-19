@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A sub property of instrument. The language used on this action.
  */
-class LanguageProperty extends Property
+class LanguageProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/language';
     const PROPERTY_NAME = 'language';

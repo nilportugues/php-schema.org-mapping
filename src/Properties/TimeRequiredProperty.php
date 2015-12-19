@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience, e.g. 'P30M', 'P1H25M'.
  */
-class TimeRequiredProperty extends Property
+class TimeRequiredProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/timeRequired';
     const PROPERTY_NAME = 'timeRequired';

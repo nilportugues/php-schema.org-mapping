@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies a regular expression for testing literal values according to the HTML spec.
  */
-class ValuePatternProperty extends Property
+class ValuePatternProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/valuePattern';
     const PROPERTY_NAME = 'valuePattern';

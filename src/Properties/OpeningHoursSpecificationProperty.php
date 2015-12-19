@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The opening hours of a certain place.
  */
-class OpeningHoursSpecificationProperty extends Property
+class OpeningHoursSpecificationProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/openingHoursSpecification';
     const PROPERTY_NAME = 'openingHoursSpecification';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\SkiResort;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SkiResortTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes SkiResortTest.
  */
 class SkiResortTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SkiResort::schemaUrl(), "http://schema.org/SkiResort");
+        $this->assertEquals(SkiResort::schemaUrl(), 'http://schema.org/SkiResort');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Position of the episode within an ordered group of episodes.
  */
-class EpisodeNumberProperty extends Property
+class EpisodeNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/episodeNumber';
     const PROPERTY_NAME = 'episodeNumber';

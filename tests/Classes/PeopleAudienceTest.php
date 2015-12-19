@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\PeopleAudience;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PeopleAudienceTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PeopleAudienceTest.
  */
 class PeopleAudienceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PeopleAudience::schemaUrl(), "http://schema.org/PeopleAudience");
+        $this->assertEquals(PeopleAudience::schemaUrl(), 'http://schema.org/PeopleAudience');
     }
 
     public function testHealthConditionWillReturnMappingObject()

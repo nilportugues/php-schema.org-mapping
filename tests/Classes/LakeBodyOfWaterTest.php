@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LakeBodyOfWater;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LakeBodyOfWaterTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LakeBodyOfWaterTest.
  */
 class LakeBodyOfWaterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LakeBodyOfWater::schemaUrl(), "http://schema.org/LakeBodyOfWater");
+        $this->assertEquals(LakeBodyOfWater::schemaUrl(), 'http://schema.org/LakeBodyOfWater');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A CreativeWork such as an image, video, or audio clip shared as part of this posting.
  */
-class SharedContentProperty extends Property
+class SharedContentProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/sharedContent';
     const PROPERTY_NAME = 'sharedContent';

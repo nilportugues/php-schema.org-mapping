@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A colleague of the person.
  */
-class ColleaguesProperty extends Property
+class ColleaguesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/colleagues';
     const PROPERTY_NAME = 'colleagues';

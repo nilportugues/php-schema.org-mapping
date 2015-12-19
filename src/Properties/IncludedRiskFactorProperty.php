@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A modifiable or non-modifiable risk factor included in the calculation, e.g. age, coexisting condition.
  */
-class IncludedRiskFactorProperty extends Property
+class IncludedRiskFactorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/includedRiskFactor';
     const PROPERTY_NAME = 'includedRiskFactor';

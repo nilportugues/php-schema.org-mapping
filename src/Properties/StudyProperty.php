@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A medical study or trial related to this entity.
  */
-class StudyProperty extends Property
+class StudyProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/study';
     const PROPERTY_NAME = 'study';

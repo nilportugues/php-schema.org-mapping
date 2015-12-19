@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A possible complication and/or side effect of this therapy. If it is known that an adverse outcome is serious (resulting in death, disability, or permanent damage; requiring hospitalization; or is otherwise life-threatening or requires immediate medical attention), tag it as a seriouseAdverseOutcome instead.
  */
-class AdverseOutcomeProperty extends Property
+class AdverseOutcomeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/adverseOutcome';
     const PROPERTY_NAME = 'adverseOutcome';

@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\LiteraryEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LiteraryEventTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes LiteraryEventTest.
  */
 class LiteraryEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LiteraryEvent::schemaUrl(), "http://schema.org/LiteraryEvent");
+        $this->assertEquals(LiteraryEvent::schemaUrl(), 'http://schema.org/LiteraryEvent');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

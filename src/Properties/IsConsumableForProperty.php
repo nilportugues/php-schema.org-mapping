@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A pointer to another product (or multiple products) for which this product is a consumable.
  */
-class IsConsumableForProperty extends Property
+class IsConsumableForProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/isConsumableFor';
     const PROPERTY_NAME = 'isConsumableFor';

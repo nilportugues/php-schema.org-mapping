@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\HVACBusiness;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HVACBusinessTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes HVACBusinessTest.
  */
 class HVACBusinessTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HVACBusiness::schemaUrl(), "http://schema.org/HVACBusiness");
+        $this->assertEquals(HVACBusiness::schemaUrl(), 'http://schema.org/HVACBusiness');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

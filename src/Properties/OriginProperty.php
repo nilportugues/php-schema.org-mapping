@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The place or point where a muscle arises.
  */
-class OriginProperty extends Property
+class OriginProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/origin';
     const PROPERTY_NAME = 'origin';

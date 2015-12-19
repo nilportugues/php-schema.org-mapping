@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The number of calories.
  */
-class CaloriesProperty extends Property
+class CaloriesProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/calories';
     const PROPERTY_NAME = 'calories';

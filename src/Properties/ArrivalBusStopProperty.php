@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The stop or station from which the bus arrives.
  */
-class ArrivalBusStopProperty extends Property
+class ArrivalBusStopProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/arrivalBusStop';
     const PROPERTY_NAME = 'arrivalBusStop';

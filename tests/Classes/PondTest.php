@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\Pond;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PondTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes PondTest.
  */
 class PondTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Pond::schemaUrl(), "http://schema.org/Pond");
+        $this->assertEquals(Pond::schemaUrl(), 'http://schema.org/Pond');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

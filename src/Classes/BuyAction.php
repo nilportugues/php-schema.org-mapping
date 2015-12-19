@@ -25,26 +25,17 @@ use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 use NilPortugues\SchemaOrg\Properties\TargetProperty;
 use NilPortugues\SchemaOrg\Properties\VendorProperty;
 use NilPortugues\SchemaOrg\Properties\WarrantyPromiseProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes BuyAction.
  */
-class BuyAction
+class BuyAction extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/BuyAction';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/BuyAction';
 
     /**
      * @return Mapping

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The Vehicle Identification Number (VIN) is a unique serial number used by the automotive industry to identify individual motor vehicles.
  */
-class VinProperty extends Property
+class VinProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/vehicleIdentificationNumber';
     const PROPERTY_NAME = 'vin';

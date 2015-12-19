@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * A number that confirms the given order or payment has been received.
  */
-class ConfirmationNumberProperty extends Property
+class ConfirmationNumberProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/confirmationNumber';
     const PROPERTY_NAME = 'confirmationNumber';

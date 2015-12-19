@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The movie presented during this event.
  */
-class WorkPresentedProperty extends Property
+class WorkPresentedProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/workPresented';
     const PROPERTY_NAME = 'workPresented';

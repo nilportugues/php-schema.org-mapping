@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.
  */
-class CreatorProperty extends Property
+class CreatorProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/creator';
     const PROPERTY_NAME = 'creator';

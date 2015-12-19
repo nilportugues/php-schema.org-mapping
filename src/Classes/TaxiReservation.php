@@ -14,26 +14,17 @@ use NilPortugues\SchemaOrg\Mapping;
 use NilPortugues\SchemaOrg\Properties\PartySizeProperty;
 use NilPortugues\SchemaOrg\Properties\PickupLocationProperty;
 use NilPortugues\SchemaOrg\Properties\PickupTimeProperty;
+use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
  * Classes TaxiReservation.
  */
-class TaxiReservation
+class TaxiReservation extends SchemaClass
 {
     /**
      * @var string
      */
-    private static $schemaUrl = 'http://schema.org/TaxiReservation';
-
-    /**
-     * Returns the URL of the current definition at http://schema.org.
-     *
-     * @return string
-     */
-    public static function schemaUrl()
-    {
-        return self::$schemaUrl;
-    }
+    protected static $schemaUrl = 'http://schema.org/TaxiReservation';
 
     /**
      * @return Mapping

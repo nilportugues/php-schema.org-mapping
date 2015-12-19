@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\UserBlocks;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserBlocksTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes UserBlocksTest.
  */
 class UserBlocksTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserBlocks::schemaUrl(), "http://schema.org/UserBlocks");
+        $this->assertEquals(UserBlocks::schemaUrl(), 'http://schema.org/UserBlocks');
     }
 
     public function testAggregateRatingWillReturnMappingObject()

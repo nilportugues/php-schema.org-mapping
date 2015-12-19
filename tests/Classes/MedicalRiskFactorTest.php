@@ -14,14 +14,13 @@ use NilPortugues\SchemaOrg\Classes\MedicalRiskFactor;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalRiskFactorTest
- * @package NilPortugues\Tests\SchemaOrg\Classes
+ * Classes MedicalRiskFactorTest.
  */
 class MedicalRiskFactorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalRiskFactor::schemaUrl(), "http://schema.org/MedicalRiskFactor");
+        $this->assertEquals(MedicalRiskFactor::schemaUrl(), 'http://schema.org/MedicalRiskFactor');
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

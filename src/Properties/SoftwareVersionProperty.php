@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Version of the software instance.
  */
-class SoftwareVersionProperty extends Property
+class SoftwareVersionProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/softwareVersion';
     const PROPERTY_NAME = 'softwareVersion';

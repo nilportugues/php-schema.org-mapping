@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The predominant mode of learning supported by the learning resource. Acceptable values are 'active', 'expositive', or 'mixed'.
  */
-class InteractivityTypeProperty extends Property
+class InteractivityTypeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/interactivityType';
     const PROPERTY_NAME = 'interactivityType';

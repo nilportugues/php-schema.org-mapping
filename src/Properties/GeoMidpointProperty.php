@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates the GeoCoordinates at the centre of a GeoShape e.g. GeoCircle.
  */
-class GeoMidpointProperty extends Property
+class GeoMidpointProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/geoMidpoint';
     const PROPERTY_NAME = 'geoMidpoint';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Indicates whether this drug is available by prescription or over-the-counter.
  */
-class PrescriptionStatusProperty extends Property
+class PrescriptionStatusProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/prescriptionStatus';
     const PROPERTY_NAME = 'prescriptionStatus';

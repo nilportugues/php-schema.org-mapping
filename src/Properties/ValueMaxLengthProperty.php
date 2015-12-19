@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Specifies the allowed range for number of characters in a literal value.
  */
-class ValueMaxLengthProperty extends Property
+class ValueMaxLengthProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/valueMaxLength';
     const PROPERTY_NAME = 'valueMaxLength';

@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Password, PIN, or access code needed for delivery (e.g. from a locker).
  */
-class AccessCodeProperty extends Property
+class AccessCodeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/accessCode';
     const PROPERTY_NAME = 'accessCode';

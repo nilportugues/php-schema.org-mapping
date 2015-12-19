@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * The place(s) from which the offer can be obtained (e.g. store locations).
  */
-class AvailableAtOrFromProperty extends Property
+class AvailableAtOrFromProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/availableAtOrFrom';
     const PROPERTY_NAME = 'availableAtOrFrom';

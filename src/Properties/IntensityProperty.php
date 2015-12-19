@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.
  */
-class IntensityProperty extends Property
+class IntensityProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/intensity';
     const PROPERTY_NAME = 'intensity';

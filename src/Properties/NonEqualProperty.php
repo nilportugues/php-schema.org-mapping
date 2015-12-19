@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * This ordering relation for qualitative values indicates that the subject is not equal to the object.
  */
-class NonEqualProperty extends Property
+class NonEqualProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/nonEqual';
     const PROPERTY_NAME = 'nonEqual';

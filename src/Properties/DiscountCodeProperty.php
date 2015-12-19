@@ -10,12 +10,12 @@
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\Property;
+use NilPortugues\SchemaOrg\SchemaProperty;
 
 /**
  * Code used to redeem a discount.
  */
-class DiscountCodeProperty extends Property
+class DiscountCodeProperty extends SchemaProperty
 {
     const SCHEMA_URL = 'http://schema.org/discountCode';
     const PROPERTY_NAME = 'discountCode';
