@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Product;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ProductTest.
+ * Classes ProductTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ProductTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Product::schemaUrl(), 'http://schema.org/Product');
+        $this->assertEquals(Product::schemaUrl(), "http://schema.org/Product");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
@@ -28,9 +29,19 @@ class ProductTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Product::additionalProperty());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Product::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::alternateName());
     }
 
     public function testAudienceWillReturnMappingObject()
@@ -68,6 +79,11 @@ class ProductTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Product::depth());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::description());
+    }
+
     public function testGtin12WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Product::gtin12());
@@ -91,6 +107,11 @@ class ProductTest extends \PHPUnit_Framework_TestCase
     public function testHeightWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Product::height());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::image());
     }
 
     public function testIsAccessoryOrSparePartForWillReturnMappingObject()
@@ -123,6 +144,11 @@ class ProductTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Product::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::mainEntityOfPage());
+    }
+
     public function testManufacturerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Product::manufacturer());
@@ -138,9 +164,19 @@ class ProductTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Product::mpn());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::name());
+    }
+
     public function testOffersWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Product::offers());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::potentialAction());
     }
 
     public function testProductIDWillReturnMappingObject()
@@ -173,9 +209,19 @@ class ProductTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Product::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::sameAs());
+    }
+
     public function testSkuWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Product::sku());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Product::url());
     }
 
     public function testWeightWillReturnMappingObject()

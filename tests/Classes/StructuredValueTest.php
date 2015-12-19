@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\StructuredValue;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes StructuredValueTest.
+ * Classes StructuredValueTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class StructuredValueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(StructuredValue::schemaUrl(), 'http://schema.org/StructuredValue');
+        $this->assertEquals(StructuredValue::schemaUrl(), "http://schema.org/StructuredValue");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

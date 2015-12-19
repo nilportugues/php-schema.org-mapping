@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\CollectionPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CollectionPageTest.
+ * Classes CollectionPageTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CollectionPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CollectionPage::schemaUrl(), 'http://schema.org/CollectionPage');
+        $this->assertEquals(CollectionPage::schemaUrl(), "http://schema.org/CollectionPage");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollectionPage::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -91,6 +102,11 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
     public function testAwardsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::awards());
+    }
+
+    public function testBreadcrumbWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::breadcrumb());
     }
 
     public function testCharacterWillReturnMappingObject()
@@ -158,6 +174,11 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollectionPage::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::discussionUrl());
@@ -213,6 +234,11 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollectionPage::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::inLanguage());
@@ -248,6 +274,11 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollectionPage::keywords());
     }
 
+    public function testLastReviewedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::lastReviewed());
+    }
+
     public function testLearningResourceTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::learningResourceType());
@@ -263,14 +294,29 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollectionPage::locationCreated());
     }
 
+    public function testMainContentOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::mainContentOfPage());
+    }
+
     public function testMainEntityWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +327,16 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::potentialAction());
+    }
+
+    public function testPrimaryImageOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::primaryImageOfPage());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -313,9 +369,19 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollectionPage::recordedAt());
     }
 
+    public function testRelatedLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::relatedLink());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::review());
+    }
+
+    public function testReviewedByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::reviewedBy());
     }
 
     public function testReviewsWillReturnMappingObject()
@@ -323,14 +389,34 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollectionPage::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::schemaVersion());
     }
 
+    public function testSignificantLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::significantLink());
+    }
+
+    public function testSignificantLinksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::significantLinks());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::sourceOrganization());
+    }
+
+    public function testSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::specialty());
     }
 
     public function testTextWillReturnMappingObject()
@@ -356,6 +442,11 @@ class CollectionPageTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollectionPage::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollectionPage::url());
     }
 
     public function testVersionWillReturnMappingObject()

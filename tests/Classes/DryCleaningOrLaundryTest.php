@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\DryCleaningOrLaundry;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DryCleaningOrLaundryTest.
+ * Classes DryCleaningOrLaundryTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DryCleaningOrLaundry::schemaUrl(), 'http://schema.org/DryCleaningOrLaundry');
+        $this->assertEquals(DryCleaningOrLaundry::schemaUrl(), "http://schema.org/DryCleaningOrLaundry");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::isicV4());
@@ -196,6 +227,11 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::photo());
@@ -263,6 +314,16 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::review());
@@ -271,6 +332,11 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class DryCleaningOrLaundryTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DryCleaningOrLaundry::url());
     }
 
     public function testVatIDWillReturnMappingObject()

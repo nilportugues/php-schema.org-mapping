@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\AudioObject;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AudioObjectTest.
+ * Classes AudioObjectTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AudioObjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AudioObject::schemaUrl(), 'http://schema.org/AudioObject');
+        $this->assertEquals(AudioObject::schemaUrl(), "http://schema.org/AudioObject");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,29 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AudioObject::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::alternativeHeadline());
+    }
+
+    public function testAssociatedArticleWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::associatedArticle());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -93,6 +109,11 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AudioObject::awards());
     }
 
+    public function testBitrateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::bitrate());
+    }
+
     public function testCharacterWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::character());
@@ -121,6 +142,16 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
     public function testContentRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::contentRating());
+    }
+
+    public function testContentSizeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::contentSize());
+    }
+
+    public function testContentUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::contentUrl());
     }
 
     public function testContributorWillReturnMappingObject()
@@ -158,9 +189,19 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AudioObject::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::discussionUrl());
+    }
+
+    public function testDurationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::duration());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -178,9 +219,24 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AudioObject::educationalUse());
     }
 
+    public function testEmbedUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::embedUrl());
+    }
+
+    public function testEncodesCreativeWorkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::encodesCreativeWork());
+    }
+
     public function testEncodingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::encoding());
+    }
+
+    public function testEncodingFormatWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::encodingFormat());
     }
 
     public function testEncodingsWillReturnMappingObject()
@@ -191,6 +247,11 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
     public function testExampleOfWorkWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::exampleOfWork());
+    }
+
+    public function testExpiresWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::expires());
     }
 
     public function testFileFormatWillReturnMappingObject()
@@ -211,6 +272,16 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::headline());
+    }
+
+    public function testHeightWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::height());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +339,19 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AudioObject::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,14 +359,29 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AudioObject::offers());
     }
 
+    public function testPlayerTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::playerType());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::position());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::potentialAction());
+    }
+
     public function testProducerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::producer());
+    }
+
+    public function testProductionCompanyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::productionCompany());
     }
 
     public function testProviderWillReturnMappingObject()
@@ -313,6 +409,16 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AudioObject::recordedAt());
     }
 
+    public function testRegionsAllowedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::regionsAllowed());
+    }
+
+    public function testRequiresSubscriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::requiresSubscription());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::review());
@@ -321,6 +427,11 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::sameAs());
     }
 
     public function testSchemaVersionWillReturnMappingObject()
@@ -363,6 +474,16 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AudioObject::typicalAgeRange());
     }
 
+    public function testUploadDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::uploadDate());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::version());
@@ -371,6 +492,11 @@ class AudioObjectTest extends \PHPUnit_Framework_TestCase
     public function testVideoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AudioObject::video());
+    }
+
+    public function testWidthWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AudioObject::width());
     }
 
     public function testWorkExampleWillReturnMappingObject()

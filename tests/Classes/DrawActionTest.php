@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DrawAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrawActionTest.
+ * Classes DrawActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DrawActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrawAction::schemaUrl(), 'http://schema.org/DrawAction');
+        $this->assertEquals(DrawAction::schemaUrl(), "http://schema.org/DrawAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class DrawActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrawAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrawAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class DrawActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrawAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrawAction::instrument());
@@ -51,6 +72,16 @@ class DrawActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrawAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class DrawActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrawAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrawAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +117,10 @@ class DrawActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrawAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrawAction::url());
     }
 }

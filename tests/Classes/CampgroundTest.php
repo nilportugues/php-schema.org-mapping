@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Campground;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CampgroundTest.
+ * Classes CampgroundTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CampgroundTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Campground::schemaUrl(), 'http://schema.org/Campground');
+        $this->assertEquals(Campground::schemaUrl(), "http://schema.org/Campground");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Campground::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class CampgroundTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Campground::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class CampgroundTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Campground::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class CampgroundTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Campground::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Campground::isicV4());
@@ -98,6 +119,11 @@ class CampgroundTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Campground::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Campground::map());
@@ -106,6 +132,16 @@ class CampgroundTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Campground::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +159,11 @@ class CampgroundTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Campground::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Campground::review());
@@ -133,8 +174,18 @@ class CampgroundTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Campground::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Campground::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Campground::url());
     }
 }

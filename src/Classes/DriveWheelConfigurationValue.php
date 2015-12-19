@@ -15,6 +15,14 @@ use NilPortugues\SchemaOrg\SchemaClass;
 /**
  * METHODSTART.
  *
+ * @method static \NilPortugues\SchemaOrg\Properties\EqualProperty equal()
+ * @method static \NilPortugues\SchemaOrg\Properties\GreaterProperty greater()
+ * @method static \NilPortugues\SchemaOrg\Properties\GreaterOrEqualProperty greaterOrEqual()
+ * @method static \NilPortugues\SchemaOrg\Properties\LesserProperty lesser()
+ * @method static \NilPortugues\SchemaOrg\Properties\LesserOrEqualProperty lesserOrEqual()
+ * @method static \NilPortugues\SchemaOrg\Properties\NonEqualProperty nonEqual()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValueReferenceProperty valueReference()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
  * @method static \NilPortugues\SchemaOrg\Properties\SupersededByProperty supersededBy()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
  * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
@@ -40,6 +48,10 @@ class DriveWheelConfigurationValue extends SchemaClass
      * @var array
      */
     protected static $supportedMethods = [
+        'additionalProperty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
         'additionalType' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
@@ -52,9 +64,29 @@ class DriveWheelConfigurationValue extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'equal' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EqualProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'greater' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GreaterProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'greaterOrEqual' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GreaterOrEqualProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
         'image' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'lesser' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LesserProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'lesserOrEqual' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LesserOrEqualProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
         ],
         'mainEntityOfPage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
@@ -63,6 +95,10 @@ class DriveWheelConfigurationValue extends SchemaClass
         'name' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'nonEqual' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NonEqualProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
         ],
         'potentialAction' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
@@ -79,6 +115,10 @@ class DriveWheelConfigurationValue extends SchemaClass
         'url' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'valueReference' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValueReferenceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
         ],
     ];
 }

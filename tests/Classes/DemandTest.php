@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Demand;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DemandTest.
+ * Classes DemandTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DemandTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Demand::schemaUrl(), 'http://schema.org/Demand');
+        $this->assertEquals(Demand::schemaUrl(), "http://schema.org/Demand");
     }
 
     public function testAcceptedPaymentMethodWillReturnMappingObject()

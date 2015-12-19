@@ -14,13 +14,29 @@ use NilPortugues\SchemaOrg\Classes\PriceSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PriceSpecificationTest.
+ * Classes PriceSpecificationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PriceSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PriceSpecification::schemaUrl(), 'http://schema.org/PriceSpecification');
+        $this->assertEquals(PriceSpecification::schemaUrl(), "http://schema.org/PriceSpecification");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::description());
     }
 
     public function testEligibleQuantityWillReturnMappingObject()
@@ -33,6 +49,16 @@ class PriceSpecificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PriceSpecification::eligibleTransactionVolume());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::mainEntityOfPage());
+    }
+
     public function testMaxPriceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PriceSpecification::maxPrice());
@@ -43,6 +69,16 @@ class PriceSpecificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PriceSpecification::minPrice());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::potentialAction());
+    }
+
     public function testPriceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PriceSpecification::price());
@@ -51,6 +87,16 @@ class PriceSpecificationTest extends \PHPUnit_Framework_TestCase
     public function testPriceCurrencyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PriceSpecification::priceCurrency());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::sameAs());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PriceSpecification::url());
     }
 
     public function testValidFromWillReturnMappingObject()

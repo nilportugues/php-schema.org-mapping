@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\WantAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WantActionTest.
+ * Classes WantActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class WantActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WantAction::schemaUrl(), 'http://schema.org/WantAction');
+        $this->assertEquals(WantAction::schemaUrl(), "http://schema.org/WantAction");
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WantAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,9 +49,29 @@ class WantActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WantAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::error());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WantAction::image());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::instrument());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -53,14 +84,39 @@ class WantActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WantAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WantAction::potentialAction());
     }
 
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WantAction::sameAs());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WantAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

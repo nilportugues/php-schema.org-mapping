@@ -16,6 +16,12 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * METHODSTART.
  *
  * @method static \NilPortugues\SchemaOrg\Properties\DataFeedElementProperty dataFeedElement()
+ * @method static \NilPortugues\SchemaOrg\Properties\CatalogProperty catalog()
+ * @method static \NilPortugues\SchemaOrg\Properties\IncludedDataCatalogProperty includedDataCatalog()
+ * @method static \NilPortugues\SchemaOrg\Properties\DistributionProperty distribution()
+ * @method static \NilPortugues\SchemaOrg\Properties\SpatialProperty spatial()
+ * @method static \NilPortugues\SchemaOrg\Properties\TemporalProperty temporal()
+ * @method static \NilPortugues\SchemaOrg\Properties\DatasetTimeIntervalProperty datasetTimeInterval()
  * @method static \NilPortugues\SchemaOrg\Properties\SchemaVersionProperty schemaVersion()
  * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
  * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty accessibilityAPI()
@@ -86,6 +92,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\CharacterProperty character()
  * @method static \NilPortugues\SchemaOrg\Properties\TranslatorProperty translator()
  * @method static \NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty interactionStatistic()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A single feed providing structured information about one or more entities or topics.
@@ -125,9 +140,17 @@ class DataFeed extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccountablePersonProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'alternativeHeadline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty',
@@ -156,6 +179,10 @@ class DataFeed extends SchemaClass
         'awards' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'catalog' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CatalogProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
         ],
         'character' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CharacterProperty',
@@ -201,6 +228,10 @@ class DataFeed extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DataFeedElementProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DataFeed',
         ],
+        'datasetTimeInterval' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatasetTimeIntervalProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
+        ],
         'dateCreated' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DateCreatedProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -213,9 +244,17 @@ class DataFeed extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatePublishedProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'discussionUrl' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'distribution' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DistributionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
         ],
         'editor' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EditorProperty',
@@ -257,9 +296,17 @@ class DataFeed extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'inLanguage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'includedDataCatalog' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IncludedDataCatalogProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
         ],
         'interactionStatistic' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty',
@@ -301,9 +348,17 @@ class DataFeed extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'mentions' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MentionsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
@@ -312,6 +367,10 @@ class DataFeed extends SchemaClass
         'position' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PositionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'producer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProducerProperty',
@@ -345,6 +404,10 @@ class DataFeed extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'schemaVersion' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SchemaVersionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -352,6 +415,14 @@ class DataFeed extends SchemaClass
         'sourceOrganization' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'spatial' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SpatialProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
+        ],
+        'temporal' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TemporalProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
         ],
         'text' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TextProperty',
@@ -372,6 +443,10 @@ class DataFeed extends SchemaClass
         'typicalAgeRange' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'version' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VersionProperty',

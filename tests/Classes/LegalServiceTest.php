@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\LegalService;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LegalServiceTest.
+ * Classes LegalServiceTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class LegalServiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LegalService::schemaUrl(), 'http://schema.org/LegalService');
+        $this->assertEquals(LegalService::schemaUrl(), "http://schema.org/LegalService");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LegalService::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LegalService::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::isicV4());
@@ -196,6 +227,11 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LegalService::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LegalService::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::photo());
@@ -263,6 +314,16 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LegalService::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::review());
@@ -271,6 +332,11 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class LegalServiceTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LegalService::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LegalService::url());
     }
 
     public function testVatIDWillReturnMappingObject()

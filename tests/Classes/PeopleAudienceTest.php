@@ -14,18 +14,64 @@ use NilPortugues\SchemaOrg\Classes\PeopleAudience;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PeopleAudienceTest.
+ * Classes PeopleAudienceTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PeopleAudienceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PeopleAudience::schemaUrl(), 'http://schema.org/PeopleAudience');
+        $this->assertEquals(PeopleAudience::schemaUrl(), "http://schema.org/PeopleAudience");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::alternateName());
+    }
+
+    public function testAudienceTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::audienceType());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::description());
+    }
+
+    public function testGeographicAreaWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::geographicArea());
     }
 
     public function testHealthConditionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PeopleAudience::healthCondition());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::potentialAction());
     }
 
     public function testRequiredGenderWillReturnMappingObject()
@@ -43,6 +89,11 @@ class PeopleAudienceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PeopleAudience::requiredMinAge());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::sameAs());
+    }
+
     public function testSuggestedGenderWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PeopleAudience::suggestedGender());
@@ -56,5 +107,10 @@ class PeopleAudienceTest extends \PHPUnit_Framework_TestCase
     public function testSuggestedMinAgeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PeopleAudience::suggestedMinAge());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PeopleAudience::url());
     }
 }

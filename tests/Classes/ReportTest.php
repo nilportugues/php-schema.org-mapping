@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Report;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReportTest.
+ * Classes ReportTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ReportTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Report::schemaUrl(), 'http://schema.org/Report');
+        $this->assertEquals(Report::schemaUrl(), "http://schema.org/Report");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,34 @@ class ReportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Report::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::alternativeHeadline());
+    }
+
+    public function testArticleBodyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::articleBody());
+    }
+
+    public function testArticleSectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::articleSection());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -158,6 +179,11 @@ class ReportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Report::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::discussionUrl());
@@ -211,6 +237,11 @@ class ReportTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +299,19 @@ class ReportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Report::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,9 +319,29 @@ class ReportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Report::offers());
     }
 
+    public function testPageEndWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::pageEnd());
+    }
+
+    public function testPageStartWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::pageStart());
+    }
+
+    public function testPaginationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::pagination());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -328,6 +389,11 @@ class ReportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Report::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::schemaVersion());
@@ -363,6 +429,11 @@ class ReportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Report::typicalAgeRange());
     }
 
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::version());
@@ -371,6 +442,11 @@ class ReportTest extends \PHPUnit_Framework_TestCase
     public function testVideoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Report::video());
+    }
+
+    public function testWordCountWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Report::wordCount());
     }
 
     public function testWorkExampleWillReturnMappingObject()

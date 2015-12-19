@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MobileApplication;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MobileApplicationTest.
+ * Classes MobileApplicationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MobileApplicationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MobileApplication::schemaUrl(), 'http://schema.org/MobileApplication');
+        $this->assertEquals(MobileApplication::schemaUrl(), "http://schema.org/MobileApplication");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,39 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::alternativeHeadline());
+    }
+
+    public function testApplicationCategoryWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::applicationCategory());
+    }
+
+    public function testApplicationSubCategoryWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::applicationSubCategory());
+    }
+
+    public function testApplicationSuiteWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::applicationSuite());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -81,6 +107,11 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
     public function testAuthorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::author());
+    }
+
+    public function testAvailableOnDeviceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::availableOnDevice());
     }
 
     public function testAwardWillReturnMappingObject()
@@ -143,6 +174,16 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::copyrightYear());
     }
 
+    public function testCountriesNotSupportedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::countriesNotSupported());
+    }
+
+    public function testCountriesSupportedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::countriesSupported());
+    }
+
     public function testCreatorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::creator());
@@ -163,9 +204,24 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::description());
+    }
+
+    public function testDeviceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::device());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::discussionUrl());
+    }
+
+    public function testDownloadUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::downloadUrl());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -198,9 +254,19 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::exampleOfWork());
     }
 
+    public function testFeatureListWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::featureList());
+    }
+
     public function testFileFormatWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::fileFormat());
+    }
+
+    public function testFileSizeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::fileSize());
     }
 
     public function testGenreWillReturnMappingObject()
@@ -218,9 +284,19 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::inLanguage());
+    }
+
+    public function testInstallUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::installUrl());
     }
 
     public function testInteractionStatisticWillReturnMappingObject()
@@ -273,9 +349,24 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::mainEntityOfPage());
+    }
+
+    public function testMemoryRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::memoryRequirements());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -283,9 +374,29 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::offers());
     }
 
+    public function testOperatingSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::operatingSystem());
+    }
+
+    public function testPermissionsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::permissions());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::potentialAction());
+    }
+
+    public function testProcessorRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::processorRequirements());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -318,6 +429,16 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::recordedAt());
     }
 
+    public function testReleaseNotesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::releaseNotes());
+    }
+
+    public function testRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::requirements());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::review());
@@ -328,14 +449,54 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MobileApplication::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::schemaVersion());
     }
 
+    public function testScreenshotWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::screenshot());
+    }
+
+    public function testSoftwareAddOnWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::softwareAddOn());
+    }
+
+    public function testSoftwareHelpWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::softwareHelp());
+    }
+
+    public function testSoftwareRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::softwareRequirements());
+    }
+
+    public function testSoftwareVersionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::softwareVersion());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::sourceOrganization());
+    }
+
+    public function testStorageRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::storageRequirements());
+    }
+
+    public function testSupportingDataWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::supportingData());
     }
 
     public function testTextWillReturnMappingObject()
@@ -361,6 +522,11 @@ class MobileApplicationTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MobileApplication::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MobileApplication::url());
     }
 
     public function testVersionWillReturnMappingObject()

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MovieTheater;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MovieTheaterTest.
+ * Classes MovieTheaterTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MovieTheaterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MovieTheater::schemaUrl(), 'http://schema.org/MovieTheater');
+        $this->assertEquals(MovieTheater::schemaUrl(), "http://schema.org/MovieTheater");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
@@ -48,6 +49,26 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieTheater::alternateName());
     }
 
+    public function testAlumniWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::alumni());
+    }
+
+    public function testAreaServedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::areaServed());
+    }
+
+    public function testAwardWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::award());
+    }
+
+    public function testAwardsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::awards());
+    }
+
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::branchCode());
@@ -56,6 +77,21 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
     public function testBranchOfWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::branchOf());
+    }
+
+    public function testBrandWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::brand());
+    }
+
+    public function testContactPointWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::contactPoint());
+    }
+
+    public function testContactPointsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::contactPoints());
     }
 
     public function testContainedInWillReturnMappingObject()
@@ -78,9 +114,39 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieTheater::currenciesAccepted());
     }
 
+    public function testDepartmentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::department());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::description());
+    }
+
+    public function testDissolutionDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::dissolutionDate());
+    }
+
+    public function testDunsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::duns());
+    }
+
+    public function testEmailWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::email());
+    }
+
+    public function testEmployeeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::employee());
+    }
+
+    public function testEmployeesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::employees());
     }
 
     public function testEventWillReturnMappingObject()
@@ -98,6 +164,21 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieTheater::faxNumber());
     }
 
+    public function testFounderWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::founder());
+    }
+
+    public function testFoundersWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::founders());
+    }
+
+    public function testFoundingDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::foundingDate());
+    }
+
     public function testGeoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::geo());
@@ -113,6 +194,16 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieTheater::hasMap());
     }
 
+    public function testHasOfferCatalogWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::hasOfferCatalog());
+    }
+
+    public function testHasPOSWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::hasPOS());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::image());
@@ -121,6 +212,16 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::isicV4());
+    }
+
+    public function testLegalNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::legalName());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::location());
     }
 
     public function testLogoWillReturnMappingObject()
@@ -133,6 +234,11 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieTheater::mainEntityOfPage());
     }
 
+    public function testMakesOfferWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::makesOffer());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::map());
@@ -143,9 +249,34 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieTheater::maps());
     }
 
+    public function testMemberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::member());
+    }
+
+    public function testMemberOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::memberOf());
+    }
+
+    public function testMembersWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::members());
+    }
+
+    public function testNaicsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::naics());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::name());
+    }
+
+    public function testNumberOfEmployeesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::numberOfEmployees());
     }
 
     public function testOpeningHoursWillReturnMappingObject()
@@ -156,6 +287,16 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
     public function testOpeningHoursSpecificationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::openingHoursSpecification());
+    }
+
+    public function testOwnsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::owns());
+    }
+
+    public function testParentOrganizationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::parentOrganization());
     }
 
     public function testPaymentAcceptedWillReturnMappingObject()
@@ -203,6 +344,26 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieTheater::screenCount());
     }
 
+    public function testSeeksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::seeks());
+    }
+
+    public function testServiceAreaWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::serviceArea());
+    }
+
+    public function testSubOrganizationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::subOrganization());
+    }
+
+    public function testTaxIDWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::taxID());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::telephone());
@@ -211,5 +372,10 @@ class MovieTheaterTest extends \PHPUnit_Framework_TestCase
     public function testUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieTheater::url());
+    }
+
+    public function testVatIDWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieTheater::vatID());
     }
 }

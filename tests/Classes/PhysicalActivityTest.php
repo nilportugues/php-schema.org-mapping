@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\PhysicalActivity;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PhysicalActivityTest.
+ * Classes PhysicalActivityTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PhysicalActivityTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PhysicalActivity::schemaUrl(), 'http://schema.org/PhysicalActivity');
+        $this->assertEquals(PhysicalActivity::schemaUrl(), "http://schema.org/PhysicalActivity");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -48,6 +49,11 @@ class PhysicalActivityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhysicalActivity::category());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalActivity::code());
+    }
+
     public function testContraindicationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhysicalActivity::contraindication());
@@ -68,6 +74,11 @@ class PhysicalActivityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhysicalActivity::epidemiology());
     }
 
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalActivity::guideline());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhysicalActivity::image());
@@ -81,6 +92,11 @@ class PhysicalActivityTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhysicalActivity::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalActivity::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -98,6 +114,16 @@ class PhysicalActivityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhysicalActivity::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalActivity::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalActivity::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhysicalActivity::sameAs());
@@ -106,6 +132,11 @@ class PhysicalActivityTest extends \PHPUnit_Framework_TestCase
     public function testSeriousAdverseOutcomeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhysicalActivity::seriousAdverseOutcome());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalActivity::study());
     }
 
     public function testUrlWillReturnMappingObject()

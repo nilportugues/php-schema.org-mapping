@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\ConfirmAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ConfirmActionTest.
+ * Classes ConfirmActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ConfirmActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ConfirmAction::schemaUrl(), 'http://schema.org/ConfirmAction');
+        $this->assertEquals(ConfirmAction::schemaUrl(), "http://schema.org/ConfirmAction");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -33,9 +34,24 @@ class ConfirmActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ConfirmAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConfirmAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -46,6 +62,16 @@ class ConfirmActionTest extends \PHPUnit_Framework_TestCase
     public function testErrorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConfirmAction::error());
+    }
+
+    public function testEventWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::event());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -68,6 +94,16 @@ class ConfirmActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ConfirmAction::location());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::name());
+    }
+
     public function testObjectTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConfirmAction::objectType());
@@ -76,6 +112,11 @@ class ConfirmActionTest extends \PHPUnit_Framework_TestCase
     public function testParticipantWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConfirmAction::participant());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::potentialAction());
     }
 
     public function testRecipientWillReturnMappingObject()
@@ -88,6 +129,11 @@ class ConfirmActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ConfirmAction::result());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::sameAs());
+    }
+
     public function testStartTimeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConfirmAction::startTime());
@@ -96,5 +142,10 @@ class ConfirmActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConfirmAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConfirmAction::url());
     }
 }

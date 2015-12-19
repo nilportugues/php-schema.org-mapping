@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Answer;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AnswerTest.
+ * Classes AnswerTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AnswerTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Answer::schemaUrl(), 'http://schema.org/Answer');
+        $this->assertEquals(Answer::schemaUrl(), "http://schema.org/Answer");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class AnswerTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Answer::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Answer::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,9 +169,19 @@ class AnswerTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Answer::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Answer::discussionUrl());
+    }
+
+    public function testDownvoteCountWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::downvoteCount());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -211,6 +232,11 @@ class AnswerTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Answer::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +294,19 @@ class AnswerTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Answer::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Answer::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,9 +314,19 @@ class AnswerTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Answer::offers());
     }
 
+    public function testParentItemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::parentItem());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Answer::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +369,11 @@ class AnswerTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Answer::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Answer::schemaVersion());
@@ -356,6 +407,16 @@ class AnswerTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Answer::typicalAgeRange());
+    }
+
+    public function testUpvoteCountWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::upvoteCount());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Answer::url());
     }
 
     public function testVersionWillReturnMappingObject()

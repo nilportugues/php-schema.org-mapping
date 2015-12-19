@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\ExerciseAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ExerciseActionTest.
+ * Classes ExerciseActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ExerciseActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ExerciseAction::schemaUrl(), 'http://schema.org/ExerciseAction');
+        $this->assertEquals(ExerciseAction::schemaUrl(), "http://schema.org/ExerciseAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,14 +29,34 @@ class ExerciseActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ExerciseAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ExerciseAction::agent());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::alternateName());
+    }
+
+    public function testAudienceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::audience());
+    }
+
     public function testCourseWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ExerciseAction::course());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::description());
     }
 
     public function testDietWillReturnMappingObject()
@@ -56,6 +77,11 @@ class ExerciseActionTest extends \PHPUnit_Framework_TestCase
     public function testErrorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ExerciseAction::error());
+    }
+
+    public function testEventWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::event());
     }
 
     public function testExerciseCourseWillReturnMappingObject()
@@ -83,6 +109,11 @@ class ExerciseActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ExerciseAction::fromLocation());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ExerciseAction::instrument());
@@ -91,6 +122,16 @@ class ExerciseActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ExerciseAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -108,9 +149,19 @@ class ExerciseActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ExerciseAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ExerciseAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::sameAs());
     }
 
     public function testSportsActivityLocationWillReturnMappingObject()
@@ -141,5 +192,10 @@ class ExerciseActionTest extends \PHPUnit_Framework_TestCase
     public function testToLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ExerciseAction::toLocation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ExerciseAction::url());
     }
 }

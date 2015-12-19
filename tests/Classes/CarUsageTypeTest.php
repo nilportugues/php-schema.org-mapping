@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\CarUsageType;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CarUsageTypeTest.
+ * Classes CarUsageTypeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CarUsageTypeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CarUsageType::schemaUrl(), 'http://schema.org/CarUsageType');
+        $this->assertEquals(CarUsageType::schemaUrl(), "http://schema.org/CarUsageType");
+    }
+
+    public function testAdditionalPropertyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CarUsageType::additionalProperty());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -38,9 +44,34 @@ class CarUsageTypeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CarUsageType::description());
     }
 
+    public function testEqualWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CarUsageType::equal());
+    }
+
+    public function testGreaterWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CarUsageType::greater());
+    }
+
+    public function testGreaterOrEqualWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CarUsageType::greaterOrEqual());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CarUsageType::image());
+    }
+
+    public function testLesserWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CarUsageType::lesser());
+    }
+
+    public function testLesserOrEqualWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CarUsageType::lesserOrEqual());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -51,6 +82,11 @@ class CarUsageTypeTest extends \PHPUnit_Framework_TestCase
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CarUsageType::name());
+    }
+
+    public function testNonEqualWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CarUsageType::nonEqual());
     }
 
     public function testPotentialActionWillReturnMappingObject()
@@ -71,5 +107,10 @@ class CarUsageTypeTest extends \PHPUnit_Framework_TestCase
     public function testUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CarUsageType::url());
+    }
+
+    public function testValueReferenceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CarUsageType::valueReference());
     }
 }

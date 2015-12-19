@@ -14,18 +14,34 @@ use NilPortugues\SchemaOrg\Classes\ReplyAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReplyActionTest.
+ * Classes ReplyActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ReplyActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReplyAction::schemaUrl(), 'http://schema.org/ReplyAction');
+        $this->assertEquals(ReplyAction::schemaUrl(), "http://schema.org/ReplyAction");
+    }
+
+    public function testAboutWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::about());
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReplyAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,9 +54,39 @@ class ReplyActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReplyAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::error());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReplyAction::image());
+    }
+
+    public function testInLanguageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::inLanguage());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::instrument());
+    }
+
+    public function testLanguageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::language());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -53,9 +99,29 @@ class ReplyActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReplyAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReplyAction::potentialAction());
+    }
+
+    public function testRecipientWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::recipient());
+    }
+
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::result());
     }
 
     public function testResultCommentWillReturnMappingObject()
@@ -66,6 +132,16 @@ class ReplyActionTest extends \PHPUnit_Framework_TestCase
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReplyAction::sameAs());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReplyAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

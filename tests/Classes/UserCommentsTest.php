@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\UserComments;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserCommentsTest.
+ * Classes UserCommentsTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class UserCommentsTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserComments::schemaUrl(), 'http://schema.org/UserComments');
+        $this->assertEquals(UserComments::schemaUrl(), "http://schema.org/UserComments");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::additionalType());
     }
 
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserComments::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::alternateName());
     }
 
     public function testAttendeeWillReturnMappingObject()
@@ -53,6 +64,11 @@ class UserCommentsTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserComments::creator());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::description());
+    }
+
     public function testDiscussesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserComments::discusses());
@@ -78,6 +94,11 @@ class UserCommentsTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserComments::eventStatus());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserComments::inLanguage());
@@ -86,6 +107,16 @@ class UserCommentsTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserComments::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -108,6 +139,11 @@ class UserCommentsTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserComments::performers());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::potentialAction());
+    }
+
     public function testPreviousStartDateWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserComments::previousStartDate());
@@ -126,6 +162,11 @@ class UserCommentsTest extends \PHPUnit_Framework_TestCase
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserComments::review());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::sameAs());
     }
 
     public function testStartDateWillReturnMappingObject()
@@ -151,6 +192,11 @@ class UserCommentsTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserComments::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserComments::url());
     }
 
     public function testWorkFeaturedWillReturnMappingObject()

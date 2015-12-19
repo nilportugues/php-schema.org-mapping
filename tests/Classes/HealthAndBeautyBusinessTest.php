@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\HealthAndBeautyBusiness;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HealthAndBeautyBusinessTest.
+ * Classes HealthAndBeautyBusinessTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HealthAndBeautyBusiness::schemaUrl(), 'http://schema.org/HealthAndBeautyBusiness');
+        $this->assertEquals(HealthAndBeautyBusiness::schemaUrl(), "http://schema.org/HealthAndBeautyBusiness");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::isicV4());
@@ -196,6 +227,11 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::photo());
@@ -263,6 +314,16 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::review());
@@ -271,6 +332,11 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class HealthAndBeautyBusinessTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HealthAndBeautyBusiness::url());
     }
 
     public function testVatIDWillReturnMappingObject()

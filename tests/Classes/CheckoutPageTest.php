@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\CheckoutPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CheckoutPageTest.
+ * Classes CheckoutPageTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CheckoutPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CheckoutPage::schemaUrl(), 'http://schema.org/CheckoutPage');
+        $this->assertEquals(CheckoutPage::schemaUrl(), "http://schema.org/CheckoutPage");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CheckoutPage::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -91,6 +102,11 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
     public function testAwardsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::awards());
+    }
+
+    public function testBreadcrumbWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::breadcrumb());
     }
 
     public function testCharacterWillReturnMappingObject()
@@ -158,6 +174,11 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CheckoutPage::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::discussionUrl());
@@ -213,6 +234,11 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CheckoutPage::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::inLanguage());
@@ -248,6 +274,11 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CheckoutPage::keywords());
     }
 
+    public function testLastReviewedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::lastReviewed());
+    }
+
     public function testLearningResourceTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::learningResourceType());
@@ -263,14 +294,29 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CheckoutPage::locationCreated());
     }
 
+    public function testMainContentOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::mainContentOfPage());
+    }
+
     public function testMainEntityWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +327,16 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::potentialAction());
+    }
+
+    public function testPrimaryImageOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::primaryImageOfPage());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -313,9 +369,19 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CheckoutPage::recordedAt());
     }
 
+    public function testRelatedLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::relatedLink());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::review());
+    }
+
+    public function testReviewedByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::reviewedBy());
     }
 
     public function testReviewsWillReturnMappingObject()
@@ -323,14 +389,34 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CheckoutPage::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::schemaVersion());
     }
 
+    public function testSignificantLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::significantLink());
+    }
+
+    public function testSignificantLinksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::significantLinks());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::sourceOrganization());
+    }
+
+    public function testSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::specialty());
     }
 
     public function testTextWillReturnMappingObject()
@@ -356,6 +442,11 @@ class CheckoutPageTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CheckoutPage::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CheckoutPage::url());
     }
 
     public function testVersionWillReturnMappingObject()

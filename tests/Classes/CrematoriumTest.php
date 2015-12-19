@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Crematorium;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CrematoriumTest.
+ * Classes CrematoriumTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CrematoriumTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Crematorium::schemaUrl(), 'http://schema.org/Crematorium');
+        $this->assertEquals(Crematorium::schemaUrl(), "http://schema.org/Crematorium");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Crematorium::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class CrematoriumTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Crematorium::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class CrematoriumTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Crematorium::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class CrematoriumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Crematorium::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Crematorium::isicV4());
@@ -98,6 +119,11 @@ class CrematoriumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Crematorium::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Crematorium::map());
@@ -106,6 +132,16 @@ class CrematoriumTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Crematorium::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +159,11 @@ class CrematoriumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Crematorium::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Crematorium::review());
@@ -133,8 +174,18 @@ class CrematoriumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Crematorium::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Crematorium::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Crematorium::url());
     }
 }

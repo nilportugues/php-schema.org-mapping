@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\CollegeOrUniversity;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CollegeOrUniversityTest.
+ * Classes CollegeOrUniversityTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CollegeOrUniversity::schemaUrl(), 'http://schema.org/CollegeOrUniversity');
+        $this->assertEquals(CollegeOrUniversity::schemaUrl(), "http://schema.org/CollegeOrUniversity");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -31,6 +37,11 @@ class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -71,6 +82,11 @@ class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -143,6 +159,11 @@ class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::isicV4());
@@ -161,6 +182,11 @@ class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -188,6 +214,11 @@ class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::numberOfEmployees());
@@ -203,6 +234,11 @@ class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::parentOrganization());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::review());
@@ -211,6 +247,11 @@ class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -236,6 +277,11 @@ class CollegeOrUniversityTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CollegeOrUniversity::url());
     }
 
     public function testVatIDWillReturnMappingObject()

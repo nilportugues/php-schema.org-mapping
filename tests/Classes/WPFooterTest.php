@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\WPFooter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WPFooterTest.
+ * Classes WPFooterTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class WPFooterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WPFooter::schemaUrl(), 'http://schema.org/WPFooter');
+        $this->assertEquals(WPFooter::schemaUrl(), "http://schema.org/WPFooter");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class WPFooterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPFooter::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPFooter::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,6 +169,11 @@ class WPFooterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPFooter::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPFooter::discussionUrl());
@@ -211,6 +227,11 @@ class WPFooterTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPFooter::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +289,19 @@ class WPFooterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPFooter::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPFooter::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +312,11 @@ class WPFooterTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPFooter::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +359,11 @@ class WPFooterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPFooter::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPFooter::schemaVersion());
@@ -356,6 +397,11 @@ class WPFooterTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPFooter::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPFooter::url());
     }
 
     public function testVersionWillReturnMappingObject()

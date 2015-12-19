@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\TravelAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TravelActionTest.
+ * Classes TravelActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TravelActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TravelAction::schemaUrl(), 'http://schema.org/TravelAction');
+        $this->assertEquals(TravelAction::schemaUrl(), "http://schema.org/TravelAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class TravelActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TravelAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TravelAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::description());
     }
 
     public function testDistanceWillReturnMappingObject()
@@ -48,6 +64,16 @@ class TravelActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TravelAction::error());
     }
 
+    public function testFromLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::fromLocation());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TravelAction::instrument());
@@ -56,6 +82,16 @@ class TravelActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TravelAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -68,9 +104,19 @@ class TravelActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TravelAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TravelAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -81,5 +127,15 @@ class TravelActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TravelAction::target());
+    }
+
+    public function testToLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::toLocation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TravelAction::url());
     }
 }

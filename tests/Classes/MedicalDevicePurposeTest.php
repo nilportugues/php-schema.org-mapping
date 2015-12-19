@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalDevicePurpose;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalDevicePurposeTest.
+ * Classes MedicalDevicePurposeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalDevicePurposeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalDevicePurpose::schemaUrl(), 'http://schema.org/MedicalDevicePurpose');
+        $this->assertEquals(MedicalDevicePurpose::schemaUrl(), "http://schema.org/MedicalDevicePurpose");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class MedicalDevicePurposeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class MedicalDevicePurposeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::name());
@@ -58,9 +74,24 @@ class MedicalDevicePurposeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevicePurpose::study());
     }
 
     public function testSupersededByWillReturnMappingObject()

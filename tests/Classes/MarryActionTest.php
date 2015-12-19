@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MarryAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MarryActionTest.
+ * Classes MarryActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MarryActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MarryAction::schemaUrl(), 'http://schema.org/MarryAction');
+        $this->assertEquals(MarryAction::schemaUrl(), "http://schema.org/MarryAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class MarryActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MarryAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MarryAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class MarryActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MarryAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MarryAction::instrument());
@@ -51,6 +72,16 @@ class MarryActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MarryAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class MarryActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MarryAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MarryAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +117,10 @@ class MarryActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MarryAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MarryAction::url());
     }
 }

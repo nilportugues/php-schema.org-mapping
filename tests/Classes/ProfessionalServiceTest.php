@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\ProfessionalService;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ProfessionalServiceTest.
+ * Classes ProfessionalServiceTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ProfessionalService::schemaUrl(), 'http://schema.org/ProfessionalService');
+        $this->assertEquals(ProfessionalService::schemaUrl(), "http://schema.org/ProfessionalService");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ProfessionalService::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ProfessionalService::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::isicV4());
@@ -196,6 +227,11 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ProfessionalService::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ProfessionalService::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::photo());
@@ -263,6 +314,16 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ProfessionalService::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::review());
@@ -271,6 +332,11 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class ProfessionalServiceTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ProfessionalService::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ProfessionalService::url());
     }
 
     public function testVatIDWillReturnMappingObject()

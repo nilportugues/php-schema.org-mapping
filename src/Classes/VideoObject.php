@@ -25,6 +25,22 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\TranscriptProperty transcript()
  * @method static \NilPortugues\SchemaOrg\Properties\VideoFrameSizeProperty videoFrameSize()
  * @method static \NilPortugues\SchemaOrg\Properties\VideoQualityProperty videoQuality()
+ * @method static \NilPortugues\SchemaOrg\Properties\AssociatedArticleProperty associatedArticle()
+ * @method static \NilPortugues\SchemaOrg\Properties\BitrateProperty bitrate()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContentSizeProperty contentSize()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContentUrlProperty contentUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\DurationProperty duration()
+ * @method static \NilPortugues\SchemaOrg\Properties\EmbedUrlProperty embedUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\EncodesCreativeWorkProperty encodesCreativeWork()
+ * @method static \NilPortugues\SchemaOrg\Properties\EncodingFormatProperty encodingFormat()
+ * @method static \NilPortugues\SchemaOrg\Properties\ExpiresProperty expires()
+ * @method static \NilPortugues\SchemaOrg\Properties\HeightProperty height()
+ * @method static \NilPortugues\SchemaOrg\Properties\PlayerTypeProperty playerType()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty productionCompany()
+ * @method static \NilPortugues\SchemaOrg\Properties\RegionsAllowedProperty regionsAllowed()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequiresSubscriptionProperty requiresSubscription()
+ * @method static \NilPortugues\SchemaOrg\Properties\UploadDateProperty uploadDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\WidthProperty width()
  * @method static \NilPortugues\SchemaOrg\Properties\SchemaVersionProperty schemaVersion()
  * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
  * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty accessibilityAPI()
@@ -95,6 +111,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\CharacterProperty character()
  * @method static \NilPortugues\SchemaOrg\Properties\TranslatorProperty translator()
  * @method static \NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty interactionStatistic()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A video file.
@@ -142,13 +167,25 @@ class VideoObject extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActorsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VideoObject',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'alternativeHeadline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'associatedArticle' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AssociatedArticleProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
         ],
         'associatedMedia' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AssociatedMediaProperty',
@@ -173,6 +210,10 @@ class VideoObject extends SchemaClass
         'awards' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'bitrate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BitrateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
         ],
         'caption' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CaptionProperty',
@@ -202,6 +243,14 @@ class VideoObject extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContentRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'contentSize' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContentSizeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'contentUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContentUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
         'contributor' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContributorProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -230,6 +279,10 @@ class VideoObject extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatePublishedProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'director' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DirectorProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VideoObject',
@@ -241,6 +294,10 @@ class VideoObject extends SchemaClass
         'discussionUrl' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'duration' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DurationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
         ],
         'editor' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EditorProperty',
@@ -254,9 +311,21 @@ class VideoObject extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EducationalUseProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'embedUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EmbedUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'encodesCreativeWork' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodesCreativeWorkProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
         'encoding' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'encodingFormat' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingFormatProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
         ],
         'encodings' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingsProperty',
@@ -265,6 +334,10 @@ class VideoObject extends SchemaClass
         'exampleOfWork' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExampleOfWorkProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'expires' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExpiresProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
         ],
         'fileFormat' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FileFormatProperty',
@@ -281,6 +354,14 @@ class VideoObject extends SchemaClass
         'headline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'height' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeightProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'inLanguage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
@@ -326,6 +407,10 @@ class VideoObject extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'mentions' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MentionsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -334,17 +419,33 @@ class VideoObject extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MusicByProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VideoObject',
         ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'playerType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PlayerTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
         ],
         'position' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PositionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'producer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProducerProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'productionCompany' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
         ],
         'provider' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProviderProperty',
@@ -366,6 +467,14 @@ class VideoObject extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecordedAtProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'regionsAllowed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RegionsAllowedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'requiresSubscription' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequiresSubscriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
         'review' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -373,6 +482,10 @@ class VideoObject extends SchemaClass
         'reviews' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'schemaVersion' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SchemaVersionProperty',
@@ -410,6 +523,14 @@ class VideoObject extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'uploadDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UploadDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'version' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VersionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -425,6 +546,10 @@ class VideoObject extends SchemaClass
         'videoQuality' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VideoQualityProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VideoObject',
+        ],
+        'width' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WidthProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
         ],
         'workExample' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WorkExampleProperty',

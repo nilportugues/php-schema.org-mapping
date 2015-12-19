@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\QuoteAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes QuoteActionTest.
+ * Classes QuoteActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class QuoteActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(QuoteAction::schemaUrl(), 'http://schema.org/QuoteAction');
+        $this->assertEquals(QuoteAction::schemaUrl(), "http://schema.org/QuoteAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class QuoteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QuoteAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QuoteAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class QuoteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QuoteAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QuoteAction::instrument());
@@ -51,6 +72,16 @@ class QuoteActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QuoteAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,29 @@ class QuoteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QuoteAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::potentialAction());
+    }
+
+    public function testPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::price());
+    }
+
+    public function testPriceSpecificationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::priceSpecification());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QuoteAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +127,10 @@ class QuoteActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QuoteAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QuoteAction::url());
     }
 }

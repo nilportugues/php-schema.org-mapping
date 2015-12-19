@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\GameServer;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GameServerTest.
+ * Classes GameServerTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class GameServerTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GameServer::schemaUrl(), 'http://schema.org/GameServer');
+        $this->assertEquals(GameServer::schemaUrl(), "http://schema.org/GameServer");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

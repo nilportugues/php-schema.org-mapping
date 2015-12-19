@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\BusTrip;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BusTripTest.
+ * Classes BusTripTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class BusTripTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BusTrip::schemaUrl(), 'http://schema.org/BusTrip');
+        $this->assertEquals(BusTrip::schemaUrl(), "http://schema.org/BusTrip");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

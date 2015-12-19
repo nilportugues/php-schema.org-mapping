@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\ParkingFacility;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ParkingFacilityTest.
+ * Classes ParkingFacilityTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ParkingFacilityTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ParkingFacility::schemaUrl(), 'http://schema.org/ParkingFacility');
+        $this->assertEquals(ParkingFacility::schemaUrl(), "http://schema.org/ParkingFacility");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ParkingFacility::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class ParkingFacilityTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ParkingFacility::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class ParkingFacilityTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ParkingFacility::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class ParkingFacilityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ParkingFacility::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ParkingFacility::isicV4());
@@ -98,6 +119,11 @@ class ParkingFacilityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ParkingFacility::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ParkingFacility::map());
@@ -106,6 +132,16 @@ class ParkingFacilityTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ParkingFacility::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +159,11 @@ class ParkingFacilityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ParkingFacility::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ParkingFacility::review());
@@ -133,8 +174,18 @@ class ParkingFacilityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ParkingFacility::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ParkingFacility::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ParkingFacility::url());
     }
 }

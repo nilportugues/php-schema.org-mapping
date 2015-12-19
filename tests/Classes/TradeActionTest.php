@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\TradeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TradeActionTest.
+ * Classes TradeActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TradeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TradeAction::schemaUrl(), 'http://schema.org/TradeAction');
+        $this->assertEquals(TradeAction::schemaUrl(), "http://schema.org/TradeAction");
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TradeAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,9 +49,29 @@ class TradeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TradeAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::error());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TradeAction::image());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::instrument());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -51,6 +82,16 @@ class TradeActionTest extends \PHPUnit_Framework_TestCase
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TradeAction::name());
+    }
+
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::participant());
     }
 
     public function testPotentialActionWillReturnMappingObject()
@@ -68,9 +109,24 @@ class TradeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TradeAction::priceSpecification());
     }
 
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TradeAction::sameAs());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TradeAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\UseAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UseActionTest.
+ * Classes UseActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class UseActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UseAction::schemaUrl(), 'http://schema.org/UseAction');
+        $this->assertEquals(UseAction::schemaUrl(), "http://schema.org/UseAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class UseActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UseAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UseAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,16 @@ class UseActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UseAction::error());
     }
 
+    public function testExpectsAcceptanceOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::expectsAcceptanceOf());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UseAction::instrument());
@@ -51,6 +77,16 @@ class UseActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UseAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class UseActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UseAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UseAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,10 @@ class UseActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UseAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UseAction::url());
     }
 }

@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Playground;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PlaygroundTest.
+ * Classes PlaygroundTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PlaygroundTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Playground::schemaUrl(), 'http://schema.org/Playground');
+        $this->assertEquals(Playground::schemaUrl(), "http://schema.org/Playground");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Playground::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class PlaygroundTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Playground::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class PlaygroundTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Playground::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class PlaygroundTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Playground::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Playground::isicV4());
@@ -98,6 +119,11 @@ class PlaygroundTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Playground::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Playground::map());
@@ -106,6 +132,16 @@ class PlaygroundTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Playground::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +159,11 @@ class PlaygroundTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Playground::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Playground::review());
@@ -133,8 +174,18 @@ class PlaygroundTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Playground::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Playground::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Playground::url());
     }
 }

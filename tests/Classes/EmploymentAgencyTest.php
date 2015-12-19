@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\EmploymentAgency;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EmploymentAgencyTest.
+ * Classes EmploymentAgencyTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EmploymentAgency::schemaUrl(), 'http://schema.org/EmploymentAgency');
+        $this->assertEquals(EmploymentAgency::schemaUrl(), "http://schema.org/EmploymentAgency");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::isicV4());
@@ -196,6 +227,11 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::photo());
@@ -263,6 +314,16 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::review());
@@ -271,6 +332,11 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class EmploymentAgencyTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EmploymentAgency::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EmploymentAgency::url());
     }
 
     public function testVatIDWillReturnMappingObject()

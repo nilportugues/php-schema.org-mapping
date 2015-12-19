@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\EntertainmentBusiness;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EntertainmentBusinessTest.
+ * Classes EntertainmentBusinessTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EntertainmentBusiness::schemaUrl(), 'http://schema.org/EntertainmentBusiness');
+        $this->assertEquals(EntertainmentBusiness::schemaUrl(), "http://schema.org/EntertainmentBusiness");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::isicV4());
@@ -196,6 +227,11 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::photo());
@@ -263,6 +314,16 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::review());
@@ -271,6 +332,11 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class EntertainmentBusinessTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EntertainmentBusiness::url());
     }
 
     public function testVatIDWillReturnMappingObject()

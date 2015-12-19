@@ -11,14 +11,66 @@
 namespace NilPortugues\Tests\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Classes\ActionStatusType;
+use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ActionStatusTypeTest.
+ * Classes ActionStatusTypeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ActionStatusTypeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ActionStatusType::schemaUrl(), 'http://schema.org/ActionStatusType');
+        $this->assertEquals(ActionStatusType::schemaUrl(), "http://schema.org/ActionStatusType");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::description());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::potentialAction());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::sameAs());
+    }
+
+    public function testSupersededByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::supersededBy());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ActionStatusType::url());
     }
 }

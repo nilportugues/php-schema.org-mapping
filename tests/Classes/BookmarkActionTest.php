@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\BookmarkAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BookmarkActionTest.
+ * Classes BookmarkActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class BookmarkActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BookmarkAction::schemaUrl(), 'http://schema.org/BookmarkAction');
+        $this->assertEquals(BookmarkAction::schemaUrl(), "http://schema.org/BookmarkAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class BookmarkActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BookmarkAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookmarkAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class BookmarkActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BookmarkAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookmarkAction::instrument());
@@ -51,6 +72,16 @@ class BookmarkActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookmarkAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class BookmarkActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BookmarkAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookmarkAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +117,10 @@ class BookmarkActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookmarkAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookmarkAction::url());
     }
 }

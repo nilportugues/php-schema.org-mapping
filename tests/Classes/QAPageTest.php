@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\QAPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes QAPageTest.
+ * Classes QAPageTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class QAPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(QAPage::schemaUrl(), 'http://schema.org/QAPage');
+        $this->assertEquals(QAPage::schemaUrl(), "http://schema.org/QAPage");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QAPage::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -91,6 +102,11 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
     public function testAwardsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::awards());
+    }
+
+    public function testBreadcrumbWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::breadcrumb());
     }
 
     public function testCharacterWillReturnMappingObject()
@@ -158,6 +174,11 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QAPage::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::discussionUrl());
@@ -213,6 +234,11 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QAPage::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::inLanguage());
@@ -248,6 +274,11 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QAPage::keywords());
     }
 
+    public function testLastReviewedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::lastReviewed());
+    }
+
     public function testLearningResourceTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::learningResourceType());
@@ -263,14 +294,29 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QAPage::locationCreated());
     }
 
+    public function testMainContentOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::mainContentOfPage());
+    }
+
     public function testMainEntityWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +327,16 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::potentialAction());
+    }
+
+    public function testPrimaryImageOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::primaryImageOfPage());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -313,9 +369,19 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QAPage::recordedAt());
     }
 
+    public function testRelatedLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::relatedLink());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::review());
+    }
+
+    public function testReviewedByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::reviewedBy());
     }
 
     public function testReviewsWillReturnMappingObject()
@@ -323,14 +389,34 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QAPage::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::schemaVersion());
     }
 
+    public function testSignificantLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::significantLink());
+    }
+
+    public function testSignificantLinksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::significantLinks());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::sourceOrganization());
+    }
+
+    public function testSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::specialty());
     }
 
     public function testTextWillReturnMappingObject()
@@ -356,6 +442,11 @@ class QAPageTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QAPage::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QAPage::url());
     }
 
     public function testVersionWillReturnMappingObject()

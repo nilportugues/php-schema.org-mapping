@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\UserCheckins;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserCheckinsTest.
+ * Classes UserCheckinsTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class UserCheckinsTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserCheckins::schemaUrl(), 'http://schema.org/UserCheckins');
+        $this->assertEquals(UserCheckins::schemaUrl(), "http://schema.org/UserCheckins");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::additionalType());
     }
 
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserCheckins::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::alternateName());
     }
 
     public function testAttendeeWillReturnMappingObject()
@@ -36,6 +47,11 @@ class UserCheckinsTest extends \PHPUnit_Framework_TestCase
     public function testAttendeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserCheckins::attendees());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::description());
     }
 
     public function testDoorTimeWillReturnMappingObject()
@@ -58,6 +74,11 @@ class UserCheckinsTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserCheckins::eventStatus());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserCheckins::inLanguage());
@@ -66,6 +87,16 @@ class UserCheckinsTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserCheckins::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -88,6 +119,11 @@ class UserCheckinsTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserCheckins::performers());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::potentialAction());
+    }
+
     public function testPreviousStartDateWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserCheckins::previousStartDate());
@@ -101,6 +137,11 @@ class UserCheckinsTest extends \PHPUnit_Framework_TestCase
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserCheckins::review());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::sameAs());
     }
 
     public function testStartDateWillReturnMappingObject()
@@ -126,6 +167,11 @@ class UserCheckinsTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserCheckins::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserCheckins::url());
     }
 
     public function testWorkFeaturedWillReturnMappingObject()

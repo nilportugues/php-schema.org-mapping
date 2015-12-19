@@ -26,6 +26,30 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\GameTipProperty gameTip()
  * @method static \NilPortugues\SchemaOrg\Properties\GamePlatformProperty gamePlatform()
  * @method static \NilPortugues\SchemaOrg\Properties\GameServerProperty gameServer()
+ * @method static \NilPortugues\SchemaOrg\Properties\ApplicationCategoryProperty applicationCategory()
+ * @method static \NilPortugues\SchemaOrg\Properties\ApplicationSubCategoryProperty applicationSubCategory()
+ * @method static \NilPortugues\SchemaOrg\Properties\ApplicationSuiteProperty applicationSuite()
+ * @method static \NilPortugues\SchemaOrg\Properties\CountriesNotSupportedProperty countriesNotSupported()
+ * @method static \NilPortugues\SchemaOrg\Properties\CountriesSupportedProperty countriesSupported()
+ * @method static \NilPortugues\SchemaOrg\Properties\DeviceProperty device()
+ * @method static \NilPortugues\SchemaOrg\Properties\AvailableOnDeviceProperty availableOnDevice()
+ * @method static \NilPortugues\SchemaOrg\Properties\DownloadUrlProperty downloadUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\FeatureListProperty featureList()
+ * @method static \NilPortugues\SchemaOrg\Properties\FileSizeProperty fileSize()
+ * @method static \NilPortugues\SchemaOrg\Properties\InstallUrlProperty installUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\MemoryRequirementsProperty memoryRequirements()
+ * @method static \NilPortugues\SchemaOrg\Properties\OperatingSystemProperty operatingSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\PermissionsProperty permissions()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProcessorRequirementsProperty processorRequirements()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReleaseNotesProperty releaseNotes()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequirementsProperty requirements()
+ * @method static \NilPortugues\SchemaOrg\Properties\SoftwareRequirementsProperty softwareRequirements()
+ * @method static \NilPortugues\SchemaOrg\Properties\ScreenshotProperty screenshot()
+ * @method static \NilPortugues\SchemaOrg\Properties\SoftwareVersionProperty softwareVersion()
+ * @method static \NilPortugues\SchemaOrg\Properties\StorageRequirementsProperty storageRequirements()
+ * @method static \NilPortugues\SchemaOrg\Properties\SupportingDataProperty supportingData()
+ * @method static \NilPortugues\SchemaOrg\Properties\SoftwareAddOnProperty softwareAddOn()
+ * @method static \NilPortugues\SchemaOrg\Properties\SoftwareHelpProperty softwareHelp()
  * @method static \NilPortugues\SchemaOrg\Properties\SchemaVersionProperty schemaVersion()
  * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
  * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty accessibilityAPI()
@@ -96,6 +120,20 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\CharacterProperty character()
  * @method static \NilPortugues\SchemaOrg\Properties\TranslatorProperty translator()
  * @method static \NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty interactionStatistic()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfPlayersProperty numberOfPlayers()
+ * @method static \NilPortugues\SchemaOrg\Properties\QuestProperty quest()
+ * @method static \NilPortugues\SchemaOrg\Properties\GameItemProperty gameItem()
+ * @method static \NilPortugues\SchemaOrg\Properties\CharacterAttributeProperty characterAttribute()
+ * @method static \NilPortugues\SchemaOrg\Properties\GameLocationProperty gameLocation()
  * METHODEND.
  *
  * A video game is an electronic game that involves human interaction with a user interface to generate visual feedback on a video device.
@@ -143,13 +181,33 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActorsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VideoGame',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'alternativeHeadline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'applicationCategory' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ApplicationCategoryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'applicationSubCategory' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ApplicationSubCategoryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'applicationSuite' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ApplicationSuiteProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
         ],
         'associatedMedia' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AssociatedMediaProperty',
@@ -167,6 +225,10 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AuthorProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'availableOnDevice' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AvailableOnDeviceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
         'award' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -178,6 +240,10 @@ class VideoGame extends SchemaClass
         'character' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CharacterProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'characterAttribute' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CharacterAttributeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Game',
         ],
         'cheatCode' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CheatCodeProperty',
@@ -215,6 +281,14 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CopyrightYearProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'countriesNotSupported' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CountriesNotSupportedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'countriesSupported' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CountriesSupportedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
         'creator' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CreatorProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -231,6 +305,14 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatePublishedProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'device' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DeviceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
         'director' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DirectorProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VideoGame',
@@ -242,6 +324,10 @@ class VideoGame extends SchemaClass
         'discussionUrl' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'downloadUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DownloadUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
         ],
         'editor' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EditorProperty',
@@ -267,9 +353,25 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExampleOfWorkProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'featureList' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FeatureListProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
         'fileFormat' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FileFormatProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'fileSize' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FileSizeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'gameItem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GameItemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Game',
+        ],
+        'gameLocation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GameLocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Game',
         ],
         'gamePlatform' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GamePlatformProperty',
@@ -295,9 +397,17 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'inLanguage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'installUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InstallUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
         ],
         'interactionStatistic' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty',
@@ -339,6 +449,14 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'memoryRequirements' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MemoryRequirementsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
         'mentions' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MentionsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -347,9 +465,25 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MusicByProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VideoGame',
         ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'numberOfPlayers' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfPlayersProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Game',
+        ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'operatingSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OperatingSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'permissions' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PermissionsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
         ],
         'playMode' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PlayModeProperty',
@@ -358,6 +492,14 @@ class VideoGame extends SchemaClass
         'position' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PositionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'processorRequirements' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProcessorRequirementsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
         ],
         'producer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProducerProperty',
@@ -379,9 +521,21 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PublishingPrinciplesProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'quest' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\QuestProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Game',
+        ],
         'recordedAt' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecordedAtProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'releaseNotes' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReleaseNotesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'requirements' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequirementsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
         ],
         'review' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
@@ -391,13 +545,45 @@ class VideoGame extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'schemaVersion' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SchemaVersionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'screenshot' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ScreenshotProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'softwareAddOn' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SoftwareAddOnProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'softwareHelp' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SoftwareHelpProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'softwareRequirements' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SoftwareRequirementsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'softwareVersion' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SoftwareVersionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
         'sourceOrganization' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'storageRequirements' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StorageRequirementsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
+        ],
+        'supportingData' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SupportingDataProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareApplication',
         ],
         'text' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TextProperty',
@@ -422,6 +608,10 @@ class VideoGame extends SchemaClass
         'typicalAgeRange' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'version' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VersionProperty',

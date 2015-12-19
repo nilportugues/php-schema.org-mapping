@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Person;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PersonTest.
+ * Classes PersonTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PersonTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Person::schemaUrl(), 'http://schema.org/Person');
+        $this->assertEquals(Person::schemaUrl(), "http://schema.org/Person");
     }
 
     public function testAdditionalNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Person::additionalName());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class PersonTest extends \PHPUnit_Framework_TestCase
     public function testAffiliationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Person::affiliation());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::alternateName());
     }
 
     public function testAlumniOfWillReturnMappingObject()
@@ -91,6 +102,11 @@ class PersonTest extends \PHPUnit_Framework_TestCase
     public function testDeathDateWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Person::deathDate());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::description());
     }
 
     public function testDunsWillReturnMappingObject()
@@ -163,6 +179,11 @@ class PersonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Person::honorificSuffix());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Person::isicV4());
@@ -178,6 +199,11 @@ class PersonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Person::knows());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::mainEntityOfPage());
+    }
+
     public function testMakesOfferWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Person::makesOffer());
@@ -191,6 +217,11 @@ class PersonTest extends \PHPUnit_Framework_TestCase
     public function testNaicsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Person::naics());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::name());
     }
 
     public function testNationalityWillReturnMappingObject()
@@ -223,9 +254,19 @@ class PersonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Person::performerIn());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::potentialAction());
+    }
+
     public function testRelatedToWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Person::relatedTo());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -256,6 +297,11 @@ class PersonTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Person::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Person::url());
     }
 
     public function testVatIDWillReturnMappingObject()

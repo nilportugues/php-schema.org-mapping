@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\EatAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EatActionTest.
+ * Classes EatActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class EatActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EatAction::schemaUrl(), 'http://schema.org/EatAction');
+        $this->assertEquals(EatAction::schemaUrl(), "http://schema.org/EatAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class EatActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EatAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EatAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,16 @@ class EatActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EatAction::error());
     }
 
+    public function testExpectsAcceptanceOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::expectsAcceptanceOf());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EatAction::instrument());
@@ -51,6 +77,16 @@ class EatActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EatAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class EatActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, EatAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EatAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,10 @@ class EatActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, EatAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EatAction::url());
     }
 }

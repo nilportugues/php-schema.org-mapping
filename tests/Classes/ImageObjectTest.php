@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\ImageObject;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ImageObjectTest.
+ * Classes ImageObjectTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ImageObjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ImageObject::schemaUrl(), 'http://schema.org/ImageObject');
+        $this->assertEquals(ImageObject::schemaUrl(), "http://schema.org/ImageObject");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,29 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ImageObject::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::alternativeHeadline());
+    }
+
+    public function testAssociatedArticleWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::associatedArticle());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -91,6 +107,11 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
     public function testAwardsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::awards());
+    }
+
+    public function testBitrateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::bitrate());
     }
 
     public function testCaptionWillReturnMappingObject()
@@ -128,6 +149,16 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ImageObject::contentRating());
     }
 
+    public function testContentSizeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::contentSize());
+    }
+
+    public function testContentUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::contentUrl());
+    }
+
     public function testContributorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::contributor());
@@ -163,9 +194,19 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ImageObject::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::discussionUrl());
+    }
+
+    public function testDurationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::duration());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -183,9 +224,24 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ImageObject::educationalUse());
     }
 
+    public function testEmbedUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::embedUrl());
+    }
+
+    public function testEncodesCreativeWorkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::encodesCreativeWork());
+    }
+
     public function testEncodingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::encoding());
+    }
+
+    public function testEncodingFormatWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::encodingFormat());
     }
 
     public function testEncodingsWillReturnMappingObject()
@@ -201,6 +257,11 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
     public function testExifDataWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::exifData());
+    }
+
+    public function testExpiresWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::expires());
     }
 
     public function testFileFormatWillReturnMappingObject()
@@ -221,6 +282,16 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::headline());
+    }
+
+    public function testHeightWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::height());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -278,9 +349,19 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ImageObject::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -288,14 +369,29 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ImageObject::offers());
     }
 
+    public function testPlayerTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::playerType());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::position());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::potentialAction());
+    }
+
     public function testProducerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::producer());
+    }
+
+    public function testProductionCompanyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::productionCompany());
     }
 
     public function testProviderWillReturnMappingObject()
@@ -323,9 +419,19 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ImageObject::recordedAt());
     }
 
+    public function testRegionsAllowedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::regionsAllowed());
+    }
+
     public function testRepresentativeOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::representativeOfPage());
+    }
+
+    public function testRequiresSubscriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::requiresSubscription());
     }
 
     public function testReviewWillReturnMappingObject()
@@ -336,6 +442,11 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::sameAs());
     }
 
     public function testSchemaVersionWillReturnMappingObject()
@@ -378,6 +489,16 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ImageObject::typicalAgeRange());
     }
 
+    public function testUploadDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::uploadDate());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::version());
@@ -386,6 +507,11 @@ class ImageObjectTest extends \PHPUnit_Framework_TestCase
     public function testVideoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ImageObject::video());
+    }
+
+    public function testWidthWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ImageObject::width());
     }
 
     public function testWorkExampleWillReturnMappingObject()

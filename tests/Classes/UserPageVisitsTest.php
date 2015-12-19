@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\UserPageVisits;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserPageVisitsTest.
+ * Classes UserPageVisitsTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class UserPageVisitsTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserPageVisits::schemaUrl(), 'http://schema.org/UserPageVisits');
+        $this->assertEquals(UserPageVisits::schemaUrl(), "http://schema.org/UserPageVisits");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::additionalType());
     }
 
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserPageVisits::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::alternateName());
     }
 
     public function testAttendeeWillReturnMappingObject()
@@ -36,6 +47,11 @@ class UserPageVisitsTest extends \PHPUnit_Framework_TestCase
     public function testAttendeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserPageVisits::attendees());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::description());
     }
 
     public function testDoorTimeWillReturnMappingObject()
@@ -58,6 +74,11 @@ class UserPageVisitsTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserPageVisits::eventStatus());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserPageVisits::inLanguage());
@@ -66,6 +87,16 @@ class UserPageVisitsTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserPageVisits::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -88,6 +119,11 @@ class UserPageVisitsTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserPageVisits::performers());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::potentialAction());
+    }
+
     public function testPreviousStartDateWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserPageVisits::previousStartDate());
@@ -101,6 +137,11 @@ class UserPageVisitsTest extends \PHPUnit_Framework_TestCase
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserPageVisits::review());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::sameAs());
     }
 
     public function testStartDateWillReturnMappingObject()
@@ -126,6 +167,11 @@ class UserPageVisitsTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserPageVisits::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserPageVisits::url());
     }
 
     public function testWorkFeaturedWillReturnMappingObject()

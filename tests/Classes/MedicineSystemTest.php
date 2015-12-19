@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicineSystem;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicineSystemTest.
+ * Classes MedicineSystemTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicineSystemTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicineSystem::schemaUrl(), 'http://schema.org/MedicineSystem');
+        $this->assertEquals(MedicineSystem::schemaUrl(), "http://schema.org/MedicineSystem");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class MedicineSystemTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicineSystem::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicineSystem::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicineSystem::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicineSystem::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class MedicineSystemTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicineSystem::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicineSystem::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicineSystem::name());
@@ -58,9 +74,24 @@ class MedicineSystemTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicineSystem::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicineSystem::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicineSystem::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicineSystem::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicineSystem::study());
     }
 
     public function testSupersededByWillReturnMappingObject()

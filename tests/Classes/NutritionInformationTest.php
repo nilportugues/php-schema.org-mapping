@@ -14,13 +14,24 @@ use NilPortugues\SchemaOrg\Classes\NutritionInformation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes NutritionInformationTest.
+ * Classes NutritionInformationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class NutritionInformationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(NutritionInformation::schemaUrl(), 'http://schema.org/NutritionInformation');
+        $this->assertEquals(NutritionInformation::schemaUrl(), "http://schema.org/NutritionInformation");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::alternateName());
     }
 
     public function testCaloriesWillReturnMappingObject()
@@ -38,6 +49,11 @@ class NutritionInformationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, NutritionInformation::cholesterolContent());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::description());
+    }
+
     public function testFatContentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, NutritionInformation::fatContent());
@@ -48,9 +64,34 @@ class NutritionInformationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, NutritionInformation::fiberContent());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::potentialAction());
+    }
+
     public function testProteinContentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, NutritionInformation::proteinContent());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::sameAs());
     }
 
     public function testSaturatedFatContentWillReturnMappingObject()
@@ -81,5 +122,10 @@ class NutritionInformationTest extends \PHPUnit_Framework_TestCase
     public function testUnsaturatedFatContentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, NutritionInformation::unsaturatedFatContent());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, NutritionInformation::url());
     }
 }

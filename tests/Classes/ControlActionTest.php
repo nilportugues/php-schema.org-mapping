@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\ControlAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ControlActionTest.
+ * Classes ControlActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ControlActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ControlAction::schemaUrl(), 'http://schema.org/ControlAction');
+        $this->assertEquals(ControlAction::schemaUrl(), "http://schema.org/ControlAction");
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ControlAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,9 +49,29 @@ class ControlActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ControlAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::error());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ControlAction::image());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::instrument());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -53,14 +84,39 @@ class ControlActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ControlAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ControlAction::potentialAction());
     }
 
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ControlAction::sameAs());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ControlAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

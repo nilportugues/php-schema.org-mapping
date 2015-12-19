@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalDevice;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalDeviceTest.
+ * Classes MedicalDeviceTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalDeviceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalDevice::schemaUrl(), 'http://schema.org/MedicalDevice');
+        $this->assertEquals(MedicalDevice::schemaUrl(), "http://schema.org/MedicalDevice");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -38,6 +39,11 @@ class MedicalDeviceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalDevice::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevice::code());
+    }
+
     public function testContraindicationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalDevice::contraindication());
@@ -46,6 +52,11 @@ class MedicalDeviceTest extends \PHPUnit_Framework_TestCase
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalDevice::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevice::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -61,6 +72,11 @@ class MedicalDeviceTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalDevice::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevice::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -93,6 +109,16 @@ class MedicalDeviceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalDevice::purpose());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevice::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevice::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalDevice::sameAs());
@@ -101,6 +127,11 @@ class MedicalDeviceTest extends \PHPUnit_Framework_TestCase
     public function testSeriousAdverseOutcomeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalDevice::seriousAdverseOutcome());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalDevice::study());
     }
 
     public function testUrlWillReturnMappingObject()

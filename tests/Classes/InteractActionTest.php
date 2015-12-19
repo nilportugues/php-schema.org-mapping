@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\InteractAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InteractActionTest.
+ * Classes InteractActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class InteractActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InteractAction::schemaUrl(), 'http://schema.org/InteractAction');
+        $this->assertEquals(InteractAction::schemaUrl(), "http://schema.org/InteractAction");
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InteractAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,9 +49,29 @@ class InteractActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, InteractAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::error());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InteractAction::image());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::instrument());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -53,14 +84,39 @@ class InteractActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, InteractAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InteractAction::potentialAction());
     }
 
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InteractAction::sameAs());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InteractAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

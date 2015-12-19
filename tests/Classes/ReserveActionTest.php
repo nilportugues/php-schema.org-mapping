@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\ReserveAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReserveActionTest.
+ * Classes ReserveActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ReserveActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReserveAction::schemaUrl(), 'http://schema.org/ReserveAction');
+        $this->assertEquals(ReserveAction::schemaUrl(), "http://schema.org/ReserveAction");
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReserveAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,9 +49,29 @@ class ReserveActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReserveAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::error());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReserveAction::image());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::instrument());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -53,14 +84,44 @@ class ReserveActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReserveAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReserveAction::potentialAction());
     }
 
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReserveAction::sameAs());
+    }
+
+    public function testScheduledTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::scheduledTime());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReserveAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

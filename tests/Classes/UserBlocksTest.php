@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\UserBlocks;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UserBlocksTest.
+ * Classes UserBlocksTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class UserBlocksTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UserBlocks::schemaUrl(), 'http://schema.org/UserBlocks');
+        $this->assertEquals(UserBlocks::schemaUrl(), "http://schema.org/UserBlocks");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::additionalType());
     }
 
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserBlocks::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::alternateName());
     }
 
     public function testAttendeeWillReturnMappingObject()
@@ -36,6 +47,11 @@ class UserBlocksTest extends \PHPUnit_Framework_TestCase
     public function testAttendeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserBlocks::attendees());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::description());
     }
 
     public function testDoorTimeWillReturnMappingObject()
@@ -58,6 +74,11 @@ class UserBlocksTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserBlocks::eventStatus());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserBlocks::inLanguage());
@@ -66,6 +87,16 @@ class UserBlocksTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserBlocks::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -88,6 +119,11 @@ class UserBlocksTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UserBlocks::performers());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::potentialAction());
+    }
+
     public function testPreviousStartDateWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserBlocks::previousStartDate());
@@ -101,6 +137,11 @@ class UserBlocksTest extends \PHPUnit_Framework_TestCase
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserBlocks::review());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::sameAs());
     }
 
     public function testStartDateWillReturnMappingObject()
@@ -126,6 +167,11 @@ class UserBlocksTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UserBlocks::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UserBlocks::url());
     }
 
     public function testWorkFeaturedWillReturnMappingObject()

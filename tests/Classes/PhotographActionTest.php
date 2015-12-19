@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\PhotographAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PhotographActionTest.
+ * Classes PhotographActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PhotographActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PhotographAction::schemaUrl(), 'http://schema.org/PhotographAction');
+        $this->assertEquals(PhotographAction::schemaUrl(), "http://schema.org/PhotographAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class PhotographActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhotographAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhotographAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class PhotographActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhotographAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhotographAction::instrument());
@@ -51,6 +72,16 @@ class PhotographActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhotographAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class PhotographActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhotographAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhotographAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +117,10 @@ class PhotographActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhotographAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhotographAction::url());
     }
 }

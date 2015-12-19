@@ -14,13 +14,24 @@ use NilPortugues\SchemaOrg\Classes\MedicalRiskCalculator;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalRiskCalculatorTest.
+ * Classes MedicalRiskCalculatorTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalRiskCalculatorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalRiskCalculator::schemaUrl(), 'http://schema.org/MedicalRiskCalculator');
+        $this->assertEquals(MedicalRiskCalculator::schemaUrl(), "http://schema.org/MedicalRiskCalculator");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::alternateName());
     }
 
     public function testCodeWillReturnMappingObject()
@@ -28,14 +39,49 @@ class MedicalRiskCalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::code());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::description());
+    }
+
+    public function testEstimatesRiskOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::estimatesRiskOf());
+    }
+
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::guideline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::image());
+    }
+
+    public function testIncludedRiskFactorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::includedRiskFactor());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -48,8 +94,18 @@ class MedicalRiskCalculatorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::relevantSpecialty());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::sameAs());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::study());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskCalculator::url());
     }
 }

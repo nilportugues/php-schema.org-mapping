@@ -14,13 +14,24 @@ use NilPortugues\SchemaOrg\Classes\DrugCost;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrugCostTest.
+ * Classes DrugCostTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DrugCostTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrugCost::schemaUrl(), 'http://schema.org/DrugCost');
+        $this->assertEquals(DrugCost::schemaUrl(), "http://schema.org/DrugCost");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::alternateName());
     }
 
     public function testApplicableLocationWillReturnMappingObject()
@@ -53,6 +64,11 @@ class DrugCostTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugCost::costPerUnit());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::description());
+    }
+
     public function testDrugUnitWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugCost::drugUnit());
@@ -63,9 +79,29 @@ class DrugCostTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugCost::guideline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugCost::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -78,8 +114,18 @@ class DrugCostTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugCost::relevantSpecialty());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::sameAs());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugCost::study());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugCost::url());
     }
 }

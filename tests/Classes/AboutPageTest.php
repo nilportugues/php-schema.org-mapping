@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\AboutPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AboutPageTest.
+ * Classes AboutPageTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AboutPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AboutPage::schemaUrl(), 'http://schema.org/AboutPage');
+        $this->assertEquals(AboutPage::schemaUrl(), "http://schema.org/AboutPage");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AboutPage::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -91,6 +102,11 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
     public function testAwardsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::awards());
+    }
+
+    public function testBreadcrumbWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::breadcrumb());
     }
 
     public function testCharacterWillReturnMappingObject()
@@ -158,6 +174,11 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AboutPage::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::discussionUrl());
@@ -213,6 +234,11 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AboutPage::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::inLanguage());
@@ -248,6 +274,11 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AboutPage::keywords());
     }
 
+    public function testLastReviewedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::lastReviewed());
+    }
+
     public function testLearningResourceTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::learningResourceType());
@@ -263,14 +294,29 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AboutPage::locationCreated());
     }
 
+    public function testMainContentOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::mainContentOfPage());
+    }
+
     public function testMainEntityWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +327,16 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::potentialAction());
+    }
+
+    public function testPrimaryImageOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::primaryImageOfPage());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -313,9 +369,19 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AboutPage::recordedAt());
     }
 
+    public function testRelatedLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::relatedLink());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::review());
+    }
+
+    public function testReviewedByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::reviewedBy());
     }
 
     public function testReviewsWillReturnMappingObject()
@@ -323,14 +389,34 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AboutPage::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::schemaVersion());
     }
 
+    public function testSignificantLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::significantLink());
+    }
+
+    public function testSignificantLinksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::significantLinks());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::sourceOrganization());
+    }
+
+    public function testSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::specialty());
     }
 
     public function testTextWillReturnMappingObject()
@@ -356,6 +442,11 @@ class AboutPageTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AboutPage::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AboutPage::url());
     }
 
     public function testVersionWillReturnMappingObject()

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Flight;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FlightTest.
+ * Classes FlightTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class FlightTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Flight::schemaUrl(), 'http://schema.org/Flight');
+        $this->assertEquals(Flight::schemaUrl(), "http://schema.org/Flight");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

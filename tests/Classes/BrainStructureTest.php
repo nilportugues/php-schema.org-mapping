@@ -14,13 +14,34 @@ use NilPortugues\SchemaOrg\Classes\BrainStructure;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BrainStructureTest.
+ * Classes BrainStructureTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class BrainStructureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BrainStructure::schemaUrl(), 'http://schema.org/BrainStructure');
+        $this->assertEquals(BrainStructure::schemaUrl(), "http://schema.org/BrainStructure");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::alternateName());
+    }
+
+    public function testAssociatedPathophysiologyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::associatedPathophysiology());
+    }
+
+    public function testBodyLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::bodyLocation());
     }
 
     public function testCodeWillReturnMappingObject()
@@ -28,9 +49,39 @@ class BrainStructureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BrainStructure::code());
     }
 
+    public function testConnectedToWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::connectedTo());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::description());
+    }
+
+    public function testDiagramWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::diagram());
+    }
+
+    public function testFunctionTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::functionType());
+    }
+
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BrainStructure::guideline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::mainEntityOfPage());
     }
 
     public function testMedicineSystemWillReturnMappingObject()
@@ -38,9 +89,34 @@ class BrainStructureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BrainStructure::medicineSystem());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::name());
+    }
+
+    public function testPartOfSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::partOfSystem());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::potentialAction());
+    }
+
     public function testRecognizingAuthorityWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BrainStructure::recognizingAuthority());
+    }
+
+    public function testRelatedConditionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::relatedCondition());
+    }
+
+    public function testRelatedTherapyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::relatedTherapy());
     }
 
     public function testRelevantSpecialtyWillReturnMappingObject()
@@ -48,8 +124,23 @@ class BrainStructureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BrainStructure::relevantSpecialty());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::sameAs());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BrainStructure::study());
+    }
+
+    public function testSubStructureWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::subStructure());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BrainStructure::url());
     }
 }

@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\City;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CityTest.
+ * Classes CityTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CityTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(City::schemaUrl(), 'http://schema.org/City');
+        $this->assertEquals(City::schemaUrl(), "http://schema.org/City");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, City::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class CityTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, City::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class CityTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, City::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class CityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, City::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, City::isicV4());
@@ -98,6 +119,11 @@ class CityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, City::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, City::map());
@@ -106,6 +132,11 @@ class CityTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, City::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::name());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +154,11 @@ class CityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, City::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, City::review());
@@ -133,8 +169,18 @@ class CityTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, City::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, City::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, City::url());
     }
 }

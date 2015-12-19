@@ -30,15 +30,6 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\ContainsSeasonProperty containsSeason()
  * @method static \NilPortugues\SchemaOrg\Properties\SeasonsProperty seasons()
  * @method static \NilPortugues\SchemaOrg\Properties\TrailerProperty trailer()
- * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
- * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
- * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
- * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
- * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
- * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
- * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
- * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
- * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * @method static \NilPortugues\SchemaOrg\Properties\SchemaVersionProperty schemaVersion()
  * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
  * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty accessibilityAPI()
@@ -109,6 +100,17 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\CharacterProperty character()
  * @method static \NilPortugues\SchemaOrg\Properties\TranslatorProperty translator()
  * @method static \NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty interactionStatistic()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * @method static \NilPortugues\SchemaOrg\Properties\EndDateProperty endDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartDateProperty startDate()
  * METHODEND.
  *
  * CreativeWorkSeries dedicated to TV broadcast and associated online delivery.
@@ -292,6 +294,10 @@ class TVSeries extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'endDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeries',
+        ],
         'episode' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EpisodeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TVSeries',
@@ -459,6 +465,10 @@ class TVSeries extends SchemaClass
         'sourceOrganization' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'startDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeries',
         ],
         'text' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TextProperty',

@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\RejectAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RejectActionTest.
+ * Classes RejectActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class RejectActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RejectAction::schemaUrl(), 'http://schema.org/RejectAction');
+        $this->assertEquals(RejectAction::schemaUrl(), "http://schema.org/RejectAction");
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RejectAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,9 +49,29 @@ class RejectActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RejectAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::error());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RejectAction::image());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::instrument());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -53,14 +84,44 @@ class RejectActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RejectAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RejectAction::potentialAction());
     }
 
+    public function testPurposeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::purpose());
+    }
+
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RejectAction::sameAs());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RejectAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

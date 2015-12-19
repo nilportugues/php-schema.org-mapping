@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalContraindication;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalContraindicationTest.
+ * Classes MedicalContraindicationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalContraindicationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalContraindication::schemaUrl(), 'http://schema.org/MedicalContraindication');
+        $this->assertEquals(MedicalContraindication::schemaUrl(), "http://schema.org/MedicalContraindication");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class MedicalContraindicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalContraindication::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalContraindication::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalContraindication::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalContraindication::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class MedicalContraindicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalContraindication::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalContraindication::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalContraindication::name());
@@ -58,9 +74,24 @@ class MedicalContraindicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalContraindication::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalContraindication::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalContraindication::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalContraindication::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalContraindication::study());
     }
 
     public function testUrlWillReturnMappingObject()

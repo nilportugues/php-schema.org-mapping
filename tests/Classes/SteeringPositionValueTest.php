@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\SteeringPositionValue;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SteeringPositionValueTest.
+ * Classes SteeringPositionValueTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SteeringPositionValueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SteeringPositionValue::schemaUrl(), 'http://schema.org/SteeringPositionValue');
+        $this->assertEquals(SteeringPositionValue::schemaUrl(), "http://schema.org/SteeringPositionValue");
+    }
+
+    public function testAdditionalPropertyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SteeringPositionValue::additionalProperty());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -38,9 +44,34 @@ class SteeringPositionValueTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SteeringPositionValue::description());
     }
 
+    public function testEqualWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SteeringPositionValue::equal());
+    }
+
+    public function testGreaterWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SteeringPositionValue::greater());
+    }
+
+    public function testGreaterOrEqualWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SteeringPositionValue::greaterOrEqual());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SteeringPositionValue::image());
+    }
+
+    public function testLesserWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SteeringPositionValue::lesser());
+    }
+
+    public function testLesserOrEqualWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SteeringPositionValue::lesserOrEqual());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -51,6 +82,11 @@ class SteeringPositionValueTest extends \PHPUnit_Framework_TestCase
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SteeringPositionValue::name());
+    }
+
+    public function testNonEqualWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SteeringPositionValue::nonEqual());
     }
 
     public function testPotentialActionWillReturnMappingObject()
@@ -71,5 +107,10 @@ class SteeringPositionValueTest extends \PHPUnit_Framework_TestCase
     public function testUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SteeringPositionValue::url());
+    }
+
+    public function testValueReferenceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SteeringPositionValue::valueReference());
     }
 }

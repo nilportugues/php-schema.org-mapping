@@ -16,6 +16,8 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * METHODSTART.
  *
  * @method static \NilPortugues\SchemaOrg\Properties\IssnProperty issn()
+ * @method static \NilPortugues\SchemaOrg\Properties\EndDateProperty endDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartDateProperty startDate()
  * @method static \NilPortugues\SchemaOrg\Properties\SchemaVersionProperty schemaVersion()
  * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
  * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty accessibilityAPI()
@@ -86,6 +88,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\CharacterProperty character()
  * @method static \NilPortugues\SchemaOrg\Properties\TranslatorProperty translator()
  * @method static \NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty interactionStatistic()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A publication in any medium issued in successive parts bearing numerical or chronological designations and intended, such as a magazine, scholarly journal, or newspaper to continue indefinitely.
@@ -125,9 +136,17 @@ class Periodical extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccountablePersonProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'alternativeHeadline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty',
@@ -209,6 +228,10 @@ class Periodical extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatePublishedProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'discussionUrl' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -233,6 +256,10 @@ class Periodical extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'endDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeries',
+        ],
         'exampleOfWork' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExampleOfWorkProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -252,6 +279,10 @@ class Periodical extends SchemaClass
         'headline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'inLanguage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
@@ -301,9 +332,17 @@ class Periodical extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'mentions' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MentionsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
@@ -312,6 +351,10 @@ class Periodical extends SchemaClass
         'position' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PositionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'producer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProducerProperty',
@@ -345,6 +388,10 @@ class Periodical extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'schemaVersion' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SchemaVersionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -352,6 +399,10 @@ class Periodical extends SchemaClass
         'sourceOrganization' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'startDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeries',
         ],
         'text' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TextProperty',
@@ -372,6 +423,10 @@ class Periodical extends SchemaClass
         'typicalAgeRange' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'version' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VersionProperty',

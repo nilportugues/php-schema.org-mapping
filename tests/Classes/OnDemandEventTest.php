@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\OnDemandEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OnDemandEventTest.
+ * Classes OnDemandEventTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class OnDemandEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(OnDemandEvent::schemaUrl(), 'http://schema.org/OnDemandEvent');
+        $this->assertEquals(OnDemandEvent::schemaUrl(), "http://schema.org/OnDemandEvent");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::additionalType());
     }
 
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::alternateName());
     }
 
     public function testAttendeeWillReturnMappingObject()
@@ -36,6 +47,11 @@ class OnDemandEventTest extends \PHPUnit_Framework_TestCase
     public function testAttendeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::attendees());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::description());
     }
 
     public function testDoorTimeWillReturnMappingObject()
@@ -58,14 +74,39 @@ class OnDemandEventTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::eventStatus());
     }
 
+    public function testFreeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::free());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::inLanguage());
     }
 
+    public function testIsAccessibleForFreeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::isAccessibleForFree());
+    }
+
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -88,9 +129,19 @@ class OnDemandEventTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::performers());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::potentialAction());
+    }
+
     public function testPreviousStartDateWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::previousStartDate());
+    }
+
+    public function testPublishedOnWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::publishedOn());
     }
 
     public function testRecordedInWillReturnMappingObject()
@@ -101,6 +152,11 @@ class OnDemandEventTest extends \PHPUnit_Framework_TestCase
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::review());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::sameAs());
     }
 
     public function testStartDateWillReturnMappingObject()
@@ -126,6 +182,11 @@ class OnDemandEventTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, OnDemandEvent::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OnDemandEvent::url());
     }
 
     public function testWorkFeaturedWillReturnMappingObject()

@@ -20,6 +20,12 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\RelatedConditionProperty relatedCondition()
  * @method static \NilPortugues\SchemaOrg\Properties\RelatedStructureProperty relatedStructure()
  * @method static \NilPortugues\SchemaOrg\Properties\RelatedTherapyProperty relatedTherapy()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
  * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
  * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
@@ -56,6 +62,10 @@ class AnatomicalSystem extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AssociatedPathophysiologyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AnatomicalSystem',
         ],
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'comprisedOf' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ComprisedOfProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AnatomicalSystem',
@@ -63,6 +73,10 @@ class AnatomicalSystem extends SchemaClass
         'description' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
         'image' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
@@ -72,6 +86,10 @@ class AnatomicalSystem extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'name' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
@@ -79,6 +97,10 @@ class AnatomicalSystem extends SchemaClass
         'potentialAction' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
         'relatedCondition' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelatedConditionProperty',
@@ -92,9 +114,17 @@ class AnatomicalSystem extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelatedTherapyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AnatomicalSystem',
         ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'sameAs' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
         'url' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',

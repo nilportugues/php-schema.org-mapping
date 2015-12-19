@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\ScheduleAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ScheduleActionTest.
+ * Classes ScheduleActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ScheduleActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ScheduleAction::schemaUrl(), 'http://schema.org/ScheduleAction');
+        $this->assertEquals(ScheduleAction::schemaUrl(), "http://schema.org/ScheduleAction");
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScheduleAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,9 +49,29 @@ class ScheduleActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ScheduleAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::error());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScheduleAction::image());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::instrument());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -53,14 +84,44 @@ class ScheduleActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ScheduleAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScheduleAction::potentialAction());
     }
 
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScheduleAction::sameAs());
+    }
+
+    public function testScheduledTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::scheduledTime());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScheduleAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

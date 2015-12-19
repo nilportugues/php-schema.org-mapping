@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\LymphaticVessel;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LymphaticVesselTest.
+ * Classes LymphaticVesselTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class LymphaticVesselTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LymphaticVessel::schemaUrl(), 'http://schema.org/LymphaticVessel');
+        $this->assertEquals(LymphaticVessel::schemaUrl(), "http://schema.org/LymphaticVessel");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -43,6 +44,11 @@ class LymphaticVesselTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::bodyLocation());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LymphaticVessel::code());
+    }
+
     public function testConnectedToWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::connectedTo());
@@ -63,6 +69,11 @@ class LymphaticVesselTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::functionType());
     }
 
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LymphaticVessel::guideline());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::image());
@@ -71,6 +82,11 @@ class LymphaticVesselTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LymphaticVessel::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -93,6 +109,11 @@ class LymphaticVesselTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LymphaticVessel::recognizingAuthority());
+    }
+
     public function testRegionDrainedWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::regionDrained());
@@ -108,6 +129,11 @@ class LymphaticVesselTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::relatedTherapy());
     }
 
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LymphaticVessel::relevantSpecialty());
+    }
+
     public function testRunsToWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::runsTo());
@@ -116,6 +142,11 @@ class LymphaticVesselTest extends \PHPUnit_Framework_TestCase
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LymphaticVessel::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LymphaticVessel::study());
     }
 
     public function testSubStructureWillReturnMappingObject()

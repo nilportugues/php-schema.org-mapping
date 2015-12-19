@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\RadioClip;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RadioClipTest.
+ * Classes RadioClipTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class RadioClipTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RadioClip::schemaUrl(), 'http://schema.org/RadioClip');
+        $this->assertEquals(RadioClip::schemaUrl(), "http://schema.org/RadioClip");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,29 @@ class RadioClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioClip::accountablePerson());
     }
 
+    public function testActorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::actor());
+    }
+
+    public function testActorsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::actors());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioClip::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -101,6 +122,11 @@ class RadioClipTest extends \PHPUnit_Framework_TestCase
     public function testCitationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioClip::citation());
+    }
+
+    public function testClipNumberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::clipNumber());
     }
 
     public function testCommentWillReturnMappingObject()
@@ -158,6 +184,21 @@ class RadioClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioClip::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::description());
+    }
+
+    public function testDirectorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::director());
+    }
+
+    public function testDirectorsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::directors());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioClip::discussionUrl());
@@ -211,6 +252,11 @@ class RadioClipTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioClip::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +314,24 @@ class RadioClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioClip::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioClip::mentions());
+    }
+
+    public function testMusicByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::musicBy());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,9 +339,29 @@ class RadioClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioClip::offers());
     }
 
+    public function testPartOfEpisodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::partOfEpisode());
+    }
+
+    public function testPartOfSeasonWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::partOfSeason());
+    }
+
+    public function testPartOfSeriesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::partOfSeries());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioClip::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +404,11 @@ class RadioClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioClip::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioClip::schemaVersion());
@@ -356,6 +442,11 @@ class RadioClipTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioClip::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioClip::url());
     }
 
     public function testVersionWillReturnMappingObject()

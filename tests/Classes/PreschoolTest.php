@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\Preschool;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PreschoolTest.
+ * Classes PreschoolTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PreschoolTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Preschool::schemaUrl(), 'http://schema.org/Preschool');
+        $this->assertEquals(Preschool::schemaUrl(), "http://schema.org/Preschool");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -31,6 +37,11 @@ class PreschoolTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Preschool::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -71,6 +82,11 @@ class PreschoolTest extends \PHPUnit_Framework_TestCase
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Preschool::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -143,6 +159,11 @@ class PreschoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Preschool::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Preschool::isicV4());
@@ -161,6 +182,11 @@ class PreschoolTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Preschool::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -188,6 +214,11 @@ class PreschoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Preschool::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Preschool::numberOfEmployees());
@@ -203,6 +234,11 @@ class PreschoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Preschool::parentOrganization());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Preschool::review());
@@ -211,6 +247,11 @@ class PreschoolTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Preschool::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -236,6 +277,11 @@ class PreschoolTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Preschool::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Preschool::url());
     }
 
     public function testVatIDWillReturnMappingObject()

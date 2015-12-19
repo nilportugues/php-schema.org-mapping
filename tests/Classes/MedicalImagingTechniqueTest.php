@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalImagingTechnique;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalImagingTechniqueTest.
+ * Classes MedicalImagingTechniqueTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalImagingTechniqueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalImagingTechnique::schemaUrl(), 'http://schema.org/MedicalImagingTechnique');
+        $this->assertEquals(MedicalImagingTechnique::schemaUrl(), "http://schema.org/MedicalImagingTechnique");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class MedicalImagingTechniqueTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class MedicalImagingTechniqueTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::name());
@@ -58,9 +74,24 @@ class MedicalImagingTechniqueTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalImagingTechnique::study());
     }
 
     public function testSupersededByWillReturnMappingObject()

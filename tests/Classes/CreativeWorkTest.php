@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\CreativeWork;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CreativeWorkTest.
+ * Classes CreativeWorkTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CreativeWorkTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CreativeWork::schemaUrl(), 'http://schema.org/CreativeWork');
+        $this->assertEquals(CreativeWork::schemaUrl(), "http://schema.org/CreativeWork");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class CreativeWorkTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CreativeWork::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CreativeWork::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,6 +169,11 @@ class CreativeWorkTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CreativeWork::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CreativeWork::discussionUrl());
@@ -211,6 +227,11 @@ class CreativeWorkTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CreativeWork::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +289,19 @@ class CreativeWorkTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CreativeWork::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CreativeWork::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +312,11 @@ class CreativeWorkTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CreativeWork::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +359,11 @@ class CreativeWorkTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CreativeWork::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CreativeWork::schemaVersion());
@@ -356,6 +397,11 @@ class CreativeWorkTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CreativeWork::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CreativeWork::url());
     }
 
     public function testVersionWillReturnMappingObject()

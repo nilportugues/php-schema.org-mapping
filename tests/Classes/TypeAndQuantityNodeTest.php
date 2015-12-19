@@ -14,13 +14,24 @@ use NilPortugues\SchemaOrg\Classes\TypeAndQuantityNode;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TypeAndQuantityNodeTest.
+ * Classes TypeAndQuantityNodeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TypeAndQuantityNodeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TypeAndQuantityNode::schemaUrl(), 'http://schema.org/TypeAndQuantityNode');
+        $this->assertEquals(TypeAndQuantityNode::schemaUrl(), "http://schema.org/TypeAndQuantityNode");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::alternateName());
     }
 
     public function testAmountOfThisGoodWillReturnMappingObject()
@@ -31,6 +42,36 @@ class TypeAndQuantityNodeTest extends \PHPUnit_Framework_TestCase
     public function testBusinessFunctionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::businessFunction());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::description());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::potentialAction());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::sameAs());
     }
 
     public function testTypeOfGoodWillReturnMappingObject()
@@ -46,5 +87,10 @@ class TypeAndQuantityNodeTest extends \PHPUnit_Framework_TestCase
     public function testUnitTextWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::unitText());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TypeAndQuantityNode::url());
     }
 }

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\SubscribeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SubscribeActionTest.
+ * Classes SubscribeActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SubscribeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SubscribeAction::schemaUrl(), 'http://schema.org/SubscribeAction');
+        $this->assertEquals(SubscribeAction::schemaUrl(), "http://schema.org/SubscribeAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class SubscribeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SubscribeAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SubscribeAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class SubscribeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SubscribeAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SubscribeAction::instrument());
@@ -51,6 +72,16 @@ class SubscribeActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SubscribeAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class SubscribeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SubscribeAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SubscribeAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +117,10 @@ class SubscribeActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SubscribeAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SubscribeAction::url());
     }
 }

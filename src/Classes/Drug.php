@@ -41,12 +41,26 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\PrescriptionStatusProperty prescriptionStatus()
  * @method static \NilPortugues\SchemaOrg\Properties\RelatedDrugProperty relatedDrug()
  * @method static \NilPortugues\SchemaOrg\Properties\WarningProperty warning()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdverseOutcomeProperty adverseOutcome()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContraindicationProperty contraindication()
+ * @method static \NilPortugues\SchemaOrg\Properties\DuplicateTherapyProperty duplicateTherapy()
+ * @method static \NilPortugues\SchemaOrg\Properties\IndicationProperty indication()
+ * @method static \NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty seriousAdverseOutcome()
  * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
  * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
  * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
  * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
  * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
  * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism.
@@ -66,13 +80,25 @@ class Drug extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'administrationRoute' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdministrationRouteProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
         ],
+        'adverseOutcome' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdverseOutcomeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
         'alcoholWarning' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlcoholWarningProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'availableStrength' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AvailableStrengthProperty',
@@ -90,9 +116,17 @@ class Drug extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
+        'contraindication' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContraindicationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
         'cost' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CostProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'dosageForm' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DosageFormProperty',
@@ -106,6 +140,10 @@ class Drug extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DrugClassProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
         ],
+        'duplicateTherapy' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DuplicateTherapyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
         'foodWarning' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FoodWarningProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
@@ -113,6 +151,14 @@ class Drug extends SchemaClass
         'guideline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'indication' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IndicationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
         ],
         'interactingDrug' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InteractingDrugProperty',
@@ -134,6 +180,10 @@ class Drug extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LegalStatusProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'manufacturer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ManufacturerProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
@@ -146,6 +196,10 @@ class Drug extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'nonProprietaryName' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NonProprietaryNameProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
@@ -153,6 +207,10 @@ class Drug extends SchemaClass
         'overdosage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OverdosageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Drug',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'pregnancyCategory' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PregnancyCategoryProperty',
@@ -182,9 +240,21 @@ class Drug extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'seriousAdverseOutcome' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
         'study' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'warning' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WarningProperty',

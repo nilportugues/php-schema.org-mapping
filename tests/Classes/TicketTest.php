@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Ticket;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TicketTest.
+ * Classes TicketTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TicketTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Ticket::schemaUrl(), 'http://schema.org/Ticket');
+        $this->assertEquals(Ticket::schemaUrl(), "http://schema.org/Ticket");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DataDownload;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DataDownloadTest.
+ * Classes DataDownloadTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DataDownloadTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DataDownload::schemaUrl(), 'http://schema.org/DataDownload');
+        $this->assertEquals(DataDownload::schemaUrl(), "http://schema.org/DataDownload");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,29 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataDownload::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::alternativeHeadline());
+    }
+
+    public function testAssociatedArticleWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::associatedArticle());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -93,6 +109,11 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataDownload::awards());
     }
 
+    public function testBitrateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::bitrate());
+    }
+
     public function testCharacterWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::character());
@@ -121,6 +142,16 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
     public function testContentRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::contentRating());
+    }
+
+    public function testContentSizeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::contentSize());
+    }
+
+    public function testContentUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::contentUrl());
     }
 
     public function testContributorWillReturnMappingObject()
@@ -158,9 +189,19 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataDownload::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::discussionUrl());
+    }
+
+    public function testDurationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::duration());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -178,9 +219,24 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataDownload::educationalUse());
     }
 
+    public function testEmbedUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::embedUrl());
+    }
+
+    public function testEncodesCreativeWorkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::encodesCreativeWork());
+    }
+
     public function testEncodingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::encoding());
+    }
+
+    public function testEncodingFormatWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::encodingFormat());
     }
 
     public function testEncodingsWillReturnMappingObject()
@@ -191,6 +247,11 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
     public function testExampleOfWorkWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::exampleOfWork());
+    }
+
+    public function testExpiresWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::expires());
     }
 
     public function testFileFormatWillReturnMappingObject()
@@ -211,6 +272,16 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::headline());
+    }
+
+    public function testHeightWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::height());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +339,19 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataDownload::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,14 +359,29 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataDownload::offers());
     }
 
+    public function testPlayerTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::playerType());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::position());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::potentialAction());
+    }
+
     public function testProducerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::producer());
+    }
+
+    public function testProductionCompanyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::productionCompany());
     }
 
     public function testProviderWillReturnMappingObject()
@@ -313,6 +409,16 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataDownload::recordedAt());
     }
 
+    public function testRegionsAllowedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::regionsAllowed());
+    }
+
+    public function testRequiresSubscriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::requiresSubscription());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::review());
@@ -321,6 +427,11 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::sameAs());
     }
 
     public function testSchemaVersionWillReturnMappingObject()
@@ -358,6 +469,16 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataDownload::typicalAgeRange());
     }
 
+    public function testUploadDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::uploadDate());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::version());
@@ -366,6 +487,11 @@ class DataDownloadTest extends \PHPUnit_Framework_TestCase
     public function testVideoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataDownload::video());
+    }
+
+    public function testWidthWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataDownload::width());
     }
 
     public function testWorkExampleWillReturnMappingObject()

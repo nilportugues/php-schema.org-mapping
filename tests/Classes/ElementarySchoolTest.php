@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\ElementarySchool;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ElementarySchoolTest.
+ * Classes ElementarySchoolTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ElementarySchool::schemaUrl(), 'http://schema.org/ElementarySchool');
+        $this->assertEquals(ElementarySchool::schemaUrl(), "http://schema.org/ElementarySchool");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -31,6 +37,11 @@ class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ElementarySchool::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -71,6 +82,11 @@ class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ElementarySchool::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -143,6 +159,11 @@ class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ElementarySchool::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ElementarySchool::isicV4());
@@ -161,6 +182,11 @@ class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ElementarySchool::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -188,6 +214,11 @@ class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ElementarySchool::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ElementarySchool::numberOfEmployees());
@@ -203,6 +234,11 @@ class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ElementarySchool::parentOrganization());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ElementarySchool::review());
@@ -211,6 +247,11 @@ class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ElementarySchool::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -236,6 +277,11 @@ class ElementarySchoolTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ElementarySchool::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ElementarySchool::url());
     }
 
     public function testVatIDWillReturnMappingObject()

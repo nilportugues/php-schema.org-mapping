@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\SiteNavigationElement;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SiteNavigationElementTest.
+ * Classes SiteNavigationElementTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SiteNavigationElement::schemaUrl(), 'http://schema.org/SiteNavigationElement');
+        $this->assertEquals(SiteNavigationElement::schemaUrl(), "http://schema.org/SiteNavigationElement");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,6 +169,11 @@ class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::discussionUrl());
@@ -211,6 +227,11 @@ class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +289,19 @@ class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +312,11 @@ class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +359,11 @@ class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::schemaVersion());
@@ -356,6 +397,11 @@ class SiteNavigationElementTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SiteNavigationElement::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SiteNavigationElement::url());
     }
 
     public function testVersionWillReturnMappingObject()

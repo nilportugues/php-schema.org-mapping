@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\TakeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TakeActionTest.
+ * Classes TakeActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TakeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TakeAction::schemaUrl(), 'http://schema.org/TakeAction');
+        $this->assertEquals(TakeAction::schemaUrl(), "http://schema.org/TakeAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class TakeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TakeAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TakeAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,16 @@ class TakeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TakeAction::error());
     }
 
+    public function testFromLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::fromLocation());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TakeAction::instrument());
@@ -51,6 +77,16 @@ class TakeActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TakeAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class TakeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TakeAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TakeAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,15 @@ class TakeActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TakeAction::target());
+    }
+
+    public function testToLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::toLocation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TakeAction::url());
     }
 }

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\AppendAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AppendActionTest.
+ * Classes AppendActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AppendActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AppendAction::schemaUrl(), 'http://schema.org/AppendAction');
+        $this->assertEquals(AppendAction::schemaUrl(), "http://schema.org/AppendAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,29 @@ class AppendActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AppendAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AppendAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::alternateName());
+    }
+
+    public function testCollectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::collection());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +64,11 @@ class AppendActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AppendAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AppendAction::instrument());
@@ -51,6 +77,16 @@ class AppendActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AppendAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class AppendActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AppendAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AppendAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,20 @@ class AppendActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AppendAction::target());
+    }
+
+    public function testTargetCollectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::targetCollection());
+    }
+
+    public function testToLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::toLocation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AppendAction::url());
     }
 }

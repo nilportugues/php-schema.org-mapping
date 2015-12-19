@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\FoodEstablishment;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FoodEstablishmentTest.
+ * Classes FoodEstablishmentTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(FoodEstablishment::schemaUrl(), 'http://schema.org/FoodEstablishment');
+        $this->assertEquals(FoodEstablishment::schemaUrl(), "http://schema.org/FoodEstablishment");
     }
 
     public function testAcceptsReservationsWillReturnMappingObject()
@@ -33,6 +34,11 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::additionalProperty());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::additionalType());
+    }
+
     public function testAddressWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::address());
@@ -41,6 +47,11 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -66,6 +77,11 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -98,9 +114,19 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -183,6 +209,11 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::isicV4());
@@ -201,6 +232,11 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -243,9 +279,19 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -263,6 +309,11 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::photo());
@@ -273,6 +324,16 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::review());
@@ -281,6 +342,11 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -311,6 +377,11 @@ class FoodEstablishmentTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FoodEstablishment::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FoodEstablishment::url());
     }
 
     public function testVatIDWillReturnMappingObject()

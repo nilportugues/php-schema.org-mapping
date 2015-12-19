@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\ReadAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReadActionTest.
+ * Classes ReadActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ReadActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReadAction::schemaUrl(), 'http://schema.org/ReadAction');
+        $this->assertEquals(ReadAction::schemaUrl(), "http://schema.org/ReadAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class ReadActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReadAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReadAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,16 @@ class ReadActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReadAction::error());
     }
 
+    public function testExpectsAcceptanceOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::expectsAcceptanceOf());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReadAction::instrument());
@@ -51,6 +77,16 @@ class ReadActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReadAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class ReadActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReadAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReadAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,10 @@ class ReadActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReadAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReadAction::url());
     }
 }

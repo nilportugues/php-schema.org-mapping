@@ -15,6 +15,17 @@ use NilPortugues\SchemaOrg\SchemaClass;
 /**
  * METHODSTART.
  *
+ * @method static \NilPortugues\SchemaOrg\Properties\ActorProperty actor()
+ * @method static \NilPortugues\SchemaOrg\Properties\DirectorProperty director()
+ * @method static \NilPortugues\SchemaOrg\Properties\EndDateProperty endDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\EpisodeProperty episode()
+ * @method static \NilPortugues\SchemaOrg\Properties\EpisodesProperty episodes()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfEpisodesProperty numberOfEpisodes()
+ * @method static \NilPortugues\SchemaOrg\Properties\PartOfSeriesProperty partOfSeries()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty productionCompany()
+ * @method static \NilPortugues\SchemaOrg\Properties\SeasonNumberProperty seasonNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartDateProperty startDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\TrailerProperty trailer()
  * @method static \NilPortugues\SchemaOrg\Properties\SchemaVersionProperty schemaVersion()
  * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
  * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty accessibilityAPI()
@@ -85,6 +96,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\CharacterProperty character()
  * @method static \NilPortugues\SchemaOrg\Properties\TranslatorProperty translator()
  * @method static \NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty interactionStatistic()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * Season dedicated to radio broadcast and associated online delivery.
@@ -124,9 +144,21 @@ class RadioSeason extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccountablePersonProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'actor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
+        ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'alternativeHeadline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty',
@@ -208,6 +240,14 @@ class RadioSeason extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatePublishedProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'director' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DirectorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
+        ],
         'discussionUrl' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -232,6 +272,18 @@ class RadioSeason extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'endDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
+        ],
+        'episode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EpisodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
+        ],
+        'episodes' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EpisodesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
+        ],
         'exampleOfWork' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExampleOfWorkProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -251,6 +303,10 @@ class RadioSeason extends SchemaClass
         'headline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'inLanguage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
@@ -296,21 +352,45 @@ class RadioSeason extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'mentions' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MentionsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'numberOfEpisodes' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfEpisodesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
         ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'partOfSeries' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PartOfSeriesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
+        ],
         'position' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PositionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'producer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProducerProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'productionCompany' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
         ],
         'provider' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProviderProperty',
@@ -340,13 +420,25 @@ class RadioSeason extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'schemaVersion' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SchemaVersionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'seasonNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SeasonNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
+        ],
         'sourceOrganization' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'startDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
         ],
         'text' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TextProperty',
@@ -360,6 +452,10 @@ class RadioSeason extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TimeRequiredProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'trailer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TrailerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWorkSeason',
+        ],
         'translator' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TranslatorProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -367,6 +463,10 @@ class RadioSeason extends SchemaClass
         'typicalAgeRange' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'version' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VersionProperty',

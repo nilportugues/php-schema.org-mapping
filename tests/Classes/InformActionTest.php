@@ -14,18 +14,34 @@ use NilPortugues\SchemaOrg\Classes\InformAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InformActionTest.
+ * Classes InformActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class InformActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InformAction::schemaUrl(), 'http://schema.org/InformAction');
+        $this->assertEquals(InformAction::schemaUrl(), "http://schema.org/InformAction");
+    }
+
+    public function testAboutWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::about());
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InformAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,6 +54,16 @@ class InformActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, InformAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::error());
+    }
+
     public function testEventWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InformAction::event());
@@ -46,6 +72,26 @@ class InformActionTest extends \PHPUnit_Framework_TestCase
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InformAction::image());
+    }
+
+    public function testInLanguageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::inLanguage());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::instrument());
+    }
+
+    public function testLanguageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::language());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -58,14 +104,44 @@ class InformActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, InformAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InformAction::potentialAction());
     }
 
+    public function testRecipientWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::recipient());
+    }
+
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InformAction::sameAs());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InformAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

@@ -17,6 +17,14 @@ use NilPortugues\SchemaOrg\SchemaClass;
  *
  * @method static \NilPortugues\SchemaOrg\Properties\GeoRadiusProperty geoRadius()
  * @method static \NilPortugues\SchemaOrg\Properties\GeoMidpointProperty geoMidpoint()
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressProperty address()
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressCountryProperty addressCountry()
+ * @method static \NilPortugues\SchemaOrg\Properties\BoxProperty box()
+ * @method static \NilPortugues\SchemaOrg\Properties\CircleProperty circle()
+ * @method static \NilPortugues\SchemaOrg\Properties\ElevationProperty elevation()
+ * @method static \NilPortugues\SchemaOrg\Properties\LineProperty line()
+ * @method static \NilPortugues\SchemaOrg\Properties\PolygonProperty polygon()
+ * @method static \NilPortugues\SchemaOrg\Properties\PostalCodeProperty postalCode()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
  * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
  * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
@@ -45,13 +53,33 @@ class GeoCircle extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'address' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'addressCountry' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressCountryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
         'alternateName' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'box' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BoxProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'circle' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CircleProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
         'description' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'elevation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ElevationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
         ],
         'geoMidpoint' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GeoMidpointProperty',
@@ -65,6 +93,10 @@ class GeoCircle extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'line' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
         'mainEntityOfPage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
@@ -72,6 +104,14 @@ class GeoCircle extends SchemaClass
         'name' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'polygon' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PolygonProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'postalCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PostalCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
         ],
         'potentialAction' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',

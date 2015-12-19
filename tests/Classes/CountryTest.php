@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Country;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CountryTest.
+ * Classes CountryTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CountryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Country::schemaUrl(), 'http://schema.org/Country');
+        $this->assertEquals(Country::schemaUrl(), "http://schema.org/Country");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Country::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class CountryTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Country::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class CountryTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Country::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class CountryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Country::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Country::isicV4());
@@ -98,6 +119,11 @@ class CountryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Country::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Country::map());
@@ -106,6 +132,11 @@ class CountryTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Country::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::name());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +154,11 @@ class CountryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Country::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Country::review());
@@ -133,8 +169,18 @@ class CountryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Country::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Country::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Country::url());
     }
 }

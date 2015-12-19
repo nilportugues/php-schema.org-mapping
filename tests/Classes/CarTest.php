@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Car;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CarTest.
+ * Classes CarTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CarTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Car::schemaUrl(), 'http://schema.org/Car');
+        $this->assertEquals(Car::schemaUrl(), "http://schema.org/Car");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
@@ -28,9 +29,19 @@ class CarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Car::additionalProperty());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Car::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::alternateName());
     }
 
     public function testAudienceWillReturnMappingObject()
@@ -53,6 +64,11 @@ class CarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Car::brand());
     }
 
+    public function testCargoVolumeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::cargoVolume());
+    }
+
     public function testCategoryWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Car::category());
@@ -63,9 +79,39 @@ class CarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Car::color());
     }
 
+    public function testDateVehicleFirstRegisteredWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::dateVehicleFirstRegistered());
+    }
+
     public function testDepthWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Car::depth());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::description());
+    }
+
+    public function testDriveWheelConfigurationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::driveWheelConfiguration());
+    }
+
+    public function testFuelConsumptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::fuelConsumption());
+    }
+
+    public function testFuelEfficiencyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::fuelEfficiency());
+    }
+
+    public function testFuelTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::fuelType());
     }
 
     public function testGtin12WillReturnMappingObject()
@@ -93,6 +139,11 @@ class CarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Car::height());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::image());
+    }
+
     public function testIsAccessoryOrSparePartForWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Car::isAccessoryOrSparePartFor());
@@ -118,14 +169,29 @@ class CarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Car::itemCondition());
     }
 
+    public function testKnownVehicleDamagesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::knownVehicleDamages());
+    }
+
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Car::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::mainEntityOfPage());
+    }
+
     public function testManufacturerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Car::manufacturer());
+    }
+
+    public function testMileageFromOdometerWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::mileageFromOdometer());
     }
 
     public function testModelWillReturnMappingObject()
@@ -138,9 +204,44 @@ class CarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Car::mpn());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::name());
+    }
+
+    public function testNumberOfAirbagsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::numberOfAirbags());
+    }
+
+    public function testNumberOfAxlesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::numberOfAxles());
+    }
+
+    public function testNumberOfDoorsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::numberOfDoors());
+    }
+
+    public function testNumberOfForwardGearsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::numberOfForwardGears());
+    }
+
+    public function testNumberOfPreviousOwnersWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::numberOfPreviousOwners());
+    }
+
     public function testOffersWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Car::offers());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::potentialAction());
     }
 
     public function testProductIDWillReturnMappingObject()
@@ -173,9 +274,64 @@ class CarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Car::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::sameAs());
+    }
+
     public function testSkuWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Car::sku());
+    }
+
+    public function testSteeringPositionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::steeringPosition());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::url());
+    }
+
+    public function testVehicleConfigurationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::vehicleConfiguration());
+    }
+
+    public function testVehicleEngineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::vehicleEngine());
+    }
+
+    public function testVehicleInteriorColorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::vehicleInteriorColor());
+    }
+
+    public function testVehicleInteriorTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::vehicleInteriorType());
+    }
+
+    public function testVehicleModelDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::vehicleModelDate());
+    }
+
+    public function testVehicleSeatingCapacityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::vehicleSeatingCapacity());
+    }
+
+    public function testVehicleTransmissionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::vehicleTransmission());
+    }
+
+    public function testVinWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Car::vin());
     }
 
     public function testWeightWillReturnMappingObject()

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalCondition;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalConditionTest.
+ * Classes MedicalConditionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalConditionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalCondition::schemaUrl(), 'http://schema.org/MedicalCondition');
+        $this->assertEquals(MedicalCondition::schemaUrl(), "http://schema.org/MedicalCondition");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -43,6 +44,11 @@ class MedicalConditionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalCondition::cause());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCondition::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalCondition::description());
@@ -63,6 +69,11 @@ class MedicalConditionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalCondition::expectedPrognosis());
     }
 
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCondition::guideline());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalCondition::image());
@@ -71,6 +82,11 @@ class MedicalConditionTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalCondition::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCondition::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -108,6 +124,16 @@ class MedicalConditionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalCondition::primaryPrevention());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCondition::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCondition::relevantSpecialty());
+    }
+
     public function testRiskFactorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalCondition::riskFactor());
@@ -131,6 +157,11 @@ class MedicalConditionTest extends \PHPUnit_Framework_TestCase
     public function testStageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalCondition::stage());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCondition::study());
     }
 
     public function testSubtypeWillReturnMappingObject()

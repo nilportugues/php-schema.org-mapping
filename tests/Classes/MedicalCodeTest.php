@@ -14,13 +14,24 @@ use NilPortugues\SchemaOrg\Classes\MedicalCode;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalCodeTest.
+ * Classes MedicalCodeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalCodeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalCode::schemaUrl(), 'http://schema.org/MedicalCode');
+        $this->assertEquals(MedicalCode::schemaUrl(), "http://schema.org/MedicalCode");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::alternateName());
     }
 
     public function testCodeWillReturnMappingObject()
@@ -38,14 +49,39 @@ class MedicalCodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalCode::codingSystem());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::description());
+    }
+
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalCode::guideline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalCode::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -58,8 +94,18 @@ class MedicalCodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalCode::relevantSpecialty());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::sameAs());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalCode::study());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalCode::url());
     }
 }

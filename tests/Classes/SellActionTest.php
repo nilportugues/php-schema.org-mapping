@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\SellAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SellActionTest.
+ * Classes SellActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SellActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SellAction::schemaUrl(), 'http://schema.org/SellAction');
+        $this->assertEquals(SellAction::schemaUrl(), "http://schema.org/SellAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,14 +29,29 @@ class SellActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SellAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SellAction::agent());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::alternateName());
+    }
+
     public function testBuyerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SellAction::buyer());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -48,6 +64,11 @@ class SellActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SellAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SellAction::instrument());
@@ -56,6 +77,16 @@ class SellActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SellAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -68,9 +99,29 @@ class SellActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SellAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::potentialAction());
+    }
+
+    public function testPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::price());
+    }
+
+    public function testPriceSpecificationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::priceSpecification());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SellAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -81,6 +132,11 @@ class SellActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SellAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SellAction::url());
     }
 
     public function testWarrantyPromiseWillReturnMappingObject()

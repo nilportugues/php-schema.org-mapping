@@ -18,30 +18,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\AcceptsReservationsProperty acceptsReservations()
  * @method static \NilPortugues\SchemaOrg\Properties\MenuProperty menu()
  * @method static \NilPortugues\SchemaOrg\Properties\ServesCuisineProperty servesCuisine()
+ * @method static \NilPortugues\SchemaOrg\Properties\BranchOfProperty branchOf()
+ * @method static \NilPortugues\SchemaOrg\Properties\BranchCodeProperty branchCode()
+ * @method static \NilPortugues\SchemaOrg\Properties\CurrenciesAcceptedProperty currenciesAccepted()
+ * @method static \NilPortugues\SchemaOrg\Properties\OpeningHoursProperty openingHours()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentAcceptedProperty paymentAccepted()
+ * @method static \NilPortugues\SchemaOrg\Properties\PriceRangeProperty priceRange()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty hasOfferCatalog()
  * @method static \NilPortugues\SchemaOrg\Properties\AddressProperty address()
  * @method static \NilPortugues\SchemaOrg\Properties\AggregateRatingProperty aggregateRating()
- * @method static \NilPortugues\SchemaOrg\Properties\BranchCodeProperty branchCode()
- * @method static \NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty containedInPlace()
- * @method static \NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty containsPlace()
- * @method static \NilPortugues\SchemaOrg\Properties\ContainedInProperty containedIn()
- * @method static \NilPortugues\SchemaOrg\Properties\EventProperty event()
- * @method static \NilPortugues\SchemaOrg\Properties\EventsProperty events()
- * @method static \NilPortugues\SchemaOrg\Properties\FaxNumberProperty faxNumber()
- * @method static \NilPortugues\SchemaOrg\Properties\GeoProperty geo()
- * @method static \NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty globalLocationNumber()
- * @method static \NilPortugues\SchemaOrg\Properties\IsicV4Property isicV4()
- * @method static \NilPortugues\SchemaOrg\Properties\LogoProperty logo()
- * @method static \NilPortugues\SchemaOrg\Properties\HasMapProperty hasMap()
- * @method static \NilPortugues\SchemaOrg\Properties\MapProperty map()
- * @method static \NilPortugues\SchemaOrg\Properties\MapsProperty maps()
- * @method static \NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty openingHoursSpecification()
- * @method static \NilPortugues\SchemaOrg\Properties\PhotoProperty photo()
- * @method static \NilPortugues\SchemaOrg\Properties\PhotosProperty photos()
- * @method static \NilPortugues\SchemaOrg\Properties\ReviewProperty review()
- * @method static \NilPortugues\SchemaOrg\Properties\ReviewsProperty reviews()
- * @method static \NilPortugues\SchemaOrg\Properties\TelephoneProperty telephone()
- * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
- * @method static \NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty hasOfferCatalog()
  * @method static \NilPortugues\SchemaOrg\Properties\AlumniProperty alumni()
  * @method static \NilPortugues\SchemaOrg\Properties\AreaServedProperty areaServed()
  * @method static \NilPortugues\SchemaOrg\Properties\AwardProperty award()
@@ -55,13 +40,19 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\EmailProperty email()
  * @method static \NilPortugues\SchemaOrg\Properties\EmployeeProperty employee()
  * @method static \NilPortugues\SchemaOrg\Properties\EmployeesProperty employees()
+ * @method static \NilPortugues\SchemaOrg\Properties\EventProperty event()
+ * @method static \NilPortugues\SchemaOrg\Properties\EventsProperty events()
+ * @method static \NilPortugues\SchemaOrg\Properties\FaxNumberProperty faxNumber()
  * @method static \NilPortugues\SchemaOrg\Properties\FounderProperty founder()
  * @method static \NilPortugues\SchemaOrg\Properties\FoundersProperty founders()
  * @method static \NilPortugues\SchemaOrg\Properties\DissolutionDateProperty dissolutionDate()
  * @method static \NilPortugues\SchemaOrg\Properties\FoundingDateProperty foundingDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty globalLocationNumber()
  * @method static \NilPortugues\SchemaOrg\Properties\HasPOSProperty hasPOS()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsicV4Property isicV4()
  * @method static \NilPortugues\SchemaOrg\Properties\LegalNameProperty legalName()
  * @method static \NilPortugues\SchemaOrg\Properties\LocationProperty location()
+ * @method static \NilPortugues\SchemaOrg\Properties\LogoProperty logo()
  * @method static \NilPortugues\SchemaOrg\Properties\MakesOfferProperty makesOffer()
  * @method static \NilPortugues\SchemaOrg\Properties\MemberProperty member()
  * @method static \NilPortugues\SchemaOrg\Properties\MemberOfProperty memberOf()
@@ -69,11 +60,34 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\NaicsProperty naics()
  * @method static \NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty numberOfEmployees()
  * @method static \NilPortugues\SchemaOrg\Properties\OwnsProperty owns()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewProperty review()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewsProperty reviews()
  * @method static \NilPortugues\SchemaOrg\Properties\SeeksProperty seeks()
  * @method static \NilPortugues\SchemaOrg\Properties\ServiceAreaProperty serviceArea()
  * @method static \NilPortugues\SchemaOrg\Properties\SubOrganizationProperty subOrganization()
  * @method static \NilPortugues\SchemaOrg\Properties\TaxIDProperty taxID()
+ * @method static \NilPortugues\SchemaOrg\Properties\TelephoneProperty telephone()
  * @method static \NilPortugues\SchemaOrg\Properties\VatIDProperty vatID()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty containedInPlace()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty containsPlace()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainedInProperty containedIn()
+ * @method static \NilPortugues\SchemaOrg\Properties\GeoProperty geo()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasMapProperty hasMap()
+ * @method static \NilPortugues\SchemaOrg\Properties\MapProperty map()
+ * @method static \NilPortugues\SchemaOrg\Properties\MapsProperty maps()
+ * @method static \NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty openingHoursSpecification()
+ * @method static \NilPortugues\SchemaOrg\Properties\PhotoProperty photo()
+ * @method static \NilPortugues\SchemaOrg\Properties\PhotosProperty photos()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
  * METHODEND.
  *
  * A food-related business.
@@ -97,6 +111,10 @@ class FoodEstablishment extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'address' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
@@ -104,6 +122,10 @@ class FoodEstablishment extends SchemaClass
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'alumni' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlumniProperty',
@@ -124,6 +146,10 @@ class FoodEstablishment extends SchemaClass
         'branchCode' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BranchCodeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'branchOf' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BranchOfProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
         ],
         'brand' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BrandProperty',
@@ -149,9 +175,17 @@ class FoodEstablishment extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
         ],
+        'currenciesAccepted' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CurrenciesAcceptedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
         'department' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepartmentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'dissolutionDate' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DissolutionDateProperty',
@@ -217,6 +251,10 @@ class FoodEstablishment extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasPOSProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'isicV4' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsicV4Property',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
@@ -232,6 +270,10 @@ class FoodEstablishment extends SchemaClass
         'logo' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LogoProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'makesOffer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MakesOfferProperty',
@@ -265,9 +307,17 @@ class FoodEstablishment extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NaicsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
         ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'numberOfEmployees' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'openingHours' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OpeningHoursProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
         ],
         'openingHoursSpecification' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty',
@@ -281,6 +331,10 @@ class FoodEstablishment extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParentOrganizationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
         ],
+        'paymentAccepted' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentAcceptedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
         'photo' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PhotoProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
@@ -289,6 +343,14 @@ class FoodEstablishment extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PhotosProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
         ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'priceRange' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PriceRangeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
         'review' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
@@ -296,6 +358,10 @@ class FoodEstablishment extends SchemaClass
         'reviews' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'seeks' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SeeksProperty',
@@ -320,6 +386,10 @@ class FoodEstablishment extends SchemaClass
         'telephone' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TelephoneProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'vatID' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VatIDProperty',

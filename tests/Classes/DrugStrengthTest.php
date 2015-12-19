@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\DrugStrength;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrugStrengthTest.
+ * Classes DrugStrengthTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DrugStrengthTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrugStrength::schemaUrl(), 'http://schema.org/DrugStrength');
+        $this->assertEquals(DrugStrength::schemaUrl(), "http://schema.org/DrugStrength");
     }
 
     public function testActiveIngredientWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugStrength::activeIngredient());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::alternateName());
     }
 
     public function testAvailableInWillReturnMappingObject()
@@ -38,14 +49,39 @@ class DrugStrengthTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugStrength::code());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::description());
+    }
+
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugStrength::guideline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugStrength::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -56,6 +92,11 @@ class DrugStrengthTest extends \PHPUnit_Framework_TestCase
     public function testRelevantSpecialtyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugStrength::relevantSpecialty());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::sameAs());
     }
 
     public function testStrengthUnitWillReturnMappingObject()
@@ -71,5 +112,10 @@ class DrugStrengthTest extends \PHPUnit_Framework_TestCase
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugStrength::study());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugStrength::url());
     }
 }

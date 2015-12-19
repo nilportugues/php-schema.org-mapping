@@ -14,13 +14,24 @@ use NilPortugues\SchemaOrg\Classes\MedicalConditionStage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalConditionStageTest.
+ * Classes MedicalConditionStageTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalConditionStageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalConditionStage::schemaUrl(), 'http://schema.org/MedicalConditionStage');
+        $this->assertEquals(MedicalConditionStage::schemaUrl(), "http://schema.org/MedicalConditionStage");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::alternateName());
     }
 
     public function testCodeWillReturnMappingObject()
@@ -28,14 +39,39 @@ class MedicalConditionStageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalConditionStage::code());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::description());
+    }
+
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalConditionStage::guideline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalConditionStage::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -46,6 +82,11 @@ class MedicalConditionStageTest extends \PHPUnit_Framework_TestCase
     public function testRelevantSpecialtyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalConditionStage::relevantSpecialty());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::sameAs());
     }
 
     public function testStageAsNumberWillReturnMappingObject()
@@ -61,5 +102,10 @@ class MedicalConditionStageTest extends \PHPUnit_Framework_TestCase
     public function testSubStageSuffixWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalConditionStage::subStageSuffix());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalConditionStage::url());
     }
 }

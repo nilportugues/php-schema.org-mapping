@@ -16,12 +16,25 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * METHODSTART.
  *
  * @method static \NilPortugues\SchemaOrg\Properties\RecommendationStrengthProperty recommendationStrength()
+ * @method static \NilPortugues\SchemaOrg\Properties\EvidenceLevelProperty evidenceLevel()
+ * @method static \NilPortugues\SchemaOrg\Properties\EvidenceOriginProperty evidenceOrigin()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineDateProperty guidelineDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineSubjectProperty guidelineSubject()
  * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
  * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
  * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
  * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
  * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
  * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A guideline recommendation that is regarded as efficacious and where quality of the data supporting the recommendation is sound.
@@ -37,17 +50,61 @@ class MedicalGuidelineRecommendation extends SchemaClass
      * @var array
      */
     protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'code' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'evidenceLevel' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EvidenceLevelProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalGuideline',
+        ],
+        'evidenceOrigin' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EvidenceOriginProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalGuideline',
         ],
         'guideline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
+        'guidelineDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalGuideline',
+        ],
+        'guidelineSubject' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineSubjectProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalGuideline',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'medicineSystem' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'recognizingAuthority' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
@@ -61,9 +118,17 @@ class MedicalGuidelineRecommendation extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'study' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
     ];
 }

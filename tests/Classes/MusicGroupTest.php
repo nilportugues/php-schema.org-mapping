@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\MusicGroup;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MusicGroupTest.
+ * Classes MusicGroupTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MusicGroupTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MusicGroup::schemaUrl(), 'http://schema.org/MusicGroup');
+        $this->assertEquals(MusicGroup::schemaUrl(), "http://schema.org/MusicGroup");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -41,6 +47,11 @@ class MusicGroupTest extends \PHPUnit_Framework_TestCase
     public function testAlbumsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicGroup::albums());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -81,6 +92,11 @@ class MusicGroupTest extends \PHPUnit_Framework_TestCase
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicGroup::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -153,6 +169,11 @@ class MusicGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MusicGroup::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicGroup::isicV4());
@@ -171,6 +192,11 @@ class MusicGroupTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicGroup::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -203,6 +229,11 @@ class MusicGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MusicGroup::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicGroup::numberOfEmployees());
@@ -218,6 +249,11 @@ class MusicGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MusicGroup::parentOrganization());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicGroup::review());
@@ -226,6 +262,11 @@ class MusicGroupTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicGroup::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -256,6 +297,11 @@ class MusicGroupTest extends \PHPUnit_Framework_TestCase
     public function testTracksWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicGroup::tracks());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicGroup::url());
     }
 
     public function testVatIDWillReturnMappingObject()

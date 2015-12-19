@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Mountain;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MountainTest.
+ * Classes MountainTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MountainTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Mountain::schemaUrl(), 'http://schema.org/Mountain');
+        $this->assertEquals(Mountain::schemaUrl(), "http://schema.org/Mountain");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Mountain::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class MountainTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Mountain::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class MountainTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Mountain::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class MountainTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Mountain::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Mountain::isicV4());
@@ -98,6 +119,11 @@ class MountainTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Mountain::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Mountain::map());
@@ -106,6 +132,11 @@ class MountainTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Mountain::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::name());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +154,11 @@ class MountainTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Mountain::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Mountain::review());
@@ -133,8 +169,18 @@ class MountainTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Mountain::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Mountain::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Mountain::url());
     }
 }

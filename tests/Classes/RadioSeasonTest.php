@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\RadioSeason;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RadioSeasonTest.
+ * Classes RadioSeasonTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class RadioSeasonTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RadioSeason::schemaUrl(), 'http://schema.org/RadioSeason');
+        $this->assertEquals(RadioSeason::schemaUrl(), "http://schema.org/RadioSeason");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,24 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioSeason::accountablePerson());
     }
 
+    public function testActorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::actor());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,6 +174,16 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioSeason::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::description());
+    }
+
+    public function testDirectorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::director());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::discussionUrl());
@@ -188,6 +214,21 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioSeason::encodings());
     }
 
+    public function testEndDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::endDate());
+    }
+
+    public function testEpisodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::episode());
+    }
+
+    public function testEpisodesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::episodes());
+    }
+
     public function testExampleOfWorkWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::exampleOfWork());
@@ -211,6 +252,11 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +314,24 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioSeason::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::name());
+    }
+
+    public function testNumberOfEpisodesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::numberOfEpisodes());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,14 +339,29 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioSeason::offers());
     }
 
+    public function testPartOfSeriesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::partOfSeries());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::position());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::potentialAction());
+    }
+
     public function testProducerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::producer());
+    }
+
+    public function testProductionCompanyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::productionCompany());
     }
 
     public function testProviderWillReturnMappingObject()
@@ -323,14 +399,29 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioSeason::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::schemaVersion());
     }
 
+    public function testSeasonNumberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::seasonNumber());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::sourceOrganization());
+    }
+
+    public function testStartDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::startDate());
     }
 
     public function testTextWillReturnMappingObject()
@@ -348,6 +439,11 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RadioSeason::timeRequired());
     }
 
+    public function testTrailerWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::trailer());
+    }
+
     public function testTranslatorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::translator());
@@ -356,6 +452,11 @@ class RadioSeasonTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RadioSeason::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RadioSeason::url());
     }
 
     public function testVersionWillReturnMappingObject()

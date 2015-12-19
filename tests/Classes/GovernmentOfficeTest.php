@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\GovernmentOffice;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GovernmentOfficeTest.
+ * Classes GovernmentOfficeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GovernmentOffice::schemaUrl(), 'http://schema.org/GovernmentOffice');
+        $this->assertEquals(GovernmentOffice::schemaUrl(), "http://schema.org/GovernmentOffice");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::isicV4());
@@ -196,6 +227,11 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::photo());
@@ -263,6 +314,16 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::review());
@@ -271,6 +332,11 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class GovernmentOfficeTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GovernmentOffice::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GovernmentOffice::url());
     }
 
     public function testVatIDWillReturnMappingObject()

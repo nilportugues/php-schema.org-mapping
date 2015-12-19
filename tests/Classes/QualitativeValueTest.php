@@ -14,18 +14,34 @@ use NilPortugues\SchemaOrg\Classes\QualitativeValue;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes QualitativeValueTest.
+ * Classes QualitativeValueTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class QualitativeValueTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(QualitativeValue::schemaUrl(), 'http://schema.org/QualitativeValue');
+        $this->assertEquals(QualitativeValue::schemaUrl(), "http://schema.org/QualitativeValue");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QualitativeValue::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::description());
     }
 
     public function testEqualWillReturnMappingObject()
@@ -43,6 +59,11 @@ class QualitativeValueTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QualitativeValue::greaterOrEqual());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::image());
+    }
+
     public function testLesserWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QualitativeValue::lesser());
@@ -53,9 +74,39 @@ class QualitativeValueTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, QualitativeValue::lesserOrEqual());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::name());
+    }
+
     public function testNonEqualWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, QualitativeValue::nonEqual());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::potentialAction());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::sameAs());
+    }
+
+    public function testSupersededByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::supersededBy());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, QualitativeValue::url());
     }
 
     public function testValueReferenceWillReturnMappingObject()

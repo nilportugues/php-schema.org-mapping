@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\TheaterGroup;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TheaterGroupTest.
+ * Classes TheaterGroupTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TheaterGroupTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TheaterGroup::schemaUrl(), 'http://schema.org/TheaterGroup');
+        $this->assertEquals(TheaterGroup::schemaUrl(), "http://schema.org/TheaterGroup");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -31,6 +37,11 @@ class TheaterGroupTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TheaterGroup::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -71,6 +82,11 @@ class TheaterGroupTest extends \PHPUnit_Framework_TestCase
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TheaterGroup::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -143,6 +159,11 @@ class TheaterGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TheaterGroup::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TheaterGroup::isicV4());
@@ -161,6 +182,11 @@ class TheaterGroupTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TheaterGroup::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -188,6 +214,11 @@ class TheaterGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TheaterGroup::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TheaterGroup::numberOfEmployees());
@@ -203,6 +234,11 @@ class TheaterGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TheaterGroup::parentOrganization());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TheaterGroup::review());
@@ -211,6 +247,11 @@ class TheaterGroupTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TheaterGroup::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -236,6 +277,11 @@ class TheaterGroupTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TheaterGroup::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TheaterGroup::url());
     }
 
     public function testVatIDWillReturnMappingObject()

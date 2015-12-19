@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\UnitPriceSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UnitPriceSpecificationTest.
+ * Classes UnitPriceSpecificationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class UnitPriceSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UnitPriceSpecification::schemaUrl(), 'http://schema.org/UnitPriceSpecification');
+        $this->assertEquals(UnitPriceSpecification::schemaUrl(), "http://schema.org/UnitPriceSpecification");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -43,6 +44,16 @@ class UnitPriceSpecificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::description());
     }
 
+    public function testEligibleQuantityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::eligibleQuantity());
+    }
+
+    public function testEligibleTransactionVolumeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::eligibleTransactionVolume());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::image());
@@ -53,6 +64,16 @@ class UnitPriceSpecificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::mainEntityOfPage());
     }
 
+    public function testMaxPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::maxPrice());
+    }
+
+    public function testMinPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::minPrice());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::name());
@@ -61,6 +82,16 @@ class UnitPriceSpecificationTest extends \PHPUnit_Framework_TestCase
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::potentialAction());
+    }
+
+    public function testPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::price());
+    }
+
+    public function testPriceCurrencyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::priceCurrency());
     }
 
     public function testPriceTypeWillReturnMappingObject()
@@ -86,5 +117,20 @@ class UnitPriceSpecificationTest extends \PHPUnit_Framework_TestCase
     public function testUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::url());
+    }
+
+    public function testValidFromWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::validFrom());
+    }
+
+    public function testValidThroughWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::validThrough());
+    }
+
+    public function testValueAddedTaxIncludedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnitPriceSpecification::valueAddedTaxIncluded());
     }
 }

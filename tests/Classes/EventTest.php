@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\Event;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EventTest.
+ * Classes EventTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class EventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Event::schemaUrl(), 'http://schema.org/Event');
+        $this->assertEquals(Event::schemaUrl(), "http://schema.org/Event");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::additionalType());
     }
 
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Event::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::alternateName());
     }
 
     public function testAttendeeWillReturnMappingObject()
@@ -36,6 +47,11 @@ class EventTest extends \PHPUnit_Framework_TestCase
     public function testAttendeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Event::attendees());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::description());
     }
 
     public function testDoorTimeWillReturnMappingObject()
@@ -58,6 +74,11 @@ class EventTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Event::eventStatus());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Event::inLanguage());
@@ -66,6 +87,16 @@ class EventTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Event::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -88,6 +119,11 @@ class EventTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Event::performers());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::potentialAction());
+    }
+
     public function testPreviousStartDateWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Event::previousStartDate());
@@ -101,6 +137,11 @@ class EventTest extends \PHPUnit_Framework_TestCase
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Event::review());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::sameAs());
     }
 
     public function testStartDateWillReturnMappingObject()
@@ -126,6 +167,11 @@ class EventTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Event::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Event::url());
     }
 
     public function testWorkFeaturedWillReturnMappingObject()

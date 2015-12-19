@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Zoo;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ZooTest.
+ * Classes ZooTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ZooTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Zoo::schemaUrl(), 'http://schema.org/Zoo');
+        $this->assertEquals(Zoo::schemaUrl(), "http://schema.org/Zoo");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Zoo::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class ZooTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Zoo::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class ZooTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Zoo::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class ZooTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Zoo::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Zoo::isicV4());
@@ -98,6 +119,11 @@ class ZooTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Zoo::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Zoo::map());
@@ -106,6 +132,16 @@ class ZooTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Zoo::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +159,11 @@ class ZooTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Zoo::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Zoo::review());
@@ -133,8 +174,18 @@ class ZooTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Zoo::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Zoo::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::url());
     }
 }

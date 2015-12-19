@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\PlanAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PlanActionTest.
+ * Classes PlanActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PlanActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PlanAction::schemaUrl(), 'http://schema.org/PlanAction');
+        $this->assertEquals(PlanAction::schemaUrl(), "http://schema.org/PlanAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class PlanActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PlanAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlanAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class PlanActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PlanAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlanAction::instrument());
@@ -51,6 +72,16 @@ class PlanActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlanAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class PlanActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PlanAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlanAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::sameAs());
     }
 
     public function testScheduledTimeWillReturnMappingObject()
@@ -81,5 +122,10 @@ class PlanActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlanAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlanAction::url());
     }
 }

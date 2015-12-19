@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\TVSeries;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TVSeriesTest.
+ * Classes TVSeriesTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TVSeriesTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TVSeries::schemaUrl(), 'http://schema.org/TVSeries');
+        $this->assertEquals(TVSeries::schemaUrl(), "http://schema.org/TVSeries");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -233,6 +234,11 @@ class TVSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TVSeries::encodings());
     }
 
+    public function testEndDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVSeries::endDate());
+    }
+
     public function testEpisodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVSeries::episode());
@@ -441,6 +447,11 @@ class TVSeriesTest extends \PHPUnit_Framework_TestCase
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVSeries::sourceOrganization());
+    }
+
+    public function testStartDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVSeries::startDate());
     }
 
     public function testTextWillReturnMappingObject()

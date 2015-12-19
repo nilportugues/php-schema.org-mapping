@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\PerformingArtsTheater;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PerformingArtsTheaterTest.
+ * Classes PerformingArtsTheaterTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PerformingArtsTheaterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PerformingArtsTheater::schemaUrl(), 'http://schema.org/PerformingArtsTheater');
+        $this->assertEquals(PerformingArtsTheater::schemaUrl(), "http://schema.org/PerformingArtsTheater");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class PerformingArtsTheaterTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class PerformingArtsTheaterTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class PerformingArtsTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::isicV4());
@@ -98,6 +119,11 @@ class PerformingArtsTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::map());
@@ -106,6 +132,16 @@ class PerformingArtsTheaterTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +159,11 @@ class PerformingArtsTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::review());
@@ -133,8 +174,18 @@ class PerformingArtsTheaterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PerformingArtsTheater::url());
     }
 }

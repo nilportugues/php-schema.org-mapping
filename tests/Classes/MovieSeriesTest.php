@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MovieSeries;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MovieSeriesTest.
+ * Classes MovieSeriesTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MovieSeriesTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MovieSeries::schemaUrl(), 'http://schema.org/MovieSeries');
+        $this->assertEquals(MovieSeries::schemaUrl(), "http://schema.org/MovieSeries");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -63,9 +64,19 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieSeries::actors());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -168,6 +179,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieSeries::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::description());
+    }
+
     public function testDirectorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::director());
@@ -208,6 +224,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieSeries::encodings());
     }
 
+    public function testEndDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::endDate());
+    }
+
     public function testExampleOfWorkWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::exampleOfWork());
@@ -231,6 +252,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -288,6 +314,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieSeries::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::mentions());
@@ -298,6 +329,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieSeries::musicBy());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::name());
+    }
+
     public function testOffersWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::offers());
@@ -306,6 +342,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -353,6 +394,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MovieSeries::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::schemaVersion());
@@ -361,6 +407,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::sourceOrganization());
+    }
+
+    public function testStartDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::startDate());
     }
 
     public function testTextWillReturnMappingObject()
@@ -391,6 +442,11 @@ class MovieSeriesTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MovieSeries::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MovieSeries::url());
     }
 
     public function testVersionWillReturnMappingObject()

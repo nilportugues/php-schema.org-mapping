@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\LodgingBusiness;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LodgingBusinessTest.
+ * Classes LodgingBusinessTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LodgingBusiness::schemaUrl(), 'http://schema.org/LodgingBusiness');
+        $this->assertEquals(LodgingBusiness::schemaUrl(), "http://schema.org/LodgingBusiness");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::isicV4());
@@ -196,6 +227,11 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::photo());
@@ -263,6 +314,16 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::review());
@@ -271,6 +332,11 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class LodgingBusinessTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LodgingBusiness::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LodgingBusiness::url());
     }
 
     public function testVatIDWillReturnMappingObject()

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\CommunicateAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CommunicateActionTest.
+ * Classes CommunicateActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CommunicateActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CommunicateAction::schemaUrl(), 'http://schema.org/CommunicateAction');
+        $this->assertEquals(CommunicateAction::schemaUrl(), "http://schema.org/CommunicateAction");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -33,9 +34,24 @@ class CommunicateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CommunicateAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CommunicateAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -46,6 +62,11 @@ class CommunicateActionTest extends \PHPUnit_Framework_TestCase
     public function testErrorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CommunicateAction::error());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -68,6 +89,16 @@ class CommunicateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CommunicateAction::location());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::name());
+    }
+
     public function testObjectTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CommunicateAction::objectType());
@@ -76,6 +107,11 @@ class CommunicateActionTest extends \PHPUnit_Framework_TestCase
     public function testParticipantWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CommunicateAction::participant());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::potentialAction());
     }
 
     public function testRecipientWillReturnMappingObject()
@@ -88,6 +124,11 @@ class CommunicateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CommunicateAction::result());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::sameAs());
+    }
+
     public function testStartTimeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CommunicateAction::startTime());
@@ -96,5 +137,10 @@ class CommunicateActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CommunicateAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommunicateAction::url());
     }
 }

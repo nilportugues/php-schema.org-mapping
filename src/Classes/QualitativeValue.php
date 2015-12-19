@@ -23,6 +23,16 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\NonEqualProperty nonEqual()
  * @method static \NilPortugues\SchemaOrg\Properties\ValueReferenceProperty valueReference()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
+ * @method static \NilPortugues\SchemaOrg\Properties\SupersededByProperty supersededBy()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A predefined value for a product characteristic, e.g. the power cord plug type "US" or the garment sizes "S", "M", "L", and "XL".
@@ -42,6 +52,18 @@ class QualitativeValue extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'equal' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EqualProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
@@ -54,6 +76,10 @@ class QualitativeValue extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GreaterOrEqualProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'lesser' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LesserProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
@@ -62,9 +88,33 @@ class QualitativeValue extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LesserOrEqualProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'nonEqual' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NonEqualProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'supersededBy' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SupersededByProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Enumeration',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'valueReference' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValueReferenceProperty',

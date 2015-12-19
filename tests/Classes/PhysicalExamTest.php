@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\PhysicalExam;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PhysicalExamTest.
+ * Classes PhysicalExamTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PhysicalExamTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PhysicalExam::schemaUrl(), 'http://schema.org/PhysicalExam');
+        $this->assertEquals(PhysicalExam::schemaUrl(), "http://schema.org/PhysicalExam");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class PhysicalExamTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhysicalExam::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalExam::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhysicalExam::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalExam::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class PhysicalExamTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhysicalExam::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalExam::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhysicalExam::name());
@@ -58,9 +74,24 @@ class PhysicalExamTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PhysicalExam::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalExam::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalExam::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PhysicalExam::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PhysicalExam::study());
     }
 
     public function testSupersededByWillReturnMappingObject()

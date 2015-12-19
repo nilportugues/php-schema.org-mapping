@@ -14,13 +14,29 @@ use NilPortugues\SchemaOrg\Classes\LifestyleModification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LifestyleModificationTest.
+ * Classes LifestyleModificationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class LifestyleModificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LifestyleModification::schemaUrl(), 'http://schema.org/LifestyleModification');
+        $this->assertEquals(LifestyleModification::schemaUrl(), "http://schema.org/LifestyleModification");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::additionalType());
+    }
+
+    public function testAdverseOutcomeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::adverseOutcome());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::alternateName());
     }
 
     public function testCodeWillReturnMappingObject()
@@ -28,14 +44,54 @@ class LifestyleModificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LifestyleModification::code());
     }
 
+    public function testContraindicationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::contraindication());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::description());
+    }
+
+    public function testDuplicateTherapyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::duplicateTherapy());
+    }
+
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LifestyleModification::guideline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::image());
+    }
+
+    public function testIndicationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::indication());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LifestyleModification::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -48,8 +104,23 @@ class LifestyleModificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LifestyleModification::relevantSpecialty());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::sameAs());
+    }
+
+    public function testSeriousAdverseOutcomeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::seriousAdverseOutcome());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LifestyleModification::study());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LifestyleModification::url());
     }
 }

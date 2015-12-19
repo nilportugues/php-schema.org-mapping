@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DrugPregnancyCategory;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrugPregnancyCategoryTest.
+ * Classes DrugPregnancyCategoryTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DrugPregnancyCategoryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrugPregnancyCategory::schemaUrl(), 'http://schema.org/DrugPregnancyCategory');
+        $this->assertEquals(DrugPregnancyCategory::schemaUrl(), "http://schema.org/DrugPregnancyCategory");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class DrugPregnancyCategoryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class DrugPregnancyCategoryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::name());
@@ -58,9 +74,24 @@ class DrugPregnancyCategoryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPregnancyCategory::study());
     }
 
     public function testSupersededByWillReturnMappingObject()

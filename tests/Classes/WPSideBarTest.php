@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\WPSideBar;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WPSideBarTest.
+ * Classes WPSideBarTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class WPSideBarTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WPSideBar::schemaUrl(), 'http://schema.org/WPSideBar');
+        $this->assertEquals(WPSideBar::schemaUrl(), "http://schema.org/WPSideBar");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class WPSideBarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPSideBar::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPSideBar::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,6 +169,11 @@ class WPSideBarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPSideBar::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPSideBar::discussionUrl());
@@ -211,6 +227,11 @@ class WPSideBarTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPSideBar::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +289,19 @@ class WPSideBarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPSideBar::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPSideBar::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +312,11 @@ class WPSideBarTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPSideBar::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +359,11 @@ class WPSideBarTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPSideBar::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPSideBar::schemaVersion());
@@ -356,6 +397,11 @@ class WPSideBarTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPSideBar::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPSideBar::url());
     }
 
     public function testVersionWillReturnMappingObject()

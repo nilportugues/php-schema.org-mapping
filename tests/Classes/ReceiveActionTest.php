@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\ReceiveAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReceiveActionTest.
+ * Classes ReceiveActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ReceiveActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ReceiveAction::schemaUrl(), 'http://schema.org/ReceiveAction');
+        $this->assertEquals(ReceiveAction::schemaUrl(), "http://schema.org/ReceiveAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,14 +29,29 @@ class ReceiveActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReceiveAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReceiveAction::agent());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::alternateName());
+    }
+
     public function testDeliveryMethodWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReceiveAction::deliveryMethod());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -48,6 +64,16 @@ class ReceiveActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReceiveAction::error());
     }
 
+    public function testFromLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::fromLocation());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReceiveAction::instrument());
@@ -56,6 +82,16 @@ class ReceiveActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReceiveAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -68,9 +104,19 @@ class ReceiveActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ReceiveAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReceiveAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::sameAs());
     }
 
     public function testSenderWillReturnMappingObject()
@@ -86,5 +132,15 @@ class ReceiveActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ReceiveAction::target());
+    }
+
+    public function testToLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::toLocation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ReceiveAction::url());
     }
 }

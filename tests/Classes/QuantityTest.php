@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Quantity;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes QuantityTest.
+ * Classes QuantityTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class QuantityTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Quantity::schemaUrl(), 'http://schema.org/Quantity');
+        $this->assertEquals(Quantity::schemaUrl(), "http://schema.org/Quantity");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

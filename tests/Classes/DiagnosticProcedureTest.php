@@ -14,13 +14,29 @@ use NilPortugues\SchemaOrg\Classes\DiagnosticProcedure;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DiagnosticProcedureTest.
+ * Classes DiagnosticProcedureTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DiagnosticProcedureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DiagnosticProcedure::schemaUrl(), 'http://schema.org/DiagnosticProcedure');
+        $this->assertEquals(DiagnosticProcedure::schemaUrl(), "http://schema.org/DiagnosticProcedure");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::additionalType());
+    }
+
+    public function testAffectedByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::affectedBy());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::alternateName());
     }
 
     public function testCodeWillReturnMappingObject()
@@ -28,14 +44,64 @@ class DiagnosticProcedureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::code());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::description());
+    }
+
+    public function testFollowupWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::followup());
+    }
+
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::guideline());
     }
 
+    public function testHowPerformedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::howPerformed());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::name());
+    }
+
+    public function testNormalRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::normalRange());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::potentialAction());
+    }
+
+    public function testPreparationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::preparation());
+    }
+
+    public function testProcedureTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::procedureType());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -48,8 +114,33 @@ class DiagnosticProcedureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::relevantSpecialty());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::sameAs());
+    }
+
+    public function testSignDetectedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::signDetected());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::study());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::url());
+    }
+
+    public function testUsedToDiagnoseWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::usedToDiagnose());
+    }
+
+    public function testUsesDeviceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DiagnosticProcedure::usesDevice());
     }
 }

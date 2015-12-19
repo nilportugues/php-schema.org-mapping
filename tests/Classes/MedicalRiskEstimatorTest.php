@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalRiskEstimator;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalRiskEstimatorTest.
+ * Classes MedicalRiskEstimatorTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalRiskEstimatorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalRiskEstimator::schemaUrl(), 'http://schema.org/MedicalRiskEstimator');
+        $this->assertEquals(MedicalRiskEstimator::schemaUrl(), "http://schema.org/MedicalRiskEstimator");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,6 +34,11 @@ class MedicalRiskEstimatorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::description());
@@ -41,6 +47,11 @@ class MedicalRiskEstimatorTest extends \PHPUnit_Framework_TestCase
     public function testEstimatesRiskOfWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::estimatesRiskOf());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -58,6 +69,11 @@ class MedicalRiskEstimatorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::name());
@@ -68,9 +84,24 @@ class MedicalRiskEstimatorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskEstimator::study());
     }
 
     public function testUrlWillReturnMappingObject()

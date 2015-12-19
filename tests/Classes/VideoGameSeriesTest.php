@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\VideoGameSeries;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VideoGameSeriesTest.
+ * Classes VideoGameSeriesTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VideoGameSeries::schemaUrl(), 'http://schema.org/VideoGameSeries');
+        $this->assertEquals(VideoGameSeries::schemaUrl(), "http://schema.org/VideoGameSeries");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -63,9 +64,19 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::actors());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -183,6 +194,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::description());
+    }
+
     public function testDirectorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::director());
@@ -221,6 +237,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
     public function testEncodingsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::encodings());
+    }
+
+    public function testEndDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::endDate());
     }
 
     public function testEpisodeWillReturnMappingObject()
@@ -271,6 +292,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -328,6 +354,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::mentions());
@@ -336,6 +367,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
     public function testMusicByWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::musicBy());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::name());
     }
 
     public function testNumberOfEpisodesWillReturnMappingObject()
@@ -366,6 +402,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -418,6 +459,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::schemaVersion());
@@ -436,6 +482,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::sourceOrganization());
+    }
+
+    public function testStartDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::startDate());
     }
 
     public function testTextWillReturnMappingObject()
@@ -466,6 +517,11 @@ class VideoGameSeriesTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameSeries::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameSeries::url());
     }
 
     public function testVersionWillReturnMappingObject()

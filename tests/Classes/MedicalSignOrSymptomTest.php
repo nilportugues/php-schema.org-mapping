@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalSignOrSymptom;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalSignOrSymptomTest.
+ * Classes MedicalSignOrSymptomTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalSignOrSymptomTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalSignOrSymptom::schemaUrl(), 'http://schema.org/MedicalSignOrSymptom');
+        $this->assertEquals(MedicalSignOrSymptom::schemaUrl(), "http://schema.org/MedicalSignOrSymptom");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -38,9 +39,19 @@ class MedicalSignOrSymptomTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::cause());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -51,6 +62,11 @@ class MedicalSignOrSymptomTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -68,9 +84,24 @@ class MedicalSignOrSymptomTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalSignOrSymptom::study());
     }
 
     public function testUrlWillReturnMappingObject()

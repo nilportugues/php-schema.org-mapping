@@ -17,6 +17,13 @@ use NilPortugues\SchemaOrg\SchemaClass;
  *
  * @method static \NilPortugues\SchemaOrg\Properties\ChildMaxAgeProperty childMaxAge()
  * @method static \NilPortugues\SchemaOrg\Properties\ChildMinAgeProperty childMinAge()
+ * @method static \NilPortugues\SchemaOrg\Properties\HealthConditionProperty healthCondition()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequiredGenderProperty requiredGender()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequiredMaxAgeProperty requiredMaxAge()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequiredMinAgeProperty requiredMinAge()
+ * @method static \NilPortugues\SchemaOrg\Properties\SuggestedGenderProperty suggestedGender()
+ * @method static \NilPortugues\SchemaOrg\Properties\SuggestedMaxAgeProperty suggestedMaxAge()
+ * @method static \NilPortugues\SchemaOrg\Properties\SuggestedMinAgeProperty suggestedMinAge()
  * @method static \NilPortugues\SchemaOrg\Properties\AudienceTypeProperty audienceType()
  * @method static \NilPortugues\SchemaOrg\Properties\GeographicAreaProperty geographicArea()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
@@ -71,6 +78,10 @@ class ParentAudience extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GeographicAreaProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Audience',
         ],
+        'healthCondition' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HealthConditionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
         'image' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
@@ -87,9 +98,33 @@ class ParentAudience extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'requiredGender' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequiredGenderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'requiredMaxAge' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequiredMaxAgeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'requiredMinAge' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequiredMinAgeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
         'sameAs' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'suggestedGender' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SuggestedGenderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'suggestedMaxAge' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SuggestedMaxAgeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'suggestedMinAge' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SuggestedMinAgeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
         ],
         'url' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',

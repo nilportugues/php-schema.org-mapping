@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\AutomotiveBusiness;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AutomotiveBusinessTest.
+ * Classes AutomotiveBusinessTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AutomotiveBusiness::schemaUrl(), 'http://schema.org/AutomotiveBusiness');
+        $this->assertEquals(AutomotiveBusiness::schemaUrl(), "http://schema.org/AutomotiveBusiness");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::isicV4());
@@ -196,6 +227,11 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::photo());
@@ -263,6 +314,16 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::review());
@@ -271,6 +332,11 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class AutomotiveBusinessTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AutomotiveBusiness::url());
     }
 
     public function testVatIDWillReturnMappingObject()

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Rating;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RatingTest.
+ * Classes RatingTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class RatingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Rating::schemaUrl(), 'http://schema.org/Rating');
+        $this->assertEquals(Rating::schemaUrl(), "http://schema.org/Rating");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

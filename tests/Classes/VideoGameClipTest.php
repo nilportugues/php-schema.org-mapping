@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\VideoGameClip;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VideoGameClipTest.
+ * Classes VideoGameClipTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class VideoGameClipTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VideoGameClip::schemaUrl(), 'http://schema.org/VideoGameClip');
+        $this->assertEquals(VideoGameClip::schemaUrl(), "http://schema.org/VideoGameClip");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,29 @@ class VideoGameClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameClip::accountablePerson());
     }
 
+    public function testActorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::actor());
+    }
+
+    public function testActorsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::actors());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameClip::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -101,6 +122,11 @@ class VideoGameClipTest extends \PHPUnit_Framework_TestCase
     public function testCitationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameClip::citation());
+    }
+
+    public function testClipNumberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::clipNumber());
     }
 
     public function testCommentWillReturnMappingObject()
@@ -158,6 +184,21 @@ class VideoGameClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameClip::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::description());
+    }
+
+    public function testDirectorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::director());
+    }
+
+    public function testDirectorsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::directors());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameClip::discussionUrl());
@@ -211,6 +252,11 @@ class VideoGameClipTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameClip::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +314,24 @@ class VideoGameClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameClip::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameClip::mentions());
+    }
+
+    public function testMusicByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::musicBy());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,9 +339,29 @@ class VideoGameClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameClip::offers());
     }
 
+    public function testPartOfEpisodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::partOfEpisode());
+    }
+
+    public function testPartOfSeasonWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::partOfSeason());
+    }
+
+    public function testPartOfSeriesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::partOfSeries());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameClip::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +404,11 @@ class VideoGameClipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGameClip::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameClip::schemaVersion());
@@ -356,6 +442,11 @@ class VideoGameClipTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGameClip::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGameClip::url());
     }
 
     public function testVersionWillReturnMappingObject()

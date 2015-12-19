@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\WriteAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WriteActionTest.
+ * Classes WriteActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class WriteActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WriteAction::schemaUrl(), 'http://schema.org/WriteAction');
+        $this->assertEquals(WriteAction::schemaUrl(), "http://schema.org/WriteAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class WriteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WriteAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WriteAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -41,6 +57,11 @@ class WriteActionTest extends \PHPUnit_Framework_TestCase
     public function testErrorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WriteAction::error());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -63,6 +84,16 @@ class WriteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WriteAction::location());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::name());
+    }
+
     public function testObjectTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WriteAction::objectType());
@@ -73,9 +104,19 @@ class WriteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WriteAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WriteAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -86,5 +127,10 @@ class WriteActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WriteAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WriteAction::url());
     }
 }

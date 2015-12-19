@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Invoice;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InvoiceTest.
+ * Classes InvoiceTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class InvoiceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Invoice::schemaUrl(), 'http://schema.org/Invoice');
+        $this->assertEquals(Invoice::schemaUrl(), "http://schema.org/Invoice");
     }
 
     public function testAccountIdWillReturnMappingObject()

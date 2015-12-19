@@ -15,6 +15,7 @@ use NilPortugues\SchemaOrg\SchemaClass;
 /**
  * METHODSTART.
  *
+ * @method static \NilPortugues\SchemaOrg\Properties\OpeningHoursProperty openingHours()
  * @method static \NilPortugues\SchemaOrg\Properties\AddressProperty address()
  * @method static \NilPortugues\SchemaOrg\Properties\AggregateRatingProperty aggregateRating()
  * @method static \NilPortugues\SchemaOrg\Properties\BranchCodeProperty branchCode()
@@ -38,6 +39,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\ReviewsProperty reviews()
  * @method static \NilPortugues\SchemaOrg\Properties\TelephoneProperty telephone()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * Place of worship, such as a church, synagogue, or mosque.
@@ -57,6 +67,10 @@ class PlaceOfWorship extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'address' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
@@ -64,6 +78,10 @@ class PlaceOfWorship extends SchemaClass
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'branchCode' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BranchCodeProperty',
@@ -80,6 +98,10 @@ class PlaceOfWorship extends SchemaClass
         'containsPlace' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'event' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EventProperty',
@@ -105,6 +127,10 @@ class PlaceOfWorship extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasMapProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'isicV4' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsicV4Property',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
@@ -113,6 +139,10 @@ class PlaceOfWorship extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LogoProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'map' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MapProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
@@ -120,6 +150,14 @@ class PlaceOfWorship extends SchemaClass
         'maps' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MapsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'openingHours' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OpeningHoursProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CivicStructure',
         ],
         'openingHoursSpecification' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty',
@@ -133,6 +171,10 @@ class PlaceOfWorship extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PhotosProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
         ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'review' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
@@ -141,9 +183,17 @@ class PlaceOfWorship extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'telephone' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TelephoneProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
     ];
 }

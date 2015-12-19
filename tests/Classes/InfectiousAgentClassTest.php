@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\InfectiousAgentClass;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes InfectiousAgentClassTest.
+ * Classes InfectiousAgentClassTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class InfectiousAgentClassTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(InfectiousAgentClass::schemaUrl(), 'http://schema.org/InfectiousAgentClass');
+        $this->assertEquals(InfectiousAgentClass::schemaUrl(), "http://schema.org/InfectiousAgentClass");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class InfectiousAgentClassTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class InfectiousAgentClassTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::name());
@@ -58,9 +74,24 @@ class InfectiousAgentClassTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, InfectiousAgentClass::study());
     }
 
     public function testSupersededByWillReturnMappingObject()

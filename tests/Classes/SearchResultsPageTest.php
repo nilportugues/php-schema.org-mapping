@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\SearchResultsPage;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SearchResultsPageTest.
+ * Classes SearchResultsPageTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SearchResultsPage::schemaUrl(), 'http://schema.org/SearchResultsPage');
+        $this->assertEquals(SearchResultsPage::schemaUrl(), "http://schema.org/SearchResultsPage");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -91,6 +102,11 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
     public function testAwardsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::awards());
+    }
+
+    public function testBreadcrumbWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::breadcrumb());
     }
 
     public function testCharacterWillReturnMappingObject()
@@ -158,6 +174,11 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::discussionUrl());
@@ -213,6 +234,11 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::inLanguage());
@@ -248,6 +274,11 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::keywords());
     }
 
+    public function testLastReviewedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::lastReviewed());
+    }
+
     public function testLearningResourceTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::learningResourceType());
@@ -263,14 +294,29 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::locationCreated());
     }
 
+    public function testMainContentOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::mainContentOfPage());
+    }
+
     public function testMainEntityWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +327,16 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::potentialAction());
+    }
+
+    public function testPrimaryImageOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::primaryImageOfPage());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -313,9 +369,19 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::recordedAt());
     }
 
+    public function testRelatedLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::relatedLink());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::review());
+    }
+
+    public function testReviewedByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::reviewedBy());
     }
 
     public function testReviewsWillReturnMappingObject()
@@ -323,14 +389,34 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::schemaVersion());
     }
 
+    public function testSignificantLinkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::significantLink());
+    }
+
+    public function testSignificantLinksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::significantLinks());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::sourceOrganization());
+    }
+
+    public function testSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::specialty());
     }
 
     public function testTextWillReturnMappingObject()
@@ -356,6 +442,11 @@ class SearchResultsPageTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SearchResultsPage::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SearchResultsPage::url());
     }
 
     public function testVersionWillReturnMappingObject()

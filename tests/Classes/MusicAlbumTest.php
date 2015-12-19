@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MusicAlbum;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MusicAlbumTest.
+ * Classes MusicAlbumTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MusicAlbumTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MusicAlbum::schemaUrl(), 'http://schema.org/MusicAlbum');
+        $this->assertEquals(MusicAlbum::schemaUrl(), "http://schema.org/MusicAlbum");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class MusicAlbumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MusicAlbum::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicAlbum::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -163,6 +174,11 @@ class MusicAlbumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MusicAlbum::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicAlbum::discussionUrl());
@@ -216,6 +232,11 @@ class MusicAlbumTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicAlbum::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -273,9 +294,24 @@ class MusicAlbumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MusicAlbum::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicAlbum::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::name());
+    }
+
+    public function testNumTracksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::numTracks());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -286,6 +322,11 @@ class MusicAlbumTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicAlbum::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -328,6 +369,11 @@ class MusicAlbumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MusicAlbum::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicAlbum::schemaVersion());
@@ -353,6 +399,11 @@ class MusicAlbumTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MusicAlbum::timeRequired());
     }
 
+    public function testTracksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::tracks());
+    }
+
     public function testTranslatorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicAlbum::translator());
@@ -361,6 +412,11 @@ class MusicAlbumTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MusicAlbum::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MusicAlbum::url());
     }
 
     public function testVersionWillReturnMappingObject()

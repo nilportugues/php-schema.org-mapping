@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\SocialMediaPosting;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SocialMediaPostingTest.
+ * Classes SocialMediaPostingTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SocialMediaPosting::schemaUrl(), 'http://schema.org/SocialMediaPosting');
+        $this->assertEquals(SocialMediaPosting::schemaUrl(), "http://schema.org/SocialMediaPosting");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,34 @@ class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::alternativeHeadline());
+    }
+
+    public function testArticleBodyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::articleBody());
+    }
+
+    public function testArticleSectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::articleSection());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -158,6 +179,11 @@ class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::discussionUrl());
@@ -211,6 +237,11 @@ class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +299,19 @@ class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,9 +319,29 @@ class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::offers());
     }
 
+    public function testPageEndWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::pageEnd());
+    }
+
+    public function testPageStartWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::pageStart());
+    }
+
+    public function testPaginationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::pagination());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +384,11 @@ class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::schemaVersion());
@@ -363,6 +429,11 @@ class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::typicalAgeRange());
     }
 
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::version());
@@ -371,6 +442,11 @@ class SocialMediaPostingTest extends \PHPUnit_Framework_TestCase
     public function testVideoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SocialMediaPosting::video());
+    }
+
+    public function testWordCountWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SocialMediaPosting::wordCount());
     }
 
     public function testWorkExampleWillReturnMappingObject()

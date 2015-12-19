@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\ShoppingCenter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ShoppingCenterTest.
+ * Classes ShoppingCenterTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ShoppingCenter::schemaUrl(), 'http://schema.org/ShoppingCenter');
+        $this->assertEquals(ShoppingCenter::schemaUrl(), "http://schema.org/ShoppingCenter");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::isicV4());
@@ -196,6 +227,11 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::photo());
@@ -263,6 +314,16 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::review());
@@ -271,6 +332,11 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class ShoppingCenterTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ShoppingCenter::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ShoppingCenter::url());
     }
 
     public function testVatIDWillReturnMappingObject()

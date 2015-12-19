@@ -48,6 +48,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
  * @method static \NilPortugues\SchemaOrg\Properties\ProductionDateProperty productionDate()
  * @method static \NilPortugues\SchemaOrg\Properties\PurchaseDateProperty purchaseDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.
@@ -67,9 +76,17 @@ class Product extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'audience' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AudienceProperty',
@@ -99,6 +116,10 @@ class Product extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepthProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'gtin12' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\Gtin12Property',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
@@ -118,6 +139,10 @@ class Product extends SchemaClass
         'height' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeightProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'isAccessoryOrSparePartFor' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsAccessoryOrSparePartForProperty',
@@ -143,6 +168,10 @@ class Product extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LogoProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'manufacturer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ManufacturerProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
@@ -155,9 +184,17 @@ class Product extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MpnProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'productID' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductIDProperty',
@@ -183,9 +220,17 @@ class Product extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'sku' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SkuProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'weight' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WeightProperty',

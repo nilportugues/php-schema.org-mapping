@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\SingleFamilyResidence;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SingleFamilyResidenceTest.
+ * Classes SingleFamilyResidenceTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SingleFamilyResidenceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SingleFamilyResidence::schemaUrl(), 'http://schema.org/SingleFamilyResidence');
+        $this->assertEquals(SingleFamilyResidence::schemaUrl(), "http://schema.org/SingleFamilyResidence");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class SingleFamilyResidenceTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class SingleFamilyResidenceTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class SingleFamilyResidenceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::isicV4());
@@ -98,6 +119,11 @@ class SingleFamilyResidenceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::map());
@@ -106,6 +132,11 @@ class SingleFamilyResidenceTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::name());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +154,11 @@ class SingleFamilyResidenceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::review());
@@ -133,8 +169,18 @@ class SingleFamilyResidenceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SingleFamilyResidence::url());
     }
 }

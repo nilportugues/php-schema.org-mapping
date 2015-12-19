@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Volcano;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VolcanoTest.
+ * Classes VolcanoTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class VolcanoTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Volcano::schemaUrl(), 'http://schema.org/Volcano');
+        $this->assertEquals(Volcano::schemaUrl(), "http://schema.org/Volcano");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Volcano::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class VolcanoTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Volcano::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class VolcanoTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Volcano::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class VolcanoTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Volcano::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Volcano::isicV4());
@@ -98,6 +119,11 @@ class VolcanoTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Volcano::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Volcano::map());
@@ -106,6 +132,11 @@ class VolcanoTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Volcano::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::name());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +154,11 @@ class VolcanoTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Volcano::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Volcano::review());
@@ -133,8 +169,18 @@ class VolcanoTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Volcano::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Volcano::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Volcano::url());
     }
 }

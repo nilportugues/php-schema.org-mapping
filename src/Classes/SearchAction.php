@@ -16,6 +16,17 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * METHODSTART.
  *
  * @method static \NilPortugues\SchemaOrg\Properties\QueryProperty query()
+ * @method static \NilPortugues\SchemaOrg\Properties\AgentProperty agent()
+ * @method static \NilPortugues\SchemaOrg\Properties\EndTimeProperty endTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\InstrumentProperty instrument()
+ * @method static \NilPortugues\SchemaOrg\Properties\LocationProperty location()
+ * @method static \NilPortugues\SchemaOrg\Properties\ObjectTypeProperty objectType()
+ * @method static \NilPortugues\SchemaOrg\Properties\ParticipantProperty participant()
+ * @method static \NilPortugues\SchemaOrg\Properties\ResultProperty result()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartTimeProperty startTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\ActionStatusProperty actionStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\ErrorProperty error()
+ * @method static \NilPortugues\SchemaOrg\Properties\TargetProperty target()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
  * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
  * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
@@ -40,9 +51,17 @@ class SearchAction extends SchemaClass
      * @var array
      */
     protected static $supportedMethods = [
+        'actionStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActionStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
         'additionalType' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'agent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AgentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
         ],
         'alternateName' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
@@ -52,9 +71,25 @@ class SearchAction extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'endTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'error' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ErrorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
         'image' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'instrument' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InstrumentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'location' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
         ],
         'mainEntityOfPage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
@@ -64,6 +99,14 @@ class SearchAction extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'objectType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ObjectTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'participant' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParticipantProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
         'potentialAction' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
@@ -72,9 +115,21 @@ class SearchAction extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\QueryProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SearchAction',
         ],
+        'result' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ResultProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
         'sameAs' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'startTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'target' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TargetProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
         ],
         'url' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',

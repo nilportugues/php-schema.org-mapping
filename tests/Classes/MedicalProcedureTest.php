@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalProcedure;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalProcedureTest.
+ * Classes MedicalProcedureTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalProcedureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalProcedure::schemaUrl(), 'http://schema.org/MedicalProcedure');
+        $this->assertEquals(MedicalProcedure::schemaUrl(), "http://schema.org/MedicalProcedure");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,6 +34,11 @@ class MedicalProcedureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalProcedure::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalProcedure::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalProcedure::description());
@@ -41,6 +47,11 @@ class MedicalProcedureTest extends \PHPUnit_Framework_TestCase
     public function testFollowupWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalProcedure::followup());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalProcedure::guideline());
     }
 
     public function testHowPerformedWillReturnMappingObject()
@@ -56,6 +67,11 @@ class MedicalProcedureTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalProcedure::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalProcedure::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -78,9 +94,24 @@ class MedicalProcedureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalProcedure::procedureType());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalProcedure::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalProcedure::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalProcedure::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalProcedure::study());
     }
 
     public function testUrlWillReturnMappingObject()

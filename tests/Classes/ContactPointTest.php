@@ -14,13 +14,24 @@ use NilPortugues\SchemaOrg\Classes\ContactPoint;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ContactPointTest.
+ * Classes ContactPointTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ContactPointTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ContactPoint::schemaUrl(), 'http://schema.org/ContactPoint');
+        $this->assertEquals(ContactPoint::schemaUrl(), "http://schema.org/ContactPoint");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::alternateName());
     }
 
     public function testAreaServedWillReturnMappingObject()
@@ -43,6 +54,11 @@ class ContactPointTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ContactPoint::contactType());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::description());
+    }
+
     public function testEmailWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ContactPoint::email());
@@ -58,9 +74,34 @@ class ContactPointTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ContactPoint::hoursAvailable());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::potentialAction());
+    }
+
     public function testProductSupportedWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ContactPoint::productSupported());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::sameAs());
     }
 
     public function testServiceAreaWillReturnMappingObject()
@@ -71,5 +112,10 @@ class ContactPointTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ContactPoint::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ContactPoint::url());
     }
 }

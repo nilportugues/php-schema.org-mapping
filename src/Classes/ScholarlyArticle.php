@@ -15,6 +15,12 @@ use NilPortugues\SchemaOrg\SchemaClass;
 /**
  * METHODSTART.
  *
+ * @method static \NilPortugues\SchemaOrg\Properties\ArticleBodyProperty articleBody()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArticleSectionProperty articleSection()
+ * @method static \NilPortugues\SchemaOrg\Properties\WordCountProperty wordCount()
+ * @method static \NilPortugues\SchemaOrg\Properties\PageEndProperty pageEnd()
+ * @method static \NilPortugues\SchemaOrg\Properties\PageStartProperty pageStart()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaginationProperty pagination()
  * @method static \NilPortugues\SchemaOrg\Properties\SchemaVersionProperty schemaVersion()
  * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
  * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty accessibilityAPI()
@@ -85,6 +91,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\CharacterProperty character()
  * @method static \NilPortugues\SchemaOrg\Properties\TranslatorProperty translator()
  * @method static \NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty interactionStatistic()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A scholarly article.
@@ -124,13 +139,29 @@ class ScholarlyArticle extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccountablePersonProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'alternativeHeadline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'articleBody' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArticleBodyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+        'articleSection' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArticleSectionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
         ],
         'associatedMedia' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AssociatedMediaProperty',
@@ -208,6 +239,10 @@ class ScholarlyArticle extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatePublishedProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'discussionUrl' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -251,6 +286,10 @@ class ScholarlyArticle extends SchemaClass
         'headline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeadlineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'inLanguage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
@@ -296,17 +335,41 @@ class ScholarlyArticle extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'mentions' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MentionsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'pageEnd' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PageEndProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+        'pageStart' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PageStartProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+        'pagination' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaginationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
         'position' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PositionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'producer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProducerProperty',
@@ -340,6 +403,10 @@ class ScholarlyArticle extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'schemaVersion' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SchemaVersionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -368,6 +435,10 @@ class ScholarlyArticle extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
         ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'version' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VersionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
@@ -375,6 +446,10 @@ class ScholarlyArticle extends SchemaClass
         'video' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VideoProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'wordCount' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WordCountProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
         ],
         'workExample' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WorkExampleProperty',

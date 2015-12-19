@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\BusStation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BusStationTest.
+ * Classes BusStationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class BusStationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BusStation::schemaUrl(), 'http://schema.org/BusStation');
+        $this->assertEquals(BusStation::schemaUrl(), "http://schema.org/BusStation");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BusStation::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class BusStationTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BusStation::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class BusStationTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BusStation::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class BusStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BusStation::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BusStation::isicV4());
@@ -98,6 +119,11 @@ class BusStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BusStation::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BusStation::map());
@@ -106,6 +132,16 @@ class BusStationTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BusStation::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +159,11 @@ class BusStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BusStation::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BusStation::review());
@@ -133,8 +174,18 @@ class BusStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BusStation::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BusStation::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BusStation::url());
     }
 }

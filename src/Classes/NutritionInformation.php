@@ -27,6 +27,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\SugarContentProperty sugarContent()
  * @method static \NilPortugues\SchemaOrg\Properties\TransFatContentProperty transFatContent()
  * @method static \NilPortugues\SchemaOrg\Properties\UnsaturatedFatContentProperty unsaturatedFatContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * Nutritional information about the recipe.
@@ -42,6 +51,14 @@ class NutritionInformation extends SchemaClass
      * @var array
      */
     protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'calories' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CaloriesProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
@@ -54,6 +71,10 @@ class NutritionInformation extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CholesterolContentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
         ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'fatContent' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FatContentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
@@ -62,9 +83,29 @@ class NutritionInformation extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FiberContentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'proteinContent' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProteinContentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'saturatedFatContent' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SaturatedFatContentProperty',
@@ -89,6 +130,10 @@ class NutritionInformation extends SchemaClass
         'unsaturatedFatContent' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UnsaturatedFatContentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
     ];
 }

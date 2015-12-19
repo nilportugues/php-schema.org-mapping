@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\IgnoreAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes IgnoreActionTest.
+ * Classes IgnoreActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class IgnoreActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(IgnoreAction::schemaUrl(), 'http://schema.org/IgnoreAction');
+        $this->assertEquals(IgnoreAction::schemaUrl(), "http://schema.org/IgnoreAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class IgnoreActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, IgnoreAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, IgnoreAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class IgnoreActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, IgnoreAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, IgnoreAction::instrument());
@@ -51,6 +72,16 @@ class IgnoreActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, IgnoreAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class IgnoreActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, IgnoreAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, IgnoreAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +117,10 @@ class IgnoreActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, IgnoreAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, IgnoreAction::url());
     }
 }

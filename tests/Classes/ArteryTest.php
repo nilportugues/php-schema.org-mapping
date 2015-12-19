@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Artery;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ArteryTest.
+ * Classes ArteryTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ArteryTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Artery::schemaUrl(), 'http://schema.org/Artery');
+        $this->assertEquals(Artery::schemaUrl(), "http://schema.org/Artery");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -48,6 +49,11 @@ class ArteryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Artery::bodyLocation());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Artery::code());
+    }
+
     public function testConnectedToWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Artery::connectedTo());
@@ -68,6 +74,11 @@ class ArteryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Artery::functionType());
     }
 
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Artery::guideline());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Artery::image());
@@ -76,6 +87,11 @@ class ArteryTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Artery::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Artery::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -93,6 +109,11 @@ class ArteryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Artery::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Artery::recognizingAuthority());
+    }
+
     public function testRelatedConditionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Artery::relatedCondition());
@@ -103,6 +124,11 @@ class ArteryTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Artery::relatedTherapy());
     }
 
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Artery::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Artery::sameAs());
@@ -111,6 +137,11 @@ class ArteryTest extends \PHPUnit_Framework_TestCase
     public function testSourceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Artery::source());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Artery::study());
     }
 
     public function testSubStructureWillReturnMappingObject()

@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\SportsActivityLocation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SportsActivityLocationTest.
+ * Classes SportsActivityLocationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SportsActivityLocation::schemaUrl(), 'http://schema.org/SportsActivityLocation');
+        $this->assertEquals(SportsActivityLocation::schemaUrl(), "http://schema.org/SportsActivityLocation");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::isicV4());
@@ -196,6 +227,11 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::photo());
@@ -263,6 +314,16 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::review());
@@ -271,6 +332,11 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class SportsActivityLocationTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SportsActivityLocation::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SportsActivityLocation::url());
     }
 
     public function testVatIDWillReturnMappingObject()

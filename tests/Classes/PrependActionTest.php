@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\PrependAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PrependActionTest.
+ * Classes PrependActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PrependActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PrependAction::schemaUrl(), 'http://schema.org/PrependAction');
+        $this->assertEquals(PrependAction::schemaUrl(), "http://schema.org/PrependAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,29 @@ class PrependActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PrependAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PrependAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::alternateName());
+    }
+
+    public function testCollectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::collection());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +64,11 @@ class PrependActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PrependAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PrependAction::instrument());
@@ -51,6 +77,16 @@ class PrependActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PrependAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class PrependActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PrependAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PrependAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,20 @@ class PrependActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PrependAction::target());
+    }
+
+    public function testTargetCollectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::targetCollection());
+    }
+
+    public function testToLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::toLocation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PrependAction::url());
     }
 }

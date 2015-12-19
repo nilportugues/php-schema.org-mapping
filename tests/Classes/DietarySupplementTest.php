@@ -14,18 +14,34 @@ use NilPortugues\SchemaOrg\Classes\DietarySupplement;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DietarySupplementTest.
+ * Classes DietarySupplementTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DietarySupplementTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DietarySupplement::schemaUrl(), 'http://schema.org/DietarySupplement');
+        $this->assertEquals(DietarySupplement::schemaUrl(), "http://schema.org/DietarySupplement");
     }
 
     public function testActiveIngredientWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DietarySupplement::activeIngredient());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::additionalType());
+    }
+
+    public function testAdverseOutcomeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::adverseOutcome());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::alternateName());
     }
 
     public function testBackgroundWillReturnMappingObject()
@@ -38,14 +54,39 @@ class DietarySupplementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DietarySupplement::code());
     }
 
+    public function testContraindicationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::contraindication());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::description());
+    }
+
     public function testDosageFormWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DietarySupplement::dosageForm());
     }
 
+    public function testDuplicateTherapyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::duplicateTherapy());
+    }
+
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DietarySupplement::guideline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::image());
+    }
+
+    public function testIndicationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::indication());
     }
 
     public function testIsProprietaryWillReturnMappingObject()
@@ -56,6 +97,11 @@ class DietarySupplementTest extends \PHPUnit_Framework_TestCase
     public function testLegalStatusWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DietarySupplement::legalStatus());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::mainEntityOfPage());
     }
 
     public function testManufacturerWillReturnMappingObject()
@@ -78,9 +124,19 @@ class DietarySupplementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DietarySupplement::medicineSystem());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::name());
+    }
+
     public function testNonProprietaryNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DietarySupplement::nonProprietaryName());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -103,6 +159,16 @@ class DietarySupplementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DietarySupplement::safetyConsideration());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::sameAs());
+    }
+
+    public function testSeriousAdverseOutcomeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::seriousAdverseOutcome());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DietarySupplement::study());
@@ -111,5 +177,10 @@ class DietarySupplementTest extends \PHPUnit_Framework_TestCase
     public function testTargetPopulationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DietarySupplement::targetPopulation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DietarySupplement::url());
     }
 }

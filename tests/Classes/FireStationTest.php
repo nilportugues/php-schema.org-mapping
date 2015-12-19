@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\FireStation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes FireStationTest.
+ * Classes FireStationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class FireStationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(FireStation::schemaUrl(), 'http://schema.org/FireStation');
+        $this->assertEquals(FireStation::schemaUrl(), "http://schema.org/FireStation");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
@@ -48,6 +49,26 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FireStation::alternateName());
     }
 
+    public function testAlumniWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::alumni());
+    }
+
+    public function testAreaServedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::areaServed());
+    }
+
+    public function testAwardWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::award());
+    }
+
+    public function testAwardsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::awards());
+    }
+
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::branchCode());
@@ -56,6 +77,21 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
     public function testBranchOfWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::branchOf());
+    }
+
+    public function testBrandWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::brand());
+    }
+
+    public function testContactPointWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::contactPoint());
+    }
+
+    public function testContactPointsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::contactPoints());
     }
 
     public function testContainedInWillReturnMappingObject()
@@ -78,9 +114,39 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FireStation::currenciesAccepted());
     }
 
+    public function testDepartmentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::department());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::description());
+    }
+
+    public function testDissolutionDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::dissolutionDate());
+    }
+
+    public function testDunsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::duns());
+    }
+
+    public function testEmailWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::email());
+    }
+
+    public function testEmployeeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::employee());
+    }
+
+    public function testEmployeesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::employees());
     }
 
     public function testEventWillReturnMappingObject()
@@ -98,6 +164,21 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FireStation::faxNumber());
     }
 
+    public function testFounderWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::founder());
+    }
+
+    public function testFoundersWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::founders());
+    }
+
+    public function testFoundingDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::foundingDate());
+    }
+
     public function testGeoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::geo());
@@ -113,6 +194,16 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FireStation::hasMap());
     }
 
+    public function testHasOfferCatalogWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::hasOfferCatalog());
+    }
+
+    public function testHasPOSWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::hasPOS());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::image());
@@ -121,6 +212,16 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::isicV4());
+    }
+
+    public function testLegalNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::legalName());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::location());
     }
 
     public function testLogoWillReturnMappingObject()
@@ -133,6 +234,11 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FireStation::mainEntityOfPage());
     }
 
+    public function testMakesOfferWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::makesOffer());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::map());
@@ -143,9 +249,34 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FireStation::maps());
     }
 
+    public function testMemberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::member());
+    }
+
+    public function testMemberOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::memberOf());
+    }
+
+    public function testMembersWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::members());
+    }
+
+    public function testNaicsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::naics());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::name());
+    }
+
+    public function testNumberOfEmployeesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::numberOfEmployees());
     }
 
     public function testOpeningHoursWillReturnMappingObject()
@@ -156,6 +287,16 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
     public function testOpeningHoursSpecificationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::openingHoursSpecification());
+    }
+
+    public function testOwnsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::owns());
+    }
+
+    public function testParentOrganizationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::parentOrganization());
     }
 
     public function testPaymentAcceptedWillReturnMappingObject()
@@ -198,6 +339,26 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, FireStation::sameAs());
     }
 
+    public function testSeeksWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::seeks());
+    }
+
+    public function testServiceAreaWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::serviceArea());
+    }
+
+    public function testSubOrganizationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::subOrganization());
+    }
+
+    public function testTaxIDWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::taxID());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::telephone());
@@ -206,5 +367,10 @@ class FireStationTest extends \PHPUnit_Framework_TestCase
     public function testUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, FireStation::url());
+    }
+
+    public function testVatIDWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, FireStation::vatID());
     }
 }

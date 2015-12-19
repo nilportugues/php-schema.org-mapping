@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalEvidenceLevel;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalEvidenceLevelTest.
+ * Classes MedicalEvidenceLevelTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalEvidenceLevelTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalEvidenceLevel::schemaUrl(), 'http://schema.org/MedicalEvidenceLevel');
+        $this->assertEquals(MedicalEvidenceLevel::schemaUrl(), "http://schema.org/MedicalEvidenceLevel");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class MedicalEvidenceLevelTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class MedicalEvidenceLevelTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::name());
@@ -58,9 +74,24 @@ class MedicalEvidenceLevelTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalEvidenceLevel::study());
     }
 
     public function testSupersededByWillReturnMappingObject()

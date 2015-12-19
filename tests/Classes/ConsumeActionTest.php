@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\ConsumeAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ConsumeActionTest.
+ * Classes ConsumeActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ConsumeActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ConsumeAction::schemaUrl(), 'http://schema.org/ConsumeAction');
+        $this->assertEquals(ConsumeAction::schemaUrl(), "http://schema.org/ConsumeAction");
+    }
+
+    public function testActionStatusWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::actionStatus());
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConsumeAction::additionalType());
+    }
+
+    public function testAgentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::agent());
     }
 
     public function testAlternateNameWillReturnMappingObject()
@@ -38,6 +49,16 @@ class ConsumeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ConsumeAction::description());
     }
 
+    public function testEndTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::endTime());
+    }
+
+    public function testErrorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::error());
+    }
+
     public function testExpectsAcceptanceOfWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConsumeAction::expectsAcceptanceOf());
@@ -46,6 +67,16 @@ class ConsumeActionTest extends \PHPUnit_Framework_TestCase
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConsumeAction::image());
+    }
+
+    public function testInstrumentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::instrument());
+    }
+
+    public function testLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::location());
     }
 
     public function testMainEntityOfPageWillReturnMappingObject()
@@ -58,14 +89,39 @@ class ConsumeActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ConsumeAction::name());
     }
 
+    public function testObjectTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::objectType());
+    }
+
+    public function testParticipantWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::participant());
+    }
+
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConsumeAction::potentialAction());
     }
 
+    public function testResultWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::result());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ConsumeAction::sameAs());
+    }
+
+    public function testStartTimeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::startTime());
+    }
+
+    public function testTargetWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ConsumeAction::target());
     }
 
     public function testUrlWillReturnMappingObject()

@@ -27,6 +27,12 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\RelatedConditionProperty relatedCondition()
  * @method static \NilPortugues\SchemaOrg\Properties\RelatedTherapyProperty relatedTherapy()
  * @method static \NilPortugues\SchemaOrg\Properties\SubStructureProperty subStructure()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
  * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
  * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
@@ -71,6 +77,10 @@ class Artery extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BodyLocationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AnatomicalStructure',
         ],
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'connectedTo' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ConnectedToProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AnatomicalStructure',
@@ -87,6 +97,10 @@ class Artery extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FunctionTypeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AnatomicalStructure',
         ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'image' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
@@ -94,6 +108,10 @@ class Artery extends SchemaClass
         'mainEntityOfPage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
         'name' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
@@ -107,6 +125,10 @@ class Artery extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'relatedCondition' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelatedConditionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AnatomicalStructure',
@@ -115,6 +137,10 @@ class Artery extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelatedTherapyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AnatomicalStructure',
         ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'sameAs' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
@@ -122,6 +148,10 @@ class Artery extends SchemaClass
         'source' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SourceProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Artery',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
         'subStructure' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SubStructureProperty',

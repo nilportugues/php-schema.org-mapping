@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\EntryPoint;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EntryPointTest.
+ * Classes EntryPointTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class EntryPointTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EntryPoint::schemaUrl(), 'http://schema.org/EntryPoint');
+        $this->assertEquals(EntryPoint::schemaUrl(), "http://schema.org/EntryPoint");
     }
 
     public function testActionApplicationWillReturnMappingObject()

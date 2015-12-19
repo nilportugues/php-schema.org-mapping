@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\RealEstateAgent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RealEstateAgentTest.
+ * Classes RealEstateAgentTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RealEstateAgent::schemaUrl(), 'http://schema.org/RealEstateAgent');
+        $this->assertEquals(RealEstateAgent::schemaUrl(), "http://schema.org/RealEstateAgent");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::isicV4());
@@ -196,6 +227,11 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::photo());
@@ -263,6 +314,16 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::review());
@@ -271,6 +332,11 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class RealEstateAgentTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RealEstateAgent::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RealEstateAgent::url());
     }
 
     public function testVatIDWillReturnMappingObject()

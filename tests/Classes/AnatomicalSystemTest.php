@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\AnatomicalSystem;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AnatomicalSystemTest.
+ * Classes AnatomicalSystemTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AnatomicalSystemTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AnatomicalSystem::schemaUrl(), 'http://schema.org/AnatomicalSystem');
+        $this->assertEquals(AnatomicalSystem::schemaUrl(), "http://schema.org/AnatomicalSystem");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -38,6 +39,11 @@ class AnatomicalSystemTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AnatomicalSystem::associatedPathophysiology());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalSystem::code());
+    }
+
     public function testComprisedOfWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalSystem::comprisedOf());
@@ -46,6 +52,11 @@ class AnatomicalSystemTest extends \PHPUnit_Framework_TestCase
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalSystem::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalSystem::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -58,6 +69,11 @@ class AnatomicalSystemTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AnatomicalSystem::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalSystem::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalSystem::name());
@@ -66,6 +82,11 @@ class AnatomicalSystemTest extends \PHPUnit_Framework_TestCase
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalSystem::potentialAction());
+    }
+
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalSystem::recognizingAuthority());
     }
 
     public function testRelatedConditionWillReturnMappingObject()
@@ -83,9 +104,19 @@ class AnatomicalSystemTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AnatomicalSystem::relatedTherapy());
     }
 
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalSystem::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalSystem::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalSystem::study());
     }
 
     public function testUrlWillReturnMappingObject()

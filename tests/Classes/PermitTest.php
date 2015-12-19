@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Permit;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PermitTest.
+ * Classes PermitTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PermitTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Permit::schemaUrl(), 'http://schema.org/Permit');
+        $this->assertEquals(Permit::schemaUrl(), "http://schema.org/Permit");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

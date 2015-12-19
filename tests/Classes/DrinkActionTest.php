@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DrinkAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrinkActionTest.
+ * Classes DrinkActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DrinkActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrinkAction::schemaUrl(), 'http://schema.org/DrinkAction');
+        $this->assertEquals(DrinkAction::schemaUrl(), "http://schema.org/DrinkAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class DrinkActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrinkAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrinkAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,16 @@ class DrinkActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrinkAction::error());
     }
 
+    public function testExpectsAcceptanceOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::expectsAcceptanceOf());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrinkAction::instrument());
@@ -51,6 +77,16 @@ class DrinkActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrinkAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class DrinkActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrinkAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrinkAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,10 @@ class DrinkActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrinkAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrinkAction::url());
     }
 }

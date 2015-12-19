@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\VideoGame;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VideoGameTest.
+ * Classes VideoGameTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class VideoGameTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VideoGame::schemaUrl(), 'http://schema.org/VideoGame');
+        $this->assertEquals(VideoGame::schemaUrl(), "http://schema.org/VideoGame");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -63,14 +64,39 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::actors());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::alternativeHeadline());
+    }
+
+    public function testApplicationCategoryWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::applicationCategory());
+    }
+
+    public function testApplicationSubCategoryWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::applicationSubCategory());
+    }
+
+    public function testApplicationSuiteWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::applicationSuite());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -93,6 +119,11 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::author());
     }
 
+    public function testAvailableOnDeviceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::availableOnDevice());
+    }
+
     public function testAwardWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::award());
@@ -106,6 +137,11 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
     public function testCharacterWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::character());
+    }
+
+    public function testCharacterAttributeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::characterAttribute());
     }
 
     public function testCheatCodeWillReturnMappingObject()
@@ -153,6 +189,16 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::copyrightYear());
     }
 
+    public function testCountriesNotSupportedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::countriesNotSupported());
+    }
+
+    public function testCountriesSupportedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::countriesSupported());
+    }
+
     public function testCreatorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::creator());
@@ -173,6 +219,16 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::description());
+    }
+
+    public function testDeviceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::device());
+    }
+
     public function testDirectorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::director());
@@ -186,6 +242,11 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::discussionUrl());
+    }
+
+    public function testDownloadUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::downloadUrl());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -218,9 +279,29 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::exampleOfWork());
     }
 
+    public function testFeatureListWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::featureList());
+    }
+
     public function testFileFormatWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::fileFormat());
+    }
+
+    public function testFileSizeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::fileSize());
+    }
+
+    public function testGameItemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::gameItem());
+    }
+
+    public function testGameLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::gameLocation());
     }
 
     public function testGamePlatformWillReturnMappingObject()
@@ -253,9 +334,19 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::inLanguage());
+    }
+
+    public function testInstallUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::installUrl());
     }
 
     public function testInteractionStatisticWillReturnMappingObject()
@@ -308,6 +399,16 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::mainEntityOfPage());
+    }
+
+    public function testMemoryRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::memoryRequirements());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::mentions());
@@ -318,9 +419,29 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::musicBy());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::name());
+    }
+
+    public function testNumberOfPlayersWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::numberOfPlayers());
+    }
+
     public function testOffersWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::offers());
+    }
+
+    public function testOperatingSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::operatingSystem());
+    }
+
+    public function testPermissionsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::permissions());
     }
 
     public function testPlayModeWillReturnMappingObject()
@@ -331,6 +452,16 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::potentialAction());
+    }
+
+    public function testProcessorRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::processorRequirements());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -358,9 +489,24 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::publishingPrinciples());
     }
 
+    public function testQuestWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::quest());
+    }
+
     public function testRecordedAtWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::recordedAt());
+    }
+
+    public function testReleaseNotesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::releaseNotes());
+    }
+
+    public function testRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::requirements());
     }
 
     public function testReviewWillReturnMappingObject()
@@ -373,14 +519,54 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoGame::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::schemaVersion());
     }
 
+    public function testScreenshotWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::screenshot());
+    }
+
+    public function testSoftwareAddOnWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::softwareAddOn());
+    }
+
+    public function testSoftwareHelpWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::softwareHelp());
+    }
+
+    public function testSoftwareRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::softwareRequirements());
+    }
+
+    public function testSoftwareVersionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::softwareVersion());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::sourceOrganization());
+    }
+
+    public function testStorageRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::storageRequirements());
+    }
+
+    public function testSupportingDataWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::supportingData());
     }
 
     public function testTextWillReturnMappingObject()
@@ -411,6 +597,11 @@ class VideoGameTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoGame::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoGame::url());
     }
 
     public function testVersionWillReturnMappingObject()

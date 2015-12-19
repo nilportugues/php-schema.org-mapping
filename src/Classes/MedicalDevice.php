@@ -23,6 +23,12 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\ProcedureProperty procedure()
  * @method static \NilPortugues\SchemaOrg\Properties\PurposeProperty purpose()
  * @method static \NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty seriousAdverseOutcome()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
  * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
  * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
@@ -59,6 +65,10 @@ class MedicalDevice extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'contraindication' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContraindicationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalDevice',
@@ -66,6 +76,10 @@ class MedicalDevice extends SchemaClass
         'description' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
         'image' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
@@ -78,6 +92,10 @@ class MedicalDevice extends SchemaClass
         'mainEntityOfPage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
         'name' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
@@ -103,6 +121,14 @@ class MedicalDevice extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PurposeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalDevice',
         ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
         'sameAs' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
@@ -110,6 +136,10 @@ class MedicalDevice extends SchemaClass
         'seriousAdverseOutcome' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalDevice',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
         'url' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',

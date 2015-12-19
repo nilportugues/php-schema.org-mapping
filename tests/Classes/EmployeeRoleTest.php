@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\EmployeeRole;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EmployeeRoleTest.
+ * Classes EmployeeRoleTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class EmployeeRoleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EmployeeRole::schemaUrl(), 'http://schema.org/EmployeeRole');
+        $this->assertEquals(EmployeeRole::schemaUrl(), "http://schema.org/EmployeeRole");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

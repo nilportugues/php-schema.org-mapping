@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DeleteAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DeleteActionTest.
+ * Classes DeleteActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DeleteActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DeleteAction::schemaUrl(), 'http://schema.org/DeleteAction');
+        $this->assertEquals(DeleteAction::schemaUrl(), "http://schema.org/DeleteAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,29 @@ class DeleteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeleteAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeleteAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::alternateName());
+    }
+
+    public function testCollectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::collection());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +64,11 @@ class DeleteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeleteAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeleteAction::instrument());
@@ -51,6 +77,16 @@ class DeleteActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeleteAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class DeleteActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeleteAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeleteAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,15 @@ class DeleteActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeleteAction::target());
+    }
+
+    public function testTargetCollectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::targetCollection());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeleteAction::url());
     }
 }

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\TechArticle;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TechArticleTest.
+ * Classes TechArticleTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TechArticleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TechArticle::schemaUrl(), 'http://schema.org/TechArticle');
+        $this->assertEquals(TechArticle::schemaUrl(), "http://schema.org/TechArticle");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,34 @@ class TechArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TechArticle::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::alternativeHeadline());
+    }
+
+    public function testArticleBodyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::articleBody());
+    }
+
+    public function testArticleSectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::articleSection());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -163,6 +184,11 @@ class TechArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TechArticle::dependencies());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::discussionUrl());
@@ -216,6 +242,11 @@ class TechArticleTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -273,9 +304,19 @@ class TechArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TechArticle::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -283,9 +324,29 @@ class TechArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TechArticle::offers());
     }
 
+    public function testPageEndWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::pageEnd());
+    }
+
+    public function testPageStartWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::pageStart());
+    }
+
+    public function testPaginationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::pagination());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -333,6 +394,11 @@ class TechArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TechArticle::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::schemaVersion());
@@ -368,6 +434,11 @@ class TechArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TechArticle::typicalAgeRange());
     }
 
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::version());
@@ -376,6 +447,11 @@ class TechArticleTest extends \PHPUnit_Framework_TestCase
     public function testVideoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TechArticle::video());
+    }
+
+    public function testWordCountWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TechArticle::wordCount());
     }
 
     public function testWorkExampleWillReturnMappingObject()

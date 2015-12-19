@@ -14,18 +14,34 @@ use NilPortugues\SchemaOrg\Classes\DDxElement;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DDxElementTest.
+ * Classes DDxElementTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DDxElementTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DDxElement::schemaUrl(), 'http://schema.org/DDxElement');
+        $this->assertEquals(DDxElement::schemaUrl(), "http://schema.org/DDxElement");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::alternateName());
     }
 
     public function testCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DDxElement::code());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::description());
     }
 
     public function testDiagnosisWillReturnMappingObject()
@@ -43,9 +59,29 @@ class DDxElementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DDxElement::guideline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DDxElement::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -58,8 +94,18 @@ class DDxElementTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DDxElement::relevantSpecialty());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::sameAs());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DDxElement::study());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DDxElement::url());
     }
 }

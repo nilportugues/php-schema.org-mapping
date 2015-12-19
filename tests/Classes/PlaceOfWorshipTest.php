@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\PlaceOfWorship;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PlaceOfWorshipTest.
+ * Classes PlaceOfWorshipTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PlaceOfWorship::schemaUrl(), 'http://schema.org/PlaceOfWorship');
+        $this->assertEquals(PlaceOfWorship::schemaUrl(), "http://schema.org/PlaceOfWorship");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::isicV4());
@@ -98,6 +119,11 @@ class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::map());
@@ -106,6 +132,16 @@ class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +159,11 @@ class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::review());
@@ -133,8 +174,18 @@ class PlaceOfWorshipTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PlaceOfWorship::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PlaceOfWorship::url());
     }
 }

@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\GeoShape;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GeoShapeTest.
+ * Classes GeoShapeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class GeoShapeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GeoShape::schemaUrl(), 'http://schema.org/GeoShape');
+        $this->assertEquals(GeoShape::schemaUrl(), "http://schema.org/GeoShape");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -33,6 +39,11 @@ class GeoShapeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GeoShape::addressCountry());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::alternateName());
+    }
+
     public function testBoxWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GeoShape::box());
@@ -43,14 +54,34 @@ class GeoShapeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GeoShape::circle());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::description());
+    }
+
     public function testElevationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GeoShape::elevation());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::image());
+    }
+
     public function testLineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GeoShape::line());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::name());
     }
 
     public function testPolygonWillReturnMappingObject()
@@ -61,5 +92,20 @@ class GeoShapeTest extends \PHPUnit_Framework_TestCase
     public function testPostalCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GeoShape::postalCode());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::potentialAction());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::sameAs());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoShape::url());
     }
 }

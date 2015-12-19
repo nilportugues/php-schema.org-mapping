@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\ScholarlyArticle;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ScholarlyArticleTest.
+ * Classes ScholarlyArticleTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ScholarlyArticle::schemaUrl(), 'http://schema.org/ScholarlyArticle');
+        $this->assertEquals(ScholarlyArticle::schemaUrl(), "http://schema.org/ScholarlyArticle");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,34 @@ class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::alternativeHeadline());
+    }
+
+    public function testArticleBodyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::articleBody());
+    }
+
+    public function testArticleSectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::articleSection());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -158,6 +179,11 @@ class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::discussionUrl());
@@ -211,6 +237,11 @@ class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +299,19 @@ class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -278,9 +319,29 @@ class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::offers());
     }
 
+    public function testPageEndWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::pageEnd());
+    }
+
+    public function testPageStartWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::pageStart());
+    }
+
+    public function testPaginationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::pagination());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +384,11 @@ class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::schemaVersion());
@@ -358,6 +424,11 @@ class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::typicalAgeRange());
     }
 
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::version());
@@ -366,6 +437,11 @@ class ScholarlyArticleTest extends \PHPUnit_Framework_TestCase
     public function testVideoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ScholarlyArticle::video());
+    }
+
+    public function testWordCountWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ScholarlyArticle::wordCount());
     }
 
     public function testWorkExampleWillReturnMappingObject()

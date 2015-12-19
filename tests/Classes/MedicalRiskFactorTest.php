@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalRiskFactor;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalRiskFactorTest.
+ * Classes MedicalRiskFactorTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalRiskFactorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalRiskFactor::schemaUrl(), 'http://schema.org/MedicalRiskFactor');
+        $this->assertEquals(MedicalRiskFactor::schemaUrl(), "http://schema.org/MedicalRiskFactor");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class MedicalRiskFactorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -53,6 +64,11 @@ class MedicalRiskFactorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::name());
@@ -63,9 +79,24 @@ class MedicalRiskFactorTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalRiskFactor::study());
     }
 
     public function testUrlWillReturnMappingObject()

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\PostalAddress;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PostalAddressTest.
+ * Classes PostalAddressTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PostalAddressTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(PostalAddress::schemaUrl(), 'http://schema.org/PostalAddress');
+        $this->assertEquals(PostalAddress::schemaUrl(), "http://schema.org/PostalAddress");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -48,9 +49,44 @@ class PostalAddressTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PostalAddress::alternateName());
     }
 
+    public function testAreaServedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::areaServed());
+    }
+
+    public function testAvailableLanguageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::availableLanguage());
+    }
+
+    public function testContactOptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::contactOption());
+    }
+
+    public function testContactTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::contactType());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PostalAddress::description());
+    }
+
+    public function testEmailWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::email());
+    }
+
+    public function testFaxNumberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::faxNumber());
+    }
+
+    public function testHoursAvailableWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::hoursAvailable());
     }
 
     public function testImageWillReturnMappingObject()
@@ -83,14 +119,29 @@ class PostalAddressTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, PostalAddress::potentialAction());
     }
 
+    public function testProductSupportedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::productSupported());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PostalAddress::sameAs());
     }
 
+    public function testServiceAreaWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::serviceArea());
+    }
+
     public function testStreetAddressWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, PostalAddress::streetAddress());
+    }
+
+    public function testTelephoneWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, PostalAddress::telephone());
     }
 
     public function testUrlWillReturnMappingObject()

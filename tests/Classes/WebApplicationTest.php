@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\WebApplication;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WebApplicationTest.
+ * Classes WebApplicationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class WebApplicationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WebApplication::schemaUrl(), 'http://schema.org/WebApplication');
+        $this->assertEquals(WebApplication::schemaUrl(), "http://schema.org/WebApplication");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,39 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::alternativeHeadline());
+    }
+
+    public function testApplicationCategoryWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::applicationCategory());
+    }
+
+    public function testApplicationSubCategoryWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::applicationSubCategory());
+    }
+
+    public function testApplicationSuiteWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::applicationSuite());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -81,6 +107,11 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
     public function testAuthorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::author());
+    }
+
+    public function testAvailableOnDeviceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::availableOnDevice());
     }
 
     public function testAwardWillReturnMappingObject()
@@ -143,6 +174,16 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::copyrightYear());
     }
 
+    public function testCountriesNotSupportedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::countriesNotSupported());
+    }
+
+    public function testCountriesSupportedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::countriesSupported());
+    }
+
     public function testCreatorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::creator());
@@ -163,9 +204,24 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::description());
+    }
+
+    public function testDeviceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::device());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::discussionUrl());
+    }
+
+    public function testDownloadUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::downloadUrl());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -198,9 +254,19 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::exampleOfWork());
     }
 
+    public function testFeatureListWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::featureList());
+    }
+
     public function testFileFormatWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::fileFormat());
+    }
+
+    public function testFileSizeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::fileSize());
     }
 
     public function testGenreWillReturnMappingObject()
@@ -218,9 +284,19 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::inLanguage());
+    }
+
+    public function testInstallUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::installUrl());
     }
 
     public function testInteractionStatisticWillReturnMappingObject()
@@ -273,9 +349,24 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::mainEntityOfPage());
+    }
+
+    public function testMemoryRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::memoryRequirements());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -283,9 +374,29 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::offers());
     }
 
+    public function testOperatingSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::operatingSystem());
+    }
+
+    public function testPermissionsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::permissions());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::potentialAction());
+    }
+
+    public function testProcessorRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::processorRequirements());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -318,6 +429,16 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::recordedAt());
     }
 
+    public function testReleaseNotesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::releaseNotes());
+    }
+
+    public function testRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::requirements());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::review());
@@ -328,14 +449,54 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WebApplication::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::schemaVersion());
     }
 
+    public function testScreenshotWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::screenshot());
+    }
+
+    public function testSoftwareAddOnWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::softwareAddOn());
+    }
+
+    public function testSoftwareHelpWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::softwareHelp());
+    }
+
+    public function testSoftwareRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::softwareRequirements());
+    }
+
+    public function testSoftwareVersionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::softwareVersion());
+    }
+
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::sourceOrganization());
+    }
+
+    public function testStorageRequirementsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::storageRequirements());
+    }
+
+    public function testSupportingDataWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::supportingData());
     }
 
     public function testTextWillReturnMappingObject()
@@ -361,6 +522,11 @@ class WebApplicationTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WebApplication::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WebApplication::url());
     }
 
     public function testVersionWillReturnMappingObject()

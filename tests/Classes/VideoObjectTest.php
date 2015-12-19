@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\VideoObject;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VideoObjectTest.
+ * Classes VideoObjectTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class VideoObjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(VideoObject::schemaUrl(), 'http://schema.org/VideoObject');
+        $this->assertEquals(VideoObject::schemaUrl(), "http://schema.org/VideoObject");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -63,14 +64,29 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::actors());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::alternativeHeadline());
+    }
+
+    public function testAssociatedArticleWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::associatedArticle());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -101,6 +117,11 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
     public function testAwardsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::awards());
+    }
+
+    public function testBitrateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::bitrate());
     }
 
     public function testCaptionWillReturnMappingObject()
@@ -138,6 +159,16 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::contentRating());
     }
 
+    public function testContentSizeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::contentSize());
+    }
+
+    public function testContentUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::contentUrl());
+    }
+
     public function testContributorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::contributor());
@@ -173,6 +204,11 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::description());
+    }
+
     public function testDirectorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::director());
@@ -186,6 +222,11 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::discussionUrl());
+    }
+
+    public function testDurationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::duration());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -203,9 +244,24 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::educationalUse());
     }
 
+    public function testEmbedUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::embedUrl());
+    }
+
+    public function testEncodesCreativeWorkWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::encodesCreativeWork());
+    }
+
     public function testEncodingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::encoding());
+    }
+
+    public function testEncodingFormatWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::encodingFormat());
     }
 
     public function testEncodingsWillReturnMappingObject()
@@ -216,6 +272,11 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
     public function testExampleOfWorkWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::exampleOfWork());
+    }
+
+    public function testExpiresWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::expires());
     }
 
     public function testFileFormatWillReturnMappingObject()
@@ -236,6 +297,16 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::headline());
+    }
+
+    public function testHeightWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::height());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -293,6 +364,11 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::mentions());
@@ -303,9 +379,19 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::musicBy());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::name());
+    }
+
     public function testOffersWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::offers());
+    }
+
+    public function testPlayerTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::playerType());
     }
 
     public function testPositionWillReturnMappingObject()
@@ -313,9 +399,19 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::position());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::potentialAction());
+    }
+
     public function testProducerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::producer());
+    }
+
+    public function testProductionCompanyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::productionCompany());
     }
 
     public function testProviderWillReturnMappingObject()
@@ -343,6 +439,16 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::recordedAt());
     }
 
+    public function testRegionsAllowedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::regionsAllowed());
+    }
+
+    public function testRequiresSubscriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::requiresSubscription());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::review());
@@ -351,6 +457,11 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::sameAs());
     }
 
     public function testSchemaVersionWillReturnMappingObject()
@@ -398,6 +509,16 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, VideoObject::typicalAgeRange());
     }
 
+    public function testUploadDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::uploadDate());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::version());
@@ -416,6 +537,11 @@ class VideoObjectTest extends \PHPUnit_Framework_TestCase
     public function testVideoQualityWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, VideoObject::videoQuality());
+    }
+
+    public function testWidthWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, VideoObject::width());
     }
 
     public function testWorkExampleWillReturnMappingObject()

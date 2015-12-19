@@ -21,6 +21,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
  * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
  * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * An indication for a medical therapy that has been formally specified or approved by a regulatory body that regulates use of the therapy; for example, the US FDA approves indications for most drugs in the US.
@@ -36,17 +45,45 @@ class ApprovedIndication extends SchemaClass
      * @var array
      */
     protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'code' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'guideline' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'medicineSystem' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'recognizingAuthority' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
@@ -56,9 +93,17 @@ class ApprovedIndication extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'study' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
     ];
 }

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\GeoCircle;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes GeoCircleTest.
+ * Classes GeoCircleTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class GeoCircleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(GeoCircle::schemaUrl(), 'http://schema.org/GeoCircle');
+        $this->assertEquals(GeoCircle::schemaUrl(), "http://schema.org/GeoCircle");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -28,14 +29,39 @@ class GeoCircleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GeoCircle::additionalType());
     }
 
+    public function testAddressWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoCircle::address());
+    }
+
+    public function testAddressCountryWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoCircle::addressCountry());
+    }
+
     public function testAlternateNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GeoCircle::alternateName());
     }
 
+    public function testBoxWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoCircle::box());
+    }
+
+    public function testCircleWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoCircle::circle());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GeoCircle::description());
+    }
+
+    public function testElevationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoCircle::elevation());
     }
 
     public function testGeoMidpointWillReturnMappingObject()
@@ -53,6 +79,11 @@ class GeoCircleTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, GeoCircle::image());
     }
 
+    public function testLineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoCircle::line());
+    }
+
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GeoCircle::mainEntityOfPage());
@@ -61,6 +92,16 @@ class GeoCircleTest extends \PHPUnit_Framework_TestCase
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, GeoCircle::name());
+    }
+
+    public function testPolygonWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoCircle::polygon());
+    }
+
+    public function testPostalCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, GeoCircle::postalCode());
     }
 
     public function testPotentialActionWillReturnMappingObject()

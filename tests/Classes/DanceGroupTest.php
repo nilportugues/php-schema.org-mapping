@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\DanceGroup;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DanceGroupTest.
+ * Classes DanceGroupTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DanceGroupTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DanceGroup::schemaUrl(), 'http://schema.org/DanceGroup');
+        $this->assertEquals(DanceGroup::schemaUrl(), "http://schema.org/DanceGroup");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -31,6 +37,11 @@ class DanceGroupTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DanceGroup::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -71,6 +82,11 @@ class DanceGroupTest extends \PHPUnit_Framework_TestCase
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DanceGroup::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -143,6 +159,11 @@ class DanceGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DanceGroup::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DanceGroup::isicV4());
@@ -161,6 +182,11 @@ class DanceGroupTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DanceGroup::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -188,6 +214,11 @@ class DanceGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DanceGroup::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DanceGroup::numberOfEmployees());
@@ -203,6 +234,11 @@ class DanceGroupTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DanceGroup::parentOrganization());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DanceGroup::review());
@@ -211,6 +247,11 @@ class DanceGroupTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DanceGroup::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -236,6 +277,11 @@ class DanceGroupTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DanceGroup::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DanceGroup::url());
     }
 
     public function testVatIDWillReturnMappingObject()

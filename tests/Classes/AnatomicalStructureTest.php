@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\AnatomicalStructure;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AnatomicalStructureTest.
+ * Classes AnatomicalStructureTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AnatomicalStructureTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AnatomicalStructure::schemaUrl(), 'http://schema.org/AnatomicalStructure');
+        $this->assertEquals(AnatomicalStructure::schemaUrl(), "http://schema.org/AnatomicalStructure");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -43,6 +44,11 @@ class AnatomicalStructureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::bodyLocation());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalStructure::code());
+    }
+
     public function testConnectedToWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::connectedTo());
@@ -63,6 +69,11 @@ class AnatomicalStructureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::functionType());
     }
 
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalStructure::guideline());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::image());
@@ -71,6 +82,11 @@ class AnatomicalStructureTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalStructure::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -88,6 +104,11 @@ class AnatomicalStructureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalStructure::recognizingAuthority());
+    }
+
     public function testRelatedConditionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::relatedCondition());
@@ -98,9 +119,19 @@ class AnatomicalStructureTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::relatedTherapy());
     }
 
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalStructure::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, AnatomicalStructure::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, AnatomicalStructure::study());
     }
 
     public function testSubStructureWillReturnMappingObject()

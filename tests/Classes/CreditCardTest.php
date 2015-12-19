@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\CreditCard;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CreditCardTest.
+ * Classes CreditCardTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CreditCardTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CreditCard::schemaUrl(), 'http://schema.org/CreditCard');
+        $this->assertEquals(CreditCard::schemaUrl(), "http://schema.org/CreditCard");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

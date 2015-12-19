@@ -38,6 +38,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty typicalAgeRange()
  * @method static \NilPortugues\SchemaOrg\Properties\WorkPerformedProperty workPerformed()
  * @method static \NilPortugues\SchemaOrg\Properties\WorkFeaturedProperty workFeatured()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use
@@ -53,9 +62,17 @@ class UserLikes extends SchemaClass
      * @var array
      */
     protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'attendee' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AttendeeProperty',
@@ -64,6 +81,10 @@ class UserLikes extends SchemaClass
         'attendees' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AttendeesProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'doorTime' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DoorTimeProperty',
@@ -81,6 +102,10 @@ class UserLikes extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EventStatusProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'inLanguage' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
@@ -88,6 +113,14 @@ class UserLikes extends SchemaClass
         'location' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
@@ -105,6 +138,10 @@ class UserLikes extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PerformersProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
         ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'previousStartDate' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PreviousStartDateProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
@@ -116,6 +153,10 @@ class UserLikes extends SchemaClass
         'review' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'startDate' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartDateProperty',
@@ -136,6 +177,10 @@ class UserLikes extends SchemaClass
         'typicalAgeRange' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'workFeatured' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WorkFeaturedProperty',

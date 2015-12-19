@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Reservation;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ReservationTest.
+ * Classes ReservationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ReservationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Reservation::schemaUrl(), 'http://schema.org/Reservation');
+        $this->assertEquals(Reservation::schemaUrl(), "http://schema.org/Reservation");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

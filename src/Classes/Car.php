@@ -15,6 +15,30 @@ use NilPortugues\SchemaOrg\SchemaClass;
 /**
  * METHODSTART.
  *
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfDoorsProperty numberOfDoors()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfAirbagsProperty numberOfAirbags()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfAxlesProperty numberOfAxles()
+ * @method static \NilPortugues\SchemaOrg\Properties\VehicleEngineProperty vehicleEngine()
+ * @method static \NilPortugues\SchemaOrg\Properties\FuelConsumptionProperty fuelConsumption()
+ * @method static \NilPortugues\SchemaOrg\Properties\FuelEfficiencyProperty fuelEfficiency()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfForwardGearsProperty numberOfForwardGears()
+ * @method static \NilPortugues\SchemaOrg\Properties\VinProperty vin()
+ * @method static \NilPortugues\SchemaOrg\Properties\CargoVolumeProperty cargoVolume()
+ * @method static \NilPortugues\SchemaOrg\Properties\VehicleConfigurationProperty vehicleConfiguration()
+ * @method static \NilPortugues\SchemaOrg\Properties\KnownVehicleDamagesProperty knownVehicleDamages()
+ * @method static \NilPortugues\SchemaOrg\Properties\DateVehicleFirstRegisteredProperty dateVehicleFirstRegistered()
+ * @method static \NilPortugues\SchemaOrg\Properties\DriveWheelConfigurationProperty driveWheelConfiguration()
+ * @method static \NilPortugues\SchemaOrg\Properties\FuelTypeProperty fuelType()
+ * @method static \NilPortugues\SchemaOrg\Properties\VehicleInteriorColorProperty vehicleInteriorColor()
+ * @method static \NilPortugues\SchemaOrg\Properties\VehicleInteriorTypeProperty vehicleInteriorType()
+ * @method static \NilPortugues\SchemaOrg\Properties\MileageFromOdometerProperty mileageFromOdometer()
+ * @method static \NilPortugues\SchemaOrg\Properties\VehicleModelDateProperty vehicleModelDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfPreviousOwnersProperty numberOfPreviousOwners()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProductionDateProperty productionDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\PurchaseDateProperty purchaseDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\VehicleSeatingCapacityProperty vehicleSeatingCapacity()
+ * @method static \NilPortugues\SchemaOrg\Properties\VehicleTransmissionProperty vehicleTransmission()
+ * @method static \NilPortugues\SchemaOrg\Properties\SteeringPositionProperty steeringPosition()
  * @method static \NilPortugues\SchemaOrg\Properties\AggregateRatingProperty aggregateRating()
  * @method static \NilPortugues\SchemaOrg\Properties\AudienceProperty audience()
  * @method static \NilPortugues\SchemaOrg\Properties\AwardProperty award()
@@ -46,8 +70,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\WeightProperty weight()
  * @method static \NilPortugues\SchemaOrg\Properties\WidthProperty width()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
- * @method static \NilPortugues\SchemaOrg\Properties\ProductionDateProperty productionDate()
- * @method static \NilPortugues\SchemaOrg\Properties\PurchaseDateProperty purchaseDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A car is a wheeled, self-powered motor vehicle used for transportation.
@@ -67,9 +98,17 @@ class Car extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'aggregateRating' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'audience' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AudienceProperty',
@@ -87,6 +126,10 @@ class Car extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BrandProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'cargoVolume' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CargoVolumeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
         'category' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CategoryProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
@@ -95,9 +138,33 @@ class Car extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ColorProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'dateVehicleFirstRegistered' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DateVehicleFirstRegisteredProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
         'depth' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepthProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'driveWheelConfiguration' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DriveWheelConfigurationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'fuelConsumption' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FuelConsumptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'fuelEfficiency' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FuelEfficiencyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'fuelType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FuelTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
         ],
         'gtin12' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\Gtin12Property',
@@ -119,6 +186,10 @@ class Car extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeightProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'isAccessoryOrSparePartFor' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsAccessoryOrSparePartForProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
@@ -139,13 +210,25 @@ class Car extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ItemConditionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'knownVehicleDamages' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\KnownVehicleDamagesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
         'logo' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LogoProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'manufacturer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ManufacturerProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'mileageFromOdometer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MileageFromOdometerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
         ],
         'model' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ModelProperty',
@@ -155,9 +238,37 @@ class Car extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MpnProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'numberOfAirbags' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfAirbagsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'numberOfAxles' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfAxlesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'numberOfDoors' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfDoorsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'numberOfForwardGears' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfForwardGearsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'numberOfPreviousOwners' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfPreviousOwnersProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
         'offers' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'productID' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductIDProperty',
@@ -183,9 +294,53 @@ class Car extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'sku' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SkuProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'steeringPosition' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SteeringPositionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'vehicleConfiguration' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VehicleConfigurationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'vehicleEngine' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VehicleEngineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'vehicleInteriorColor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VehicleInteriorColorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'vehicleInteriorType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VehicleInteriorTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'vehicleModelDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VehicleModelDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'vehicleSeatingCapacity' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VehicleSeatingCapacityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'vehicleTransmission' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VehicleTransmissionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
+        ],
+        'vin' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VinProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Vehicle',
         ],
         'weight' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WeightProperty',

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\WPAdBlock;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes WPAdBlockTest.
+ * Classes WPAdBlockTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class WPAdBlockTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(WPAdBlock::schemaUrl(), 'http://schema.org/WPAdBlock');
+        $this->assertEquals(WPAdBlock::schemaUrl(), "http://schema.org/WPAdBlock");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class WPAdBlockTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPAdBlock::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPAdBlock::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,6 +169,11 @@ class WPAdBlockTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPAdBlock::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPAdBlock::discussionUrl());
@@ -211,6 +227,11 @@ class WPAdBlockTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPAdBlock::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +289,19 @@ class WPAdBlockTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPAdBlock::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPAdBlock::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +312,11 @@ class WPAdBlockTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPAdBlock::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +359,11 @@ class WPAdBlockTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, WPAdBlock::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPAdBlock::schemaVersion());
@@ -356,6 +397,11 @@ class WPAdBlockTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, WPAdBlock::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, WPAdBlock::url());
     }
 
     public function testVersionWillReturnMappingObject()

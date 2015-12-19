@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Periodical;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes PeriodicalTest.
+ * Classes PeriodicalTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class PeriodicalTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Periodical::schemaUrl(), 'http://schema.org/Periodical');
+        $this->assertEquals(Periodical::schemaUrl(), "http://schema.org/Periodical");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Periodical::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,6 +169,11 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Periodical::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::discussionUrl());
@@ -188,6 +204,11 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Periodical::encodings());
     }
 
+    public function testEndDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::endDate());
+    }
+
     public function testExampleOfWorkWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::exampleOfWork());
@@ -211,6 +232,11 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -273,9 +299,19 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Periodical::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -286,6 +322,11 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -328,6 +369,11 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Periodical::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::schemaVersion());
@@ -336,6 +382,11 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::sourceOrganization());
+    }
+
+    public function testStartDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::startDate());
     }
 
     public function testTextWillReturnMappingObject()
@@ -361,6 +412,11 @@ class PeriodicalTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Periodical::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Periodical::url());
     }
 
     public function testVersionWillReturnMappingObject()

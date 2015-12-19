@@ -14,13 +14,24 @@ use NilPortugues\SchemaOrg\Classes\OpeningHoursSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OpeningHoursSpecificationTest.
+ * Classes OpeningHoursSpecificationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class OpeningHoursSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(OpeningHoursSpecification::schemaUrl(), 'http://schema.org/OpeningHoursSpecification');
+        $this->assertEquals(OpeningHoursSpecification::schemaUrl(), "http://schema.org/OpeningHoursSpecification");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::alternateName());
     }
 
     public function testClosesWillReturnMappingObject()
@@ -33,9 +44,44 @@ class OpeningHoursSpecificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::dayOfWeek());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::description());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::name());
+    }
+
     public function testOpensWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::opens());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::potentialAction());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::sameAs());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OpeningHoursSpecification::url());
     }
 
     public function testValidFromWillReturnMappingObject()

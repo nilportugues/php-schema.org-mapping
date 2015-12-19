@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\TVEpisode;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TVEpisodeTest.
+ * Classes TVEpisodeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TVEpisodeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TVEpisode::schemaUrl(), 'http://schema.org/TVEpisode');
+        $this->assertEquals(TVEpisode::schemaUrl(), "http://schema.org/TVEpisode");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,29 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TVEpisode::accountablePerson());
     }
 
+    public function testActorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::actor());
+    }
+
+    public function testActorsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::actors());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -163,6 +184,21 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TVEpisode::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::description());
+    }
+
+    public function testDirectorWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::director());
+    }
+
+    public function testDirectorsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::directors());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::discussionUrl());
@@ -193,6 +229,11 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TVEpisode::encodings());
     }
 
+    public function testEpisodeNumberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::episodeNumber());
+    }
+
     public function testExampleOfWorkWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::exampleOfWork());
@@ -216,6 +257,11 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -273,14 +319,39 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TVEpisode::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::mentions());
     }
 
+    public function testMusicByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::musicBy());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::name());
+    }
+
     public function testOffersWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::offers());
+    }
+
+    public function testPartOfSeasonWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::partOfSeason());
+    }
+
+    public function testPartOfSeriesWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::partOfSeries());
     }
 
     public function testPartOfTVSeriesWillReturnMappingObject()
@@ -293,9 +364,19 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TVEpisode::position());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::potentialAction());
+    }
+
     public function testProducerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::producer());
+    }
+
+    public function testProductionCompanyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::productionCompany());
     }
 
     public function testProviderWillReturnMappingObject()
@@ -333,6 +414,11 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TVEpisode::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::schemaVersion());
@@ -363,6 +449,11 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TVEpisode::timeRequired());
     }
 
+    public function testTrailerWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::trailer());
+    }
+
     public function testTranslatorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::translator());
@@ -371,6 +462,11 @@ class TVEpisodeTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TVEpisode::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TVEpisode::url());
     }
 
     public function testVersionWillReturnMappingObject()

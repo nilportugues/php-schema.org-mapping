@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\BookSeries;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BookSeriesTest.
+ * Classes BookSeriesTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class BookSeriesTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BookSeries::schemaUrl(), 'http://schema.org/BookSeries');
+        $this->assertEquals(BookSeries::schemaUrl(), "http://schema.org/BookSeries");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BookSeries::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -158,6 +169,11 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BookSeries::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::discussionUrl());
@@ -188,6 +204,11 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BookSeries::encodings());
     }
 
+    public function testEndDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::endDate());
+    }
+
     public function testExampleOfWorkWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::exampleOfWork());
@@ -211,6 +232,11 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -268,9 +294,19 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BookSeries::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -281,6 +317,11 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -323,6 +364,11 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BookSeries::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::schemaVersion());
@@ -331,6 +377,11 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::sourceOrganization());
+    }
+
+    public function testStartDateWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::startDate());
     }
 
     public function testTextWillReturnMappingObject()
@@ -356,6 +407,11 @@ class BookSeriesTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BookSeries::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BookSeries::url());
     }
 
     public function testVersionWillReturnMappingObject()

@@ -14,13 +14,19 @@ use NilPortugues\SchemaOrg\Classes\HighSchool;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HighSchoolTest.
+ * Classes HighSchoolTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class HighSchoolTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HighSchool::schemaUrl(), 'http://schema.org/HighSchool');
+        $this->assertEquals(HighSchool::schemaUrl(), "http://schema.org/HighSchool");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -31,6 +37,11 @@ class HighSchoolTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HighSchool::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -71,6 +82,11 @@ class HighSchoolTest extends \PHPUnit_Framework_TestCase
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HighSchool::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -143,6 +159,11 @@ class HighSchoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HighSchool::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HighSchool::isicV4());
@@ -161,6 +182,11 @@ class HighSchoolTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HighSchool::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -188,6 +214,11 @@ class HighSchoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HighSchool::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HighSchool::numberOfEmployees());
@@ -203,6 +234,11 @@ class HighSchoolTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HighSchool::parentOrganization());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HighSchool::review());
@@ -211,6 +247,11 @@ class HighSchoolTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HighSchool::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -236,6 +277,11 @@ class HighSchoolTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HighSchool::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HighSchool::url());
     }
 
     public function testVatIDWillReturnMappingObject()

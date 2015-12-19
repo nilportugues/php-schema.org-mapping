@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalTherapy;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalTherapyTest.
+ * Classes MedicalTherapyTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalTherapyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalTherapy::schemaUrl(), 'http://schema.org/MedicalTherapy');
+        $this->assertEquals(MedicalTherapy::schemaUrl(), "http://schema.org/MedicalTherapy");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -38,6 +39,11 @@ class MedicalTherapyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalTherapy::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalTherapy::code());
+    }
+
     public function testContraindicationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalTherapy::contraindication());
@@ -51,6 +57,11 @@ class MedicalTherapyTest extends \PHPUnit_Framework_TestCase
     public function testDuplicateTherapyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalTherapy::duplicateTherapy());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalTherapy::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -68,6 +79,11 @@ class MedicalTherapyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalTherapy::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalTherapy::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalTherapy::name());
@@ -78,6 +94,16 @@ class MedicalTherapyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalTherapy::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalTherapy::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalTherapy::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalTherapy::sameAs());
@@ -86,6 +112,11 @@ class MedicalTherapyTest extends \PHPUnit_Framework_TestCase
     public function testSeriousAdverseOutcomeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalTherapy::seriousAdverseOutcome());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalTherapy::study());
     }
 
     public function testUrlWillReturnMappingObject()

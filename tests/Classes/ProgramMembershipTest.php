@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\ProgramMembership;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ProgramMembershipTest.
+ * Classes ProgramMembershipTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ProgramMembershipTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ProgramMembership::schemaUrl(), 'http://schema.org/ProgramMembership');
+        $this->assertEquals(ProgramMembership::schemaUrl(), "http://schema.org/ProgramMembership");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

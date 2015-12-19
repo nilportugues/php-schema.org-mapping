@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\TrackAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TrackActionTest.
+ * Classes TrackActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TrackActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TrackAction::schemaUrl(), 'http://schema.org/TrackAction');
+        $this->assertEquals(TrackAction::schemaUrl(), "http://schema.org/TrackAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,14 +29,29 @@ class TrackActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TrackAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TrackAction::agent());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::alternateName());
+    }
+
     public function testDeliveryMethodWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TrackAction::deliveryMethod());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -48,6 +64,11 @@ class TrackActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TrackAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TrackAction::instrument());
@@ -56,6 +77,16 @@ class TrackActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TrackAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -68,9 +99,19 @@ class TrackActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TrackAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TrackAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -81,5 +122,10 @@ class TrackActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TrackAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TrackAction::url());
     }
 }

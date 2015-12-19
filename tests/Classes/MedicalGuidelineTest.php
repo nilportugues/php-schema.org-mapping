@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalGuideline;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalGuidelineTest.
+ * Classes MedicalGuidelineTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalGuidelineTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalGuideline::schemaUrl(), 'http://schema.org/MedicalGuideline');
+        $this->assertEquals(MedicalGuideline::schemaUrl(), "http://schema.org/MedicalGuideline");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -31,6 +32,11 @@ class MedicalGuidelineTest extends \PHPUnit_Framework_TestCase
     public function testAlternateNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalGuideline::alternateName());
+    }
+
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalGuideline::code());
     }
 
     public function testDescriptionWillReturnMappingObject()
@@ -46,6 +52,11 @@ class MedicalGuidelineTest extends \PHPUnit_Framework_TestCase
     public function testEvidenceOriginWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalGuideline::evidenceOrigin());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalGuideline::guideline());
     }
 
     public function testGuidelineDateWillReturnMappingObject()
@@ -68,6 +79,11 @@ class MedicalGuidelineTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalGuideline::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalGuideline::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalGuideline::name());
@@ -78,9 +94,24 @@ class MedicalGuidelineTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalGuideline::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalGuideline::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalGuideline::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalGuideline::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalGuideline::study());
     }
 
     public function testUrlWillReturnMappingObject()

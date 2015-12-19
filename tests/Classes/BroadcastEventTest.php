@@ -14,18 +14,29 @@ use NilPortugues\SchemaOrg\Classes\BroadcastEvent;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes BroadcastEventTest.
+ * Classes BroadcastEventTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class BroadcastEventTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(BroadcastEvent::schemaUrl(), 'http://schema.org/BroadcastEvent');
+        $this->assertEquals(BroadcastEvent::schemaUrl(), "http://schema.org/BroadcastEvent");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::additionalType());
     }
 
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::alternateName());
     }
 
     public function testAttendeeWillReturnMappingObject()
@@ -36,6 +47,11 @@ class BroadcastEventTest extends \PHPUnit_Framework_TestCase
     public function testAttendeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::attendees());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::description());
     }
 
     public function testDoorTimeWillReturnMappingObject()
@@ -58,14 +74,39 @@ class BroadcastEventTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::eventStatus());
     }
 
+    public function testFreeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::free());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::inLanguage());
     }
 
+    public function testIsAccessibleForFreeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::isAccessibleForFree());
+    }
+
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -88,9 +129,19 @@ class BroadcastEventTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::performers());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::potentialAction());
+    }
+
     public function testPreviousStartDateWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::previousStartDate());
+    }
+
+    public function testPublishedOnWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::publishedOn());
     }
 
     public function testRecordedInWillReturnMappingObject()
@@ -101,6 +152,11 @@ class BroadcastEventTest extends \PHPUnit_Framework_TestCase
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::review());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::sameAs());
     }
 
     public function testStartDateWillReturnMappingObject()
@@ -126,6 +182,11 @@ class BroadcastEventTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, BroadcastEvent::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, BroadcastEvent::url());
     }
 
     public function testVideoFormatWillReturnMappingObject()

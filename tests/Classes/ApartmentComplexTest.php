@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\ApartmentComplex;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes ApartmentComplexTest.
+ * Classes ApartmentComplexTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(ApartmentComplex::schemaUrl(), 'http://schema.org/ApartmentComplex');
+        $this->assertEquals(ApartmentComplex::schemaUrl(), "http://schema.org/ApartmentComplex");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -88,6 +104,11 @@ class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::hasMap());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::isicV4());
@@ -98,6 +119,11 @@ class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::map());
@@ -106,6 +132,11 @@ class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::name());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -123,6 +154,11 @@ class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::review());
@@ -133,8 +169,18 @@ class ApartmentComplexTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, ApartmentComplex::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, ApartmentComplex::url());
     }
 }

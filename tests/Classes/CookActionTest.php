@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\CookAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes CookActionTest.
+ * Classes CookActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class CookActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(CookAction::schemaUrl(), 'http://schema.org/CookAction');
+        $this->assertEquals(CookAction::schemaUrl(), "http://schema.org/CookAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class CookActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CookAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CookAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -53,6 +69,11 @@ class CookActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CookAction::foodEvent());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CookAction::instrument());
@@ -61,6 +82,16 @@ class CookActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CookAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -73,6 +104,11 @@ class CookActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CookAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::potentialAction());
+    }
+
     public function testRecipeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CookAction::recipe());
@@ -83,6 +119,11 @@ class CookActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, CookAction::result());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::sameAs());
+    }
+
     public function testStartTimeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CookAction::startTime());
@@ -91,5 +132,10 @@ class CookActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, CookAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CookAction::url());
     }
 }

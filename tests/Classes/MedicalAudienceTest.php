@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\MedicalAudience;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes MedicalAudienceTest.
+ * Classes MedicalAudienceTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class MedicalAudienceTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(MedicalAudience::schemaUrl(), 'http://schema.org/MedicalAudience');
+        $this->assertEquals(MedicalAudience::schemaUrl(), "http://schema.org/MedicalAudience");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -38,6 +39,11 @@ class MedicalAudienceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalAudience::audienceType());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalAudience::description());
@@ -46,6 +52,16 @@ class MedicalAudienceTest extends \PHPUnit_Framework_TestCase
     public function testGeographicAreaWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalAudience::geographicArea());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::guideline());
+    }
+
+    public function testHealthConditionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::healthCondition());
     }
 
     public function testImageWillReturnMappingObject()
@@ -58,6 +74,11 @@ class MedicalAudienceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalAudience::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalAudience::name());
@@ -68,9 +89,54 @@ class MedicalAudienceTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, MedicalAudience::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::relevantSpecialty());
+    }
+
+    public function testRequiredGenderWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::requiredGender());
+    }
+
+    public function testRequiredMaxAgeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::requiredMaxAge());
+    }
+
+    public function testRequiredMinAgeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::requiredMinAge());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, MedicalAudience::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::study());
+    }
+
+    public function testSuggestedGenderWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::suggestedGender());
+    }
+
+    public function testSuggestedMaxAgeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::suggestedMaxAge());
+    }
+
+    public function testSuggestedMinAgeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, MedicalAudience::suggestedMinAge());
     }
 
     public function testSupersededByWillReturnMappingObject()

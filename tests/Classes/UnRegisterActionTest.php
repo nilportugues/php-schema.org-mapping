@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\UnRegisterAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes UnRegisterActionTest.
+ * Classes UnRegisterActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class UnRegisterActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(UnRegisterAction::schemaUrl(), 'http://schema.org/UnRegisterAction');
+        $this->assertEquals(UnRegisterAction::schemaUrl(), "http://schema.org/UnRegisterAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class UnRegisterActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UnRegisterAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnRegisterAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class UnRegisterActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UnRegisterAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnRegisterAction::instrument());
@@ -51,6 +72,16 @@ class UnRegisterActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnRegisterAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class UnRegisterActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, UnRegisterAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnRegisterAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +117,10 @@ class UnRegisterActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, UnRegisterAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, UnRegisterAction::url());
     }
 }

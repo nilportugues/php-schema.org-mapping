@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DepartAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DepartActionTest.
+ * Classes DepartActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DepartActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DepartAction::schemaUrl(), 'http://schema.org/DepartAction');
+        $this->assertEquals(DepartAction::schemaUrl(), "http://schema.org/DepartAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class DepartActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DepartAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DepartAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,16 @@ class DepartActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DepartAction::error());
     }
 
+    public function testFromLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::fromLocation());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DepartAction::instrument());
@@ -51,6 +77,16 @@ class DepartActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DepartAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +99,19 @@ class DepartActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DepartAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DepartAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +122,15 @@ class DepartActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DepartAction::target());
+    }
+
+    public function testToLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::toLocation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DepartAction::url());
     }
 }

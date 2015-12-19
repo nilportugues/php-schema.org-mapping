@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Role;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RoleTest.
+ * Classes RoleTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class RoleTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Role::schemaUrl(), 'http://schema.org/Role');
+        $this->assertEquals(Role::schemaUrl(), "http://schema.org/Role");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

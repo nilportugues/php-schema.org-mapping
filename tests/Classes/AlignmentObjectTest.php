@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\AlignmentObject;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AlignmentObjectTest.
+ * Classes AlignmentObjectTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AlignmentObjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(AlignmentObject::schemaUrl(), 'http://schema.org/AlignmentObject');
+        $this->assertEquals(AlignmentObject::schemaUrl(), "http://schema.org/AlignmentObject");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

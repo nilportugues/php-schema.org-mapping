@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\JobPosting;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes JobPostingTest.
+ * Classes JobPostingTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class JobPostingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(JobPosting::schemaUrl(), 'http://schema.org/JobPosting');
+        $this->assertEquals(JobPosting::schemaUrl(), "http://schema.org/JobPosting");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

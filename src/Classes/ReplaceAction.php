@@ -17,6 +17,8 @@ use NilPortugues\SchemaOrg\SchemaClass;
  *
  * @method static \NilPortugues\SchemaOrg\Properties\ReplaceeProperty replacee()
  * @method static \NilPortugues\SchemaOrg\Properties\ReplacerProperty replacer()
+ * @method static \NilPortugues\SchemaOrg\Properties\CollectionProperty collection()
+ * @method static \NilPortugues\SchemaOrg\Properties\TargetCollectionProperty targetCollection()
  * @method static \NilPortugues\SchemaOrg\Properties\AgentProperty agent()
  * @method static \NilPortugues\SchemaOrg\Properties\EndTimeProperty endTime()
  * @method static \NilPortugues\SchemaOrg\Properties\InstrumentProperty instrument()
@@ -28,6 +30,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\ActionStatusProperty actionStatus()
  * @method static \NilPortugues\SchemaOrg\Properties\ErrorProperty error()
  * @method static \NilPortugues\SchemaOrg\Properties\TargetProperty target()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * The act of editing a recipient by replacing an old object with a new object.
@@ -47,9 +58,25 @@ class ReplaceAction extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActionStatusProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
         ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'agent' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AgentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'collection' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CollectionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\UpdateAction',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'endTime' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndTimeProperty',
@@ -59,6 +86,10 @@ class ReplaceAction extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ErrorProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'instrument' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InstrumentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
@@ -67,6 +98,14 @@ class ReplaceAction extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
         ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'objectType' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ObjectTypeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
@@ -74,6 +113,10 @@ class ReplaceAction extends SchemaClass
         'participant' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParticipantProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'replacee' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReplaceeProperty',
@@ -87,6 +130,10 @@ class ReplaceAction extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ResultProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
         ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'startTime' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartTimeProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
@@ -94,6 +141,14 @@ class ReplaceAction extends SchemaClass
         'target' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TargetProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'targetCollection' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TargetCollectionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\UpdateAction',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
     ];
 }

@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DrugPrescriptionStatus;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrugPrescriptionStatusTest.
+ * Classes DrugPrescriptionStatusTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DrugPrescriptionStatusTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DrugPrescriptionStatus::schemaUrl(), 'http://schema.org/DrugPrescriptionStatus');
+        $this->assertEquals(DrugPrescriptionStatus::schemaUrl(), "http://schema.org/DrugPrescriptionStatus");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -33,9 +34,19 @@ class DrugPrescriptionStatusTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::alternateName());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -48,6 +59,11 @@ class DrugPrescriptionStatusTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::name());
@@ -58,9 +74,24 @@ class DrugPrescriptionStatusTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::recognizingAuthority());
+    }
+
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DrugPrescriptionStatus::study());
     }
 
     public function testSupersededByWillReturnMappingObject()

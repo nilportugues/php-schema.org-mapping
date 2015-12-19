@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\LendAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LendActionTest.
+ * Classes LendActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class LendActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LendAction::schemaUrl(), 'http://schema.org/LendAction');
+        $this->assertEquals(LendAction::schemaUrl(), "http://schema.org/LendAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,14 +29,29 @@ class LendActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LendAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LendAction::agent());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::alternateName());
+    }
+
     public function testBorrowerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LendAction::borrower());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -48,6 +64,16 @@ class LendActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LendAction::error());
     }
 
+    public function testFromLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::fromLocation());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LendAction::instrument());
@@ -56,6 +82,16 @@ class LendActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LendAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -68,9 +104,19 @@ class LendActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LendAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LendAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -81,5 +127,15 @@ class LendActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LendAction::target());
+    }
+
+    public function testToLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::toLocation());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LendAction::url());
     }
 }

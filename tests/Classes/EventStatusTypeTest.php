@@ -11,14 +11,66 @@
 namespace NilPortugues\Tests\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Classes\EventStatusType;
+use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EventStatusTypeTest.
+ * Classes EventStatusTypeTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class EventStatusTypeTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(EventStatusType::schemaUrl(), 'http://schema.org/EventStatusType');
+        $this->assertEquals(EventStatusType::schemaUrl(), "http://schema.org/EventStatusType");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::description());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::potentialAction());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::sameAs());
+    }
+
+    public function testSupersededByWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::supersededBy());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, EventStatusType::url());
     }
 }

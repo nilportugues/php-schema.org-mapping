@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DonateAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DonateActionTest.
+ * Classes DonateActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DonateActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DonateAction::schemaUrl(), 'http://schema.org/DonateAction');
+        $this->assertEquals(DonateAction::schemaUrl(), "http://schema.org/DonateAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class DonateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DonateAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DonateAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class DonateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DonateAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DonateAction::instrument());
@@ -51,6 +72,16 @@ class DonateActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DonateAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,6 +94,21 @@ class DonateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DonateAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::potentialAction());
+    }
+
+    public function testPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::price());
+    }
+
+    public function testPriceSpecificationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::priceSpecification());
+    }
+
     public function testRecipientWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DonateAction::recipient());
@@ -73,6 +119,11 @@ class DonateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DonateAction::result());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::sameAs());
+    }
+
     public function testStartTimeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DonateAction::startTime());
@@ -81,5 +132,10 @@ class DonateActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DonateAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DonateAction::url());
     }
 }

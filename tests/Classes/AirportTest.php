@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\Airport;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes AirportTest.
+ * Classes AirportTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class AirportTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Airport::schemaUrl(), 'http://schema.org/Airport');
+        $this->assertEquals(Airport::schemaUrl(), "http://schema.org/Airport");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Airport::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class AirportTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Airport::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::alternateName());
     }
 
     public function testBranchCodeWillReturnMappingObject()
@@ -56,6 +67,11 @@ class AirportTest extends \PHPUnit_Framework_TestCase
     public function testContainsPlaceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Airport::containsPlace());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::description());
     }
 
     public function testEventWillReturnMappingObject()
@@ -98,6 +114,11 @@ class AirportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Airport::iataCode());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Airport::isicV4());
@@ -108,6 +129,11 @@ class AirportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Airport::logo());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::mainEntityOfPage());
+    }
+
     public function testMapWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Airport::map());
@@ -116,6 +142,16 @@ class AirportTest extends \PHPUnit_Framework_TestCase
     public function testMapsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Airport::maps());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::name());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -133,6 +169,11 @@ class AirportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Airport::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::potentialAction());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Airport::review());
@@ -143,8 +184,18 @@ class AirportTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Airport::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::sameAs());
+    }
+
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Airport::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Airport::url());
     }
 }

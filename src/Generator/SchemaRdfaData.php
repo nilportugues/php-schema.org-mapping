@@ -223,8 +223,10 @@ class SchemaRdfaData
             if (!empty($resultingClass->subClassOf) && is_array($resultingClass->subClassOf)) {
                 foreach ($resultingClass->subClassOf as $stdClassObject) {
                     if (is_object($stdClassObject)) {
+                        $resultingClass->properties = array_merge($resultingClass->properties, $stdClassObject->properties);
+
                         $next = $stdClassObject->subClassOf;
-                        while (is_array($next) && !empty($next) && $object = array_pop($next)) {
+                        while (false !== $next && $object = array_pop($next)) {
                             $resultingClass->properties = array_merge($resultingClass->properties, $object->properties);
                         }
                     }

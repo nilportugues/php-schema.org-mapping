@@ -14,13 +14,29 @@ use NilPortugues\SchemaOrg\Classes\Joint;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes JointTest.
+ * Classes JointTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class JointTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Joint::schemaUrl(), 'http://schema.org/Joint');
+        $this->assertEquals(Joint::schemaUrl(), "http://schema.org/Joint");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::alternateName());
+    }
+
+    public function testAssociatedPathophysiologyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::associatedPathophysiology());
     }
 
     public function testBiomechnicalClassWillReturnMappingObject()
@@ -28,9 +44,34 @@ class JointTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Joint::biomechnicalClass());
     }
 
+    public function testBodyLocationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::bodyLocation());
+    }
+
     public function testCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Joint::code());
+    }
+
+    public function testConnectedToWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::connectedTo());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::description());
+    }
+
+    public function testDiagramWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::diagram());
+    }
+
+    public function testFunctionTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::functionType());
     }
 
     public function testFunctionalClassWillReturnMappingObject()
@@ -43,9 +84,34 @@ class JointTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Joint::guideline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::mainEntityOfPage());
+    }
+
     public function testMedicineSystemWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Joint::medicineSystem());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::name());
+    }
+
+    public function testPartOfSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::partOfSystem());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::potentialAction());
     }
 
     public function testRecognizingAuthorityWillReturnMappingObject()
@@ -53,9 +119,24 @@ class JointTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Joint::recognizingAuthority());
     }
 
+    public function testRelatedConditionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::relatedCondition());
+    }
+
+    public function testRelatedTherapyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::relatedTherapy());
+    }
+
     public function testRelevantSpecialtyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Joint::relevantSpecialty());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::sameAs());
     }
 
     public function testStructuralClassWillReturnMappingObject()
@@ -66,5 +147,15 @@ class JointTest extends \PHPUnit_Framework_TestCase
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Joint::study());
+    }
+
+    public function testSubStructureWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::subStructure());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Joint::url());
     }
 }

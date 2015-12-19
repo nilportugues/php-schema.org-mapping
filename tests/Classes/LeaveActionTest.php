@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\LeaveAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LeaveActionTest.
+ * Classes LeaveActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class LeaveActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LeaveAction::schemaUrl(), 'http://schema.org/LeaveAction');
+        $this->assertEquals(LeaveAction::schemaUrl(), "http://schema.org/LeaveAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class LeaveActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LeaveAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LeaveAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -48,6 +64,11 @@ class LeaveActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LeaveAction::event());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LeaveAction::instrument());
@@ -56,6 +77,16 @@ class LeaveActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LeaveAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -68,9 +99,19 @@ class LeaveActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LeaveAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LeaveAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -81,5 +122,10 @@ class LeaveActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LeaveAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LeaveAction::url());
     }
 }

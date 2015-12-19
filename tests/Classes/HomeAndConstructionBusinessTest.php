@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\HomeAndConstructionBusiness;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes HomeAndConstructionBusinessTest.
+ * Classes HomeAndConstructionBusinessTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(HomeAndConstructionBusiness::schemaUrl(), 'http://schema.org/HomeAndConstructionBusiness');
+        $this->assertEquals(HomeAndConstructionBusiness::schemaUrl(), "http://schema.org/HomeAndConstructionBusiness");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::isicV4());
@@ -196,6 +227,11 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::photo());
@@ -263,6 +314,16 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::review());
@@ -271,6 +332,11 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class HomeAndConstructionBusinessTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, HomeAndConstructionBusiness::url());
     }
 
     public function testVatIDWillReturnMappingObject()

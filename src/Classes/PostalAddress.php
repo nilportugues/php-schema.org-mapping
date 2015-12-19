@@ -21,6 +21,16 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\PostalCodeProperty postalCode()
  * @method static \NilPortugues\SchemaOrg\Properties\PostOfficeBoxNumberProperty postOfficeBoxNumber()
  * @method static \NilPortugues\SchemaOrg\Properties\StreetAddressProperty streetAddress()
+ * @method static \NilPortugues\SchemaOrg\Properties\AreaServedProperty areaServed()
+ * @method static \NilPortugues\SchemaOrg\Properties\AvailableLanguageProperty availableLanguage()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContactOptionProperty contactOption()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContactTypeProperty contactType()
+ * @method static \NilPortugues\SchemaOrg\Properties\EmailProperty email()
+ * @method static \NilPortugues\SchemaOrg\Properties\FaxNumberProperty faxNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\HoursAvailableProperty hoursAvailable()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProductSupportedProperty productSupported()
+ * @method static \NilPortugues\SchemaOrg\Properties\ServiceAreaProperty serviceArea()
+ * @method static \NilPortugues\SchemaOrg\Properties\TelephoneProperty telephone()
  * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
  * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
  * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
@@ -65,9 +75,37 @@ class PostalAddress extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'areaServed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AreaServedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
+        ],
+        'availableLanguage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AvailableLanguageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
+        ],
+        'contactOption' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContactOptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
+        ],
+        'contactType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContactTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
+        ],
         'description' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'email' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EmailProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
+        ],
+        'faxNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FaxNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
+        ],
+        'hoursAvailable' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HoursAvailableProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
         ],
         'image' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
@@ -93,13 +131,25 @@ class PostalAddress extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'productSupported' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductSupportedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
+        ],
         'sameAs' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
+        'serviceArea' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ServiceAreaProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
+        ],
         'streetAddress' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StreetAddressProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PostalAddress',
+        ],
+        'telephone' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TelephoneProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ContactPoint',
         ],
         'url' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',

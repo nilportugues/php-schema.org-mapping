@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DeactivateAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DeactivateActionTest.
+ * Classes DeactivateActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DeactivateActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DeactivateAction::schemaUrl(), 'http://schema.org/DeactivateAction');
+        $this->assertEquals(DeactivateAction::schemaUrl(), "http://schema.org/DeactivateAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class DeactivateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeactivateAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeactivateAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -43,6 +59,11 @@ class DeactivateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeactivateAction::error());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::image());
+    }
+
     public function testInstrumentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeactivateAction::instrument());
@@ -51,6 +72,16 @@ class DeactivateActionTest extends \PHPUnit_Framework_TestCase
     public function testLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeactivateAction::location());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::name());
     }
 
     public function testObjectTypeWillReturnMappingObject()
@@ -63,9 +94,19 @@ class DeactivateActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeactivateAction::participant());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::potentialAction());
+    }
+
     public function testResultWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeactivateAction::result());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::sameAs());
     }
 
     public function testStartTimeWillReturnMappingObject()
@@ -76,5 +117,10 @@ class DeactivateActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeactivateAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeactivateAction::url());
     }
 }

@@ -11,14 +11,76 @@
 namespace NilPortugues\Tests\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Classes\OfferCatalog;
+use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes OfferCatalogTest.
+ * Classes OfferCatalogTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class OfferCatalogTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(OfferCatalog::schemaUrl(), 'http://schema.org/OfferCatalog');
+        $this->assertEquals(OfferCatalog::schemaUrl(), "http://schema.org/OfferCatalog");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::description());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::image());
+    }
+
+    public function testItemListElementWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::itemListElement());
+    }
+
+    public function testItemListOrderWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::itemListOrder());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::name());
+    }
+
+    public function testNumberOfItemsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::numberOfItems());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::potentialAction());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::sameAs());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, OfferCatalog::url());
     }
 }

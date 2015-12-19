@@ -63,6 +63,15 @@ use NilPortugues\SchemaOrg\SchemaClass;
  * @method static \NilPortugues\SchemaOrg\Properties\TaxIDProperty taxID()
  * @method static \NilPortugues\SchemaOrg\Properties\TelephoneProperty telephone()
  * @method static \NilPortugues\SchemaOrg\Properties\VatIDProperty vatID()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
  * METHODEND.
  *
  * A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician.
@@ -78,6 +87,10 @@ class MusicGroup extends SchemaClass
      * @var array
      */
     protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'address' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
@@ -93,6 +106,10 @@ class MusicGroup extends SchemaClass
         'albums' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlbumsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MusicGroup',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'alumni' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlumniProperty',
@@ -125,6 +142,10 @@ class MusicGroup extends SchemaClass
         'department' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepartmentProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'dissolutionDate' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DissolutionDateProperty',
@@ -182,6 +203,10 @@ class MusicGroup extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasPOSProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
         ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'isicV4' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsicV4Property',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
@@ -197,6 +222,10 @@ class MusicGroup extends SchemaClass
         'logo' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LogoProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'makesOffer' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MakesOfferProperty',
@@ -222,6 +251,10 @@ class MusicGroup extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NaicsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
         ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'numberOfEmployees' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
@@ -234,6 +267,10 @@ class MusicGroup extends SchemaClass
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParentOrganizationProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
         ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
         'review' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
@@ -241,6 +278,10 @@ class MusicGroup extends SchemaClass
         'reviews' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'seeks' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SeeksProperty',
@@ -265,6 +306,10 @@ class MusicGroup extends SchemaClass
         'tracks' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TracksProperty',
             'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MusicGroup',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
         ],
         'vatID' => [
             'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VatIDProperty',

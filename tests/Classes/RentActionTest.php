@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\RentAction;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RentActionTest.
+ * Classes RentActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class RentActionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RentAction::schemaUrl(), 'http://schema.org/RentAction');
+        $this->assertEquals(RentAction::schemaUrl(), "http://schema.org/RentAction");
     }
 
     public function testActionStatusWillReturnMappingObject()
@@ -28,9 +29,24 @@ class RentActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RentAction::actionStatus());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::additionalType());
+    }
+
     public function testAgentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RentAction::agent());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::description());
     }
 
     public function testEndTimeWillReturnMappingObject()
@@ -41,6 +57,11 @@ class RentActionTest extends \PHPUnit_Framework_TestCase
     public function testErrorWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RentAction::error());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::image());
     }
 
     public function testInstrumentWillReturnMappingObject()
@@ -58,6 +79,16 @@ class RentActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RentAction::location());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::name());
+    }
+
     public function testObjectTypeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RentAction::objectType());
@@ -66,6 +97,21 @@ class RentActionTest extends \PHPUnit_Framework_TestCase
     public function testParticipantWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RentAction::participant());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::potentialAction());
+    }
+
+    public function testPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::price());
+    }
+
+    public function testPriceSpecificationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::priceSpecification());
     }
 
     public function testRealEstateAgentWillReturnMappingObject()
@@ -78,6 +124,11 @@ class RentActionTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RentAction::result());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::sameAs());
+    }
+
     public function testStartTimeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RentAction::startTime());
@@ -86,5 +137,10 @@ class RentActionTest extends \PHPUnit_Framework_TestCase
     public function testTargetWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RentAction::target());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RentAction::url());
     }
 }

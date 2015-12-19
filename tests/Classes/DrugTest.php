@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Drug;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DrugTest.
+ * Classes DrugTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DrugTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Drug::schemaUrl(), 'http://schema.org/Drug');
+        $this->assertEquals(Drug::schemaUrl(), "http://schema.org/Drug");
     }
 
     public function testActiveIngredientWillReturnMappingObject()
@@ -28,14 +29,29 @@ class DrugTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Drug::activeIngredient());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::additionalType());
+    }
+
     public function testAdministrationRouteWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::administrationRoute());
     }
 
+    public function testAdverseOutcomeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::adverseOutcome());
+    }
+
     public function testAlcoholWarningWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::alcoholWarning());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::alternateName());
     }
 
     public function testAvailableStrengthWillReturnMappingObject()
@@ -58,9 +74,19 @@ class DrugTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Drug::code());
     }
 
+    public function testContraindicationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::contraindication());
+    }
+
     public function testCostWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::cost());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::description());
     }
 
     public function testDosageFormWillReturnMappingObject()
@@ -78,6 +104,11 @@ class DrugTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Drug::drugClass());
     }
 
+    public function testDuplicateTherapyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::duplicateTherapy());
+    }
+
     public function testFoodWarningWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::foodWarning());
@@ -86,6 +117,16 @@ class DrugTest extends \PHPUnit_Framework_TestCase
     public function testGuidelineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::guideline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::image());
+    }
+
+    public function testIndicationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::indication());
     }
 
     public function testInteractingDrugWillReturnMappingObject()
@@ -113,6 +154,11 @@ class DrugTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Drug::legalStatus());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::mainEntityOfPage());
+    }
+
     public function testManufacturerWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::manufacturer());
@@ -128,6 +174,11 @@ class DrugTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Drug::medicineSystem());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::name());
+    }
+
     public function testNonProprietaryNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::nonProprietaryName());
@@ -136,6 +187,11 @@ class DrugTest extends \PHPUnit_Framework_TestCase
     public function testOverdosageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::overdosage());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::potentialAction());
     }
 
     public function testPregnancyCategoryWillReturnMappingObject()
@@ -173,9 +229,24 @@ class DrugTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Drug::relevantSpecialty());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::sameAs());
+    }
+
+    public function testSeriousAdverseOutcomeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::seriousAdverseOutcome());
+    }
+
     public function testStudyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Drug::study());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Drug::url());
     }
 
     public function testWarningWillReturnMappingObject()

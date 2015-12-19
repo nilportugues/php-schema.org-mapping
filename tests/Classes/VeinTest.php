@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Vein;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes VeinTest.
+ * Classes VeinTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class VeinTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Vein::schemaUrl(), 'http://schema.org/Vein');
+        $this->assertEquals(Vein::schemaUrl(), "http://schema.org/Vein");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -41,6 +42,11 @@ class VeinTest extends \PHPUnit_Framework_TestCase
     public function testBodyLocationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Vein::bodyLocation());
+    }
+
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Vein::code());
     }
 
     public function testConnectedToWillReturnMappingObject()
@@ -68,6 +74,11 @@ class VeinTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Vein::functionType());
     }
 
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Vein::guideline());
+    }
+
     public function testImageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Vein::image());
@@ -76,6 +87,11 @@ class VeinTest extends \PHPUnit_Framework_TestCase
     public function testMainEntityOfPageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Vein::mainEntityOfPage());
+    }
+
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Vein::medicineSystem());
     }
 
     public function testNameWillReturnMappingObject()
@@ -93,6 +109,11 @@ class VeinTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Vein::potentialAction());
     }
 
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Vein::recognizingAuthority());
+    }
+
     public function testRegionDrainedWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Vein::regionDrained());
@@ -108,9 +129,19 @@ class VeinTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, Vein::relatedTherapy());
     }
 
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Vein::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, Vein::sameAs());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Vein::study());
     }
 
     public function testSubStructureWillReturnMappingObject()

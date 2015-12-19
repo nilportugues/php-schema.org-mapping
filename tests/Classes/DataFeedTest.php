@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DataFeed;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DataFeedTest.
+ * Classes DataFeedTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DataFeedTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DataFeed::schemaUrl(), 'http://schema.org/DataFeed');
+        $this->assertEquals(DataFeed::schemaUrl(), "http://schema.org/DataFeed");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,9 +54,19 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataFeed::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::alternateName());
     }
 
     public function testAlternativeHeadlineWillReturnMappingObject()
@@ -91,6 +102,11 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
     public function testAwardsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::awards());
+    }
+
+    public function testCatalogWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::catalog());
     }
 
     public function testCharacterWillReturnMappingObject()
@@ -148,6 +164,11 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataFeed::dataFeedElement());
     }
 
+    public function testDatasetTimeIntervalWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::datasetTimeInterval());
+    }
+
     public function testDateCreatedWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::dateCreated());
@@ -163,9 +184,19 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataFeed::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::discussionUrl());
+    }
+
+    public function testDistributionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::distribution());
     }
 
     public function testEditorWillReturnMappingObject()
@@ -218,9 +249,19 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataFeed::headline());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::image());
+    }
+
     public function testInLanguageWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::inLanguage());
+    }
+
+    public function testIncludedDataCatalogWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::includedDataCatalog());
     }
 
     public function testInteractionStatisticWillReturnMappingObject()
@@ -273,9 +314,19 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataFeed::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -286,6 +337,11 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -328,6 +384,11 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DataFeed::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::schemaVersion());
@@ -336,6 +397,16 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
     public function testSourceOrganizationWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::sourceOrganization());
+    }
+
+    public function testSpatialWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::spatial());
+    }
+
+    public function testTemporalWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::temporal());
     }
 
     public function testTextWillReturnMappingObject()
@@ -361,6 +432,11 @@ class DataFeedTest extends \PHPUnit_Framework_TestCase
     public function testTypicalAgeRangeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DataFeed::typicalAgeRange());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DataFeed::url());
     }
 
     public function testVersionWillReturnMappingObject()

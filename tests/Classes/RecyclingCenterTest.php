@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\RecyclingCenter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes RecyclingCenterTest.
+ * Classes RecyclingCenterTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(RecyclingCenter::schemaUrl(), 'http://schema.org/RecyclingCenter');
+        $this->assertEquals(RecyclingCenter::schemaUrl(), "http://schema.org/RecyclingCenter");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::isicV4());
@@ -196,6 +227,11 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::photo());
@@ -263,6 +314,16 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::review());
@@ -271,6 +332,11 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class RecyclingCenterTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, RecyclingCenter::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, RecyclingCenter::url());
     }
 
     public function testVatIDWillReturnMappingObject()

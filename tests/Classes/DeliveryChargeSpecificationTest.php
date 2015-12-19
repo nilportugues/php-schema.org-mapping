@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\DeliveryChargeSpecification;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes DeliveryChargeSpecificationTest.
+ * Classes DeliveryChargeSpecificationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class DeliveryChargeSpecificationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(DeliveryChargeSpecification::schemaUrl(), 'http://schema.org/DeliveryChargeSpecification');
+        $this->assertEquals(DeliveryChargeSpecification::schemaUrl(), "http://schema.org/DeliveryChargeSpecification");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -48,9 +49,19 @@ class DeliveryChargeSpecificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::description());
     }
 
+    public function testEligibleQuantityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::eligibleQuantity());
+    }
+
     public function testEligibleRegionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::eligibleRegion());
+    }
+
+    public function testEligibleTransactionVolumeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::eligibleTransactionVolume());
     }
 
     public function testImageWillReturnMappingObject()
@@ -68,6 +79,16 @@ class DeliveryChargeSpecificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::mainEntityOfPage());
     }
 
+    public function testMaxPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::maxPrice());
+    }
+
+    public function testMinPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::minPrice());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::name());
@@ -78,6 +99,16 @@ class DeliveryChargeSpecificationTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::potentialAction());
     }
 
+    public function testPriceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::price());
+    }
+
+    public function testPriceCurrencyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::priceCurrency());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::sameAs());
@@ -86,5 +117,20 @@ class DeliveryChargeSpecificationTest extends \PHPUnit_Framework_TestCase
     public function testUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::url());
+    }
+
+    public function testValidFromWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::validFrom());
+    }
+
+    public function testValidThroughWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::validThrough());
+    }
+
+    public function testValueAddedTaxIncludedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, DeliveryChargeSpecification::valueAddedTaxIncluded());
     }
 }

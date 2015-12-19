@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\Enumeration;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes EnumerationTest.
+ * Classes EnumerationTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class EnumerationTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(Enumeration::schemaUrl(), 'http://schema.org/Enumeration');
+        $this->assertEquals(Enumeration::schemaUrl(), "http://schema.org/Enumeration");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()

@@ -14,18 +14,24 @@ use NilPortugues\SchemaOrg\Classes\TouristInformationCenter;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes TouristInformationCenterTest.
+ * Classes TouristInformationCenterTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(TouristInformationCenter::schemaUrl(), 'http://schema.org/TouristInformationCenter');
+        $this->assertEquals(TouristInformationCenter::schemaUrl(), "http://schema.org/TouristInformationCenter");
     }
 
     public function testAdditionalPropertyWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::additionalProperty());
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::additionalType());
     }
 
     public function testAddressWillReturnMappingObject()
@@ -36,6 +42,11 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::aggregateRating());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::alternateName());
     }
 
     public function testAlumniWillReturnMappingObject()
@@ -61,6 +72,11 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
     public function testBranchCodeWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::branchCode());
+    }
+
+    public function testBranchOfWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::branchOf());
     }
 
     public function testBrandWillReturnMappingObject()
@@ -93,9 +109,19 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::containsPlace());
     }
 
+    public function testCurrenciesAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::currenciesAccepted());
+    }
+
     public function testDepartmentWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::department());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::description());
     }
 
     public function testDissolutionDateWillReturnMappingObject()
@@ -178,6 +204,11 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::hasPOS());
     }
 
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::image());
+    }
+
     public function testIsicV4WillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::isicV4());
@@ -196,6 +227,11 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
     public function testLogoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::logo());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::mainEntityOfPage());
     }
 
     public function testMakesOfferWillReturnMappingObject()
@@ -233,9 +269,19 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::naics());
     }
 
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::name());
+    }
+
     public function testNumberOfEmployeesWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::numberOfEmployees());
+    }
+
+    public function testOpeningHoursWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::openingHours());
     }
 
     public function testOpeningHoursSpecificationWillReturnMappingObject()
@@ -253,6 +299,11 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::parentOrganization());
     }
 
+    public function testPaymentAcceptedWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::paymentAccepted());
+    }
+
     public function testPhotoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::photo());
@@ -263,6 +314,16 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::photos());
     }
 
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::potentialAction());
+    }
+
+    public function testPriceRangeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::priceRange());
+    }
+
     public function testReviewWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::review());
@@ -271,6 +332,11 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
     public function testReviewsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::reviews());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::sameAs());
     }
 
     public function testSeeksWillReturnMappingObject()
@@ -296,6 +362,11 @@ class TouristInformationCenterTest extends \PHPUnit_Framework_TestCase
     public function testTelephoneWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, TouristInformationCenter::telephone());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, TouristInformationCenter::url());
     }
 
     public function testVatIDWillReturnMappingObject()

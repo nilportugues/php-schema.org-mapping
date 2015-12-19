@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\SuperficialAnatomy;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes SuperficialAnatomyTest.
+ * Classes SuperficialAnatomyTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class SuperficialAnatomyTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(SuperficialAnatomy::schemaUrl(), 'http://schema.org/SuperficialAnatomy');
+        $this->assertEquals(SuperficialAnatomy::schemaUrl(), "http://schema.org/SuperficialAnatomy");
     }
 
     public function testAdditionalTypeWillReturnMappingObject()
@@ -38,9 +39,19 @@ class SuperficialAnatomyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::associatedPathophysiology());
     }
 
+    public function testCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::code());
+    }
+
     public function testDescriptionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::description());
+    }
+
+    public function testGuidelineWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::guideline());
     }
 
     public function testImageWillReturnMappingObject()
@@ -53,6 +64,11 @@ class SuperficialAnatomyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::mainEntityOfPage());
     }
 
+    public function testMedicineSystemWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::medicineSystem());
+    }
+
     public function testNameWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::name());
@@ -61,6 +77,11 @@ class SuperficialAnatomyTest extends \PHPUnit_Framework_TestCase
     public function testPotentialActionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::potentialAction());
+    }
+
+    public function testRecognizingAuthorityWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::recognizingAuthority());
     }
 
     public function testRelatedAnatomyWillReturnMappingObject()
@@ -78,6 +99,11 @@ class SuperficialAnatomyTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::relatedTherapy());
     }
 
+    public function testRelevantSpecialtyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::relevantSpecialty());
+    }
+
     public function testSameAsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::sameAs());
@@ -86,6 +112,11 @@ class SuperficialAnatomyTest extends \PHPUnit_Framework_TestCase
     public function testSignificanceWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::significance());
+    }
+
+    public function testStudyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, SuperficialAnatomy::study());
     }
 
     public function testUrlWillReturnMappingObject()

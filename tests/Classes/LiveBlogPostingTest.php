@@ -14,13 +14,14 @@ use NilPortugues\SchemaOrg\Classes\LiveBlogPosting;
 use NilPortugues\SchemaOrg\Mapping;
 
 /**
- * Classes LiveBlogPostingTest.
+ * Classes LiveBlogPostingTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
  */
 class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
 {
     public function testSchemaUrlReturnsExpectedUrl()
     {
-        $this->assertEquals(LiveBlogPosting::schemaUrl(), 'http://schema.org/LiveBlogPosting');
+        $this->assertEquals(LiveBlogPosting::schemaUrl(), "http://schema.org/LiveBlogPosting");
     }
 
     public function testAboutWillReturnMappingObject()
@@ -53,14 +54,34 @@ class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::accountablePerson());
     }
 
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::additionalType());
+    }
+
     public function testAggregateRatingWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::aggregateRating());
     }
 
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::alternateName());
+    }
+
     public function testAlternativeHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::alternativeHeadline());
+    }
+
+    public function testArticleBodyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::articleBody());
+    }
+
+    public function testArticleSectionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::articleSection());
     }
 
     public function testAssociatedMediaWillReturnMappingObject()
@@ -168,6 +189,11 @@ class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::datePublished());
     }
 
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::description());
+    }
+
     public function testDiscussionUrlWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::discussionUrl());
@@ -221,6 +247,11 @@ class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
     public function testHeadlineWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::headline());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::image());
     }
 
     public function testInLanguageWillReturnMappingObject()
@@ -283,9 +314,19 @@ class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::mainEntity());
     }
 
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::mainEntityOfPage());
+    }
+
     public function testMentionsWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::mentions());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::name());
     }
 
     public function testOffersWillReturnMappingObject()
@@ -293,9 +334,29 @@ class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::offers());
     }
 
+    public function testPageEndWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::pageEnd());
+    }
+
+    public function testPageStartWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::pageStart());
+    }
+
+    public function testPaginationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::pagination());
+    }
+
     public function testPositionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::position());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::potentialAction());
     }
 
     public function testProducerWillReturnMappingObject()
@@ -338,6 +399,11 @@ class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::reviews());
     }
 
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::sameAs());
+    }
+
     public function testSchemaVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::schemaVersion());
@@ -378,6 +444,11 @@ class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::typicalAgeRange());
     }
 
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::url());
+    }
+
     public function testVersionWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::version());
@@ -386,6 +457,11 @@ class LiveBlogPostingTest extends \PHPUnit_Framework_TestCase
     public function testVideoWillReturnMappingObject()
     {
         $this->assertInstanceOf(Mapping::class, LiveBlogPosting::video());
+    }
+
+    public function testWordCountWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, LiveBlogPosting::wordCount());
     }
 
     public function testWorkExampleWillReturnMappingObject()
