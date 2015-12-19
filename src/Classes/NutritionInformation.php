@@ -10,23 +10,26 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\CaloriesProperty;
-use NilPortugues\SchemaOrg\Properties\CarbohydrateContentProperty;
-use NilPortugues\SchemaOrg\Properties\CholesterolContentProperty;
-use NilPortugues\SchemaOrg\Properties\FatContentProperty;
-use NilPortugues\SchemaOrg\Properties\FiberContentProperty;
-use NilPortugues\SchemaOrg\Properties\ProteinContentProperty;
-use NilPortugues\SchemaOrg\Properties\SaturatedFatContentProperty;
-use NilPortugues\SchemaOrg\Properties\ServingSizeProperty;
-use NilPortugues\SchemaOrg\Properties\SodiumContentProperty;
-use NilPortugues\SchemaOrg\Properties\SugarContentProperty;
-use NilPortugues\SchemaOrg\Properties\TransFatContentProperty;
-use NilPortugues\SchemaOrg\Properties\UnsaturatedFatContentProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes NutritionInformation.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\CaloriesProperty calories()
+ * @method static \NilPortugues\SchemaOrg\Properties\CarbohydrateContentProperty carbohydrateContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\CholesterolContentProperty cholesterolContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\FatContentProperty fatContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\FiberContentProperty fiberContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProteinContentProperty proteinContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\SaturatedFatContentProperty saturatedFatContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\ServingSizeProperty servingSize()
+ * @method static \NilPortugues\SchemaOrg\Properties\SodiumContentProperty sodiumContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\SugarContentProperty sugarContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\TransFatContentProperty transFatContent()
+ * @method static \NilPortugues\SchemaOrg\Properties\UnsaturatedFatContentProperty unsaturatedFatContent()
+ * METHODEND.
+ *
+ * Nutritional information about the recipe.
  */
 class NutritionInformation extends SchemaClass
 {
@@ -36,98 +39,56 @@ class NutritionInformation extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/NutritionInformation';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function calories()
-    {
-        return CaloriesProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function carbohydrateContent()
-    {
-        return CarbohydrateContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function cholesterolContent()
-    {
-        return CholesterolContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function fatContent()
-    {
-        return FatContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function fiberContent()
-    {
-        return FiberContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function proteinContent()
-    {
-        return ProteinContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function saturatedFatContent()
-    {
-        return SaturatedFatContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function servingSize()
-    {
-        return ServingSizeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sodiumContent()
-    {
-        return SodiumContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sugarContent()
-    {
-        return SugarContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function transFatContent()
-    {
-        return TransFatContentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function unsaturatedFatContent()
-    {
-        return UnsaturatedFatContentProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'calories' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CaloriesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'carbohydrateContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CarbohydrateContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'cholesterolContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CholesterolContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'fatContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FatContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'fiberContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FiberContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'proteinContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProteinContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'saturatedFatContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SaturatedFatContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'servingSize' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ServingSizeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'sodiumContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SodiumContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'sugarContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SugarContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'transFatContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TransFatContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+        'unsaturatedFatContent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UnsaturatedFatContentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\NutritionInformation',
+        ],
+    ];
 }

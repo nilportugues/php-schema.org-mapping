@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes FloatType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Data type: Floating number.
  */
 class FloatType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class FloatType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Float';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

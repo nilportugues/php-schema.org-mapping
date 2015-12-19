@@ -10,27 +10,30 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\ArrivalBusStopProperty;
-use NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty;
-use NilPortugues\SchemaOrg\Properties\BusNameProperty;
-use NilPortugues\SchemaOrg\Properties\BusNumberProperty;
-use NilPortugues\SchemaOrg\Properties\DepartureBusStopProperty;
-use NilPortugues\SchemaOrg\Properties\DepartureTimeProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\ProviderProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BusTrip.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ProviderProperty provider()
+ * @method static \NilPortugues\SchemaOrg\Properties\DepartureTimeProperty departureTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty arrivalTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\BusNumberProperty busNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\BusNameProperty busName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DepartureBusStopProperty departureBusStop()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArrivalBusStopProperty arrivalBusStop()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A trip on a commercial bus line.
  */
 class BusTrip extends SchemaClass
 {
@@ -40,130 +43,72 @@ class BusTrip extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/BusTrip';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function arrivalBusStop()
-    {
-        return ArrivalBusStopProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function arrivalTime()
-    {
-        return ArrivalTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function busName()
-    {
-        return BusNameProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function busNumber()
-    {
-        return BusNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function departureBusStop()
-    {
-        return DepartureBusStopProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function departureTime()
-    {
-        return DepartureTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function provider()
-    {
-        return ProviderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'arrivalBusStop' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArrivalBusStopProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusTrip',
+        ],
+        'arrivalTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusTrip',
+        ],
+        'busName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BusNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusTrip',
+        ],
+        'busNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BusNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusTrip',
+        ],
+        'departureBusStop' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepartureBusStopProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusTrip',
+        ],
+        'departureTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepartureTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusTrip',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'provider' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProviderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusTrip',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

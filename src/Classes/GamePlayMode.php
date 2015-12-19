@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes GamePlayMode.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Indicates whether this game is multi-player, co-op or single-player.
  */
 class GamePlayMode extends SchemaClass
 {
@@ -21,4 +25,11 @@ class GamePlayMode extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/GamePlayMode';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

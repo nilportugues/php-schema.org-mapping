@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes RsvpResponseType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * RsvpResponseType is an enumeration type whose instances represent responding to an RSVP request.
  */
 class RsvpResponseType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class RsvpResponseType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/RsvpResponseType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

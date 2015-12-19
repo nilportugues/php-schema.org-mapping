@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BookFormatType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * The publication format of the book.
  */
 class BookFormatType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class BookFormatType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/BookFormatType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

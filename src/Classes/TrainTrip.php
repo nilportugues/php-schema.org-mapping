@@ -10,29 +10,32 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\ArrivalPlatformProperty;
-use NilPortugues\SchemaOrg\Properties\ArrivalStationProperty;
-use NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty;
-use NilPortugues\SchemaOrg\Properties\DeparturePlatformProperty;
-use NilPortugues\SchemaOrg\Properties\DepartureStationProperty;
-use NilPortugues\SchemaOrg\Properties\DepartureTimeProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\ProviderProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\TrainNameProperty;
-use NilPortugues\SchemaOrg\Properties\TrainNumberProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes TrainTrip.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ProviderProperty provider()
+ * @method static \NilPortugues\SchemaOrg\Properties\DepartureTimeProperty departureTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty arrivalTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\TrainNumberProperty trainNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\TrainNameProperty trainName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DepartureStationProperty departureStation()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArrivalStationProperty arrivalStation()
+ * @method static \NilPortugues\SchemaOrg\Properties\DeparturePlatformProperty departurePlatform()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArrivalPlatformProperty arrivalPlatform()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A trip on a commercial train line.
  */
 class TrainTrip extends SchemaClass
 {
@@ -42,146 +45,80 @@ class TrainTrip extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/TrainTrip';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function arrivalPlatform()
-    {
-        return ArrivalPlatformProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function arrivalStation()
-    {
-        return ArrivalStationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function arrivalTime()
-    {
-        return ArrivalTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function departurePlatform()
-    {
-        return DeparturePlatformProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function departureStation()
-    {
-        return DepartureStationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function departureTime()
-    {
-        return DepartureTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function provider()
-    {
-        return ProviderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function trainName()
-    {
-        return TrainNameProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function trainNumber()
-    {
-        return TrainNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'arrivalPlatform' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArrivalPlatformProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'arrivalStation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArrivalStationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'arrivalTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'departurePlatform' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DeparturePlatformProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'departureStation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepartureStationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'departureTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepartureTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'provider' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProviderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'trainName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TrainNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'trainNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TrainNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TrainTrip',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

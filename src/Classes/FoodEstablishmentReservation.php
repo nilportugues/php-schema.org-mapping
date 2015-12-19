@@ -10,14 +10,17 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
-use NilPortugues\SchemaOrg\Properties\PartySizeProperty;
-use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes FoodEstablishmentReservation.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\EndTimeProperty endTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartTimeProperty startTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\PartySizeProperty partySize()
+ * METHODEND.
+ *
+ * A reservation to dine at a food-related business.Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
  */
 class FoodEstablishmentReservation extends SchemaClass
 {
@@ -27,26 +30,20 @@ class FoodEstablishmentReservation extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/FoodEstablishmentReservation';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function endTime()
-    {
-        return EndTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function partySize()
-    {
-        return PartySizeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function startTime()
-    {
-        return StartTimeProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'endTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\FoodEstablishmentReservation',
+        ],
+        'partySize' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PartySizeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\FoodEstablishmentReservation',
+        ],
+        'startTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\FoodEstablishmentReservation',
+        ],
+    ];
 }

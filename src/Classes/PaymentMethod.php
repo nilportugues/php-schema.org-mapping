@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes PaymentMethod.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A payment method is a standardized procedure for transferring the monetary amount for a purchase. Payment methods are characterized by the legal and technical structures used, and by the organization or group carrying out the transaction.
  */
 class PaymentMethod extends SchemaClass
 {
@@ -21,4 +25,11 @@ class PaymentMethod extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/PaymentMethod';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

@@ -10,29 +10,32 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty;
-use NilPortugues\SchemaOrg\Properties\BackgroundProperty;
-use NilPortugues\SchemaOrg\Properties\CodeProperty;
-use NilPortugues\SchemaOrg\Properties\DosageFormProperty;
-use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
-use NilPortugues\SchemaOrg\Properties\IsProprietaryProperty;
-use NilPortugues\SchemaOrg\Properties\LegalStatusProperty;
-use NilPortugues\SchemaOrg\Properties\ManufacturerProperty;
-use NilPortugues\SchemaOrg\Properties\MaximumIntakeProperty;
-use NilPortugues\SchemaOrg\Properties\MechanismOfActionProperty;
-use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
-use NilPortugues\SchemaOrg\Properties\NonProprietaryNameProperty;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
-use NilPortugues\SchemaOrg\Properties\RecommendedIntakeProperty;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
-use NilPortugues\SchemaOrg\Properties\SafetyConsiderationProperty;
-use NilPortugues\SchemaOrg\Properties\StudyProperty;
-use NilPortugues\SchemaOrg\Properties\TargetPopulationProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes DietarySupplement.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty activeIngredient()
+ * @method static \NilPortugues\SchemaOrg\Properties\BackgroundProperty background()
+ * @method static \NilPortugues\SchemaOrg\Properties\DosageFormProperty dosageForm()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsProprietaryProperty isProprietary()
+ * @method static \NilPortugues\SchemaOrg\Properties\LegalStatusProperty legalStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\ManufacturerProperty manufacturer()
+ * @method static \NilPortugues\SchemaOrg\Properties\MaximumIntakeProperty maximumIntake()
+ * @method static \NilPortugues\SchemaOrg\Properties\MechanismOfActionProperty mechanismOfAction()
+ * @method static \NilPortugues\SchemaOrg\Properties\NonProprietaryNameProperty nonProprietaryName()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecommendedIntakeProperty recommendedIntake()
+ * @method static \NilPortugues\SchemaOrg\Properties\SafetyConsiderationProperty safetyConsideration()
+ * @method static \NilPortugues\SchemaOrg\Properties\TargetPopulationProperty targetPopulation()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * METHODEND.
+ *
+ * A product taken by mouth that contains a dietary ingredient intended to supplement the diet. Dietary ingredients may include vitamins, minerals, herbs or other botanicals, amino acids, and substances such as enzymes, organ tissues, glandulars and metabolites.
  */
 class DietarySupplement extends SchemaClass
 {
@@ -42,146 +45,80 @@ class DietarySupplement extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/DietarySupplement';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function activeIngredient()
-    {
-        return ActiveIngredientProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function background()
-    {
-        return BackgroundProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function code()
-    {
-        return CodeProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dosageForm()
-    {
-        return DosageFormProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function guideline()
-    {
-        return GuidelineProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isProprietary()
-    {
-        return IsProprietaryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function legalStatus()
-    {
-        return LegalStatusProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function manufacturer()
-    {
-        return ManufacturerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function maximumIntake()
-    {
-        return MaximumIntakeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mechanismOfAction()
-    {
-        return MechanismOfActionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function medicineSystem()
-    {
-        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function nonProprietaryName()
-    {
-        return NonProprietaryNameProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recognizingAuthority()
-    {
-        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recommendedIntake()
-    {
-        return RecommendedIntakeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relevantSpecialty()
-    {
-        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function safetyConsideration()
-    {
-        return SafetyConsiderationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function study()
-    {
-        return StudyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function targetPopulation()
-    {
-        return TargetPopulationProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'activeIngredient' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'background' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BackgroundProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'dosageForm' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DosageFormProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'isProprietary' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsProprietaryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'legalStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LegalStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'manufacturer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ManufacturerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'maximumIntake' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MaximumIntakeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'mechanismOfAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MechanismOfActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'nonProprietaryName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NonProprietaryNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'recommendedIntake' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecommendedIntakeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'safetyConsideration' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SafetyConsiderationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'targetPopulation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TargetPopulationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DietarySupplement',
+        ],
+    ];
 }

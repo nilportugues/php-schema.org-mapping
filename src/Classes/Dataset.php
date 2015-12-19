@@ -10,26 +10,29 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\CatalogProperty;
-use NilPortugues\SchemaOrg\Properties\DatasetTimeIntervalProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\DistributionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\IncludedDataCatalogProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\SpatialProperty;
-use NilPortugues\SchemaOrg\Properties\TemporalProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Dataset.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\CatalogProperty catalog()
+ * @method static \NilPortugues\SchemaOrg\Properties\IncludedDataCatalogProperty includedDataCatalog()
+ * @method static \NilPortugues\SchemaOrg\Properties\DistributionProperty distribution()
+ * @method static \NilPortugues\SchemaOrg\Properties\SpatialProperty spatial()
+ * @method static \NilPortugues\SchemaOrg\Properties\TemporalProperty temporal()
+ * @method static \NilPortugues\SchemaOrg\Properties\DatasetTimeIntervalProperty datasetTimeInterval()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A body of structured information describing some topic(s) of interest.
  */
 class Dataset extends SchemaClass
 {
@@ -39,122 +42,68 @@ class Dataset extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Dataset';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function catalog()
-    {
-        return CatalogProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function datasetTimeInterval()
-    {
-        return DatasetTimeIntervalProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function distribution()
-    {
-        return DistributionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function includedDataCatalog()
-    {
-        return IncludedDataCatalogProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function spatial()
-    {
-        return SpatialProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function temporal()
-    {
-        return TemporalProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'catalog' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CatalogProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
+        ],
+        'datasetTimeInterval' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatasetTimeIntervalProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'distribution' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DistributionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'includedDataCatalog' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IncludedDataCatalogProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'spatial' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SpatialProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
+        ],
+        'temporal' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TemporalProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Dataset',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

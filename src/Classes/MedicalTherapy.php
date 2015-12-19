@@ -10,25 +10,28 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AdverseOutcomeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\ContraindicationProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\DuplicateTherapyProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\IndicationProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes MedicalTherapy.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AdverseOutcomeProperty adverseOutcome()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContraindicationProperty contraindication()
+ * @method static \NilPortugues\SchemaOrg\Properties\DuplicateTherapyProperty duplicateTherapy()
+ * @method static \NilPortugues\SchemaOrg\Properties\IndicationProperty indication()
+ * @method static \NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty seriousAdverseOutcome()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * Any medical intervention designed to prevent, treat, and cure human diseases and medical conditions, including both curative and palliative therapies. Medical therapies are typically processes of care relying upon pharmacotherapy, behavioral therapy, supportive therapy (with fluid or nutrition for example), or detoxification (e.g. hemodialysis) aimed at improving or preventing a health condition.
  */
 class MedicalTherapy extends SchemaClass
 {
@@ -38,114 +41,64 @@ class MedicalTherapy extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/MedicalTherapy';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function adverseOutcome()
-    {
-        return AdverseOutcomeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contraindication()
-    {
-        return ContraindicationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function duplicateTherapy()
-    {
-        return DuplicateTherapyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function indication()
-    {
-        return IndicationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function seriousAdverseOutcome()
-    {
-        return SeriousAdverseOutcomeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'adverseOutcome' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdverseOutcomeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'contraindication' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContraindicationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'duplicateTherapy' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DuplicateTherapyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'indication' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IndicationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'seriousAdverseOutcome' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTherapy',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

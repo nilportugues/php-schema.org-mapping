@@ -10,24 +10,27 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\FollowupProperty;
-use NilPortugues\SchemaOrg\Properties\HowPerformedProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\PreparationProperty;
-use NilPortugues\SchemaOrg\Properties\ProcedureTypeProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes MedicalProcedure.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\FollowupProperty followup()
+ * @method static \NilPortugues\SchemaOrg\Properties\HowPerformedProperty howPerformed()
+ * @method static \NilPortugues\SchemaOrg\Properties\PreparationProperty preparation()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProcedureTypeProperty procedureType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A process of care used in either a diagnostic, therapeutic, or palliative capacity that relies on invasive (surgical), non-invasive, or percutaneous techniques.
  */
 class MedicalProcedure extends SchemaClass
 {
@@ -37,106 +40,60 @@ class MedicalProcedure extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/MedicalProcedure';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function followup()
-    {
-        return FollowupProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function howPerformed()
-    {
-        return HowPerformedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function preparation()
-    {
-        return PreparationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function procedureType()
-    {
-        return ProcedureTypeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'followup' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FollowupProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalProcedure',
+        ],
+        'howPerformed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HowPerformedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalProcedure',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'preparation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PreparationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalProcedure',
+        ],
+        'procedureType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProcedureTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalProcedure',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

@@ -10,14 +10,17 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\PartySizeProperty;
-use NilPortugues\SchemaOrg\Properties\PickupLocationProperty;
-use NilPortugues\SchemaOrg\Properties\PickupTimeProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes TaxiReservation.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\PartySizeProperty partySize()
+ * @method static \NilPortugues\SchemaOrg\Properties\PickupLocationProperty pickupLocation()
+ * @method static \NilPortugues\SchemaOrg\Properties\PickupTimeProperty pickupTime()
+ * METHODEND.
+ *
+ * A reservation for a taxi.Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use http://schema.org/Offer.
  */
 class TaxiReservation extends SchemaClass
 {
@@ -27,26 +30,20 @@ class TaxiReservation extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/TaxiReservation';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function partySize()
-    {
-        return PartySizeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function pickupLocation()
-    {
-        return PickupLocationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function pickupTime()
-    {
-        return PickupTimeProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'partySize' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PartySizeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TaxiReservation',
+        ],
+        'pickupLocation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PickupLocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TaxiReservation',
+        ],
+        'pickupTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PickupTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TaxiReservation',
+        ],
+    ];
 }

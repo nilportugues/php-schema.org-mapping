@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes GameServerStatus.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Status of a game server.
  */
 class GameServerStatus extends SchemaClass
 {
@@ -21,4 +25,11 @@ class GameServerStatus extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/GameServerStatus';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

@@ -10,36 +10,39 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\AssociatedArticleProperty;
-use NilPortugues\SchemaOrg\Properties\BitrateProperty;
-use NilPortugues\SchemaOrg\Properties\ContentSizeProperty;
-use NilPortugues\SchemaOrg\Properties\ContentUrlProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\DurationProperty;
-use NilPortugues\SchemaOrg\Properties\EmbedUrlProperty;
-use NilPortugues\SchemaOrg\Properties\EncodesCreativeWorkProperty;
-use NilPortugues\SchemaOrg\Properties\EncodingFormatProperty;
-use NilPortugues\SchemaOrg\Properties\ExpiresProperty;
-use NilPortugues\SchemaOrg\Properties\HeightProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PlayerTypeProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty;
-use NilPortugues\SchemaOrg\Properties\RegionsAllowedProperty;
-use NilPortugues\SchemaOrg\Properties\RequiresSubscriptionProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\UploadDateProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
-use NilPortugues\SchemaOrg\Properties\WidthProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Barcode.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AssociatedArticleProperty associatedArticle()
+ * @method static \NilPortugues\SchemaOrg\Properties\BitrateProperty bitrate()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContentSizeProperty contentSize()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContentUrlProperty contentUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\DurationProperty duration()
+ * @method static \NilPortugues\SchemaOrg\Properties\EmbedUrlProperty embedUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\EncodesCreativeWorkProperty encodesCreativeWork()
+ * @method static \NilPortugues\SchemaOrg\Properties\EncodingFormatProperty encodingFormat()
+ * @method static \NilPortugues\SchemaOrg\Properties\ExpiresProperty expires()
+ * @method static \NilPortugues\SchemaOrg\Properties\HeightProperty height()
+ * @method static \NilPortugues\SchemaOrg\Properties\PlayerTypeProperty playerType()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty productionCompany()
+ * @method static \NilPortugues\SchemaOrg\Properties\RegionsAllowedProperty regionsAllowed()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequiresSubscriptionProperty requiresSubscription()
+ * @method static \NilPortugues\SchemaOrg\Properties\UploadDateProperty uploadDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\WidthProperty width()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * An image of a visual machine-readable code such as a barcode or QR code.
  */
 class Barcode extends SchemaClass
 {
@@ -49,202 +52,108 @@ class Barcode extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Barcode';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function associatedArticle()
-    {
-        return AssociatedArticleProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function bitrate()
-    {
-        return BitrateProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contentSize()
-    {
-        return ContentSizeProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contentUrl()
-    {
-        return ContentUrlProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function duration()
-    {
-        return DurationProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function embedUrl()
-    {
-        return EmbedUrlProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function encodesCreativeWork()
-    {
-        return EncodesCreativeWorkProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function encodingFormat()
-    {
-        return EncodingFormatProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function expires()
-    {
-        return ExpiresProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function height()
-    {
-        return HeightProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function playerType()
-    {
-        return PlayerTypeProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function productionCompany()
-    {
-        return ProductionCompanyProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function regionsAllowed()
-    {
-        return RegionsAllowedProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function requiresSubscription()
-    {
-        return RequiresSubscriptionProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function uploadDate()
-    {
-        return UploadDateProperty::create(MediaObject::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function width()
-    {
-        return WidthProperty::create(MediaObject::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'associatedArticle' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AssociatedArticleProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'bitrate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BitrateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'contentSize' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContentSizeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'contentUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContentUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'duration' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DurationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'embedUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EmbedUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'encodesCreativeWork' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodesCreativeWorkProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'encodingFormat' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingFormatProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'expires' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExpiresProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'height' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeightProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'playerType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PlayerTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'productionCompany' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'regionsAllowed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RegionsAllowedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'requiresSubscription' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequiresSubscriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'uploadDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UploadDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'width' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WidthProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MediaObject',
+        ],
+    ];
 }

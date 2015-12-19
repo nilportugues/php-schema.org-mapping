@@ -10,17 +10,20 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\CheckinTimeProperty;
-use NilPortugues\SchemaOrg\Properties\CheckoutTimeProperty;
-use NilPortugues\SchemaOrg\Properties\LodgingUnitDescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\LodgingUnitTypeProperty;
-use NilPortugues\SchemaOrg\Properties\NumAdultsProperty;
-use NilPortugues\SchemaOrg\Properties\NumChildrenProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes LodgingReservation.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\CheckinTimeProperty checkinTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\CheckoutTimeProperty checkoutTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\LodgingUnitTypeProperty lodgingUnitType()
+ * @method static \NilPortugues\SchemaOrg\Properties\LodgingUnitDescriptionProperty lodgingUnitDescription()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumAdultsProperty numAdults()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumChildrenProperty numChildren()
+ * METHODEND.
+ *
+ * A reservation for lodging at a hotel, motel, inn, etc.Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
  */
 class LodgingReservation extends SchemaClass
 {
@@ -30,50 +33,32 @@ class LodgingReservation extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/LodgingReservation';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function checkinTime()
-    {
-        return CheckinTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function checkoutTime()
-    {
-        return CheckoutTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function lodgingUnitDescription()
-    {
-        return LodgingUnitDescriptionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function lodgingUnitType()
-    {
-        return LodgingUnitTypeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function numAdults()
-    {
-        return NumAdultsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function numChildren()
-    {
-        return NumChildrenProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'checkinTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CheckinTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LodgingReservation',
+        ],
+        'checkoutTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CheckoutTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LodgingReservation',
+        ],
+        'lodgingUnitDescription' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LodgingUnitDescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LodgingReservation',
+        ],
+        'lodgingUnitType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LodgingUnitTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LodgingReservation',
+        ],
+        'numAdults' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumAdultsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LodgingReservation',
+        ],
+        'numChildren' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumChildrenProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LodgingReservation',
+        ],
+    ];
 }

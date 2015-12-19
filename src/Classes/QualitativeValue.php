@@ -10,19 +10,22 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
-use NilPortugues\SchemaOrg\Properties\EqualProperty;
-use NilPortugues\SchemaOrg\Properties\GreaterOrEqualProperty;
-use NilPortugues\SchemaOrg\Properties\GreaterProperty;
-use NilPortugues\SchemaOrg\Properties\LesserOrEqualProperty;
-use NilPortugues\SchemaOrg\Properties\LesserProperty;
-use NilPortugues\SchemaOrg\Properties\NonEqualProperty;
-use NilPortugues\SchemaOrg\Properties\ValueReferenceProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes QualitativeValue.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\EqualProperty equal()
+ * @method static \NilPortugues\SchemaOrg\Properties\GreaterProperty greater()
+ * @method static \NilPortugues\SchemaOrg\Properties\GreaterOrEqualProperty greaterOrEqual()
+ * @method static \NilPortugues\SchemaOrg\Properties\LesserProperty lesser()
+ * @method static \NilPortugues\SchemaOrg\Properties\LesserOrEqualProperty lesserOrEqual()
+ * @method static \NilPortugues\SchemaOrg\Properties\NonEqualProperty nonEqual()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValueReferenceProperty valueReference()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
+ * METHODEND.
+ *
+ * A predefined value for a product characteristic, e.g. the power cord plug type "US" or the garment sizes "S", "M", "L", and "XL".
  */
 class QualitativeValue extends SchemaClass
 {
@@ -32,66 +35,40 @@ class QualitativeValue extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/QualitativeValue';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalProperty()
-    {
-        return AdditionalPropertyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function equal()
-    {
-        return EqualProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function greater()
-    {
-        return GreaterProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function greaterOrEqual()
-    {
-        return GreaterOrEqualProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function lesser()
-    {
-        return LesserProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function lesserOrEqual()
-    {
-        return LesserOrEqualProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function nonEqual()
-    {
-        return NonEqualProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function valueReference()
-    {
-        return ValueReferenceProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalProperty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'equal' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EqualProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'greater' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GreaterProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'greaterOrEqual' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GreaterOrEqualProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'lesser' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LesserProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'lesserOrEqual' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LesserOrEqualProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'nonEqual' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NonEqualProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+        'valueReference' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValueReferenceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\QualitativeValue',
+        ],
+    ];
 }

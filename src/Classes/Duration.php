@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Duration.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Quantity: Duration (use  ISO 8601 duration format).
  */
 class Duration extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Duration extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Duration';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

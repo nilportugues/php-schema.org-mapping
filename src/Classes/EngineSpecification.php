@@ -10,12 +10,15 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\FuelTypeProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes EngineSpecification.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\FuelTypeProperty fuelType()
+ * METHODEND.
+ *
+ * Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities.
  */
 class EngineSpecification extends SchemaClass
 {
@@ -25,10 +28,12 @@ class EngineSpecification extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/EngineSpecification';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function fuelType()
-    {
-        return FuelTypeProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'fuelType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FuelTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\EngineSpecification',
+        ],
+    ];
 }

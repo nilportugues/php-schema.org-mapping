@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes ItemAvailability.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A list of possible product availability options.
  */
 class ItemAvailability extends SchemaClass
 {
@@ -21,4 +25,11 @@ class ItemAvailability extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/ItemAvailability';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

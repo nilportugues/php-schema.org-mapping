@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes OfferCatalog.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * An OfferCatalog is an ItemList that contains related Offers and/or further OfferCatalogs that are offeredBy the same provider.
  */
 class OfferCatalog extends SchemaClass
 {
@@ -21,4 +25,11 @@ class OfferCatalog extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/OfferCatalog';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

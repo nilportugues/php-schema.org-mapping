@@ -10,32 +10,35 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\CarrierProperty;
-use NilPortugues\SchemaOrg\Properties\DeliveryAddressProperty;
-use NilPortugues\SchemaOrg\Properties\DeliveryStatusProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ExpectedArrivalFromProperty;
-use NilPortugues\SchemaOrg\Properties\ExpectedArrivalUntilProperty;
-use NilPortugues\SchemaOrg\Properties\HasDeliveryMethodProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\ItemShippedProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\OriginAddressProperty;
-use NilPortugues\SchemaOrg\Properties\PartOfOrderProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\ProviderProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\TrackingNumberProperty;
-use NilPortugues\SchemaOrg\Properties\TrackingUrlProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes ParcelDelivery.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\CarrierProperty carrier()
+ * @method static \NilPortugues\SchemaOrg\Properties\DeliveryAddressProperty deliveryAddress()
+ * @method static \NilPortugues\SchemaOrg\Properties\DeliveryStatusProperty deliveryStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\ExpectedArrivalFromProperty expectedArrivalFrom()
+ * @method static \NilPortugues\SchemaOrg\Properties\ExpectedArrivalUntilProperty expectedArrivalUntil()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasDeliveryMethodProperty hasDeliveryMethod()
+ * @method static \NilPortugues\SchemaOrg\Properties\ItemShippedProperty itemShipped()
+ * @method static \NilPortugues\SchemaOrg\Properties\OriginAddressProperty originAddress()
+ * @method static \NilPortugues\SchemaOrg\Properties\PartOfOrderProperty partOfOrder()
+ * @method static \NilPortugues\SchemaOrg\Properties\TrackingNumberProperty trackingNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\TrackingUrlProperty trackingUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProviderProperty provider()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * The delivery of a parcel either via the postal service or a commercial service.
  */
 class ParcelDelivery extends SchemaClass
 {
@@ -45,170 +48,92 @@ class ParcelDelivery extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/ParcelDelivery';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function carrier()
-    {
-        return CarrierProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function deliveryAddress()
-    {
-        return DeliveryAddressProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function deliveryStatus()
-    {
-        return DeliveryStatusProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function expectedArrivalFrom()
-    {
-        return ExpectedArrivalFromProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function expectedArrivalUntil()
-    {
-        return ExpectedArrivalUntilProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function hasDeliveryMethod()
-    {
-        return HasDeliveryMethodProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function itemShipped()
-    {
-        return ItemShippedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function originAddress()
-    {
-        return OriginAddressProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function partOfOrder()
-    {
-        return PartOfOrderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function provider()
-    {
-        return ProviderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function trackingNumber()
-    {
-        return TrackingNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function trackingUrl()
-    {
-        return TrackingUrlProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'carrier' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CarrierProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'deliveryAddress' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DeliveryAddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'deliveryStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DeliveryStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'expectedArrivalFrom' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExpectedArrivalFromProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'expectedArrivalUntil' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExpectedArrivalUntilProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'hasDeliveryMethod' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasDeliveryMethodProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'itemShipped' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ItemShippedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'originAddress' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OriginAddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'partOfOrder' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PartOfOrderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'provider' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProviderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'trackingNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TrackingNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'trackingUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TrackingUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ParcelDelivery',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

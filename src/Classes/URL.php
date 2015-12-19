@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes URL.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Data type: URL.
  */
 class URL extends SchemaClass
 {
@@ -21,4 +25,11 @@ class URL extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/URL';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

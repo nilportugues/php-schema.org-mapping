@@ -10,18 +10,21 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\CodeProperty;
-use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
-use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
-use NilPortugues\SchemaOrg\Properties\RecommendationStrengthProperty;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
-use NilPortugues\SchemaOrg\Properties\StudyProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes MedicalGuidelineRecommendation.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\RecommendationStrengthProperty recommendationStrength()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * METHODEND.
+ *
+ * A guideline recommendation that is regarded as efficacious and where quality of the data supporting the recommendation is sound.
  */
 class MedicalGuidelineRecommendation extends SchemaClass
 {
@@ -31,58 +34,36 @@ class MedicalGuidelineRecommendation extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/MedicalGuidelineRecommendation';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function code()
-    {
-        return CodeProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function guideline()
-    {
-        return GuidelineProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function medicineSystem()
-    {
-        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recognizingAuthority()
-    {
-        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recommendationStrength()
-    {
-        return RecommendationStrengthProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relevantSpecialty()
-    {
-        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function study()
-    {
-        return StudyProperty::create(MedicalEntity::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'recommendationStrength' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecommendationStrengthProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalGuidelineRecommendation',
+        ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+    ];
 }

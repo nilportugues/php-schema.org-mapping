@@ -10,18 +10,21 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\CodeProperty;
-use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
-use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
-use NilPortugues\SchemaOrg\Properties\StudyProperty;
-use NilPortugues\SchemaOrg\Properties\SubTestProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes MedicalTestPanel.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\SubTestProperty subTest()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * METHODEND.
+ *
+ * Any collection of tests commonly ordered together.
  */
 class MedicalTestPanel extends SchemaClass
 {
@@ -31,58 +34,36 @@ class MedicalTestPanel extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/MedicalTestPanel';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function code()
-    {
-        return CodeProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function guideline()
-    {
-        return GuidelineProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function medicineSystem()
-    {
-        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recognizingAuthority()
-    {
-        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relevantSpecialty()
-    {
-        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function study()
-    {
-        return StudyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function subTest()
-    {
-        return SubTestProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'subTest' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SubTestProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalTestPanel',
+        ],
+    ];
 }

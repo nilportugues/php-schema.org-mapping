@@ -10,21 +10,24 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\BranchProperty;
-use NilPortugues\SchemaOrg\Properties\CodeProperty;
-use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
-use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
-use NilPortugues\SchemaOrg\Properties\NerveMotorProperty;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
-use NilPortugues\SchemaOrg\Properties\SensoryUnitProperty;
-use NilPortugues\SchemaOrg\Properties\SourcedFromProperty;
-use NilPortugues\SchemaOrg\Properties\StudyProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Nerve.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\BranchProperty branch()
+ * @method static \NilPortugues\SchemaOrg\Properties\NerveMotorProperty nerveMotor()
+ * @method static \NilPortugues\SchemaOrg\Properties\SensoryUnitProperty sensoryUnit()
+ * @method static \NilPortugues\SchemaOrg\Properties\SourcedFromProperty sourcedFrom()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * METHODEND.
+ *
+ * A common pathway for the electrochemical nerve impulses that are transmitted along each of the axons.
  */
 class Nerve extends SchemaClass
 {
@@ -34,82 +37,48 @@ class Nerve extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Nerve';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function branch()
-    {
-        return BranchProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function code()
-    {
-        return CodeProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function guideline()
-    {
-        return GuidelineProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function medicineSystem()
-    {
-        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function nerveMotor()
-    {
-        return NerveMotorProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recognizingAuthority()
-    {
-        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relevantSpecialty()
-    {
-        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sensoryUnit()
-    {
-        return SensoryUnitProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sourcedFrom()
-    {
-        return SourcedFromProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function study()
-    {
-        return StudyProperty::create(MedicalEntity::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'branch' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BranchProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Nerve',
+        ],
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'nerveMotor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NerveMotorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Nerve',
+        ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'sensoryUnit' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SensoryUnitProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Nerve',
+        ],
+        'sourcedFrom' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SourcedFromProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Nerve',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+    ];
 }

@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes OrderStatus.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Enumerated status values for Order.
  */
 class OrderStatus extends SchemaClass
 {
@@ -21,4 +25,11 @@ class OrderStatus extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/OrderStatus';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

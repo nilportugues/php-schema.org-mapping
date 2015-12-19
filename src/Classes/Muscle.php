@@ -10,24 +10,27 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActionProperty;
-use NilPortugues\SchemaOrg\Properties\AntagonistProperty;
-use NilPortugues\SchemaOrg\Properties\BloodSupplyProperty;
-use NilPortugues\SchemaOrg\Properties\CodeProperty;
-use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
-use NilPortugues\SchemaOrg\Properties\InsertionProperty;
-use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
-use NilPortugues\SchemaOrg\Properties\MuscleActionProperty;
-use NilPortugues\SchemaOrg\Properties\NerveProperty;
-use NilPortugues\SchemaOrg\Properties\OriginProperty;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
-use NilPortugues\SchemaOrg\Properties\StudyProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Muscle.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ActionProperty action()
+ * @method static \NilPortugues\SchemaOrg\Properties\MuscleActionProperty muscleAction()
+ * @method static \NilPortugues\SchemaOrg\Properties\AntagonistProperty antagonist()
+ * @method static \NilPortugues\SchemaOrg\Properties\BloodSupplyProperty bloodSupply()
+ * @method static \NilPortugues\SchemaOrg\Properties\InsertionProperty insertion()
+ * @method static \NilPortugues\SchemaOrg\Properties\NerveProperty nerve()
+ * @method static \NilPortugues\SchemaOrg\Properties\OriginProperty origin()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * METHODEND.
+ *
+ * A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.
  */
 class Muscle extends SchemaClass
 {
@@ -37,106 +40,60 @@ class Muscle extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Muscle';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function action()
-    {
-        return ActionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function antagonist()
-    {
-        return AntagonistProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function bloodSupply()
-    {
-        return BloodSupplyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function code()
-    {
-        return CodeProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function guideline()
-    {
-        return GuidelineProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function insertion()
-    {
-        return InsertionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function medicineSystem()
-    {
-        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function muscleAction()
-    {
-        return MuscleActionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function nerve()
-    {
-        return NerveProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function origin()
-    {
-        return OriginProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recognizingAuthority()
-    {
-        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relevantSpecialty()
-    {
-        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function study()
-    {
-        return StudyProperty::create(MedicalEntity::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'action' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Muscle',
+        ],
+        'antagonist' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AntagonistProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Muscle',
+        ],
+        'bloodSupply' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BloodSupplyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Muscle',
+        ],
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'insertion' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InsertionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Muscle',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'muscleAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MuscleActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Muscle',
+        ],
+        'nerve' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NerveProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Muscle',
+        ],
+        'origin' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OriginProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Muscle',
+        ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+    ];
 }

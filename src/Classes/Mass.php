@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Mass.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'.
  */
 class Mass extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Mass extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Mass';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

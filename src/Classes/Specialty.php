@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Specialty.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.
  */
 class Specialty extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Specialty extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Specialty';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

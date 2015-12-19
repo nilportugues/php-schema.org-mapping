@@ -10,21 +10,24 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty;
-use NilPortugues\SchemaOrg\Properties\AvailableInProperty;
-use NilPortugues\SchemaOrg\Properties\CodeProperty;
-use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
-use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
-use NilPortugues\SchemaOrg\Properties\StrengthUnitProperty;
-use NilPortugues\SchemaOrg\Properties\StrengthValueProperty;
-use NilPortugues\SchemaOrg\Properties\StudyProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes DrugStrength.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty activeIngredient()
+ * @method static \NilPortugues\SchemaOrg\Properties\AvailableInProperty availableIn()
+ * @method static \NilPortugues\SchemaOrg\Properties\StrengthUnitProperty strengthUnit()
+ * @method static \NilPortugues\SchemaOrg\Properties\StrengthValueProperty strengthValue()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * METHODEND.
+ *
+ * A specific strength in which a medical drug is available in a specific country.
  */
 class DrugStrength extends SchemaClass
 {
@@ -34,82 +37,48 @@ class DrugStrength extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/DrugStrength';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function activeIngredient()
-    {
-        return ActiveIngredientProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function availableIn()
-    {
-        return AvailableInProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function code()
-    {
-        return CodeProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function guideline()
-    {
-        return GuidelineProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function medicineSystem()
-    {
-        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recognizingAuthority()
-    {
-        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relevantSpecialty()
-    {
-        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function strengthUnit()
-    {
-        return StrengthUnitProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function strengthValue()
-    {
-        return StrengthValueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function study()
-    {
-        return StudyProperty::create(MedicalEntity::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'activeIngredient' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugStrength',
+        ],
+        'availableIn' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AvailableInProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugStrength',
+        ],
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'strengthUnit' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StrengthUnitProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugStrength',
+        ],
+        'strengthValue' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StrengthValueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugStrength',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+    ];
 }

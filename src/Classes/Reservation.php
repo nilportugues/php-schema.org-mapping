@@ -10,33 +10,36 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\BookingAgentProperty;
-use NilPortugues\SchemaOrg\Properties\BookingTimeProperty;
-use NilPortugues\SchemaOrg\Properties\BrokerProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\ModifiedTimeProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty;
-use NilPortugues\SchemaOrg\Properties\ProgramMembershipUsedProperty;
-use NilPortugues\SchemaOrg\Properties\ProviderProperty;
-use NilPortugues\SchemaOrg\Properties\ReservationForProperty;
-use NilPortugues\SchemaOrg\Properties\ReservationIdProperty;
-use NilPortugues\SchemaOrg\Properties\ReservationStatusProperty;
-use NilPortugues\SchemaOrg\Properties\ReservedTicketProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\TotalPriceProperty;
-use NilPortugues\SchemaOrg\Properties\UnderNameProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Reservation.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ReservationIdProperty reservationId()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReservationStatusProperty reservationStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReservationForProperty reservationFor()
+ * @method static \NilPortugues\SchemaOrg\Properties\UnderNameProperty underName()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProviderProperty provider()
+ * @method static \NilPortugues\SchemaOrg\Properties\BookingAgentProperty bookingAgent()
+ * @method static \NilPortugues\SchemaOrg\Properties\BookingTimeProperty bookingTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\ModifiedTimeProperty modifiedTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProgramMembershipUsedProperty programMembershipUsed()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReservedTicketProperty reservedTicket()
+ * @method static \NilPortugues\SchemaOrg\Properties\TotalPriceProperty totalPrice()
+ * @method static \NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty priceCurrency()
+ * @method static \NilPortugues\SchemaOrg\Properties\BrokerProperty broker()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * Describes a reservation for travel, dining or an event. Some reservations require tickets.Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, restaurant reservations, flights, or rental cars, use http://schema.org/Offer.
  */
 class Reservation extends SchemaClass
 {
@@ -46,178 +49,96 @@ class Reservation extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Reservation';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function bookingAgent()
-    {
-        return BookingAgentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function bookingTime()
-    {
-        return BookingTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function broker()
-    {
-        return BrokerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function modifiedTime()
-    {
-        return ModifiedTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function priceCurrency()
-    {
-        return PriceCurrencyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function programMembershipUsed()
-    {
-        return ProgramMembershipUsedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function provider()
-    {
-        return ProviderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reservationFor()
-    {
-        return ReservationForProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reservationId()
-    {
-        return ReservationIdProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reservationStatus()
-    {
-        return ReservationStatusProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reservedTicket()
-    {
-        return ReservedTicketProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function totalPrice()
-    {
-        return TotalPriceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function underName()
-    {
-        return UnderNameProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'bookingAgent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BookingAgentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'bookingTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BookingTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'broker' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BrokerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'modifiedTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ModifiedTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'priceCurrency' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'programMembershipUsed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProgramMembershipUsedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'provider' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProviderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'reservationFor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReservationForProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'reservationId' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReservationIdProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'reservationStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReservationStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'reservedTicket' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReservedTicketProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'totalPrice' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TotalPriceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'underName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UnderNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Reservation',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

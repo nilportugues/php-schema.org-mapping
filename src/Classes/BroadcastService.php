@@ -10,15 +10,18 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AreaProperty;
-use NilPortugues\SchemaOrg\Properties\BroadcasterProperty;
-use NilPortugues\SchemaOrg\Properties\ParentServiceProperty;
-use NilPortugues\SchemaOrg\Properties\VideoFormatProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BroadcastService.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AreaProperty area()
+ * @method static \NilPortugues\SchemaOrg\Properties\BroadcasterProperty broadcaster()
+ * @method static \NilPortugues\SchemaOrg\Properties\ParentServiceProperty parentService()
+ * @method static \NilPortugues\SchemaOrg\Properties\VideoFormatProperty videoFormat()
+ * METHODEND.
+ *
+ * A delivery service through which content is provided via broadcast over the air or online.
  */
 class BroadcastService extends SchemaClass
 {
@@ -28,34 +31,24 @@ class BroadcastService extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/BroadcastService';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function area()
-    {
-        return AreaProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function broadcaster()
-    {
-        return BroadcasterProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function parentService()
-    {
-        return ParentServiceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function videoFormat()
-    {
-        return VideoFormatProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'area' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AreaProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BroadcastService',
+        ],
+        'broadcaster' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BroadcasterProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BroadcastService',
+        ],
+        'parentService' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParentServiceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BroadcastService',
+        ],
+        'videoFormat' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VideoFormatProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BroadcastService',
+        ],
+    ];
 }

@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes ActionStatusType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * The status of an Action.
  */
 class ActionStatusType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class ActionStatusType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/ActionStatusType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

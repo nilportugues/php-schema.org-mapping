@@ -10,24 +10,27 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActionStatusProperty;
-use NilPortugues\SchemaOrg\Properties\AgentProperty;
-use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
-use NilPortugues\SchemaOrg\Properties\ErrorProperty;
-use NilPortugues\SchemaOrg\Properties\InLanguageProperty;
-use NilPortugues\SchemaOrg\Properties\InstrumentProperty;
-use NilPortugues\SchemaOrg\Properties\LanguageProperty;
-use NilPortugues\SchemaOrg\Properties\LocationProperty;
-use NilPortugues\SchemaOrg\Properties\ObjectTypeProperty;
-use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
-use NilPortugues\SchemaOrg\Properties\ResultProperty;
-use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
-use NilPortugues\SchemaOrg\Properties\TargetProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes WriteAction.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\InLanguageProperty inLanguage()
+ * @method static \NilPortugues\SchemaOrg\Properties\LanguageProperty language()
+ * @method static \NilPortugues\SchemaOrg\Properties\AgentProperty agent()
+ * @method static \NilPortugues\SchemaOrg\Properties\EndTimeProperty endTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\InstrumentProperty instrument()
+ * @method static \NilPortugues\SchemaOrg\Properties\LocationProperty location()
+ * @method static \NilPortugues\SchemaOrg\Properties\ObjectTypeProperty objectType()
+ * @method static \NilPortugues\SchemaOrg\Properties\ParticipantProperty participant()
+ * @method static \NilPortugues\SchemaOrg\Properties\ResultProperty result()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartTimeProperty startTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\ActionStatusProperty actionStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\ErrorProperty error()
+ * @method static \NilPortugues\SchemaOrg\Properties\TargetProperty target()
+ * METHODEND.
+ *
+ * The act of authoring written creative content.
  */
 class WriteAction extends SchemaClass
 {
@@ -37,106 +40,60 @@ class WriteAction extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/WriteAction';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function actionStatus()
-    {
-        return ActionStatusProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function agent()
-    {
-        return AgentProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function endTime()
-    {
-        return EndTimeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function error()
-    {
-        return ErrorProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function inLanguage()
-    {
-        return InLanguageProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function instrument()
-    {
-        return InstrumentProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function language()
-    {
-        return LanguageProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function location()
-    {
-        return LocationProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function objectType()
-    {
-        return ObjectTypeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function participant()
-    {
-        return ParticipantProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function result()
-    {
-        return ResultProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function startTime()
-    {
-        return StartTimeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function target()
-    {
-        return TargetProperty::create(Action::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'actionStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActionStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'agent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AgentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'endTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'error' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ErrorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'inLanguage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WriteAction',
+        ],
+        'instrument' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InstrumentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'language' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LanguageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WriteAction',
+        ],
+        'location' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'objectType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ObjectTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'participant' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParticipantProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'result' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ResultProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'startTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'target' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TargetProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+    ];
 }

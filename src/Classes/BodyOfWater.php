@@ -10,34 +10,37 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
-use NilPortugues\SchemaOrg\Properties\AddressProperty;
-use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
-use NilPortugues\SchemaOrg\Properties\BranchCodeProperty;
-use NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty;
-use NilPortugues\SchemaOrg\Properties\ContainedInProperty;
-use NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty;
-use NilPortugues\SchemaOrg\Properties\EventProperty;
-use NilPortugues\SchemaOrg\Properties\EventsProperty;
-use NilPortugues\SchemaOrg\Properties\FaxNumberProperty;
-use NilPortugues\SchemaOrg\Properties\GeoProperty;
-use NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty;
-use NilPortugues\SchemaOrg\Properties\HasMapProperty;
-use NilPortugues\SchemaOrg\Properties\IsicV4Property;
-use NilPortugues\SchemaOrg\Properties\LogoProperty;
-use NilPortugues\SchemaOrg\Properties\MapProperty;
-use NilPortugues\SchemaOrg\Properties\MapsProperty;
-use NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty;
-use NilPortugues\SchemaOrg\Properties\PhotoProperty;
-use NilPortugues\SchemaOrg\Properties\PhotosProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
-use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BodyOfWater.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressProperty address()
+ * @method static \NilPortugues\SchemaOrg\Properties\AggregateRatingProperty aggregateRating()
+ * @method static \NilPortugues\SchemaOrg\Properties\BranchCodeProperty branchCode()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty containedInPlace()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty containsPlace()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainedInProperty containedIn()
+ * @method static \NilPortugues\SchemaOrg\Properties\EventProperty event()
+ * @method static \NilPortugues\SchemaOrg\Properties\EventsProperty events()
+ * @method static \NilPortugues\SchemaOrg\Properties\FaxNumberProperty faxNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\GeoProperty geo()
+ * @method static \NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty globalLocationNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsicV4Property isicV4()
+ * @method static \NilPortugues\SchemaOrg\Properties\LogoProperty logo()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasMapProperty hasMap()
+ * @method static \NilPortugues\SchemaOrg\Properties\MapProperty map()
+ * @method static \NilPortugues\SchemaOrg\Properties\MapsProperty maps()
+ * @method static \NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty openingHoursSpecification()
+ * @method static \NilPortugues\SchemaOrg\Properties\PhotoProperty photo()
+ * @method static \NilPortugues\SchemaOrg\Properties\PhotosProperty photos()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewProperty review()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewsProperty reviews()
+ * @method static \NilPortugues\SchemaOrg\Properties\TelephoneProperty telephone()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
+ * METHODEND.
+ *
+ * A body of water, such as a sea, ocean, or lake.
  */
 class BodyOfWater extends SchemaClass
 {
@@ -47,186 +50,100 @@ class BodyOfWater extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/BodyOfWater';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalProperty()
-    {
-        return AdditionalPropertyProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function address()
-    {
-        return AddressProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function aggregateRating()
-    {
-        return AggregateRatingProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function branchCode()
-    {
-        return BranchCodeProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function containedIn()
-    {
-        return ContainedInProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function containedInPlace()
-    {
-        return ContainedInPlaceProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function containsPlace()
-    {
-        return ContainsPlaceProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function event()
-    {
-        return EventProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function events()
-    {
-        return EventsProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function faxNumber()
-    {
-        return FaxNumberProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function geo()
-    {
-        return GeoProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function globalLocationNumber()
-    {
-        return GlobalLocationNumberProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function hasMap()
-    {
-        return HasMapProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isicV4()
-    {
-        return IsicV4Property::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function logo()
-    {
-        return LogoProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function map()
-    {
-        return MapProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function maps()
-    {
-        return MapsProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function openingHoursSpecification()
-    {
-        return OpeningHoursSpecificationProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function photo()
-    {
-        return PhotoProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function photos()
-    {
-        return PhotosProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function review()
-    {
-        return ReviewProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reviews()
-    {
-        return ReviewsProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function telephone()
-    {
-        return TelephoneProperty::create(Place::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalProperty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'address' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'aggregateRating' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'branchCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BranchCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'containedIn' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContainedInProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'containedInPlace' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'containsPlace' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'event' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EventProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'events' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EventsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'faxNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FaxNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'geo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GeoProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'globalLocationNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'hasMap' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasMapProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'isicV4' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsicV4Property',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'logo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LogoProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'map' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MapProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'maps' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MapsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'openingHoursSpecification' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'photo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PhotoProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'photos' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PhotosProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'review' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'reviews' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'telephone' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TelephoneProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+    ];
 }

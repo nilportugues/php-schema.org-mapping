@@ -10,12 +10,15 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\EducationalRoleProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes EducationalAudience.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\EducationalRoleProperty educationalRole()
+ * METHODEND.
+ *
+ * An EducationalAudience.
  */
 class EducationalAudience extends SchemaClass
 {
@@ -25,10 +28,12 @@ class EducationalAudience extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/EducationalAudience';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function educationalRole()
-    {
-        return EducationalRoleProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'educationalRole' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EducationalRoleProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\EducationalAudience',
+        ],
+    ];
 }

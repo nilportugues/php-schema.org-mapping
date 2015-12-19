@@ -10,29 +10,32 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AboutProperty;
-use NilPortugues\SchemaOrg\Properties\ActionStatusProperty;
-use NilPortugues\SchemaOrg\Properties\AdditionalNumberOfGuestsProperty;
-use NilPortugues\SchemaOrg\Properties\AgentProperty;
-use NilPortugues\SchemaOrg\Properties\CommentProperty;
-use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
-use NilPortugues\SchemaOrg\Properties\ErrorProperty;
-use NilPortugues\SchemaOrg\Properties\InLanguageProperty;
-use NilPortugues\SchemaOrg\Properties\InstrumentProperty;
-use NilPortugues\SchemaOrg\Properties\LanguageProperty;
-use NilPortugues\SchemaOrg\Properties\LocationProperty;
-use NilPortugues\SchemaOrg\Properties\ObjectTypeProperty;
-use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
-use NilPortugues\SchemaOrg\Properties\RecipientProperty;
-use NilPortugues\SchemaOrg\Properties\ResultProperty;
-use NilPortugues\SchemaOrg\Properties\RsvpResponseProperty;
-use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
-use NilPortugues\SchemaOrg\Properties\TargetProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes RsvpAction.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalNumberOfGuestsProperty additionalNumberOfGuests()
+ * @method static \NilPortugues\SchemaOrg\Properties\RsvpResponseProperty rsvpResponse()
+ * @method static \NilPortugues\SchemaOrg\Properties\CommentProperty comment()
+ * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
+ * @method static \NilPortugues\SchemaOrg\Properties\InLanguageProperty inLanguage()
+ * @method static \NilPortugues\SchemaOrg\Properties\LanguageProperty language()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecipientProperty recipient()
+ * @method static \NilPortugues\SchemaOrg\Properties\AgentProperty agent()
+ * @method static \NilPortugues\SchemaOrg\Properties\EndTimeProperty endTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\InstrumentProperty instrument()
+ * @method static \NilPortugues\SchemaOrg\Properties\LocationProperty location()
+ * @method static \NilPortugues\SchemaOrg\Properties\ObjectTypeProperty objectType()
+ * @method static \NilPortugues\SchemaOrg\Properties\ParticipantProperty participant()
+ * @method static \NilPortugues\SchemaOrg\Properties\ResultProperty result()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartTimeProperty startTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\ActionStatusProperty actionStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\ErrorProperty error()
+ * @method static \NilPortugues\SchemaOrg\Properties\TargetProperty target()
+ * METHODEND.
+ *
+ * The act of notifying an event organizer as to whether you expect to attend the event.
  */
 class RsvpAction extends SchemaClass
 {
@@ -42,146 +45,80 @@ class RsvpAction extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/RsvpAction';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function about()
-    {
-        return AboutProperty::create(CommunicateAction::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function actionStatus()
-    {
-        return ActionStatusProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function additionalNumberOfGuests()
-    {
-        return AdditionalNumberOfGuestsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function agent()
-    {
-        return AgentProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function comment()
-    {
-        return CommentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function endTime()
-    {
-        return EndTimeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function error()
-    {
-        return ErrorProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function inLanguage()
-    {
-        return InLanguageProperty::create(CommunicateAction::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function instrument()
-    {
-        return InstrumentProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function language()
-    {
-        return LanguageProperty::create(CommunicateAction::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function location()
-    {
-        return LocationProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function objectType()
-    {
-        return ObjectTypeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function participant()
-    {
-        return ParticipantProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recipient()
-    {
-        return RecipientProperty::create(CommunicateAction::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function result()
-    {
-        return ResultProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function rsvpResponse()
-    {
-        return RsvpResponseProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function startTime()
-    {
-        return StartTimeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function target()
-    {
-        return TargetProperty::create(Action::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'about' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AboutProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CommunicateAction',
+        ],
+        'actionStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActionStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'additionalNumberOfGuests' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalNumberOfGuestsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\RsvpAction',
+        ],
+        'agent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AgentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'comment' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CommentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\RsvpAction',
+        ],
+        'endTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'error' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ErrorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'inLanguage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CommunicateAction',
+        ],
+        'instrument' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InstrumentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'language' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LanguageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CommunicateAction',
+        ],
+        'location' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'objectType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ObjectTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'participant' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParticipantProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'recipient' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecipientProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CommunicateAction',
+        ],
+        'result' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ResultProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'rsvpResponse' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RsvpResponseProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\RsvpAction',
+        ],
+        'startTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'target' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TargetProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+    ];
 }

@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BoardingPolicyType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A type of boarding policy used by an airline.
  */
 class BoardingPolicyType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class BoardingPolicyType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/BoardingPolicyType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

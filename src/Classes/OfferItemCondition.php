@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes OfferItemCondition.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A list of possible conditions for the item.
  */
 class OfferItemCondition extends SchemaClass
 {
@@ -21,4 +25,11 @@ class OfferItemCondition extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/OfferItemCondition';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

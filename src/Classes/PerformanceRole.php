@@ -10,12 +10,15 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\CharacterNameProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes PerformanceRole.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\CharacterNameProperty characterName()
+ * METHODEND.
+ *
+ * A PerformanceRole is a Role that some entity places with regard to a theatrical performance, e.g. in a Movie, TVSeries etc.
  */
 class PerformanceRole extends SchemaClass
 {
@@ -25,10 +28,12 @@ class PerformanceRole extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/PerformanceRole';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function characterName()
-    {
-        return CharacterNameProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'characterName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CharacterNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PerformanceRole',
+        ],
+    ];
 }

@@ -10,18 +10,21 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\HealthConditionProperty;
-use NilPortugues\SchemaOrg\Properties\RequiredGenderProperty;
-use NilPortugues\SchemaOrg\Properties\RequiredMaxAgeProperty;
-use NilPortugues\SchemaOrg\Properties\RequiredMinAgeProperty;
-use NilPortugues\SchemaOrg\Properties\SuggestedGenderProperty;
-use NilPortugues\SchemaOrg\Properties\SuggestedMaxAgeProperty;
-use NilPortugues\SchemaOrg\Properties\SuggestedMinAgeProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes PeopleAudience.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\HealthConditionProperty healthCondition()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequiredGenderProperty requiredGender()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequiredMaxAgeProperty requiredMaxAge()
+ * @method static \NilPortugues\SchemaOrg\Properties\RequiredMinAgeProperty requiredMinAge()
+ * @method static \NilPortugues\SchemaOrg\Properties\SuggestedGenderProperty suggestedGender()
+ * @method static \NilPortugues\SchemaOrg\Properties\SuggestedMaxAgeProperty suggestedMaxAge()
+ * @method static \NilPortugues\SchemaOrg\Properties\SuggestedMinAgeProperty suggestedMinAge()
+ * METHODEND.
+ *
+ * A set of characteristics belonging to people, e.g. who compose an item's target audience.
  */
 class PeopleAudience extends SchemaClass
 {
@@ -31,58 +34,36 @@ class PeopleAudience extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/PeopleAudience';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function healthCondition()
-    {
-        return HealthConditionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function requiredGender()
-    {
-        return RequiredGenderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function requiredMaxAge()
-    {
-        return RequiredMaxAgeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function requiredMinAge()
-    {
-        return RequiredMinAgeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function suggestedGender()
-    {
-        return SuggestedGenderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function suggestedMaxAge()
-    {
-        return SuggestedMaxAgeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function suggestedMinAge()
-    {
-        return SuggestedMinAgeProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'healthCondition' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HealthConditionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'requiredGender' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequiredGenderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'requiredMaxAge' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequiredMaxAgeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'requiredMinAge' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RequiredMinAgeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'suggestedGender' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SuggestedGenderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'suggestedMaxAge' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SuggestedMaxAgeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+        'suggestedMinAge' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SuggestedMinAgeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PeopleAudience',
+        ],
+    ];
 }

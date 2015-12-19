@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Distance.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.
  */
 class Distance extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Distance extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Distance';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

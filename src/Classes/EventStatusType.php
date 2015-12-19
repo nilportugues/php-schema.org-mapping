@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes EventStatusType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * EventStatusType is an enumeration type whose instances represent several states that an Event may be in.
  */
 class EventStatusType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class EventStatusType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/EventStatusType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

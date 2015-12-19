@@ -24,6 +24,7 @@ class SchemaClassWriter extends SchemaWriter
             $className = $class->name;
             $methods = [];
             $usableProperties = [];
+            $dynamicCall = [];
             $useProperties = [];
 
             if (!empty($class->properties)) {
@@ -33,25 +34,17 @@ class SchemaClassWriter extends SchemaWriter
                     $propertyNameMethodName = $propertyName;
                     $propertyNameMethodName[0] = strtoupper($propertyNameMethodName[0]);
 
-                    $useProperties[] = 'use NilPortugues\\SchemaOrg\\Properties\\'.$propertyNameMethodName.'Property;';
+                    $dynamicCall[] = ' * @method static \\NilPortugues\\SchemaOrg\\Properties\\'.$propertyNameMethodName.'Property '.$propertyName.'()';
 
                     if (empty($usableProperties[$propertyNameMethodName])) {
                         $usableProperties[$propertyNameMethodName] = $propertyClassName;
 
-                        $schemaClass = 'self';
+                        $schemaClass = '\\NilPortugues\\SchemaOrg\\Classes\\'.$className;
                         if ($parentClassName !== $className) {
-                            $schemaClass = $parentClassName;
+                            $schemaClass = '\\NilPortugues\\SchemaOrg\\Classes\\'.$parentClassName;
                         }
 
-                        $methods[$propertyName] = <<<PHP
-   /**
-    * @return Mapping
-    */
-    public static function {$propertyName}()
-    {
-        return {$propertyNameMethodName}Property::create({$schemaClass}::schemaUrl());
-    }
-PHP;
+                        $methods[$propertyName] = "\t\t'{$propertyName}' => [\n\t\t\t'propertyClass' => '\\NilPortugues\\SchemaOrg\\Properties\\{$propertyNameMethodName}Property',\n\t\t\t'schemaClass' => '{$schemaClass}',\n\t\t],";
                     }
                 }
             }
@@ -62,7 +55,8 @@ PHP;
             sort($useProperties, SORT_REGULAR);
             $useProperties = implode("\n", array_unique($useProperties));
             ksort($methods, SORT_REGULAR);
-            $methods = implode("\n\n", $methods);
+            $methods = implode("\n", $methods);
+            $dynamicCall = implode("\n", $dynamicCall);
 
             $schemaData = (array) $class;
 
@@ -82,8 +76,9 @@ namespace NilPortugues\SchemaOrg\Classes;
 {$useProperties}
 
 /**
- * Classes {$schemaData['name']}
- * @package NilPortugues\\SchemaOrg\\Classes
+ * METHODSTART.
+{$dynamicCall}
+ * METHODEND.
  *
  * {$schemaData['doc']}
  */
@@ -94,7 +89,12 @@ class {$schemaData['name']} extends SchemaClass
      */
     protected static \$schemaUrl = "{$schemaData['url']}";
 
-$methods
+    /**
+     * @var array
+     */
+    protected static \$supportedMethods = [
+{$methods}
+    ];
 }
 PHP;
 

@@ -10,28 +10,31 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\DateIssuedProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\IssuedByProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\TicketNumberProperty;
-use NilPortugues\SchemaOrg\Properties\TicketTokenProperty;
-use NilPortugues\SchemaOrg\Properties\TicketedSeatProperty;
-use NilPortugues\SchemaOrg\Properties\TotalPriceProperty;
-use NilPortugues\SchemaOrg\Properties\UnderNameProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Ticket.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\UnderNameProperty underName()
+ * @method static \NilPortugues\SchemaOrg\Properties\TotalPriceProperty totalPrice()
+ * @method static \NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty priceCurrency()
+ * @method static \NilPortugues\SchemaOrg\Properties\IssuedByProperty issuedBy()
+ * @method static \NilPortugues\SchemaOrg\Properties\DateIssuedProperty dateIssued()
+ * @method static \NilPortugues\SchemaOrg\Properties\TicketedSeatProperty ticketedSeat()
+ * @method static \NilPortugues\SchemaOrg\Properties\TicketNumberProperty ticketNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\TicketTokenProperty ticketToken()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * Used to describe a ticket to an event, a flight, a bus ride, etc.
  */
 class Ticket extends SchemaClass
 {
@@ -41,138 +44,76 @@ class Ticket extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Ticket';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dateIssued()
-    {
-        return DateIssuedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function issuedBy()
-    {
-        return IssuedByProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function priceCurrency()
-    {
-        return PriceCurrencyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function ticketNumber()
-    {
-        return TicketNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function ticketToken()
-    {
-        return TicketTokenProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function ticketedSeat()
-    {
-        return TicketedSeatProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function totalPrice()
-    {
-        return TotalPriceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function underName()
-    {
-        return UnderNameProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'dateIssued' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DateIssuedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Ticket',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'issuedBy' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IssuedByProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Ticket',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'priceCurrency' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Ticket',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'ticketNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TicketNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Ticket',
+        ],
+        'ticketToken' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TicketTokenProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Ticket',
+        ],
+        'ticketedSeat' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TicketedSeatProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Ticket',
+        ],
+        'totalPrice' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TotalPriceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Ticket',
+        ],
+        'underName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UnderNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Ticket',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

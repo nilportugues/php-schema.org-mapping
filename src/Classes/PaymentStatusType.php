@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes PaymentStatusType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A specific payment status. For example, PaymentDue, PaymentComplete, etc.
  */
 class PaymentStatusType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class PaymentStatusType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/PaymentStatusType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

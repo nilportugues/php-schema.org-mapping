@@ -10,26 +10,29 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AddressCountryProperty;
-use NilPortugues\SchemaOrg\Properties\AddressLocalityProperty;
-use NilPortugues\SchemaOrg\Properties\AddressRegionProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PostOfficeBoxNumberProperty;
-use NilPortugues\SchemaOrg\Properties\PostalCodeProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\StreetAddressProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes PostalAddress.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressCountryProperty addressCountry()
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressLocalityProperty addressLocality()
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressRegionProperty addressRegion()
+ * @method static \NilPortugues\SchemaOrg\Properties\PostalCodeProperty postalCode()
+ * @method static \NilPortugues\SchemaOrg\Properties\PostOfficeBoxNumberProperty postOfficeBoxNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\StreetAddressProperty streetAddress()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * The mailing address.
  */
 class PostalAddress extends SchemaClass
 {
@@ -39,122 +42,68 @@ class PostalAddress extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/PostalAddress';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function addressCountry()
-    {
-        return AddressCountryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function addressLocality()
-    {
-        return AddressLocalityProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function addressRegion()
-    {
-        return AddressRegionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function postOfficeBoxNumber()
-    {
-        return PostOfficeBoxNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function postalCode()
-    {
-        return PostalCodeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function streetAddress()
-    {
-        return StreetAddressProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'addressCountry' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressCountryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PostalAddress',
+        ],
+        'addressLocality' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressLocalityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PostalAddress',
+        ],
+        'addressRegion' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressRegionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PostalAddress',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'postOfficeBoxNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PostOfficeBoxNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PostalAddress',
+        ],
+        'postalCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PostalCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PostalAddress',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'streetAddress' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StreetAddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PostalAddress',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

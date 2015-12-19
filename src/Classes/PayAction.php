@@ -10,24 +10,27 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActionStatusProperty;
-use NilPortugues\SchemaOrg\Properties\AgentProperty;
-use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
-use NilPortugues\SchemaOrg\Properties\ErrorProperty;
-use NilPortugues\SchemaOrg\Properties\InstrumentProperty;
-use NilPortugues\SchemaOrg\Properties\LocationProperty;
-use NilPortugues\SchemaOrg\Properties\ObjectTypeProperty;
-use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
-use NilPortugues\SchemaOrg\Properties\PurposeProperty;
-use NilPortugues\SchemaOrg\Properties\RecipientProperty;
-use NilPortugues\SchemaOrg\Properties\ResultProperty;
-use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
-use NilPortugues\SchemaOrg\Properties\TargetProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes PayAction.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\PurposeProperty purpose()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecipientProperty recipient()
+ * @method static \NilPortugues\SchemaOrg\Properties\AgentProperty agent()
+ * @method static \NilPortugues\SchemaOrg\Properties\EndTimeProperty endTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\InstrumentProperty instrument()
+ * @method static \NilPortugues\SchemaOrg\Properties\LocationProperty location()
+ * @method static \NilPortugues\SchemaOrg\Properties\ObjectTypeProperty objectType()
+ * @method static \NilPortugues\SchemaOrg\Properties\ParticipantProperty participant()
+ * @method static \NilPortugues\SchemaOrg\Properties\ResultProperty result()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartTimeProperty startTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\ActionStatusProperty actionStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\ErrorProperty error()
+ * @method static \NilPortugues\SchemaOrg\Properties\TargetProperty target()
+ * METHODEND.
+ *
+ * An agent pays a price to a participant.
  */
 class PayAction extends SchemaClass
 {
@@ -37,106 +40,60 @@ class PayAction extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/PayAction';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function actionStatus()
-    {
-        return ActionStatusProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function agent()
-    {
-        return AgentProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function endTime()
-    {
-        return EndTimeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function error()
-    {
-        return ErrorProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function instrument()
-    {
-        return InstrumentProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function location()
-    {
-        return LocationProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function objectType()
-    {
-        return ObjectTypeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function participant()
-    {
-        return ParticipantProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function purpose()
-    {
-        return PurposeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recipient()
-    {
-        return RecipientProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function result()
-    {
-        return ResultProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function startTime()
-    {
-        return StartTimeProperty::create(Action::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function target()
-    {
-        return TargetProperty::create(Action::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'actionStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActionStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'agent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AgentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'endTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'error' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ErrorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'instrument' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InstrumentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'location' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'objectType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ObjectTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'participant' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParticipantProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'purpose' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PurposeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PayAction',
+        ],
+        'recipient' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecipientProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PayAction',
+        ],
+        'result' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ResultProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'startTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+        'target' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TargetProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Action',
+        ],
+    ];
 }

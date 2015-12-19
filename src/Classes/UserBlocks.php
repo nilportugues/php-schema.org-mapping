@@ -10,34 +10,37 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
-use NilPortugues\SchemaOrg\Properties\AttendeeProperty;
-use NilPortugues\SchemaOrg\Properties\AttendeesProperty;
-use NilPortugues\SchemaOrg\Properties\DoorTimeProperty;
-use NilPortugues\SchemaOrg\Properties\DurationProperty;
-use NilPortugues\SchemaOrg\Properties\EndDateProperty;
-use NilPortugues\SchemaOrg\Properties\EventStatusProperty;
-use NilPortugues\SchemaOrg\Properties\InLanguageProperty;
-use NilPortugues\SchemaOrg\Properties\LocationProperty;
-use NilPortugues\SchemaOrg\Properties\OffersProperty;
-use NilPortugues\SchemaOrg\Properties\OrganizerProperty;
-use NilPortugues\SchemaOrg\Properties\PerformerProperty;
-use NilPortugues\SchemaOrg\Properties\PerformersProperty;
-use NilPortugues\SchemaOrg\Properties\PreviousStartDateProperty;
-use NilPortugues\SchemaOrg\Properties\RecordedInProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewProperty;
-use NilPortugues\SchemaOrg\Properties\StartDateProperty;
-use NilPortugues\SchemaOrg\Properties\SubEventProperty;
-use NilPortugues\SchemaOrg\Properties\SubEventsProperty;
-use NilPortugues\SchemaOrg\Properties\SuperEventProperty;
-use NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty;
-use NilPortugues\SchemaOrg\Properties\WorkFeaturedProperty;
-use NilPortugues\SchemaOrg\Properties\WorkPerformedProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes UserBlocks.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AggregateRatingProperty aggregateRating()
+ * @method static \NilPortugues\SchemaOrg\Properties\OrganizerProperty organizer()
+ * @method static \NilPortugues\SchemaOrg\Properties\AttendeeProperty attendee()
+ * @method static \NilPortugues\SchemaOrg\Properties\AttendeesProperty attendees()
+ * @method static \NilPortugues\SchemaOrg\Properties\DoorTimeProperty doorTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\DurationProperty duration()
+ * @method static \NilPortugues\SchemaOrg\Properties\EndDateProperty endDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\EventStatusProperty eventStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\InLanguageProperty inLanguage()
+ * @method static \NilPortugues\SchemaOrg\Properties\LocationProperty location()
+ * @method static \NilPortugues\SchemaOrg\Properties\OffersProperty offers()
+ * @method static \NilPortugues\SchemaOrg\Properties\PerformerProperty performer()
+ * @method static \NilPortugues\SchemaOrg\Properties\PerformersProperty performers()
+ * @method static \NilPortugues\SchemaOrg\Properties\PreviousStartDateProperty previousStartDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecordedInProperty recordedIn()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewProperty review()
+ * @method static \NilPortugues\SchemaOrg\Properties\StartDateProperty startDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\SubEventProperty subEvent()
+ * @method static \NilPortugues\SchemaOrg\Properties\SubEventsProperty subEvents()
+ * @method static \NilPortugues\SchemaOrg\Properties\SuperEventProperty superEvent()
+ * @method static \NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty typicalAgeRange()
+ * @method static \NilPortugues\SchemaOrg\Properties\WorkPerformedProperty workPerformed()
+ * @method static \NilPortugues\SchemaOrg\Properties\WorkFeaturedProperty workFeatured()
+ * METHODEND.
+ *
+ * UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use
  */
 class UserBlocks extends SchemaClass
 {
@@ -47,186 +50,100 @@ class UserBlocks extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/UserBlocks';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function aggregateRating()
-    {
-        return AggregateRatingProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function attendee()
-    {
-        return AttendeeProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function attendees()
-    {
-        return AttendeesProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function doorTime()
-    {
-        return DoorTimeProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function duration()
-    {
-        return DurationProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function endDate()
-    {
-        return EndDateProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function eventStatus()
-    {
-        return EventStatusProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function inLanguage()
-    {
-        return InLanguageProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function location()
-    {
-        return LocationProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function offers()
-    {
-        return OffersProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function organizer()
-    {
-        return OrganizerProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function performer()
-    {
-        return PerformerProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function performers()
-    {
-        return PerformersProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function previousStartDate()
-    {
-        return PreviousStartDateProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recordedIn()
-    {
-        return RecordedInProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function review()
-    {
-        return ReviewProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function startDate()
-    {
-        return StartDateProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function subEvent()
-    {
-        return SubEventProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function subEvents()
-    {
-        return SubEventsProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function superEvent()
-    {
-        return SuperEventProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function typicalAgeRange()
-    {
-        return TypicalAgeRangeProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function workFeatured()
-    {
-        return WorkFeaturedProperty::create(Event::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function workPerformed()
-    {
-        return WorkPerformedProperty::create(Event::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'aggregateRating' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'attendee' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AttendeeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'attendees' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AttendeesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'doorTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DoorTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'duration' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DurationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'endDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EndDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'eventStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EventStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'inLanguage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'location' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'offers' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'organizer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OrganizerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'performer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PerformerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'performers' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PerformersProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'previousStartDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PreviousStartDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'recordedIn' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecordedInProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'review' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'startDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StartDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'subEvent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SubEventProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'subEvents' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SubEventsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'superEvent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SuperEventProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'typicalAgeRange' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'workFeatured' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WorkFeaturedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+        'workPerformed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WorkPerformedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Event',
+        ],
+    ];
 }

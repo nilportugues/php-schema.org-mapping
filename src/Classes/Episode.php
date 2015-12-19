@@ -10,30 +10,33 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActorProperty;
-use NilPortugues\SchemaOrg\Properties\ActorsProperty;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\DirectorProperty;
-use NilPortugues\SchemaOrg\Properties\DirectorsProperty;
-use NilPortugues\SchemaOrg\Properties\EpisodeNumberProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\MusicByProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PartOfSeasonProperty;
-use NilPortugues\SchemaOrg\Properties\PartOfSeriesProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\TrailerProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Episode.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ActorProperty actor()
+ * @method static \NilPortugues\SchemaOrg\Properties\ActorsProperty actors()
+ * @method static \NilPortugues\SchemaOrg\Properties\DirectorProperty director()
+ * @method static \NilPortugues\SchemaOrg\Properties\DirectorsProperty directors()
+ * @method static \NilPortugues\SchemaOrg\Properties\EpisodeNumberProperty episodeNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\MusicByProperty musicBy()
+ * @method static \NilPortugues\SchemaOrg\Properties\PartOfSeasonProperty partOfSeason()
+ * @method static \NilPortugues\SchemaOrg\Properties\PartOfSeriesProperty partOfSeries()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty productionCompany()
+ * @method static \NilPortugues\SchemaOrg\Properties\TrailerProperty trailer()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A media episode (e.g. TV, radio, video game) which can be part of a series or season.
  */
 class Episode extends SchemaClass
 {
@@ -43,154 +46,84 @@ class Episode extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Episode';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function actor()
-    {
-        return ActorProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function actors()
-    {
-        return ActorsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function director()
-    {
-        return DirectorProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function directors()
-    {
-        return DirectorsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function episodeNumber()
-    {
-        return EpisodeNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function musicBy()
-    {
-        return MusicByProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function partOfSeason()
-    {
-        return PartOfSeasonProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function partOfSeries()
-    {
-        return PartOfSeriesProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function productionCompany()
-    {
-        return ProductionCompanyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function trailer()
-    {
-        return TrailerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'actor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'actors' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ActorsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'director' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DirectorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'directors' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DirectorsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'episodeNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EpisodeNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'musicBy' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MusicByProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'partOfSeason' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PartOfSeasonProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'partOfSeries' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PartOfSeriesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'productionCompany' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'trailer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TrailerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Episode',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

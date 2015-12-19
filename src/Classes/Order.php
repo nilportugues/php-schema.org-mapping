@@ -10,42 +10,45 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AcceptedOfferProperty;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\BillingAddressProperty;
-use NilPortugues\SchemaOrg\Properties\BrokerProperty;
-use NilPortugues\SchemaOrg\Properties\ConfirmationNumberProperty;
-use NilPortugues\SchemaOrg\Properties\CustomerProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\DiscountCodeProperty;
-use NilPortugues\SchemaOrg\Properties\DiscountCurrencyProperty;
-use NilPortugues\SchemaOrg\Properties\DiscountProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\IsGiftProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\MerchantProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\OrderDateProperty;
-use NilPortugues\SchemaOrg\Properties\OrderDeliveryProperty;
-use NilPortugues\SchemaOrg\Properties\OrderNumberProperty;
-use NilPortugues\SchemaOrg\Properties\OrderStatusProperty;
-use NilPortugues\SchemaOrg\Properties\OrderedItemProperty;
-use NilPortugues\SchemaOrg\Properties\PartOfInvoiceProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentDueDateProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentDueProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentMethodIdProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentMethodProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentUrlProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\SellerProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Order.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\OrderDeliveryProperty orderDelivery()
+ * @method static \NilPortugues\SchemaOrg\Properties\AcceptedOfferProperty acceptedOffer()
+ * @method static \NilPortugues\SchemaOrg\Properties\BillingAddressProperty billingAddress()
+ * @method static \NilPortugues\SchemaOrg\Properties\ConfirmationNumberProperty confirmationNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\CustomerProperty customer()
+ * @method static \NilPortugues\SchemaOrg\Properties\DiscountProperty discount()
+ * @method static \NilPortugues\SchemaOrg\Properties\DiscountCodeProperty discountCode()
+ * @method static \NilPortugues\SchemaOrg\Properties\DiscountCurrencyProperty discountCurrency()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsGiftProperty isGift()
+ * @method static \NilPortugues\SchemaOrg\Properties\MerchantProperty merchant()
+ * @method static \NilPortugues\SchemaOrg\Properties\OrderDateProperty orderDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\OrderedItemProperty orderedItem()
+ * @method static \NilPortugues\SchemaOrg\Properties\OrderNumberProperty orderNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\OrderStatusProperty orderStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\PartOfInvoiceProperty partOfInvoice()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentDueProperty paymentDue()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentDueDateProperty paymentDueDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentMethodProperty paymentMethod()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentMethodIdProperty paymentMethodId()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentUrlProperty paymentUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\SellerProperty seller()
+ * @method static \NilPortugues\SchemaOrg\Properties\BrokerProperty broker()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.
  */
 class Order extends SchemaClass
 {
@@ -55,250 +58,132 @@ class Order extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Order';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function acceptedOffer()
-    {
-        return AcceptedOfferProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function billingAddress()
-    {
-        return BillingAddressProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function broker()
-    {
-        return BrokerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function confirmationNumber()
-    {
-        return ConfirmationNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function customer()
-    {
-        return CustomerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function discount()
-    {
-        return DiscountProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function discountCode()
-    {
-        return DiscountCodeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function discountCurrency()
-    {
-        return DiscountCurrencyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isGift()
-    {
-        return IsGiftProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function merchant()
-    {
-        return MerchantProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function orderDate()
-    {
-        return OrderDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function orderDelivery()
-    {
-        return OrderDeliveryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function orderNumber()
-    {
-        return OrderNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function orderStatus()
-    {
-        return OrderStatusProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function orderedItem()
-    {
-        return OrderedItemProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function partOfInvoice()
-    {
-        return PartOfInvoiceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentDue()
-    {
-        return PaymentDueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentDueDate()
-    {
-        return PaymentDueDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentMethod()
-    {
-        return PaymentMethodProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentMethodId()
-    {
-        return PaymentMethodIdProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentUrl()
-    {
-        return PaymentUrlProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function seller()
-    {
-        return SellerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'acceptedOffer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AcceptedOfferProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'billingAddress' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BillingAddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'broker' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BrokerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'confirmationNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ConfirmationNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'customer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CustomerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'discount' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscountProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'discountCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscountCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'discountCurrency' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscountCurrencyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'isGift' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsGiftProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'merchant' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MerchantProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'orderDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OrderDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'orderDelivery' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OrderDeliveryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'orderNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OrderNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'orderStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OrderStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'orderedItem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OrderedItemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'partOfInvoice' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PartOfInvoiceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'paymentDue' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentDueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'paymentDueDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentDueDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'paymentMethod' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentMethodProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'paymentMethodId' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentMethodIdProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'paymentUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'seller' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SellerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Order',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

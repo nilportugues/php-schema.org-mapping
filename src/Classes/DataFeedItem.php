@@ -10,15 +10,18 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\DateCreatedProperty;
-use NilPortugues\SchemaOrg\Properties\DateDeletedProperty;
-use NilPortugues\SchemaOrg\Properties\DateModifiedProperty;
-use NilPortugues\SchemaOrg\Properties\ItemProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes DataFeedItem.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\DateCreatedProperty dateCreated()
+ * @method static \NilPortugues\SchemaOrg\Properties\DateDeletedProperty dateDeleted()
+ * @method static \NilPortugues\SchemaOrg\Properties\DateModifiedProperty dateModified()
+ * @method static \NilPortugues\SchemaOrg\Properties\ItemProperty item()
+ * METHODEND.
+ *
+ * A single item within a larger data feed.
  */
 class DataFeedItem extends SchemaClass
 {
@@ -28,34 +31,24 @@ class DataFeedItem extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/DataFeedItem';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function dateCreated()
-    {
-        return DateCreatedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dateDeleted()
-    {
-        return DateDeletedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dateModified()
-    {
-        return DateModifiedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function item()
-    {
-        return ItemProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'dateCreated' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DateCreatedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DataFeedItem',
+        ],
+        'dateDeleted' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DateDeletedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DataFeedItem',
+        ],
+        'dateModified' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DateModifiedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DataFeedItem',
+        ],
+        'item' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ItemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DataFeedItem',
+        ],
+    ];
 }

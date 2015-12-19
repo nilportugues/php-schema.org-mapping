@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BusReservation.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A reservation for bus travel.Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use http://schema.org/Offer.
  */
 class BusReservation extends SchemaClass
 {
@@ -21,4 +25,11 @@ class BusReservation extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/BusReservation';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

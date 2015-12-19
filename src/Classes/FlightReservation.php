@@ -10,15 +10,18 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\BoardingGroupProperty;
-use NilPortugues\SchemaOrg\Properties\PassengerPriorityStatusProperty;
-use NilPortugues\SchemaOrg\Properties\PassengerSequenceNumberProperty;
-use NilPortugues\SchemaOrg\Properties\SecurityScreeningProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes FlightReservation.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\BoardingGroupProperty boardingGroup()
+ * @method static \NilPortugues\SchemaOrg\Properties\PassengerSequenceNumberProperty passengerSequenceNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\SecurityScreeningProperty securityScreening()
+ * @method static \NilPortugues\SchemaOrg\Properties\PassengerPriorityStatusProperty passengerPriorityStatus()
+ * METHODEND.
+ *
+ * A reservation for air travel.Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use http://schema.org/Offer.
  */
 class FlightReservation extends SchemaClass
 {
@@ -28,34 +31,24 @@ class FlightReservation extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/FlightReservation';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function boardingGroup()
-    {
-        return BoardingGroupProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function passengerPriorityStatus()
-    {
-        return PassengerPriorityStatusProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function passengerSequenceNumber()
-    {
-        return PassengerSequenceNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function securityScreening()
-    {
-        return SecurityScreeningProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'boardingGroup' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BoardingGroupProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\FlightReservation',
+        ],
+        'passengerPriorityStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PassengerPriorityStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\FlightReservation',
+        ],
+        'passengerSequenceNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PassengerSequenceNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\FlightReservation',
+        ],
+        'securityScreening' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SecurityScreeningProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\FlightReservation',
+        ],
+    ];
 }

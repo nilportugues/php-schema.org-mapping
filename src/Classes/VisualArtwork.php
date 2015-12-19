@@ -10,26 +10,29 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\ArtEditionProperty;
-use NilPortugues\SchemaOrg\Properties\ArtMediumProperty;
-use NilPortugues\SchemaOrg\Properties\ArtformProperty;
-use NilPortugues\SchemaOrg\Properties\ArtworkSurfaceProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\MaterialProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\SurfaceProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes VisualArtwork.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ArtformProperty artform()
+ * @method static \NilPortugues\SchemaOrg\Properties\MaterialProperty material()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArtMediumProperty artMedium()
+ * @method static \NilPortugues\SchemaOrg\Properties\SurfaceProperty surface()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArtworkSurfaceProperty artworkSurface()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArtEditionProperty artEdition()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A work of art that is primarily visual in character.
  */
 class VisualArtwork extends SchemaClass
 {
@@ -39,122 +42,68 @@ class VisualArtwork extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/VisualArtwork';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function artEdition()
-    {
-        return ArtEditionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function artMedium()
-    {
-        return ArtMediumProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function artform()
-    {
-        return ArtformProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function artworkSurface()
-    {
-        return ArtworkSurfaceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function material()
-    {
-        return MaterialProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function surface()
-    {
-        return SurfaceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'artEdition' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArtEditionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VisualArtwork',
+        ],
+        'artMedium' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArtMediumProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VisualArtwork',
+        ],
+        'artform' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArtformProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VisualArtwork',
+        ],
+        'artworkSurface' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArtworkSurfaceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VisualArtwork',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'material' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MaterialProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VisualArtwork',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'surface' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SurfaceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\VisualArtwork',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

@@ -10,36 +10,39 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AccountIdProperty;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\BillingPeriodProperty;
-use NilPortugues\SchemaOrg\Properties\BrokerProperty;
-use NilPortugues\SchemaOrg\Properties\CategoryProperty;
-use NilPortugues\SchemaOrg\Properties\ConfirmationNumberProperty;
-use NilPortugues\SchemaOrg\Properties\CustomerProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\MinimumPaymentDueProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentDueDateProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentDueProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentMethodIdProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentMethodProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentStatusProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\ProviderProperty;
-use NilPortugues\SchemaOrg\Properties\ReferencesOrderProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\ScheduledPaymentDateProperty;
-use NilPortugues\SchemaOrg\Properties\TotalPaymentDueProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Invoice.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\CategoryProperty category()
+ * @method static \NilPortugues\SchemaOrg\Properties\ConfirmationNumberProperty confirmationNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\CustomerProperty customer()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentDueProperty paymentDue()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentDueDateProperty paymentDueDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentMethodProperty paymentMethod()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentMethodIdProperty paymentMethodId()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProviderProperty provider()
+ * @method static \NilPortugues\SchemaOrg\Properties\BrokerProperty broker()
+ * @method static \NilPortugues\SchemaOrg\Properties\TotalPaymentDueProperty totalPaymentDue()
+ * @method static \NilPortugues\SchemaOrg\Properties\MinimumPaymentDueProperty minimumPaymentDue()
+ * @method static \NilPortugues\SchemaOrg\Properties\AccountIdProperty accountId()
+ * @method static \NilPortugues\SchemaOrg\Properties\ScheduledPaymentDateProperty scheduledPaymentDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\BillingPeriodProperty billingPeriod()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentStatusProperty paymentStatus()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReferencesOrderProperty referencesOrder()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A statement of the money due for goods or services; a bill.
  */
 class Invoice extends SchemaClass
 {
@@ -49,202 +52,108 @@ class Invoice extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Invoice';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function accountId()
-    {
-        return AccountIdProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function billingPeriod()
-    {
-        return BillingPeriodProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function broker()
-    {
-        return BrokerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function category()
-    {
-        return CategoryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function confirmationNumber()
-    {
-        return ConfirmationNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function customer()
-    {
-        return CustomerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function minimumPaymentDue()
-    {
-        return MinimumPaymentDueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentDue()
-    {
-        return PaymentDueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentDueDate()
-    {
-        return PaymentDueDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentMethod()
-    {
-        return PaymentMethodProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentMethodId()
-    {
-        return PaymentMethodIdProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentStatus()
-    {
-        return PaymentStatusProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function provider()
-    {
-        return ProviderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function referencesOrder()
-    {
-        return ReferencesOrderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function scheduledPaymentDate()
-    {
-        return ScheduledPaymentDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function totalPaymentDue()
-    {
-        return TotalPaymentDueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'accountId' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccountIdProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'billingPeriod' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BillingPeriodProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'broker' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BrokerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'category' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CategoryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'confirmationNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ConfirmationNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'customer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CustomerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'minimumPaymentDue' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MinimumPaymentDueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'paymentDue' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentDueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'paymentDueDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentDueDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'paymentMethod' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentMethodProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'paymentMethodId' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentMethodIdProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'paymentStatus' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentStatusProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'provider' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProviderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'referencesOrder' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReferencesOrderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'scheduledPaymentDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ScheduledPaymentDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'totalPaymentDue' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TotalPaymentDueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Invoice',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

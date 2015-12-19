@@ -10,12 +10,15 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ServiceOperatorProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes GovernmentService.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ServiceOperatorProperty serviceOperator()
+ * METHODEND.
+ *
+ * A service provided by a government organization, e.g. food stamps, veterans benefits, etc.
  */
 class GovernmentService extends SchemaClass
 {
@@ -25,10 +28,12 @@ class GovernmentService extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/GovernmentService';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function serviceOperator()
-    {
-        return ServiceOperatorProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'serviceOperator' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ServiceOperatorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GovernmentService',
+        ],
+    ];
 }

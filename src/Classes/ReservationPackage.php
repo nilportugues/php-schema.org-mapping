@@ -10,12 +10,15 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\SubReservationProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes ReservationPackage.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\SubReservationProperty subReservation()
+ * METHODEND.
+ *
+ * A group of multiple reservations with common values for all sub-reservations.
  */
 class ReservationPackage extends SchemaClass
 {
@@ -25,10 +28,12 @@ class ReservationPackage extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/ReservationPackage';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function subReservation()
-    {
-        return SubReservationProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'subReservation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SubReservationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\ReservationPackage',
+        ],
+    ];
 }

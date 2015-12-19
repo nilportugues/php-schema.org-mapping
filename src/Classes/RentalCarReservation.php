@@ -10,15 +10,18 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\DropoffLocationProperty;
-use NilPortugues\SchemaOrg\Properties\DropoffTimeProperty;
-use NilPortugues\SchemaOrg\Properties\PickupLocationProperty;
-use NilPortugues\SchemaOrg\Properties\PickupTimeProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes RentalCarReservation.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\PickupLocationProperty pickupLocation()
+ * @method static \NilPortugues\SchemaOrg\Properties\DropoffLocationProperty dropoffLocation()
+ * @method static \NilPortugues\SchemaOrg\Properties\PickupTimeProperty pickupTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\DropoffTimeProperty dropoffTime()
+ * METHODEND.
+ *
+ * A reservation for a rental car.Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
  */
 class RentalCarReservation extends SchemaClass
 {
@@ -28,34 +31,24 @@ class RentalCarReservation extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/RentalCarReservation';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function dropoffLocation()
-    {
-        return DropoffLocationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dropoffTime()
-    {
-        return DropoffTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function pickupLocation()
-    {
-        return PickupLocationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function pickupTime()
-    {
-        return PickupTimeProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'dropoffLocation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DropoffLocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\RentalCarReservation',
+        ],
+        'dropoffTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DropoffTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\RentalCarReservation',
+        ],
+        'pickupLocation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PickupLocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\RentalCarReservation',
+        ],
+        'pickupTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PickupTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\RentalCarReservation',
+        ],
+    ];
 }

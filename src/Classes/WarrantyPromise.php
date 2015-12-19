@@ -10,13 +10,16 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\DurationOfWarrantyProperty;
-use NilPortugues\SchemaOrg\Properties\WarrantyScopeProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes WarrantyPromise.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\DurationOfWarrantyProperty durationOfWarranty()
+ * @method static \NilPortugues\SchemaOrg\Properties\WarrantyScopeProperty warrantyScope()
+ * METHODEND.
+ *
+ * A structured value representing the duration and scope of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.
  */
 class WarrantyPromise extends SchemaClass
 {
@@ -26,18 +29,16 @@ class WarrantyPromise extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/WarrantyPromise';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function durationOfWarranty()
-    {
-        return DurationOfWarrantyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function warrantyScope()
-    {
-        return WarrantyScopeProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'durationOfWarranty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DurationOfWarrantyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WarrantyPromise',
+        ],
+        'warrantyScope' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WarrantyScopeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WarrantyPromise',
+        ],
+    ];
 }

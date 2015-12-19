@@ -67,7 +67,10 @@ class {$className}Property extends SchemaProperty
     ];
 }
 PHP;
-            $this->fileSystem->write($this->savePath.DIRECTORY_SEPARATOR.$className.'Property.php', $phpPropertyCode);
+            $this->fileSystem->write(
+                $this->savePath.DIRECTORY_SEPARATOR.$className.'Property.php',
+                $phpPropertyCode
+            );
         }
     }
 }

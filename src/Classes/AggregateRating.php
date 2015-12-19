@@ -10,14 +10,17 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ItemReviewedProperty;
-use NilPortugues\SchemaOrg\Properties\RatingCountProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewCountProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes AggregateRating.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ItemReviewedProperty itemReviewed()
+ * @method static \NilPortugues\SchemaOrg\Properties\RatingCountProperty ratingCount()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewCountProperty reviewCount()
+ * METHODEND.
+ *
+ * The average rating based on multiple ratings or reviews.
  */
 class AggregateRating extends SchemaClass
 {
@@ -27,26 +30,20 @@ class AggregateRating extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/AggregateRating';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function itemReviewed()
-    {
-        return ItemReviewedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function ratingCount()
-    {
-        return RatingCountProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reviewCount()
-    {
-        return ReviewCountProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'itemReviewed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ItemReviewedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AggregateRating',
+        ],
+        'ratingCount' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RatingCountProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AggregateRating',
+        ],
+        'reviewCount' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewCountProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\AggregateRating',
+        ],
+    ];
 }

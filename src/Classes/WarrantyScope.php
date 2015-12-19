@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes WarrantyScope.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A range of of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.
  */
 class WarrantyScope extends SchemaClass
 {
@@ -21,4 +25,11 @@ class WarrantyScope extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/WarrantyScope';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Energy.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.
  */
 class Energy extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Energy extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Energy';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

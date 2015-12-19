@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Boolean.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Boolean: True or False.
  */
 class Boolean extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Boolean extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Boolean';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

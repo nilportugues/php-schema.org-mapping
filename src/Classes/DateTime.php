@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes DateTime.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601).
  */
 class DateTime extends SchemaClass
 {
@@ -21,4 +25,11 @@ class DateTime extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/DateTime';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

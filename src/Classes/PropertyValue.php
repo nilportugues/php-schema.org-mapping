@@ -10,18 +10,21 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\MaxValueProperty;
-use NilPortugues\SchemaOrg\Properties\MinValueProperty;
-use NilPortugues\SchemaOrg\Properties\PropertyIDProperty;
-use NilPortugues\SchemaOrg\Properties\UnitCodeProperty;
-use NilPortugues\SchemaOrg\Properties\UnitTextProperty;
-use NilPortugues\SchemaOrg\Properties\ValueProperty;
-use NilPortugues\SchemaOrg\Properties\ValueReferenceProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes PropertyValue.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\MaxValueProperty maxValue()
+ * @method static \NilPortugues\SchemaOrg\Properties\MinValueProperty minValue()
+ * @method static \NilPortugues\SchemaOrg\Properties\UnitCodeProperty unitCode()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValueProperty value()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValueReferenceProperty valueReference()
+ * @method static \NilPortugues\SchemaOrg\Properties\UnitTextProperty unitText()
+ * @method static \NilPortugues\SchemaOrg\Properties\PropertyIDProperty propertyID()
+ * METHODEND.
+ *
+ * A property-value pair, e.g. representing a feature of a product or place. Use the 'name' property for the name of the property. If there is an additional human-readable version of the value, put that into the 'description' property.
  */
 class PropertyValue extends SchemaClass
 {
@@ -31,58 +34,36 @@ class PropertyValue extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/PropertyValue';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function maxValue()
-    {
-        return MaxValueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function minValue()
-    {
-        return MinValueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function propertyID()
-    {
-        return PropertyIDProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function unitCode()
-    {
-        return UnitCodeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function unitText()
-    {
-        return UnitTextProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function value()
-    {
-        return ValueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function valueReference()
-    {
-        return ValueReferenceProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'maxValue' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MaxValueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PropertyValue',
+        ],
+        'minValue' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MinValueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PropertyValue',
+        ],
+        'propertyID' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PropertyIDProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PropertyValue',
+        ],
+        'unitCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UnitCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PropertyValue',
+        ],
+        'unitText' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UnitTextProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PropertyValue',
+        ],
+        'value' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PropertyValue',
+        ],
+        'valueReference' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValueReferenceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PropertyValue',
+        ],
+    ];
 }

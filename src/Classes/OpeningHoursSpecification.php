@@ -10,16 +10,19 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ClosesProperty;
-use NilPortugues\SchemaOrg\Properties\DayOfWeekProperty;
-use NilPortugues\SchemaOrg\Properties\OpensProperty;
-use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
-use NilPortugues\SchemaOrg\Properties\ValidThroughProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes OpeningHoursSpecification.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ClosesProperty closes()
+ * @method static \NilPortugues\SchemaOrg\Properties\DayOfWeekProperty dayOfWeek()
+ * @method static \NilPortugues\SchemaOrg\Properties\OpensProperty opens()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValidFromProperty validFrom()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValidThroughProperty validThrough()
+ * METHODEND.
+ *
+ * A structured value providing information about the opening hours of a place or a certain service inside a place.
  */
 class OpeningHoursSpecification extends SchemaClass
 {
@@ -29,42 +32,28 @@ class OpeningHoursSpecification extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/OpeningHoursSpecification';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function closes()
-    {
-        return ClosesProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dayOfWeek()
-    {
-        return DayOfWeekProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function opens()
-    {
-        return OpensProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function validFrom()
-    {
-        return ValidFromProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function validThrough()
-    {
-        return ValidThroughProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'closes' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ClosesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OpeningHoursSpecification',
+        ],
+        'dayOfWeek' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DayOfWeekProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OpeningHoursSpecification',
+        ],
+        'opens' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OpensProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OpeningHoursSpecification',
+        ],
+        'validFrom' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValidFromProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OpeningHoursSpecification',
+        ],
+        'validThrough' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValidThroughProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OpeningHoursSpecification',
+        ],
+    ];
 }

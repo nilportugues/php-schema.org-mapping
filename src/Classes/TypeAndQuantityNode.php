@@ -10,16 +10,19 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AmountOfThisGoodProperty;
-use NilPortugues\SchemaOrg\Properties\BusinessFunctionProperty;
-use NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty;
-use NilPortugues\SchemaOrg\Properties\UnitCodeProperty;
-use NilPortugues\SchemaOrg\Properties\UnitTextProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes TypeAndQuantityNode.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AmountOfThisGoodProperty amountOfThisGood()
+ * @method static \NilPortugues\SchemaOrg\Properties\BusinessFunctionProperty businessFunction()
+ * @method static \NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty typeOfGood()
+ * @method static \NilPortugues\SchemaOrg\Properties\UnitCodeProperty unitCode()
+ * @method static \NilPortugues\SchemaOrg\Properties\UnitTextProperty unitText()
+ * METHODEND.
+ *
+ * A structured value indicating the quantity, unit of measurement, and business function of goods included in a bundle offer.
  */
 class TypeAndQuantityNode extends SchemaClass
 {
@@ -29,42 +32,28 @@ class TypeAndQuantityNode extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/TypeAndQuantityNode';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function amountOfThisGood()
-    {
-        return AmountOfThisGoodProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function businessFunction()
-    {
-        return BusinessFunctionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function typeOfGood()
-    {
-        return TypeOfGoodProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function unitCode()
-    {
-        return UnitCodeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function unitText()
-    {
-        return UnitTextProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'amountOfThisGood' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AmountOfThisGoodProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TypeAndQuantityNode',
+        ],
+        'businessFunction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BusinessFunctionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TypeAndQuantityNode',
+        ],
+        'typeOfGood' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TypeAndQuantityNode',
+        ],
+        'unitCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UnitCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TypeAndQuantityNode',
+        ],
+        'unitText' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UnitTextProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\TypeAndQuantityNode',
+        ],
+    ];
 }

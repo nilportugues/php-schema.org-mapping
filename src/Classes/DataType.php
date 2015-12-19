@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes DataType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * The basic data types such as Integers, Strings, etc.
  */
 class DataType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class DataType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/DataType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Number.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Data type: Number.
  */
 class Number extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Number extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Number';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

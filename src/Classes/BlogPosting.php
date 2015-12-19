@@ -10,26 +10,29 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\ArticleBodyProperty;
-use NilPortugues\SchemaOrg\Properties\ArticleSectionProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PageEndProperty;
-use NilPortugues\SchemaOrg\Properties\PageStartProperty;
-use NilPortugues\SchemaOrg\Properties\PaginationProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
-use NilPortugues\SchemaOrg\Properties\WordCountProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BlogPosting.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ArticleBodyProperty articleBody()
+ * @method static \NilPortugues\SchemaOrg\Properties\ArticleSectionProperty articleSection()
+ * @method static \NilPortugues\SchemaOrg\Properties\WordCountProperty wordCount()
+ * @method static \NilPortugues\SchemaOrg\Properties\PageEndProperty pageEnd()
+ * @method static \NilPortugues\SchemaOrg\Properties\PageStartProperty pageStart()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaginationProperty pagination()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A blog post.
  */
 class BlogPosting extends SchemaClass
 {
@@ -39,122 +42,68 @@ class BlogPosting extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/BlogPosting';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function articleBody()
-    {
-        return ArticleBodyProperty::create(Article::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function articleSection()
-    {
-        return ArticleSectionProperty::create(Article::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function pageEnd()
-    {
-        return PageEndProperty::create(Article::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function pageStart()
-    {
-        return PageStartProperty::create(Article::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function pagination()
-    {
-        return PaginationProperty::create(Article::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function wordCount()
-    {
-        return WordCountProperty::create(Article::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'articleBody' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArticleBodyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+        'articleSection' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ArticleSectionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'pageEnd' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PageEndProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+        'pageStart' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PageStartProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+        'pagination' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaginationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'wordCount' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WordCountProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Article',
+        ],
+    ];
 }

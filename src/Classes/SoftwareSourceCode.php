@@ -10,27 +10,30 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\CodeRepositoryProperty;
-use NilPortugues\SchemaOrg\Properties\CodeSampleTypeProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\ProgrammingLanguageProperty;
-use NilPortugues\SchemaOrg\Properties\RuntimePlatformProperty;
-use NilPortugues\SchemaOrg\Properties\RuntimeProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\SampleTypeProperty;
-use NilPortugues\SchemaOrg\Properties\TargetProductProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes SoftwareSourceCode.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeRepositoryProperty codeRepository()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProgrammingLanguageProperty programmingLanguage()
+ * @method static \NilPortugues\SchemaOrg\Properties\RuntimeProperty runtime()
+ * @method static \NilPortugues\SchemaOrg\Properties\RuntimePlatformProperty runtimePlatform()
+ * @method static \NilPortugues\SchemaOrg\Properties\SampleTypeProperty sampleType()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeSampleTypeProperty codeSampleType()
+ * @method static \NilPortugues\SchemaOrg\Properties\TargetProductProperty targetProduct()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * Computer programming source code. Example: Full (compile ready) solutions, code snippet samples, scripts, templates.
  */
 class SoftwareSourceCode extends SchemaClass
 {
@@ -40,130 +43,72 @@ class SoftwareSourceCode extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/SoftwareSourceCode';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function codeRepository()
-    {
-        return CodeRepositoryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function codeSampleType()
-    {
-        return CodeSampleTypeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function programmingLanguage()
-    {
-        return ProgrammingLanguageProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function runtime()
-    {
-        return RuntimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function runtimePlatform()
-    {
-        return RuntimePlatformProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sampleType()
-    {
-        return SampleTypeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function targetProduct()
-    {
-        return TargetProductProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'codeRepository' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeRepositoryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareSourceCode',
+        ],
+        'codeSampleType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeSampleTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareSourceCode',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'programmingLanguage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProgrammingLanguageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareSourceCode',
+        ],
+        'runtime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RuntimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareSourceCode',
+        ],
+        'runtimePlatform' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RuntimePlatformProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareSourceCode',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'sampleType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SampleTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareSourceCode',
+        ],
+        'targetProduct' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TargetProductProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\SoftwareSourceCode',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

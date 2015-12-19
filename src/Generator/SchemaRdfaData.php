@@ -57,6 +57,7 @@ class SchemaRdfaData
             'subClassOf' => array_map([$this, 'renameIfPhpReservedWord'], array_filter($subClassOf)),
         ];
     }
+
     /**
      * @param $classUrl
      * @param $label
@@ -96,15 +97,83 @@ class SchemaRdfaData
     {
         $keywords = [
             //PHP7
-            'int', 'float', 'bool', 'string', 'true', 'false', 'null', 'resource', 'object', 'mixed', 'numeric',
+            'int',
+            'float',
+            'bool',
+            'string',
+            'true',
+            'false',
+            'null',
+            'resource',
+            'object',
+            'mixed',
+            'numeric',
             //PHP7 and under
-            '__halt_compiler', 'abstract', 'and', 'array', 'as', 'break', 'callable', 'case', 'catch', 'class',
-            'clone', 'const', 'continue', 'declare', 'default', 'die', 'do', 'echo', 'else', 'elseif', 'empty',
-            'enddeclare', 'endfor', 'endforeach', 'endif', 'endswitch', 'endwhile', 'eval', 'exit', 'extends',
-            'final', 'for', 'foreach', 'function', 'global', 'goto', 'if', 'implements', 'include', 'include_once',
-            'instanceof', 'insteadof', 'interface', 'isset', 'list', 'namespace', 'new', 'or', 'print', 'private',
-            'protected', 'public', 'require', 'require_once', 'return', 'static', 'switch', 'throw', 'trait', 'try',
-            'unset', 'use', 'var', 'while', 'xor',
+            '__halt_compiler',
+            'abstract',
+            'and',
+            'array',
+            'as',
+            'break',
+            'callable',
+            'case',
+            'catch',
+            'class',
+            'clone',
+            'const',
+            'continue',
+            'declare',
+            'default',
+            'die',
+            'do',
+            'echo',
+            'else',
+            'elseif',
+            'empty',
+            'enddeclare',
+            'endfor',
+            'endforeach',
+            'endif',
+            'endswitch',
+            'endwhile',
+            'eval',
+            'exit',
+            'extends',
+            'final',
+            'for',
+            'foreach',
+            'function',
+            'global',
+            'goto',
+            'if',
+            'implements',
+            'include',
+            'include_once',
+            'instanceof',
+            'insteadof',
+            'interface',
+            'isset',
+            'list',
+            'namespace',
+            'new',
+            'or',
+            'print',
+            'private',
+            'protected',
+            'public',
+            'require',
+            'require_once',
+            'return',
+            'static',
+            'switch',
+            'throw',
+            'trait',
+            'try',
+            'unset',
+            'use',
+            'var',
+            'while',
+            'xor',
         ];
 
         if (in_array(strtolower($name), $keywords, true)) {
@@ -156,7 +225,7 @@ class SchemaRdfaData
                     if (is_object($stdClassObject)) {
                         $next = $stdClassObject->subClassOf;
                         while (is_array($next) && !empty($next) && $object = array_pop($next)) {
-                            $resultingClass->properties = array_merge($resultingClass->properties,  $object->properties);
+                            $resultingClass->properties = array_merge($resultingClass->properties, $object->properties);
                         }
                     }
                 }

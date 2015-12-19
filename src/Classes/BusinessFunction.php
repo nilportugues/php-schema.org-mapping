@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BusinessFunction.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * The business function specifies the type of activity or access (i.e., the bundle of rights) offered by the organization or business person through the offer. Typical are sell, rental or lease, maintenance or repair, manufacture / produce, recycle / dispose, engineering / construction, or installation. Proprietary specifications of access rights are also instances of this class.
  */
 class BusinessFunction extends SchemaClass
 {
@@ -21,4 +25,11 @@ class BusinessFunction extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/BusinessFunction';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

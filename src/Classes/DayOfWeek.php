@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes DayOfWeek.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * The day of the week, e.g. used to specify to which day the opening hours of an OpeningHoursSpecification refer.
  */
 class DayOfWeek extends SchemaClass
 {
@@ -21,4 +25,11 @@ class DayOfWeek extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/DayOfWeek';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

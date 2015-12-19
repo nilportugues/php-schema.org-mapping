@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes MapCategoryType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * An enumeration of several kinds of Map.
  */
 class MapCategoryType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class MapCategoryType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/MapCategoryType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

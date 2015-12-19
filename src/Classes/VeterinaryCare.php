@@ -10,26 +10,29 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\BranchCodeProperty;
-use NilPortugues\SchemaOrg\Properties\BranchOfProperty;
-use NilPortugues\SchemaOrg\Properties\CurrenciesAcceptedProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\OpeningHoursProperty;
-use NilPortugues\SchemaOrg\Properties\PaymentAcceptedProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\PriceRangeProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes VeterinaryCare.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\BranchOfProperty branchOf()
+ * @method static \NilPortugues\SchemaOrg\Properties\BranchCodeProperty branchCode()
+ * @method static \NilPortugues\SchemaOrg\Properties\CurrenciesAcceptedProperty currenciesAccepted()
+ * @method static \NilPortugues\SchemaOrg\Properties\OpeningHoursProperty openingHours()
+ * @method static \NilPortugues\SchemaOrg\Properties\PaymentAcceptedProperty paymentAccepted()
+ * @method static \NilPortugues\SchemaOrg\Properties\PriceRangeProperty priceRange()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A vet's office.
  */
 class VeterinaryCare extends SchemaClass
 {
@@ -39,122 +42,68 @@ class VeterinaryCare extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/VeterinaryCare';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function branchCode()
-    {
-        return BranchCodeProperty::create(LocalBusiness::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function branchOf()
-    {
-        return BranchOfProperty::create(LocalBusiness::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function currenciesAccepted()
-    {
-        return CurrenciesAcceptedProperty::create(LocalBusiness::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function openingHours()
-    {
-        return OpeningHoursProperty::create(LocalBusiness::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function paymentAccepted()
-    {
-        return PaymentAcceptedProperty::create(LocalBusiness::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function priceRange()
-    {
-        return PriceRangeProperty::create(LocalBusiness::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'branchCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BranchCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
+        'branchOf' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BranchOfProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
+        'currenciesAccepted' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CurrenciesAcceptedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'openingHours' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OpeningHoursProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
+        'paymentAccepted' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PaymentAcceptedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'priceRange' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PriceRangeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\LocalBusiness',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

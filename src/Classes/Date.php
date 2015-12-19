@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Date.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A date value in ISO 8601 date format.
  */
 class Date extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Date extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Date';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

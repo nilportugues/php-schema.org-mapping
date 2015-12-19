@@ -10,44 +10,47 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
-use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
-use NilPortugues\SchemaOrg\Properties\AudienceProperty;
-use NilPortugues\SchemaOrg\Properties\AwardProperty;
-use NilPortugues\SchemaOrg\Properties\AwardsProperty;
-use NilPortugues\SchemaOrg\Properties\BrandProperty;
-use NilPortugues\SchemaOrg\Properties\CategoryProperty;
-use NilPortugues\SchemaOrg\Properties\ColorProperty;
-use NilPortugues\SchemaOrg\Properties\DepthProperty;
-use NilPortugues\SchemaOrg\Properties\Gtin12Property;
-use NilPortugues\SchemaOrg\Properties\Gtin13Property;
-use NilPortugues\SchemaOrg\Properties\Gtin14Property;
-use NilPortugues\SchemaOrg\Properties\Gtin8Property;
-use NilPortugues\SchemaOrg\Properties\HeightProperty;
-use NilPortugues\SchemaOrg\Properties\IsAccessoryOrSparePartForProperty;
-use NilPortugues\SchemaOrg\Properties\IsConsumableForProperty;
-use NilPortugues\SchemaOrg\Properties\IsRelatedToProperty;
-use NilPortugues\SchemaOrg\Properties\IsSimilarToProperty;
-use NilPortugues\SchemaOrg\Properties\ItemConditionProperty;
-use NilPortugues\SchemaOrg\Properties\LogoProperty;
-use NilPortugues\SchemaOrg\Properties\ManufacturerProperty;
-use NilPortugues\SchemaOrg\Properties\ModelProperty;
-use NilPortugues\SchemaOrg\Properties\MpnProperty;
-use NilPortugues\SchemaOrg\Properties\OffersProperty;
-use NilPortugues\SchemaOrg\Properties\ProductIDProperty;
-use NilPortugues\SchemaOrg\Properties\ProductionDateProperty;
-use NilPortugues\SchemaOrg\Properties\PurchaseDateProperty;
-use NilPortugues\SchemaOrg\Properties\ReleaseDateProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
-use NilPortugues\SchemaOrg\Properties\SkuProperty;
-use NilPortugues\SchemaOrg\Properties\WeightProperty;
-use NilPortugues\SchemaOrg\Properties\WidthProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Product.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AggregateRatingProperty aggregateRating()
+ * @method static \NilPortugues\SchemaOrg\Properties\AudienceProperty audience()
+ * @method static \NilPortugues\SchemaOrg\Properties\AwardProperty award()
+ * @method static \NilPortugues\SchemaOrg\Properties\AwardsProperty awards()
+ * @method static \NilPortugues\SchemaOrg\Properties\BrandProperty brand()
+ * @method static \NilPortugues\SchemaOrg\Properties\CategoryProperty category()
+ * @method static \NilPortugues\SchemaOrg\Properties\ColorProperty color()
+ * @method static \NilPortugues\SchemaOrg\Properties\DepthProperty depth()
+ * @method static \NilPortugues\SchemaOrg\Properties\Gtin12Property gtin12()
+ * @method static \NilPortugues\SchemaOrg\Properties\Gtin13Property gtin13()
+ * @method static \NilPortugues\SchemaOrg\Properties\Gtin14Property gtin14()
+ * @method static \NilPortugues\SchemaOrg\Properties\Gtin8Property gtin8()
+ * @method static \NilPortugues\SchemaOrg\Properties\HeightProperty height()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsAccessoryOrSparePartForProperty isAccessoryOrSparePartFor()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsConsumableForProperty isConsumableFor()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsRelatedToProperty isRelatedTo()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsSimilarToProperty isSimilarTo()
+ * @method static \NilPortugues\SchemaOrg\Properties\ItemConditionProperty itemCondition()
+ * @method static \NilPortugues\SchemaOrg\Properties\LogoProperty logo()
+ * @method static \NilPortugues\SchemaOrg\Properties\ManufacturerProperty manufacturer()
+ * @method static \NilPortugues\SchemaOrg\Properties\ModelProperty model()
+ * @method static \NilPortugues\SchemaOrg\Properties\MpnProperty mpn()
+ * @method static \NilPortugues\SchemaOrg\Properties\OffersProperty offers()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProductIDProperty productID()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReleaseDateProperty releaseDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewProperty review()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewsProperty reviews()
+ * @method static \NilPortugues\SchemaOrg\Properties\SkuProperty sku()
+ * @method static \NilPortugues\SchemaOrg\Properties\WeightProperty weight()
+ * @method static \NilPortugues\SchemaOrg\Properties\WidthProperty width()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProductionDateProperty productionDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\PurchaseDateProperty purchaseDate()
+ * METHODEND.
+ *
+ * Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.
  */
 class Product extends SchemaClass
 {
@@ -57,266 +60,140 @@ class Product extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Product';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalProperty()
-    {
-        return AdditionalPropertyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function aggregateRating()
-    {
-        return AggregateRatingProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function audience()
-    {
-        return AudienceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function award()
-    {
-        return AwardProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function awards()
-    {
-        return AwardsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function brand()
-    {
-        return BrandProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function category()
-    {
-        return CategoryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function color()
-    {
-        return ColorProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function depth()
-    {
-        return DepthProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function gtin12()
-    {
-        return Gtin12Property::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function gtin13()
-    {
-        return Gtin13Property::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function gtin14()
-    {
-        return Gtin14Property::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function gtin8()
-    {
-        return Gtin8Property::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function height()
-    {
-        return HeightProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isAccessoryOrSparePartFor()
-    {
-        return IsAccessoryOrSparePartForProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isConsumableFor()
-    {
-        return IsConsumableForProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isRelatedTo()
-    {
-        return IsRelatedToProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isSimilarTo()
-    {
-        return IsSimilarToProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function itemCondition()
-    {
-        return ItemConditionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function logo()
-    {
-        return LogoProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function manufacturer()
-    {
-        return ManufacturerProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function model()
-    {
-        return ModelProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mpn()
-    {
-        return MpnProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function offers()
-    {
-        return OffersProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function productID()
-    {
-        return ProductIDProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function productionDate()
-    {
-        return ProductionDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function purchaseDate()
-    {
-        return PurchaseDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function releaseDate()
-    {
-        return ReleaseDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function review()
-    {
-        return ReviewProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reviews()
-    {
-        return ReviewsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sku()
-    {
-        return SkuProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function weight()
-    {
-        return WeightProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function width()
-    {
-        return WidthProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalProperty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'aggregateRating' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'audience' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AudienceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'award' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'awards' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'brand' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BrandProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'category' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CategoryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'color' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ColorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'depth' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepthProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'gtin12' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\Gtin12Property',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'gtin13' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\Gtin13Property',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'gtin14' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\Gtin14Property',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'gtin8' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\Gtin8Property',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'height' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeightProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'isAccessoryOrSparePartFor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsAccessoryOrSparePartForProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'isConsumableFor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsConsumableForProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'isRelatedTo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsRelatedToProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'isSimilarTo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsSimilarToProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'itemCondition' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ItemConditionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'logo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LogoProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'manufacturer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ManufacturerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'model' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ModelProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'mpn' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MpnProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'offers' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'productID' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductIDProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'productionDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProductionDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'purchaseDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PurchaseDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'releaseDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReleaseDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'review' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'reviews' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'sku' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SkuProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'weight' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WeightProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+        'width' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WidthProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Product',
+        ],
+    ];
 }

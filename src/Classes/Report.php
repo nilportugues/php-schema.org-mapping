@@ -10,82 +10,85 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AboutProperty;
-use NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty;
-use NilPortugues\SchemaOrg\Properties\AccessibilityControlProperty;
-use NilPortugues\SchemaOrg\Properties\AccessibilityFeatureProperty;
-use NilPortugues\SchemaOrg\Properties\AccessibilityHazardProperty;
-use NilPortugues\SchemaOrg\Properties\AccountablePersonProperty;
-use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
-use NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty;
-use NilPortugues\SchemaOrg\Properties\AssociatedMediaProperty;
-use NilPortugues\SchemaOrg\Properties\AudienceProperty;
-use NilPortugues\SchemaOrg\Properties\AudioProperty;
-use NilPortugues\SchemaOrg\Properties\AuthorProperty;
-use NilPortugues\SchemaOrg\Properties\AwardProperty;
-use NilPortugues\SchemaOrg\Properties\AwardsProperty;
-use NilPortugues\SchemaOrg\Properties\CharacterProperty;
-use NilPortugues\SchemaOrg\Properties\CitationProperty;
-use NilPortugues\SchemaOrg\Properties\CommentCountProperty;
-use NilPortugues\SchemaOrg\Properties\CommentProperty;
-use NilPortugues\SchemaOrg\Properties\ContentLocationProperty;
-use NilPortugues\SchemaOrg\Properties\ContentRatingProperty;
-use NilPortugues\SchemaOrg\Properties\ContributorProperty;
-use NilPortugues\SchemaOrg\Properties\CopyrightHolderProperty;
-use NilPortugues\SchemaOrg\Properties\CopyrightYearProperty;
-use NilPortugues\SchemaOrg\Properties\CreatorProperty;
-use NilPortugues\SchemaOrg\Properties\DateCreatedProperty;
-use NilPortugues\SchemaOrg\Properties\DateModifiedProperty;
-use NilPortugues\SchemaOrg\Properties\DatePublishedProperty;
-use NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty;
-use NilPortugues\SchemaOrg\Properties\EditorProperty;
-use NilPortugues\SchemaOrg\Properties\EducationalAlignmentProperty;
-use NilPortugues\SchemaOrg\Properties\EducationalUseProperty;
-use NilPortugues\SchemaOrg\Properties\EncodingProperty;
-use NilPortugues\SchemaOrg\Properties\EncodingsProperty;
-use NilPortugues\SchemaOrg\Properties\ExampleOfWorkProperty;
-use NilPortugues\SchemaOrg\Properties\FileFormatProperty;
-use NilPortugues\SchemaOrg\Properties\GenreProperty;
-use NilPortugues\SchemaOrg\Properties\HasPartProperty;
-use NilPortugues\SchemaOrg\Properties\HeadlineProperty;
-use NilPortugues\SchemaOrg\Properties\InLanguageProperty;
-use NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty;
-use NilPortugues\SchemaOrg\Properties\InteractivityTypeProperty;
-use NilPortugues\SchemaOrg\Properties\IsBasedOnUrlProperty;
-use NilPortugues\SchemaOrg\Properties\IsFamilyFriendlyProperty;
-use NilPortugues\SchemaOrg\Properties\IsPartOfProperty;
-use NilPortugues\SchemaOrg\Properties\KeywordsProperty;
-use NilPortugues\SchemaOrg\Properties\LearningResourceTypeProperty;
-use NilPortugues\SchemaOrg\Properties\LicenseProperty;
-use NilPortugues\SchemaOrg\Properties\LocationCreatedProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityProperty;
-use NilPortugues\SchemaOrg\Properties\MentionsProperty;
-use NilPortugues\SchemaOrg\Properties\OffersProperty;
-use NilPortugues\SchemaOrg\Properties\PositionProperty;
-use NilPortugues\SchemaOrg\Properties\ProducerProperty;
-use NilPortugues\SchemaOrg\Properties\ProviderProperty;
-use NilPortugues\SchemaOrg\Properties\PublicationProperty;
-use NilPortugues\SchemaOrg\Properties\PublisherProperty;
-use NilPortugues\SchemaOrg\Properties\PublishingPrinciplesProperty;
-use NilPortugues\SchemaOrg\Properties\RecordedAtProperty;
-use NilPortugues\SchemaOrg\Properties\ReportNumberProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
-use NilPortugues\SchemaOrg\Properties\SchemaVersionProperty;
-use NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty;
-use NilPortugues\SchemaOrg\Properties\TextProperty;
-use NilPortugues\SchemaOrg\Properties\ThumbnailUrlProperty;
-use NilPortugues\SchemaOrg\Properties\TimeRequiredProperty;
-use NilPortugues\SchemaOrg\Properties\TranslatorProperty;
-use NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty;
-use NilPortugues\SchemaOrg\Properties\VersionProperty;
-use NilPortugues\SchemaOrg\Properties\VideoProperty;
-use NilPortugues\SchemaOrg\Properties\WorkExampleProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Report.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ReportNumberProperty reportNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\SchemaVersionProperty schemaVersion()
+ * @method static \NilPortugues\SchemaOrg\Properties\AboutProperty about()
+ * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty accessibilityAPI()
+ * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityControlProperty accessibilityControl()
+ * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityFeatureProperty accessibilityFeature()
+ * @method static \NilPortugues\SchemaOrg\Properties\AccessibilityHazardProperty accessibilityHazard()
+ * @method static \NilPortugues\SchemaOrg\Properties\AccountablePersonProperty accountablePerson()
+ * @method static \NilPortugues\SchemaOrg\Properties\AggregateRatingProperty aggregateRating()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty alternativeHeadline()
+ * @method static \NilPortugues\SchemaOrg\Properties\AssociatedMediaProperty associatedMedia()
+ * @method static \NilPortugues\SchemaOrg\Properties\AudienceProperty audience()
+ * @method static \NilPortugues\SchemaOrg\Properties\AudioProperty audio()
+ * @method static \NilPortugues\SchemaOrg\Properties\AuthorProperty author()
+ * @method static \NilPortugues\SchemaOrg\Properties\AwardProperty award()
+ * @method static \NilPortugues\SchemaOrg\Properties\AwardsProperty awards()
+ * @method static \NilPortugues\SchemaOrg\Properties\CitationProperty citation()
+ * @method static \NilPortugues\SchemaOrg\Properties\CommentProperty comment()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContentLocationProperty contentLocation()
+ * @method static \NilPortugues\SchemaOrg\Properties\LocationCreatedProperty locationCreated()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContentRatingProperty contentRating()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContributorProperty contributor()
+ * @method static \NilPortugues\SchemaOrg\Properties\CopyrightHolderProperty copyrightHolder()
+ * @method static \NilPortugues\SchemaOrg\Properties\CopyrightYearProperty copyrightYear()
+ * @method static \NilPortugues\SchemaOrg\Properties\CreatorProperty creator()
+ * @method static \NilPortugues\SchemaOrg\Properties\DateCreatedProperty dateCreated()
+ * @method static \NilPortugues\SchemaOrg\Properties\DateModifiedProperty dateModified()
+ * @method static \NilPortugues\SchemaOrg\Properties\DatePublishedProperty datePublished()
+ * @method static \NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty discussionUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\EditorProperty editor()
+ * @method static \NilPortugues\SchemaOrg\Properties\EducationalAlignmentProperty educationalAlignment()
+ * @method static \NilPortugues\SchemaOrg\Properties\EducationalUseProperty educationalUse()
+ * @method static \NilPortugues\SchemaOrg\Properties\EncodingProperty encoding()
+ * @method static \NilPortugues\SchemaOrg\Properties\EncodingsProperty encodings()
+ * @method static \NilPortugues\SchemaOrg\Properties\FileFormatProperty fileFormat()
+ * @method static \NilPortugues\SchemaOrg\Properties\GenreProperty genre()
+ * @method static \NilPortugues\SchemaOrg\Properties\HeadlineProperty headline()
+ * @method static \NilPortugues\SchemaOrg\Properties\InLanguageProperty inLanguage()
+ * @method static \NilPortugues\SchemaOrg\Properties\InteractivityTypeProperty interactivityType()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsBasedOnUrlProperty isBasedOnUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsFamilyFriendlyProperty isFamilyFriendly()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsPartOfProperty isPartOf()
+ * @method static \NilPortugues\SchemaOrg\Properties\KeywordsProperty keywords()
+ * @method static \NilPortugues\SchemaOrg\Properties\LicenseProperty license()
+ * @method static \NilPortugues\SchemaOrg\Properties\LearningResourceTypeProperty learningResourceType()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityProperty mainEntity()
+ * @method static \NilPortugues\SchemaOrg\Properties\MentionsProperty mentions()
+ * @method static \NilPortugues\SchemaOrg\Properties\OffersProperty offers()
+ * @method static \NilPortugues\SchemaOrg\Properties\PositionProperty position()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProducerProperty producer()
+ * @method static \NilPortugues\SchemaOrg\Properties\PublicationProperty publication()
+ * @method static \NilPortugues\SchemaOrg\Properties\PublisherProperty publisher()
+ * @method static \NilPortugues\SchemaOrg\Properties\PublishingPrinciplesProperty publishingPrinciples()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecordedAtProperty recordedAt()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewProperty review()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewsProperty reviews()
+ * @method static \NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty sourceOrganization()
+ * @method static \NilPortugues\SchemaOrg\Properties\TextProperty text()
+ * @method static \NilPortugues\SchemaOrg\Properties\ThumbnailUrlProperty thumbnailUrl()
+ * @method static \NilPortugues\SchemaOrg\Properties\TimeRequiredProperty timeRequired()
+ * @method static \NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty typicalAgeRange()
+ * @method static \NilPortugues\SchemaOrg\Properties\VersionProperty version()
+ * @method static \NilPortugues\SchemaOrg\Properties\VideoProperty video()
+ * @method static \NilPortugues\SchemaOrg\Properties\ProviderProperty provider()
+ * @method static \NilPortugues\SchemaOrg\Properties\CommentCountProperty commentCount()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasPartProperty hasPart()
+ * @method static \NilPortugues\SchemaOrg\Properties\WorkExampleProperty workExample()
+ * @method static \NilPortugues\SchemaOrg\Properties\ExampleOfWorkProperty exampleOfWork()
+ * @method static \NilPortugues\SchemaOrg\Properties\CharacterProperty character()
+ * @method static \NilPortugues\SchemaOrg\Properties\TranslatorProperty translator()
+ * @method static \NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty interactionStatistic()
+ * METHODEND.
+ *
+ * A Report generated by governmental or non-governmental organization.
  */
 class Report extends SchemaClass
 {
@@ -95,570 +98,292 @@ class Report extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Report';
 
     /**
-     * @return Mapping
-     */
-    public static function about()
-    {
-        return AboutProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function accessibilityAPI()
-    {
-        return AccessibilityAPIProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function accessibilityControl()
-    {
-        return AccessibilityControlProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function accessibilityFeature()
-    {
-        return AccessibilityFeatureProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function accessibilityHazard()
-    {
-        return AccessibilityHazardProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function accountablePerson()
-    {
-        return AccountablePersonProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function aggregateRating()
-    {
-        return AggregateRatingProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternativeHeadline()
-    {
-        return AlternativeHeadlineProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function associatedMedia()
-    {
-        return AssociatedMediaProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function audience()
-    {
-        return AudienceProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function audio()
-    {
-        return AudioProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function author()
-    {
-        return AuthorProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function award()
-    {
-        return AwardProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function awards()
-    {
-        return AwardsProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function character()
-    {
-        return CharacterProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function citation()
-    {
-        return CitationProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function comment()
-    {
-        return CommentProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function commentCount()
-    {
-        return CommentCountProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contentLocation()
-    {
-        return ContentLocationProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contentRating()
-    {
-        return ContentRatingProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contributor()
-    {
-        return ContributorProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function copyrightHolder()
-    {
-        return CopyrightHolderProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function copyrightYear()
-    {
-        return CopyrightYearProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function creator()
-    {
-        return CreatorProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dateCreated()
-    {
-        return DateCreatedProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dateModified()
-    {
-        return DateModifiedProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function datePublished()
-    {
-        return DatePublishedProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function discussionUrl()
-    {
-        return DiscussionUrlProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function editor()
-    {
-        return EditorProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function educationalAlignment()
-    {
-        return EducationalAlignmentProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function educationalUse()
-    {
-        return EducationalUseProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function encoding()
-    {
-        return EncodingProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function encodings()
-    {
-        return EncodingsProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function exampleOfWork()
-    {
-        return ExampleOfWorkProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function fileFormat()
-    {
-        return FileFormatProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function genre()
-    {
-        return GenreProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function hasPart()
-    {
-        return HasPartProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function headline()
-    {
-        return HeadlineProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function inLanguage()
-    {
-        return InLanguageProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function interactionStatistic()
-    {
-        return InteractionStatisticProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function interactivityType()
-    {
-        return InteractivityTypeProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isBasedOnUrl()
-    {
-        return IsBasedOnUrlProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isFamilyFriendly()
-    {
-        return IsFamilyFriendlyProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isPartOf()
-    {
-        return IsPartOfProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function keywords()
-    {
-        return KeywordsProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function learningResourceType()
-    {
-        return LearningResourceTypeProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function license()
-    {
-        return LicenseProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function locationCreated()
-    {
-        return LocationCreatedProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntity()
-    {
-        return MainEntityProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mentions()
-    {
-        return MentionsProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function offers()
-    {
-        return OffersProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function position()
-    {
-        return PositionProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function producer()
-    {
-        return ProducerProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function provider()
-    {
-        return ProviderProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function publication()
-    {
-        return PublicationProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function publisher()
-    {
-        return PublisherProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function publishingPrinciples()
-    {
-        return PublishingPrinciplesProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recordedAt()
-    {
-        return RecordedAtProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reportNumber()
-    {
-        return ReportNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function review()
-    {
-        return ReviewProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reviews()
-    {
-        return ReviewsProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function schemaVersion()
-    {
-        return SchemaVersionProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sourceOrganization()
-    {
-        return SourceOrganizationProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function text()
-    {
-        return TextProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function thumbnailUrl()
-    {
-        return ThumbnailUrlProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function timeRequired()
-    {
-        return TimeRequiredProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function translator()
-    {
-        return TranslatorProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function typicalAgeRange()
-    {
-        return TypicalAgeRangeProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function version()
-    {
-        return VersionProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function video()
-    {
-        return VideoProperty::create(CreativeWork::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function workExample()
-    {
-        return WorkExampleProperty::create(CreativeWork::schemaUrl());
-    }
+     * @var array
+     */
+    protected static $supportedMethods = [
+        'about' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AboutProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'accessibilityAPI' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'accessibilityControl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccessibilityControlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'accessibilityFeature' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccessibilityFeatureProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'accessibilityHazard' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccessibilityHazardProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'accountablePerson' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AccountablePersonProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'aggregateRating' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'alternativeHeadline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'associatedMedia' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AssociatedMediaProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'audience' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AudienceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'audio' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AudioProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'author' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AuthorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'award' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'awards' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'character' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CharacterProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'citation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CitationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'comment' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CommentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'commentCount' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CommentCountProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'contentLocation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContentLocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'contentRating' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContentRatingProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'contributor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContributorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'copyrightHolder' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CopyrightHolderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'copyrightYear' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CopyrightYearProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'creator' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CreatorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'dateCreated' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DateCreatedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'dateModified' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DateModifiedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'datePublished' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DatePublishedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'discussionUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'editor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EditorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'educationalAlignment' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EducationalAlignmentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'educationalUse' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EducationalUseProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'encoding' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'encodings' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EncodingsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'exampleOfWork' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ExampleOfWorkProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'fileFormat' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FileFormatProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'genre' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GenreProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'hasPart' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasPartProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'headline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeadlineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'inLanguage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InLanguageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'interactionStatistic' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'interactivityType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\InteractivityTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'isBasedOnUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsBasedOnUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'isFamilyFriendly' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsFamilyFriendlyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'isPartOf' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsPartOfProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'keywords' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\KeywordsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'learningResourceType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LearningResourceTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'license' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LicenseProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'locationCreated' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationCreatedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'mainEntity' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'mentions' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MentionsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'offers' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OffersProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'position' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PositionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'producer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProducerProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'provider' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ProviderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'publication' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PublicationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'publisher' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PublisherProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'publishingPrinciples' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PublishingPrinciplesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'recordedAt' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecordedAtProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'reportNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReportNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Report',
+        ],
+        'review' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'reviews' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'schemaVersion' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SchemaVersionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'sourceOrganization' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'text' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TextProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'thumbnailUrl' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ThumbnailUrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'timeRequired' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TimeRequiredProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'translator' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TranslatorProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'typicalAgeRange' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'version' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VersionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'video' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VideoProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+        'workExample' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WorkExampleProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\CreativeWork',
+        ],
+    ];
 }

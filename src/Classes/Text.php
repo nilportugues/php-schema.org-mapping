@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Text.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Data type: Text.
  */
 class Text extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Text extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Text';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

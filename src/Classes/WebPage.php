@@ -10,29 +10,32 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\BreadcrumbProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\LastReviewedProperty;
-use NilPortugues\SchemaOrg\Properties\MainContentOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\PrimaryImageOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\RelatedLinkProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewedByProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\SignificantLinkProperty;
-use NilPortugues\SchemaOrg\Properties\SignificantLinksProperty;
-use NilPortugues\SchemaOrg\Properties\SpecialtyProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes WebPage.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\BreadcrumbProperty breadcrumb()
+ * @method static \NilPortugues\SchemaOrg\Properties\LastReviewedProperty lastReviewed()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainContentOfPageProperty mainContentOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\PrimaryImageOfPageProperty primaryImageOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelatedLinkProperty relatedLink()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewedByProperty reviewedBy()
+ * @method static \NilPortugues\SchemaOrg\Properties\SignificantLinkProperty significantLink()
+ * @method static \NilPortugues\SchemaOrg\Properties\SignificantLinksProperty significantLinks()
+ * @method static \NilPortugues\SchemaOrg\Properties\SpecialtyProperty specialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A web page. Every web page is implicitly assumed to be declared to be of type WebPage, so the various properties about that webpage, such as breadcrumb may be used. We recommend explicit declaration if these properties are specified, but if they are found outside of an itemscope, they will be assumed to be about the page.
  */
 class WebPage extends SchemaClass
 {
@@ -42,146 +45,80 @@ class WebPage extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/WebPage';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function breadcrumb()
-    {
-        return BreadcrumbProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function lastReviewed()
-    {
-        return LastReviewedProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainContentOfPage()
-    {
-        return MainContentOfPageProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function primaryImageOfPage()
-    {
-        return PrimaryImageOfPageProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relatedLink()
-    {
-        return RelatedLinkProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reviewedBy()
-    {
-        return ReviewedByProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function significantLink()
-    {
-        return SignificantLinkProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function significantLinks()
-    {
-        return SignificantLinksProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function specialty()
-    {
-        return SpecialtyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'breadcrumb' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BreadcrumbProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'lastReviewed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LastReviewedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'mainContentOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainContentOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'primaryImageOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PrimaryImageOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'relatedLink' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelatedLinkProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'reviewedBy' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewedByProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'significantLink' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SignificantLinkProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'significantLinks' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SignificantLinksProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'specialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\WebPage',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

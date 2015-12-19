@@ -10,17 +10,20 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AddressCountryProperty;
-use NilPortugues\SchemaOrg\Properties\AddressProperty;
-use NilPortugues\SchemaOrg\Properties\ElevationProperty;
-use NilPortugues\SchemaOrg\Properties\LatitudeProperty;
-use NilPortugues\SchemaOrg\Properties\LongitudeProperty;
-use NilPortugues\SchemaOrg\Properties\PostalCodeProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes GeoCoordinates.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressProperty address()
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressCountryProperty addressCountry()
+ * @method static \NilPortugues\SchemaOrg\Properties\ElevationProperty elevation()
+ * @method static \NilPortugues\SchemaOrg\Properties\LatitudeProperty latitude()
+ * @method static \NilPortugues\SchemaOrg\Properties\LongitudeProperty longitude()
+ * @method static \NilPortugues\SchemaOrg\Properties\PostalCodeProperty postalCode()
+ * METHODEND.
+ *
+ * The geographic coordinates of a place or event.
  */
 class GeoCoordinates extends SchemaClass
 {
@@ -30,50 +33,32 @@ class GeoCoordinates extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/GeoCoordinates';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function address()
-    {
-        return AddressProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function addressCountry()
-    {
-        return AddressCountryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function elevation()
-    {
-        return ElevationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function latitude()
-    {
-        return LatitudeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function longitude()
-    {
-        return LongitudeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function postalCode()
-    {
-        return PostalCodeProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'address' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoCoordinates',
+        ],
+        'addressCountry' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressCountryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoCoordinates',
+        ],
+        'elevation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ElevationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoCoordinates',
+        ],
+        'latitude' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LatitudeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoCoordinates',
+        ],
+        'longitude' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LongitudeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoCoordinates',
+        ],
+        'postalCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PostalCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoCoordinates',
+        ],
+    ];
 }

@@ -10,31 +10,34 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
-use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
-use NilPortugues\SchemaOrg\Properties\CookTimeProperty;
-use NilPortugues\SchemaOrg\Properties\CookingMethodProperty;
-use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
-use NilPortugues\SchemaOrg\Properties\ImageProperty;
-use NilPortugues\SchemaOrg\Properties\IngredientsProperty;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
-use NilPortugues\SchemaOrg\Properties\NameProperty;
-use NilPortugues\SchemaOrg\Properties\NutritionProperty;
-use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
-use NilPortugues\SchemaOrg\Properties\PrepTimeProperty;
-use NilPortugues\SchemaOrg\Properties\RecipeCategoryProperty;
-use NilPortugues\SchemaOrg\Properties\RecipeCuisineProperty;
-use NilPortugues\SchemaOrg\Properties\RecipeIngredientProperty;
-use NilPortugues\SchemaOrg\Properties\RecipeInstructionsProperty;
-use NilPortugues\SchemaOrg\Properties\RecipeYieldProperty;
-use NilPortugues\SchemaOrg\Properties\SameAsProperty;
-use NilPortugues\SchemaOrg\Properties\TotalTimeProperty;
-use NilPortugues\SchemaOrg\Properties\UrlProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Recipe.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\CookingMethodProperty cookingMethod()
+ * @method static \NilPortugues\SchemaOrg\Properties\CookTimeProperty cookTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\IngredientsProperty ingredients()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecipeIngredientProperty recipeIngredient()
+ * @method static \NilPortugues\SchemaOrg\Properties\NutritionProperty nutrition()
+ * @method static \NilPortugues\SchemaOrg\Properties\PrepTimeProperty prepTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecipeCategoryProperty recipeCategory()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecipeCuisineProperty recipeCuisine()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecipeInstructionsProperty recipeInstructions()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecipeYieldProperty recipeYield()
+ * @method static \NilPortugues\SchemaOrg\Properties\TotalTimeProperty totalTime()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty additionalType()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlternateNameProperty alternateName()
+ * @method static \NilPortugues\SchemaOrg\Properties\DescriptionProperty description()
+ * @method static \NilPortugues\SchemaOrg\Properties\ImageProperty image()
+ * @method static \NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty mainEntityOfPage()
+ * @method static \NilPortugues\SchemaOrg\Properties\NameProperty name()
+ * @method static \NilPortugues\SchemaOrg\Properties\SameAsProperty sameAs()
+ * @method static \NilPortugues\SchemaOrg\Properties\UrlProperty url()
+ * @method static \NilPortugues\SchemaOrg\Properties\PotentialActionProperty potentialAction()
+ * METHODEND.
+ *
+ * A recipe.
  */
 class Recipe extends SchemaClass
 {
@@ -44,162 +47,88 @@ class Recipe extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Recipe';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalType()
-    {
-        return AdditionalTypeProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alternateName()
-    {
-        return AlternateNameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function cookTime()
-    {
-        return CookTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function cookingMethod()
-    {
-        return CookingMethodProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function description()
-    {
-        return DescriptionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function image()
-    {
-        return ImageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function ingredients()
-    {
-        return IngredientsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function mainEntityOfPage()
-    {
-        return MainEntityOfPageProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function name()
-    {
-        return NameProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function nutrition()
-    {
-        return NutritionProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function potentialAction()
-    {
-        return PotentialActionProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function prepTime()
-    {
-        return PrepTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recipeCategory()
-    {
-        return RecipeCategoryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recipeCuisine()
-    {
-        return RecipeCuisineProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recipeIngredient()
-    {
-        return RecipeIngredientProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recipeInstructions()
-    {
-        return RecipeInstructionsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recipeYield()
-    {
-        return RecipeYieldProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sameAs()
-    {
-        return SameAsProperty::create(Thing::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function totalTime()
-    {
-        return TotalTimeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function url()
-    {
-        return UrlProperty::create(Thing::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalType' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'alternateName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlternateNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'cookTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CookTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'cookingMethod' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CookingMethodProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'description' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DescriptionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'image' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ImageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'ingredients' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IngredientsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'mainEntityOfPage' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'name' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'nutrition' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NutritionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'potentialAction' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PotentialActionProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'prepTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PrepTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'recipeCategory' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecipeCategoryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'recipeCuisine' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecipeCuisineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'recipeIngredient' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecipeIngredientProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'recipeInstructions' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecipeInstructionsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'recipeYield' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecipeYieldProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'sameAs' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SameAsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+        'totalTime' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TotalTimeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Recipe',
+        ],
+        'url' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\UrlProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Thing',
+        ],
+    ];
 }

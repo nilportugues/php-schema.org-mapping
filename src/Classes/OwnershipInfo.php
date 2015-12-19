@@ -10,15 +10,18 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AcquiredFromProperty;
-use NilPortugues\SchemaOrg\Properties\OwnedFromProperty;
-use NilPortugues\SchemaOrg\Properties\OwnedThroughProperty;
-use NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes OwnershipInfo.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AcquiredFromProperty acquiredFrom()
+ * @method static \NilPortugues\SchemaOrg\Properties\OwnedFromProperty ownedFrom()
+ * @method static \NilPortugues\SchemaOrg\Properties\OwnedThroughProperty ownedThrough()
+ * @method static \NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty typeOfGood()
+ * METHODEND.
+ *
+ * A structured value providing information about when a certain organization or person owned a certain product.
  */
 class OwnershipInfo extends SchemaClass
 {
@@ -28,34 +31,24 @@ class OwnershipInfo extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/OwnershipInfo';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function acquiredFrom()
-    {
-        return AcquiredFromProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function ownedFrom()
-    {
-        return OwnedFromProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function ownedThrough()
-    {
-        return OwnedThroughProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function typeOfGood()
-    {
-        return TypeOfGoodProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'acquiredFrom' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AcquiredFromProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OwnershipInfo',
+        ],
+        'ownedFrom' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OwnedFromProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OwnershipInfo',
+        ],
+        'ownedThrough' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OwnedThroughProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OwnershipInfo',
+        ],
+        'typeOfGood' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\OwnershipInfo',
+        ],
+    ];
 }

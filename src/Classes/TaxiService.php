@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes TaxiService.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A service for a vehicle for hire with a driver for local travel. Fares are usually calculated based on distance traveled.
  */
 class TaxiService extends SchemaClass
 {
@@ -21,4 +25,11 @@ class TaxiService extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/TaxiService';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

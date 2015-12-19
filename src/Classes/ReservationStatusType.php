@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes ReservationStatusType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Enumerated status values for Reservation.
  */
 class ReservationStatusType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class ReservationStatusType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/ReservationStatusType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

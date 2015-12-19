@@ -13,7 +13,9 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BreadcrumbList.
+ * METHODSTART.
+ 
+ * METHODEND.
  */
 class BreadcrumbList extends SchemaClass
 {
@@ -21,4 +23,11 @@ class BreadcrumbList extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/BreadcrumbList';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

@@ -10,19 +10,22 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AddressCountryProperty;
-use NilPortugues\SchemaOrg\Properties\AddressProperty;
-use NilPortugues\SchemaOrg\Properties\BoxProperty;
-use NilPortugues\SchemaOrg\Properties\CircleProperty;
-use NilPortugues\SchemaOrg\Properties\ElevationProperty;
-use NilPortugues\SchemaOrg\Properties\LineProperty;
-use NilPortugues\SchemaOrg\Properties\PolygonProperty;
-use NilPortugues\SchemaOrg\Properties\PostalCodeProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes GeoShape.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressProperty address()
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressCountryProperty addressCountry()
+ * @method static \NilPortugues\SchemaOrg\Properties\BoxProperty box()
+ * @method static \NilPortugues\SchemaOrg\Properties\CircleProperty circle()
+ * @method static \NilPortugues\SchemaOrg\Properties\ElevationProperty elevation()
+ * @method static \NilPortugues\SchemaOrg\Properties\LineProperty line()
+ * @method static \NilPortugues\SchemaOrg\Properties\PolygonProperty polygon()
+ * @method static \NilPortugues\SchemaOrg\Properties\PostalCodeProperty postalCode()
+ * METHODEND.
+ *
+ * The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.
  */
 class GeoShape extends SchemaClass
 {
@@ -32,66 +35,40 @@ class GeoShape extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/GeoShape';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function address()
-    {
-        return AddressProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function addressCountry()
-    {
-        return AddressCountryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function box()
-    {
-        return BoxProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function circle()
-    {
-        return CircleProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function elevation()
-    {
-        return ElevationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function line()
-    {
-        return LineProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function polygon()
-    {
-        return PolygonProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function postalCode()
-    {
-        return PostalCodeProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'address' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'addressCountry' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressCountryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'box' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BoxProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'circle' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CircleProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'elevation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ElevationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'line' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'polygon' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PolygonProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+        'postalCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PostalCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\GeoShape',
+        ],
+    ];
 }

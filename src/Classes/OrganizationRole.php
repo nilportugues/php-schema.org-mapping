@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes OrganizationRole.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A subclass of Role used to describe roles within organizations.
  */
 class OrganizationRole extends SchemaClass
 {
@@ -21,4 +25,11 @@ class OrganizationRole extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/OrganizationRole';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

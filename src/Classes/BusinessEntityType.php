@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BusinessEntityType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A business entity type is a conceptual entity representing the legal form, the size, the main line of business, the position in the value chain, or any combination thereof, of an organization or business person.
  */
 class BusinessEntityType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class BusinessEntityType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/BusinessEntityType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

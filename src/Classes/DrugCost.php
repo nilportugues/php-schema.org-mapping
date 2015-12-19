@@ -10,23 +10,26 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ApplicableLocationProperty;
-use NilPortugues\SchemaOrg\Properties\CodeProperty;
-use NilPortugues\SchemaOrg\Properties\CostCategoryProperty;
-use NilPortugues\SchemaOrg\Properties\CostCurrencyProperty;
-use NilPortugues\SchemaOrg\Properties\CostOriginProperty;
-use NilPortugues\SchemaOrg\Properties\CostPerUnitProperty;
-use NilPortugues\SchemaOrg\Properties\DrugUnitProperty;
-use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
-use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
-use NilPortugues\SchemaOrg\Properties\StudyProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes DrugCost.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\ApplicableLocationProperty applicableLocation()
+ * @method static \NilPortugues\SchemaOrg\Properties\CostCategoryProperty costCategory()
+ * @method static \NilPortugues\SchemaOrg\Properties\CostCurrencyProperty costCurrency()
+ * @method static \NilPortugues\SchemaOrg\Properties\CostOriginProperty costOrigin()
+ * @method static \NilPortugues\SchemaOrg\Properties\CostPerUnitProperty costPerUnit()
+ * @method static \NilPortugues\SchemaOrg\Properties\DrugUnitProperty drugUnit()
+ * @method static \NilPortugues\SchemaOrg\Properties\CodeProperty code()
+ * @method static \NilPortugues\SchemaOrg\Properties\GuidelineProperty guideline()
+ * @method static \NilPortugues\SchemaOrg\Properties\MedicineSystemProperty medicineSystem()
+ * @method static \NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty recognizingAuthority()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty relevantSpecialty()
+ * @method static \NilPortugues\SchemaOrg\Properties\StudyProperty study()
+ * METHODEND.
+ *
+ * The cost per unit of a medical drug. Note that this type is not meant to represent the price in an offer of a drug for sale; see the Offer type for that. This type will typically be used to tag wholesale or average retail cost of a drug, or maximum reimbursable cost. Costs of medical drugs vary widely depending on how and where they are paid for, so while this type captures some of the variables, costs should be used with caution by consumers of this schema's markup.
  */
 class DrugCost extends SchemaClass
 {
@@ -36,98 +39,56 @@ class DrugCost extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/DrugCost';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function applicableLocation()
-    {
-        return ApplicableLocationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function code()
-    {
-        return CodeProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function costCategory()
-    {
-        return CostCategoryProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function costCurrency()
-    {
-        return CostCurrencyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function costOrigin()
-    {
-        return CostOriginProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function costPerUnit()
-    {
-        return CostPerUnitProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function drugUnit()
-    {
-        return DrugUnitProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function guideline()
-    {
-        return GuidelineProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function medicineSystem()
-    {
-        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function recognizingAuthority()
-    {
-        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relevantSpecialty()
-    {
-        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function study()
-    {
-        return StudyProperty::create(MedicalEntity::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'applicableLocation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ApplicableLocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugCost',
+        ],
+        'code' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'costCategory' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CostCategoryProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugCost',
+        ],
+        'costCurrency' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CostCurrencyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugCost',
+        ],
+        'costOrigin' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CostOriginProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugCost',
+        ],
+        'costPerUnit' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\CostPerUnitProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugCost',
+        ],
+        'drugUnit' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DrugUnitProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\DrugCost',
+        ],
+        'guideline' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GuidelineProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'medicineSystem' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MedicineSystemProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'recognizingAuthority' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'relevantSpecialty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+        'study' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\StudyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\MedicalEntity',
+        ],
+    ];
 }

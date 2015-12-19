@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes ContactPointOption.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Enumerated options related to a ContactPoint.
  */
 class ContactPointOption extends SchemaClass
 {
@@ -21,4 +25,11 @@ class ContactPointOption extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/ContactPointOption';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

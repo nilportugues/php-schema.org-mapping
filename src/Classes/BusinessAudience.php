@@ -10,14 +10,17 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty;
-use NilPortugues\SchemaOrg\Properties\YearlyRevenueProperty;
-use NilPortugues\SchemaOrg\Properties\YearsInOperationProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes BusinessAudience.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty numberOfEmployees()
+ * @method static \NilPortugues\SchemaOrg\Properties\YearlyRevenueProperty yearlyRevenue()
+ * @method static \NilPortugues\SchemaOrg\Properties\YearsInOperationProperty yearsInOperation()
+ * METHODEND.
+ *
+ * A set of characteristics belonging to businesses, e.g. who compose an item's target audience.
  */
 class BusinessAudience extends SchemaClass
 {
@@ -27,26 +30,20 @@ class BusinessAudience extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/BusinessAudience';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function numberOfEmployees()
-    {
-        return NumberOfEmployeesProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function yearlyRevenue()
-    {
-        return YearlyRevenueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function yearsInOperation()
-    {
-        return YearsInOperationProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'numberOfEmployees' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusinessAudience',
+        ],
+        'yearlyRevenue' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\YearlyRevenueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusinessAudience',
+        ],
+        'yearsInOperation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\YearsInOperationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\BusinessAudience',
+        ],
+    ];
 }

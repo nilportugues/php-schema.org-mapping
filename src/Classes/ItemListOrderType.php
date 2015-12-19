@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes ItemListOrderType.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Enumerated for values for itemListOrder for indicating how an ordered ItemList is organized.
  */
 class ItemListOrderType extends SchemaClass
 {
@@ -21,4 +25,11 @@ class ItemListOrderType extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/ItemListOrderType';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

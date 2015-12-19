@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes GovernmentPermit.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * A permit issued by a government agency.
  */
 class GovernmentPermit extends SchemaClass
 {
@@ -21,4 +25,11 @@ class GovernmentPermit extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/GovernmentPermit';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

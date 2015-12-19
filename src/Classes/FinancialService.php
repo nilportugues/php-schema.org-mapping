@@ -10,67 +10,70 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
-use NilPortugues\SchemaOrg\Properties\AddressProperty;
-use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
-use NilPortugues\SchemaOrg\Properties\AlumniProperty;
-use NilPortugues\SchemaOrg\Properties\AreaServedProperty;
-use NilPortugues\SchemaOrg\Properties\AwardProperty;
-use NilPortugues\SchemaOrg\Properties\AwardsProperty;
-use NilPortugues\SchemaOrg\Properties\BranchCodeProperty;
-use NilPortugues\SchemaOrg\Properties\BrandProperty;
-use NilPortugues\SchemaOrg\Properties\ContactPointProperty;
-use NilPortugues\SchemaOrg\Properties\ContactPointsProperty;
-use NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty;
-use NilPortugues\SchemaOrg\Properties\ContainedInProperty;
-use NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty;
-use NilPortugues\SchemaOrg\Properties\DepartmentProperty;
-use NilPortugues\SchemaOrg\Properties\DissolutionDateProperty;
-use NilPortugues\SchemaOrg\Properties\DunsProperty;
-use NilPortugues\SchemaOrg\Properties\EmailProperty;
-use NilPortugues\SchemaOrg\Properties\EmployeeProperty;
-use NilPortugues\SchemaOrg\Properties\EmployeesProperty;
-use NilPortugues\SchemaOrg\Properties\EventProperty;
-use NilPortugues\SchemaOrg\Properties\EventsProperty;
-use NilPortugues\SchemaOrg\Properties\FaxNumberProperty;
-use NilPortugues\SchemaOrg\Properties\FounderProperty;
-use NilPortugues\SchemaOrg\Properties\FoundersProperty;
-use NilPortugues\SchemaOrg\Properties\FoundingDateProperty;
-use NilPortugues\SchemaOrg\Properties\GeoProperty;
-use NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty;
-use NilPortugues\SchemaOrg\Properties\HasMapProperty;
-use NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty;
-use NilPortugues\SchemaOrg\Properties\HasPOSProperty;
-use NilPortugues\SchemaOrg\Properties\IsicV4Property;
-use NilPortugues\SchemaOrg\Properties\LegalNameProperty;
-use NilPortugues\SchemaOrg\Properties\LocationProperty;
-use NilPortugues\SchemaOrg\Properties\LogoProperty;
-use NilPortugues\SchemaOrg\Properties\MakesOfferProperty;
-use NilPortugues\SchemaOrg\Properties\MapProperty;
-use NilPortugues\SchemaOrg\Properties\MapsProperty;
-use NilPortugues\SchemaOrg\Properties\MemberOfProperty;
-use NilPortugues\SchemaOrg\Properties\MemberProperty;
-use NilPortugues\SchemaOrg\Properties\MembersProperty;
-use NilPortugues\SchemaOrg\Properties\NaicsProperty;
-use NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty;
-use NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty;
-use NilPortugues\SchemaOrg\Properties\OwnsProperty;
-use NilPortugues\SchemaOrg\Properties\ParentOrganizationProperty;
-use NilPortugues\SchemaOrg\Properties\PhotoProperty;
-use NilPortugues\SchemaOrg\Properties\PhotosProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewProperty;
-use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
-use NilPortugues\SchemaOrg\Properties\SeeksProperty;
-use NilPortugues\SchemaOrg\Properties\ServiceAreaProperty;
-use NilPortugues\SchemaOrg\Properties\SubOrganizationProperty;
-use NilPortugues\SchemaOrg\Properties\TaxIDProperty;
-use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
-use NilPortugues\SchemaOrg\Properties\VatIDProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes FinancialService.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressProperty address()
+ * @method static \NilPortugues\SchemaOrg\Properties\AggregateRatingProperty aggregateRating()
+ * @method static \NilPortugues\SchemaOrg\Properties\BranchCodeProperty branchCode()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty containedInPlace()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty containsPlace()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContainedInProperty containedIn()
+ * @method static \NilPortugues\SchemaOrg\Properties\EventProperty event()
+ * @method static \NilPortugues\SchemaOrg\Properties\EventsProperty events()
+ * @method static \NilPortugues\SchemaOrg\Properties\FaxNumberProperty faxNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\GeoProperty geo()
+ * @method static \NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty globalLocationNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsicV4Property isicV4()
+ * @method static \NilPortugues\SchemaOrg\Properties\LogoProperty logo()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasMapProperty hasMap()
+ * @method static \NilPortugues\SchemaOrg\Properties\MapProperty map()
+ * @method static \NilPortugues\SchemaOrg\Properties\MapsProperty maps()
+ * @method static \NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty openingHoursSpecification()
+ * @method static \NilPortugues\SchemaOrg\Properties\PhotoProperty photo()
+ * @method static \NilPortugues\SchemaOrg\Properties\PhotosProperty photos()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewProperty review()
+ * @method static \NilPortugues\SchemaOrg\Properties\ReviewsProperty reviews()
+ * @method static \NilPortugues\SchemaOrg\Properties\TelephoneProperty telephone()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty additionalProperty()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty hasOfferCatalog()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlumniProperty alumni()
+ * @method static \NilPortugues\SchemaOrg\Properties\AreaServedProperty areaServed()
+ * @method static \NilPortugues\SchemaOrg\Properties\AwardProperty award()
+ * @method static \NilPortugues\SchemaOrg\Properties\AwardsProperty awards()
+ * @method static \NilPortugues\SchemaOrg\Properties\ParentOrganizationProperty parentOrganization()
+ * @method static \NilPortugues\SchemaOrg\Properties\BrandProperty brand()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContactPointProperty contactPoint()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContactPointsProperty contactPoints()
+ * @method static \NilPortugues\SchemaOrg\Properties\DepartmentProperty department()
+ * @method static \NilPortugues\SchemaOrg\Properties\DunsProperty duns()
+ * @method static \NilPortugues\SchemaOrg\Properties\EmailProperty email()
+ * @method static \NilPortugues\SchemaOrg\Properties\EmployeeProperty employee()
+ * @method static \NilPortugues\SchemaOrg\Properties\EmployeesProperty employees()
+ * @method static \NilPortugues\SchemaOrg\Properties\FounderProperty founder()
+ * @method static \NilPortugues\SchemaOrg\Properties\FoundersProperty founders()
+ * @method static \NilPortugues\SchemaOrg\Properties\DissolutionDateProperty dissolutionDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\FoundingDateProperty foundingDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasPOSProperty hasPOS()
+ * @method static \NilPortugues\SchemaOrg\Properties\LegalNameProperty legalName()
+ * @method static \NilPortugues\SchemaOrg\Properties\LocationProperty location()
+ * @method static \NilPortugues\SchemaOrg\Properties\MakesOfferProperty makesOffer()
+ * @method static \NilPortugues\SchemaOrg\Properties\MemberProperty member()
+ * @method static \NilPortugues\SchemaOrg\Properties\MemberOfProperty memberOf()
+ * @method static \NilPortugues\SchemaOrg\Properties\MembersProperty members()
+ * @method static \NilPortugues\SchemaOrg\Properties\NaicsProperty naics()
+ * @method static \NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty numberOfEmployees()
+ * @method static \NilPortugues\SchemaOrg\Properties\OwnsProperty owns()
+ * @method static \NilPortugues\SchemaOrg\Properties\SeeksProperty seeks()
+ * @method static \NilPortugues\SchemaOrg\Properties\ServiceAreaProperty serviceArea()
+ * @method static \NilPortugues\SchemaOrg\Properties\SubOrganizationProperty subOrganization()
+ * @method static \NilPortugues\SchemaOrg\Properties\TaxIDProperty taxID()
+ * @method static \NilPortugues\SchemaOrg\Properties\VatIDProperty vatID()
+ * METHODEND.
+ *
+ * Financial services business.
  */
 class FinancialService extends SchemaClass
 {
@@ -80,450 +83,232 @@ class FinancialService extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/FinancialService';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalProperty()
-    {
-        return AdditionalPropertyProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function address()
-    {
-        return AddressProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function aggregateRating()
-    {
-        return AggregateRatingProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alumni()
-    {
-        return AlumniProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function areaServed()
-    {
-        return AreaServedProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function award()
-    {
-        return AwardProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function awards()
-    {
-        return AwardsProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function branchCode()
-    {
-        return BranchCodeProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function brand()
-    {
-        return BrandProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contactPoint()
-    {
-        return ContactPointProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contactPoints()
-    {
-        return ContactPointsProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function containedIn()
-    {
-        return ContainedInProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function containedInPlace()
-    {
-        return ContainedInPlaceProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function containsPlace()
-    {
-        return ContainsPlaceProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function department()
-    {
-        return DepartmentProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function dissolutionDate()
-    {
-        return DissolutionDateProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function duns()
-    {
-        return DunsProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function email()
-    {
-        return EmailProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function employee()
-    {
-        return EmployeeProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function employees()
-    {
-        return EmployeesProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function event()
-    {
-        return EventProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function events()
-    {
-        return EventsProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function faxNumber()
-    {
-        return FaxNumberProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function founder()
-    {
-        return FounderProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function founders()
-    {
-        return FoundersProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function foundingDate()
-    {
-        return FoundingDateProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function geo()
-    {
-        return GeoProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function globalLocationNumber()
-    {
-        return GlobalLocationNumberProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function hasMap()
-    {
-        return HasMapProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function hasOfferCatalog()
-    {
-        return HasOfferCatalogProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function hasPOS()
-    {
-        return HasPOSProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isicV4()
-    {
-        return IsicV4Property::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function legalName()
-    {
-        return LegalNameProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function location()
-    {
-        return LocationProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function logo()
-    {
-        return LogoProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function makesOffer()
-    {
-        return MakesOfferProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function map()
-    {
-        return MapProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function maps()
-    {
-        return MapsProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function member()
-    {
-        return MemberProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function memberOf()
-    {
-        return MemberOfProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function members()
-    {
-        return MembersProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function naics()
-    {
-        return NaicsProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function numberOfEmployees()
-    {
-        return NumberOfEmployeesProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function openingHoursSpecification()
-    {
-        return OpeningHoursSpecificationProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function owns()
-    {
-        return OwnsProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function parentOrganization()
-    {
-        return ParentOrganizationProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function photo()
-    {
-        return PhotoProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function photos()
-    {
-        return PhotosProperty::create(Place::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function review()
-    {
-        return ReviewProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function reviews()
-    {
-        return ReviewsProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function seeks()
-    {
-        return SeeksProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function serviceArea()
-    {
-        return ServiceAreaProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function subOrganization()
-    {
-        return SubOrganizationProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function taxID()
-    {
-        return TaxIDProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function telephone()
-    {
-        return TelephoneProperty::create(Organization::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function vatID()
-    {
-        return VatIDProperty::create(Organization::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalProperty' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'address' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'aggregateRating' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AggregateRatingProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'alumni' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlumniProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'areaServed' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AreaServedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'award' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'awards' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'branchCode' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BranchCodeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'brand' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BrandProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'contactPoint' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContactPointProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'contactPoints' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContactPointsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'containedIn' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContainedInProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'containedInPlace' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'containsPlace' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'department' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DepartmentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'dissolutionDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DissolutionDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'duns' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DunsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'email' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EmailProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'employee' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EmployeeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'employees' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EmployeesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'event' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EventProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'events' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EventsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'faxNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FaxNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'founder' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FounderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'founders' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FoundersProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'foundingDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FoundingDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'geo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GeoProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'globalLocationNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'hasMap' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasMapProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'hasOfferCatalog' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'hasPOS' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasPOSProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'isicV4' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsicV4Property',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'legalName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LegalNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'location' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'logo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\LogoProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'makesOffer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MakesOfferProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'map' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MapProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'maps' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MapsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'member' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MemberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'memberOf' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MemberOfProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'members' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MembersProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'naics' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NaicsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'numberOfEmployees' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'openingHoursSpecification' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'owns' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OwnsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'parentOrganization' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParentOrganizationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'photo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PhotoProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'photos' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PhotosProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Place',
+        ],
+        'review' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'reviews' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ReviewsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'seeks' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SeeksProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'serviceArea' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ServiceAreaProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'subOrganization' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SubOrganizationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'taxID' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TaxIDProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'telephone' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TelephoneProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+        'vatID' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VatIDProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Organization',
+        ],
+    ];
 }

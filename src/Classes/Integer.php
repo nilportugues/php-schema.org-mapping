@@ -13,7 +13,11 @@ namespace NilPortugues\SchemaOrg\Classes;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Integer.
+ * METHODSTART.
+ 
+ * METHODEND.
+ *
+ * Data type: Integer.
  */
 class Integer extends SchemaClass
 {
@@ -21,4 +25,11 @@ class Integer extends SchemaClass
      * @var string
      */
     protected static $schemaUrl = 'http://schema.org/Integer';
+
+    /**
+     * @var array
+     */
+    protected static $supportedMethods = [
+
+    ];
 }

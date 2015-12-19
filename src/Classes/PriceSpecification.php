@@ -10,20 +10,23 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\EligibleQuantityProperty;
-use NilPortugues\SchemaOrg\Properties\EligibleTransactionVolumeProperty;
-use NilPortugues\SchemaOrg\Properties\MaxPriceProperty;
-use NilPortugues\SchemaOrg\Properties\MinPriceProperty;
-use NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty;
-use NilPortugues\SchemaOrg\Properties\PriceProperty;
-use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
-use NilPortugues\SchemaOrg\Properties\ValidThroughProperty;
-use NilPortugues\SchemaOrg\Properties\ValueAddedTaxIncludedProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes PriceSpecification.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\EligibleQuantityProperty eligibleQuantity()
+ * @method static \NilPortugues\SchemaOrg\Properties\EligibleTransactionVolumeProperty eligibleTransactionVolume()
+ * @method static \NilPortugues\SchemaOrg\Properties\MaxPriceProperty maxPrice()
+ * @method static \NilPortugues\SchemaOrg\Properties\MinPriceProperty minPrice()
+ * @method static \NilPortugues\SchemaOrg\Properties\PriceProperty price()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValidFromProperty validFrom()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValidThroughProperty validThrough()
+ * @method static \NilPortugues\SchemaOrg\Properties\ValueAddedTaxIncludedProperty valueAddedTaxIncluded()
+ * @method static \NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty priceCurrency()
+ * METHODEND.
+ *
+ * A structured value representing a monetary amount. Typically, only the subclasses of this type are used for markup.
  */
 class PriceSpecification extends SchemaClass
 {
@@ -33,74 +36,44 @@ class PriceSpecification extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/PriceSpecification';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function eligibleQuantity()
-    {
-        return EligibleQuantityProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function eligibleTransactionVolume()
-    {
-        return EligibleTransactionVolumeProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function maxPrice()
-    {
-        return MaxPriceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function minPrice()
-    {
-        return MinPriceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function price()
-    {
-        return PriceProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function priceCurrency()
-    {
-        return PriceCurrencyProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function validFrom()
-    {
-        return ValidFromProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function validThrough()
-    {
-        return ValidThroughProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function valueAddedTaxIncluded()
-    {
-        return ValueAddedTaxIncludedProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'eligibleQuantity' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EligibleQuantityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+        'eligibleTransactionVolume' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EligibleTransactionVolumeProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+        'maxPrice' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MaxPriceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+        'minPrice' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MinPriceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+        'price' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PriceProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+        'priceCurrency' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+        'validFrom' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValidFromProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+        'validThrough' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValidThroughProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+        'valueAddedTaxIncluded' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ValueAddedTaxIncludedProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\PriceSpecification',
+        ],
+    ];
 }

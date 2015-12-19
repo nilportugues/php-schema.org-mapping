@@ -10,62 +10,65 @@
 
 namespace NilPortugues\SchemaOrg\Classes;
 
-use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalNameProperty;
-use NilPortugues\SchemaOrg\Properties\AddressProperty;
-use NilPortugues\SchemaOrg\Properties\AffiliationProperty;
-use NilPortugues\SchemaOrg\Properties\AlumniOfProperty;
-use NilPortugues\SchemaOrg\Properties\AwardProperty;
-use NilPortugues\SchemaOrg\Properties\AwardsProperty;
-use NilPortugues\SchemaOrg\Properties\BirthDateProperty;
-use NilPortugues\SchemaOrg\Properties\BrandProperty;
-use NilPortugues\SchemaOrg\Properties\ChildrenProperty;
-use NilPortugues\SchemaOrg\Properties\ColleagueProperty;
-use NilPortugues\SchemaOrg\Properties\ColleaguesProperty;
-use NilPortugues\SchemaOrg\Properties\ContactPointProperty;
-use NilPortugues\SchemaOrg\Properties\ContactPointsProperty;
-use NilPortugues\SchemaOrg\Properties\DeathDateProperty;
-use NilPortugues\SchemaOrg\Properties\DunsProperty;
-use NilPortugues\SchemaOrg\Properties\EmailProperty;
-use NilPortugues\SchemaOrg\Properties\FamilyNameProperty;
-use NilPortugues\SchemaOrg\Properties\FaxNumberProperty;
-use NilPortugues\SchemaOrg\Properties\FollowsProperty;
-use NilPortugues\SchemaOrg\Properties\GenderProperty;
-use NilPortugues\SchemaOrg\Properties\GivenNameProperty;
-use NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty;
-use NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty;
-use NilPortugues\SchemaOrg\Properties\HasPOSProperty;
-use NilPortugues\SchemaOrg\Properties\HeightProperty;
-use NilPortugues\SchemaOrg\Properties\HomeLocationProperty;
-use NilPortugues\SchemaOrg\Properties\HonorificPrefixProperty;
-use NilPortugues\SchemaOrg\Properties\HonorificSuffixProperty;
-use NilPortugues\SchemaOrg\Properties\IsicV4Property;
-use NilPortugues\SchemaOrg\Properties\JobTitleProperty;
-use NilPortugues\SchemaOrg\Properties\KnowsProperty;
-use NilPortugues\SchemaOrg\Properties\MakesOfferProperty;
-use NilPortugues\SchemaOrg\Properties\MemberOfProperty;
-use NilPortugues\SchemaOrg\Properties\NaicsProperty;
-use NilPortugues\SchemaOrg\Properties\NationalityProperty;
-use NilPortugues\SchemaOrg\Properties\NetWorthProperty;
-use NilPortugues\SchemaOrg\Properties\OwnsProperty;
-use NilPortugues\SchemaOrg\Properties\ParentProperty;
-use NilPortugues\SchemaOrg\Properties\ParentsProperty;
-use NilPortugues\SchemaOrg\Properties\PerformerInProperty;
-use NilPortugues\SchemaOrg\Properties\RelatedToProperty;
-use NilPortugues\SchemaOrg\Properties\SeeksProperty;
-use NilPortugues\SchemaOrg\Properties\SiblingProperty;
-use NilPortugues\SchemaOrg\Properties\SiblingsProperty;
-use NilPortugues\SchemaOrg\Properties\SpouseProperty;
-use NilPortugues\SchemaOrg\Properties\TaxIDProperty;
-use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
-use NilPortugues\SchemaOrg\Properties\VatIDProperty;
-use NilPortugues\SchemaOrg\Properties\WeightProperty;
-use NilPortugues\SchemaOrg\Properties\WorkLocationProperty;
-use NilPortugues\SchemaOrg\Properties\WorksForProperty;
 use NilPortugues\SchemaOrg\SchemaClass;
 
 /**
- * Classes Person.
+ * METHODSTART.
+ *
+ * @method static \NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty hasOfferCatalog()
+ * @method static \NilPortugues\SchemaOrg\Properties\AdditionalNameProperty additionalName()
+ * @method static \NilPortugues\SchemaOrg\Properties\AddressProperty address()
+ * @method static \NilPortugues\SchemaOrg\Properties\AffiliationProperty affiliation()
+ * @method static \NilPortugues\SchemaOrg\Properties\AlumniOfProperty alumniOf()
+ * @method static \NilPortugues\SchemaOrg\Properties\AwardProperty award()
+ * @method static \NilPortugues\SchemaOrg\Properties\AwardsProperty awards()
+ * @method static \NilPortugues\SchemaOrg\Properties\BirthDateProperty birthDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\BrandProperty brand()
+ * @method static \NilPortugues\SchemaOrg\Properties\ChildrenProperty children()
+ * @method static \NilPortugues\SchemaOrg\Properties\ColleagueProperty colleague()
+ * @method static \NilPortugues\SchemaOrg\Properties\ColleaguesProperty colleagues()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContactPointProperty contactPoint()
+ * @method static \NilPortugues\SchemaOrg\Properties\ContactPointsProperty contactPoints()
+ * @method static \NilPortugues\SchemaOrg\Properties\DeathDateProperty deathDate()
+ * @method static \NilPortugues\SchemaOrg\Properties\DunsProperty duns()
+ * @method static \NilPortugues\SchemaOrg\Properties\EmailProperty email()
+ * @method static \NilPortugues\SchemaOrg\Properties\FamilyNameProperty familyName()
+ * @method static \NilPortugues\SchemaOrg\Properties\FaxNumberProperty faxNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\FollowsProperty follows()
+ * @method static \NilPortugues\SchemaOrg\Properties\GenderProperty gender()
+ * @method static \NilPortugues\SchemaOrg\Properties\GivenNameProperty givenName()
+ * @method static \NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty globalLocationNumber()
+ * @method static \NilPortugues\SchemaOrg\Properties\HasPOSProperty hasPOS()
+ * @method static \NilPortugues\SchemaOrg\Properties\HeightProperty height()
+ * @method static \NilPortugues\SchemaOrg\Properties\HomeLocationProperty homeLocation()
+ * @method static \NilPortugues\SchemaOrg\Properties\HonorificPrefixProperty honorificPrefix()
+ * @method static \NilPortugues\SchemaOrg\Properties\HonorificSuffixProperty honorificSuffix()
+ * @method static \NilPortugues\SchemaOrg\Properties\IsicV4Property isicV4()
+ * @method static \NilPortugues\SchemaOrg\Properties\JobTitleProperty jobTitle()
+ * @method static \NilPortugues\SchemaOrg\Properties\KnowsProperty knows()
+ * @method static \NilPortugues\SchemaOrg\Properties\MakesOfferProperty makesOffer()
+ * @method static \NilPortugues\SchemaOrg\Properties\MemberOfProperty memberOf()
+ * @method static \NilPortugues\SchemaOrg\Properties\NaicsProperty naics()
+ * @method static \NilPortugues\SchemaOrg\Properties\NationalityProperty nationality()
+ * @method static \NilPortugues\SchemaOrg\Properties\NetWorthProperty netWorth()
+ * @method static \NilPortugues\SchemaOrg\Properties\OwnsProperty owns()
+ * @method static \NilPortugues\SchemaOrg\Properties\ParentProperty parent()
+ * @method static \NilPortugues\SchemaOrg\Properties\ParentsProperty parents()
+ * @method static \NilPortugues\SchemaOrg\Properties\PerformerInProperty performerIn()
+ * @method static \NilPortugues\SchemaOrg\Properties\RelatedToProperty relatedTo()
+ * @method static \NilPortugues\SchemaOrg\Properties\SeeksProperty seeks()
+ * @method static \NilPortugues\SchemaOrg\Properties\SiblingProperty sibling()
+ * @method static \NilPortugues\SchemaOrg\Properties\SiblingsProperty siblings()
+ * @method static \NilPortugues\SchemaOrg\Properties\SpouseProperty spouse()
+ * @method static \NilPortugues\SchemaOrg\Properties\TaxIDProperty taxID()
+ * @method static \NilPortugues\SchemaOrg\Properties\TelephoneProperty telephone()
+ * @method static \NilPortugues\SchemaOrg\Properties\VatIDProperty vatID()
+ * @method static \NilPortugues\SchemaOrg\Properties\WeightProperty weight()
+ * @method static \NilPortugues\SchemaOrg\Properties\WorkLocationProperty workLocation()
+ * @method static \NilPortugues\SchemaOrg\Properties\WorksForProperty worksFor()
+ * METHODEND.
+ *
+ * A person (alive, dead, undead, or fictional).
  */
 class Person extends SchemaClass
 {
@@ -75,410 +78,212 @@ class Person extends SchemaClass
     protected static $schemaUrl = 'http://schema.org/Person';
 
     /**
-     * @return Mapping
+     * @var array
      */
-    public static function additionalName()
-    {
-        return AdditionalNameProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function address()
-    {
-        return AddressProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function affiliation()
-    {
-        return AffiliationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function alumniOf()
-    {
-        return AlumniOfProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function award()
-    {
-        return AwardProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function awards()
-    {
-        return AwardsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function birthDate()
-    {
-        return BirthDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function brand()
-    {
-        return BrandProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function children()
-    {
-        return ChildrenProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function colleague()
-    {
-        return ColleagueProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function colleagues()
-    {
-        return ColleaguesProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contactPoint()
-    {
-        return ContactPointProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function contactPoints()
-    {
-        return ContactPointsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function deathDate()
-    {
-        return DeathDateProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function duns()
-    {
-        return DunsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function email()
-    {
-        return EmailProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function familyName()
-    {
-        return FamilyNameProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function faxNumber()
-    {
-        return FaxNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function follows()
-    {
-        return FollowsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function gender()
-    {
-        return GenderProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function givenName()
-    {
-        return GivenNameProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function globalLocationNumber()
-    {
-        return GlobalLocationNumberProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function hasOfferCatalog()
-    {
-        return HasOfferCatalogProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function hasPOS()
-    {
-        return HasPOSProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function height()
-    {
-        return HeightProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function homeLocation()
-    {
-        return HomeLocationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function honorificPrefix()
-    {
-        return HonorificPrefixProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function honorificSuffix()
-    {
-        return HonorificSuffixProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function isicV4()
-    {
-        return IsicV4Property::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function jobTitle()
-    {
-        return JobTitleProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function knows()
-    {
-        return KnowsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function makesOffer()
-    {
-        return MakesOfferProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function memberOf()
-    {
-        return MemberOfProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function naics()
-    {
-        return NaicsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function nationality()
-    {
-        return NationalityProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function netWorth()
-    {
-        return NetWorthProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function owns()
-    {
-        return OwnsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function parent()
-    {
-        return ParentProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function parents()
-    {
-        return ParentsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function performerIn()
-    {
-        return PerformerInProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function relatedTo()
-    {
-        return RelatedToProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function seeks()
-    {
-        return SeeksProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function sibling()
-    {
-        return SiblingProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function siblings()
-    {
-        return SiblingsProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function spouse()
-    {
-        return SpouseProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function taxID()
-    {
-        return TaxIDProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function telephone()
-    {
-        return TelephoneProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function vatID()
-    {
-        return VatIDProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function weight()
-    {
-        return WeightProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function workLocation()
-    {
-        return WorkLocationProperty::create(self::schemaUrl());
-    }
-
-    /**
-     * @return Mapping
-     */
-    public static function worksFor()
-    {
-        return WorksForProperty::create(self::schemaUrl());
-    }
+    protected static $supportedMethods = [
+        'additionalName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AdditionalNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'address' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AddressProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'affiliation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AffiliationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'alumniOf' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AlumniOfProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'award' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'awards' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\AwardsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'birthDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BirthDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'brand' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\BrandProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'children' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ChildrenProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'colleague' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ColleagueProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'colleagues' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ColleaguesProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'contactPoint' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContactPointProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'contactPoints' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ContactPointsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'deathDate' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DeathDateProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'duns' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\DunsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'email' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\EmailProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'familyName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FamilyNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'faxNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FaxNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'follows' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\FollowsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'gender' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GenderProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'givenName' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GivenNameProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'globalLocationNumber' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'hasOfferCatalog' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'hasPOS' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HasPOSProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'height' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HeightProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'homeLocation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HomeLocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'honorificPrefix' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HonorificPrefixProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'honorificSuffix' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\HonorificSuffixProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'isicV4' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\IsicV4Property',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'jobTitle' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\JobTitleProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'knows' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\KnowsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'makesOffer' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MakesOfferProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'memberOf' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\MemberOfProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'naics' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NaicsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'nationality' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NationalityProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'netWorth' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\NetWorthProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'owns' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\OwnsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'parent' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParentProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'parents' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\ParentsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'performerIn' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\PerformerInProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'relatedTo' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\RelatedToProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'seeks' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SeeksProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'sibling' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SiblingProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'siblings' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SiblingsProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'spouse' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\SpouseProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'taxID' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TaxIDProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'telephone' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\TelephoneProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'vatID' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\VatIDProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'weight' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WeightProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'workLocation' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WorkLocationProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+        'worksFor' => [
+            'propertyClass' => '\NilPortugues\SchemaOrg\Properties\WorksForProperty',
+            'schemaClass' => '\NilPortugues\SchemaOrg\Classes\Person',
+        ],
+    ];
 }
