@@ -3,7 +3,7 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\FuelType;
+use NilPortugues\SchemaOrg\Properties\FuelTypeProperty;
 
 /**
  * Classes EngineSpecification.
@@ -30,6 +30,6 @@ class EngineSpecification
      */
     public static function fuelType()
     {
-        return FuelType::create(self::schemaUrl());
+        return FuelTypeProperty::create(self::schemaUrl());
     }
 }

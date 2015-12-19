@@ -3,39 +3,39 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\ApplicationCategory;
-use NilPortugues\SchemaOrg\Properties\ApplicationSubCategory;
-use NilPortugues\SchemaOrg\Properties\ApplicationSuite;
-use NilPortugues\SchemaOrg\Properties\AvailableOnDevice;
-use NilPortugues\SchemaOrg\Properties\CountriesNotSupported;
-use NilPortugues\SchemaOrg\Properties\CountriesSupported;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Device;
-use NilPortugues\SchemaOrg\Properties\DownloadUrl;
-use NilPortugues\SchemaOrg\Properties\FeatureList;
-use NilPortugues\SchemaOrg\Properties\FileSize;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\InstallUrl;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\MemoryRequirements;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\OperatingSystem;
-use NilPortugues\SchemaOrg\Properties\Permissions;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProcessorRequirements;
-use NilPortugues\SchemaOrg\Properties\ReleaseNotes;
-use NilPortugues\SchemaOrg\Properties\Requirements;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Screenshot;
-use NilPortugues\SchemaOrg\Properties\SoftwareAddOn;
-use NilPortugues\SchemaOrg\Properties\SoftwareHelp;
-use NilPortugues\SchemaOrg\Properties\SoftwareRequirements;
-use NilPortugues\SchemaOrg\Properties\SoftwareVersion;
-use NilPortugues\SchemaOrg\Properties\StorageRequirements;
-use NilPortugues\SchemaOrg\Properties\SupportingData;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ApplicationCategoryProperty;
+use NilPortugues\SchemaOrg\Properties\ApplicationSubCategoryProperty;
+use NilPortugues\SchemaOrg\Properties\ApplicationSuiteProperty;
+use NilPortugues\SchemaOrg\Properties\AvailableOnDeviceProperty;
+use NilPortugues\SchemaOrg\Properties\CountriesNotSupportedProperty;
+use NilPortugues\SchemaOrg\Properties\CountriesSupportedProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DeviceProperty;
+use NilPortugues\SchemaOrg\Properties\DownloadUrlProperty;
+use NilPortugues\SchemaOrg\Properties\FeatureListProperty;
+use NilPortugues\SchemaOrg\Properties\FileSizeProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\InstallUrlProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MemoryRequirementsProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\OperatingSystemProperty;
+use NilPortugues\SchemaOrg\Properties\PermissionsProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProcessorRequirementsProperty;
+use NilPortugues\SchemaOrg\Properties\ReleaseNotesProperty;
+use NilPortugues\SchemaOrg\Properties\RequirementsProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\ScreenshotProperty;
+use NilPortugues\SchemaOrg\Properties\SoftwareAddOnProperty;
+use NilPortugues\SchemaOrg\Properties\SoftwareHelpProperty;
+use NilPortugues\SchemaOrg\Properties\SoftwareRequirementsProperty;
+use NilPortugues\SchemaOrg\Properties\SoftwareVersionProperty;
+use NilPortugues\SchemaOrg\Properties\StorageRequirementsProperty;
+use NilPortugues\SchemaOrg\Properties\SupportingDataProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes SoftwareApplication.
@@ -62,7 +62,7 @@ class SoftwareApplication
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class SoftwareApplication
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class SoftwareApplication
      */
     public static function applicationCategory()
     {
-        return ApplicationCategory::create(self::schemaUrl());
+        return ApplicationCategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class SoftwareApplication
      */
     public static function applicationSubCategory()
     {
-        return ApplicationSubCategory::create(self::schemaUrl());
+        return ApplicationSubCategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class SoftwareApplication
      */
     public static function applicationSuite()
     {
-        return ApplicationSuite::create(self::schemaUrl());
+        return ApplicationSuiteProperty::create(self::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class SoftwareApplication
      */
     public static function availableOnDevice()
     {
-        return AvailableOnDevice::create(self::schemaUrl());
+        return AvailableOnDeviceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class SoftwareApplication
      */
     public static function countriesNotSupported()
     {
-        return CountriesNotSupported::create(self::schemaUrl());
+        return CountriesNotSupportedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class SoftwareApplication
      */
     public static function countriesSupported()
     {
-        return CountriesSupported::create(self::schemaUrl());
+        return CountriesSupportedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class SoftwareApplication
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class SoftwareApplication
      */
     public static function device()
     {
-        return Device::create(self::schemaUrl());
+        return DeviceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class SoftwareApplication
      */
     public static function downloadUrl()
     {
-        return DownloadUrl::create(self::schemaUrl());
+        return DownloadUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class SoftwareApplication
      */
     public static function featureList()
     {
-        return FeatureList::create(self::schemaUrl());
+        return FeatureListProperty::create(self::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class SoftwareApplication
      */
     public static function fileSize()
     {
-        return FileSize::create(self::schemaUrl());
+        return FileSizeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class SoftwareApplication
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -174,7 +174,7 @@ class SoftwareApplication
      */
     public static function installUrl()
     {
-        return InstallUrl::create(self::schemaUrl());
+        return InstallUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -182,7 +182,7 @@ class SoftwareApplication
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -190,7 +190,7 @@ class SoftwareApplication
      */
     public static function memoryRequirements()
     {
-        return MemoryRequirements::create(self::schemaUrl());
+        return MemoryRequirementsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -198,7 +198,7 @@ class SoftwareApplication
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -206,7 +206,7 @@ class SoftwareApplication
      */
     public static function operatingSystem()
     {
-        return OperatingSystem::create(self::schemaUrl());
+        return OperatingSystemProperty::create(self::schemaUrl());
     }
 
     /**
@@ -214,7 +214,7 @@ class SoftwareApplication
      */
     public static function permissions()
     {
-        return Permissions::create(self::schemaUrl());
+        return PermissionsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -222,7 +222,7 @@ class SoftwareApplication
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -230,7 +230,7 @@ class SoftwareApplication
      */
     public static function processorRequirements()
     {
-        return ProcessorRequirements::create(self::schemaUrl());
+        return ProcessorRequirementsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -238,7 +238,7 @@ class SoftwareApplication
      */
     public static function releaseNotes()
     {
-        return ReleaseNotes::create(self::schemaUrl());
+        return ReleaseNotesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -246,7 +246,7 @@ class SoftwareApplication
      */
     public static function requirements()
     {
-        return Requirements::create(self::schemaUrl());
+        return RequirementsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -254,7 +254,7 @@ class SoftwareApplication
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -262,7 +262,7 @@ class SoftwareApplication
      */
     public static function screenshot()
     {
-        return Screenshot::create(self::schemaUrl());
+        return ScreenshotProperty::create(self::schemaUrl());
     }
 
     /**
@@ -270,7 +270,7 @@ class SoftwareApplication
      */
     public static function softwareAddOn()
     {
-        return SoftwareAddOn::create(self::schemaUrl());
+        return SoftwareAddOnProperty::create(self::schemaUrl());
     }
 
     /**
@@ -278,7 +278,7 @@ class SoftwareApplication
      */
     public static function softwareHelp()
     {
-        return SoftwareHelp::create(self::schemaUrl());
+        return SoftwareHelpProperty::create(self::schemaUrl());
     }
 
     /**
@@ -286,7 +286,7 @@ class SoftwareApplication
      */
     public static function softwareRequirements()
     {
-        return SoftwareRequirements::create(self::schemaUrl());
+        return SoftwareRequirementsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -294,7 +294,7 @@ class SoftwareApplication
      */
     public static function softwareVersion()
     {
-        return SoftwareVersion::create(self::schemaUrl());
+        return SoftwareVersionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -302,7 +302,7 @@ class SoftwareApplication
      */
     public static function storageRequirements()
     {
-        return StorageRequirements::create(self::schemaUrl());
+        return StorageRequirementsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -310,7 +310,7 @@ class SoftwareApplication
      */
     public static function supportingData()
     {
-        return SupportingData::create(self::schemaUrl());
+        return SupportingDataProperty::create(self::schemaUrl());
     }
 
     /**
@@ -318,6 +318,6 @@ class SoftwareApplication
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

@@ -3,10 +3,10 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\HighPrice;
-use NilPortugues\SchemaOrg\Properties\LowPrice;
-use NilPortugues\SchemaOrg\Properties\OfferCount;
-use NilPortugues\SchemaOrg\Properties\Offers;
+use NilPortugues\SchemaOrg\Properties\HighPriceProperty;
+use NilPortugues\SchemaOrg\Properties\LowPriceProperty;
+use NilPortugues\SchemaOrg\Properties\OfferCountProperty;
+use NilPortugues\SchemaOrg\Properties\OffersProperty;
 
 /**
  * Classes AggregateOffer.
@@ -33,7 +33,7 @@ class AggregateOffer
      */
     public static function highPrice()
     {
-        return HighPrice::create(self::schemaUrl());
+        return HighPriceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -41,7 +41,7 @@ class AggregateOffer
      */
     public static function lowPrice()
     {
-        return LowPrice::create(self::schemaUrl());
+        return LowPriceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -49,7 +49,7 @@ class AggregateOffer
      */
     public static function offerCount()
     {
-        return OfferCount::create(self::schemaUrl());
+        return OfferCountProperty::create(self::schemaUrl());
     }
 
     /**
@@ -57,6 +57,6 @@ class AggregateOffer
      */
     public static function offers()
     {
-        return Offers::create(self::schemaUrl());
+        return OffersProperty::create(self::schemaUrl());
     }
 }

@@ -3,10 +3,10 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\DateCreated;
-use NilPortugues\SchemaOrg\Properties\DateDeleted;
-use NilPortugues\SchemaOrg\Properties\DateModified;
-use NilPortugues\SchemaOrg\Properties\Item;
+use NilPortugues\SchemaOrg\Properties\DateCreatedProperty;
+use NilPortugues\SchemaOrg\Properties\DateDeletedProperty;
+use NilPortugues\SchemaOrg\Properties\DateModifiedProperty;
+use NilPortugues\SchemaOrg\Properties\ItemProperty;
 
 /**
  * Classes DataFeedItem.
@@ -33,7 +33,7 @@ class DataFeedItem
      */
     public static function dateCreated()
     {
-        return DateCreated::create(self::schemaUrl());
+        return DateCreatedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -41,7 +41,7 @@ class DataFeedItem
      */
     public static function dateDeleted()
     {
-        return DateDeleted::create(self::schemaUrl());
+        return DateDeletedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -49,7 +49,7 @@ class DataFeedItem
      */
     public static function dateModified()
     {
-        return DateModified::create(self::schemaUrl());
+        return DateModifiedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -57,6 +57,6 @@ class DataFeedItem
      */
     public static function item()
     {
-        return Item::create(self::schemaUrl());
+        return ItemProperty::create(self::schemaUrl());
     }
 }

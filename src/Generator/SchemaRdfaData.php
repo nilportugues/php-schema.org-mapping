@@ -22,6 +22,10 @@ class SchemaRdfaData
      */
     private $properties = [];
 
+    private $hasBeenCalculated = false;
+
+    private $calculatedOutput;
+
     /**
      * @param $classUrl
      * @param $label
@@ -37,12 +41,14 @@ class SchemaRdfaData
             $label = $nameFromUrl;
         }
 
-        $this->classes[trim($label)] = (object) [
-            'name' => trim($label),
+        $label = $this->renameIfPhpReservedWord(trim($label));
+
+        $this->classes[$label] = (object) [
+            'name' => $label,
             'doc' => $classComment,
             'url' => $classUrl,
             'properties' => [],
-            'subClassOf' => array_filter($subClassOf),
+            'subClassOf' => array_map([$this, 'renameIfPhpReservedWord'], array_filter($subClassOf)),
         ];
     }
     /**
@@ -64,13 +70,42 @@ class SchemaRdfaData
      */
     public function addProperty($propertyUrl, $label, $propertyComment, $mainClass, $expectedType)
     {
-        $this->properties[trim($label)] = [
-            'name' => trim($label),
+        $label = $this->renameIfPhpReservedWord(trim($label));
+
+        $this->properties[$label] = [
+            'name' => $label,
             'doc' => $propertyComment,
             'url' => $propertyUrl,
-            'usedOnClass' => array_filter($mainClass),
-            'expectedType' => array_filter($expectedType),
+            'usedOnClass' => array_map([$this, 'renameIfPhpReservedWord'], array_filter($mainClass)),
+            'expectedType' => array_map([$this, 'renameIfPhpReservedWord'], array_filter($expectedType)),
         ];
+    }
+
+    /**
+     * @param $name
+     *
+     * @return string
+     */
+    private function renameIfPhpReservedWord($name)
+    {
+        $keywords = [
+            //PHP7
+            'int', 'float', 'bool', 'string', 'true', 'false', 'null', 'resource', 'object', 'mixed', 'numeric',
+            //PHP7 and under
+            '__halt_compiler', 'abstract', 'and', 'array', 'as', 'break', 'callable', 'case', 'catch', 'class',
+            'clone', 'const', 'continue', 'declare', 'default', 'die', 'do', 'echo', 'else', 'elseif', 'empty',
+            'enddeclare', 'endfor', 'endforeach', 'endif', 'endswitch', 'endwhile', 'eval', 'exit', 'extends',
+            'final', 'for', 'foreach', 'function', 'global', 'goto', 'if', 'implements', 'include', 'include_once',
+            'instanceof', 'insteadof', 'interface', 'isset', 'list', 'namespace', 'new', 'or', 'print', 'private',
+            'protected', 'public', 'require', 'require_once', 'return', 'static', 'switch', 'throw', 'trait', 'try',
+            'unset', 'use', 'var', 'while', 'xor',
+        ];
+
+        if (in_array(strtolower($name), $keywords, true)) {
+            $name = $name.'Type';
+        }
+
+        return $name;
     }
 
     /**
@@ -86,6 +121,10 @@ class SchemaRdfaData
      */
     public function getClassesWithPropertyNames()
     {
+        if ($this->hasBeenCalculated) {
+            return $this->calculatedOutput;
+        }
+
         $result = $this->classes;
 
         //Link the subClasses
@@ -117,6 +156,9 @@ class SchemaRdfaData
                 }
             }
         }
+
+        $this->hasBeenCalculated = true;
+        $this->calculatedOutput = $result;
 
         return $result;
     }

@@ -3,22 +3,22 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\CodeRepository;
-use NilPortugues\SchemaOrg\Properties\CodeSampleType;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProgrammingLanguage;
-use NilPortugues\SchemaOrg\Properties\Runtime;
-use NilPortugues\SchemaOrg\Properties\RuntimePlatform;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\SampleType;
-use NilPortugues\SchemaOrg\Properties\TargetProduct;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\CodeRepositoryProperty;
+use NilPortugues\SchemaOrg\Properties\CodeSampleTypeProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProgrammingLanguageProperty;
+use NilPortugues\SchemaOrg\Properties\RuntimePlatformProperty;
+use NilPortugues\SchemaOrg\Properties\RuntimeProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SampleTypeProperty;
+use NilPortugues\SchemaOrg\Properties\TargetProductProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes SoftwareSourceCode.
@@ -45,7 +45,7 @@ class SoftwareSourceCode
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -53,7 +53,7 @@ class SoftwareSourceCode
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -61,7 +61,7 @@ class SoftwareSourceCode
      */
     public static function codeRepository()
     {
-        return CodeRepository::create(self::schemaUrl());
+        return CodeRepositoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -69,7 +69,7 @@ class SoftwareSourceCode
      */
     public static function codeSampleType()
     {
-        return CodeSampleType::create(self::schemaUrl());
+        return CodeSampleTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -77,7 +77,7 @@ class SoftwareSourceCode
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -85,7 +85,7 @@ class SoftwareSourceCode
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -93,7 +93,7 @@ class SoftwareSourceCode
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -101,7 +101,7 @@ class SoftwareSourceCode
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -109,7 +109,7 @@ class SoftwareSourceCode
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -117,7 +117,7 @@ class SoftwareSourceCode
      */
     public static function programmingLanguage()
     {
-        return ProgrammingLanguage::create(self::schemaUrl());
+        return ProgrammingLanguageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -125,7 +125,7 @@ class SoftwareSourceCode
      */
     public static function runtime()
     {
-        return Runtime::create(self::schemaUrl());
+        return RuntimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -133,7 +133,7 @@ class SoftwareSourceCode
      */
     public static function runtimePlatform()
     {
-        return RuntimePlatform::create(self::schemaUrl());
+        return RuntimePlatformProperty::create(self::schemaUrl());
     }
 
     /**
@@ -141,7 +141,7 @@ class SoftwareSourceCode
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -149,7 +149,7 @@ class SoftwareSourceCode
      */
     public static function sampleType()
     {
-        return SampleType::create(self::schemaUrl());
+        return SampleTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -157,7 +157,7 @@ class SoftwareSourceCode
      */
     public static function targetProduct()
     {
-        return TargetProduct::create(self::schemaUrl());
+        return TargetProductProperty::create(self::schemaUrl());
     }
 
     /**
@@ -165,6 +165,6 @@ class SoftwareSourceCode
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

@@ -3,35 +3,35 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\BaseSalary;
-use NilPortugues\SchemaOrg\Properties\Benefits;
-use NilPortugues\SchemaOrg\Properties\DatePosted;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\EducationRequirements;
-use NilPortugues\SchemaOrg\Properties\EmploymentType;
-use NilPortugues\SchemaOrg\Properties\ExperienceRequirements;
-use NilPortugues\SchemaOrg\Properties\HiringOrganization;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\IncentiveCompensation;
-use NilPortugues\SchemaOrg\Properties\Incentives;
-use NilPortugues\SchemaOrg\Properties\Industry;
-use NilPortugues\SchemaOrg\Properties\JobBenefits;
-use NilPortugues\SchemaOrg\Properties\JobLocation;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\OccupationalCategory;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\Qualifications;
-use NilPortugues\SchemaOrg\Properties\Responsibilities;
-use NilPortugues\SchemaOrg\Properties\SalaryCurrency;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Skills;
-use NilPortugues\SchemaOrg\Properties\SpecialCommitments;
-use NilPortugues\SchemaOrg\Properties\Title;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\WorkHours;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\BaseSalaryProperty;
+use NilPortugues\SchemaOrg\Properties\BenefitsProperty;
+use NilPortugues\SchemaOrg\Properties\DatePostedProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\EducationRequirementsProperty;
+use NilPortugues\SchemaOrg\Properties\EmploymentTypeProperty;
+use NilPortugues\SchemaOrg\Properties\ExperienceRequirementsProperty;
+use NilPortugues\SchemaOrg\Properties\HiringOrganizationProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IncentiveCompensationProperty;
+use NilPortugues\SchemaOrg\Properties\IncentivesProperty;
+use NilPortugues\SchemaOrg\Properties\IndustryProperty;
+use NilPortugues\SchemaOrg\Properties\JobBenefitsProperty;
+use NilPortugues\SchemaOrg\Properties\JobLocationProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\OccupationalCategoryProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\QualificationsProperty;
+use NilPortugues\SchemaOrg\Properties\ResponsibilitiesProperty;
+use NilPortugues\SchemaOrg\Properties\SalaryCurrencyProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SkillsProperty;
+use NilPortugues\SchemaOrg\Properties\SpecialCommitmentsProperty;
+use NilPortugues\SchemaOrg\Properties\TitleProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\WorkHoursProperty;
 
 /**
  * Classes JobPosting.
@@ -58,7 +58,7 @@ class JobPosting
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -66,7 +66,7 @@ class JobPosting
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -74,7 +74,7 @@ class JobPosting
      */
     public static function baseSalary()
     {
-        return BaseSalary::create(self::schemaUrl());
+        return BaseSalaryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -82,7 +82,7 @@ class JobPosting
      */
     public static function benefits()
     {
-        return Benefits::create(self::schemaUrl());
+        return BenefitsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -90,7 +90,7 @@ class JobPosting
      */
     public static function datePosted()
     {
-        return DatePosted::create(self::schemaUrl());
+        return DatePostedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -98,7 +98,7 @@ class JobPosting
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -106,7 +106,7 @@ class JobPosting
      */
     public static function educationRequirements()
     {
-        return EducationRequirements::create(self::schemaUrl());
+        return EducationRequirementsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -114,7 +114,7 @@ class JobPosting
      */
     public static function employmentType()
     {
-        return EmploymentType::create(self::schemaUrl());
+        return EmploymentTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -122,7 +122,7 @@ class JobPosting
      */
     public static function experienceRequirements()
     {
-        return ExperienceRequirements::create(self::schemaUrl());
+        return ExperienceRequirementsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -130,7 +130,7 @@ class JobPosting
      */
     public static function hiringOrganization()
     {
-        return HiringOrganization::create(self::schemaUrl());
+        return HiringOrganizationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -138,7 +138,7 @@ class JobPosting
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -146,7 +146,7 @@ class JobPosting
      */
     public static function incentiveCompensation()
     {
-        return IncentiveCompensation::create(self::schemaUrl());
+        return IncentiveCompensationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -154,7 +154,7 @@ class JobPosting
      */
     public static function incentives()
     {
-        return Incentives::create(self::schemaUrl());
+        return IncentivesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -162,7 +162,7 @@ class JobPosting
      */
     public static function industry()
     {
-        return Industry::create(self::schemaUrl());
+        return IndustryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -170,7 +170,7 @@ class JobPosting
      */
     public static function jobBenefits()
     {
-        return JobBenefits::create(self::schemaUrl());
+        return JobBenefitsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -178,7 +178,7 @@ class JobPosting
      */
     public static function jobLocation()
     {
-        return JobLocation::create(self::schemaUrl());
+        return JobLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -186,7 +186,7 @@ class JobPosting
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -194,7 +194,7 @@ class JobPosting
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -202,7 +202,7 @@ class JobPosting
      */
     public static function occupationalCategory()
     {
-        return OccupationalCategory::create(self::schemaUrl());
+        return OccupationalCategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -210,7 +210,7 @@ class JobPosting
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -218,7 +218,7 @@ class JobPosting
      */
     public static function qualifications()
     {
-        return Qualifications::create(self::schemaUrl());
+        return QualificationsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -226,7 +226,7 @@ class JobPosting
      */
     public static function responsibilities()
     {
-        return Responsibilities::create(self::schemaUrl());
+        return ResponsibilitiesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -234,7 +234,7 @@ class JobPosting
      */
     public static function salaryCurrency()
     {
-        return SalaryCurrency::create(self::schemaUrl());
+        return SalaryCurrencyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -242,7 +242,7 @@ class JobPosting
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -250,7 +250,7 @@ class JobPosting
      */
     public static function skills()
     {
-        return Skills::create(self::schemaUrl());
+        return SkillsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -258,7 +258,7 @@ class JobPosting
      */
     public static function specialCommitments()
     {
-        return SpecialCommitments::create(self::schemaUrl());
+        return SpecialCommitmentsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -266,7 +266,7 @@ class JobPosting
      */
     public static function title()
     {
-        return Title::create(self::schemaUrl());
+        return TitleProperty::create(self::schemaUrl());
     }
 
     /**
@@ -274,7 +274,7 @@ class JobPosting
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -282,6 +282,6 @@ class JobPosting
      */
     public static function workHours()
     {
-        return WorkHours::create(self::schemaUrl());
+        return WorkHoursProperty::create(self::schemaUrl());
     }
 }

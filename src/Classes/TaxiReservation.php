@@ -3,9 +3,9 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\PartySize;
-use NilPortugues\SchemaOrg\Properties\PickupLocation;
-use NilPortugues\SchemaOrg\Properties\PickupTime;
+use NilPortugues\SchemaOrg\Properties\PartySizeProperty;
+use NilPortugues\SchemaOrg\Properties\PickupLocationProperty;
+use NilPortugues\SchemaOrg\Properties\PickupTimeProperty;
 
 /**
  * Classes TaxiReservation.
@@ -32,7 +32,7 @@ class TaxiReservation
      */
     public static function partySize()
     {
-        return PartySize::create(self::schemaUrl());
+        return PartySizeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -40,7 +40,7 @@ class TaxiReservation
      */
     public static function pickupLocation()
     {
-        return PickupLocation::create(self::schemaUrl());
+        return PickupLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -48,6 +48,6 @@ class TaxiReservation
      */
     public static function pickupTime()
     {
-        return PickupTime::create(self::schemaUrl());
+        return PickupTimeProperty::create(self::schemaUrl());
     }
 }

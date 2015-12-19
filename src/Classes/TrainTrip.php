@@ -3,24 +3,24 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\ArrivalPlatform;
-use NilPortugues\SchemaOrg\Properties\ArrivalStation;
-use NilPortugues\SchemaOrg\Properties\ArrivalTime;
-use NilPortugues\SchemaOrg\Properties\DeparturePlatform;
-use NilPortugues\SchemaOrg\Properties\DepartureStation;
-use NilPortugues\SchemaOrg\Properties\DepartureTime;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\Provider;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\TrainName;
-use NilPortugues\SchemaOrg\Properties\TrainNumber;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalPlatformProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalStationProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty;
+use NilPortugues\SchemaOrg\Properties\DeparturePlatformProperty;
+use NilPortugues\SchemaOrg\Properties\DepartureStationProperty;
+use NilPortugues\SchemaOrg\Properties\DepartureTimeProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProviderProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\TrainNameProperty;
+use NilPortugues\SchemaOrg\Properties\TrainNumberProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes TrainTrip.
@@ -47,7 +47,7 @@ class TrainTrip
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -55,7 +55,7 @@ class TrainTrip
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -63,7 +63,7 @@ class TrainTrip
      */
     public static function arrivalPlatform()
     {
-        return ArrivalPlatform::create(self::schemaUrl());
+        return ArrivalPlatformProperty::create(self::schemaUrl());
     }
 
     /**
@@ -71,7 +71,7 @@ class TrainTrip
      */
     public static function arrivalStation()
     {
-        return ArrivalStation::create(self::schemaUrl());
+        return ArrivalStationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -79,7 +79,7 @@ class TrainTrip
      */
     public static function arrivalTime()
     {
-        return ArrivalTime::create(self::schemaUrl());
+        return ArrivalTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -87,7 +87,7 @@ class TrainTrip
      */
     public static function departurePlatform()
     {
-        return DeparturePlatform::create(self::schemaUrl());
+        return DeparturePlatformProperty::create(self::schemaUrl());
     }
 
     /**
@@ -95,7 +95,7 @@ class TrainTrip
      */
     public static function departureStation()
     {
-        return DepartureStation::create(self::schemaUrl());
+        return DepartureStationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -103,7 +103,7 @@ class TrainTrip
      */
     public static function departureTime()
     {
-        return DepartureTime::create(self::schemaUrl());
+        return DepartureTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -111,7 +111,7 @@ class TrainTrip
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -119,7 +119,7 @@ class TrainTrip
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -127,7 +127,7 @@ class TrainTrip
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -135,7 +135,7 @@ class TrainTrip
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -143,7 +143,7 @@ class TrainTrip
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -151,7 +151,7 @@ class TrainTrip
      */
     public static function provider()
     {
-        return Provider::create(self::schemaUrl());
+        return ProviderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -159,7 +159,7 @@ class TrainTrip
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -167,7 +167,7 @@ class TrainTrip
      */
     public static function trainName()
     {
-        return TrainName::create(self::schemaUrl());
+        return TrainNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -175,7 +175,7 @@ class TrainTrip
      */
     public static function trainNumber()
     {
-        return TrainNumber::create(self::schemaUrl());
+        return TrainNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -183,6 +183,6 @@ class TrainTrip
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

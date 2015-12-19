@@ -3,7 +3,7 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\CharacterName;
+use NilPortugues\SchemaOrg\Properties\CharacterNameProperty;
 
 /**
  * Classes PerformanceRole.
@@ -30,6 +30,6 @@ class PerformanceRole
      */
     public static function characterName()
     {
-        return CharacterName::create(self::schemaUrl());
+        return CharacterNameProperty::create(self::schemaUrl());
     }
 }

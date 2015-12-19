@@ -3,24 +3,24 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Breadcrumb;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\LastReviewed;
-use NilPortugues\SchemaOrg\Properties\MainContentOfPage;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\PrimaryImageOfPage;
-use NilPortugues\SchemaOrg\Properties\RelatedLink;
-use NilPortugues\SchemaOrg\Properties\ReviewedBy;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\SignificantLink;
-use NilPortugues\SchemaOrg\Properties\SignificantLinks;
-use NilPortugues\SchemaOrg\Properties\Specialty;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\BreadcrumbProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\LastReviewedProperty;
+use NilPortugues\SchemaOrg\Properties\MainContentOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\PrimaryImageOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\RelatedLinkProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewedByProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SignificantLinkProperty;
+use NilPortugues\SchemaOrg\Properties\SignificantLinksProperty;
+use NilPortugues\SchemaOrg\Properties\SpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes WebPage.
@@ -47,7 +47,7 @@ class WebPage
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -55,7 +55,7 @@ class WebPage
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -63,7 +63,7 @@ class WebPage
      */
     public static function breadcrumb()
     {
-        return Breadcrumb::create(self::schemaUrl());
+        return BreadcrumbProperty::create(self::schemaUrl());
     }
 
     /**
@@ -71,7 +71,7 @@ class WebPage
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -79,7 +79,7 @@ class WebPage
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -87,7 +87,7 @@ class WebPage
      */
     public static function lastReviewed()
     {
-        return LastReviewed::create(self::schemaUrl());
+        return LastReviewedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -95,7 +95,7 @@ class WebPage
      */
     public static function mainContentOfPage()
     {
-        return MainContentOfPage::create(self::schemaUrl());
+        return MainContentOfPageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -103,7 +103,7 @@ class WebPage
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -111,7 +111,7 @@ class WebPage
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -119,7 +119,7 @@ class WebPage
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -127,7 +127,7 @@ class WebPage
      */
     public static function primaryImageOfPage()
     {
-        return PrimaryImageOfPage::create(self::schemaUrl());
+        return PrimaryImageOfPageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -135,7 +135,7 @@ class WebPage
      */
     public static function relatedLink()
     {
-        return RelatedLink::create(self::schemaUrl());
+        return RelatedLinkProperty::create(self::schemaUrl());
     }
 
     /**
@@ -143,7 +143,7 @@ class WebPage
      */
     public static function reviewedBy()
     {
-        return ReviewedBy::create(self::schemaUrl());
+        return ReviewedByProperty::create(self::schemaUrl());
     }
 
     /**
@@ -151,7 +151,7 @@ class WebPage
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -159,7 +159,7 @@ class WebPage
      */
     public static function significantLink()
     {
-        return SignificantLink::create(self::schemaUrl());
+        return SignificantLinkProperty::create(self::schemaUrl());
     }
 
     /**
@@ -167,7 +167,7 @@ class WebPage
      */
     public static function significantLinks()
     {
-        return SignificantLinks::create(self::schemaUrl());
+        return SignificantLinksProperty::create(self::schemaUrl());
     }
 
     /**
@@ -175,7 +175,7 @@ class WebPage
      */
     public static function specialty()
     {
-        return Specialty::create(self::schemaUrl());
+        return SpecialtyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -183,6 +183,6 @@ class WebPage
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

@@ -3,18 +3,18 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Calories;
-use NilPortugues\SchemaOrg\Properties\CarbohydrateContent;
-use NilPortugues\SchemaOrg\Properties\CholesterolContent;
-use NilPortugues\SchemaOrg\Properties\FatContent;
-use NilPortugues\SchemaOrg\Properties\FiberContent;
-use NilPortugues\SchemaOrg\Properties\ProteinContent;
-use NilPortugues\SchemaOrg\Properties\SaturatedFatContent;
-use NilPortugues\SchemaOrg\Properties\ServingSize;
-use NilPortugues\SchemaOrg\Properties\SodiumContent;
-use NilPortugues\SchemaOrg\Properties\SugarContent;
-use NilPortugues\SchemaOrg\Properties\TransFatContent;
-use NilPortugues\SchemaOrg\Properties\UnsaturatedFatContent;
+use NilPortugues\SchemaOrg\Properties\CaloriesProperty;
+use NilPortugues\SchemaOrg\Properties\CarbohydrateContentProperty;
+use NilPortugues\SchemaOrg\Properties\CholesterolContentProperty;
+use NilPortugues\SchemaOrg\Properties\FatContentProperty;
+use NilPortugues\SchemaOrg\Properties\FiberContentProperty;
+use NilPortugues\SchemaOrg\Properties\ProteinContentProperty;
+use NilPortugues\SchemaOrg\Properties\SaturatedFatContentProperty;
+use NilPortugues\SchemaOrg\Properties\ServingSizeProperty;
+use NilPortugues\SchemaOrg\Properties\SodiumContentProperty;
+use NilPortugues\SchemaOrg\Properties\SugarContentProperty;
+use NilPortugues\SchemaOrg\Properties\TransFatContentProperty;
+use NilPortugues\SchemaOrg\Properties\UnsaturatedFatContentProperty;
 
 /**
  * Classes NutritionInformation.
@@ -41,7 +41,7 @@ class NutritionInformation
      */
     public static function calories()
     {
-        return Calories::create(self::schemaUrl());
+        return CaloriesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -49,7 +49,7 @@ class NutritionInformation
      */
     public static function carbohydrateContent()
     {
-        return CarbohydrateContent::create(self::schemaUrl());
+        return CarbohydrateContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -57,7 +57,7 @@ class NutritionInformation
      */
     public static function cholesterolContent()
     {
-        return CholesterolContent::create(self::schemaUrl());
+        return CholesterolContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -65,7 +65,7 @@ class NutritionInformation
      */
     public static function fatContent()
     {
-        return FatContent::create(self::schemaUrl());
+        return FatContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -73,7 +73,7 @@ class NutritionInformation
      */
     public static function fiberContent()
     {
-        return FiberContent::create(self::schemaUrl());
+        return FiberContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -81,7 +81,7 @@ class NutritionInformation
      */
     public static function proteinContent()
     {
-        return ProteinContent::create(self::schemaUrl());
+        return ProteinContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -89,7 +89,7 @@ class NutritionInformation
      */
     public static function saturatedFatContent()
     {
-        return SaturatedFatContent::create(self::schemaUrl());
+        return SaturatedFatContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -97,7 +97,7 @@ class NutritionInformation
      */
     public static function servingSize()
     {
-        return ServingSize::create(self::schemaUrl());
+        return ServingSizeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -105,7 +105,7 @@ class NutritionInformation
      */
     public static function sodiumContent()
     {
-        return SodiumContent::create(self::schemaUrl());
+        return SodiumContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -113,7 +113,7 @@ class NutritionInformation
      */
     public static function sugarContent()
     {
-        return SugarContent::create(self::schemaUrl());
+        return SugarContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -121,7 +121,7 @@ class NutritionInformation
      */
     public static function transFatContent()
     {
-        return TransFatContent::create(self::schemaUrl());
+        return TransFatContentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -129,6 +129,6 @@ class NutritionInformation
      */
     public static function unsaturatedFatContent()
     {
-        return UnsaturatedFatContent::create(self::schemaUrl());
+        return UnsaturatedFatContentProperty::create(self::schemaUrl());
     }
 }

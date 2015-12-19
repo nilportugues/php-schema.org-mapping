@@ -3,21 +3,21 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Catalog;
-use NilPortugues\SchemaOrg\Properties\DatasetTimeInterval;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Distribution;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\IncludedDataCatalog;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Spatial;
-use NilPortugues\SchemaOrg\Properties\Temporal;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\CatalogProperty;
+use NilPortugues\SchemaOrg\Properties\DatasetTimeIntervalProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DistributionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IncludedDataCatalogProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SpatialProperty;
+use NilPortugues\SchemaOrg\Properties\TemporalProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Dataset.
@@ -44,7 +44,7 @@ class Dataset
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -52,7 +52,7 @@ class Dataset
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -60,7 +60,7 @@ class Dataset
      */
     public static function catalog()
     {
-        return Catalog::create(self::schemaUrl());
+        return CatalogProperty::create(self::schemaUrl());
     }
 
     /**
@@ -68,7 +68,7 @@ class Dataset
      */
     public static function datasetTimeInterval()
     {
-        return DatasetTimeInterval::create(self::schemaUrl());
+        return DatasetTimeIntervalProperty::create(self::schemaUrl());
     }
 
     /**
@@ -76,7 +76,7 @@ class Dataset
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -84,7 +84,7 @@ class Dataset
      */
     public static function distribution()
     {
-        return Distribution::create(self::schemaUrl());
+        return DistributionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -92,7 +92,7 @@ class Dataset
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -100,7 +100,7 @@ class Dataset
      */
     public static function includedDataCatalog()
     {
-        return IncludedDataCatalog::create(self::schemaUrl());
+        return IncludedDataCatalogProperty::create(self::schemaUrl());
     }
 
     /**
@@ -108,7 +108,7 @@ class Dataset
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -116,7 +116,7 @@ class Dataset
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -124,7 +124,7 @@ class Dataset
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -132,7 +132,7 @@ class Dataset
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -140,7 +140,7 @@ class Dataset
      */
     public static function spatial()
     {
-        return Spatial::create(self::schemaUrl());
+        return SpatialProperty::create(self::schemaUrl());
     }
 
     /**
@@ -148,7 +148,7 @@ class Dataset
      */
     public static function temporal()
     {
-        return Temporal::create(self::schemaUrl());
+        return TemporalProperty::create(self::schemaUrl());
     }
 
     /**
@@ -156,6 +156,6 @@ class Dataset
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

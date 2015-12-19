@@ -1,0 +1,132 @@
+<?php
+namespace NilPortugues\Tests\SchemaOrg\Classes;
+
+use NilPortugues\SchemaOrg\Classes\Zoo;
+use NilPortugues\SchemaOrg\Mapping;
+
+/**
+ * Classes ZooTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
+ */
+class ZooTest extends \PHPUnit_Framework_TestCase
+{
+    public function testSchemaUrlReturnsExpectedUrl()
+    {
+        $this->assertEquals(Zoo::schemaUrl(), "http://schema.org/Zoo");
+    }
+
+    public function testAdditionalPropertyWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::additionalProperty());
+    }
+
+    public function testAddressWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::address());
+    }
+
+    public function testAggregateRatingWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::aggregateRating());
+    }
+
+    public function testBranchCodeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::branchCode());
+    }
+
+    public function testContainedInWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::containedIn());
+    }
+
+    public function testContainedInPlaceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::containedInPlace());
+    }
+
+    public function testContainsPlaceWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::containsPlace());
+    }
+
+    public function testEventWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::event());
+    }
+
+    public function testEventsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::events());
+    }
+
+    public function testFaxNumberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::faxNumber());
+    }
+
+    public function testGeoWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::geo());
+    }
+
+    public function testGlobalLocationNumberWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::globalLocationNumber());
+    }
+
+    public function testHasMapWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::hasMap());
+    }
+
+    public function testIsicV4WillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::isicV4());
+    }
+
+    public function testLogoWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::logo());
+    }
+
+    public function testMapWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::map());
+    }
+
+    public function testMapsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::maps());
+    }
+
+    public function testOpeningHoursSpecificationWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::openingHoursSpecification());
+    }
+
+    public function testPhotoWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::photo());
+    }
+
+    public function testPhotosWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::photos());
+    }
+
+    public function testReviewWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::review());
+    }
+
+    public function testReviewsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::reviews());
+    }
+
+    public function testTelephoneWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, Zoo::telephone());
+    }
+}

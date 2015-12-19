@@ -3,16 +3,16 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AreaServed;
-use NilPortugues\SchemaOrg\Properties\AvailableLanguage;
-use NilPortugues\SchemaOrg\Properties\ContactOption;
-use NilPortugues\SchemaOrg\Properties\ContactType;
-use NilPortugues\SchemaOrg\Properties\Email;
-use NilPortugues\SchemaOrg\Properties\FaxNumber;
-use NilPortugues\SchemaOrg\Properties\HoursAvailable;
-use NilPortugues\SchemaOrg\Properties\ProductSupported;
-use NilPortugues\SchemaOrg\Properties\ServiceArea;
-use NilPortugues\SchemaOrg\Properties\Telephone;
+use NilPortugues\SchemaOrg\Properties\AreaServedProperty;
+use NilPortugues\SchemaOrg\Properties\AvailableLanguageProperty;
+use NilPortugues\SchemaOrg\Properties\ContactOptionProperty;
+use NilPortugues\SchemaOrg\Properties\ContactTypeProperty;
+use NilPortugues\SchemaOrg\Properties\EmailProperty;
+use NilPortugues\SchemaOrg\Properties\FaxNumberProperty;
+use NilPortugues\SchemaOrg\Properties\HoursAvailableProperty;
+use NilPortugues\SchemaOrg\Properties\ProductSupportedProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceAreaProperty;
+use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
 
 /**
  * Classes ContactPoint.
@@ -39,7 +39,7 @@ class ContactPoint
      */
     public static function areaServed()
     {
-        return AreaServed::create(self::schemaUrl());
+        return AreaServedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -47,7 +47,7 @@ class ContactPoint
      */
     public static function availableLanguage()
     {
-        return AvailableLanguage::create(self::schemaUrl());
+        return AvailableLanguageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -55,7 +55,7 @@ class ContactPoint
      */
     public static function contactOption()
     {
-        return ContactOption::create(self::schemaUrl());
+        return ContactOptionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -63,7 +63,7 @@ class ContactPoint
      */
     public static function contactType()
     {
-        return ContactType::create(self::schemaUrl());
+        return ContactTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -71,7 +71,7 @@ class ContactPoint
      */
     public static function email()
     {
-        return Email::create(self::schemaUrl());
+        return EmailProperty::create(self::schemaUrl());
     }
 
     /**
@@ -79,7 +79,7 @@ class ContactPoint
      */
     public static function faxNumber()
     {
-        return FaxNumber::create(self::schemaUrl());
+        return FaxNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -87,7 +87,7 @@ class ContactPoint
      */
     public static function hoursAvailable()
     {
-        return HoursAvailable::create(self::schemaUrl());
+        return HoursAvailableProperty::create(self::schemaUrl());
     }
 
     /**
@@ -95,7 +95,7 @@ class ContactPoint
      */
     public static function productSupported()
     {
-        return ProductSupported::create(self::schemaUrl());
+        return ProductSupportedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -103,7 +103,7 @@ class ContactPoint
      */
     public static function serviceArea()
     {
-        return ServiceArea::create(self::schemaUrl());
+        return ServiceAreaProperty::create(self::schemaUrl());
     }
 
     /**
@@ -111,6 +111,6 @@ class ContactPoint
      */
     public static function telephone()
     {
-        return Telephone::create(self::schemaUrl());
+        return TelephoneProperty::create(self::schemaUrl());
     }
 }

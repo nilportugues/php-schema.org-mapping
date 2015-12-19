@@ -3,29 +3,29 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalProperty;
-use NilPortugues\SchemaOrg\Properties\Address;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\BranchCode;
-use NilPortugues\SchemaOrg\Properties\ContainedIn;
-use NilPortugues\SchemaOrg\Properties\ContainedInPlace;
-use NilPortugues\SchemaOrg\Properties\ContainsPlace;
-use NilPortugues\SchemaOrg\Properties\Event;
-use NilPortugues\SchemaOrg\Properties\Events;
-use NilPortugues\SchemaOrg\Properties\FaxNumber;
-use NilPortugues\SchemaOrg\Properties\Geo;
-use NilPortugues\SchemaOrg\Properties\GlobalLocationNumber;
-use NilPortugues\SchemaOrg\Properties\HasMap;
-use NilPortugues\SchemaOrg\Properties\IsicV4;
-use NilPortugues\SchemaOrg\Properties\Logo;
-use NilPortugues\SchemaOrg\Properties\Map;
-use NilPortugues\SchemaOrg\Properties\Maps;
-use NilPortugues\SchemaOrg\Properties\OpeningHoursSpecification;
-use NilPortugues\SchemaOrg\Properties\Photo;
-use NilPortugues\SchemaOrg\Properties\Photos;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\Reviews;
-use NilPortugues\SchemaOrg\Properties\Telephone;
+use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
+use NilPortugues\SchemaOrg\Properties\AddressProperty;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\BranchCodeProperty;
+use NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty;
+use NilPortugues\SchemaOrg\Properties\ContainedInProperty;
+use NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty;
+use NilPortugues\SchemaOrg\Properties\EventProperty;
+use NilPortugues\SchemaOrg\Properties\EventsProperty;
+use NilPortugues\SchemaOrg\Properties\FaxNumberProperty;
+use NilPortugues\SchemaOrg\Properties\GeoProperty;
+use NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty;
+use NilPortugues\SchemaOrg\Properties\HasMapProperty;
+use NilPortugues\SchemaOrg\Properties\IsicV4Property;
+use NilPortugues\SchemaOrg\Properties\LogoProperty;
+use NilPortugues\SchemaOrg\Properties\MapProperty;
+use NilPortugues\SchemaOrg\Properties\MapsProperty;
+use NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty;
+use NilPortugues\SchemaOrg\Properties\PhotoProperty;
+use NilPortugues\SchemaOrg\Properties\PhotosProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
+use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
 
 /**
  * Classes Place.
@@ -52,7 +52,7 @@ class Place
      */
     public static function additionalProperty()
     {
-        return AdditionalProperty::create(self::schemaUrl());
+        return AdditionalPropertyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -60,7 +60,7 @@ class Place
      */
     public static function address()
     {
-        return Address::create(self::schemaUrl());
+        return AddressProperty::create(self::schemaUrl());
     }
 
     /**
@@ -68,7 +68,7 @@ class Place
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(self::schemaUrl());
+        return AggregateRatingProperty::create(self::schemaUrl());
     }
 
     /**
@@ -76,7 +76,7 @@ class Place
      */
     public static function branchCode()
     {
-        return BranchCode::create(self::schemaUrl());
+        return BranchCodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -84,7 +84,7 @@ class Place
      */
     public static function containedIn()
     {
-        return ContainedIn::create(self::schemaUrl());
+        return ContainedInProperty::create(self::schemaUrl());
     }
 
     /**
@@ -92,7 +92,7 @@ class Place
      */
     public static function containedInPlace()
     {
-        return ContainedInPlace::create(self::schemaUrl());
+        return ContainedInPlaceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -100,7 +100,7 @@ class Place
      */
     public static function containsPlace()
     {
-        return ContainsPlace::create(self::schemaUrl());
+        return ContainsPlaceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -108,7 +108,7 @@ class Place
      */
     public static function event()
     {
-        return Event::create(self::schemaUrl());
+        return EventProperty::create(self::schemaUrl());
     }
 
     /**
@@ -116,7 +116,7 @@ class Place
      */
     public static function events()
     {
-        return Events::create(self::schemaUrl());
+        return EventsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -124,7 +124,7 @@ class Place
      */
     public static function faxNumber()
     {
-        return FaxNumber::create(self::schemaUrl());
+        return FaxNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -132,7 +132,7 @@ class Place
      */
     public static function geo()
     {
-        return Geo::create(self::schemaUrl());
+        return GeoProperty::create(self::schemaUrl());
     }
 
     /**
@@ -140,7 +140,7 @@ class Place
      */
     public static function globalLocationNumber()
     {
-        return GlobalLocationNumber::create(self::schemaUrl());
+        return GlobalLocationNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -148,7 +148,7 @@ class Place
      */
     public static function hasMap()
     {
-        return HasMap::create(self::schemaUrl());
+        return HasMapProperty::create(self::schemaUrl());
     }
 
     /**
@@ -156,7 +156,7 @@ class Place
      */
     public static function isicV4()
     {
-        return IsicV4::create(self::schemaUrl());
+        return IsicV4Property::create(self::schemaUrl());
     }
 
     /**
@@ -164,7 +164,7 @@ class Place
      */
     public static function logo()
     {
-        return Logo::create(self::schemaUrl());
+        return LogoProperty::create(self::schemaUrl());
     }
 
     /**
@@ -172,7 +172,7 @@ class Place
      */
     public static function map()
     {
-        return Map::create(self::schemaUrl());
+        return MapProperty::create(self::schemaUrl());
     }
 
     /**
@@ -180,7 +180,7 @@ class Place
      */
     public static function maps()
     {
-        return Maps::create(self::schemaUrl());
+        return MapsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -188,7 +188,7 @@ class Place
      */
     public static function openingHoursSpecification()
     {
-        return OpeningHoursSpecification::create(self::schemaUrl());
+        return OpeningHoursSpecificationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -196,7 +196,7 @@ class Place
      */
     public static function photo()
     {
-        return Photo::create(self::schemaUrl());
+        return PhotoProperty::create(self::schemaUrl());
     }
 
     /**
@@ -204,7 +204,7 @@ class Place
      */
     public static function photos()
     {
-        return Photos::create(self::schemaUrl());
+        return PhotosProperty::create(self::schemaUrl());
     }
 
     /**
@@ -212,7 +212,7 @@ class Place
      */
     public static function review()
     {
-        return Review::create(self::schemaUrl());
+        return ReviewProperty::create(self::schemaUrl());
     }
 
     /**
@@ -220,7 +220,7 @@ class Place
      */
     public static function reviews()
     {
-        return Reviews::create(self::schemaUrl());
+        return ReviewsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -228,6 +228,6 @@ class Place
      */
     public static function telephone()
     {
-        return Telephone::create(self::schemaUrl());
+        return TelephoneProperty::create(self::schemaUrl());
     }
 }

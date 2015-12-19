@@ -3,29 +3,29 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\Attendee;
-use NilPortugues\SchemaOrg\Properties\Attendees;
-use NilPortugues\SchemaOrg\Properties\DoorTime;
-use NilPortugues\SchemaOrg\Properties\Duration;
-use NilPortugues\SchemaOrg\Properties\EndDate;
-use NilPortugues\SchemaOrg\Properties\EventStatus;
-use NilPortugues\SchemaOrg\Properties\InLanguage;
-use NilPortugues\SchemaOrg\Properties\Location;
-use NilPortugues\SchemaOrg\Properties\Offers;
-use NilPortugues\SchemaOrg\Properties\Organizer;
-use NilPortugues\SchemaOrg\Properties\Performer;
-use NilPortugues\SchemaOrg\Properties\Performers;
-use NilPortugues\SchemaOrg\Properties\PreviousStartDate;
-use NilPortugues\SchemaOrg\Properties\RecordedIn;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\StartDate;
-use NilPortugues\SchemaOrg\Properties\SubEvent;
-use NilPortugues\SchemaOrg\Properties\SubEvents;
-use NilPortugues\SchemaOrg\Properties\SuperEvent;
-use NilPortugues\SchemaOrg\Properties\TypicalAgeRange;
-use NilPortugues\SchemaOrg\Properties\WorkFeatured;
-use NilPortugues\SchemaOrg\Properties\WorkPerformed;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\AttendeeProperty;
+use NilPortugues\SchemaOrg\Properties\AttendeesProperty;
+use NilPortugues\SchemaOrg\Properties\DoorTimeProperty;
+use NilPortugues\SchemaOrg\Properties\DurationProperty;
+use NilPortugues\SchemaOrg\Properties\EndDateProperty;
+use NilPortugues\SchemaOrg\Properties\EventStatusProperty;
+use NilPortugues\SchemaOrg\Properties\InLanguageProperty;
+use NilPortugues\SchemaOrg\Properties\LocationProperty;
+use NilPortugues\SchemaOrg\Properties\OffersProperty;
+use NilPortugues\SchemaOrg\Properties\OrganizerProperty;
+use NilPortugues\SchemaOrg\Properties\PerformerProperty;
+use NilPortugues\SchemaOrg\Properties\PerformersProperty;
+use NilPortugues\SchemaOrg\Properties\PreviousStartDateProperty;
+use NilPortugues\SchemaOrg\Properties\RecordedInProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\StartDateProperty;
+use NilPortugues\SchemaOrg\Properties\SubEventProperty;
+use NilPortugues\SchemaOrg\Properties\SubEventsProperty;
+use NilPortugues\SchemaOrg\Properties\SuperEventProperty;
+use NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty;
+use NilPortugues\SchemaOrg\Properties\WorkFeaturedProperty;
+use NilPortugues\SchemaOrg\Properties\WorkPerformedProperty;
 
 /**
  * Classes Event.
@@ -52,7 +52,7 @@ class Event
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(self::schemaUrl());
+        return AggregateRatingProperty::create(self::schemaUrl());
     }
 
     /**
@@ -60,7 +60,7 @@ class Event
      */
     public static function attendee()
     {
-        return Attendee::create(self::schemaUrl());
+        return AttendeeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -68,7 +68,7 @@ class Event
      */
     public static function attendees()
     {
-        return Attendees::create(self::schemaUrl());
+        return AttendeesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -76,7 +76,7 @@ class Event
      */
     public static function doorTime()
     {
-        return DoorTime::create(self::schemaUrl());
+        return DoorTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -84,7 +84,7 @@ class Event
      */
     public static function duration()
     {
-        return Duration::create(self::schemaUrl());
+        return DurationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -92,7 +92,7 @@ class Event
      */
     public static function endDate()
     {
-        return EndDate::create(self::schemaUrl());
+        return EndDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -100,7 +100,7 @@ class Event
      */
     public static function eventStatus()
     {
-        return EventStatus::create(self::schemaUrl());
+        return EventStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -108,7 +108,7 @@ class Event
      */
     public static function inLanguage()
     {
-        return InLanguage::create(self::schemaUrl());
+        return InLanguageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -116,7 +116,7 @@ class Event
      */
     public static function location()
     {
-        return Location::create(self::schemaUrl());
+        return LocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -124,7 +124,7 @@ class Event
      */
     public static function offers()
     {
-        return Offers::create(self::schemaUrl());
+        return OffersProperty::create(self::schemaUrl());
     }
 
     /**
@@ -132,7 +132,7 @@ class Event
      */
     public static function organizer()
     {
-        return Organizer::create(self::schemaUrl());
+        return OrganizerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -140,7 +140,7 @@ class Event
      */
     public static function performer()
     {
-        return Performer::create(self::schemaUrl());
+        return PerformerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -148,7 +148,7 @@ class Event
      */
     public static function performers()
     {
-        return Performers::create(self::schemaUrl());
+        return PerformersProperty::create(self::schemaUrl());
     }
 
     /**
@@ -156,7 +156,7 @@ class Event
      */
     public static function previousStartDate()
     {
-        return PreviousStartDate::create(self::schemaUrl());
+        return PreviousStartDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -164,7 +164,7 @@ class Event
      */
     public static function recordedIn()
     {
-        return RecordedIn::create(self::schemaUrl());
+        return RecordedInProperty::create(self::schemaUrl());
     }
 
     /**
@@ -172,7 +172,7 @@ class Event
      */
     public static function review()
     {
-        return Review::create(self::schemaUrl());
+        return ReviewProperty::create(self::schemaUrl());
     }
 
     /**
@@ -180,7 +180,7 @@ class Event
      */
     public static function startDate()
     {
-        return StartDate::create(self::schemaUrl());
+        return StartDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -188,7 +188,7 @@ class Event
      */
     public static function subEvent()
     {
-        return SubEvent::create(self::schemaUrl());
+        return SubEventProperty::create(self::schemaUrl());
     }
 
     /**
@@ -196,7 +196,7 @@ class Event
      */
     public static function subEvents()
     {
-        return SubEvents::create(self::schemaUrl());
+        return SubEventsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -204,7 +204,7 @@ class Event
      */
     public static function superEvent()
     {
-        return SuperEvent::create(self::schemaUrl());
+        return SuperEventProperty::create(self::schemaUrl());
     }
 
     /**
@@ -212,7 +212,7 @@ class Event
      */
     public static function typicalAgeRange()
     {
-        return TypicalAgeRange::create(self::schemaUrl());
+        return TypicalAgeRangeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -220,7 +220,7 @@ class Event
      */
     public static function workFeatured()
     {
-        return WorkFeatured::create(self::schemaUrl());
+        return WorkFeaturedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -228,6 +228,6 @@ class Event
      */
     public static function workPerformed()
     {
-        return WorkPerformed::create(self::schemaUrl());
+        return WorkPerformedProperty::create(self::schemaUrl());
     }
 }

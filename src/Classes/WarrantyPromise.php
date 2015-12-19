@@ -3,8 +3,8 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\DurationOfWarranty;
-use NilPortugues\SchemaOrg\Properties\WarrantyScope;
+use NilPortugues\SchemaOrg\Properties\DurationOfWarrantyProperty;
+use NilPortugues\SchemaOrg\Properties\WarrantyScopeProperty;
 
 /**
  * Classes WarrantyPromise.
@@ -31,7 +31,7 @@ class WarrantyPromise
      */
     public static function durationOfWarranty()
     {
-        return DurationOfWarranty::create(self::schemaUrl());
+        return DurationOfWarrantyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -39,6 +39,6 @@ class WarrantyPromise
      */
     public static function warrantyScope()
     {
-        return WarrantyScope::create(self::schemaUrl());
+        return WarrantyScopeProperty::create(self::schemaUrl());
     }
 }

@@ -3,11 +3,11 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AmountOfThisGood;
-use NilPortugues\SchemaOrg\Properties\BusinessFunction;
-use NilPortugues\SchemaOrg\Properties\TypeOfGood;
-use NilPortugues\SchemaOrg\Properties\UnitCode;
-use NilPortugues\SchemaOrg\Properties\UnitText;
+use NilPortugues\SchemaOrg\Properties\AmountOfThisGoodProperty;
+use NilPortugues\SchemaOrg\Properties\BusinessFunctionProperty;
+use NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty;
+use NilPortugues\SchemaOrg\Properties\UnitCodeProperty;
+use NilPortugues\SchemaOrg\Properties\UnitTextProperty;
 
 /**
  * Classes TypeAndQuantityNode.
@@ -34,7 +34,7 @@ class TypeAndQuantityNode
      */
     public static function amountOfThisGood()
     {
-        return AmountOfThisGood::create(self::schemaUrl());
+        return AmountOfThisGoodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -42,7 +42,7 @@ class TypeAndQuantityNode
      */
     public static function businessFunction()
     {
-        return BusinessFunction::create(self::schemaUrl());
+        return BusinessFunctionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -50,7 +50,7 @@ class TypeAndQuantityNode
      */
     public static function typeOfGood()
     {
-        return TypeOfGood::create(self::schemaUrl());
+        return TypeOfGoodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -58,7 +58,7 @@ class TypeAndQuantityNode
      */
     public static function unitCode()
     {
-        return UnitCode::create(self::schemaUrl());
+        return UnitCodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -66,6 +66,6 @@ class TypeAndQuantityNode
      */
     public static function unitText()
     {
-        return UnitText::create(self::schemaUrl());
+        return UnitTextProperty::create(self::schemaUrl());
     }
 }

@@ -3,7 +3,7 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\SubReservation;
+use NilPortugues\SchemaOrg\Properties\SubReservationProperty;
 
 /**
  * Classes ReservationPackage.
@@ -30,6 +30,6 @@ class ReservationPackage
      */
     public static function subReservation()
     {
-        return SubReservation::create(self::schemaUrl());
+        return SubReservationProperty::create(self::schemaUrl());
     }
 }

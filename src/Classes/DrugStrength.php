@@ -3,16 +3,16 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActiveIngredient;
-use NilPortugues\SchemaOrg\Properties\AvailableIn;
-use NilPortugues\SchemaOrg\Properties\Code;
-use NilPortugues\SchemaOrg\Properties\Guideline;
-use NilPortugues\SchemaOrg\Properties\MedicineSystem;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthority;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
-use NilPortugues\SchemaOrg\Properties\StrengthUnit;
-use NilPortugues\SchemaOrg\Properties\StrengthValue;
-use NilPortugues\SchemaOrg\Properties\Study;
+use NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty;
+use NilPortugues\SchemaOrg\Properties\AvailableInProperty;
+use NilPortugues\SchemaOrg\Properties\CodeProperty;
+use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
+use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
+use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
+use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\StrengthUnitProperty;
+use NilPortugues\SchemaOrg\Properties\StrengthValueProperty;
+use NilPortugues\SchemaOrg\Properties\StudyProperty;
 
 /**
  * Classes DrugStrength.
@@ -39,7 +39,7 @@ class DrugStrength
      */
     public static function activeIngredient()
     {
-        return ActiveIngredient::create(self::schemaUrl());
+        return ActiveIngredientProperty::create(self::schemaUrl());
     }
 
     /**
@@ -47,7 +47,7 @@ class DrugStrength
      */
     public static function availableIn()
     {
-        return AvailableIn::create(self::schemaUrl());
+        return AvailableInProperty::create(self::schemaUrl());
     }
 
     /**
@@ -55,7 +55,7 @@ class DrugStrength
      */
     public static function code()
     {
-        return Code::create(MedicalEntity::schemaUrl());
+        return CodeProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -63,7 +63,7 @@ class DrugStrength
      */
     public static function guideline()
     {
-        return Guideline::create(MedicalEntity::schemaUrl());
+        return GuidelineProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -71,7 +71,7 @@ class DrugStrength
      */
     public static function medicineSystem()
     {
-        return MedicineSystem::create(MedicalEntity::schemaUrl());
+        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -79,7 +79,7 @@ class DrugStrength
      */
     public static function recognizingAuthority()
     {
-        return RecognizingAuthority::create(MedicalEntity::schemaUrl());
+        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -87,7 +87,7 @@ class DrugStrength
      */
     public static function relevantSpecialty()
     {
-        return RelevantSpecialty::create(MedicalEntity::schemaUrl());
+        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -95,7 +95,7 @@ class DrugStrength
      */
     public static function strengthUnit()
     {
-        return StrengthUnit::create(self::schemaUrl());
+        return StrengthUnitProperty::create(self::schemaUrl());
     }
 
     /**
@@ -103,7 +103,7 @@ class DrugStrength
      */
     public static function strengthValue()
     {
-        return StrengthValue::create(self::schemaUrl());
+        return StrengthValueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -111,6 +111,6 @@ class DrugStrength
      */
     public static function study()
     {
-        return Study::create(MedicalEntity::schemaUrl());
+        return StudyProperty::create(MedicalEntity::schemaUrl());
     }
 }

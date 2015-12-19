@@ -3,10 +3,10 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\BoardingGroup;
-use NilPortugues\SchemaOrg\Properties\PassengerPriorityStatus;
-use NilPortugues\SchemaOrg\Properties\PassengerSequenceNumber;
-use NilPortugues\SchemaOrg\Properties\SecurityScreening;
+use NilPortugues\SchemaOrg\Properties\BoardingGroupProperty;
+use NilPortugues\SchemaOrg\Properties\PassengerPriorityStatusProperty;
+use NilPortugues\SchemaOrg\Properties\PassengerSequenceNumberProperty;
+use NilPortugues\SchemaOrg\Properties\SecurityScreeningProperty;
 
 /**
  * Classes FlightReservation.
@@ -33,7 +33,7 @@ class FlightReservation
      */
     public static function boardingGroup()
     {
-        return BoardingGroup::create(self::schemaUrl());
+        return BoardingGroupProperty::create(self::schemaUrl());
     }
 
     /**
@@ -41,7 +41,7 @@ class FlightReservation
      */
     public static function passengerPriorityStatus()
     {
-        return PassengerPriorityStatus::create(self::schemaUrl());
+        return PassengerPriorityStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -49,7 +49,7 @@ class FlightReservation
      */
     public static function passengerSequenceNumber()
     {
-        return PassengerSequenceNumber::create(self::schemaUrl());
+        return PassengerSequenceNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -57,6 +57,6 @@ class FlightReservation
      */
     public static function securityScreening()
     {
-        return SecurityScreening::create(self::schemaUrl());
+        return SecurityScreeningProperty::create(self::schemaUrl());
     }
 }

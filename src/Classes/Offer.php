@@ -3,56 +3,56 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AcceptedPaymentMethod;
-use NilPortugues\SchemaOrg\Properties\AddOn;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AdvanceBookingRequirement;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\AreaServed;
-use NilPortugues\SchemaOrg\Properties\Availability;
-use NilPortugues\SchemaOrg\Properties\AvailabilityEnds;
-use NilPortugues\SchemaOrg\Properties\AvailabilityStarts;
-use NilPortugues\SchemaOrg\Properties\AvailableAtOrFrom;
-use NilPortugues\SchemaOrg\Properties\AvailableDeliveryMethod;
-use NilPortugues\SchemaOrg\Properties\BusinessFunction;
-use NilPortugues\SchemaOrg\Properties\Category;
-use NilPortugues\SchemaOrg\Properties\DeliveryLeadTime;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\EligibleCustomerType;
-use NilPortugues\SchemaOrg\Properties\EligibleDuration;
-use NilPortugues\SchemaOrg\Properties\EligibleQuantity;
-use NilPortugues\SchemaOrg\Properties\EligibleRegion;
-use NilPortugues\SchemaOrg\Properties\EligibleTransactionVolume;
-use NilPortugues\SchemaOrg\Properties\Gtin12;
-use NilPortugues\SchemaOrg\Properties\Gtin13;
-use NilPortugues\SchemaOrg\Properties\Gtin14;
-use NilPortugues\SchemaOrg\Properties\Gtin8;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\IncludesObject;
-use NilPortugues\SchemaOrg\Properties\IneligibleRegion;
-use NilPortugues\SchemaOrg\Properties\InventoryLevel;
-use NilPortugues\SchemaOrg\Properties\ItemCondition;
-use NilPortugues\SchemaOrg\Properties\ItemOffered;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Mpn;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\OfferedBy;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\Price;
-use NilPortugues\SchemaOrg\Properties\PriceCurrency;
-use NilPortugues\SchemaOrg\Properties\PriceSpecification;
-use NilPortugues\SchemaOrg\Properties\PriceValidUntil;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\Reviews;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Seller;
-use NilPortugues\SchemaOrg\Properties\SerialNumber;
-use NilPortugues\SchemaOrg\Properties\Sku;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\ValidFrom;
-use NilPortugues\SchemaOrg\Properties\ValidThrough;
-use NilPortugues\SchemaOrg\Properties\Warranty;
+use NilPortugues\SchemaOrg\Properties\AcceptedPaymentMethodProperty;
+use NilPortugues\SchemaOrg\Properties\AddOnProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AdvanceBookingRequirementProperty;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\AreaServedProperty;
+use NilPortugues\SchemaOrg\Properties\AvailabilityEndsProperty;
+use NilPortugues\SchemaOrg\Properties\AvailabilityProperty;
+use NilPortugues\SchemaOrg\Properties\AvailabilityStartsProperty;
+use NilPortugues\SchemaOrg\Properties\AvailableAtOrFromProperty;
+use NilPortugues\SchemaOrg\Properties\AvailableDeliveryMethodProperty;
+use NilPortugues\SchemaOrg\Properties\BusinessFunctionProperty;
+use NilPortugues\SchemaOrg\Properties\CategoryProperty;
+use NilPortugues\SchemaOrg\Properties\DeliveryLeadTimeProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\EligibleCustomerTypeProperty;
+use NilPortugues\SchemaOrg\Properties\EligibleDurationProperty;
+use NilPortugues\SchemaOrg\Properties\EligibleQuantityProperty;
+use NilPortugues\SchemaOrg\Properties\EligibleRegionProperty;
+use NilPortugues\SchemaOrg\Properties\EligibleTransactionVolumeProperty;
+use NilPortugues\SchemaOrg\Properties\Gtin12Property;
+use NilPortugues\SchemaOrg\Properties\Gtin13Property;
+use NilPortugues\SchemaOrg\Properties\Gtin14Property;
+use NilPortugues\SchemaOrg\Properties\Gtin8Property;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IncludesObjectProperty;
+use NilPortugues\SchemaOrg\Properties\IneligibleRegionProperty;
+use NilPortugues\SchemaOrg\Properties\InventoryLevelProperty;
+use NilPortugues\SchemaOrg\Properties\ItemConditionProperty;
+use NilPortugues\SchemaOrg\Properties\ItemOfferedProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MpnProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\OfferedByProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty;
+use NilPortugues\SchemaOrg\Properties\PriceProperty;
+use NilPortugues\SchemaOrg\Properties\PriceSpecificationProperty;
+use NilPortugues\SchemaOrg\Properties\PriceValidUntilProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SellerProperty;
+use NilPortugues\SchemaOrg\Properties\SerialNumberProperty;
+use NilPortugues\SchemaOrg\Properties\SkuProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
+use NilPortugues\SchemaOrg\Properties\ValidThroughProperty;
+use NilPortugues\SchemaOrg\Properties\WarrantyProperty;
 
 /**
  * Classes Offer.
@@ -79,7 +79,7 @@ class Offer
      */
     public static function acceptedPaymentMethod()
     {
-        return AcceptedPaymentMethod::create(self::schemaUrl());
+        return AcceptedPaymentMethodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -87,7 +87,7 @@ class Offer
      */
     public static function addOn()
     {
-        return AddOn::create(self::schemaUrl());
+        return AddOnProperty::create(self::schemaUrl());
     }
 
     /**
@@ -95,7 +95,7 @@ class Offer
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -103,7 +103,7 @@ class Offer
      */
     public static function advanceBookingRequirement()
     {
-        return AdvanceBookingRequirement::create(self::schemaUrl());
+        return AdvanceBookingRequirementProperty::create(self::schemaUrl());
     }
 
     /**
@@ -111,7 +111,7 @@ class Offer
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(self::schemaUrl());
+        return AggregateRatingProperty::create(self::schemaUrl());
     }
 
     /**
@@ -119,7 +119,7 @@ class Offer
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -127,7 +127,7 @@ class Offer
      */
     public static function areaServed()
     {
-        return AreaServed::create(self::schemaUrl());
+        return AreaServedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -135,7 +135,7 @@ class Offer
      */
     public static function availability()
     {
-        return Availability::create(self::schemaUrl());
+        return AvailabilityProperty::create(self::schemaUrl());
     }
 
     /**
@@ -143,7 +143,7 @@ class Offer
      */
     public static function availabilityEnds()
     {
-        return AvailabilityEnds::create(self::schemaUrl());
+        return AvailabilityEndsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -151,7 +151,7 @@ class Offer
      */
     public static function availabilityStarts()
     {
-        return AvailabilityStarts::create(self::schemaUrl());
+        return AvailabilityStartsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -159,7 +159,7 @@ class Offer
      */
     public static function availableAtOrFrom()
     {
-        return AvailableAtOrFrom::create(self::schemaUrl());
+        return AvailableAtOrFromProperty::create(self::schemaUrl());
     }
 
     /**
@@ -167,7 +167,7 @@ class Offer
      */
     public static function availableDeliveryMethod()
     {
-        return AvailableDeliveryMethod::create(self::schemaUrl());
+        return AvailableDeliveryMethodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -175,7 +175,7 @@ class Offer
      */
     public static function businessFunction()
     {
-        return BusinessFunction::create(self::schemaUrl());
+        return BusinessFunctionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -183,7 +183,7 @@ class Offer
      */
     public static function category()
     {
-        return Category::create(self::schemaUrl());
+        return CategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -191,7 +191,7 @@ class Offer
      */
     public static function deliveryLeadTime()
     {
-        return DeliveryLeadTime::create(self::schemaUrl());
+        return DeliveryLeadTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -199,7 +199,7 @@ class Offer
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -207,7 +207,7 @@ class Offer
      */
     public static function eligibleCustomerType()
     {
-        return EligibleCustomerType::create(self::schemaUrl());
+        return EligibleCustomerTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -215,7 +215,7 @@ class Offer
      */
     public static function eligibleDuration()
     {
-        return EligibleDuration::create(self::schemaUrl());
+        return EligibleDurationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -223,7 +223,7 @@ class Offer
      */
     public static function eligibleQuantity()
     {
-        return EligibleQuantity::create(self::schemaUrl());
+        return EligibleQuantityProperty::create(self::schemaUrl());
     }
 
     /**
@@ -231,7 +231,7 @@ class Offer
      */
     public static function eligibleRegion()
     {
-        return EligibleRegion::create(self::schemaUrl());
+        return EligibleRegionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -239,7 +239,7 @@ class Offer
      */
     public static function eligibleTransactionVolume()
     {
-        return EligibleTransactionVolume::create(self::schemaUrl());
+        return EligibleTransactionVolumeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -247,7 +247,7 @@ class Offer
      */
     public static function gtin12()
     {
-        return Gtin12::create(self::schemaUrl());
+        return Gtin12Property::create(self::schemaUrl());
     }
 
     /**
@@ -255,7 +255,7 @@ class Offer
      */
     public static function gtin13()
     {
-        return Gtin13::create(self::schemaUrl());
+        return Gtin13Property::create(self::schemaUrl());
     }
 
     /**
@@ -263,7 +263,7 @@ class Offer
      */
     public static function gtin14()
     {
-        return Gtin14::create(self::schemaUrl());
+        return Gtin14Property::create(self::schemaUrl());
     }
 
     /**
@@ -271,7 +271,7 @@ class Offer
      */
     public static function gtin8()
     {
-        return Gtin8::create(self::schemaUrl());
+        return Gtin8Property::create(self::schemaUrl());
     }
 
     /**
@@ -279,7 +279,7 @@ class Offer
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -287,7 +287,7 @@ class Offer
      */
     public static function includesObject()
     {
-        return IncludesObject::create(self::schemaUrl());
+        return IncludesObjectProperty::create(self::schemaUrl());
     }
 
     /**
@@ -295,7 +295,7 @@ class Offer
      */
     public static function ineligibleRegion()
     {
-        return IneligibleRegion::create(self::schemaUrl());
+        return IneligibleRegionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -303,7 +303,7 @@ class Offer
      */
     public static function inventoryLevel()
     {
-        return InventoryLevel::create(self::schemaUrl());
+        return InventoryLevelProperty::create(self::schemaUrl());
     }
 
     /**
@@ -311,7 +311,7 @@ class Offer
      */
     public static function itemCondition()
     {
-        return ItemCondition::create(self::schemaUrl());
+        return ItemConditionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -319,7 +319,7 @@ class Offer
      */
     public static function itemOffered()
     {
-        return ItemOffered::create(self::schemaUrl());
+        return ItemOfferedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -327,7 +327,7 @@ class Offer
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -335,7 +335,7 @@ class Offer
      */
     public static function mpn()
     {
-        return Mpn::create(self::schemaUrl());
+        return MpnProperty::create(self::schemaUrl());
     }
 
     /**
@@ -343,7 +343,7 @@ class Offer
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -351,7 +351,7 @@ class Offer
      */
     public static function offeredBy()
     {
-        return OfferedBy::create(self::schemaUrl());
+        return OfferedByProperty::create(self::schemaUrl());
     }
 
     /**
@@ -359,7 +359,7 @@ class Offer
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -367,7 +367,7 @@ class Offer
      */
     public static function price()
     {
-        return Price::create(self::schemaUrl());
+        return PriceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -375,7 +375,7 @@ class Offer
      */
     public static function priceCurrency()
     {
-        return PriceCurrency::create(self::schemaUrl());
+        return PriceCurrencyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -383,7 +383,7 @@ class Offer
      */
     public static function priceSpecification()
     {
-        return PriceSpecification::create(self::schemaUrl());
+        return PriceSpecificationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -391,7 +391,7 @@ class Offer
      */
     public static function priceValidUntil()
     {
-        return PriceValidUntil::create(self::schemaUrl());
+        return PriceValidUntilProperty::create(self::schemaUrl());
     }
 
     /**
@@ -399,7 +399,7 @@ class Offer
      */
     public static function review()
     {
-        return Review::create(self::schemaUrl());
+        return ReviewProperty::create(self::schemaUrl());
     }
 
     /**
@@ -407,7 +407,7 @@ class Offer
      */
     public static function reviews()
     {
-        return Reviews::create(self::schemaUrl());
+        return ReviewsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -415,7 +415,7 @@ class Offer
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -423,7 +423,7 @@ class Offer
      */
     public static function seller()
     {
-        return Seller::create(self::schemaUrl());
+        return SellerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -431,7 +431,7 @@ class Offer
      */
     public static function serialNumber()
     {
-        return SerialNumber::create(self::schemaUrl());
+        return SerialNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -439,7 +439,7 @@ class Offer
      */
     public static function sku()
     {
-        return Sku::create(self::schemaUrl());
+        return SkuProperty::create(self::schemaUrl());
     }
 
     /**
@@ -447,7 +447,7 @@ class Offer
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -455,7 +455,7 @@ class Offer
      */
     public static function validFrom()
     {
-        return ValidFrom::create(self::schemaUrl());
+        return ValidFromProperty::create(self::schemaUrl());
     }
 
     /**
@@ -463,7 +463,7 @@ class Offer
      */
     public static function validThrough()
     {
-        return ValidThrough::create(self::schemaUrl());
+        return ValidThroughProperty::create(self::schemaUrl());
     }
 
     /**
@@ -471,6 +471,6 @@ class Offer
      */
     public static function warranty()
     {
-        return Warranty::create(self::schemaUrl());
+        return WarrantyProperty::create(self::schemaUrl());
     }
 }

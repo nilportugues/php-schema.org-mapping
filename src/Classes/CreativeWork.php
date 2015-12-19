@@ -3,76 +3,76 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\About;
-use NilPortugues\SchemaOrg\Properties\AccessibilityAPI;
-use NilPortugues\SchemaOrg\Properties\AccessibilityControl;
-use NilPortugues\SchemaOrg\Properties\AccessibilityFeature;
-use NilPortugues\SchemaOrg\Properties\AccessibilityHazard;
-use NilPortugues\SchemaOrg\Properties\AccountablePerson;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\AlternativeHeadline;
-use NilPortugues\SchemaOrg\Properties\AssociatedMedia;
-use NilPortugues\SchemaOrg\Properties\Audience;
-use NilPortugues\SchemaOrg\Properties\Audio;
-use NilPortugues\SchemaOrg\Properties\Author;
-use NilPortugues\SchemaOrg\Properties\Award;
-use NilPortugues\SchemaOrg\Properties\Awards;
-use NilPortugues\SchemaOrg\Properties\Character;
-use NilPortugues\SchemaOrg\Properties\Citation;
-use NilPortugues\SchemaOrg\Properties\Comment;
-use NilPortugues\SchemaOrg\Properties\CommentCount;
-use NilPortugues\SchemaOrg\Properties\ContentLocation;
-use NilPortugues\SchemaOrg\Properties\ContentRating;
-use NilPortugues\SchemaOrg\Properties\Contributor;
-use NilPortugues\SchemaOrg\Properties\CopyrightHolder;
-use NilPortugues\SchemaOrg\Properties\CopyrightYear;
-use NilPortugues\SchemaOrg\Properties\Creator;
-use NilPortugues\SchemaOrg\Properties\DateCreated;
-use NilPortugues\SchemaOrg\Properties\DateModified;
-use NilPortugues\SchemaOrg\Properties\DatePublished;
-use NilPortugues\SchemaOrg\Properties\DiscussionUrl;
-use NilPortugues\SchemaOrg\Properties\Editor;
-use NilPortugues\SchemaOrg\Properties\EducationalAlignment;
-use NilPortugues\SchemaOrg\Properties\EducationalUse;
-use NilPortugues\SchemaOrg\Properties\Encoding;
-use NilPortugues\SchemaOrg\Properties\Encodings;
-use NilPortugues\SchemaOrg\Properties\ExampleOfWork;
-use NilPortugues\SchemaOrg\Properties\FileFormat;
-use NilPortugues\SchemaOrg\Properties\Genre;
-use NilPortugues\SchemaOrg\Properties\HasPart;
-use NilPortugues\SchemaOrg\Properties\Headline;
-use NilPortugues\SchemaOrg\Properties\InLanguage;
-use NilPortugues\SchemaOrg\Properties\InteractionStatistic;
-use NilPortugues\SchemaOrg\Properties\InteractivityType;
-use NilPortugues\SchemaOrg\Properties\IsBasedOnUrl;
-use NilPortugues\SchemaOrg\Properties\IsFamilyFriendly;
-use NilPortugues\SchemaOrg\Properties\IsPartOf;
-use NilPortugues\SchemaOrg\Properties\Keywords;
-use NilPortugues\SchemaOrg\Properties\LearningResourceType;
-use NilPortugues\SchemaOrg\Properties\License;
-use NilPortugues\SchemaOrg\Properties\LocationCreated;
-use NilPortugues\SchemaOrg\Properties\MainEntity;
-use NilPortugues\SchemaOrg\Properties\Mentions;
-use NilPortugues\SchemaOrg\Properties\Offers;
-use NilPortugues\SchemaOrg\Properties\Position;
-use NilPortugues\SchemaOrg\Properties\Producer;
-use NilPortugues\SchemaOrg\Properties\Provider;
-use NilPortugues\SchemaOrg\Properties\Publication;
-use NilPortugues\SchemaOrg\Properties\Publisher;
-use NilPortugues\SchemaOrg\Properties\PublishingPrinciples;
-use NilPortugues\SchemaOrg\Properties\RecordedAt;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\Reviews;
-use NilPortugues\SchemaOrg\Properties\SchemaVersion;
-use NilPortugues\SchemaOrg\Properties\SourceOrganization;
-use NilPortugues\SchemaOrg\Properties\Text;
-use NilPortugues\SchemaOrg\Properties\ThumbnailUrl;
-use NilPortugues\SchemaOrg\Properties\TimeRequired;
-use NilPortugues\SchemaOrg\Properties\Translator;
-use NilPortugues\SchemaOrg\Properties\TypicalAgeRange;
-use NilPortugues\SchemaOrg\Properties\Version;
-use NilPortugues\SchemaOrg\Properties\Video;
-use NilPortugues\SchemaOrg\Properties\WorkExample;
+use NilPortugues\SchemaOrg\Properties\AboutProperty;
+use NilPortugues\SchemaOrg\Properties\AccessibilityAPIProperty;
+use NilPortugues\SchemaOrg\Properties\AccessibilityControlProperty;
+use NilPortugues\SchemaOrg\Properties\AccessibilityFeatureProperty;
+use NilPortugues\SchemaOrg\Properties\AccessibilityHazardProperty;
+use NilPortugues\SchemaOrg\Properties\AccountablePersonProperty;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\AlternativeHeadlineProperty;
+use NilPortugues\SchemaOrg\Properties\AssociatedMediaProperty;
+use NilPortugues\SchemaOrg\Properties\AudienceProperty;
+use NilPortugues\SchemaOrg\Properties\AudioProperty;
+use NilPortugues\SchemaOrg\Properties\AuthorProperty;
+use NilPortugues\SchemaOrg\Properties\AwardProperty;
+use NilPortugues\SchemaOrg\Properties\AwardsProperty;
+use NilPortugues\SchemaOrg\Properties\CharacterProperty;
+use NilPortugues\SchemaOrg\Properties\CitationProperty;
+use NilPortugues\SchemaOrg\Properties\CommentCountProperty;
+use NilPortugues\SchemaOrg\Properties\CommentProperty;
+use NilPortugues\SchemaOrg\Properties\ContentLocationProperty;
+use NilPortugues\SchemaOrg\Properties\ContentRatingProperty;
+use NilPortugues\SchemaOrg\Properties\ContributorProperty;
+use NilPortugues\SchemaOrg\Properties\CopyrightHolderProperty;
+use NilPortugues\SchemaOrg\Properties\CopyrightYearProperty;
+use NilPortugues\SchemaOrg\Properties\CreatorProperty;
+use NilPortugues\SchemaOrg\Properties\DateCreatedProperty;
+use NilPortugues\SchemaOrg\Properties\DateModifiedProperty;
+use NilPortugues\SchemaOrg\Properties\DatePublishedProperty;
+use NilPortugues\SchemaOrg\Properties\DiscussionUrlProperty;
+use NilPortugues\SchemaOrg\Properties\EditorProperty;
+use NilPortugues\SchemaOrg\Properties\EducationalAlignmentProperty;
+use NilPortugues\SchemaOrg\Properties\EducationalUseProperty;
+use NilPortugues\SchemaOrg\Properties\EncodingProperty;
+use NilPortugues\SchemaOrg\Properties\EncodingsProperty;
+use NilPortugues\SchemaOrg\Properties\ExampleOfWorkProperty;
+use NilPortugues\SchemaOrg\Properties\FileFormatProperty;
+use NilPortugues\SchemaOrg\Properties\GenreProperty;
+use NilPortugues\SchemaOrg\Properties\HasPartProperty;
+use NilPortugues\SchemaOrg\Properties\HeadlineProperty;
+use NilPortugues\SchemaOrg\Properties\InLanguageProperty;
+use NilPortugues\SchemaOrg\Properties\InteractionStatisticProperty;
+use NilPortugues\SchemaOrg\Properties\InteractivityTypeProperty;
+use NilPortugues\SchemaOrg\Properties\IsBasedOnUrlProperty;
+use NilPortugues\SchemaOrg\Properties\IsFamilyFriendlyProperty;
+use NilPortugues\SchemaOrg\Properties\IsPartOfProperty;
+use NilPortugues\SchemaOrg\Properties\KeywordsProperty;
+use NilPortugues\SchemaOrg\Properties\LearningResourceTypeProperty;
+use NilPortugues\SchemaOrg\Properties\LicenseProperty;
+use NilPortugues\SchemaOrg\Properties\LocationCreatedProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityProperty;
+use NilPortugues\SchemaOrg\Properties\MentionsProperty;
+use NilPortugues\SchemaOrg\Properties\OffersProperty;
+use NilPortugues\SchemaOrg\Properties\PositionProperty;
+use NilPortugues\SchemaOrg\Properties\ProducerProperty;
+use NilPortugues\SchemaOrg\Properties\ProviderProperty;
+use NilPortugues\SchemaOrg\Properties\PublicationProperty;
+use NilPortugues\SchemaOrg\Properties\PublisherProperty;
+use NilPortugues\SchemaOrg\Properties\PublishingPrinciplesProperty;
+use NilPortugues\SchemaOrg\Properties\RecordedAtProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
+use NilPortugues\SchemaOrg\Properties\SchemaVersionProperty;
+use NilPortugues\SchemaOrg\Properties\SourceOrganizationProperty;
+use NilPortugues\SchemaOrg\Properties\TextProperty;
+use NilPortugues\SchemaOrg\Properties\ThumbnailUrlProperty;
+use NilPortugues\SchemaOrg\Properties\TimeRequiredProperty;
+use NilPortugues\SchemaOrg\Properties\TranslatorProperty;
+use NilPortugues\SchemaOrg\Properties\TypicalAgeRangeProperty;
+use NilPortugues\SchemaOrg\Properties\VersionProperty;
+use NilPortugues\SchemaOrg\Properties\VideoProperty;
+use NilPortugues\SchemaOrg\Properties\WorkExampleProperty;
 
 /**
  * Classes CreativeWork.
@@ -99,7 +99,7 @@ class CreativeWork
      */
     public static function about()
     {
-        return About::create(self::schemaUrl());
+        return AboutProperty::create(self::schemaUrl());
     }
 
     /**
@@ -107,7 +107,7 @@ class CreativeWork
      */
     public static function accessibilityAPI()
     {
-        return AccessibilityAPI::create(self::schemaUrl());
+        return AccessibilityAPIProperty::create(self::schemaUrl());
     }
 
     /**
@@ -115,7 +115,7 @@ class CreativeWork
      */
     public static function accessibilityControl()
     {
-        return AccessibilityControl::create(self::schemaUrl());
+        return AccessibilityControlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -123,7 +123,7 @@ class CreativeWork
      */
     public static function accessibilityFeature()
     {
-        return AccessibilityFeature::create(self::schemaUrl());
+        return AccessibilityFeatureProperty::create(self::schemaUrl());
     }
 
     /**
@@ -131,7 +131,7 @@ class CreativeWork
      */
     public static function accessibilityHazard()
     {
-        return AccessibilityHazard::create(self::schemaUrl());
+        return AccessibilityHazardProperty::create(self::schemaUrl());
     }
 
     /**
@@ -139,7 +139,7 @@ class CreativeWork
      */
     public static function accountablePerson()
     {
-        return AccountablePerson::create(self::schemaUrl());
+        return AccountablePersonProperty::create(self::schemaUrl());
     }
 
     /**
@@ -147,7 +147,7 @@ class CreativeWork
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(self::schemaUrl());
+        return AggregateRatingProperty::create(self::schemaUrl());
     }
 
     /**
@@ -155,7 +155,7 @@ class CreativeWork
      */
     public static function alternativeHeadline()
     {
-        return AlternativeHeadline::create(self::schemaUrl());
+        return AlternativeHeadlineProperty::create(self::schemaUrl());
     }
 
     /**
@@ -163,7 +163,7 @@ class CreativeWork
      */
     public static function associatedMedia()
     {
-        return AssociatedMedia::create(self::schemaUrl());
+        return AssociatedMediaProperty::create(self::schemaUrl());
     }
 
     /**
@@ -171,7 +171,7 @@ class CreativeWork
      */
     public static function audience()
     {
-        return Audience::create(self::schemaUrl());
+        return AudienceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -179,7 +179,7 @@ class CreativeWork
      */
     public static function audio()
     {
-        return Audio::create(self::schemaUrl());
+        return AudioProperty::create(self::schemaUrl());
     }
 
     /**
@@ -187,7 +187,7 @@ class CreativeWork
      */
     public static function author()
     {
-        return Author::create(self::schemaUrl());
+        return AuthorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -195,7 +195,7 @@ class CreativeWork
      */
     public static function award()
     {
-        return Award::create(self::schemaUrl());
+        return AwardProperty::create(self::schemaUrl());
     }
 
     /**
@@ -203,7 +203,7 @@ class CreativeWork
      */
     public static function awards()
     {
-        return Awards::create(self::schemaUrl());
+        return AwardsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -211,7 +211,7 @@ class CreativeWork
      */
     public static function character()
     {
-        return Character::create(self::schemaUrl());
+        return CharacterProperty::create(self::schemaUrl());
     }
 
     /**
@@ -219,7 +219,7 @@ class CreativeWork
      */
     public static function citation()
     {
-        return Citation::create(self::schemaUrl());
+        return CitationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -227,7 +227,7 @@ class CreativeWork
      */
     public static function comment()
     {
-        return Comment::create(self::schemaUrl());
+        return CommentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -235,7 +235,7 @@ class CreativeWork
      */
     public static function commentCount()
     {
-        return CommentCount::create(self::schemaUrl());
+        return CommentCountProperty::create(self::schemaUrl());
     }
 
     /**
@@ -243,7 +243,7 @@ class CreativeWork
      */
     public static function contentLocation()
     {
-        return ContentLocation::create(self::schemaUrl());
+        return ContentLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -251,7 +251,7 @@ class CreativeWork
      */
     public static function contentRating()
     {
-        return ContentRating::create(self::schemaUrl());
+        return ContentRatingProperty::create(self::schemaUrl());
     }
 
     /**
@@ -259,7 +259,7 @@ class CreativeWork
      */
     public static function contributor()
     {
-        return Contributor::create(self::schemaUrl());
+        return ContributorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -267,7 +267,7 @@ class CreativeWork
      */
     public static function copyrightHolder()
     {
-        return CopyrightHolder::create(self::schemaUrl());
+        return CopyrightHolderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -275,7 +275,7 @@ class CreativeWork
      */
     public static function copyrightYear()
     {
-        return CopyrightYear::create(self::schemaUrl());
+        return CopyrightYearProperty::create(self::schemaUrl());
     }
 
     /**
@@ -283,7 +283,7 @@ class CreativeWork
      */
     public static function creator()
     {
-        return Creator::create(self::schemaUrl());
+        return CreatorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -291,7 +291,7 @@ class CreativeWork
      */
     public static function dateCreated()
     {
-        return DateCreated::create(self::schemaUrl());
+        return DateCreatedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -299,7 +299,7 @@ class CreativeWork
      */
     public static function dateModified()
     {
-        return DateModified::create(self::schemaUrl());
+        return DateModifiedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -307,7 +307,7 @@ class CreativeWork
      */
     public static function datePublished()
     {
-        return DatePublished::create(self::schemaUrl());
+        return DatePublishedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -315,7 +315,7 @@ class CreativeWork
      */
     public static function discussionUrl()
     {
-        return DiscussionUrl::create(self::schemaUrl());
+        return DiscussionUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -323,7 +323,7 @@ class CreativeWork
      */
     public static function editor()
     {
-        return Editor::create(self::schemaUrl());
+        return EditorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -331,7 +331,7 @@ class CreativeWork
      */
     public static function educationalAlignment()
     {
-        return EducationalAlignment::create(self::schemaUrl());
+        return EducationalAlignmentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -339,7 +339,7 @@ class CreativeWork
      */
     public static function educationalUse()
     {
-        return EducationalUse::create(self::schemaUrl());
+        return EducationalUseProperty::create(self::schemaUrl());
     }
 
     /**
@@ -347,7 +347,7 @@ class CreativeWork
      */
     public static function encoding()
     {
-        return Encoding::create(self::schemaUrl());
+        return EncodingProperty::create(self::schemaUrl());
     }
 
     /**
@@ -355,7 +355,7 @@ class CreativeWork
      */
     public static function encodings()
     {
-        return Encodings::create(self::schemaUrl());
+        return EncodingsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -363,7 +363,7 @@ class CreativeWork
      */
     public static function exampleOfWork()
     {
-        return ExampleOfWork::create(self::schemaUrl());
+        return ExampleOfWorkProperty::create(self::schemaUrl());
     }
 
     /**
@@ -371,7 +371,7 @@ class CreativeWork
      */
     public static function fileFormat()
     {
-        return FileFormat::create(self::schemaUrl());
+        return FileFormatProperty::create(self::schemaUrl());
     }
 
     /**
@@ -379,7 +379,7 @@ class CreativeWork
      */
     public static function genre()
     {
-        return Genre::create(self::schemaUrl());
+        return GenreProperty::create(self::schemaUrl());
     }
 
     /**
@@ -387,7 +387,7 @@ class CreativeWork
      */
     public static function hasPart()
     {
-        return HasPart::create(self::schemaUrl());
+        return HasPartProperty::create(self::schemaUrl());
     }
 
     /**
@@ -395,7 +395,7 @@ class CreativeWork
      */
     public static function headline()
     {
-        return Headline::create(self::schemaUrl());
+        return HeadlineProperty::create(self::schemaUrl());
     }
 
     /**
@@ -403,7 +403,7 @@ class CreativeWork
      */
     public static function inLanguage()
     {
-        return InLanguage::create(self::schemaUrl());
+        return InLanguageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -411,7 +411,7 @@ class CreativeWork
      */
     public static function interactionStatistic()
     {
-        return InteractionStatistic::create(self::schemaUrl());
+        return InteractionStatisticProperty::create(self::schemaUrl());
     }
 
     /**
@@ -419,7 +419,7 @@ class CreativeWork
      */
     public static function interactivityType()
     {
-        return InteractivityType::create(self::schemaUrl());
+        return InteractivityTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -427,7 +427,7 @@ class CreativeWork
      */
     public static function isBasedOnUrl()
     {
-        return IsBasedOnUrl::create(self::schemaUrl());
+        return IsBasedOnUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -435,7 +435,7 @@ class CreativeWork
      */
     public static function isFamilyFriendly()
     {
-        return IsFamilyFriendly::create(self::schemaUrl());
+        return IsFamilyFriendlyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -443,7 +443,7 @@ class CreativeWork
      */
     public static function isPartOf()
     {
-        return IsPartOf::create(self::schemaUrl());
+        return IsPartOfProperty::create(self::schemaUrl());
     }
 
     /**
@@ -451,7 +451,7 @@ class CreativeWork
      */
     public static function keywords()
     {
-        return Keywords::create(self::schemaUrl());
+        return KeywordsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -459,7 +459,7 @@ class CreativeWork
      */
     public static function learningResourceType()
     {
-        return LearningResourceType::create(self::schemaUrl());
+        return LearningResourceTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -467,7 +467,7 @@ class CreativeWork
      */
     public static function license()
     {
-        return License::create(self::schemaUrl());
+        return LicenseProperty::create(self::schemaUrl());
     }
 
     /**
@@ -475,7 +475,7 @@ class CreativeWork
      */
     public static function locationCreated()
     {
-        return LocationCreated::create(self::schemaUrl());
+        return LocationCreatedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -483,7 +483,7 @@ class CreativeWork
      */
     public static function mainEntity()
     {
-        return MainEntity::create(self::schemaUrl());
+        return MainEntityProperty::create(self::schemaUrl());
     }
 
     /**
@@ -491,7 +491,7 @@ class CreativeWork
      */
     public static function mentions()
     {
-        return Mentions::create(self::schemaUrl());
+        return MentionsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -499,7 +499,7 @@ class CreativeWork
      */
     public static function offers()
     {
-        return Offers::create(self::schemaUrl());
+        return OffersProperty::create(self::schemaUrl());
     }
 
     /**
@@ -507,7 +507,7 @@ class CreativeWork
      */
     public static function position()
     {
-        return Position::create(self::schemaUrl());
+        return PositionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -515,7 +515,7 @@ class CreativeWork
      */
     public static function producer()
     {
-        return Producer::create(self::schemaUrl());
+        return ProducerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -523,7 +523,7 @@ class CreativeWork
      */
     public static function provider()
     {
-        return Provider::create(self::schemaUrl());
+        return ProviderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -531,7 +531,7 @@ class CreativeWork
      */
     public static function publication()
     {
-        return Publication::create(self::schemaUrl());
+        return PublicationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -539,7 +539,7 @@ class CreativeWork
      */
     public static function publisher()
     {
-        return Publisher::create(self::schemaUrl());
+        return PublisherProperty::create(self::schemaUrl());
     }
 
     /**
@@ -547,7 +547,7 @@ class CreativeWork
      */
     public static function publishingPrinciples()
     {
-        return PublishingPrinciples::create(self::schemaUrl());
+        return PublishingPrinciplesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -555,7 +555,7 @@ class CreativeWork
      */
     public static function recordedAt()
     {
-        return RecordedAt::create(self::schemaUrl());
+        return RecordedAtProperty::create(self::schemaUrl());
     }
 
     /**
@@ -563,7 +563,7 @@ class CreativeWork
      */
     public static function review()
     {
-        return Review::create(self::schemaUrl());
+        return ReviewProperty::create(self::schemaUrl());
     }
 
     /**
@@ -571,7 +571,7 @@ class CreativeWork
      */
     public static function reviews()
     {
-        return Reviews::create(self::schemaUrl());
+        return ReviewsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -579,7 +579,7 @@ class CreativeWork
      */
     public static function schemaVersion()
     {
-        return SchemaVersion::create(self::schemaUrl());
+        return SchemaVersionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -587,7 +587,7 @@ class CreativeWork
      */
     public static function sourceOrganization()
     {
-        return SourceOrganization::create(self::schemaUrl());
+        return SourceOrganizationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -595,7 +595,7 @@ class CreativeWork
      */
     public static function text()
     {
-        return Text::create(self::schemaUrl());
+        return TextProperty::create(self::schemaUrl());
     }
 
     /**
@@ -603,7 +603,7 @@ class CreativeWork
      */
     public static function thumbnailUrl()
     {
-        return ThumbnailUrl::create(self::schemaUrl());
+        return ThumbnailUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -611,7 +611,7 @@ class CreativeWork
      */
     public static function timeRequired()
     {
-        return TimeRequired::create(self::schemaUrl());
+        return TimeRequiredProperty::create(self::schemaUrl());
     }
 
     /**
@@ -619,7 +619,7 @@ class CreativeWork
      */
     public static function translator()
     {
-        return Translator::create(self::schemaUrl());
+        return TranslatorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -627,7 +627,7 @@ class CreativeWork
      */
     public static function typicalAgeRange()
     {
-        return TypicalAgeRange::create(self::schemaUrl());
+        return TypicalAgeRangeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -635,7 +635,7 @@ class CreativeWork
      */
     public static function version()
     {
-        return Version::create(self::schemaUrl());
+        return VersionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -643,7 +643,7 @@ class CreativeWork
      */
     public static function video()
     {
-        return Video::create(self::schemaUrl());
+        return VideoProperty::create(self::schemaUrl());
     }
 
     /**
@@ -651,6 +651,6 @@ class CreativeWork
      */
     public static function workExample()
     {
-        return WorkExample::create(self::schemaUrl());
+        return WorkExampleProperty::create(self::schemaUrl());
     }
 }

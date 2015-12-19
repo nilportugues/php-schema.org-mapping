@@ -3,14 +3,14 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Address;
-use NilPortugues\SchemaOrg\Properties\AddressCountry;
-use NilPortugues\SchemaOrg\Properties\Box;
-use NilPortugues\SchemaOrg\Properties\Circle;
-use NilPortugues\SchemaOrg\Properties\Elevation;
-use NilPortugues\SchemaOrg\Properties\Line;
-use NilPortugues\SchemaOrg\Properties\Polygon;
-use NilPortugues\SchemaOrg\Properties\PostalCode;
+use NilPortugues\SchemaOrg\Properties\AddressCountryProperty;
+use NilPortugues\SchemaOrg\Properties\AddressProperty;
+use NilPortugues\SchemaOrg\Properties\BoxProperty;
+use NilPortugues\SchemaOrg\Properties\CircleProperty;
+use NilPortugues\SchemaOrg\Properties\ElevationProperty;
+use NilPortugues\SchemaOrg\Properties\LineProperty;
+use NilPortugues\SchemaOrg\Properties\PolygonProperty;
+use NilPortugues\SchemaOrg\Properties\PostalCodeProperty;
 
 /**
  * Classes GeoShape.
@@ -37,7 +37,7 @@ class GeoShape
      */
     public static function address()
     {
-        return Address::create(self::schemaUrl());
+        return AddressProperty::create(self::schemaUrl());
     }
 
     /**
@@ -45,7 +45,7 @@ class GeoShape
      */
     public static function addressCountry()
     {
-        return AddressCountry::create(self::schemaUrl());
+        return AddressCountryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -53,7 +53,7 @@ class GeoShape
      */
     public static function box()
     {
-        return Box::create(self::schemaUrl());
+        return BoxProperty::create(self::schemaUrl());
     }
 
     /**
@@ -61,7 +61,7 @@ class GeoShape
      */
     public static function circle()
     {
-        return Circle::create(self::schemaUrl());
+        return CircleProperty::create(self::schemaUrl());
     }
 
     /**
@@ -69,7 +69,7 @@ class GeoShape
      */
     public static function elevation()
     {
-        return Elevation::create(self::schemaUrl());
+        return ElevationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -77,7 +77,7 @@ class GeoShape
      */
     public static function line()
     {
-        return Line::create(self::schemaUrl());
+        return LineProperty::create(self::schemaUrl());
     }
 
     /**
@@ -85,7 +85,7 @@ class GeoShape
      */
     public static function polygon()
     {
-        return Polygon::create(self::schemaUrl());
+        return PolygonProperty::create(self::schemaUrl());
     }
 
     /**
@@ -93,6 +93,6 @@ class GeoShape
      */
     public static function postalCode()
     {
-        return PostalCode::create(self::schemaUrl());
+        return PostalCodeProperty::create(self::schemaUrl());
     }
 }

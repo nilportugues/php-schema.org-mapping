@@ -3,44 +3,44 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalProperty;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\Address;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\BranchCode;
-use NilPortugues\SchemaOrg\Properties\BranchOf;
-use NilPortugues\SchemaOrg\Properties\ContainedIn;
-use NilPortugues\SchemaOrg\Properties\ContainedInPlace;
-use NilPortugues\SchemaOrg\Properties\ContainsPlace;
-use NilPortugues\SchemaOrg\Properties\CurrenciesAccepted;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Event;
-use NilPortugues\SchemaOrg\Properties\Events;
-use NilPortugues\SchemaOrg\Properties\FaxNumber;
-use NilPortugues\SchemaOrg\Properties\Geo;
-use NilPortugues\SchemaOrg\Properties\GlobalLocationNumber;
-use NilPortugues\SchemaOrg\Properties\HasMap;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\IsicV4;
-use NilPortugues\SchemaOrg\Properties\Logo;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Map;
-use NilPortugues\SchemaOrg\Properties\Maps;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\OpeningHours;
-use NilPortugues\SchemaOrg\Properties\OpeningHoursSpecification;
-use NilPortugues\SchemaOrg\Properties\PaymentAccepted;
-use NilPortugues\SchemaOrg\Properties\Photo;
-use NilPortugues\SchemaOrg\Properties\Photos;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\PriceRange;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\Reviews;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\ScreenCount;
-use NilPortugues\SchemaOrg\Properties\Telephone;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AddressProperty;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\BranchCodeProperty;
+use NilPortugues\SchemaOrg\Properties\BranchOfProperty;
+use NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty;
+use NilPortugues\SchemaOrg\Properties\ContainedInProperty;
+use NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty;
+use NilPortugues\SchemaOrg\Properties\CurrenciesAcceptedProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\EventProperty;
+use NilPortugues\SchemaOrg\Properties\EventsProperty;
+use NilPortugues\SchemaOrg\Properties\FaxNumberProperty;
+use NilPortugues\SchemaOrg\Properties\GeoProperty;
+use NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty;
+use NilPortugues\SchemaOrg\Properties\HasMapProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IsicV4Property;
+use NilPortugues\SchemaOrg\Properties\LogoProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MapProperty;
+use NilPortugues\SchemaOrg\Properties\MapsProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\OpeningHoursProperty;
+use NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentAcceptedProperty;
+use NilPortugues\SchemaOrg\Properties\PhotoProperty;
+use NilPortugues\SchemaOrg\Properties\PhotosProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\PriceRangeProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\ScreenCountProperty;
+use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes MovieTheater.
@@ -67,7 +67,7 @@ class MovieTheater
      */
     public static function additionalProperty()
     {
-        return AdditionalProperty::create(Place::schemaUrl());
+        return AdditionalPropertyProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -75,7 +75,7 @@ class MovieTheater
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -83,7 +83,7 @@ class MovieTheater
      */
     public static function address()
     {
-        return Address::create(Place::schemaUrl());
+        return AddressProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -91,7 +91,7 @@ class MovieTheater
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(Place::schemaUrl());
+        return AggregateRatingProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -99,7 +99,7 @@ class MovieTheater
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -107,7 +107,7 @@ class MovieTheater
      */
     public static function branchCode()
     {
-        return BranchCode::create(LocalBusiness::schemaUrl());
+        return BranchCodeProperty::create(LocalBusiness::schemaUrl());
     }
 
     /**
@@ -115,7 +115,7 @@ class MovieTheater
      */
     public static function branchOf()
     {
-        return BranchOf::create(LocalBusiness::schemaUrl());
+        return BranchOfProperty::create(LocalBusiness::schemaUrl());
     }
 
     /**
@@ -123,7 +123,7 @@ class MovieTheater
      */
     public static function containedIn()
     {
-        return ContainedIn::create(Place::schemaUrl());
+        return ContainedInProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -131,7 +131,7 @@ class MovieTheater
      */
     public static function containedInPlace()
     {
-        return ContainedInPlace::create(Place::schemaUrl());
+        return ContainedInPlaceProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -139,7 +139,7 @@ class MovieTheater
      */
     public static function containsPlace()
     {
-        return ContainsPlace::create(Place::schemaUrl());
+        return ContainsPlaceProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -147,7 +147,7 @@ class MovieTheater
      */
     public static function currenciesAccepted()
     {
-        return CurrenciesAccepted::create(LocalBusiness::schemaUrl());
+        return CurrenciesAcceptedProperty::create(LocalBusiness::schemaUrl());
     }
 
     /**
@@ -155,7 +155,7 @@ class MovieTheater
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -163,7 +163,7 @@ class MovieTheater
      */
     public static function event()
     {
-        return Event::create(Place::schemaUrl());
+        return EventProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -171,7 +171,7 @@ class MovieTheater
      */
     public static function events()
     {
-        return Events::create(Place::schemaUrl());
+        return EventsProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -179,7 +179,7 @@ class MovieTheater
      */
     public static function faxNumber()
     {
-        return FaxNumber::create(Place::schemaUrl());
+        return FaxNumberProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -187,7 +187,7 @@ class MovieTheater
      */
     public static function geo()
     {
-        return Geo::create(Place::schemaUrl());
+        return GeoProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -195,7 +195,7 @@ class MovieTheater
      */
     public static function globalLocationNumber()
     {
-        return GlobalLocationNumber::create(Place::schemaUrl());
+        return GlobalLocationNumberProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -203,7 +203,7 @@ class MovieTheater
      */
     public static function hasMap()
     {
-        return HasMap::create(Place::schemaUrl());
+        return HasMapProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -211,7 +211,7 @@ class MovieTheater
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -219,7 +219,7 @@ class MovieTheater
      */
     public static function isicV4()
     {
-        return IsicV4::create(Place::schemaUrl());
+        return IsicV4Property::create(Place::schemaUrl());
     }
 
     /**
@@ -227,7 +227,7 @@ class MovieTheater
      */
     public static function logo()
     {
-        return Logo::create(Place::schemaUrl());
+        return LogoProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -235,7 +235,7 @@ class MovieTheater
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -243,7 +243,7 @@ class MovieTheater
      */
     public static function map()
     {
-        return Map::create(Place::schemaUrl());
+        return MapProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -251,7 +251,7 @@ class MovieTheater
      */
     public static function maps()
     {
-        return Maps::create(Place::schemaUrl());
+        return MapsProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -259,7 +259,7 @@ class MovieTheater
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -267,7 +267,7 @@ class MovieTheater
      */
     public static function openingHours()
     {
-        return OpeningHours::create(LocalBusiness::schemaUrl());
+        return OpeningHoursProperty::create(LocalBusiness::schemaUrl());
     }
 
     /**
@@ -275,7 +275,7 @@ class MovieTheater
      */
     public static function openingHoursSpecification()
     {
-        return OpeningHoursSpecification::create(Place::schemaUrl());
+        return OpeningHoursSpecificationProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -283,7 +283,7 @@ class MovieTheater
      */
     public static function paymentAccepted()
     {
-        return PaymentAccepted::create(LocalBusiness::schemaUrl());
+        return PaymentAcceptedProperty::create(LocalBusiness::schemaUrl());
     }
 
     /**
@@ -291,7 +291,7 @@ class MovieTheater
      */
     public static function photo()
     {
-        return Photo::create(Place::schemaUrl());
+        return PhotoProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -299,7 +299,7 @@ class MovieTheater
      */
     public static function photos()
     {
-        return Photos::create(Place::schemaUrl());
+        return PhotosProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -307,7 +307,7 @@ class MovieTheater
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -315,7 +315,7 @@ class MovieTheater
      */
     public static function priceRange()
     {
-        return PriceRange::create(LocalBusiness::schemaUrl());
+        return PriceRangeProperty::create(LocalBusiness::schemaUrl());
     }
 
     /**
@@ -323,7 +323,7 @@ class MovieTheater
      */
     public static function review()
     {
-        return Review::create(Place::schemaUrl());
+        return ReviewProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -331,7 +331,7 @@ class MovieTheater
      */
     public static function reviews()
     {
-        return Reviews::create(Place::schemaUrl());
+        return ReviewsProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -339,7 +339,7 @@ class MovieTheater
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -347,7 +347,7 @@ class MovieTheater
      */
     public static function screenCount()
     {
-        return ScreenCount::create(self::schemaUrl());
+        return ScreenCountProperty::create(self::schemaUrl());
     }
 
     /**
@@ -355,7 +355,7 @@ class MovieTheater
      */
     public static function telephone()
     {
-        return Telephone::create(Place::schemaUrl());
+        return TelephoneProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -363,6 +363,6 @@ class MovieTheater
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

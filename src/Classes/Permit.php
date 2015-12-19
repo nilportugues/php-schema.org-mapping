@@ -3,22 +3,22 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\IssuedBy;
-use NilPortugues\SchemaOrg\Properties\IssuedThrough;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PermitAudience;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\ValidFor;
-use NilPortugues\SchemaOrg\Properties\ValidFrom;
-use NilPortugues\SchemaOrg\Properties\ValidIn;
-use NilPortugues\SchemaOrg\Properties\ValidUntil;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IssuedByProperty;
+use NilPortugues\SchemaOrg\Properties\IssuedThroughProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PermitAudienceProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\ValidForProperty;
+use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
+use NilPortugues\SchemaOrg\Properties\ValidInProperty;
+use NilPortugues\SchemaOrg\Properties\ValidUntilProperty;
 
 /**
  * Classes Permit.
@@ -45,7 +45,7 @@ class Permit
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -53,7 +53,7 @@ class Permit
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -61,7 +61,7 @@ class Permit
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -69,7 +69,7 @@ class Permit
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -77,7 +77,7 @@ class Permit
      */
     public static function issuedBy()
     {
-        return IssuedBy::create(self::schemaUrl());
+        return IssuedByProperty::create(self::schemaUrl());
     }
 
     /**
@@ -85,7 +85,7 @@ class Permit
      */
     public static function issuedThrough()
     {
-        return IssuedThrough::create(self::schemaUrl());
+        return IssuedThroughProperty::create(self::schemaUrl());
     }
 
     /**
@@ -93,7 +93,7 @@ class Permit
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -101,7 +101,7 @@ class Permit
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -109,7 +109,7 @@ class Permit
      */
     public static function permitAudience()
     {
-        return PermitAudience::create(self::schemaUrl());
+        return PermitAudienceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -117,7 +117,7 @@ class Permit
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -125,7 +125,7 @@ class Permit
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -133,7 +133,7 @@ class Permit
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -141,7 +141,7 @@ class Permit
      */
     public static function validFor()
     {
-        return ValidFor::create(self::schemaUrl());
+        return ValidForProperty::create(self::schemaUrl());
     }
 
     /**
@@ -149,7 +149,7 @@ class Permit
      */
     public static function validFrom()
     {
-        return ValidFrom::create(self::schemaUrl());
+        return ValidFromProperty::create(self::schemaUrl());
     }
 
     /**
@@ -157,7 +157,7 @@ class Permit
      */
     public static function validIn()
     {
-        return ValidIn::create(self::schemaUrl());
+        return ValidInProperty::create(self::schemaUrl());
     }
 
     /**
@@ -165,6 +165,6 @@ class Permit
      */
     public static function validUntil()
     {
-        return ValidUntil::create(self::schemaUrl());
+        return ValidUntilProperty::create(self::schemaUrl());
     }
 }

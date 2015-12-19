@@ -3,19 +3,19 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActionStatus;
-use NilPortugues\SchemaOrg\Properties\Agent;
-use NilPortugues\SchemaOrg\Properties\DeliveryMethod;
-use NilPortugues\SchemaOrg\Properties\EndTime;
-use NilPortugues\SchemaOrg\Properties\Error;
-use NilPortugues\SchemaOrg\Properties\Instrument;
-use NilPortugues\SchemaOrg\Properties\Location;
-use NilPortugues\SchemaOrg\Properties\Object;
-use NilPortugues\SchemaOrg\Properties\Participant;
-use NilPortugues\SchemaOrg\Properties\Result;
-use NilPortugues\SchemaOrg\Properties\Sender;
-use NilPortugues\SchemaOrg\Properties\StartTime;
-use NilPortugues\SchemaOrg\Properties\Target;
+use NilPortugues\SchemaOrg\Properties\ActionStatusProperty;
+use NilPortugues\SchemaOrg\Properties\AgentProperty;
+use NilPortugues\SchemaOrg\Properties\DeliveryMethodProperty;
+use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
+use NilPortugues\SchemaOrg\Properties\ErrorProperty;
+use NilPortugues\SchemaOrg\Properties\InstrumentProperty;
+use NilPortugues\SchemaOrg\Properties\LocationProperty;
+use NilPortugues\SchemaOrg\Properties\ObjectTypeProperty;
+use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
+use NilPortugues\SchemaOrg\Properties\ResultProperty;
+use NilPortugues\SchemaOrg\Properties\SenderProperty;
+use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
+use NilPortugues\SchemaOrg\Properties\TargetProperty;
 
 /**
  * Classes ReceiveAction.
@@ -42,7 +42,7 @@ class ReceiveAction
      */
     public static function actionStatus()
     {
-        return ActionStatus::create(Action::schemaUrl());
+        return ActionStatusProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -50,7 +50,7 @@ class ReceiveAction
      */
     public static function agent()
     {
-        return Agent::create(Action::schemaUrl());
+        return AgentProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -58,7 +58,7 @@ class ReceiveAction
      */
     public static function deliveryMethod()
     {
-        return DeliveryMethod::create(self::schemaUrl());
+        return DeliveryMethodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -66,7 +66,7 @@ class ReceiveAction
      */
     public static function endTime()
     {
-        return EndTime::create(Action::schemaUrl());
+        return EndTimeProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -74,7 +74,7 @@ class ReceiveAction
      */
     public static function error()
     {
-        return Error::create(Action::schemaUrl());
+        return ErrorProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -82,7 +82,7 @@ class ReceiveAction
      */
     public static function instrument()
     {
-        return Instrument::create(Action::schemaUrl());
+        return InstrumentProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -90,15 +90,15 @@ class ReceiveAction
      */
     public static function location()
     {
-        return Location::create(Action::schemaUrl());
+        return LocationProperty::create(Action::schemaUrl());
     }
 
     /**
      * @return Mapping
      */
-    public static function object()
+    public static function objectType()
     {
-        return Object::create(Action::schemaUrl());
+        return ObjectTypeProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -106,7 +106,7 @@ class ReceiveAction
      */
     public static function participant()
     {
-        return Participant::create(Action::schemaUrl());
+        return ParticipantProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -114,7 +114,7 @@ class ReceiveAction
      */
     public static function result()
     {
-        return Result::create(Action::schemaUrl());
+        return ResultProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -122,7 +122,7 @@ class ReceiveAction
      */
     public static function sender()
     {
-        return Sender::create(self::schemaUrl());
+        return SenderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -130,7 +130,7 @@ class ReceiveAction
      */
     public static function startTime()
     {
-        return StartTime::create(Action::schemaUrl());
+        return StartTimeProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -138,6 +138,6 @@ class ReceiveAction
      */
     public static function target()
     {
-        return Target::create(Action::schemaUrl());
+        return TargetProperty::create(Action::schemaUrl());
     }
 }

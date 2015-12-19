@@ -3,24 +3,24 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActiveIngredient;
-use NilPortugues\SchemaOrg\Properties\Background;
-use NilPortugues\SchemaOrg\Properties\Code;
-use NilPortugues\SchemaOrg\Properties\DosageForm;
-use NilPortugues\SchemaOrg\Properties\Guideline;
-use NilPortugues\SchemaOrg\Properties\IsProprietary;
-use NilPortugues\SchemaOrg\Properties\LegalStatus;
-use NilPortugues\SchemaOrg\Properties\Manufacturer;
-use NilPortugues\SchemaOrg\Properties\MaximumIntake;
-use NilPortugues\SchemaOrg\Properties\MechanismOfAction;
-use NilPortugues\SchemaOrg\Properties\MedicineSystem;
-use NilPortugues\SchemaOrg\Properties\NonProprietaryName;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthority;
-use NilPortugues\SchemaOrg\Properties\RecommendedIntake;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
-use NilPortugues\SchemaOrg\Properties\SafetyConsideration;
-use NilPortugues\SchemaOrg\Properties\Study;
-use NilPortugues\SchemaOrg\Properties\TargetPopulation;
+use NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty;
+use NilPortugues\SchemaOrg\Properties\BackgroundProperty;
+use NilPortugues\SchemaOrg\Properties\CodeProperty;
+use NilPortugues\SchemaOrg\Properties\DosageFormProperty;
+use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
+use NilPortugues\SchemaOrg\Properties\IsProprietaryProperty;
+use NilPortugues\SchemaOrg\Properties\LegalStatusProperty;
+use NilPortugues\SchemaOrg\Properties\ManufacturerProperty;
+use NilPortugues\SchemaOrg\Properties\MaximumIntakeProperty;
+use NilPortugues\SchemaOrg\Properties\MechanismOfActionProperty;
+use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
+use NilPortugues\SchemaOrg\Properties\NonProprietaryNameProperty;
+use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
+use NilPortugues\SchemaOrg\Properties\RecommendedIntakeProperty;
+use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\SafetyConsiderationProperty;
+use NilPortugues\SchemaOrg\Properties\StudyProperty;
+use NilPortugues\SchemaOrg\Properties\TargetPopulationProperty;
 
 /**
  * Classes DietarySupplement.
@@ -47,7 +47,7 @@ class DietarySupplement
      */
     public static function activeIngredient()
     {
-        return ActiveIngredient::create(self::schemaUrl());
+        return ActiveIngredientProperty::create(self::schemaUrl());
     }
 
     /**
@@ -55,7 +55,7 @@ class DietarySupplement
      */
     public static function background()
     {
-        return Background::create(self::schemaUrl());
+        return BackgroundProperty::create(self::schemaUrl());
     }
 
     /**
@@ -63,7 +63,7 @@ class DietarySupplement
      */
     public static function code()
     {
-        return Code::create(MedicalEntity::schemaUrl());
+        return CodeProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -71,7 +71,7 @@ class DietarySupplement
      */
     public static function dosageForm()
     {
-        return DosageForm::create(self::schemaUrl());
+        return DosageFormProperty::create(self::schemaUrl());
     }
 
     /**
@@ -79,7 +79,7 @@ class DietarySupplement
      */
     public static function guideline()
     {
-        return Guideline::create(MedicalEntity::schemaUrl());
+        return GuidelineProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -87,7 +87,7 @@ class DietarySupplement
      */
     public static function isProprietary()
     {
-        return IsProprietary::create(self::schemaUrl());
+        return IsProprietaryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -95,7 +95,7 @@ class DietarySupplement
      */
     public static function legalStatus()
     {
-        return LegalStatus::create(self::schemaUrl());
+        return LegalStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -103,7 +103,7 @@ class DietarySupplement
      */
     public static function manufacturer()
     {
-        return Manufacturer::create(self::schemaUrl());
+        return ManufacturerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -111,7 +111,7 @@ class DietarySupplement
      */
     public static function maximumIntake()
     {
-        return MaximumIntake::create(self::schemaUrl());
+        return MaximumIntakeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -119,7 +119,7 @@ class DietarySupplement
      */
     public static function mechanismOfAction()
     {
-        return MechanismOfAction::create(self::schemaUrl());
+        return MechanismOfActionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -127,7 +127,7 @@ class DietarySupplement
      */
     public static function medicineSystem()
     {
-        return MedicineSystem::create(MedicalEntity::schemaUrl());
+        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -135,7 +135,7 @@ class DietarySupplement
      */
     public static function nonProprietaryName()
     {
-        return NonProprietaryName::create(self::schemaUrl());
+        return NonProprietaryNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -143,7 +143,7 @@ class DietarySupplement
      */
     public static function recognizingAuthority()
     {
-        return RecognizingAuthority::create(MedicalEntity::schemaUrl());
+        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -151,7 +151,7 @@ class DietarySupplement
      */
     public static function recommendedIntake()
     {
-        return RecommendedIntake::create(self::schemaUrl());
+        return RecommendedIntakeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -159,7 +159,7 @@ class DietarySupplement
      */
     public static function relevantSpecialty()
     {
-        return RelevantSpecialty::create(MedicalEntity::schemaUrl());
+        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -167,7 +167,7 @@ class DietarySupplement
      */
     public static function safetyConsideration()
     {
-        return SafetyConsideration::create(self::schemaUrl());
+        return SafetyConsiderationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -175,7 +175,7 @@ class DietarySupplement
      */
     public static function study()
     {
-        return Study::create(MedicalEntity::schemaUrl());
+        return StudyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -183,6 +183,6 @@ class DietarySupplement
      */
     public static function targetPopulation()
     {
-        return TargetPopulation::create(self::schemaUrl());
+        return TargetPopulationProperty::create(self::schemaUrl());
     }
 }

@@ -3,31 +3,31 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\AreaServed;
-use NilPortugues\SchemaOrg\Properties\AvailableChannel;
-use NilPortugues\SchemaOrg\Properties\Award;
-use NilPortugues\SchemaOrg\Properties\Category;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\HasOfferCatalog;
-use NilPortugues\SchemaOrg\Properties\HoursAvailable;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\Offers;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\Produces;
-use NilPortugues\SchemaOrg\Properties\Provider;
-use NilPortugues\SchemaOrg\Properties\ProviderMobility;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\ServiceArea;
-use NilPortugues\SchemaOrg\Properties\ServiceAudience;
-use NilPortugues\SchemaOrg\Properties\ServiceOutput;
-use NilPortugues\SchemaOrg\Properties\ServiceType;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\AreaServedProperty;
+use NilPortugues\SchemaOrg\Properties\AvailableChannelProperty;
+use NilPortugues\SchemaOrg\Properties\AwardProperty;
+use NilPortugues\SchemaOrg\Properties\CategoryProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty;
+use NilPortugues\SchemaOrg\Properties\HoursAvailableProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\OffersProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProducesProperty;
+use NilPortugues\SchemaOrg\Properties\ProviderMobilityProperty;
+use NilPortugues\SchemaOrg\Properties\ProviderProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceAreaProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceAudienceProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceOutputProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceTypeProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Service.
@@ -54,7 +54,7 @@ class Service
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class Service
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(self::schemaUrl());
+        return AggregateRatingProperty::create(self::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class Service
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class Service
      */
     public static function areaServed()
     {
-        return AreaServed::create(self::schemaUrl());
+        return AreaServedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class Service
      */
     public static function availableChannel()
     {
-        return AvailableChannel::create(self::schemaUrl());
+        return AvailableChannelProperty::create(self::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class Service
      */
     public static function award()
     {
-        return Award::create(self::schemaUrl());
+        return AwardProperty::create(self::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class Service
      */
     public static function category()
     {
-        return Category::create(self::schemaUrl());
+        return CategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class Service
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class Service
      */
     public static function hasOfferCatalog()
     {
-        return HasOfferCatalog::create(self::schemaUrl());
+        return HasOfferCatalogProperty::create(self::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class Service
      */
     public static function hoursAvailable()
     {
-        return HoursAvailable::create(self::schemaUrl());
+        return HoursAvailableProperty::create(self::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class Service
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class Service
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class Service
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class Service
      */
     public static function offers()
     {
-        return Offers::create(self::schemaUrl());
+        return OffersProperty::create(self::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class Service
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -174,7 +174,7 @@ class Service
      */
     public static function produces()
     {
-        return Produces::create(self::schemaUrl());
+        return ProducesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -182,7 +182,7 @@ class Service
      */
     public static function provider()
     {
-        return Provider::create(self::schemaUrl());
+        return ProviderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -190,7 +190,7 @@ class Service
      */
     public static function providerMobility()
     {
-        return ProviderMobility::create(self::schemaUrl());
+        return ProviderMobilityProperty::create(self::schemaUrl());
     }
 
     /**
@@ -198,7 +198,7 @@ class Service
      */
     public static function review()
     {
-        return Review::create(self::schemaUrl());
+        return ReviewProperty::create(self::schemaUrl());
     }
 
     /**
@@ -206,7 +206,7 @@ class Service
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -214,7 +214,7 @@ class Service
      */
     public static function serviceArea()
     {
-        return ServiceArea::create(self::schemaUrl());
+        return ServiceAreaProperty::create(self::schemaUrl());
     }
 
     /**
@@ -222,7 +222,7 @@ class Service
      */
     public static function serviceAudience()
     {
-        return ServiceAudience::create(self::schemaUrl());
+        return ServiceAudienceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -230,7 +230,7 @@ class Service
      */
     public static function serviceOutput()
     {
-        return ServiceOutput::create(self::schemaUrl());
+        return ServiceOutputProperty::create(self::schemaUrl());
     }
 
     /**
@@ -238,7 +238,7 @@ class Service
      */
     public static function serviceType()
     {
-        return ServiceType::create(self::schemaUrl());
+        return ServiceTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -246,6 +246,6 @@ class Service
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

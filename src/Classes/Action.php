@@ -3,17 +3,17 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActionStatus;
-use NilPortugues\SchemaOrg\Properties\Agent;
-use NilPortugues\SchemaOrg\Properties\EndTime;
-use NilPortugues\SchemaOrg\Properties\Error;
-use NilPortugues\SchemaOrg\Properties\Instrument;
-use NilPortugues\SchemaOrg\Properties\Location;
-use NilPortugues\SchemaOrg\Properties\Object;
-use NilPortugues\SchemaOrg\Properties\Participant;
-use NilPortugues\SchemaOrg\Properties\Result;
-use NilPortugues\SchemaOrg\Properties\StartTime;
-use NilPortugues\SchemaOrg\Properties\Target;
+use NilPortugues\SchemaOrg\Properties\ActionStatusProperty;
+use NilPortugues\SchemaOrg\Properties\AgentProperty;
+use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
+use NilPortugues\SchemaOrg\Properties\ErrorProperty;
+use NilPortugues\SchemaOrg\Properties\InstrumentProperty;
+use NilPortugues\SchemaOrg\Properties\LocationProperty;
+use NilPortugues\SchemaOrg\Properties\ObjectTypeProperty;
+use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
+use NilPortugues\SchemaOrg\Properties\ResultProperty;
+use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
+use NilPortugues\SchemaOrg\Properties\TargetProperty;
 
 /**
  * Classes Action.
@@ -40,7 +40,7 @@ class Action
      */
     public static function actionStatus()
     {
-        return ActionStatus::create(self::schemaUrl());
+        return ActionStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -48,7 +48,7 @@ class Action
      */
     public static function agent()
     {
-        return Agent::create(self::schemaUrl());
+        return AgentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -56,7 +56,7 @@ class Action
      */
     public static function endTime()
     {
-        return EndTime::create(self::schemaUrl());
+        return EndTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -64,7 +64,7 @@ class Action
      */
     public static function error()
     {
-        return Error::create(self::schemaUrl());
+        return ErrorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -72,7 +72,7 @@ class Action
      */
     public static function instrument()
     {
-        return Instrument::create(self::schemaUrl());
+        return InstrumentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -80,15 +80,15 @@ class Action
      */
     public static function location()
     {
-        return Location::create(self::schemaUrl());
+        return LocationProperty::create(self::schemaUrl());
     }
 
     /**
      * @return Mapping
      */
-    public static function object()
+    public static function objectType()
     {
-        return Object::create(self::schemaUrl());
+        return ObjectTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -96,7 +96,7 @@ class Action
      */
     public static function participant()
     {
-        return Participant::create(self::schemaUrl());
+        return ParticipantProperty::create(self::schemaUrl());
     }
 
     /**
@@ -104,7 +104,7 @@ class Action
      */
     public static function result()
     {
-        return Result::create(self::schemaUrl());
+        return ResultProperty::create(self::schemaUrl());
     }
 
     /**
@@ -112,7 +112,7 @@ class Action
      */
     public static function startTime()
     {
-        return StartTime::create(self::schemaUrl());
+        return StartTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -120,6 +120,6 @@ class Action
      */
     public static function target()
     {
-        return Target::create(self::schemaUrl());
+        return TargetProperty::create(self::schemaUrl());
     }
 }

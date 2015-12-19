@@ -3,9 +3,9 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\EndTime;
-use NilPortugues\SchemaOrg\Properties\PartySize;
-use NilPortugues\SchemaOrg\Properties\StartTime;
+use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
+use NilPortugues\SchemaOrg\Properties\PartySizeProperty;
+use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
 
 /**
  * Classes FoodEstablishmentReservation.
@@ -32,7 +32,7 @@ class FoodEstablishmentReservation
      */
     public static function endTime()
     {
-        return EndTime::create(self::schemaUrl());
+        return EndTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -40,7 +40,7 @@ class FoodEstablishmentReservation
      */
     public static function partySize()
     {
-        return PartySize::create(self::schemaUrl());
+        return PartySizeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -48,6 +48,6 @@ class FoodEstablishmentReservation
      */
     public static function startTime()
     {
-        return StartTime::create(self::schemaUrl());
+        return StartTimeProperty::create(self::schemaUrl());
     }
 }

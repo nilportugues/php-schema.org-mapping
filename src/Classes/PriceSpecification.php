@@ -3,15 +3,15 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\EligibleQuantity;
-use NilPortugues\SchemaOrg\Properties\EligibleTransactionVolume;
-use NilPortugues\SchemaOrg\Properties\MaxPrice;
-use NilPortugues\SchemaOrg\Properties\MinPrice;
-use NilPortugues\SchemaOrg\Properties\Price;
-use NilPortugues\SchemaOrg\Properties\PriceCurrency;
-use NilPortugues\SchemaOrg\Properties\ValidFrom;
-use NilPortugues\SchemaOrg\Properties\ValidThrough;
-use NilPortugues\SchemaOrg\Properties\ValueAddedTaxIncluded;
+use NilPortugues\SchemaOrg\Properties\EligibleQuantityProperty;
+use NilPortugues\SchemaOrg\Properties\EligibleTransactionVolumeProperty;
+use NilPortugues\SchemaOrg\Properties\MaxPriceProperty;
+use NilPortugues\SchemaOrg\Properties\MinPriceProperty;
+use NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty;
+use NilPortugues\SchemaOrg\Properties\PriceProperty;
+use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
+use NilPortugues\SchemaOrg\Properties\ValidThroughProperty;
+use NilPortugues\SchemaOrg\Properties\ValueAddedTaxIncludedProperty;
 
 /**
  * Classes PriceSpecification.
@@ -38,7 +38,7 @@ class PriceSpecification
      */
     public static function eligibleQuantity()
     {
-        return EligibleQuantity::create(self::schemaUrl());
+        return EligibleQuantityProperty::create(self::schemaUrl());
     }
 
     /**
@@ -46,7 +46,7 @@ class PriceSpecification
      */
     public static function eligibleTransactionVolume()
     {
-        return EligibleTransactionVolume::create(self::schemaUrl());
+        return EligibleTransactionVolumeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -54,7 +54,7 @@ class PriceSpecification
      */
     public static function maxPrice()
     {
-        return MaxPrice::create(self::schemaUrl());
+        return MaxPriceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class PriceSpecification
      */
     public static function minPrice()
     {
-        return MinPrice::create(self::schemaUrl());
+        return MinPriceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class PriceSpecification
      */
     public static function price()
     {
-        return Price::create(self::schemaUrl());
+        return PriceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class PriceSpecification
      */
     public static function priceCurrency()
     {
-        return PriceCurrency::create(self::schemaUrl());
+        return PriceCurrencyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class PriceSpecification
      */
     public static function validFrom()
     {
-        return ValidFrom::create(self::schemaUrl());
+        return ValidFromProperty::create(self::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class PriceSpecification
      */
     public static function validThrough()
     {
-        return ValidThrough::create(self::schemaUrl());
+        return ValidThroughProperty::create(self::schemaUrl());
     }
 
     /**
@@ -102,6 +102,6 @@ class PriceSpecification
      */
     public static function valueAddedTaxIncluded()
     {
-        return ValueAddedTaxIncluded::create(self::schemaUrl());
+        return ValueAddedTaxIncludedProperty::create(self::schemaUrl());
     }
 }

@@ -33,7 +33,7 @@ class SchemaClassWriter extends SchemaWriter
                     $propertyNameMethodName = $propertyName;
                     $propertyNameMethodName[0] = strtoupper($propertyNameMethodName[0]);
 
-                    $useProperties[] = 'use NilPortugues\\SchemaOrg\\Properties\\'.$propertyNameMethodName.';';
+                    $useProperties[] = 'use NilPortugues\\SchemaOrg\\Properties\\'.$propertyNameMethodName.'Property;';
 
                     if (empty($usableProperties[$propertyNameMethodName])) {
                         $usableProperties[$propertyNameMethodName] = $propertyClassName;
@@ -49,7 +49,7 @@ class SchemaClassWriter extends SchemaWriter
     */
     public static function {$propertyName}()
     {
-        return {$propertyNameMethodName}::create({$schemaClass}::schemaUrl());
+        return {$propertyNameMethodName}Property::create({$schemaClass}::schemaUrl());
     }
 PHP;
                     }

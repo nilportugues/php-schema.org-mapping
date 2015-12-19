@@ -3,31 +3,31 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalProperty;
-use NilPortugues\SchemaOrg\Properties\Address;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\BranchCode;
-use NilPortugues\SchemaOrg\Properties\ContainedIn;
-use NilPortugues\SchemaOrg\Properties\ContainedInPlace;
-use NilPortugues\SchemaOrg\Properties\ContainsPlace;
-use NilPortugues\SchemaOrg\Properties\Event;
-use NilPortugues\SchemaOrg\Properties\Events;
-use NilPortugues\SchemaOrg\Properties\FaxNumber;
-use NilPortugues\SchemaOrg\Properties\Geo;
-use NilPortugues\SchemaOrg\Properties\GlobalLocationNumber;
-use NilPortugues\SchemaOrg\Properties\HasMap;
-use NilPortugues\SchemaOrg\Properties\IacoCode;
-use NilPortugues\SchemaOrg\Properties\IataCode;
-use NilPortugues\SchemaOrg\Properties\IsicV4;
-use NilPortugues\SchemaOrg\Properties\Logo;
-use NilPortugues\SchemaOrg\Properties\Map;
-use NilPortugues\SchemaOrg\Properties\Maps;
-use NilPortugues\SchemaOrg\Properties\OpeningHoursSpecification;
-use NilPortugues\SchemaOrg\Properties\Photo;
-use NilPortugues\SchemaOrg\Properties\Photos;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\Reviews;
-use NilPortugues\SchemaOrg\Properties\Telephone;
+use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
+use NilPortugues\SchemaOrg\Properties\AddressProperty;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\BranchCodeProperty;
+use NilPortugues\SchemaOrg\Properties\ContainedInPlaceProperty;
+use NilPortugues\SchemaOrg\Properties\ContainedInProperty;
+use NilPortugues\SchemaOrg\Properties\ContainsPlaceProperty;
+use NilPortugues\SchemaOrg\Properties\EventProperty;
+use NilPortugues\SchemaOrg\Properties\EventsProperty;
+use NilPortugues\SchemaOrg\Properties\FaxNumberProperty;
+use NilPortugues\SchemaOrg\Properties\GeoProperty;
+use NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty;
+use NilPortugues\SchemaOrg\Properties\HasMapProperty;
+use NilPortugues\SchemaOrg\Properties\IacoCodeProperty;
+use NilPortugues\SchemaOrg\Properties\IataCodeProperty;
+use NilPortugues\SchemaOrg\Properties\IsicV4Property;
+use NilPortugues\SchemaOrg\Properties\LogoProperty;
+use NilPortugues\SchemaOrg\Properties\MapProperty;
+use NilPortugues\SchemaOrg\Properties\MapsProperty;
+use NilPortugues\SchemaOrg\Properties\OpeningHoursSpecificationProperty;
+use NilPortugues\SchemaOrg\Properties\PhotoProperty;
+use NilPortugues\SchemaOrg\Properties\PhotosProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
+use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
 
 /**
  * Classes Airport.
@@ -54,7 +54,7 @@ class Airport
      */
     public static function additionalProperty()
     {
-        return AdditionalProperty::create(Place::schemaUrl());
+        return AdditionalPropertyProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class Airport
      */
     public static function address()
     {
-        return Address::create(Place::schemaUrl());
+        return AddressProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class Airport
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(Place::schemaUrl());
+        return AggregateRatingProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class Airport
      */
     public static function branchCode()
     {
-        return BranchCode::create(Place::schemaUrl());
+        return BranchCodeProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class Airport
      */
     public static function containedIn()
     {
-        return ContainedIn::create(Place::schemaUrl());
+        return ContainedInProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class Airport
      */
     public static function containedInPlace()
     {
-        return ContainedInPlace::create(Place::schemaUrl());
+        return ContainedInPlaceProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class Airport
      */
     public static function containsPlace()
     {
-        return ContainsPlace::create(Place::schemaUrl());
+        return ContainsPlaceProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class Airport
      */
     public static function event()
     {
-        return Event::create(Place::schemaUrl());
+        return EventProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class Airport
      */
     public static function events()
     {
-        return Events::create(Place::schemaUrl());
+        return EventsProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class Airport
      */
     public static function faxNumber()
     {
-        return FaxNumber::create(Place::schemaUrl());
+        return FaxNumberProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class Airport
      */
     public static function geo()
     {
-        return Geo::create(Place::schemaUrl());
+        return GeoProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class Airport
      */
     public static function globalLocationNumber()
     {
-        return GlobalLocationNumber::create(Place::schemaUrl());
+        return GlobalLocationNumberProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class Airport
      */
     public static function hasMap()
     {
-        return HasMap::create(Place::schemaUrl());
+        return HasMapProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class Airport
      */
     public static function iacoCode()
     {
-        return IacoCode::create(self::schemaUrl());
+        return IacoCodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class Airport
      */
     public static function iataCode()
     {
-        return IataCode::create(self::schemaUrl());
+        return IataCodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -174,7 +174,7 @@ class Airport
      */
     public static function isicV4()
     {
-        return IsicV4::create(Place::schemaUrl());
+        return IsicV4Property::create(Place::schemaUrl());
     }
 
     /**
@@ -182,7 +182,7 @@ class Airport
      */
     public static function logo()
     {
-        return Logo::create(Place::schemaUrl());
+        return LogoProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -190,7 +190,7 @@ class Airport
      */
     public static function map()
     {
-        return Map::create(Place::schemaUrl());
+        return MapProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -198,7 +198,7 @@ class Airport
      */
     public static function maps()
     {
-        return Maps::create(Place::schemaUrl());
+        return MapsProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -206,7 +206,7 @@ class Airport
      */
     public static function openingHoursSpecification()
     {
-        return OpeningHoursSpecification::create(Place::schemaUrl());
+        return OpeningHoursSpecificationProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -214,7 +214,7 @@ class Airport
      */
     public static function photo()
     {
-        return Photo::create(Place::schemaUrl());
+        return PhotoProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -222,7 +222,7 @@ class Airport
      */
     public static function photos()
     {
-        return Photos::create(Place::schemaUrl());
+        return PhotosProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -230,7 +230,7 @@ class Airport
      */
     public static function review()
     {
-        return Review::create(Place::schemaUrl());
+        return ReviewProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -238,7 +238,7 @@ class Airport
      */
     public static function reviews()
     {
-        return Reviews::create(Place::schemaUrl());
+        return ReviewsProperty::create(Place::schemaUrl());
     }
 
     /**
@@ -246,6 +246,6 @@ class Airport
      */
     public static function telephone()
     {
-        return Telephone::create(Place::schemaUrl());
+        return TelephoneProperty::create(Place::schemaUrl());
     }
 }

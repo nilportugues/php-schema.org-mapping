@@ -3,10 +3,10 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\DropoffLocation;
-use NilPortugues\SchemaOrg\Properties\DropoffTime;
-use NilPortugues\SchemaOrg\Properties\PickupLocation;
-use NilPortugues\SchemaOrg\Properties\PickupTime;
+use NilPortugues\SchemaOrg\Properties\DropoffLocationProperty;
+use NilPortugues\SchemaOrg\Properties\DropoffTimeProperty;
+use NilPortugues\SchemaOrg\Properties\PickupLocationProperty;
+use NilPortugues\SchemaOrg\Properties\PickupTimeProperty;
 
 /**
  * Classes RentalCarReservation.
@@ -33,7 +33,7 @@ class RentalCarReservation
      */
     public static function dropoffLocation()
     {
-        return DropoffLocation::create(self::schemaUrl());
+        return DropoffLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -41,7 +41,7 @@ class RentalCarReservation
      */
     public static function dropoffTime()
     {
-        return DropoffTime::create(self::schemaUrl());
+        return DropoffTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -49,7 +49,7 @@ class RentalCarReservation
      */
     public static function pickupLocation()
     {
-        return PickupLocation::create(self::schemaUrl());
+        return PickupLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -57,6 +57,6 @@ class RentalCarReservation
      */
     public static function pickupTime()
     {
-        return PickupTime::create(self::schemaUrl());
+        return PickupTimeProperty::create(self::schemaUrl());
     }
 }

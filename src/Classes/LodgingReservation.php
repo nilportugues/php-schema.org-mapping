@@ -3,12 +3,12 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\CheckinTime;
-use NilPortugues\SchemaOrg\Properties\CheckoutTime;
-use NilPortugues\SchemaOrg\Properties\LodgingUnitDescription;
-use NilPortugues\SchemaOrg\Properties\LodgingUnitType;
-use NilPortugues\SchemaOrg\Properties\NumAdults;
-use NilPortugues\SchemaOrg\Properties\NumChildren;
+use NilPortugues\SchemaOrg\Properties\CheckinTimeProperty;
+use NilPortugues\SchemaOrg\Properties\CheckoutTimeProperty;
+use NilPortugues\SchemaOrg\Properties\LodgingUnitDescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\LodgingUnitTypeProperty;
+use NilPortugues\SchemaOrg\Properties\NumAdultsProperty;
+use NilPortugues\SchemaOrg\Properties\NumChildrenProperty;
 
 /**
  * Classes LodgingReservation.
@@ -35,7 +35,7 @@ class LodgingReservation
      */
     public static function checkinTime()
     {
-        return CheckinTime::create(self::schemaUrl());
+        return CheckinTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -43,7 +43,7 @@ class LodgingReservation
      */
     public static function checkoutTime()
     {
-        return CheckoutTime::create(self::schemaUrl());
+        return CheckoutTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -51,7 +51,7 @@ class LodgingReservation
      */
     public static function lodgingUnitDescription()
     {
-        return LodgingUnitDescription::create(self::schemaUrl());
+        return LodgingUnitDescriptionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -59,7 +59,7 @@ class LodgingReservation
      */
     public static function lodgingUnitType()
     {
-        return LodgingUnitType::create(self::schemaUrl());
+        return LodgingUnitTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -67,7 +67,7 @@ class LodgingReservation
      */
     public static function numAdults()
     {
-        return NumAdults::create(self::schemaUrl());
+        return NumAdultsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -75,6 +75,6 @@ class LodgingReservation
      */
     public static function numChildren()
     {
-        return NumChildren::create(self::schemaUrl());
+        return NumChildrenProperty::create(self::schemaUrl());
     }
 }

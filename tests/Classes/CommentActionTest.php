@@ -1,0 +1,67 @@
+<?php
+namespace NilPortugues\Tests\SchemaOrg\Classes;
+
+use NilPortugues\SchemaOrg\Classes\CommentAction;
+use NilPortugues\SchemaOrg\Mapping;
+
+/**
+ * Classes CommentActionTest
+ * @package NilPortugues\Tests\SchemaOrg\Classes
+ */
+class CommentActionTest extends \PHPUnit_Framework_TestCase
+{
+    public function testSchemaUrlReturnsExpectedUrl()
+    {
+        $this->assertEquals(CommentAction::schemaUrl(), "http://schema.org/CommentAction");
+    }
+
+    public function testAdditionalTypeWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::additionalType());
+    }
+
+    public function testAlternateNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::alternateName());
+    }
+
+    public function testDescriptionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::description());
+    }
+
+    public function testImageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::image());
+    }
+
+    public function testMainEntityOfPageWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::mainEntityOfPage());
+    }
+
+    public function testNameWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::name());
+    }
+
+    public function testPotentialActionWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::potentialAction());
+    }
+
+    public function testResultCommentWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::resultComment());
+    }
+
+    public function testSameAsWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::sameAs());
+    }
+
+    public function testUrlWillReturnMappingObject()
+    {
+        $this->assertInstanceOf(Mapping::class, CommentAction::url());
+    }
+}

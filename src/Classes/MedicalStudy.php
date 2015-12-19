@@ -3,21 +3,21 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\Outcome;
-use NilPortugues\SchemaOrg\Properties\Population;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Sponsor;
-use NilPortugues\SchemaOrg\Properties\Status;
-use NilPortugues\SchemaOrg\Properties\StudyLocation;
-use NilPortugues\SchemaOrg\Properties\StudySubject;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\OutcomeProperty;
+use NilPortugues\SchemaOrg\Properties\PopulationProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SponsorProperty;
+use NilPortugues\SchemaOrg\Properties\StatusProperty;
+use NilPortugues\SchemaOrg\Properties\StudyLocationProperty;
+use NilPortugues\SchemaOrg\Properties\StudySubjectProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes MedicalStudy.
@@ -44,7 +44,7 @@ class MedicalStudy
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -52,7 +52,7 @@ class MedicalStudy
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -60,7 +60,7 @@ class MedicalStudy
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -68,7 +68,7 @@ class MedicalStudy
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -76,7 +76,7 @@ class MedicalStudy
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -84,7 +84,7 @@ class MedicalStudy
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -92,7 +92,7 @@ class MedicalStudy
      */
     public static function outcome()
     {
-        return Outcome::create(self::schemaUrl());
+        return OutcomeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -100,7 +100,7 @@ class MedicalStudy
      */
     public static function population()
     {
-        return Population::create(self::schemaUrl());
+        return PopulationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -108,7 +108,7 @@ class MedicalStudy
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -116,7 +116,7 @@ class MedicalStudy
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -124,7 +124,7 @@ class MedicalStudy
      */
     public static function sponsor()
     {
-        return Sponsor::create(self::schemaUrl());
+        return SponsorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -132,7 +132,7 @@ class MedicalStudy
      */
     public static function status()
     {
-        return Status::create(self::schemaUrl());
+        return StatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -140,7 +140,7 @@ class MedicalStudy
      */
     public static function studyLocation()
     {
-        return StudyLocation::create(self::schemaUrl());
+        return StudyLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -148,7 +148,7 @@ class MedicalStudy
      */
     public static function studySubject()
     {
-        return StudySubject::create(self::schemaUrl());
+        return StudySubjectProperty::create(self::schemaUrl());
     }
 
     /**
@@ -156,6 +156,6 @@ class MedicalStudy
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

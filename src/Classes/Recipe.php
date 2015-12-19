@@ -3,26 +3,26 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\CookTime;
-use NilPortugues\SchemaOrg\Properties\CookingMethod;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\Ingredients;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\Nutrition;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\PrepTime;
-use NilPortugues\SchemaOrg\Properties\RecipeCategory;
-use NilPortugues\SchemaOrg\Properties\RecipeCuisine;
-use NilPortugues\SchemaOrg\Properties\RecipeIngredient;
-use NilPortugues\SchemaOrg\Properties\RecipeInstructions;
-use NilPortugues\SchemaOrg\Properties\RecipeYield;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\TotalTime;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\CookTimeProperty;
+use NilPortugues\SchemaOrg\Properties\CookingMethodProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IngredientsProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\NutritionProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\PrepTimeProperty;
+use NilPortugues\SchemaOrg\Properties\RecipeCategoryProperty;
+use NilPortugues\SchemaOrg\Properties\RecipeCuisineProperty;
+use NilPortugues\SchemaOrg\Properties\RecipeIngredientProperty;
+use NilPortugues\SchemaOrg\Properties\RecipeInstructionsProperty;
+use NilPortugues\SchemaOrg\Properties\RecipeYieldProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\TotalTimeProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Recipe.
@@ -49,7 +49,7 @@ class Recipe
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -57,7 +57,7 @@ class Recipe
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -65,7 +65,7 @@ class Recipe
      */
     public static function cookTime()
     {
-        return CookTime::create(self::schemaUrl());
+        return CookTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -73,7 +73,7 @@ class Recipe
      */
     public static function cookingMethod()
     {
-        return CookingMethod::create(self::schemaUrl());
+        return CookingMethodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -81,7 +81,7 @@ class Recipe
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -89,7 +89,7 @@ class Recipe
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -97,7 +97,7 @@ class Recipe
      */
     public static function ingredients()
     {
-        return Ingredients::create(self::schemaUrl());
+        return IngredientsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -105,7 +105,7 @@ class Recipe
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -113,7 +113,7 @@ class Recipe
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -121,7 +121,7 @@ class Recipe
      */
     public static function nutrition()
     {
-        return Nutrition::create(self::schemaUrl());
+        return NutritionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -129,7 +129,7 @@ class Recipe
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -137,7 +137,7 @@ class Recipe
      */
     public static function prepTime()
     {
-        return PrepTime::create(self::schemaUrl());
+        return PrepTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -145,7 +145,7 @@ class Recipe
      */
     public static function recipeCategory()
     {
-        return RecipeCategory::create(self::schemaUrl());
+        return RecipeCategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -153,7 +153,7 @@ class Recipe
      */
     public static function recipeCuisine()
     {
-        return RecipeCuisine::create(self::schemaUrl());
+        return RecipeCuisineProperty::create(self::schemaUrl());
     }
 
     /**
@@ -161,7 +161,7 @@ class Recipe
      */
     public static function recipeIngredient()
     {
-        return RecipeIngredient::create(self::schemaUrl());
+        return RecipeIngredientProperty::create(self::schemaUrl());
     }
 
     /**
@@ -169,7 +169,7 @@ class Recipe
      */
     public static function recipeInstructions()
     {
-        return RecipeInstructions::create(self::schemaUrl());
+        return RecipeInstructionsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -177,7 +177,7 @@ class Recipe
      */
     public static function recipeYield()
     {
-        return RecipeYield::create(self::schemaUrl());
+        return RecipeYieldProperty::create(self::schemaUrl());
     }
 
     /**
@@ -185,7 +185,7 @@ class Recipe
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -193,7 +193,7 @@ class Recipe
      */
     public static function totalTime()
     {
-        return TotalTime::create(self::schemaUrl());
+        return TotalTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -201,6 +201,6 @@ class Recipe
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

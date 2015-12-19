@@ -3,39 +3,39 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalProperty;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\Audience;
-use NilPortugues\SchemaOrg\Properties\Award;
-use NilPortugues\SchemaOrg\Properties\Awards;
-use NilPortugues\SchemaOrg\Properties\Brand;
-use NilPortugues\SchemaOrg\Properties\Category;
-use NilPortugues\SchemaOrg\Properties\Color;
-use NilPortugues\SchemaOrg\Properties\Depth;
-use NilPortugues\SchemaOrg\Properties\Gtin12;
-use NilPortugues\SchemaOrg\Properties\Gtin13;
-use NilPortugues\SchemaOrg\Properties\Gtin14;
-use NilPortugues\SchemaOrg\Properties\Gtin8;
-use NilPortugues\SchemaOrg\Properties\Height;
-use NilPortugues\SchemaOrg\Properties\IsAccessoryOrSparePartFor;
-use NilPortugues\SchemaOrg\Properties\IsConsumableFor;
-use NilPortugues\SchemaOrg\Properties\IsRelatedTo;
-use NilPortugues\SchemaOrg\Properties\IsSimilarTo;
-use NilPortugues\SchemaOrg\Properties\ItemCondition;
-use NilPortugues\SchemaOrg\Properties\Logo;
-use NilPortugues\SchemaOrg\Properties\Manufacturer;
-use NilPortugues\SchemaOrg\Properties\Model;
-use NilPortugues\SchemaOrg\Properties\Mpn;
-use NilPortugues\SchemaOrg\Properties\Offers;
-use NilPortugues\SchemaOrg\Properties\ProductID;
-use NilPortugues\SchemaOrg\Properties\ProductionDate;
-use NilPortugues\SchemaOrg\Properties\PurchaseDate;
-use NilPortugues\SchemaOrg\Properties\ReleaseDate;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\Reviews;
-use NilPortugues\SchemaOrg\Properties\Sku;
-use NilPortugues\SchemaOrg\Properties\Weight;
-use NilPortugues\SchemaOrg\Properties\Width;
+use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\AudienceProperty;
+use NilPortugues\SchemaOrg\Properties\AwardProperty;
+use NilPortugues\SchemaOrg\Properties\AwardsProperty;
+use NilPortugues\SchemaOrg\Properties\BrandProperty;
+use NilPortugues\SchemaOrg\Properties\CategoryProperty;
+use NilPortugues\SchemaOrg\Properties\ColorProperty;
+use NilPortugues\SchemaOrg\Properties\DepthProperty;
+use NilPortugues\SchemaOrg\Properties\Gtin12Property;
+use NilPortugues\SchemaOrg\Properties\Gtin13Property;
+use NilPortugues\SchemaOrg\Properties\Gtin14Property;
+use NilPortugues\SchemaOrg\Properties\Gtin8Property;
+use NilPortugues\SchemaOrg\Properties\HeightProperty;
+use NilPortugues\SchemaOrg\Properties\IsAccessoryOrSparePartForProperty;
+use NilPortugues\SchemaOrg\Properties\IsConsumableForProperty;
+use NilPortugues\SchemaOrg\Properties\IsRelatedToProperty;
+use NilPortugues\SchemaOrg\Properties\IsSimilarToProperty;
+use NilPortugues\SchemaOrg\Properties\ItemConditionProperty;
+use NilPortugues\SchemaOrg\Properties\LogoProperty;
+use NilPortugues\SchemaOrg\Properties\ManufacturerProperty;
+use NilPortugues\SchemaOrg\Properties\ModelProperty;
+use NilPortugues\SchemaOrg\Properties\MpnProperty;
+use NilPortugues\SchemaOrg\Properties\OffersProperty;
+use NilPortugues\SchemaOrg\Properties\ProductIDProperty;
+use NilPortugues\SchemaOrg\Properties\ProductionDateProperty;
+use NilPortugues\SchemaOrg\Properties\PurchaseDateProperty;
+use NilPortugues\SchemaOrg\Properties\ReleaseDateProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
+use NilPortugues\SchemaOrg\Properties\SkuProperty;
+use NilPortugues\SchemaOrg\Properties\WeightProperty;
+use NilPortugues\SchemaOrg\Properties\WidthProperty;
 
 /**
  * Classes Car.
@@ -62,7 +62,7 @@ class Car
      */
     public static function additionalProperty()
     {
-        return AdditionalProperty::create(Product::schemaUrl());
+        return AdditionalPropertyProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class Car
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(Product::schemaUrl());
+        return AggregateRatingProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class Car
      */
     public static function audience()
     {
-        return Audience::create(Product::schemaUrl());
+        return AudienceProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class Car
      */
     public static function award()
     {
-        return Award::create(Product::schemaUrl());
+        return AwardProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class Car
      */
     public static function awards()
     {
-        return Awards::create(Product::schemaUrl());
+        return AwardsProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class Car
      */
     public static function brand()
     {
-        return Brand::create(Product::schemaUrl());
+        return BrandProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class Car
      */
     public static function category()
     {
-        return Category::create(Product::schemaUrl());
+        return CategoryProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class Car
      */
     public static function color()
     {
-        return Color::create(Product::schemaUrl());
+        return ColorProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class Car
      */
     public static function depth()
     {
-        return Depth::create(Product::schemaUrl());
+        return DepthProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class Car
      */
     public static function gtin12()
     {
-        return Gtin12::create(Product::schemaUrl());
+        return Gtin12Property::create(Product::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class Car
      */
     public static function gtin13()
     {
-        return Gtin13::create(Product::schemaUrl());
+        return Gtin13Property::create(Product::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class Car
      */
     public static function gtin14()
     {
-        return Gtin14::create(Product::schemaUrl());
+        return Gtin14Property::create(Product::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class Car
      */
     public static function gtin8()
     {
-        return Gtin8::create(Product::schemaUrl());
+        return Gtin8Property::create(Product::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class Car
      */
     public static function height()
     {
-        return Height::create(Product::schemaUrl());
+        return HeightProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -174,7 +174,7 @@ class Car
      */
     public static function isAccessoryOrSparePartFor()
     {
-        return IsAccessoryOrSparePartFor::create(Product::schemaUrl());
+        return IsAccessoryOrSparePartForProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -182,7 +182,7 @@ class Car
      */
     public static function isConsumableFor()
     {
-        return IsConsumableFor::create(Product::schemaUrl());
+        return IsConsumableForProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -190,7 +190,7 @@ class Car
      */
     public static function isRelatedTo()
     {
-        return IsRelatedTo::create(Product::schemaUrl());
+        return IsRelatedToProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -198,7 +198,7 @@ class Car
      */
     public static function isSimilarTo()
     {
-        return IsSimilarTo::create(Product::schemaUrl());
+        return IsSimilarToProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -206,7 +206,7 @@ class Car
      */
     public static function itemCondition()
     {
-        return ItemCondition::create(Product::schemaUrl());
+        return ItemConditionProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -214,7 +214,7 @@ class Car
      */
     public static function logo()
     {
-        return Logo::create(Product::schemaUrl());
+        return LogoProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -222,7 +222,7 @@ class Car
      */
     public static function manufacturer()
     {
-        return Manufacturer::create(Product::schemaUrl());
+        return ManufacturerProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -230,7 +230,7 @@ class Car
      */
     public static function model()
     {
-        return Model::create(Product::schemaUrl());
+        return ModelProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -238,7 +238,7 @@ class Car
      */
     public static function mpn()
     {
-        return Mpn::create(Product::schemaUrl());
+        return MpnProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -246,7 +246,7 @@ class Car
      */
     public static function offers()
     {
-        return Offers::create(Product::schemaUrl());
+        return OffersProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -254,7 +254,7 @@ class Car
      */
     public static function productID()
     {
-        return ProductID::create(Product::schemaUrl());
+        return ProductIDProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -262,7 +262,7 @@ class Car
      */
     public static function productionDate()
     {
-        return ProductionDate::create(Product::schemaUrl());
+        return ProductionDateProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -270,7 +270,7 @@ class Car
      */
     public static function purchaseDate()
     {
-        return PurchaseDate::create(Product::schemaUrl());
+        return PurchaseDateProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -278,7 +278,7 @@ class Car
      */
     public static function releaseDate()
     {
-        return ReleaseDate::create(Product::schemaUrl());
+        return ReleaseDateProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -286,7 +286,7 @@ class Car
      */
     public static function review()
     {
-        return Review::create(Product::schemaUrl());
+        return ReviewProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -294,7 +294,7 @@ class Car
      */
     public static function reviews()
     {
-        return Reviews::create(Product::schemaUrl());
+        return ReviewsProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -302,7 +302,7 @@ class Car
      */
     public static function sku()
     {
-        return Sku::create(Product::schemaUrl());
+        return SkuProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -310,7 +310,7 @@ class Car
      */
     public static function weight()
     {
-        return Weight::create(Product::schemaUrl());
+        return WeightProperty::create(Product::schemaUrl());
     }
 
     /**
@@ -318,6 +318,6 @@ class Car
      */
     public static function width()
     {
-        return Width::create(Product::schemaUrl());
+        return WidthProperty::create(Product::schemaUrl());
     }
 }

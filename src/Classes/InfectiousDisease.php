@@ -3,15 +3,15 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Code;
-use NilPortugues\SchemaOrg\Properties\Guideline;
-use NilPortugues\SchemaOrg\Properties\InfectiousAgent;
-use NilPortugues\SchemaOrg\Properties\InfectiousAgentClass;
-use NilPortugues\SchemaOrg\Properties\MedicineSystem;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthority;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
-use NilPortugues\SchemaOrg\Properties\Study;
-use NilPortugues\SchemaOrg\Properties\TransmissionMethod;
+use NilPortugues\SchemaOrg\Properties\CodeProperty;
+use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
+use NilPortugues\SchemaOrg\Properties\InfectiousAgentClassProperty;
+use NilPortugues\SchemaOrg\Properties\InfectiousAgentProperty;
+use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
+use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
+use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\StudyProperty;
+use NilPortugues\SchemaOrg\Properties\TransmissionMethodProperty;
 
 /**
  * Classes InfectiousDisease.
@@ -38,7 +38,7 @@ class InfectiousDisease
      */
     public static function code()
     {
-        return Code::create(MedicalEntity::schemaUrl());
+        return CodeProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -46,7 +46,7 @@ class InfectiousDisease
      */
     public static function guideline()
     {
-        return Guideline::create(MedicalEntity::schemaUrl());
+        return GuidelineProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -54,7 +54,7 @@ class InfectiousDisease
      */
     public static function infectiousAgent()
     {
-        return InfectiousAgent::create(self::schemaUrl());
+        return InfectiousAgentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class InfectiousDisease
      */
     public static function infectiousAgentClass()
     {
-        return InfectiousAgentClass::create(self::schemaUrl());
+        return InfectiousAgentClassProperty::create(self::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class InfectiousDisease
      */
     public static function medicineSystem()
     {
-        return MedicineSystem::create(MedicalEntity::schemaUrl());
+        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class InfectiousDisease
      */
     public static function recognizingAuthority()
     {
-        return RecognizingAuthority::create(MedicalEntity::schemaUrl());
+        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class InfectiousDisease
      */
     public static function relevantSpecialty()
     {
-        return RelevantSpecialty::create(MedicalEntity::schemaUrl());
+        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class InfectiousDisease
      */
     public static function study()
     {
-        return Study::create(MedicalEntity::schemaUrl());
+        return StudyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -102,6 +102,6 @@ class InfectiousDisease
      */
     public static function transmissionMethod()
     {
-        return TransmissionMethod::create(self::schemaUrl());
+        return TransmissionMethodProperty::create(self::schemaUrl());
     }
 }

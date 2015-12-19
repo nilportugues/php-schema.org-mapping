@@ -3,28 +3,28 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\BookingAgent;
-use NilPortugues\SchemaOrg\Properties\BookingTime;
-use NilPortugues\SchemaOrg\Properties\Broker;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\ModifiedTime;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\PriceCurrency;
-use NilPortugues\SchemaOrg\Properties\ProgramMembershipUsed;
-use NilPortugues\SchemaOrg\Properties\Provider;
-use NilPortugues\SchemaOrg\Properties\ReservationFor;
-use NilPortugues\SchemaOrg\Properties\ReservationId;
-use NilPortugues\SchemaOrg\Properties\ReservationStatus;
-use NilPortugues\SchemaOrg\Properties\ReservedTicket;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\TotalPrice;
-use NilPortugues\SchemaOrg\Properties\UnderName;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\BookingAgentProperty;
+use NilPortugues\SchemaOrg\Properties\BookingTimeProperty;
+use NilPortugues\SchemaOrg\Properties\BrokerProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\ModifiedTimeProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\PriceCurrencyProperty;
+use NilPortugues\SchemaOrg\Properties\ProgramMembershipUsedProperty;
+use NilPortugues\SchemaOrg\Properties\ProviderProperty;
+use NilPortugues\SchemaOrg\Properties\ReservationForProperty;
+use NilPortugues\SchemaOrg\Properties\ReservationIdProperty;
+use NilPortugues\SchemaOrg\Properties\ReservationStatusProperty;
+use NilPortugues\SchemaOrg\Properties\ReservedTicketProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\TotalPriceProperty;
+use NilPortugues\SchemaOrg\Properties\UnderNameProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Reservation.
@@ -51,7 +51,7 @@ class Reservation
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -59,7 +59,7 @@ class Reservation
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -67,7 +67,7 @@ class Reservation
      */
     public static function bookingAgent()
     {
-        return BookingAgent::create(self::schemaUrl());
+        return BookingAgentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -75,7 +75,7 @@ class Reservation
      */
     public static function bookingTime()
     {
-        return BookingTime::create(self::schemaUrl());
+        return BookingTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -83,7 +83,7 @@ class Reservation
      */
     public static function broker()
     {
-        return Broker::create(self::schemaUrl());
+        return BrokerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -91,7 +91,7 @@ class Reservation
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -99,7 +99,7 @@ class Reservation
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -107,7 +107,7 @@ class Reservation
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -115,7 +115,7 @@ class Reservation
      */
     public static function modifiedTime()
     {
-        return ModifiedTime::create(self::schemaUrl());
+        return ModifiedTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -123,7 +123,7 @@ class Reservation
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -131,7 +131,7 @@ class Reservation
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -139,7 +139,7 @@ class Reservation
      */
     public static function priceCurrency()
     {
-        return PriceCurrency::create(self::schemaUrl());
+        return PriceCurrencyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -147,7 +147,7 @@ class Reservation
      */
     public static function programMembershipUsed()
     {
-        return ProgramMembershipUsed::create(self::schemaUrl());
+        return ProgramMembershipUsedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -155,7 +155,7 @@ class Reservation
      */
     public static function provider()
     {
-        return Provider::create(self::schemaUrl());
+        return ProviderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -163,7 +163,7 @@ class Reservation
      */
     public static function reservationFor()
     {
-        return ReservationFor::create(self::schemaUrl());
+        return ReservationForProperty::create(self::schemaUrl());
     }
 
     /**
@@ -171,7 +171,7 @@ class Reservation
      */
     public static function reservationId()
     {
-        return ReservationId::create(self::schemaUrl());
+        return ReservationIdProperty::create(self::schemaUrl());
     }
 
     /**
@@ -179,7 +179,7 @@ class Reservation
      */
     public static function reservationStatus()
     {
-        return ReservationStatus::create(self::schemaUrl());
+        return ReservationStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -187,7 +187,7 @@ class Reservation
      */
     public static function reservedTicket()
     {
-        return ReservedTicket::create(self::schemaUrl());
+        return ReservedTicketProperty::create(self::schemaUrl());
     }
 
     /**
@@ -195,7 +195,7 @@ class Reservation
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -203,7 +203,7 @@ class Reservation
      */
     public static function totalPrice()
     {
-        return TotalPrice::create(self::schemaUrl());
+        return TotalPriceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -211,7 +211,7 @@ class Reservation
      */
     public static function underName()
     {
-        return UnderName::create(self::schemaUrl());
+        return UnderNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -219,6 +219,6 @@ class Reservation
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

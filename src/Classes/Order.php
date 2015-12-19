@@ -3,37 +3,37 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AcceptedOffer;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\BillingAddress;
-use NilPortugues\SchemaOrg\Properties\Broker;
-use NilPortugues\SchemaOrg\Properties\ConfirmationNumber;
-use NilPortugues\SchemaOrg\Properties\Customer;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Discount;
-use NilPortugues\SchemaOrg\Properties\DiscountCode;
-use NilPortugues\SchemaOrg\Properties\DiscountCurrency;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\IsGift;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Merchant;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\OrderDate;
-use NilPortugues\SchemaOrg\Properties\OrderDelivery;
-use NilPortugues\SchemaOrg\Properties\OrderNumber;
-use NilPortugues\SchemaOrg\Properties\OrderStatus;
-use NilPortugues\SchemaOrg\Properties\OrderedItem;
-use NilPortugues\SchemaOrg\Properties\PartOfInvoice;
-use NilPortugues\SchemaOrg\Properties\PaymentDue;
-use NilPortugues\SchemaOrg\Properties\PaymentDueDate;
-use NilPortugues\SchemaOrg\Properties\PaymentMethod;
-use NilPortugues\SchemaOrg\Properties\PaymentMethodId;
-use NilPortugues\SchemaOrg\Properties\PaymentUrl;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Seller;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AcceptedOfferProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\BillingAddressProperty;
+use NilPortugues\SchemaOrg\Properties\BrokerProperty;
+use NilPortugues\SchemaOrg\Properties\ConfirmationNumberProperty;
+use NilPortugues\SchemaOrg\Properties\CustomerProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DiscountCodeProperty;
+use NilPortugues\SchemaOrg\Properties\DiscountCurrencyProperty;
+use NilPortugues\SchemaOrg\Properties\DiscountProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IsGiftProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MerchantProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\OrderDateProperty;
+use NilPortugues\SchemaOrg\Properties\OrderDeliveryProperty;
+use NilPortugues\SchemaOrg\Properties\OrderNumberProperty;
+use NilPortugues\SchemaOrg\Properties\OrderStatusProperty;
+use NilPortugues\SchemaOrg\Properties\OrderedItemProperty;
+use NilPortugues\SchemaOrg\Properties\PartOfInvoiceProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentDueDateProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentDueProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentMethodIdProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentMethodProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentUrlProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SellerProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Order.
@@ -60,7 +60,7 @@ class Order
      */
     public static function acceptedOffer()
     {
-        return AcceptedOffer::create(self::schemaUrl());
+        return AcceptedOfferProperty::create(self::schemaUrl());
     }
 
     /**
@@ -68,7 +68,7 @@ class Order
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -76,7 +76,7 @@ class Order
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -84,7 +84,7 @@ class Order
      */
     public static function billingAddress()
     {
-        return BillingAddress::create(self::schemaUrl());
+        return BillingAddressProperty::create(self::schemaUrl());
     }
 
     /**
@@ -92,7 +92,7 @@ class Order
      */
     public static function broker()
     {
-        return Broker::create(self::schemaUrl());
+        return BrokerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -100,7 +100,7 @@ class Order
      */
     public static function confirmationNumber()
     {
-        return ConfirmationNumber::create(self::schemaUrl());
+        return ConfirmationNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -108,7 +108,7 @@ class Order
      */
     public static function customer()
     {
-        return Customer::create(self::schemaUrl());
+        return CustomerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -116,7 +116,7 @@ class Order
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -124,7 +124,7 @@ class Order
      */
     public static function discount()
     {
-        return Discount::create(self::schemaUrl());
+        return DiscountProperty::create(self::schemaUrl());
     }
 
     /**
@@ -132,7 +132,7 @@ class Order
      */
     public static function discountCode()
     {
-        return DiscountCode::create(self::schemaUrl());
+        return DiscountCodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -140,7 +140,7 @@ class Order
      */
     public static function discountCurrency()
     {
-        return DiscountCurrency::create(self::schemaUrl());
+        return DiscountCurrencyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -148,7 +148,7 @@ class Order
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -156,7 +156,7 @@ class Order
      */
     public static function isGift()
     {
-        return IsGift::create(self::schemaUrl());
+        return IsGiftProperty::create(self::schemaUrl());
     }
 
     /**
@@ -164,7 +164,7 @@ class Order
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -172,7 +172,7 @@ class Order
      */
     public static function merchant()
     {
-        return Merchant::create(self::schemaUrl());
+        return MerchantProperty::create(self::schemaUrl());
     }
 
     /**
@@ -180,7 +180,7 @@ class Order
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -188,7 +188,7 @@ class Order
      */
     public static function orderDate()
     {
-        return OrderDate::create(self::schemaUrl());
+        return OrderDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -196,7 +196,7 @@ class Order
      */
     public static function orderDelivery()
     {
-        return OrderDelivery::create(self::schemaUrl());
+        return OrderDeliveryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -204,7 +204,7 @@ class Order
      */
     public static function orderNumber()
     {
-        return OrderNumber::create(self::schemaUrl());
+        return OrderNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -212,7 +212,7 @@ class Order
      */
     public static function orderStatus()
     {
-        return OrderStatus::create(self::schemaUrl());
+        return OrderStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -220,7 +220,7 @@ class Order
      */
     public static function orderedItem()
     {
-        return OrderedItem::create(self::schemaUrl());
+        return OrderedItemProperty::create(self::schemaUrl());
     }
 
     /**
@@ -228,7 +228,7 @@ class Order
      */
     public static function partOfInvoice()
     {
-        return PartOfInvoice::create(self::schemaUrl());
+        return PartOfInvoiceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -236,7 +236,7 @@ class Order
      */
     public static function paymentDue()
     {
-        return PaymentDue::create(self::schemaUrl());
+        return PaymentDueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -244,7 +244,7 @@ class Order
      */
     public static function paymentDueDate()
     {
-        return PaymentDueDate::create(self::schemaUrl());
+        return PaymentDueDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -252,7 +252,7 @@ class Order
      */
     public static function paymentMethod()
     {
-        return PaymentMethod::create(self::schemaUrl());
+        return PaymentMethodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -260,7 +260,7 @@ class Order
      */
     public static function paymentMethodId()
     {
-        return PaymentMethodId::create(self::schemaUrl());
+        return PaymentMethodIdProperty::create(self::schemaUrl());
     }
 
     /**
@@ -268,7 +268,7 @@ class Order
      */
     public static function paymentUrl()
     {
-        return PaymentUrl::create(self::schemaUrl());
+        return PaymentUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -276,7 +276,7 @@ class Order
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -284,7 +284,7 @@ class Order
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -292,7 +292,7 @@ class Order
      */
     public static function seller()
     {
-        return Seller::create(self::schemaUrl());
+        return SellerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -300,6 +300,6 @@ class Order
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

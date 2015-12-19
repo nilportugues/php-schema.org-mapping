@@ -3,20 +3,20 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\AssociatedPathophysiology;
-use NilPortugues\SchemaOrg\Properties\ComprisedOf;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\RelatedCondition;
-use NilPortugues\SchemaOrg\Properties\RelatedStructure;
-use NilPortugues\SchemaOrg\Properties\RelatedTherapy;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\AssociatedPathophysiologyProperty;
+use NilPortugues\SchemaOrg\Properties\ComprisedOfProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\RelatedConditionProperty;
+use NilPortugues\SchemaOrg\Properties\RelatedStructureProperty;
+use NilPortugues\SchemaOrg\Properties\RelatedTherapyProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes AnatomicalSystem.
@@ -43,7 +43,7 @@ class AnatomicalSystem
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -51,7 +51,7 @@ class AnatomicalSystem
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -59,7 +59,7 @@ class AnatomicalSystem
      */
     public static function associatedPathophysiology()
     {
-        return AssociatedPathophysiology::create(self::schemaUrl());
+        return AssociatedPathophysiologyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -67,7 +67,7 @@ class AnatomicalSystem
      */
     public static function comprisedOf()
     {
-        return ComprisedOf::create(self::schemaUrl());
+        return ComprisedOfProperty::create(self::schemaUrl());
     }
 
     /**
@@ -75,7 +75,7 @@ class AnatomicalSystem
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -83,7 +83,7 @@ class AnatomicalSystem
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -91,7 +91,7 @@ class AnatomicalSystem
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -99,7 +99,7 @@ class AnatomicalSystem
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -107,7 +107,7 @@ class AnatomicalSystem
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -115,7 +115,7 @@ class AnatomicalSystem
      */
     public static function relatedCondition()
     {
-        return RelatedCondition::create(self::schemaUrl());
+        return RelatedConditionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -123,7 +123,7 @@ class AnatomicalSystem
      */
     public static function relatedStructure()
     {
-        return RelatedStructure::create(self::schemaUrl());
+        return RelatedStructureProperty::create(self::schemaUrl());
     }
 
     /**
@@ -131,7 +131,7 @@ class AnatomicalSystem
      */
     public static function relatedTherapy()
     {
-        return RelatedTherapy::create(self::schemaUrl());
+        return RelatedTherapyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -139,7 +139,7 @@ class AnatomicalSystem
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -147,6 +147,6 @@ class AnatomicalSystem
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

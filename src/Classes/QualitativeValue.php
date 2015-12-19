@@ -3,14 +3,14 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalProperty;
-use NilPortugues\SchemaOrg\Properties\Equal;
-use NilPortugues\SchemaOrg\Properties\Greater;
-use NilPortugues\SchemaOrg\Properties\GreaterOrEqual;
-use NilPortugues\SchemaOrg\Properties\Lesser;
-use NilPortugues\SchemaOrg\Properties\LesserOrEqual;
-use NilPortugues\SchemaOrg\Properties\NonEqual;
-use NilPortugues\SchemaOrg\Properties\ValueReference;
+use NilPortugues\SchemaOrg\Properties\AdditionalPropertyProperty;
+use NilPortugues\SchemaOrg\Properties\EqualProperty;
+use NilPortugues\SchemaOrg\Properties\GreaterOrEqualProperty;
+use NilPortugues\SchemaOrg\Properties\GreaterProperty;
+use NilPortugues\SchemaOrg\Properties\LesserOrEqualProperty;
+use NilPortugues\SchemaOrg\Properties\LesserProperty;
+use NilPortugues\SchemaOrg\Properties\NonEqualProperty;
+use NilPortugues\SchemaOrg\Properties\ValueReferenceProperty;
 
 /**
  * Classes QualitativeValue.
@@ -37,7 +37,7 @@ class QualitativeValue
      */
     public static function additionalProperty()
     {
-        return AdditionalProperty::create(self::schemaUrl());
+        return AdditionalPropertyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -45,7 +45,7 @@ class QualitativeValue
      */
     public static function equal()
     {
-        return Equal::create(self::schemaUrl());
+        return EqualProperty::create(self::schemaUrl());
     }
 
     /**
@@ -53,7 +53,7 @@ class QualitativeValue
      */
     public static function greater()
     {
-        return Greater::create(self::schemaUrl());
+        return GreaterProperty::create(self::schemaUrl());
     }
 
     /**
@@ -61,7 +61,7 @@ class QualitativeValue
      */
     public static function greaterOrEqual()
     {
-        return GreaterOrEqual::create(self::schemaUrl());
+        return GreaterOrEqualProperty::create(self::schemaUrl());
     }
 
     /**
@@ -69,7 +69,7 @@ class QualitativeValue
      */
     public static function lesser()
     {
-        return Lesser::create(self::schemaUrl());
+        return LesserProperty::create(self::schemaUrl());
     }
 
     /**
@@ -77,7 +77,7 @@ class QualitativeValue
      */
     public static function lesserOrEqual()
     {
-        return LesserOrEqual::create(self::schemaUrl());
+        return LesserOrEqualProperty::create(self::schemaUrl());
     }
 
     /**
@@ -85,7 +85,7 @@ class QualitativeValue
      */
     public static function nonEqual()
     {
-        return NonEqual::create(self::schemaUrl());
+        return NonEqualProperty::create(self::schemaUrl());
     }
 
     /**
@@ -93,6 +93,6 @@ class QualitativeValue
      */
     public static function valueReference()
     {
-        return ValueReference::create(self::schemaUrl());
+        return ValueReferenceProperty::create(self::schemaUrl());
     }
 }

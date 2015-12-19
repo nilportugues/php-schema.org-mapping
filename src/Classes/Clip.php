@@ -3,24 +3,24 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Actor;
-use NilPortugues\SchemaOrg\Properties\Actors;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\ClipNumber;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Director;
-use NilPortugues\SchemaOrg\Properties\Directors;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\MusicBy;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PartOfEpisode;
-use NilPortugues\SchemaOrg\Properties\PartOfSeason;
-use NilPortugues\SchemaOrg\Properties\PartOfSeries;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\ActorProperty;
+use NilPortugues\SchemaOrg\Properties\ActorsProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ClipNumberProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DirectorProperty;
+use NilPortugues\SchemaOrg\Properties\DirectorsProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MusicByProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PartOfEpisodeProperty;
+use NilPortugues\SchemaOrg\Properties\PartOfSeasonProperty;
+use NilPortugues\SchemaOrg\Properties\PartOfSeriesProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Clip.
@@ -47,7 +47,7 @@ class Clip
      */
     public static function actor()
     {
-        return Actor::create(self::schemaUrl());
+        return ActorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -55,7 +55,7 @@ class Clip
      */
     public static function actors()
     {
-        return Actors::create(self::schemaUrl());
+        return ActorsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -63,7 +63,7 @@ class Clip
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -71,7 +71,7 @@ class Clip
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -79,7 +79,7 @@ class Clip
      */
     public static function clipNumber()
     {
-        return ClipNumber::create(self::schemaUrl());
+        return ClipNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -87,7 +87,7 @@ class Clip
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -95,7 +95,7 @@ class Clip
      */
     public static function director()
     {
-        return Director::create(self::schemaUrl());
+        return DirectorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -103,7 +103,7 @@ class Clip
      */
     public static function directors()
     {
-        return Directors::create(self::schemaUrl());
+        return DirectorsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -111,7 +111,7 @@ class Clip
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -119,7 +119,7 @@ class Clip
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -127,7 +127,7 @@ class Clip
      */
     public static function musicBy()
     {
-        return MusicBy::create(self::schemaUrl());
+        return MusicByProperty::create(self::schemaUrl());
     }
 
     /**
@@ -135,7 +135,7 @@ class Clip
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -143,7 +143,7 @@ class Clip
      */
     public static function partOfEpisode()
     {
-        return PartOfEpisode::create(self::schemaUrl());
+        return PartOfEpisodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -151,7 +151,7 @@ class Clip
      */
     public static function partOfSeason()
     {
-        return PartOfSeason::create(self::schemaUrl());
+        return PartOfSeasonProperty::create(self::schemaUrl());
     }
 
     /**
@@ -159,7 +159,7 @@ class Clip
      */
     public static function partOfSeries()
     {
-        return PartOfSeries::create(self::schemaUrl());
+        return PartOfSeriesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -167,7 +167,7 @@ class Clip
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -175,7 +175,7 @@ class Clip
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -183,6 +183,6 @@ class Clip
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

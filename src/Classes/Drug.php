@@ -3,38 +3,38 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActiveIngredient;
-use NilPortugues\SchemaOrg\Properties\AdministrationRoute;
-use NilPortugues\SchemaOrg\Properties\AlcoholWarning;
-use NilPortugues\SchemaOrg\Properties\AvailableStrength;
-use NilPortugues\SchemaOrg\Properties\BreastfeedingWarning;
-use NilPortugues\SchemaOrg\Properties\ClinicalPharmacology;
-use NilPortugues\SchemaOrg\Properties\Code;
-use NilPortugues\SchemaOrg\Properties\Cost;
-use NilPortugues\SchemaOrg\Properties\DosageForm;
-use NilPortugues\SchemaOrg\Properties\DoseSchedule;
-use NilPortugues\SchemaOrg\Properties\DrugClass;
-use NilPortugues\SchemaOrg\Properties\FoodWarning;
-use NilPortugues\SchemaOrg\Properties\Guideline;
-use NilPortugues\SchemaOrg\Properties\InteractingDrug;
-use NilPortugues\SchemaOrg\Properties\IsAvailableGenerically;
-use NilPortugues\SchemaOrg\Properties\IsProprietary;
-use NilPortugues\SchemaOrg\Properties\LabelDetails;
-use NilPortugues\SchemaOrg\Properties\LegalStatus;
-use NilPortugues\SchemaOrg\Properties\Manufacturer;
-use NilPortugues\SchemaOrg\Properties\MechanismOfAction;
-use NilPortugues\SchemaOrg\Properties\MedicineSystem;
-use NilPortugues\SchemaOrg\Properties\NonProprietaryName;
-use NilPortugues\SchemaOrg\Properties\Overdosage;
-use NilPortugues\SchemaOrg\Properties\PregnancyCategory;
-use NilPortugues\SchemaOrg\Properties\PregnancyWarning;
-use NilPortugues\SchemaOrg\Properties\PrescribingInfo;
-use NilPortugues\SchemaOrg\Properties\PrescriptionStatus;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthority;
-use NilPortugues\SchemaOrg\Properties\RelatedDrug;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
-use NilPortugues\SchemaOrg\Properties\Study;
-use NilPortugues\SchemaOrg\Properties\Warning;
+use NilPortugues\SchemaOrg\Properties\ActiveIngredientProperty;
+use NilPortugues\SchemaOrg\Properties\AdministrationRouteProperty;
+use NilPortugues\SchemaOrg\Properties\AlcoholWarningProperty;
+use NilPortugues\SchemaOrg\Properties\AvailableStrengthProperty;
+use NilPortugues\SchemaOrg\Properties\BreastfeedingWarningProperty;
+use NilPortugues\SchemaOrg\Properties\ClinicalPharmacologyProperty;
+use NilPortugues\SchemaOrg\Properties\CodeProperty;
+use NilPortugues\SchemaOrg\Properties\CostProperty;
+use NilPortugues\SchemaOrg\Properties\DosageFormProperty;
+use NilPortugues\SchemaOrg\Properties\DoseScheduleProperty;
+use NilPortugues\SchemaOrg\Properties\DrugClassProperty;
+use NilPortugues\SchemaOrg\Properties\FoodWarningProperty;
+use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
+use NilPortugues\SchemaOrg\Properties\InteractingDrugProperty;
+use NilPortugues\SchemaOrg\Properties\IsAvailableGenericallyProperty;
+use NilPortugues\SchemaOrg\Properties\IsProprietaryProperty;
+use NilPortugues\SchemaOrg\Properties\LabelDetailsProperty;
+use NilPortugues\SchemaOrg\Properties\LegalStatusProperty;
+use NilPortugues\SchemaOrg\Properties\ManufacturerProperty;
+use NilPortugues\SchemaOrg\Properties\MechanismOfActionProperty;
+use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
+use NilPortugues\SchemaOrg\Properties\NonProprietaryNameProperty;
+use NilPortugues\SchemaOrg\Properties\OverdosageProperty;
+use NilPortugues\SchemaOrg\Properties\PregnancyCategoryProperty;
+use NilPortugues\SchemaOrg\Properties\PregnancyWarningProperty;
+use NilPortugues\SchemaOrg\Properties\PrescribingInfoProperty;
+use NilPortugues\SchemaOrg\Properties\PrescriptionStatusProperty;
+use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
+use NilPortugues\SchemaOrg\Properties\RelatedDrugProperty;
+use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\StudyProperty;
+use NilPortugues\SchemaOrg\Properties\WarningProperty;
 
 /**
  * Classes Drug.
@@ -61,7 +61,7 @@ class Drug
      */
     public static function activeIngredient()
     {
-        return ActiveIngredient::create(self::schemaUrl());
+        return ActiveIngredientProperty::create(self::schemaUrl());
     }
 
     /**
@@ -69,7 +69,7 @@ class Drug
      */
     public static function administrationRoute()
     {
-        return AdministrationRoute::create(self::schemaUrl());
+        return AdministrationRouteProperty::create(self::schemaUrl());
     }
 
     /**
@@ -77,7 +77,7 @@ class Drug
      */
     public static function alcoholWarning()
     {
-        return AlcoholWarning::create(self::schemaUrl());
+        return AlcoholWarningProperty::create(self::schemaUrl());
     }
 
     /**
@@ -85,7 +85,7 @@ class Drug
      */
     public static function availableStrength()
     {
-        return AvailableStrength::create(self::schemaUrl());
+        return AvailableStrengthProperty::create(self::schemaUrl());
     }
 
     /**
@@ -93,7 +93,7 @@ class Drug
      */
     public static function breastfeedingWarning()
     {
-        return BreastfeedingWarning::create(self::schemaUrl());
+        return BreastfeedingWarningProperty::create(self::schemaUrl());
     }
 
     /**
@@ -101,7 +101,7 @@ class Drug
      */
     public static function clinicalPharmacology()
     {
-        return ClinicalPharmacology::create(self::schemaUrl());
+        return ClinicalPharmacologyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -109,7 +109,7 @@ class Drug
      */
     public static function code()
     {
-        return Code::create(MedicalEntity::schemaUrl());
+        return CodeProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -117,7 +117,7 @@ class Drug
      */
     public static function cost()
     {
-        return Cost::create(self::schemaUrl());
+        return CostProperty::create(self::schemaUrl());
     }
 
     /**
@@ -125,7 +125,7 @@ class Drug
      */
     public static function dosageForm()
     {
-        return DosageForm::create(self::schemaUrl());
+        return DosageFormProperty::create(self::schemaUrl());
     }
 
     /**
@@ -133,7 +133,7 @@ class Drug
      */
     public static function doseSchedule()
     {
-        return DoseSchedule::create(self::schemaUrl());
+        return DoseScheduleProperty::create(self::schemaUrl());
     }
 
     /**
@@ -141,7 +141,7 @@ class Drug
      */
     public static function drugClass()
     {
-        return DrugClass::create(self::schemaUrl());
+        return DrugClassProperty::create(self::schemaUrl());
     }
 
     /**
@@ -149,7 +149,7 @@ class Drug
      */
     public static function foodWarning()
     {
-        return FoodWarning::create(self::schemaUrl());
+        return FoodWarningProperty::create(self::schemaUrl());
     }
 
     /**
@@ -157,7 +157,7 @@ class Drug
      */
     public static function guideline()
     {
-        return Guideline::create(MedicalEntity::schemaUrl());
+        return GuidelineProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -165,7 +165,7 @@ class Drug
      */
     public static function interactingDrug()
     {
-        return InteractingDrug::create(self::schemaUrl());
+        return InteractingDrugProperty::create(self::schemaUrl());
     }
 
     /**
@@ -173,7 +173,7 @@ class Drug
      */
     public static function isAvailableGenerically()
     {
-        return IsAvailableGenerically::create(self::schemaUrl());
+        return IsAvailableGenericallyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -181,7 +181,7 @@ class Drug
      */
     public static function isProprietary()
     {
-        return IsProprietary::create(self::schemaUrl());
+        return IsProprietaryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -189,7 +189,7 @@ class Drug
      */
     public static function labelDetails()
     {
-        return LabelDetails::create(self::schemaUrl());
+        return LabelDetailsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -197,7 +197,7 @@ class Drug
      */
     public static function legalStatus()
     {
-        return LegalStatus::create(self::schemaUrl());
+        return LegalStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -205,7 +205,7 @@ class Drug
      */
     public static function manufacturer()
     {
-        return Manufacturer::create(self::schemaUrl());
+        return ManufacturerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -213,7 +213,7 @@ class Drug
      */
     public static function mechanismOfAction()
     {
-        return MechanismOfAction::create(self::schemaUrl());
+        return MechanismOfActionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -221,7 +221,7 @@ class Drug
      */
     public static function medicineSystem()
     {
-        return MedicineSystem::create(MedicalEntity::schemaUrl());
+        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -229,7 +229,7 @@ class Drug
      */
     public static function nonProprietaryName()
     {
-        return NonProprietaryName::create(self::schemaUrl());
+        return NonProprietaryNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -237,7 +237,7 @@ class Drug
      */
     public static function overdosage()
     {
-        return Overdosage::create(self::schemaUrl());
+        return OverdosageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -245,7 +245,7 @@ class Drug
      */
     public static function pregnancyCategory()
     {
-        return PregnancyCategory::create(self::schemaUrl());
+        return PregnancyCategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -253,7 +253,7 @@ class Drug
      */
     public static function pregnancyWarning()
     {
-        return PregnancyWarning::create(self::schemaUrl());
+        return PregnancyWarningProperty::create(self::schemaUrl());
     }
 
     /**
@@ -261,7 +261,7 @@ class Drug
      */
     public static function prescribingInfo()
     {
-        return PrescribingInfo::create(self::schemaUrl());
+        return PrescribingInfoProperty::create(self::schemaUrl());
     }
 
     /**
@@ -269,7 +269,7 @@ class Drug
      */
     public static function prescriptionStatus()
     {
-        return PrescriptionStatus::create(self::schemaUrl());
+        return PrescriptionStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -277,7 +277,7 @@ class Drug
      */
     public static function recognizingAuthority()
     {
-        return RecognizingAuthority::create(MedicalEntity::schemaUrl());
+        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -285,7 +285,7 @@ class Drug
      */
     public static function relatedDrug()
     {
-        return RelatedDrug::create(self::schemaUrl());
+        return RelatedDrugProperty::create(self::schemaUrl());
     }
 
     /**
@@ -293,7 +293,7 @@ class Drug
      */
     public static function relevantSpecialty()
     {
-        return RelevantSpecialty::create(MedicalEntity::schemaUrl());
+        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -301,7 +301,7 @@ class Drug
      */
     public static function study()
     {
-        return Study::create(MedicalEntity::schemaUrl());
+        return StudyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -309,6 +309,6 @@ class Drug
      */
     public static function warning()
     {
-        return Warning::create(self::schemaUrl());
+        return WarningProperty::create(self::schemaUrl());
     }
 }

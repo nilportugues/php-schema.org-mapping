@@ -3,21 +3,21 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AddressCountry;
-use NilPortugues\SchemaOrg\Properties\AddressLocality;
-use NilPortugues\SchemaOrg\Properties\AddressRegion;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PostOfficeBoxNumber;
-use NilPortugues\SchemaOrg\Properties\PostalCode;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\StreetAddress;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AddressCountryProperty;
+use NilPortugues\SchemaOrg\Properties\AddressLocalityProperty;
+use NilPortugues\SchemaOrg\Properties\AddressRegionProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PostOfficeBoxNumberProperty;
+use NilPortugues\SchemaOrg\Properties\PostalCodeProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\StreetAddressProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes PostalAddress.
@@ -44,7 +44,7 @@ class PostalAddress
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -52,7 +52,7 @@ class PostalAddress
      */
     public static function addressCountry()
     {
-        return AddressCountry::create(self::schemaUrl());
+        return AddressCountryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -60,7 +60,7 @@ class PostalAddress
      */
     public static function addressLocality()
     {
-        return AddressLocality::create(self::schemaUrl());
+        return AddressLocalityProperty::create(self::schemaUrl());
     }
 
     /**
@@ -68,7 +68,7 @@ class PostalAddress
      */
     public static function addressRegion()
     {
-        return AddressRegion::create(self::schemaUrl());
+        return AddressRegionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -76,7 +76,7 @@ class PostalAddress
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -84,7 +84,7 @@ class PostalAddress
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -92,7 +92,7 @@ class PostalAddress
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -100,7 +100,7 @@ class PostalAddress
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -108,7 +108,7 @@ class PostalAddress
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -116,7 +116,7 @@ class PostalAddress
      */
     public static function postOfficeBoxNumber()
     {
-        return PostOfficeBoxNumber::create(self::schemaUrl());
+        return PostOfficeBoxNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -124,7 +124,7 @@ class PostalAddress
      */
     public static function postalCode()
     {
-        return PostalCode::create(self::schemaUrl());
+        return PostalCodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -132,7 +132,7 @@ class PostalAddress
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -140,7 +140,7 @@ class PostalAddress
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -148,7 +148,7 @@ class PostalAddress
      */
     public static function streetAddress()
     {
-        return StreetAddress::create(self::schemaUrl());
+        return StreetAddressProperty::create(self::schemaUrl());
     }
 
     /**
@@ -156,6 +156,6 @@ class PostalAddress
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

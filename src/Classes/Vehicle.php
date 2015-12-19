@@ -3,39 +3,39 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\CargoVolume;
-use NilPortugues\SchemaOrg\Properties\DateVehicleFirstRegistered;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\DriveWheelConfiguration;
-use NilPortugues\SchemaOrg\Properties\FuelConsumption;
-use NilPortugues\SchemaOrg\Properties\FuelEfficiency;
-use NilPortugues\SchemaOrg\Properties\FuelType;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\KnownVehicleDamages;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\MileageFromOdometer;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\NumberOfAirbags;
-use NilPortugues\SchemaOrg\Properties\NumberOfAxles;
-use NilPortugues\SchemaOrg\Properties\NumberOfDoors;
-use NilPortugues\SchemaOrg\Properties\NumberOfForwardGears;
-use NilPortugues\SchemaOrg\Properties\NumberOfPreviousOwners;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProductionDate;
-use NilPortugues\SchemaOrg\Properties\PurchaseDate;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\SteeringPosition;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\VehicleConfiguration;
-use NilPortugues\SchemaOrg\Properties\VehicleEngine;
-use NilPortugues\SchemaOrg\Properties\VehicleInteriorColor;
-use NilPortugues\SchemaOrg\Properties\VehicleInteriorType;
-use NilPortugues\SchemaOrg\Properties\VehicleModelDate;
-use NilPortugues\SchemaOrg\Properties\VehicleSeatingCapacity;
-use NilPortugues\SchemaOrg\Properties\VehicleTransmission;
-use NilPortugues\SchemaOrg\Properties\Vin;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\CargoVolumeProperty;
+use NilPortugues\SchemaOrg\Properties\DateVehicleFirstRegisteredProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DriveWheelConfigurationProperty;
+use NilPortugues\SchemaOrg\Properties\FuelConsumptionProperty;
+use NilPortugues\SchemaOrg\Properties\FuelEfficiencyProperty;
+use NilPortugues\SchemaOrg\Properties\FuelTypeProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\KnownVehicleDamagesProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MileageFromOdometerProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\NumberOfAirbagsProperty;
+use NilPortugues\SchemaOrg\Properties\NumberOfAxlesProperty;
+use NilPortugues\SchemaOrg\Properties\NumberOfDoorsProperty;
+use NilPortugues\SchemaOrg\Properties\NumberOfForwardGearsProperty;
+use NilPortugues\SchemaOrg\Properties\NumberOfPreviousOwnersProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProductionDateProperty;
+use NilPortugues\SchemaOrg\Properties\PurchaseDateProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SteeringPositionProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\VehicleConfigurationProperty;
+use NilPortugues\SchemaOrg\Properties\VehicleEngineProperty;
+use NilPortugues\SchemaOrg\Properties\VehicleInteriorColorProperty;
+use NilPortugues\SchemaOrg\Properties\VehicleInteriorTypeProperty;
+use NilPortugues\SchemaOrg\Properties\VehicleModelDateProperty;
+use NilPortugues\SchemaOrg\Properties\VehicleSeatingCapacityProperty;
+use NilPortugues\SchemaOrg\Properties\VehicleTransmissionProperty;
+use NilPortugues\SchemaOrg\Properties\VinProperty;
 
 /**
  * Classes Vehicle.
@@ -62,7 +62,7 @@ class Vehicle
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class Vehicle
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class Vehicle
      */
     public static function cargoVolume()
     {
-        return CargoVolume::create(self::schemaUrl());
+        return CargoVolumeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class Vehicle
      */
     public static function dateVehicleFirstRegistered()
     {
-        return DateVehicleFirstRegistered::create(self::schemaUrl());
+        return DateVehicleFirstRegisteredProperty::create(self::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class Vehicle
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class Vehicle
      */
     public static function driveWheelConfiguration()
     {
-        return DriveWheelConfiguration::create(self::schemaUrl());
+        return DriveWheelConfigurationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class Vehicle
      */
     public static function fuelConsumption()
     {
-        return FuelConsumption::create(self::schemaUrl());
+        return FuelConsumptionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class Vehicle
      */
     public static function fuelEfficiency()
     {
-        return FuelEfficiency::create(self::schemaUrl());
+        return FuelEfficiencyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class Vehicle
      */
     public static function fuelType()
     {
-        return FuelType::create(self::schemaUrl());
+        return FuelTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class Vehicle
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class Vehicle
      */
     public static function knownVehicleDamages()
     {
-        return KnownVehicleDamages::create(self::schemaUrl());
+        return KnownVehicleDamagesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class Vehicle
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class Vehicle
      */
     public static function mileageFromOdometer()
     {
-        return MileageFromOdometer::create(self::schemaUrl());
+        return MileageFromOdometerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class Vehicle
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -174,7 +174,7 @@ class Vehicle
      */
     public static function numberOfAirbags()
     {
-        return NumberOfAirbags::create(self::schemaUrl());
+        return NumberOfAirbagsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -182,7 +182,7 @@ class Vehicle
      */
     public static function numberOfAxles()
     {
-        return NumberOfAxles::create(self::schemaUrl());
+        return NumberOfAxlesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -190,7 +190,7 @@ class Vehicle
      */
     public static function numberOfDoors()
     {
-        return NumberOfDoors::create(self::schemaUrl());
+        return NumberOfDoorsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -198,7 +198,7 @@ class Vehicle
      */
     public static function numberOfForwardGears()
     {
-        return NumberOfForwardGears::create(self::schemaUrl());
+        return NumberOfForwardGearsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -206,7 +206,7 @@ class Vehicle
      */
     public static function numberOfPreviousOwners()
     {
-        return NumberOfPreviousOwners::create(self::schemaUrl());
+        return NumberOfPreviousOwnersProperty::create(self::schemaUrl());
     }
 
     /**
@@ -214,7 +214,7 @@ class Vehicle
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -222,7 +222,7 @@ class Vehicle
      */
     public static function productionDate()
     {
-        return ProductionDate::create(self::schemaUrl());
+        return ProductionDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -230,7 +230,7 @@ class Vehicle
      */
     public static function purchaseDate()
     {
-        return PurchaseDate::create(self::schemaUrl());
+        return PurchaseDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -238,7 +238,7 @@ class Vehicle
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -246,7 +246,7 @@ class Vehicle
      */
     public static function steeringPosition()
     {
-        return SteeringPosition::create(self::schemaUrl());
+        return SteeringPositionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -254,7 +254,7 @@ class Vehicle
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -262,7 +262,7 @@ class Vehicle
      */
     public static function vehicleConfiguration()
     {
-        return VehicleConfiguration::create(self::schemaUrl());
+        return VehicleConfigurationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -270,7 +270,7 @@ class Vehicle
      */
     public static function vehicleEngine()
     {
-        return VehicleEngine::create(self::schemaUrl());
+        return VehicleEngineProperty::create(self::schemaUrl());
     }
 
     /**
@@ -278,7 +278,7 @@ class Vehicle
      */
     public static function vehicleInteriorColor()
     {
-        return VehicleInteriorColor::create(self::schemaUrl());
+        return VehicleInteriorColorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -286,7 +286,7 @@ class Vehicle
      */
     public static function vehicleInteriorType()
     {
-        return VehicleInteriorType::create(self::schemaUrl());
+        return VehicleInteriorTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -294,7 +294,7 @@ class Vehicle
      */
     public static function vehicleModelDate()
     {
-        return VehicleModelDate::create(self::schemaUrl());
+        return VehicleModelDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -302,7 +302,7 @@ class Vehicle
      */
     public static function vehicleSeatingCapacity()
     {
-        return VehicleSeatingCapacity::create(self::schemaUrl());
+        return VehicleSeatingCapacityProperty::create(self::schemaUrl());
     }
 
     /**
@@ -310,7 +310,7 @@ class Vehicle
      */
     public static function vehicleTransmission()
     {
-        return VehicleTransmission::create(self::schemaUrl());
+        return VehicleTransmissionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -318,6 +318,6 @@ class Vehicle
      */
     public static function vin()
     {
-        return Vin::create(self::schemaUrl());
+        return VinProperty::create(self::schemaUrl());
     }
 }

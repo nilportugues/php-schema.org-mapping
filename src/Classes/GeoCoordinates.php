@@ -3,12 +3,12 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Address;
-use NilPortugues\SchemaOrg\Properties\AddressCountry;
-use NilPortugues\SchemaOrg\Properties\Elevation;
-use NilPortugues\SchemaOrg\Properties\Latitude;
-use NilPortugues\SchemaOrg\Properties\Longitude;
-use NilPortugues\SchemaOrg\Properties\PostalCode;
+use NilPortugues\SchemaOrg\Properties\AddressCountryProperty;
+use NilPortugues\SchemaOrg\Properties\AddressProperty;
+use NilPortugues\SchemaOrg\Properties\ElevationProperty;
+use NilPortugues\SchemaOrg\Properties\LatitudeProperty;
+use NilPortugues\SchemaOrg\Properties\LongitudeProperty;
+use NilPortugues\SchemaOrg\Properties\PostalCodeProperty;
 
 /**
  * Classes GeoCoordinates.
@@ -35,7 +35,7 @@ class GeoCoordinates
      */
     public static function address()
     {
-        return Address::create(self::schemaUrl());
+        return AddressProperty::create(self::schemaUrl());
     }
 
     /**
@@ -43,7 +43,7 @@ class GeoCoordinates
      */
     public static function addressCountry()
     {
-        return AddressCountry::create(self::schemaUrl());
+        return AddressCountryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -51,7 +51,7 @@ class GeoCoordinates
      */
     public static function elevation()
     {
-        return Elevation::create(self::schemaUrl());
+        return ElevationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -59,7 +59,7 @@ class GeoCoordinates
      */
     public static function latitude()
     {
-        return Latitude::create(self::schemaUrl());
+        return LatitudeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -67,7 +67,7 @@ class GeoCoordinates
      */
     public static function longitude()
     {
-        return Longitude::create(self::schemaUrl());
+        return LongitudeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -75,6 +75,6 @@ class GeoCoordinates
      */
     public static function postalCode()
     {
-        return PostalCode::create(self::schemaUrl());
+        return PostalCodeProperty::create(self::schemaUrl());
     }
 }

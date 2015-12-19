@@ -3,33 +3,33 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\Aircraft;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\ArrivalAirport;
-use NilPortugues\SchemaOrg\Properties\ArrivalGate;
-use NilPortugues\SchemaOrg\Properties\ArrivalTerminal;
-use NilPortugues\SchemaOrg\Properties\ArrivalTime;
-use NilPortugues\SchemaOrg\Properties\BoardingPolicy;
-use NilPortugues\SchemaOrg\Properties\Carrier;
-use NilPortugues\SchemaOrg\Properties\DepartureAirport;
-use NilPortugues\SchemaOrg\Properties\DepartureGate;
-use NilPortugues\SchemaOrg\Properties\DepartureTerminal;
-use NilPortugues\SchemaOrg\Properties\DepartureTime;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\EstimatedFlightDuration;
-use NilPortugues\SchemaOrg\Properties\FlightDistance;
-use NilPortugues\SchemaOrg\Properties\FlightNumber;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\MealService;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\Provider;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Seller;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\WebCheckinTime;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AircraftProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalAirportProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalGateProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalTerminalProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty;
+use NilPortugues\SchemaOrg\Properties\BoardingPolicyProperty;
+use NilPortugues\SchemaOrg\Properties\CarrierProperty;
+use NilPortugues\SchemaOrg\Properties\DepartureAirportProperty;
+use NilPortugues\SchemaOrg\Properties\DepartureGateProperty;
+use NilPortugues\SchemaOrg\Properties\DepartureTerminalProperty;
+use NilPortugues\SchemaOrg\Properties\DepartureTimeProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\EstimatedFlightDurationProperty;
+use NilPortugues\SchemaOrg\Properties\FlightDistanceProperty;
+use NilPortugues\SchemaOrg\Properties\FlightNumberProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MealServiceProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProviderProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SellerProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\WebCheckinTimeProperty;
 
 /**
  * Classes Flight.
@@ -56,7 +56,7 @@ class Flight
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -64,7 +64,7 @@ class Flight
      */
     public static function aircraft()
     {
-        return Aircraft::create(self::schemaUrl());
+        return AircraftProperty::create(self::schemaUrl());
     }
 
     /**
@@ -72,7 +72,7 @@ class Flight
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -80,7 +80,7 @@ class Flight
      */
     public static function arrivalAirport()
     {
-        return ArrivalAirport::create(self::schemaUrl());
+        return ArrivalAirportProperty::create(self::schemaUrl());
     }
 
     /**
@@ -88,7 +88,7 @@ class Flight
      */
     public static function arrivalGate()
     {
-        return ArrivalGate::create(self::schemaUrl());
+        return ArrivalGateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -96,7 +96,7 @@ class Flight
      */
     public static function arrivalTerminal()
     {
-        return ArrivalTerminal::create(self::schemaUrl());
+        return ArrivalTerminalProperty::create(self::schemaUrl());
     }
 
     /**
@@ -104,7 +104,7 @@ class Flight
      */
     public static function arrivalTime()
     {
-        return ArrivalTime::create(self::schemaUrl());
+        return ArrivalTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -112,7 +112,7 @@ class Flight
      */
     public static function boardingPolicy()
     {
-        return BoardingPolicy::create(self::schemaUrl());
+        return BoardingPolicyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -120,7 +120,7 @@ class Flight
      */
     public static function carrier()
     {
-        return Carrier::create(self::schemaUrl());
+        return CarrierProperty::create(self::schemaUrl());
     }
 
     /**
@@ -128,7 +128,7 @@ class Flight
      */
     public static function departureAirport()
     {
-        return DepartureAirport::create(self::schemaUrl());
+        return DepartureAirportProperty::create(self::schemaUrl());
     }
 
     /**
@@ -136,7 +136,7 @@ class Flight
      */
     public static function departureGate()
     {
-        return DepartureGate::create(self::schemaUrl());
+        return DepartureGateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -144,7 +144,7 @@ class Flight
      */
     public static function departureTerminal()
     {
-        return DepartureTerminal::create(self::schemaUrl());
+        return DepartureTerminalProperty::create(self::schemaUrl());
     }
 
     /**
@@ -152,7 +152,7 @@ class Flight
      */
     public static function departureTime()
     {
-        return DepartureTime::create(self::schemaUrl());
+        return DepartureTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -160,7 +160,7 @@ class Flight
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -168,7 +168,7 @@ class Flight
      */
     public static function estimatedFlightDuration()
     {
-        return EstimatedFlightDuration::create(self::schemaUrl());
+        return EstimatedFlightDurationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -176,7 +176,7 @@ class Flight
      */
     public static function flightDistance()
     {
-        return FlightDistance::create(self::schemaUrl());
+        return FlightDistanceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -184,7 +184,7 @@ class Flight
      */
     public static function flightNumber()
     {
-        return FlightNumber::create(self::schemaUrl());
+        return FlightNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -192,7 +192,7 @@ class Flight
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -200,7 +200,7 @@ class Flight
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -208,7 +208,7 @@ class Flight
      */
     public static function mealService()
     {
-        return MealService::create(self::schemaUrl());
+        return MealServiceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -216,7 +216,7 @@ class Flight
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -224,7 +224,7 @@ class Flight
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -232,7 +232,7 @@ class Flight
      */
     public static function provider()
     {
-        return Provider::create(self::schemaUrl());
+        return ProviderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -240,7 +240,7 @@ class Flight
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -248,7 +248,7 @@ class Flight
      */
     public static function seller()
     {
-        return Seller::create(self::schemaUrl());
+        return SellerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -256,7 +256,7 @@ class Flight
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -264,6 +264,6 @@ class Flight
      */
     public static function webCheckinTime()
     {
-        return WebCheckinTime::create(self::schemaUrl());
+        return WebCheckinTimeProperty::create(self::schemaUrl());
     }
 }

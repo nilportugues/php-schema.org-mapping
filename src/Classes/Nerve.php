@@ -3,16 +3,16 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Branch;
-use NilPortugues\SchemaOrg\Properties\Code;
-use NilPortugues\SchemaOrg\Properties\Guideline;
-use NilPortugues\SchemaOrg\Properties\MedicineSystem;
-use NilPortugues\SchemaOrg\Properties\NerveMotor;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthority;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
-use NilPortugues\SchemaOrg\Properties\SensoryUnit;
-use NilPortugues\SchemaOrg\Properties\SourcedFrom;
-use NilPortugues\SchemaOrg\Properties\Study;
+use NilPortugues\SchemaOrg\Properties\BranchProperty;
+use NilPortugues\SchemaOrg\Properties\CodeProperty;
+use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
+use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
+use NilPortugues\SchemaOrg\Properties\NerveMotorProperty;
+use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
+use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\SensoryUnitProperty;
+use NilPortugues\SchemaOrg\Properties\SourcedFromProperty;
+use NilPortugues\SchemaOrg\Properties\StudyProperty;
 
 /**
  * Classes Nerve.
@@ -39,7 +39,7 @@ class Nerve
      */
     public static function branch()
     {
-        return Branch::create(self::schemaUrl());
+        return BranchProperty::create(self::schemaUrl());
     }
 
     /**
@@ -47,7 +47,7 @@ class Nerve
      */
     public static function code()
     {
-        return Code::create(MedicalEntity::schemaUrl());
+        return CodeProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -55,7 +55,7 @@ class Nerve
      */
     public static function guideline()
     {
-        return Guideline::create(MedicalEntity::schemaUrl());
+        return GuidelineProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -63,7 +63,7 @@ class Nerve
      */
     public static function medicineSystem()
     {
-        return MedicineSystem::create(MedicalEntity::schemaUrl());
+        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -71,7 +71,7 @@ class Nerve
      */
     public static function nerveMotor()
     {
-        return NerveMotor::create(self::schemaUrl());
+        return NerveMotorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -79,7 +79,7 @@ class Nerve
      */
     public static function recognizingAuthority()
     {
-        return RecognizingAuthority::create(MedicalEntity::schemaUrl());
+        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -87,7 +87,7 @@ class Nerve
      */
     public static function relevantSpecialty()
     {
-        return RelevantSpecialty::create(MedicalEntity::schemaUrl());
+        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -95,7 +95,7 @@ class Nerve
      */
     public static function sensoryUnit()
     {
-        return SensoryUnit::create(self::schemaUrl());
+        return SensoryUnitProperty::create(self::schemaUrl());
     }
 
     /**
@@ -103,7 +103,7 @@ class Nerve
      */
     public static function sourcedFrom()
     {
-        return SourcedFrom::create(self::schemaUrl());
+        return SourcedFromProperty::create(self::schemaUrl());
     }
 
     /**
@@ -111,6 +111,6 @@ class Nerve
      */
     public static function study()
     {
-        return Study::create(MedicalEntity::schemaUrl());
+        return StudyProperty::create(MedicalEntity::schemaUrl());
     }
 }

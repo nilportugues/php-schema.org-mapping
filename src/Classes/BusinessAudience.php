@@ -3,9 +3,9 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\NumberOfEmployees;
-use NilPortugues\SchemaOrg\Properties\YearlyRevenue;
-use NilPortugues\SchemaOrg\Properties\YearsInOperation;
+use NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty;
+use NilPortugues\SchemaOrg\Properties\YearlyRevenueProperty;
+use NilPortugues\SchemaOrg\Properties\YearsInOperationProperty;
 
 /**
  * Classes BusinessAudience.
@@ -32,7 +32,7 @@ class BusinessAudience
      */
     public static function numberOfEmployees()
     {
-        return NumberOfEmployees::create(self::schemaUrl());
+        return NumberOfEmployeesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -40,7 +40,7 @@ class BusinessAudience
      */
     public static function yearlyRevenue()
     {
-        return YearlyRevenue::create(self::schemaUrl());
+        return YearlyRevenueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -48,6 +48,6 @@ class BusinessAudience
      */
     public static function yearsInOperation()
     {
-        return YearsInOperation::create(self::schemaUrl());
+        return YearsInOperationProperty::create(self::schemaUrl());
     }
 }

@@ -3,7 +3,7 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ServiceOperator;
+use NilPortugues\SchemaOrg\Properties\ServiceOperatorProperty;
 
 /**
  * Classes GovernmentService.
@@ -30,6 +30,6 @@ class GovernmentService
      */
     public static function serviceOperator()
     {
-        return ServiceOperator::create(self::schemaUrl());
+        return ServiceOperatorProperty::create(self::schemaUrl());
     }
 }

@@ -3,30 +3,30 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActionStatus;
-use NilPortugues\SchemaOrg\Properties\Agent;
-use NilPortugues\SchemaOrg\Properties\Course;
-use NilPortugues\SchemaOrg\Properties\Diet;
-use NilPortugues\SchemaOrg\Properties\Distance;
-use NilPortugues\SchemaOrg\Properties\EndTime;
-use NilPortugues\SchemaOrg\Properties\Error;
-use NilPortugues\SchemaOrg\Properties\ExerciseCourse;
-use NilPortugues\SchemaOrg\Properties\ExercisePlan;
-use NilPortugues\SchemaOrg\Properties\ExerciseRelatedDiet;
-use NilPortugues\SchemaOrg\Properties\ExerciseType;
-use NilPortugues\SchemaOrg\Properties\FromLocation;
-use NilPortugues\SchemaOrg\Properties\Instrument;
-use NilPortugues\SchemaOrg\Properties\Location;
-use NilPortugues\SchemaOrg\Properties\Object;
-use NilPortugues\SchemaOrg\Properties\Opponent;
-use NilPortugues\SchemaOrg\Properties\Participant;
-use NilPortugues\SchemaOrg\Properties\Result;
-use NilPortugues\SchemaOrg\Properties\SportsActivityLocation;
-use NilPortugues\SchemaOrg\Properties\SportsEvent;
-use NilPortugues\SchemaOrg\Properties\SportsTeam;
-use NilPortugues\SchemaOrg\Properties\StartTime;
-use NilPortugues\SchemaOrg\Properties\Target;
-use NilPortugues\SchemaOrg\Properties\ToLocation;
+use NilPortugues\SchemaOrg\Properties\ActionStatusProperty;
+use NilPortugues\SchemaOrg\Properties\AgentProperty;
+use NilPortugues\SchemaOrg\Properties\CourseProperty;
+use NilPortugues\SchemaOrg\Properties\DietProperty;
+use NilPortugues\SchemaOrg\Properties\DistanceProperty;
+use NilPortugues\SchemaOrg\Properties\EndTimeProperty;
+use NilPortugues\SchemaOrg\Properties\ErrorProperty;
+use NilPortugues\SchemaOrg\Properties\ExerciseCourseProperty;
+use NilPortugues\SchemaOrg\Properties\ExercisePlanProperty;
+use NilPortugues\SchemaOrg\Properties\ExerciseRelatedDietProperty;
+use NilPortugues\SchemaOrg\Properties\ExerciseTypeProperty;
+use NilPortugues\SchemaOrg\Properties\FromLocationProperty;
+use NilPortugues\SchemaOrg\Properties\InstrumentProperty;
+use NilPortugues\SchemaOrg\Properties\LocationProperty;
+use NilPortugues\SchemaOrg\Properties\ObjectTypeProperty;
+use NilPortugues\SchemaOrg\Properties\OpponentProperty;
+use NilPortugues\SchemaOrg\Properties\ParticipantProperty;
+use NilPortugues\SchemaOrg\Properties\ResultProperty;
+use NilPortugues\SchemaOrg\Properties\SportsActivityLocationProperty;
+use NilPortugues\SchemaOrg\Properties\SportsEventProperty;
+use NilPortugues\SchemaOrg\Properties\SportsTeamProperty;
+use NilPortugues\SchemaOrg\Properties\StartTimeProperty;
+use NilPortugues\SchemaOrg\Properties\TargetProperty;
+use NilPortugues\SchemaOrg\Properties\ToLocationProperty;
 
 /**
  * Classes ExerciseAction.
@@ -53,7 +53,7 @@ class ExerciseAction
      */
     public static function actionStatus()
     {
-        return ActionStatus::create(Action::schemaUrl());
+        return ActionStatusProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -61,7 +61,7 @@ class ExerciseAction
      */
     public static function agent()
     {
-        return Agent::create(Action::schemaUrl());
+        return AgentProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -69,7 +69,7 @@ class ExerciseAction
      */
     public static function course()
     {
-        return Course::create(self::schemaUrl());
+        return CourseProperty::create(self::schemaUrl());
     }
 
     /**
@@ -77,7 +77,7 @@ class ExerciseAction
      */
     public static function diet()
     {
-        return Diet::create(self::schemaUrl());
+        return DietProperty::create(self::schemaUrl());
     }
 
     /**
@@ -85,7 +85,7 @@ class ExerciseAction
      */
     public static function distance()
     {
-        return Distance::create(self::schemaUrl());
+        return DistanceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -93,7 +93,7 @@ class ExerciseAction
      */
     public static function endTime()
     {
-        return EndTime::create(Action::schemaUrl());
+        return EndTimeProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -101,7 +101,7 @@ class ExerciseAction
      */
     public static function error()
     {
-        return Error::create(Action::schemaUrl());
+        return ErrorProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -109,7 +109,7 @@ class ExerciseAction
      */
     public static function exerciseCourse()
     {
-        return ExerciseCourse::create(self::schemaUrl());
+        return ExerciseCourseProperty::create(self::schemaUrl());
     }
 
     /**
@@ -117,7 +117,7 @@ class ExerciseAction
      */
     public static function exercisePlan()
     {
-        return ExercisePlan::create(self::schemaUrl());
+        return ExercisePlanProperty::create(self::schemaUrl());
     }
 
     /**
@@ -125,7 +125,7 @@ class ExerciseAction
      */
     public static function exerciseRelatedDiet()
     {
-        return ExerciseRelatedDiet::create(self::schemaUrl());
+        return ExerciseRelatedDietProperty::create(self::schemaUrl());
     }
 
     /**
@@ -133,7 +133,7 @@ class ExerciseAction
      */
     public static function exerciseType()
     {
-        return ExerciseType::create(self::schemaUrl());
+        return ExerciseTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -141,7 +141,7 @@ class ExerciseAction
      */
     public static function fromLocation()
     {
-        return FromLocation::create(self::schemaUrl());
+        return FromLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -149,7 +149,7 @@ class ExerciseAction
      */
     public static function instrument()
     {
-        return Instrument::create(Action::schemaUrl());
+        return InstrumentProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -157,15 +157,15 @@ class ExerciseAction
      */
     public static function location()
     {
-        return Location::create(Action::schemaUrl());
+        return LocationProperty::create(Action::schemaUrl());
     }
 
     /**
      * @return Mapping
      */
-    public static function object()
+    public static function objectType()
     {
-        return Object::create(Action::schemaUrl());
+        return ObjectTypeProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -173,7 +173,7 @@ class ExerciseAction
      */
     public static function opponent()
     {
-        return Opponent::create(self::schemaUrl());
+        return OpponentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -181,7 +181,7 @@ class ExerciseAction
      */
     public static function participant()
     {
-        return Participant::create(Action::schemaUrl());
+        return ParticipantProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -189,7 +189,7 @@ class ExerciseAction
      */
     public static function result()
     {
-        return Result::create(Action::schemaUrl());
+        return ResultProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -197,7 +197,7 @@ class ExerciseAction
      */
     public static function sportsActivityLocation()
     {
-        return SportsActivityLocation::create(self::schemaUrl());
+        return SportsActivityLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -205,7 +205,7 @@ class ExerciseAction
      */
     public static function sportsEvent()
     {
-        return SportsEvent::create(self::schemaUrl());
+        return SportsEventProperty::create(self::schemaUrl());
     }
 
     /**
@@ -213,7 +213,7 @@ class ExerciseAction
      */
     public static function sportsTeam()
     {
-        return SportsTeam::create(self::schemaUrl());
+        return SportsTeamProperty::create(self::schemaUrl());
     }
 
     /**
@@ -221,7 +221,7 @@ class ExerciseAction
      */
     public static function startTime()
     {
-        return StartTime::create(Action::schemaUrl());
+        return StartTimeProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -229,7 +229,7 @@ class ExerciseAction
      */
     public static function target()
     {
-        return Target::create(Action::schemaUrl());
+        return TargetProperty::create(Action::schemaUrl());
     }
 
     /**
@@ -237,6 +237,6 @@ class ExerciseAction
      */
     public static function toLocation()
     {
-        return ToLocation::create(self::schemaUrl());
+        return ToLocationProperty::create(self::schemaUrl());
     }
 }

@@ -3,12 +3,12 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Code;
-use NilPortugues\SchemaOrg\Properties\Guideline;
-use NilPortugues\SchemaOrg\Properties\MedicineSystem;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthority;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
-use NilPortugues\SchemaOrg\Properties\Study;
+use NilPortugues\SchemaOrg\Properties\CodeProperty;
+use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
+use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
+use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
+use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\StudyProperty;
 
 /**
  * Classes MedicalEntity.
@@ -35,7 +35,7 @@ class MedicalEntity
      */
     public static function code()
     {
-        return Code::create(self::schemaUrl());
+        return CodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -43,7 +43,7 @@ class MedicalEntity
      */
     public static function guideline()
     {
-        return Guideline::create(self::schemaUrl());
+        return GuidelineProperty::create(self::schemaUrl());
     }
 
     /**
@@ -51,7 +51,7 @@ class MedicalEntity
      */
     public static function medicineSystem()
     {
-        return MedicineSystem::create(self::schemaUrl());
+        return MedicineSystemProperty::create(self::schemaUrl());
     }
 
     /**
@@ -59,7 +59,7 @@ class MedicalEntity
      */
     public static function recognizingAuthority()
     {
-        return RecognizingAuthority::create(self::schemaUrl());
+        return RecognizingAuthorityProperty::create(self::schemaUrl());
     }
 
     /**
@@ -67,7 +67,7 @@ class MedicalEntity
      */
     public static function relevantSpecialty()
     {
-        return RelevantSpecialty::create(self::schemaUrl());
+        return RelevantSpecialtyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -75,6 +75,6 @@ class MedicalEntity
      */
     public static function study()
     {
-        return Study::create(self::schemaUrl());
+        return StudyProperty::create(self::schemaUrl());
     }
 }

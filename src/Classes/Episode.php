@@ -3,25 +3,25 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Actor;
-use NilPortugues\SchemaOrg\Properties\Actors;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Director;
-use NilPortugues\SchemaOrg\Properties\Directors;
-use NilPortugues\SchemaOrg\Properties\EpisodeNumber;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\MusicBy;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PartOfSeason;
-use NilPortugues\SchemaOrg\Properties\PartOfSeries;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProductionCompany;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Trailer;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\ActorProperty;
+use NilPortugues\SchemaOrg\Properties\ActorsProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DirectorProperty;
+use NilPortugues\SchemaOrg\Properties\DirectorsProperty;
+use NilPortugues\SchemaOrg\Properties\EpisodeNumberProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MusicByProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PartOfSeasonProperty;
+use NilPortugues\SchemaOrg\Properties\PartOfSeriesProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\TrailerProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Episode.
@@ -48,7 +48,7 @@ class Episode
      */
     public static function actor()
     {
-        return Actor::create(self::schemaUrl());
+        return ActorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -56,7 +56,7 @@ class Episode
      */
     public static function actors()
     {
-        return Actors::create(self::schemaUrl());
+        return ActorsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -64,7 +64,7 @@ class Episode
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -72,7 +72,7 @@ class Episode
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -80,7 +80,7 @@ class Episode
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -88,7 +88,7 @@ class Episode
      */
     public static function director()
     {
-        return Director::create(self::schemaUrl());
+        return DirectorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -96,7 +96,7 @@ class Episode
      */
     public static function directors()
     {
-        return Directors::create(self::schemaUrl());
+        return DirectorsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -104,7 +104,7 @@ class Episode
      */
     public static function episodeNumber()
     {
-        return EpisodeNumber::create(self::schemaUrl());
+        return EpisodeNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -112,7 +112,7 @@ class Episode
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -120,7 +120,7 @@ class Episode
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -128,7 +128,7 @@ class Episode
      */
     public static function musicBy()
     {
-        return MusicBy::create(self::schemaUrl());
+        return MusicByProperty::create(self::schemaUrl());
     }
 
     /**
@@ -136,7 +136,7 @@ class Episode
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -144,7 +144,7 @@ class Episode
      */
     public static function partOfSeason()
     {
-        return PartOfSeason::create(self::schemaUrl());
+        return PartOfSeasonProperty::create(self::schemaUrl());
     }
 
     /**
@@ -152,7 +152,7 @@ class Episode
      */
     public static function partOfSeries()
     {
-        return PartOfSeries::create(self::schemaUrl());
+        return PartOfSeriesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -160,7 +160,7 @@ class Episode
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -168,7 +168,7 @@ class Episode
      */
     public static function productionCompany()
     {
-        return ProductionCompany::create(self::schemaUrl());
+        return ProductionCompanyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -176,7 +176,7 @@ class Episode
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -184,7 +184,7 @@ class Episode
      */
     public static function trailer()
     {
-        return Trailer::create(self::schemaUrl());
+        return TrailerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -192,6 +192,6 @@ class Episode
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

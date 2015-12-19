@@ -3,13 +3,13 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\MaxValue;
-use NilPortugues\SchemaOrg\Properties\MinValue;
-use NilPortugues\SchemaOrg\Properties\PropertyID;
-use NilPortugues\SchemaOrg\Properties\UnitCode;
-use NilPortugues\SchemaOrg\Properties\UnitText;
-use NilPortugues\SchemaOrg\Properties\Value;
-use NilPortugues\SchemaOrg\Properties\ValueReference;
+use NilPortugues\SchemaOrg\Properties\MaxValueProperty;
+use NilPortugues\SchemaOrg\Properties\MinValueProperty;
+use NilPortugues\SchemaOrg\Properties\PropertyIDProperty;
+use NilPortugues\SchemaOrg\Properties\UnitCodeProperty;
+use NilPortugues\SchemaOrg\Properties\UnitTextProperty;
+use NilPortugues\SchemaOrg\Properties\ValueProperty;
+use NilPortugues\SchemaOrg\Properties\ValueReferenceProperty;
 
 /**
  * Classes PropertyValue.
@@ -36,7 +36,7 @@ class PropertyValue
      */
     public static function maxValue()
     {
-        return MaxValue::create(self::schemaUrl());
+        return MaxValueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -44,7 +44,7 @@ class PropertyValue
      */
     public static function minValue()
     {
-        return MinValue::create(self::schemaUrl());
+        return MinValueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -52,7 +52,7 @@ class PropertyValue
      */
     public static function propertyID()
     {
-        return PropertyID::create(self::schemaUrl());
+        return PropertyIDProperty::create(self::schemaUrl());
     }
 
     /**
@@ -60,7 +60,7 @@ class PropertyValue
      */
     public static function unitCode()
     {
-        return UnitCode::create(self::schemaUrl());
+        return UnitCodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -68,7 +68,7 @@ class PropertyValue
      */
     public static function unitText()
     {
-        return UnitText::create(self::schemaUrl());
+        return UnitTextProperty::create(self::schemaUrl());
     }
 
     /**
@@ -76,7 +76,7 @@ class PropertyValue
      */
     public static function value()
     {
-        return Value::create(self::schemaUrl());
+        return ValueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -84,6 +84,6 @@ class PropertyValue
      */
     public static function valueReference()
     {
-        return ValueReference::create(self::schemaUrl());
+        return ValueReferenceProperty::create(self::schemaUrl());
     }
 }

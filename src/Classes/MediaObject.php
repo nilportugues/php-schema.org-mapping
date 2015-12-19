@@ -3,31 +3,31 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\AssociatedArticle;
-use NilPortugues\SchemaOrg\Properties\Bitrate;
-use NilPortugues\SchemaOrg\Properties\ContentSize;
-use NilPortugues\SchemaOrg\Properties\ContentUrl;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Duration;
-use NilPortugues\SchemaOrg\Properties\EmbedUrl;
-use NilPortugues\SchemaOrg\Properties\EncodesCreativeWork;
-use NilPortugues\SchemaOrg\Properties\EncodingFormat;
-use NilPortugues\SchemaOrg\Properties\Expires;
-use NilPortugues\SchemaOrg\Properties\Height;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PlayerType;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProductionCompany;
-use NilPortugues\SchemaOrg\Properties\RegionsAllowed;
-use NilPortugues\SchemaOrg\Properties\RequiresSubscription;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\UploadDate;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\Width;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\AssociatedArticleProperty;
+use NilPortugues\SchemaOrg\Properties\BitrateProperty;
+use NilPortugues\SchemaOrg\Properties\ContentSizeProperty;
+use NilPortugues\SchemaOrg\Properties\ContentUrlProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DurationProperty;
+use NilPortugues\SchemaOrg\Properties\EmbedUrlProperty;
+use NilPortugues\SchemaOrg\Properties\EncodesCreativeWorkProperty;
+use NilPortugues\SchemaOrg\Properties\EncodingFormatProperty;
+use NilPortugues\SchemaOrg\Properties\ExpiresProperty;
+use NilPortugues\SchemaOrg\Properties\HeightProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PlayerTypeProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty;
+use NilPortugues\SchemaOrg\Properties\RegionsAllowedProperty;
+use NilPortugues\SchemaOrg\Properties\RequiresSubscriptionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\UploadDateProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\WidthProperty;
 
 /**
  * Classes MediaObject.
@@ -54,7 +54,7 @@ class MediaObject
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class MediaObject
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class MediaObject
      */
     public static function associatedArticle()
     {
-        return AssociatedArticle::create(self::schemaUrl());
+        return AssociatedArticleProperty::create(self::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class MediaObject
      */
     public static function bitrate()
     {
-        return Bitrate::create(self::schemaUrl());
+        return BitrateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class MediaObject
      */
     public static function contentSize()
     {
-        return ContentSize::create(self::schemaUrl());
+        return ContentSizeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class MediaObject
      */
     public static function contentUrl()
     {
-        return ContentUrl::create(self::schemaUrl());
+        return ContentUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class MediaObject
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class MediaObject
      */
     public static function duration()
     {
-        return Duration::create(self::schemaUrl());
+        return DurationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class MediaObject
      */
     public static function embedUrl()
     {
-        return EmbedUrl::create(self::schemaUrl());
+        return EmbedUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class MediaObject
      */
     public static function encodesCreativeWork()
     {
-        return EncodesCreativeWork::create(self::schemaUrl());
+        return EncodesCreativeWorkProperty::create(self::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class MediaObject
      */
     public static function encodingFormat()
     {
-        return EncodingFormat::create(self::schemaUrl());
+        return EncodingFormatProperty::create(self::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class MediaObject
      */
     public static function expires()
     {
-        return Expires::create(self::schemaUrl());
+        return ExpiresProperty::create(self::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class MediaObject
      */
     public static function height()
     {
-        return Height::create(self::schemaUrl());
+        return HeightProperty::create(self::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class MediaObject
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class MediaObject
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -174,7 +174,7 @@ class MediaObject
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -182,7 +182,7 @@ class MediaObject
      */
     public static function playerType()
     {
-        return PlayerType::create(self::schemaUrl());
+        return PlayerTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -190,7 +190,7 @@ class MediaObject
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -198,7 +198,7 @@ class MediaObject
      */
     public static function productionCompany()
     {
-        return ProductionCompany::create(self::schemaUrl());
+        return ProductionCompanyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -206,7 +206,7 @@ class MediaObject
      */
     public static function regionsAllowed()
     {
-        return RegionsAllowed::create(self::schemaUrl());
+        return RegionsAllowedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -214,7 +214,7 @@ class MediaObject
      */
     public static function requiresSubscription()
     {
-        return RequiresSubscription::create(self::schemaUrl());
+        return RequiresSubscriptionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -222,7 +222,7 @@ class MediaObject
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -230,7 +230,7 @@ class MediaObject
      */
     public static function uploadDate()
     {
-        return UploadDate::create(self::schemaUrl());
+        return UploadDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -238,7 +238,7 @@ class MediaObject
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -246,6 +246,6 @@ class MediaObject
      */
     public static function width()
     {
-        return Width::create(self::schemaUrl());
+        return WidthProperty::create(self::schemaUrl());
     }
 }

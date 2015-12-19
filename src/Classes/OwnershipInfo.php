@@ -3,10 +3,10 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AcquiredFrom;
-use NilPortugues\SchemaOrg\Properties\OwnedFrom;
-use NilPortugues\SchemaOrg\Properties\OwnedThrough;
-use NilPortugues\SchemaOrg\Properties\TypeOfGood;
+use NilPortugues\SchemaOrg\Properties\AcquiredFromProperty;
+use NilPortugues\SchemaOrg\Properties\OwnedFromProperty;
+use NilPortugues\SchemaOrg\Properties\OwnedThroughProperty;
+use NilPortugues\SchemaOrg\Properties\TypeOfGoodProperty;
 
 /**
  * Classes OwnershipInfo.
@@ -33,7 +33,7 @@ class OwnershipInfo
      */
     public static function acquiredFrom()
     {
-        return AcquiredFrom::create(self::schemaUrl());
+        return AcquiredFromProperty::create(self::schemaUrl());
     }
 
     /**
@@ -41,7 +41,7 @@ class OwnershipInfo
      */
     public static function ownedFrom()
     {
-        return OwnedFrom::create(self::schemaUrl());
+        return OwnedFromProperty::create(self::schemaUrl());
     }
 
     /**
@@ -49,7 +49,7 @@ class OwnershipInfo
      */
     public static function ownedThrough()
     {
-        return OwnedThrough::create(self::schemaUrl());
+        return OwnedThroughProperty::create(self::schemaUrl());
     }
 
     /**
@@ -57,6 +57,6 @@ class OwnershipInfo
      */
     public static function typeOfGood()
     {
-        return TypeOfGood::create(self::schemaUrl());
+        return TypeOfGoodProperty::create(self::schemaUrl());
     }
 }

@@ -3,27 +3,27 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AdverseOutcome;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Contraindication;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\DietFeatures;
-use NilPortugues\SchemaOrg\Properties\DuplicateTherapy;
-use NilPortugues\SchemaOrg\Properties\Endorsers;
-use NilPortugues\SchemaOrg\Properties\ExpertConsiderations;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\Indication;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\Overview;
-use NilPortugues\SchemaOrg\Properties\PhysiologicalBenefits;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProprietaryName;
-use NilPortugues\SchemaOrg\Properties\Risks;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcome;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AdverseOutcomeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ContraindicationProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DietFeaturesProperty;
+use NilPortugues\SchemaOrg\Properties\DuplicateTherapyProperty;
+use NilPortugues\SchemaOrg\Properties\EndorsersProperty;
+use NilPortugues\SchemaOrg\Properties\ExpertConsiderationsProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IndicationProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\OverviewProperty;
+use NilPortugues\SchemaOrg\Properties\PhysiologicalBenefitsProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProprietaryNameProperty;
+use NilPortugues\SchemaOrg\Properties\RisksProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Diet.
@@ -50,7 +50,7 @@ class Diet
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -58,7 +58,7 @@ class Diet
      */
     public static function adverseOutcome()
     {
-        return AdverseOutcome::create(MedicalTherapy::schemaUrl());
+        return AdverseOutcomeProperty::create(MedicalTherapy::schemaUrl());
     }
 
     /**
@@ -66,7 +66,7 @@ class Diet
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -74,7 +74,7 @@ class Diet
      */
     public static function contraindication()
     {
-        return Contraindication::create(MedicalTherapy::schemaUrl());
+        return ContraindicationProperty::create(MedicalTherapy::schemaUrl());
     }
 
     /**
@@ -82,7 +82,7 @@ class Diet
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -90,7 +90,7 @@ class Diet
      */
     public static function dietFeatures()
     {
-        return DietFeatures::create(self::schemaUrl());
+        return DietFeaturesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -98,7 +98,7 @@ class Diet
      */
     public static function duplicateTherapy()
     {
-        return DuplicateTherapy::create(MedicalTherapy::schemaUrl());
+        return DuplicateTherapyProperty::create(MedicalTherapy::schemaUrl());
     }
 
     /**
@@ -106,7 +106,7 @@ class Diet
      */
     public static function endorsers()
     {
-        return Endorsers::create(self::schemaUrl());
+        return EndorsersProperty::create(self::schemaUrl());
     }
 
     /**
@@ -114,7 +114,7 @@ class Diet
      */
     public static function expertConsiderations()
     {
-        return ExpertConsiderations::create(self::schemaUrl());
+        return ExpertConsiderationsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -122,7 +122,7 @@ class Diet
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -130,7 +130,7 @@ class Diet
      */
     public static function indication()
     {
-        return Indication::create(MedicalTherapy::schemaUrl());
+        return IndicationProperty::create(MedicalTherapy::schemaUrl());
     }
 
     /**
@@ -138,7 +138,7 @@ class Diet
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -146,7 +146,7 @@ class Diet
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -154,7 +154,7 @@ class Diet
      */
     public static function overview()
     {
-        return Overview::create(self::schemaUrl());
+        return OverviewProperty::create(self::schemaUrl());
     }
 
     /**
@@ -162,7 +162,7 @@ class Diet
      */
     public static function physiologicalBenefits()
     {
-        return PhysiologicalBenefits::create(self::schemaUrl());
+        return PhysiologicalBenefitsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -170,7 +170,7 @@ class Diet
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -178,7 +178,7 @@ class Diet
      */
     public static function proprietaryName()
     {
-        return ProprietaryName::create(self::schemaUrl());
+        return ProprietaryNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -186,7 +186,7 @@ class Diet
      */
     public static function risks()
     {
-        return Risks::create(self::schemaUrl());
+        return RisksProperty::create(self::schemaUrl());
     }
 
     /**
@@ -194,7 +194,7 @@ class Diet
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -202,7 +202,7 @@ class Diet
      */
     public static function seriousAdverseOutcome()
     {
-        return SeriousAdverseOutcome::create(MedicalTherapy::schemaUrl());
+        return SeriousAdverseOutcomeProperty::create(MedicalTherapy::schemaUrl());
     }
 
     /**
@@ -210,6 +210,6 @@ class Diet
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

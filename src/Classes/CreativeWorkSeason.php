@@ -3,26 +3,26 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Actor;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Director;
-use NilPortugues\SchemaOrg\Properties\EndDate;
-use NilPortugues\SchemaOrg\Properties\Episode;
-use NilPortugues\SchemaOrg\Properties\Episodes;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\NumberOfEpisodes;
-use NilPortugues\SchemaOrg\Properties\PartOfSeries;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProductionCompany;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\SeasonNumber;
-use NilPortugues\SchemaOrg\Properties\StartDate;
-use NilPortugues\SchemaOrg\Properties\Trailer;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\ActorProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DirectorProperty;
+use NilPortugues\SchemaOrg\Properties\EndDateProperty;
+use NilPortugues\SchemaOrg\Properties\EpisodeProperty;
+use NilPortugues\SchemaOrg\Properties\EpisodesProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\NumberOfEpisodesProperty;
+use NilPortugues\SchemaOrg\Properties\PartOfSeriesProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProductionCompanyProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SeasonNumberProperty;
+use NilPortugues\SchemaOrg\Properties\StartDateProperty;
+use NilPortugues\SchemaOrg\Properties\TrailerProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes CreativeWorkSeason.
@@ -49,7 +49,7 @@ class CreativeWorkSeason
      */
     public static function actor()
     {
-        return Actor::create(self::schemaUrl());
+        return ActorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -57,7 +57,7 @@ class CreativeWorkSeason
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -65,7 +65,7 @@ class CreativeWorkSeason
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -73,7 +73,7 @@ class CreativeWorkSeason
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -81,7 +81,7 @@ class CreativeWorkSeason
      */
     public static function director()
     {
-        return Director::create(self::schemaUrl());
+        return DirectorProperty::create(self::schemaUrl());
     }
 
     /**
@@ -89,7 +89,7 @@ class CreativeWorkSeason
      */
     public static function endDate()
     {
-        return EndDate::create(self::schemaUrl());
+        return EndDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -97,7 +97,7 @@ class CreativeWorkSeason
      */
     public static function episode()
     {
-        return Episode::create(self::schemaUrl());
+        return EpisodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -105,7 +105,7 @@ class CreativeWorkSeason
      */
     public static function episodes()
     {
-        return Episodes::create(self::schemaUrl());
+        return EpisodesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -113,7 +113,7 @@ class CreativeWorkSeason
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -121,7 +121,7 @@ class CreativeWorkSeason
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -129,7 +129,7 @@ class CreativeWorkSeason
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -137,7 +137,7 @@ class CreativeWorkSeason
      */
     public static function numberOfEpisodes()
     {
-        return NumberOfEpisodes::create(self::schemaUrl());
+        return NumberOfEpisodesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -145,7 +145,7 @@ class CreativeWorkSeason
      */
     public static function partOfSeries()
     {
-        return PartOfSeries::create(self::schemaUrl());
+        return PartOfSeriesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -153,7 +153,7 @@ class CreativeWorkSeason
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -161,7 +161,7 @@ class CreativeWorkSeason
      */
     public static function productionCompany()
     {
-        return ProductionCompany::create(self::schemaUrl());
+        return ProductionCompanyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -169,7 +169,7 @@ class CreativeWorkSeason
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -177,7 +177,7 @@ class CreativeWorkSeason
      */
     public static function seasonNumber()
     {
-        return SeasonNumber::create(self::schemaUrl());
+        return SeasonNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -185,7 +185,7 @@ class CreativeWorkSeason
      */
     public static function startDate()
     {
-        return StartDate::create(self::schemaUrl());
+        return StartDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -193,7 +193,7 @@ class CreativeWorkSeason
      */
     public static function trailer()
     {
-        return Trailer::create(self::schemaUrl());
+        return TrailerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -201,6 +201,6 @@ class CreativeWorkSeason
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

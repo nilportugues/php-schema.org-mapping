@@ -3,19 +3,19 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Action;
-use NilPortugues\SchemaOrg\Properties\Antagonist;
-use NilPortugues\SchemaOrg\Properties\BloodSupply;
-use NilPortugues\SchemaOrg\Properties\Code;
-use NilPortugues\SchemaOrg\Properties\Guideline;
-use NilPortugues\SchemaOrg\Properties\Insertion;
-use NilPortugues\SchemaOrg\Properties\MedicineSystem;
-use NilPortugues\SchemaOrg\Properties\MuscleAction;
-use NilPortugues\SchemaOrg\Properties\Nerve;
-use NilPortugues\SchemaOrg\Properties\Origin;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthority;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
-use NilPortugues\SchemaOrg\Properties\Study;
+use NilPortugues\SchemaOrg\Properties\ActionProperty;
+use NilPortugues\SchemaOrg\Properties\AntagonistProperty;
+use NilPortugues\SchemaOrg\Properties\BloodSupplyProperty;
+use NilPortugues\SchemaOrg\Properties\CodeProperty;
+use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
+use NilPortugues\SchemaOrg\Properties\InsertionProperty;
+use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
+use NilPortugues\SchemaOrg\Properties\MuscleActionProperty;
+use NilPortugues\SchemaOrg\Properties\NerveProperty;
+use NilPortugues\SchemaOrg\Properties\OriginProperty;
+use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
+use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\StudyProperty;
 
 /**
  * Classes Muscle.
@@ -42,7 +42,7 @@ class Muscle
      */
     public static function action()
     {
-        return Action::create(self::schemaUrl());
+        return ActionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -50,7 +50,7 @@ class Muscle
      */
     public static function antagonist()
     {
-        return Antagonist::create(self::schemaUrl());
+        return AntagonistProperty::create(self::schemaUrl());
     }
 
     /**
@@ -58,7 +58,7 @@ class Muscle
      */
     public static function bloodSupply()
     {
-        return BloodSupply::create(self::schemaUrl());
+        return BloodSupplyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -66,7 +66,7 @@ class Muscle
      */
     public static function code()
     {
-        return Code::create(MedicalEntity::schemaUrl());
+        return CodeProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -74,7 +74,7 @@ class Muscle
      */
     public static function guideline()
     {
-        return Guideline::create(MedicalEntity::schemaUrl());
+        return GuidelineProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -82,7 +82,7 @@ class Muscle
      */
     public static function insertion()
     {
-        return Insertion::create(self::schemaUrl());
+        return InsertionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -90,7 +90,7 @@ class Muscle
      */
     public static function medicineSystem()
     {
-        return MedicineSystem::create(MedicalEntity::schemaUrl());
+        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -98,7 +98,7 @@ class Muscle
      */
     public static function muscleAction()
     {
-        return MuscleAction::create(self::schemaUrl());
+        return MuscleActionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -106,7 +106,7 @@ class Muscle
      */
     public static function nerve()
     {
-        return Nerve::create(self::schemaUrl());
+        return NerveProperty::create(self::schemaUrl());
     }
 
     /**
@@ -114,7 +114,7 @@ class Muscle
      */
     public static function origin()
     {
-        return Origin::create(self::schemaUrl());
+        return OriginProperty::create(self::schemaUrl());
     }
 
     /**
@@ -122,7 +122,7 @@ class Muscle
      */
     public static function recognizingAuthority()
     {
-        return RecognizingAuthority::create(MedicalEntity::schemaUrl());
+        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -130,7 +130,7 @@ class Muscle
      */
     public static function relevantSpecialty()
     {
-        return RelevantSpecialty::create(MedicalEntity::schemaUrl());
+        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -138,6 +138,6 @@ class Muscle
      */
     public static function study()
     {
-        return Study::create(MedicalEntity::schemaUrl());
+        return StudyProperty::create(MedicalEntity::schemaUrl());
     }
 }

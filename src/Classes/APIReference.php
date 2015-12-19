@@ -3,26 +3,26 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\ArticleBody;
-use NilPortugues\SchemaOrg\Properties\ArticleSection;
-use NilPortugues\SchemaOrg\Properties\Assembly;
-use NilPortugues\SchemaOrg\Properties\AssemblyVersion;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\ExecutableLibraryName;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PageEnd;
-use NilPortugues\SchemaOrg\Properties\PageStart;
-use NilPortugues\SchemaOrg\Properties\Pagination;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProgrammingModel;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\TargetPlatform;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\WordCount;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ArticleBodyProperty;
+use NilPortugues\SchemaOrg\Properties\ArticleSectionProperty;
+use NilPortugues\SchemaOrg\Properties\AssemblyProperty;
+use NilPortugues\SchemaOrg\Properties\AssemblyVersionProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ExecutableLibraryNameProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PageEndProperty;
+use NilPortugues\SchemaOrg\Properties\PageStartProperty;
+use NilPortugues\SchemaOrg\Properties\PaginationProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProgrammingModelProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\TargetPlatformProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\WordCountProperty;
 
 /**
  * Classes APIReference.
@@ -49,7 +49,7 @@ class APIReference
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -57,7 +57,7 @@ class APIReference
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -65,7 +65,7 @@ class APIReference
      */
     public static function articleBody()
     {
-        return ArticleBody::create(Article::schemaUrl());
+        return ArticleBodyProperty::create(Article::schemaUrl());
     }
 
     /**
@@ -73,7 +73,7 @@ class APIReference
      */
     public static function articleSection()
     {
-        return ArticleSection::create(Article::schemaUrl());
+        return ArticleSectionProperty::create(Article::schemaUrl());
     }
 
     /**
@@ -81,7 +81,7 @@ class APIReference
      */
     public static function assembly()
     {
-        return Assembly::create(self::schemaUrl());
+        return AssemblyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -89,7 +89,7 @@ class APIReference
      */
     public static function assemblyVersion()
     {
-        return AssemblyVersion::create(self::schemaUrl());
+        return AssemblyVersionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -97,7 +97,7 @@ class APIReference
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -105,7 +105,7 @@ class APIReference
      */
     public static function executableLibraryName()
     {
-        return ExecutableLibraryName::create(self::schemaUrl());
+        return ExecutableLibraryNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -113,7 +113,7 @@ class APIReference
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -121,7 +121,7 @@ class APIReference
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -129,7 +129,7 @@ class APIReference
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -137,7 +137,7 @@ class APIReference
      */
     public static function pageEnd()
     {
-        return PageEnd::create(Article::schemaUrl());
+        return PageEndProperty::create(Article::schemaUrl());
     }
 
     /**
@@ -145,7 +145,7 @@ class APIReference
      */
     public static function pageStart()
     {
-        return PageStart::create(Article::schemaUrl());
+        return PageStartProperty::create(Article::schemaUrl());
     }
 
     /**
@@ -153,7 +153,7 @@ class APIReference
      */
     public static function pagination()
     {
-        return Pagination::create(Article::schemaUrl());
+        return PaginationProperty::create(Article::schemaUrl());
     }
 
     /**
@@ -161,7 +161,7 @@ class APIReference
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -169,7 +169,7 @@ class APIReference
      */
     public static function programmingModel()
     {
-        return ProgrammingModel::create(self::schemaUrl());
+        return ProgrammingModelProperty::create(self::schemaUrl());
     }
 
     /**
@@ -177,7 +177,7 @@ class APIReference
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -185,7 +185,7 @@ class APIReference
      */
     public static function targetPlatform()
     {
-        return TargetPlatform::create(self::schemaUrl());
+        return TargetPlatformProperty::create(self::schemaUrl());
     }
 
     /**
@@ -193,7 +193,7 @@ class APIReference
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -201,6 +201,6 @@ class APIReference
      */
     public static function wordCount()
     {
-        return WordCount::create(Article::schemaUrl());
+        return WordCountProperty::create(Article::schemaUrl());
     }
 }

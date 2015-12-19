@@ -4,6 +4,7 @@ use NilPortugues\SchemaOrg\Generator\Parser;
 use NilPortugues\SchemaOrg\Generator\SchemaClassWriter;
 use NilPortugues\SchemaOrg\Generator\SchemaPropertyWriter;
 use NilPortugues\SchemaOrg\Generator\SchemaRdfaData;
+use NilPortugues\SchemaOrg\Generator\SchemaTestClassWriter;
 
 include 'vendor/autoload.php';
 
@@ -21,3 +22,5 @@ $propertyWriter->write($schemaData);
 $classWriter = new SchemaClassWriter(new FileSystem(), 'src/Classes/');
 $classWriter->write($schemaData);
 
+$classTestWriter = new SchemaTestClassWriter(new FileSystem(), 'tests/Classes/');
+$classTestWriter->write($schemaData);

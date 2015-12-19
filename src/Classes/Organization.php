@@ -3,50 +3,50 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Address;
-use NilPortugues\SchemaOrg\Properties\AggregateRating;
-use NilPortugues\SchemaOrg\Properties\Alumni;
-use NilPortugues\SchemaOrg\Properties\AreaServed;
-use NilPortugues\SchemaOrg\Properties\Award;
-use NilPortugues\SchemaOrg\Properties\Awards;
-use NilPortugues\SchemaOrg\Properties\Brand;
-use NilPortugues\SchemaOrg\Properties\ContactPoint;
-use NilPortugues\SchemaOrg\Properties\ContactPoints;
-use NilPortugues\SchemaOrg\Properties\Department;
-use NilPortugues\SchemaOrg\Properties\DissolutionDate;
-use NilPortugues\SchemaOrg\Properties\Duns;
-use NilPortugues\SchemaOrg\Properties\Email;
-use NilPortugues\SchemaOrg\Properties\Employee;
-use NilPortugues\SchemaOrg\Properties\Employees;
-use NilPortugues\SchemaOrg\Properties\Event;
-use NilPortugues\SchemaOrg\Properties\Events;
-use NilPortugues\SchemaOrg\Properties\FaxNumber;
-use NilPortugues\SchemaOrg\Properties\Founder;
-use NilPortugues\SchemaOrg\Properties\Founders;
-use NilPortugues\SchemaOrg\Properties\FoundingDate;
-use NilPortugues\SchemaOrg\Properties\GlobalLocationNumber;
-use NilPortugues\SchemaOrg\Properties\HasOfferCatalog;
-use NilPortugues\SchemaOrg\Properties\HasPOS;
-use NilPortugues\SchemaOrg\Properties\IsicV4;
-use NilPortugues\SchemaOrg\Properties\LegalName;
-use NilPortugues\SchemaOrg\Properties\Location;
-use NilPortugues\SchemaOrg\Properties\Logo;
-use NilPortugues\SchemaOrg\Properties\MakesOffer;
-use NilPortugues\SchemaOrg\Properties\Member;
-use NilPortugues\SchemaOrg\Properties\MemberOf;
-use NilPortugues\SchemaOrg\Properties\Members;
-use NilPortugues\SchemaOrg\Properties\Naics;
-use NilPortugues\SchemaOrg\Properties\NumberOfEmployees;
-use NilPortugues\SchemaOrg\Properties\Owns;
-use NilPortugues\SchemaOrg\Properties\ParentOrganization;
-use NilPortugues\SchemaOrg\Properties\Review;
-use NilPortugues\SchemaOrg\Properties\Reviews;
-use NilPortugues\SchemaOrg\Properties\Seeks;
-use NilPortugues\SchemaOrg\Properties\ServiceArea;
-use NilPortugues\SchemaOrg\Properties\SubOrganization;
-use NilPortugues\SchemaOrg\Properties\TaxID;
-use NilPortugues\SchemaOrg\Properties\Telephone;
-use NilPortugues\SchemaOrg\Properties\VatID;
+use NilPortugues\SchemaOrg\Properties\AddressProperty;
+use NilPortugues\SchemaOrg\Properties\AggregateRatingProperty;
+use NilPortugues\SchemaOrg\Properties\AlumniProperty;
+use NilPortugues\SchemaOrg\Properties\AreaServedProperty;
+use NilPortugues\SchemaOrg\Properties\AwardProperty;
+use NilPortugues\SchemaOrg\Properties\AwardsProperty;
+use NilPortugues\SchemaOrg\Properties\BrandProperty;
+use NilPortugues\SchemaOrg\Properties\ContactPointProperty;
+use NilPortugues\SchemaOrg\Properties\ContactPointsProperty;
+use NilPortugues\SchemaOrg\Properties\DepartmentProperty;
+use NilPortugues\SchemaOrg\Properties\DissolutionDateProperty;
+use NilPortugues\SchemaOrg\Properties\DunsProperty;
+use NilPortugues\SchemaOrg\Properties\EmailProperty;
+use NilPortugues\SchemaOrg\Properties\EmployeeProperty;
+use NilPortugues\SchemaOrg\Properties\EmployeesProperty;
+use NilPortugues\SchemaOrg\Properties\EventProperty;
+use NilPortugues\SchemaOrg\Properties\EventsProperty;
+use NilPortugues\SchemaOrg\Properties\FaxNumberProperty;
+use NilPortugues\SchemaOrg\Properties\FounderProperty;
+use NilPortugues\SchemaOrg\Properties\FoundersProperty;
+use NilPortugues\SchemaOrg\Properties\FoundingDateProperty;
+use NilPortugues\SchemaOrg\Properties\GlobalLocationNumberProperty;
+use NilPortugues\SchemaOrg\Properties\HasOfferCatalogProperty;
+use NilPortugues\SchemaOrg\Properties\HasPOSProperty;
+use NilPortugues\SchemaOrg\Properties\IsicV4Property;
+use NilPortugues\SchemaOrg\Properties\LegalNameProperty;
+use NilPortugues\SchemaOrg\Properties\LocationProperty;
+use NilPortugues\SchemaOrg\Properties\LogoProperty;
+use NilPortugues\SchemaOrg\Properties\MakesOfferProperty;
+use NilPortugues\SchemaOrg\Properties\MemberOfProperty;
+use NilPortugues\SchemaOrg\Properties\MemberProperty;
+use NilPortugues\SchemaOrg\Properties\MembersProperty;
+use NilPortugues\SchemaOrg\Properties\NaicsProperty;
+use NilPortugues\SchemaOrg\Properties\NumberOfEmployeesProperty;
+use NilPortugues\SchemaOrg\Properties\OwnsProperty;
+use NilPortugues\SchemaOrg\Properties\ParentOrganizationProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewsProperty;
+use NilPortugues\SchemaOrg\Properties\SeeksProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceAreaProperty;
+use NilPortugues\SchemaOrg\Properties\SubOrganizationProperty;
+use NilPortugues\SchemaOrg\Properties\TaxIDProperty;
+use NilPortugues\SchemaOrg\Properties\TelephoneProperty;
+use NilPortugues\SchemaOrg\Properties\VatIDProperty;
 
 /**
  * Classes Organization.
@@ -73,7 +73,7 @@ class Organization
      */
     public static function address()
     {
-        return Address::create(self::schemaUrl());
+        return AddressProperty::create(self::schemaUrl());
     }
 
     /**
@@ -81,7 +81,7 @@ class Organization
      */
     public static function aggregateRating()
     {
-        return AggregateRating::create(self::schemaUrl());
+        return AggregateRatingProperty::create(self::schemaUrl());
     }
 
     /**
@@ -89,7 +89,7 @@ class Organization
      */
     public static function alumni()
     {
-        return Alumni::create(self::schemaUrl());
+        return AlumniProperty::create(self::schemaUrl());
     }
 
     /**
@@ -97,7 +97,7 @@ class Organization
      */
     public static function areaServed()
     {
-        return AreaServed::create(self::schemaUrl());
+        return AreaServedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -105,7 +105,7 @@ class Organization
      */
     public static function award()
     {
-        return Award::create(self::schemaUrl());
+        return AwardProperty::create(self::schemaUrl());
     }
 
     /**
@@ -113,7 +113,7 @@ class Organization
      */
     public static function awards()
     {
-        return Awards::create(self::schemaUrl());
+        return AwardsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -121,7 +121,7 @@ class Organization
      */
     public static function brand()
     {
-        return Brand::create(self::schemaUrl());
+        return BrandProperty::create(self::schemaUrl());
     }
 
     /**
@@ -129,7 +129,7 @@ class Organization
      */
     public static function contactPoint()
     {
-        return ContactPoint::create(self::schemaUrl());
+        return ContactPointProperty::create(self::schemaUrl());
     }
 
     /**
@@ -137,7 +137,7 @@ class Organization
      */
     public static function contactPoints()
     {
-        return ContactPoints::create(self::schemaUrl());
+        return ContactPointsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -145,7 +145,7 @@ class Organization
      */
     public static function department()
     {
-        return Department::create(self::schemaUrl());
+        return DepartmentProperty::create(self::schemaUrl());
     }
 
     /**
@@ -153,7 +153,7 @@ class Organization
      */
     public static function dissolutionDate()
     {
-        return DissolutionDate::create(self::schemaUrl());
+        return DissolutionDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -161,7 +161,7 @@ class Organization
      */
     public static function duns()
     {
-        return Duns::create(self::schemaUrl());
+        return DunsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -169,7 +169,7 @@ class Organization
      */
     public static function email()
     {
-        return Email::create(self::schemaUrl());
+        return EmailProperty::create(self::schemaUrl());
     }
 
     /**
@@ -177,7 +177,7 @@ class Organization
      */
     public static function employee()
     {
-        return Employee::create(self::schemaUrl());
+        return EmployeeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -185,7 +185,7 @@ class Organization
      */
     public static function employees()
     {
-        return Employees::create(self::schemaUrl());
+        return EmployeesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -193,7 +193,7 @@ class Organization
      */
     public static function event()
     {
-        return Event::create(self::schemaUrl());
+        return EventProperty::create(self::schemaUrl());
     }
 
     /**
@@ -201,7 +201,7 @@ class Organization
      */
     public static function events()
     {
-        return Events::create(self::schemaUrl());
+        return EventsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -209,7 +209,7 @@ class Organization
      */
     public static function faxNumber()
     {
-        return FaxNumber::create(self::schemaUrl());
+        return FaxNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -217,7 +217,7 @@ class Organization
      */
     public static function founder()
     {
-        return Founder::create(self::schemaUrl());
+        return FounderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -225,7 +225,7 @@ class Organization
      */
     public static function founders()
     {
-        return Founders::create(self::schemaUrl());
+        return FoundersProperty::create(self::schemaUrl());
     }
 
     /**
@@ -233,7 +233,7 @@ class Organization
      */
     public static function foundingDate()
     {
-        return FoundingDate::create(self::schemaUrl());
+        return FoundingDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -241,7 +241,7 @@ class Organization
      */
     public static function globalLocationNumber()
     {
-        return GlobalLocationNumber::create(self::schemaUrl());
+        return GlobalLocationNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -249,7 +249,7 @@ class Organization
      */
     public static function hasOfferCatalog()
     {
-        return HasOfferCatalog::create(self::schemaUrl());
+        return HasOfferCatalogProperty::create(self::schemaUrl());
     }
 
     /**
@@ -257,7 +257,7 @@ class Organization
      */
     public static function hasPOS()
     {
-        return HasPOS::create(self::schemaUrl());
+        return HasPOSProperty::create(self::schemaUrl());
     }
 
     /**
@@ -265,7 +265,7 @@ class Organization
      */
     public static function isicV4()
     {
-        return IsicV4::create(self::schemaUrl());
+        return IsicV4Property::create(self::schemaUrl());
     }
 
     /**
@@ -273,7 +273,7 @@ class Organization
      */
     public static function legalName()
     {
-        return LegalName::create(self::schemaUrl());
+        return LegalNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -281,7 +281,7 @@ class Organization
      */
     public static function location()
     {
-        return Location::create(self::schemaUrl());
+        return LocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -289,7 +289,7 @@ class Organization
      */
     public static function logo()
     {
-        return Logo::create(self::schemaUrl());
+        return LogoProperty::create(self::schemaUrl());
     }
 
     /**
@@ -297,7 +297,7 @@ class Organization
      */
     public static function makesOffer()
     {
-        return MakesOffer::create(self::schemaUrl());
+        return MakesOfferProperty::create(self::schemaUrl());
     }
 
     /**
@@ -305,7 +305,7 @@ class Organization
      */
     public static function member()
     {
-        return Member::create(self::schemaUrl());
+        return MemberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -313,7 +313,7 @@ class Organization
      */
     public static function memberOf()
     {
-        return MemberOf::create(self::schemaUrl());
+        return MemberOfProperty::create(self::schemaUrl());
     }
 
     /**
@@ -321,7 +321,7 @@ class Organization
      */
     public static function members()
     {
-        return Members::create(self::schemaUrl());
+        return MembersProperty::create(self::schemaUrl());
     }
 
     /**
@@ -329,7 +329,7 @@ class Organization
      */
     public static function naics()
     {
-        return Naics::create(self::schemaUrl());
+        return NaicsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -337,7 +337,7 @@ class Organization
      */
     public static function numberOfEmployees()
     {
-        return NumberOfEmployees::create(self::schemaUrl());
+        return NumberOfEmployeesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -345,7 +345,7 @@ class Organization
      */
     public static function owns()
     {
-        return Owns::create(self::schemaUrl());
+        return OwnsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -353,7 +353,7 @@ class Organization
      */
     public static function parentOrganization()
     {
-        return ParentOrganization::create(self::schemaUrl());
+        return ParentOrganizationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -361,7 +361,7 @@ class Organization
      */
     public static function review()
     {
-        return Review::create(self::schemaUrl());
+        return ReviewProperty::create(self::schemaUrl());
     }
 
     /**
@@ -369,7 +369,7 @@ class Organization
      */
     public static function reviews()
     {
-        return Reviews::create(self::schemaUrl());
+        return ReviewsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -377,7 +377,7 @@ class Organization
      */
     public static function seeks()
     {
-        return Seeks::create(self::schemaUrl());
+        return SeeksProperty::create(self::schemaUrl());
     }
 
     /**
@@ -385,7 +385,7 @@ class Organization
      */
     public static function serviceArea()
     {
-        return ServiceArea::create(self::schemaUrl());
+        return ServiceAreaProperty::create(self::schemaUrl());
     }
 
     /**
@@ -393,7 +393,7 @@ class Organization
      */
     public static function subOrganization()
     {
-        return SubOrganization::create(self::schemaUrl());
+        return SubOrganizationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -401,7 +401,7 @@ class Organization
      */
     public static function taxID()
     {
-        return TaxID::create(self::schemaUrl());
+        return TaxIDProperty::create(self::schemaUrl());
     }
 
     /**
@@ -409,7 +409,7 @@ class Organization
      */
     public static function telephone()
     {
-        return Telephone::create(self::schemaUrl());
+        return TelephoneProperty::create(self::schemaUrl());
     }
 
     /**
@@ -417,6 +417,6 @@ class Organization
      */
     public static function vatID()
     {
-        return VatID::create(self::schemaUrl());
+        return VatIDProperty::create(self::schemaUrl());
     }
 }

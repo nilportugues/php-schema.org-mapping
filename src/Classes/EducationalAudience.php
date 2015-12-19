@@ -3,7 +3,7 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\EducationalRole;
+use NilPortugues\SchemaOrg\Properties\EducationalRoleProperty;
 
 /**
  * Classes EducationalAudience.
@@ -30,6 +30,6 @@ class EducationalAudience
      */
     public static function educationalRole()
     {
-        return EducationalRole::create(self::schemaUrl());
+        return EducationalRoleProperty::create(self::schemaUrl());
     }
 }

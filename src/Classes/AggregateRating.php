@@ -3,9 +3,9 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ItemReviewed;
-use NilPortugues\SchemaOrg\Properties\RatingCount;
-use NilPortugues\SchemaOrg\Properties\ReviewCount;
+use NilPortugues\SchemaOrg\Properties\ItemReviewedProperty;
+use NilPortugues\SchemaOrg\Properties\RatingCountProperty;
+use NilPortugues\SchemaOrg\Properties\ReviewCountProperty;
 
 /**
  * Classes AggregateRating.
@@ -32,7 +32,7 @@ class AggregateRating
      */
     public static function itemReviewed()
     {
-        return ItemReviewed::create(self::schemaUrl());
+        return ItemReviewedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -40,7 +40,7 @@ class AggregateRating
      */
     public static function ratingCount()
     {
-        return RatingCount::create(self::schemaUrl());
+        return RatingCountProperty::create(self::schemaUrl());
     }
 
     /**
@@ -48,6 +48,6 @@ class AggregateRating
      */
     public static function reviewCount()
     {
-        return ReviewCount::create(self::schemaUrl());
+        return ReviewCountProperty::create(self::schemaUrl());
     }
 }

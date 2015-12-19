@@ -3,18 +3,18 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ApplicableLocation;
-use NilPortugues\SchemaOrg\Properties\Code;
-use NilPortugues\SchemaOrg\Properties\CostCategory;
-use NilPortugues\SchemaOrg\Properties\CostCurrency;
-use NilPortugues\SchemaOrg\Properties\CostOrigin;
-use NilPortugues\SchemaOrg\Properties\CostPerUnit;
-use NilPortugues\SchemaOrg\Properties\DrugUnit;
-use NilPortugues\SchemaOrg\Properties\Guideline;
-use NilPortugues\SchemaOrg\Properties\MedicineSystem;
-use NilPortugues\SchemaOrg\Properties\RecognizingAuthority;
-use NilPortugues\SchemaOrg\Properties\RelevantSpecialty;
-use NilPortugues\SchemaOrg\Properties\Study;
+use NilPortugues\SchemaOrg\Properties\ApplicableLocationProperty;
+use NilPortugues\SchemaOrg\Properties\CodeProperty;
+use NilPortugues\SchemaOrg\Properties\CostCategoryProperty;
+use NilPortugues\SchemaOrg\Properties\CostCurrencyProperty;
+use NilPortugues\SchemaOrg\Properties\CostOriginProperty;
+use NilPortugues\SchemaOrg\Properties\CostPerUnitProperty;
+use NilPortugues\SchemaOrg\Properties\DrugUnitProperty;
+use NilPortugues\SchemaOrg\Properties\GuidelineProperty;
+use NilPortugues\SchemaOrg\Properties\MedicineSystemProperty;
+use NilPortugues\SchemaOrg\Properties\RecognizingAuthorityProperty;
+use NilPortugues\SchemaOrg\Properties\RelevantSpecialtyProperty;
+use NilPortugues\SchemaOrg\Properties\StudyProperty;
 
 /**
  * Classes DrugCost.
@@ -41,7 +41,7 @@ class DrugCost
      */
     public static function applicableLocation()
     {
-        return ApplicableLocation::create(self::schemaUrl());
+        return ApplicableLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -49,7 +49,7 @@ class DrugCost
      */
     public static function code()
     {
-        return Code::create(MedicalEntity::schemaUrl());
+        return CodeProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -57,7 +57,7 @@ class DrugCost
      */
     public static function costCategory()
     {
-        return CostCategory::create(self::schemaUrl());
+        return CostCategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -65,7 +65,7 @@ class DrugCost
      */
     public static function costCurrency()
     {
-        return CostCurrency::create(self::schemaUrl());
+        return CostCurrencyProperty::create(self::schemaUrl());
     }
 
     /**
@@ -73,7 +73,7 @@ class DrugCost
      */
     public static function costOrigin()
     {
-        return CostOrigin::create(self::schemaUrl());
+        return CostOriginProperty::create(self::schemaUrl());
     }
 
     /**
@@ -81,7 +81,7 @@ class DrugCost
      */
     public static function costPerUnit()
     {
-        return CostPerUnit::create(self::schemaUrl());
+        return CostPerUnitProperty::create(self::schemaUrl());
     }
 
     /**
@@ -89,7 +89,7 @@ class DrugCost
      */
     public static function drugUnit()
     {
-        return DrugUnit::create(self::schemaUrl());
+        return DrugUnitProperty::create(self::schemaUrl());
     }
 
     /**
@@ -97,7 +97,7 @@ class DrugCost
      */
     public static function guideline()
     {
-        return Guideline::create(MedicalEntity::schemaUrl());
+        return GuidelineProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -105,7 +105,7 @@ class DrugCost
      */
     public static function medicineSystem()
     {
-        return MedicineSystem::create(MedicalEntity::schemaUrl());
+        return MedicineSystemProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -113,7 +113,7 @@ class DrugCost
      */
     public static function recognizingAuthority()
     {
-        return RecognizingAuthority::create(MedicalEntity::schemaUrl());
+        return RecognizingAuthorityProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -121,7 +121,7 @@ class DrugCost
      */
     public static function relevantSpecialty()
     {
-        return RelevantSpecialty::create(MedicalEntity::schemaUrl());
+        return RelevantSpecialtyProperty::create(MedicalEntity::schemaUrl());
     }
 
     /**
@@ -129,6 +129,6 @@ class DrugCost
      */
     public static function study()
     {
-        return Study::create(MedicalEntity::schemaUrl());
+        return StudyProperty::create(MedicalEntity::schemaUrl());
     }
 }

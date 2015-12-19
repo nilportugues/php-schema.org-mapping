@@ -3,13 +3,13 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\HealthCondition;
-use NilPortugues\SchemaOrg\Properties\RequiredGender;
-use NilPortugues\SchemaOrg\Properties\RequiredMaxAge;
-use NilPortugues\SchemaOrg\Properties\RequiredMinAge;
-use NilPortugues\SchemaOrg\Properties\SuggestedGender;
-use NilPortugues\SchemaOrg\Properties\SuggestedMaxAge;
-use NilPortugues\SchemaOrg\Properties\SuggestedMinAge;
+use NilPortugues\SchemaOrg\Properties\HealthConditionProperty;
+use NilPortugues\SchemaOrg\Properties\RequiredGenderProperty;
+use NilPortugues\SchemaOrg\Properties\RequiredMaxAgeProperty;
+use NilPortugues\SchemaOrg\Properties\RequiredMinAgeProperty;
+use NilPortugues\SchemaOrg\Properties\SuggestedGenderProperty;
+use NilPortugues\SchemaOrg\Properties\SuggestedMaxAgeProperty;
+use NilPortugues\SchemaOrg\Properties\SuggestedMinAgeProperty;
 
 /**
  * Classes PeopleAudience.
@@ -36,7 +36,7 @@ class PeopleAudience
      */
     public static function healthCondition()
     {
-        return HealthCondition::create(self::schemaUrl());
+        return HealthConditionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -44,7 +44,7 @@ class PeopleAudience
      */
     public static function requiredGender()
     {
-        return RequiredGender::create(self::schemaUrl());
+        return RequiredGenderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -52,7 +52,7 @@ class PeopleAudience
      */
     public static function requiredMaxAge()
     {
-        return RequiredMaxAge::create(self::schemaUrl());
+        return RequiredMaxAgeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -60,7 +60,7 @@ class PeopleAudience
      */
     public static function requiredMinAge()
     {
-        return RequiredMinAge::create(self::schemaUrl());
+        return RequiredMinAgeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -68,7 +68,7 @@ class PeopleAudience
      */
     public static function suggestedGender()
     {
-        return SuggestedGender::create(self::schemaUrl());
+        return SuggestedGenderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -76,7 +76,7 @@ class PeopleAudience
      */
     public static function suggestedMaxAge()
     {
-        return SuggestedMaxAge::create(self::schemaUrl());
+        return SuggestedMaxAgeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -84,6 +84,6 @@ class PeopleAudience
      */
     public static function suggestedMinAge()
     {
-        return SuggestedMinAge::create(self::schemaUrl());
+        return SuggestedMinAgeProperty::create(self::schemaUrl());
     }
 }

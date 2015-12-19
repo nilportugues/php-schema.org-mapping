@@ -3,19 +3,19 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\BillingIncrement;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\PriceType;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\UnitCode;
-use NilPortugues\SchemaOrg\Properties\UnitText;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\BillingIncrementProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\PriceTypeProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\UnitCodeProperty;
+use NilPortugues\SchemaOrg\Properties\UnitTextProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes UnitPriceSpecification.
@@ -42,7 +42,7 @@ class UnitPriceSpecification
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -50,7 +50,7 @@ class UnitPriceSpecification
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -58,7 +58,7 @@ class UnitPriceSpecification
      */
     public static function billingIncrement()
     {
-        return BillingIncrement::create(self::schemaUrl());
+        return BillingIncrementProperty::create(self::schemaUrl());
     }
 
     /**
@@ -66,7 +66,7 @@ class UnitPriceSpecification
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -74,7 +74,7 @@ class UnitPriceSpecification
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -82,7 +82,7 @@ class UnitPriceSpecification
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -90,7 +90,7 @@ class UnitPriceSpecification
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -98,7 +98,7 @@ class UnitPriceSpecification
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -106,7 +106,7 @@ class UnitPriceSpecification
      */
     public static function priceType()
     {
-        return PriceType::create(self::schemaUrl());
+        return PriceTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -114,7 +114,7 @@ class UnitPriceSpecification
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -122,7 +122,7 @@ class UnitPriceSpecification
      */
     public static function unitCode()
     {
-        return UnitCode::create(self::schemaUrl());
+        return UnitCodeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -130,7 +130,7 @@ class UnitPriceSpecification
      */
     public static function unitText()
     {
-        return UnitText::create(self::schemaUrl());
+        return UnitTextProperty::create(self::schemaUrl());
     }
 
     /**
@@ -138,6 +138,6 @@ class UnitPriceSpecification
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

@@ -3,23 +3,23 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\AvailableLanguage;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\ProcessingTime;
-use NilPortugues\SchemaOrg\Properties\ProvidesService;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\ServiceLocation;
-use NilPortugues\SchemaOrg\Properties\ServicePhone;
-use NilPortugues\SchemaOrg\Properties\ServicePostalAddress;
-use NilPortugues\SchemaOrg\Properties\ServiceSmsNumber;
-use NilPortugues\SchemaOrg\Properties\ServiceUrl;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\AvailableLanguageProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProcessingTimeProperty;
+use NilPortugues\SchemaOrg\Properties\ProvidesServiceProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceLocationProperty;
+use NilPortugues\SchemaOrg\Properties\ServicePhoneProperty;
+use NilPortugues\SchemaOrg\Properties\ServicePostalAddressProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceSmsNumberProperty;
+use NilPortugues\SchemaOrg\Properties\ServiceUrlProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes ServiceChannel.
@@ -46,7 +46,7 @@ class ServiceChannel
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -54,7 +54,7 @@ class ServiceChannel
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class ServiceChannel
      */
     public static function availableLanguage()
     {
-        return AvailableLanguage::create(self::schemaUrl());
+        return AvailableLanguageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class ServiceChannel
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class ServiceChannel
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class ServiceChannel
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class ServiceChannel
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class ServiceChannel
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class ServiceChannel
      */
     public static function processingTime()
     {
-        return ProcessingTime::create(self::schemaUrl());
+        return ProcessingTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class ServiceChannel
      */
     public static function providesService()
     {
-        return ProvidesService::create(self::schemaUrl());
+        return ProvidesServiceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class ServiceChannel
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class ServiceChannel
      */
     public static function serviceLocation()
     {
-        return ServiceLocation::create(self::schemaUrl());
+        return ServiceLocationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class ServiceChannel
      */
     public static function servicePhone()
     {
-        return ServicePhone::create(self::schemaUrl());
+        return ServicePhoneProperty::create(self::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class ServiceChannel
      */
     public static function servicePostalAddress()
     {
-        return ServicePostalAddress::create(self::schemaUrl());
+        return ServicePostalAddressProperty::create(self::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class ServiceChannel
      */
     public static function serviceSmsNumber()
     {
-        return ServiceSmsNumber::create(self::schemaUrl());
+        return ServiceSmsNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class ServiceChannel
      */
     public static function serviceUrl()
     {
-        return ServiceUrl::create(self::schemaUrl());
+        return ServiceUrlProperty::create(self::schemaUrl());
     }
 
     /**
@@ -174,6 +174,6 @@ class ServiceChannel
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

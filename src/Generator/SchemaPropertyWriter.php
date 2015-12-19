@@ -26,6 +26,10 @@ class SchemaPropertyWriter extends SchemaWriter
 
             $allowed = [];
             foreach ($property['usedOnClass'] as $belongs) {
+                if ('Type' === substr($belongs, -4)) {
+                    $belongs = substr($belongs, 0, -4);
+                }
+
                 $allowed[] = "\t\t'".'http://schema.org/'.$belongs."'";
             }
             $allowed = implode(",\n", $allowed);
@@ -35,11 +39,12 @@ class SchemaPropertyWriter extends SchemaWriter
 
 namespace NilPortugues\SchemaOrg\Properties;
 
-use NilPortugues\SchemaOrg\InvalidSchemaPropertyException;
-use NilPortugues\SchemaOrg\MappedProperty;
-use NilPortugues\SchemaOrg\Mapping;
+use NilPortugues\SchemaOrg\Property;
 
-class {$className}
+/**
+ * {$property['doc']}
+ */
+class {$className}Property extends Property
 {
     const SCHEMA_URL = "{$property['url']}";
     const PROPERTY_NAME = "{$property['name']}";
@@ -49,38 +54,12 @@ class {$className}
      *
      * @var array
      */
-    private static \$allowedSchemas = [
+    protected static \$allowedSchemas = [
 {$allowed}
     ];
-
-   /**
-    * {$property['doc']}
-    *
-    * @param string \$class
-    *
-    * @return Mapping
-    */
-    public static function create(\$class)
-    {
-        self::guardAllowedSchemaClasses(\$class);
-
-        return MappedProperty::create(\$class, self::PROPERTY_NAME, self::SCHEMA_URL);
-    }
-
-   /**
-    * @param string \$class
-    *
-    * @throws InvalidSchemaPropertyException
-    */
-    private static function guardAllowedSchemaClasses(\$class) {
-
-        if (false === empty(self::\$allowedSchemas) && false === in_array(\$class, self::\$allowedSchemas, true)) {
-            throw new InvalidSchemaPropertyException(self::PROPERTY_NAME, \$class);
-        }
-    }
 }
 PHP;
-            $this->fileSystem->write($this->savePath.DIRECTORY_SEPARATOR.$className.'.php', $phpPropertyCode);
+            $this->fileSystem->write($this->savePath.DIRECTORY_SEPARATOR.$className.'Property.php', $phpPropertyCode);
         }
     }
 }

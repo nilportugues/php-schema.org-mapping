@@ -3,22 +3,22 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\ActionApplication;
-use NilPortugues\SchemaOrg\Properties\ActionPlatform;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Application;
-use NilPortugues\SchemaOrg\Properties\ContentType;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\EncodingType;
-use NilPortugues\SchemaOrg\Properties\HttpMethod;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\UrlTemplate;
+use NilPortugues\SchemaOrg\Properties\ActionApplicationProperty;
+use NilPortugues\SchemaOrg\Properties\ActionPlatformProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ApplicationProperty;
+use NilPortugues\SchemaOrg\Properties\ContentTypeProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\EncodingTypeProperty;
+use NilPortugues\SchemaOrg\Properties\HttpMethodProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\UrlTemplateProperty;
 
 /**
  * Classes EntryPoint.
@@ -45,7 +45,7 @@ class EntryPoint
      */
     public static function actionApplication()
     {
-        return ActionApplication::create(self::schemaUrl());
+        return ActionApplicationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -53,7 +53,7 @@ class EntryPoint
      */
     public static function actionPlatform()
     {
-        return ActionPlatform::create(self::schemaUrl());
+        return ActionPlatformProperty::create(self::schemaUrl());
     }
 
     /**
@@ -61,7 +61,7 @@ class EntryPoint
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -69,7 +69,7 @@ class EntryPoint
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -77,7 +77,7 @@ class EntryPoint
      */
     public static function application()
     {
-        return Application::create(self::schemaUrl());
+        return ApplicationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -85,7 +85,7 @@ class EntryPoint
      */
     public static function contentType()
     {
-        return ContentType::create(self::schemaUrl());
+        return ContentTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -93,7 +93,7 @@ class EntryPoint
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -101,7 +101,7 @@ class EntryPoint
      */
     public static function encodingType()
     {
-        return EncodingType::create(self::schemaUrl());
+        return EncodingTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -109,7 +109,7 @@ class EntryPoint
      */
     public static function httpMethod()
     {
-        return HttpMethod::create(self::schemaUrl());
+        return HttpMethodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -117,7 +117,7 @@ class EntryPoint
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -125,7 +125,7 @@ class EntryPoint
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -133,7 +133,7 @@ class EntryPoint
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -141,7 +141,7 @@ class EntryPoint
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -149,7 +149,7 @@ class EntryPoint
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -157,7 +157,7 @@ class EntryPoint
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -165,6 +165,6 @@ class EntryPoint
      */
     public static function urlTemplate()
     {
-        return UrlTemplate::create(self::schemaUrl());
+        return UrlTemplateProperty::create(self::schemaUrl());
     }
 }

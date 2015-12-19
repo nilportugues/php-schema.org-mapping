@@ -3,11 +3,11 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Closes;
-use NilPortugues\SchemaOrg\Properties\DayOfWeek;
-use NilPortugues\SchemaOrg\Properties\Opens;
-use NilPortugues\SchemaOrg\Properties\ValidFrom;
-use NilPortugues\SchemaOrg\Properties\ValidThrough;
+use NilPortugues\SchemaOrg\Properties\ClosesProperty;
+use NilPortugues\SchemaOrg\Properties\DayOfWeekProperty;
+use NilPortugues\SchemaOrg\Properties\OpensProperty;
+use NilPortugues\SchemaOrg\Properties\ValidFromProperty;
+use NilPortugues\SchemaOrg\Properties\ValidThroughProperty;
 
 /**
  * Classes OpeningHoursSpecification.
@@ -34,7 +34,7 @@ class OpeningHoursSpecification
      */
     public static function closes()
     {
-        return Closes::create(self::schemaUrl());
+        return ClosesProperty::create(self::schemaUrl());
     }
 
     /**
@@ -42,7 +42,7 @@ class OpeningHoursSpecification
      */
     public static function dayOfWeek()
     {
-        return DayOfWeek::create(self::schemaUrl());
+        return DayOfWeekProperty::create(self::schemaUrl());
     }
 
     /**
@@ -50,7 +50,7 @@ class OpeningHoursSpecification
      */
     public static function opens()
     {
-        return Opens::create(self::schemaUrl());
+        return OpensProperty::create(self::schemaUrl());
     }
 
     /**
@@ -58,7 +58,7 @@ class OpeningHoursSpecification
      */
     public static function validFrom()
     {
-        return ValidFrom::create(self::schemaUrl());
+        return ValidFromProperty::create(self::schemaUrl());
     }
 
     /**
@@ -66,6 +66,6 @@ class OpeningHoursSpecification
      */
     public static function validThrough()
     {
-        return ValidThrough::create(self::schemaUrl());
+        return ValidThroughProperty::create(self::schemaUrl());
     }
 }

@@ -3,20 +3,20 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AffectedBy;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\NormalRange;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\SignDetected;
-use NilPortugues\SchemaOrg\Properties\Url;
-use NilPortugues\SchemaOrg\Properties\UsedToDiagnose;
-use NilPortugues\SchemaOrg\Properties\UsesDevice;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AffectedByProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\NormalRangeProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SignDetectedProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
+use NilPortugues\SchemaOrg\Properties\UsedToDiagnoseProperty;
+use NilPortugues\SchemaOrg\Properties\UsesDeviceProperty;
 
 /**
  * Classes MedicalTest.
@@ -43,7 +43,7 @@ class MedicalTest
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -51,7 +51,7 @@ class MedicalTest
      */
     public static function affectedBy()
     {
-        return AffectedBy::create(self::schemaUrl());
+        return AffectedByProperty::create(self::schemaUrl());
     }
 
     /**
@@ -59,7 +59,7 @@ class MedicalTest
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -67,7 +67,7 @@ class MedicalTest
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -75,7 +75,7 @@ class MedicalTest
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -83,7 +83,7 @@ class MedicalTest
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -91,7 +91,7 @@ class MedicalTest
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -99,7 +99,7 @@ class MedicalTest
      */
     public static function normalRange()
     {
-        return NormalRange::create(self::schemaUrl());
+        return NormalRangeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -107,7 +107,7 @@ class MedicalTest
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -115,7 +115,7 @@ class MedicalTest
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -123,7 +123,7 @@ class MedicalTest
      */
     public static function signDetected()
     {
-        return SignDetected::create(self::schemaUrl());
+        return SignDetectedProperty::create(self::schemaUrl());
     }
 
     /**
@@ -131,7 +131,7 @@ class MedicalTest
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -139,7 +139,7 @@ class MedicalTest
      */
     public static function usedToDiagnose()
     {
-        return UsedToDiagnose::create(self::schemaUrl());
+        return UsedToDiagnoseProperty::create(self::schemaUrl());
     }
 
     /**
@@ -147,6 +147,6 @@ class MedicalTest
      */
     public static function usesDevice()
     {
-        return UsesDevice::create(self::schemaUrl());
+        return UsesDeviceProperty::create(self::schemaUrl());
     }
 }

@@ -3,15 +3,15 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Thing.
@@ -38,7 +38,7 @@ class Thing
      */
     public static function additionalType()
     {
-        return AdditionalType::create(self::schemaUrl());
+        return AdditionalTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -46,7 +46,7 @@ class Thing
      */
     public static function alternateName()
     {
-        return AlternateName::create(self::schemaUrl());
+        return AlternateNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -54,7 +54,7 @@ class Thing
      */
     public static function description()
     {
-        return Description::create(self::schemaUrl());
+        return DescriptionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class Thing
      */
     public static function image()
     {
-        return Image::create(self::schemaUrl());
+        return ImageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class Thing
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(self::schemaUrl());
+        return MainEntityOfPageProperty::create(self::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class Thing
      */
     public static function name()
     {
-        return Name::create(self::schemaUrl());
+        return NameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class Thing
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(self::schemaUrl());
+        return PotentialActionProperty::create(self::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class Thing
      */
     public static function sameAs()
     {
-        return SameAs::create(self::schemaUrl());
+        return SameAsProperty::create(self::schemaUrl());
     }
 
     /**
@@ -102,6 +102,6 @@ class Thing
      */
     public static function url()
     {
-        return Url::create(self::schemaUrl());
+        return UrlProperty::create(self::schemaUrl());
     }
 }

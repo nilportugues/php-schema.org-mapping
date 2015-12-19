@@ -3,9 +3,9 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\InteractionService;
-use NilPortugues\SchemaOrg\Properties\InteractionType;
-use NilPortugues\SchemaOrg\Properties\UserInteractionCount;
+use NilPortugues\SchemaOrg\Properties\InteractionServiceProperty;
+use NilPortugues\SchemaOrg\Properties\InteractionTypeProperty;
+use NilPortugues\SchemaOrg\Properties\UserInteractionCountProperty;
 
 /**
  * Classes InteractionCounter.
@@ -32,7 +32,7 @@ class InteractionCounter
      */
     public static function interactionService()
     {
-        return InteractionService::create(self::schemaUrl());
+        return InteractionServiceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -40,7 +40,7 @@ class InteractionCounter
      */
     public static function interactionType()
     {
-        return InteractionType::create(self::schemaUrl());
+        return InteractionTypeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -48,6 +48,6 @@ class InteractionCounter
      */
     public static function userInteractionCount()
     {
-        return UserInteractionCount::create(self::schemaUrl());
+        return UserInteractionCountProperty::create(self::schemaUrl());
     }
 }

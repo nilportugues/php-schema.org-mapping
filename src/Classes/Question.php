@@ -3,20 +3,20 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AcceptedAnswer;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\AnswerCount;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\DownvoteCount;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\SuggestedAnswer;
-use NilPortugues\SchemaOrg\Properties\UpvoteCount;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AcceptedAnswerProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\AnswerCountProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\DownvoteCountProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SuggestedAnswerProperty;
+use NilPortugues\SchemaOrg\Properties\UpvoteCountProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Question.
@@ -43,7 +43,7 @@ class Question
      */
     public static function acceptedAnswer()
     {
-        return AcceptedAnswer::create(self::schemaUrl());
+        return AcceptedAnswerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -51,7 +51,7 @@ class Question
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -59,7 +59,7 @@ class Question
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -67,7 +67,7 @@ class Question
      */
     public static function answerCount()
     {
-        return AnswerCount::create(self::schemaUrl());
+        return AnswerCountProperty::create(self::schemaUrl());
     }
 
     /**
@@ -75,7 +75,7 @@ class Question
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -83,7 +83,7 @@ class Question
      */
     public static function downvoteCount()
     {
-        return DownvoteCount::create(self::schemaUrl());
+        return DownvoteCountProperty::create(self::schemaUrl());
     }
 
     /**
@@ -91,7 +91,7 @@ class Question
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -99,7 +99,7 @@ class Question
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -107,7 +107,7 @@ class Question
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -115,7 +115,7 @@ class Question
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -123,7 +123,7 @@ class Question
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -131,7 +131,7 @@ class Question
      */
     public static function suggestedAnswer()
     {
-        return SuggestedAnswer::create(self::schemaUrl());
+        return SuggestedAnswerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -139,7 +139,7 @@ class Question
      */
     public static function upvoteCount()
     {
-        return UpvoteCount::create(self::schemaUrl());
+        return UpvoteCountProperty::create(self::schemaUrl());
     }
 
     /**
@@ -147,6 +147,6 @@ class Question
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

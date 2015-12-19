@@ -3,23 +3,23 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AdverseOutcome;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\Contraindication;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\Indication;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PostOp;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\PreOp;
-use NilPortugues\SchemaOrg\Properties\Procedure;
-use NilPortugues\SchemaOrg\Properties\Purpose;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcome;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AdverseOutcomeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ContraindicationProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\IndicationProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PostOpProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\PreOpProperty;
+use NilPortugues\SchemaOrg\Properties\ProcedureProperty;
+use NilPortugues\SchemaOrg\Properties\PurposeProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\SeriousAdverseOutcomeProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes MedicalDevice.
@@ -46,7 +46,7 @@ class MedicalDevice
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -54,7 +54,7 @@ class MedicalDevice
      */
     public static function adverseOutcome()
     {
-        return AdverseOutcome::create(self::schemaUrl());
+        return AdverseOutcomeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class MedicalDevice
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class MedicalDevice
      */
     public static function contraindication()
     {
-        return Contraindication::create(self::schemaUrl());
+        return ContraindicationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class MedicalDevice
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class MedicalDevice
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class MedicalDevice
      */
     public static function indication()
     {
-        return Indication::create(self::schemaUrl());
+        return IndicationProperty::create(self::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class MedicalDevice
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class MedicalDevice
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class MedicalDevice
      */
     public static function postOp()
     {
-        return PostOp::create(self::schemaUrl());
+        return PostOpProperty::create(self::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class MedicalDevice
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class MedicalDevice
      */
     public static function preOp()
     {
-        return PreOp::create(self::schemaUrl());
+        return PreOpProperty::create(self::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class MedicalDevice
      */
     public static function procedure()
     {
-        return Procedure::create(self::schemaUrl());
+        return ProcedureProperty::create(self::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class MedicalDevice
      */
     public static function purpose()
     {
-        return Purpose::create(self::schemaUrl());
+        return PurposeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class MedicalDevice
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class MedicalDevice
      */
     public static function seriousAdverseOutcome()
     {
-        return SeriousAdverseOutcome::create(self::schemaUrl());
+        return SeriousAdverseOutcomeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -174,6 +174,6 @@ class MedicalDevice
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

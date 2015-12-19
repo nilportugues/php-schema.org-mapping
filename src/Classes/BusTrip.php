@@ -3,22 +3,22 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\ArrivalBusStop;
-use NilPortugues\SchemaOrg\Properties\ArrivalTime;
-use NilPortugues\SchemaOrg\Properties\BusName;
-use NilPortugues\SchemaOrg\Properties\BusNumber;
-use NilPortugues\SchemaOrg\Properties\DepartureBusStop;
-use NilPortugues\SchemaOrg\Properties\DepartureTime;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\Provider;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalBusStopProperty;
+use NilPortugues\SchemaOrg\Properties\ArrivalTimeProperty;
+use NilPortugues\SchemaOrg\Properties\BusNameProperty;
+use NilPortugues\SchemaOrg\Properties\BusNumberProperty;
+use NilPortugues\SchemaOrg\Properties\DepartureBusStopProperty;
+use NilPortugues\SchemaOrg\Properties\DepartureTimeProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProviderProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes BusTrip.
@@ -45,7 +45,7 @@ class BusTrip
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -53,7 +53,7 @@ class BusTrip
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -61,7 +61,7 @@ class BusTrip
      */
     public static function arrivalBusStop()
     {
-        return ArrivalBusStop::create(self::schemaUrl());
+        return ArrivalBusStopProperty::create(self::schemaUrl());
     }
 
     /**
@@ -69,7 +69,7 @@ class BusTrip
      */
     public static function arrivalTime()
     {
-        return ArrivalTime::create(self::schemaUrl());
+        return ArrivalTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -77,7 +77,7 @@ class BusTrip
      */
     public static function busName()
     {
-        return BusName::create(self::schemaUrl());
+        return BusNameProperty::create(self::schemaUrl());
     }
 
     /**
@@ -85,7 +85,7 @@ class BusTrip
      */
     public static function busNumber()
     {
-        return BusNumber::create(self::schemaUrl());
+        return BusNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -93,7 +93,7 @@ class BusTrip
      */
     public static function departureBusStop()
     {
-        return DepartureBusStop::create(self::schemaUrl());
+        return DepartureBusStopProperty::create(self::schemaUrl());
     }
 
     /**
@@ -101,7 +101,7 @@ class BusTrip
      */
     public static function departureTime()
     {
-        return DepartureTime::create(self::schemaUrl());
+        return DepartureTimeProperty::create(self::schemaUrl());
     }
 
     /**
@@ -109,7 +109,7 @@ class BusTrip
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -117,7 +117,7 @@ class BusTrip
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -125,7 +125,7 @@ class BusTrip
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -133,7 +133,7 @@ class BusTrip
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -141,7 +141,7 @@ class BusTrip
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -149,7 +149,7 @@ class BusTrip
      */
     public static function provider()
     {
-        return Provider::create(self::schemaUrl());
+        return ProviderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -157,7 +157,7 @@ class BusTrip
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -165,6 +165,6 @@ class BusTrip
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

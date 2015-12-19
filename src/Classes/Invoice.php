@@ -3,31 +3,31 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\AccountId;
-use NilPortugues\SchemaOrg\Properties\AdditionalType;
-use NilPortugues\SchemaOrg\Properties\AlternateName;
-use NilPortugues\SchemaOrg\Properties\BillingPeriod;
-use NilPortugues\SchemaOrg\Properties\Broker;
-use NilPortugues\SchemaOrg\Properties\Category;
-use NilPortugues\SchemaOrg\Properties\ConfirmationNumber;
-use NilPortugues\SchemaOrg\Properties\Customer;
-use NilPortugues\SchemaOrg\Properties\Description;
-use NilPortugues\SchemaOrg\Properties\Image;
-use NilPortugues\SchemaOrg\Properties\MainEntityOfPage;
-use NilPortugues\SchemaOrg\Properties\MinimumPaymentDue;
-use NilPortugues\SchemaOrg\Properties\Name;
-use NilPortugues\SchemaOrg\Properties\PaymentDue;
-use NilPortugues\SchemaOrg\Properties\PaymentDueDate;
-use NilPortugues\SchemaOrg\Properties\PaymentMethod;
-use NilPortugues\SchemaOrg\Properties\PaymentMethodId;
-use NilPortugues\SchemaOrg\Properties\PaymentStatus;
-use NilPortugues\SchemaOrg\Properties\PotentialAction;
-use NilPortugues\SchemaOrg\Properties\Provider;
-use NilPortugues\SchemaOrg\Properties\ReferencesOrder;
-use NilPortugues\SchemaOrg\Properties\SameAs;
-use NilPortugues\SchemaOrg\Properties\ScheduledPaymentDate;
-use NilPortugues\SchemaOrg\Properties\TotalPaymentDue;
-use NilPortugues\SchemaOrg\Properties\Url;
+use NilPortugues\SchemaOrg\Properties\AccountIdProperty;
+use NilPortugues\SchemaOrg\Properties\AdditionalTypeProperty;
+use NilPortugues\SchemaOrg\Properties\AlternateNameProperty;
+use NilPortugues\SchemaOrg\Properties\BillingPeriodProperty;
+use NilPortugues\SchemaOrg\Properties\BrokerProperty;
+use NilPortugues\SchemaOrg\Properties\CategoryProperty;
+use NilPortugues\SchemaOrg\Properties\ConfirmationNumberProperty;
+use NilPortugues\SchemaOrg\Properties\CustomerProperty;
+use NilPortugues\SchemaOrg\Properties\DescriptionProperty;
+use NilPortugues\SchemaOrg\Properties\ImageProperty;
+use NilPortugues\SchemaOrg\Properties\MainEntityOfPageProperty;
+use NilPortugues\SchemaOrg\Properties\MinimumPaymentDueProperty;
+use NilPortugues\SchemaOrg\Properties\NameProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentDueDateProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentDueProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentMethodIdProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentMethodProperty;
+use NilPortugues\SchemaOrg\Properties\PaymentStatusProperty;
+use NilPortugues\SchemaOrg\Properties\PotentialActionProperty;
+use NilPortugues\SchemaOrg\Properties\ProviderProperty;
+use NilPortugues\SchemaOrg\Properties\ReferencesOrderProperty;
+use NilPortugues\SchemaOrg\Properties\SameAsProperty;
+use NilPortugues\SchemaOrg\Properties\ScheduledPaymentDateProperty;
+use NilPortugues\SchemaOrg\Properties\TotalPaymentDueProperty;
+use NilPortugues\SchemaOrg\Properties\UrlProperty;
 
 /**
  * Classes Invoice.
@@ -54,7 +54,7 @@ class Invoice
      */
     public static function accountId()
     {
-        return AccountId::create(self::schemaUrl());
+        return AccountIdProperty::create(self::schemaUrl());
     }
 
     /**
@@ -62,7 +62,7 @@ class Invoice
      */
     public static function additionalType()
     {
-        return AdditionalType::create(Thing::schemaUrl());
+        return AdditionalTypeProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -70,7 +70,7 @@ class Invoice
      */
     public static function alternateName()
     {
-        return AlternateName::create(Thing::schemaUrl());
+        return AlternateNameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -78,7 +78,7 @@ class Invoice
      */
     public static function billingPeriod()
     {
-        return BillingPeriod::create(self::schemaUrl());
+        return BillingPeriodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -86,7 +86,7 @@ class Invoice
      */
     public static function broker()
     {
-        return Broker::create(self::schemaUrl());
+        return BrokerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -94,7 +94,7 @@ class Invoice
      */
     public static function category()
     {
-        return Category::create(self::schemaUrl());
+        return CategoryProperty::create(self::schemaUrl());
     }
 
     /**
@@ -102,7 +102,7 @@ class Invoice
      */
     public static function confirmationNumber()
     {
-        return ConfirmationNumber::create(self::schemaUrl());
+        return ConfirmationNumberProperty::create(self::schemaUrl());
     }
 
     /**
@@ -110,7 +110,7 @@ class Invoice
      */
     public static function customer()
     {
-        return Customer::create(self::schemaUrl());
+        return CustomerProperty::create(self::schemaUrl());
     }
 
     /**
@@ -118,7 +118,7 @@ class Invoice
      */
     public static function description()
     {
-        return Description::create(Thing::schemaUrl());
+        return DescriptionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -126,7 +126,7 @@ class Invoice
      */
     public static function image()
     {
-        return Image::create(Thing::schemaUrl());
+        return ImageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -134,7 +134,7 @@ class Invoice
      */
     public static function mainEntityOfPage()
     {
-        return MainEntityOfPage::create(Thing::schemaUrl());
+        return MainEntityOfPageProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -142,7 +142,7 @@ class Invoice
      */
     public static function minimumPaymentDue()
     {
-        return MinimumPaymentDue::create(self::schemaUrl());
+        return MinimumPaymentDueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -150,7 +150,7 @@ class Invoice
      */
     public static function name()
     {
-        return Name::create(Thing::schemaUrl());
+        return NameProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -158,7 +158,7 @@ class Invoice
      */
     public static function paymentDue()
     {
-        return PaymentDue::create(self::schemaUrl());
+        return PaymentDueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -166,7 +166,7 @@ class Invoice
      */
     public static function paymentDueDate()
     {
-        return PaymentDueDate::create(self::schemaUrl());
+        return PaymentDueDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -174,7 +174,7 @@ class Invoice
      */
     public static function paymentMethod()
     {
-        return PaymentMethod::create(self::schemaUrl());
+        return PaymentMethodProperty::create(self::schemaUrl());
     }
 
     /**
@@ -182,7 +182,7 @@ class Invoice
      */
     public static function paymentMethodId()
     {
-        return PaymentMethodId::create(self::schemaUrl());
+        return PaymentMethodIdProperty::create(self::schemaUrl());
     }
 
     /**
@@ -190,7 +190,7 @@ class Invoice
      */
     public static function paymentStatus()
     {
-        return PaymentStatus::create(self::schemaUrl());
+        return PaymentStatusProperty::create(self::schemaUrl());
     }
 
     /**
@@ -198,7 +198,7 @@ class Invoice
      */
     public static function potentialAction()
     {
-        return PotentialAction::create(Thing::schemaUrl());
+        return PotentialActionProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -206,7 +206,7 @@ class Invoice
      */
     public static function provider()
     {
-        return Provider::create(self::schemaUrl());
+        return ProviderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -214,7 +214,7 @@ class Invoice
      */
     public static function referencesOrder()
     {
-        return ReferencesOrder::create(self::schemaUrl());
+        return ReferencesOrderProperty::create(self::schemaUrl());
     }
 
     /**
@@ -222,7 +222,7 @@ class Invoice
      */
     public static function sameAs()
     {
-        return SameAs::create(Thing::schemaUrl());
+        return SameAsProperty::create(Thing::schemaUrl());
     }
 
     /**
@@ -230,7 +230,7 @@ class Invoice
      */
     public static function scheduledPaymentDate()
     {
-        return ScheduledPaymentDate::create(self::schemaUrl());
+        return ScheduledPaymentDateProperty::create(self::schemaUrl());
     }
 
     /**
@@ -238,7 +238,7 @@ class Invoice
      */
     public static function totalPaymentDue()
     {
-        return TotalPaymentDue::create(self::schemaUrl());
+        return TotalPaymentDueProperty::create(self::schemaUrl());
     }
 
     /**
@@ -246,6 +246,6 @@ class Invoice
      */
     public static function url()
     {
-        return Url::create(Thing::schemaUrl());
+        return UrlProperty::create(Thing::schemaUrl());
     }
 }

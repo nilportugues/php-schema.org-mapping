@@ -3,10 +3,10 @@
 namespace NilPortugues\SchemaOrg\Classes;
 
 use NilPortugues\SchemaOrg\Mapping;
-use NilPortugues\SchemaOrg\Properties\Area;
-use NilPortugues\SchemaOrg\Properties\Broadcaster;
-use NilPortugues\SchemaOrg\Properties\ParentService;
-use NilPortugues\SchemaOrg\Properties\VideoFormat;
+use NilPortugues\SchemaOrg\Properties\AreaProperty;
+use NilPortugues\SchemaOrg\Properties\BroadcasterProperty;
+use NilPortugues\SchemaOrg\Properties\ParentServiceProperty;
+use NilPortugues\SchemaOrg\Properties\VideoFormatProperty;
 
 /**
  * Classes BroadcastService.
@@ -33,7 +33,7 @@ class BroadcastService
      */
     public static function area()
     {
-        return Area::create(self::schemaUrl());
+        return AreaProperty::create(self::schemaUrl());
     }
 
     /**
@@ -41,7 +41,7 @@ class BroadcastService
      */
     public static function broadcaster()
     {
-        return Broadcaster::create(self::schemaUrl());
+        return BroadcasterProperty::create(self::schemaUrl());
     }
 
     /**
@@ -49,7 +49,7 @@ class BroadcastService
      */
     public static function parentService()
     {
-        return ParentService::create(self::schemaUrl());
+        return ParentServiceProperty::create(self::schemaUrl());
     }
 
     /**
@@ -57,6 +57,6 @@ class BroadcastService
      */
     public static function videoFormat()
     {
-        return VideoFormat::create(self::schemaUrl());
+        return VideoFormatProperty::create(self::schemaUrl());
     }
 }
