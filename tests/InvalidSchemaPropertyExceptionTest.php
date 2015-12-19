@@ -11,7 +11,18 @@
 namespace NilPortugues\Tests\SchemaOrg;
 
 
-class InvalidSchemaPropertyExceptionTest extends \PHPUnit_Framework_TestCase {
+use NilPortugues\SchemaOrg\InvalidSchemaPropertyException;
 
+class InvalidSchemaPropertyExceptionTest extends \PHPUnit_Framework_TestCase
+{
+    public function testExceptionMessage()
+    {
+        $this->setExpectedException(
+            InvalidSchemaPropertyException::class,
+            "Property 'hello' is not allowed for schema 'http://schema.org/Thing'."
+        );
+
+        throw new InvalidSchemaPropertyException('hello', 'http://schema.org/Thing');
+    }
 }
  

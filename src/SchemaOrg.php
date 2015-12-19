@@ -2,7 +2,7 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 12/18/15
- * Time: 11:36 PM
+ * Time: 11:36 PM.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,7 +13,8 @@ namespace NilPortugues\SchemaOrg;
 use RuntimeException;
 
 /**
- * METHODSTART
+ * METHODSTART.
+ *
  * @method \NilPortugues\SchemaOrg\Classes\AboutPage aboutPage()
  * @method \NilPortugues\SchemaOrg\Classes\AcceptAction acceptAction()
  * @method \NilPortugues\SchemaOrg\Classes\AccountingService accountingService()
@@ -686,6 +687,7 @@ class SchemaOrg
                 $class = 'NilPortugues\\SchemaOrg\\Classes\\'.$name;
                 self::$instances[$name] = new $class();
             }
+
             return self::$instances[$name];
         }
 
@@ -717,7 +719,6 @@ class SchemaOrg
      * *Singleton* instance.
      *
      * @codeCoverageIgnore
-     * @return void
      */
     private function __clone()
     {
@@ -728,9 +729,8 @@ class SchemaOrg
      * instance.
      *
      * @codeCoverageIgnore
-     * @return void
      */
     private function __wakeup()
     {
     }
-} 
+}

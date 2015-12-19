@@ -2,7 +2,7 @@
 /**
  * Author: Nil Portugués Calderó <contact@nilportugues.com>
  * Date: 12/18/15
- * Time: 10:43 PM
+ * Time: 10:43 PM.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -10,8 +10,7 @@
 
 namespace NilPortugues\SchemaOrg\Generator;
 
-
-class SchemaRdfaParser
+class SchemaRdfaData
 {
     /**
      * @var array
@@ -29,8 +28,8 @@ class SchemaRdfaParser
      * @param $classComment
      * @param $subClassOf
      */
-    public function addClass($classUrl, $label, $classComment, $subClassOf) {
-
+    public function addClass($classUrl, $label, $classComment, $subClassOf)
+    {
         $url = explode('/', $classUrl);
         $nameFromUrl = array_pop($url);
 
@@ -43,7 +42,7 @@ class SchemaRdfaParser
             'doc' => $classComment,
             'url' => $classUrl,
             'properties' => [],
-            'subClassOf' => array_filter($subClassOf)
+            'subClassOf' => array_filter($subClassOf),
         ];
     }
     /**
@@ -51,7 +50,8 @@ class SchemaRdfaParser
      * @param $label
      * @param $classComment
      */
-    public function addDataType($classUrl, $label, $classComment) {
+    public function addDataType($classUrl, $label, $classComment)
+    {
         $this->addClass($classUrl, $label, $classComment, [], []);
     }
 
@@ -73,7 +73,6 @@ class SchemaRdfaParser
         ];
     }
 
-
     /**
      * @return array
      */
@@ -90,10 +89,9 @@ class SchemaRdfaParser
         $result = $this->classes;
 
         //Link the subClasses
-        foreach($result as &$resultingClass) {
-            if(!empty($resultingClass->subClassOf)) {
-                foreach($resultingClass->subClassOf as &$class) {
-
+        foreach ($result as &$resultingClass) {
+            if (!empty($resultingClass->subClassOf)) {
+                foreach ($resultingClass->subClassOf as &$class) {
                     $class = $result[$class];
                 }
             }
@@ -101,20 +99,18 @@ class SchemaRdfaParser
 
         //Add the properties
         foreach ($this->properties as $propertyName => $propertyStructure) {
-            foreach($propertyStructure['usedOnClass'] as $class) {
+            foreach ($propertyStructure['usedOnClass'] as $class) {
                 $result[$class]->properties[$propertyName] = ['name' => $propertyName, 'parent' => $class];
             }
         }
 
-
         //Flatten the properties for easy use.
-        foreach($result as $resultingClass) {
+        foreach ($result as $resultingClass) {
             if (!empty($resultingClass->subClassOf) && is_array($resultingClass->subClassOf)) {
-                foreach($resultingClass->subClassOf as $stdClassObject) {
-
-                    if(is_object($stdClassObject)) {
+                foreach ($resultingClass->subClassOf as $stdClassObject) {
+                    if (is_object($stdClassObject)) {
                         $next = $stdClassObject->subClassOf;
-                        while(is_array($next) && !empty($next) && $object = array_pop($next)) {
+                        while (is_array($next) && !empty($next) && $object = array_pop($next)) {
                             $resultingClass->properties = array_merge($resultingClass->properties,  $object->properties);
                         }
                     }
@@ -124,6 +120,4 @@ class SchemaRdfaParser
 
         return $result;
     }
-
-
 }
