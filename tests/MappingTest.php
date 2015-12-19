@@ -18,7 +18,7 @@ class MappingTest extends \PHPUnit_Framework_TestCase
     {
         $mapping = new Mapping('http://schema.org/Thing', 'name', 'http://schema.org/name');
 
-        $this->assertEquals('http://schema.org/Thing', $mapping->parent());
+        $this->assertEquals('http://schema.org/Thing', $mapping->usedBy());
         $this->assertEquals('name', $mapping->name());
         $this->assertEquals('http://schema.org/name', $mapping->url());
     }

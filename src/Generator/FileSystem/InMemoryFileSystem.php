@@ -25,4 +25,14 @@ class InMemoryFileSystem implements FileSystemInterface
     {
         $this->fileSystem[$filePath] = $contents;
     }
+
+    /**
+     * @param string $filePath
+     *
+     * @return string
+     */
+    public function get($filePath) {
+
+        return $this->fileSystem[$filePath];
+    }
 }

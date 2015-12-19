@@ -22,8 +22,14 @@ class SchemaRdfaData
      */
     private $properties = [];
 
+    /**
+     * @var bool
+     */
     private $hasBeenCalculated = false;
 
+    /**
+     * @var
+     */
     private $calculatedOutput;
 
     /**

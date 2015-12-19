@@ -1,6 +1,6 @@
-# Created by .gitignore support plugin (hsz.mobi)
 /vendor/
-/bin/
+/bin/php-cs-fixer
+/bin/phpunit
 /build/
 .idea
 composer.lock

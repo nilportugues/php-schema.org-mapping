@@ -43,7 +43,7 @@ class Mapping
     /**
      * @return string
      */
-    public function parent()
+    public function usedBy()
     {
         return $this->schemaName;
     }
