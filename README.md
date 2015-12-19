@@ -1,7 +1,7 @@
 # Schema.org Mapping
 
 [![Build Status](https://travis-ci.org/nilportugues/schema.org-mapping.svg?branch=master)](https://travis-ci.org/nilportugues/schema.org-mapping)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nilportugues/schema.org-mapping/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nilportugues/schema.org-mapping/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/d32a29ac-4f5f-4ede-8aac-caf6d5e2022b/mini.png)](https://insight.sensiolabs.com/projects/d32a29ac-4f5f-4ede-8aac-caf6d5e2022b) 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nilportugues/schema.org-mapping/badges/quality-score.png)](https://scrutinizer-ci.com/g/nilportugues/schema.org-mapping/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/d32a29ac-4f5f-4ede-8aac-caf6d5e2022b/mini.png??)](https://insight.sensiolabs.com/projects/d32a29ac-4f5f-4ede-8aac-caf6d5e2022b) 
 [![Latest Stable Version](https://poser.pugx.org/nilportugues/schema-org/v/stable)](https://packagist.org/packages/nilportugues/schema-org) 
 [![Total Downloads](https://poser.pugx.org/nilportugues/schema-org/downloads)](https://packagist.org/packages/nilportugues/schema-org) 
 [![License](https://poser.pugx.org/nilportugues/schema-org/license)](https://packagist.org/packages/nilportugues/schema-org) 
