@@ -6,7 +6,7 @@
 [![Total Downloads](https://poser.pugx.org/nilportugues/schema-org/downloads)](https://packagist.org/packages/nilportugues/schema-org) 
 [![License](https://poser.pugx.org/nilportugues/schema-org/license)](https://packagist.org/packages/nilportugues/schema-org) 
 
-A fluid interface to create mappings using Schema.org for Microdata and JSON-LD, supporting Schema.org v2.2 (latest).
+A fluent interface to create mappings using Schema.org for Microdata and JSON-LD, supporting Schema.org v2.2 (latest).
 
 ## Installation
 
