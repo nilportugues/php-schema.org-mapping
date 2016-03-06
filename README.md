@@ -5,6 +5,7 @@
 [![Latest Stable Version](https://poser.pugx.org/nilportugues/schema-org/v/stable)](https://packagist.org/packages/nilportugues/schema-org) 
 [![Total Downloads](https://poser.pugx.org/nilportugues/schema-org/downloads)](https://packagist.org/packages/nilportugues/schema-org) 
 [![License](https://poser.pugx.org/nilportugues/schema-org/license)](https://packagist.org/packages/nilportugues/schema-org) 
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://paypal.me/nilportugues)
 
 A fluent interface to create mappings using Schema.org for Microdata and JSON-LD, supporting Schema.org v2.2 (latest).
 
